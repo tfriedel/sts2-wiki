@@ -39,7 +39,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 12
           }
         ],
         "effects": [
@@ -72,7 +72,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 5
+            "damage": 6
           },
           {
             "type": "block"
@@ -86,7 +86,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 5
+            "damage": 6
           },
           {
             "type": "block"
@@ -100,7 +100,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 13
           }
         ],
         "effects": [
@@ -149,7 +149,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 5
+            "damage": 6
           }
         ],
         "effects": [
@@ -175,7 +175,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 10
           },
           {
             "type": "debuff"
@@ -340,14 +340,15 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 8
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 8 damage"
+          "Deal 8 damage",
+          "Gain 8 Block"
         ],
         "title": "Bite"
       }
@@ -434,7 +435,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 16
           }
         ],
         "effects": [
@@ -477,7 +478,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 4
+            "damage": 5
           }
         ],
         "effects": [],
@@ -515,7 +516,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 8
           }
         ],
         "effects": [
@@ -590,7 +591,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 15
           }
         ],
         "effects": [],
@@ -626,11 +627,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 3
+            "damage": 4,
+            "hits": 3
           }
         ],
         "effects": [
-          "Deal 4 damage"
+          "Deal 4 damage",
+          "3 hits"
         ],
         "title": "Peck"
       },
@@ -639,7 +642,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 19
           }
         ],
         "effects": [
@@ -711,7 +714,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 11
           }
         ],
         "effects": [
@@ -757,7 +760,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 20
           },
           {
             "type": "buff"
@@ -796,7 +799,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 17
           }
         ],
         "effects": [
@@ -809,7 +812,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 19
           },
           {
             "type": "buff"
@@ -852,7 +855,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 8
+            "damage": 9
           }
         ],
         "effects": [
@@ -897,11 +900,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 3
+            "damage": 3,
+            "hits": 2
           }
         ],
         "effects": [
-          "Deal 3 damage"
+          "Deal 3 damage",
+          "2 hits"
         ],
         "title": "Whip Slap"
       },
@@ -910,7 +915,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           }
         ],
         "effects": [
@@ -955,7 +960,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 16
           }
         ],
         "effects": [
@@ -997,7 +1002,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 14
           }
         ],
         "effects": [
@@ -1023,7 +1028,8 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 6
+            "damage": 7,
+            "hits": 2
           },
           {
             "type": "debuff"
@@ -1031,6 +1037,7 @@
         ],
         "effects": [
           "Deal 7 damage",
+          "2 hits",
           "Apply 2 Weak",
           "Apply 2 Frail"
         ],
@@ -1053,7 +1060,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 14
           },
           {
             "type": "block"
@@ -1106,7 +1113,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 8
           },
           {
             "type": "buff"
@@ -1120,7 +1127,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 8
           },
           {
             "type": "buff"
@@ -1135,7 +1142,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 5
+            "damage": 6
           }
         ],
         "effects": [
@@ -1196,7 +1203,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 1
+            "damage": 3
           }
         ],
         "effects": [
@@ -1231,7 +1238,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 5
+            "damage": 6
           }
         ],
         "effects": [
@@ -1245,7 +1252,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 7
           },
           {
             "type": "buff"
@@ -1262,7 +1269,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           },
           {
             "type": "debuff"
@@ -1342,7 +1349,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 15
           }
         ],
         "effects": [
@@ -1387,7 +1394,7 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 10
+            "damage": 11
           }
         ],
         "effects": [
@@ -1401,7 +1408,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 40
+            "damage": 45
           }
         ],
         "effects": [
@@ -1414,7 +1421,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 20
+            "damage": 22
           },
           {
             "type": "buff"
@@ -1461,11 +1468,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 3
+            "damage": 3,
+            "hits": 8
           }
         ],
         "effects": [
-          "Deal 3 damage"
+          "Deal 3 damage",
+          "8 hits"
         ],
         "title": "Beeeees!"
       },
@@ -1474,7 +1483,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 20
           }
         ],
         "effects": [
@@ -1508,11 +1517,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 1
+            "damage": 1,
+            "hits": 4
           }
         ],
         "effects": [
-          "Deal 1 damage"
+          "Deal 1 damage",
+          "4 hits"
         ],
         "title": "Skitter"
       },
@@ -1521,7 +1532,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           }
         ],
         "effects": [],
@@ -1606,7 +1617,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 21
           },
           {
             "type": "summon"
@@ -1622,7 +1633,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 13
           }
         ],
         "effects": [
@@ -1646,7 +1657,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 15
           }
         ],
         "effects": [
@@ -1664,7 +1675,7 @@
           }
         ],
         "effects": [
-          "Deal damage",
+          "Deal 2 damage",
           "8 hits"
         ],
         "title": "Spew Coins"
@@ -1674,7 +1685,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 10
           },
           {
             "type": "debuff"
@@ -1797,7 +1808,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 9
+            "damage": 10
           }
         ],
         "effects": [
@@ -1811,7 +1822,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 17
           }
         ],
         "effects": [
@@ -1867,7 +1878,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           },
           {
             "type": "debuff"
@@ -1884,7 +1895,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 12
           }
         ],
         "effects": [
@@ -1930,7 +1941,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           },
           {
             "type": "buff"
@@ -1947,7 +1958,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           },
           {
             "type": "buff"
@@ -1961,7 +1972,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 16
           }
         ],
         "effects": [
@@ -1993,7 +2004,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 11
           },
           {
             "type": "debuff"
@@ -2010,7 +2021,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 14
           }
         ],
         "effects": [
@@ -2023,7 +2034,8 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 3
+            "damage": 4,
+            "hits": 2
           }
         ],
         "effects": [],
@@ -2079,7 +2091,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 21
+            "damage": 23
           }
         ],
         "effects": [
@@ -2092,7 +2104,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 14
           },
           {
             "type": "debuff"
@@ -2109,7 +2121,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 35
+            "damage": 40
           }
         ],
         "effects": [
@@ -2143,7 +2155,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 4
+            "damage": 6
           }
         ],
         "effects": [],
@@ -2154,7 +2166,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 4
+            "damage": 6
           }
         ],
         "effects": [
@@ -2227,7 +2239,7 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 6
+            "damage": 7
           }
         ],
         "effects": [
@@ -2241,7 +2253,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 14
           },
           {
             "type": "debuff"
@@ -2258,7 +2270,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 17
           },
           {
             "type": "buff"
@@ -2296,11 +2308,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 7
+            "damage": 8,
+            "hits": 2
           }
         ],
         "effects": [
-          "Deal 8 damage"
+          "Deal 8 damage",
+          "2 hits"
         ],
         "title": "Gimme"
       },
@@ -2309,7 +2323,8 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 6
+            "damage": 7,
+            "hits": 2
           },
           {
             "type": "debuff"
@@ -2317,6 +2332,7 @@
         ],
         "effects": [
           "Deal 7 damage",
+          "2 hits",
           "Apply 2 Weak"
         ],
         "title": "Double Smash"
@@ -2326,7 +2342,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           },
           {
             "type": "buff"
@@ -2396,7 +2412,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 10
+            "damage": 11
           },
           {
             "type": "status"
@@ -2413,7 +2429,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 14
           }
         ],
         "effects": [
@@ -2426,11 +2442,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 4
+            "damage": 5,
+            "hits": 3
           }
         ],
         "effects": [
-          "Deal 5 damage"
+          "Deal 5 damage",
+          "3 hits"
         ],
         "title": "Stomp"
       },
@@ -2481,7 +2499,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 19
           }
         ],
         "effects": [
@@ -2495,7 +2513,7 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 7
+            "damage": 8
           }
         ],
         "effects": [
@@ -2536,7 +2554,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 22
+            "damage": 24
           }
         ],
         "effects": [
@@ -2549,14 +2567,15 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 18
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 18 damage"
+          "Deal 18 damage",
+          "Gain 18 Block"
         ],
         "title": "Radiate"
       },
@@ -2565,11 +2584,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 9
+            "damage": 10,
+            "hits": 3
           }
         ],
         "effects": [
-          "Deal 10 damage"
+          "Deal 10 damage",
+          "3 hits"
         ],
         "title": "Whirlwind"
       },
@@ -2584,7 +2605,8 @@
           }
         ],
         "effects": [
-          "Apply 5 Strength"
+          "Apply 5 Strength",
+          "Gain 22 Block"
         ],
         "title": "Pulsate"
       }
@@ -2615,7 +2637,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 3
+            "damage": 4
           }
         ],
         "effects": [
@@ -2629,7 +2651,7 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 2
+            "damage": 3
           }
         ],
         "effects": [
@@ -2643,7 +2665,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 10
+            "damage": 11
           }
         ],
         "effects": [
@@ -2736,7 +2758,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           },
           {
             "type": "debuff"
@@ -2753,7 +2775,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           },
           {
             "type": "debuff"
@@ -2827,7 +2849,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 18
           }
         ],
         "effects": [
@@ -2841,7 +2863,7 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 8
+            "damage": 9
           }
         ],
         "effects": [
@@ -2855,7 +2877,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 13
           },
           {
             "type": "heal"
@@ -2905,7 +2927,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 19
+            "damage": 21
           }
         ],
         "effects": [
@@ -2918,14 +2940,15 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 14
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 14 damage"
+          "Deal 14 damage",
+          "Gain 14 Block"
         ],
         "title": "Slash2"
       },
@@ -2934,11 +2957,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 9
+            "damage": 10,
+            "hits": 2
           }
         ],
         "effects": [
-          "Deal 10 damage"
+          "Deal 10 damage",
+          "2 hits"
         ],
         "title": "Disembowel"
       },
@@ -2985,7 +3010,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           }
         ],
         "effects": [
@@ -3028,7 +3053,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 3
+            "damage": 4
           }
         ],
         "effects": [],
@@ -3077,7 +3102,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           },
           {
             "type": "debuff"
@@ -3094,7 +3119,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 5
+            "damage": 6
           },
           {
             "type": "summon"
@@ -3110,7 +3135,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           }
         ],
         "effects": [
@@ -3155,7 +3180,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 18
           },
           {
             "type": "buff"
@@ -3194,7 +3219,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 10
           },
           {
             "type": "debuff"
@@ -3208,7 +3233,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 16
           }
         ],
         "effects": [
@@ -3227,7 +3252,8 @@
           }
         ],
         "effects": [
-          "Apply 5 Strength"
+          "Apply 5 Strength",
+          "Gain 18 Block"
         ],
         "title": "Curl and Grow"
       }
@@ -3257,7 +3283,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 7
           },
           {
             "type": "block"
@@ -3283,7 +3309,9 @@
             "type": "block"
           }
         ],
-        "effects": [],
+        "effects": [
+          "Gain 9 Block"
+        ],
         "title": "Prep"
       },
       {
@@ -3291,7 +3319,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 35
+            "damage": 40
           }
         ],
         "effects": [
@@ -3304,7 +3332,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 10
+            "damage": 11
           }
         ],
         "effects": [],
@@ -3336,7 +3364,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 16
           }
         ],
         "effects": [
@@ -3362,7 +3390,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 4
+            "damage": 5
           }
         ],
         "effects": [
@@ -3393,7 +3421,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 25
+            "damage": 30
           }
         ],
         "effects": [
@@ -3434,7 +3462,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 35
+            "damage": 40
           }
         ],
         "effects": [
@@ -3474,7 +3502,7 @@
           }
         ],
         "effects": [
-          "Deal damage",
+          "Deal 1 damage",
           "5 hits"
         ],
         "title": "Poke"
@@ -3516,7 +3544,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 15
           }
         ],
         "effects": [
@@ -3529,7 +3557,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 4
+            "damage": 6
           },
           {
             "type": "buff"
@@ -3564,7 +3592,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 13
           }
         ],
         "effects": [
@@ -3577,14 +3605,15 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 7
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 7 damage"
+          "Deal 7 damage",
+          "Gain 6 Block"
         ],
         "title": "Slice"
       },
@@ -3722,7 +3751,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 17
           }
         ],
         "effects": [
@@ -3735,7 +3764,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 8
           },
           {
             "type": "debuff"
@@ -3783,7 +3812,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 17
           }
         ],
         "effects": [
@@ -3823,7 +3852,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 33
+            "damage": 36
           },
           {
             "type": "debuff"
@@ -3887,7 +3916,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 17
           }
         ],
         "effects": [
@@ -3948,11 +3977,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 1
+            "damage": 1,
+            "hits": 3
           }
         ],
         "effects": [
-          "Deal 1 damage"
+          "Deal 1 damage",
+          "3 hits"
         ],
         "title": "Flail"
       },
@@ -4007,7 +4038,7 @@
           {
             "type": "multi_attack",
             "hits": 4,
-            "damage": 4
+            "damage": 5
           }
         ],
         "effects": [
@@ -4063,7 +4094,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 16
           }
         ],
         "effects": [
@@ -4076,7 +4107,8 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 5
+            "damage": 6,
+            "hits": 2
           },
           {
             "type": "debuff"
@@ -4084,6 +4116,7 @@
         ],
         "effects": [
           "Deal 6 damage",
+          "2 hits",
           "Apply 1 Weak"
         ],
         "title": "Fast Punch"
@@ -4152,7 +4185,7 @@
           {
             "type": "multi_attack",
             "hits": 5,
-            "damage": 3
+            "damage": 4
           }
         ],
         "effects": [
@@ -4166,7 +4199,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 18
           }
         ],
         "effects": [
@@ -4211,7 +4244,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 3
+            "damage": 4
           }
         ],
         "effects": [
@@ -4224,7 +4257,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 20
           }
         ],
         "effects": [
@@ -4249,7 +4282,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 31
+            "damage": 35
           }
         ],
         "effects": [
@@ -4297,7 +4330,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 16
           }
         ],
         "effects": [
@@ -4311,7 +4344,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 5
+            "damage": 6
           }
         ],
         "effects": [],
@@ -4364,7 +4397,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 13
           }
         ],
         "effects": [
@@ -4377,11 +4410,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 2
+            "damage": 2,
+            "hits": 4
           }
         ],
         "effects": [
-          "Deal 2 damage"
+          "Deal 2 damage",
+          "4 hits"
         ],
         "title": "Spinning Kick"
       },
@@ -4396,7 +4431,8 @@
           }
         ],
         "effects": [
-          "Apply 2 Strength"
+          "Apply 2 Strength",
+          "Gain 8 Block"
         ],
         "title": "Bubble Burp"
       }
@@ -4436,7 +4472,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 10
+            "damage": 11
           }
         ],
         "effects": [
@@ -4478,7 +4514,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 8
           }
         ],
         "effects": [
@@ -4491,7 +4527,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 14
           }
         ],
         "effects": [
@@ -4527,7 +4563,7 @@
           }
         ],
         "effects": [
-          "Deal damage"
+          "Deal 1 damage"
         ],
         "title": "Poke"
       }
@@ -4572,14 +4608,15 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 17
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 17 damage"
+          "Deal 17 damage",
+          "Gain 13 Block"
         ],
         "title": "Zoom"
       },
@@ -4588,11 +4625,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 7
+            "damage": 8,
+            "hits": 2
           }
         ],
         "effects": [
-          "Deal 8 damage"
+          "Deal 8 damage",
+          "2 hits"
         ],
         "title": "Piercing Stabs"
       },
@@ -4601,7 +4640,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 11
           },
           {
             "type": "status"
@@ -4668,7 +4707,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 30
+            "damage": 33
           }
         ],
         "effects": [
@@ -4682,7 +4721,7 @@
           {
             "type": "multi_attack",
             "hits": 4,
-            "damage": 4
+            "damage": 5
           }
         ],
         "effects": [
@@ -4728,7 +4767,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 8
           },
           {
             "type": "block"
@@ -4742,7 +4781,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 13
           }
         ],
         "effects": [
@@ -4783,7 +4822,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           },
           {
             "type": "debuff"
@@ -4800,7 +4839,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 12
           }
         ],
         "effects": [
@@ -4813,7 +4852,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 7
           },
           {
             "type": "buff"
@@ -4871,7 +4910,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 18
           },
           {
             "type": "buff"
@@ -4908,7 +4947,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 3
+            "damage": 4
           },
           {
             "type": "buff"
@@ -4955,7 +4994,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 10
           }
         ],
         "effects": [
@@ -4999,7 +5038,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 17
           }
         ],
         "effects": [
@@ -5012,7 +5051,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 8
           },
           {
             "type": "status"
@@ -5040,7 +5079,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 12
           },
           {
             "type": "debuff"
@@ -5078,7 +5117,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 29
+            "damage": 31
           }
         ],
         "effects": [
@@ -5091,11 +5130,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 6
+            "damage": 7,
+            "hits": 4
           }
         ],
         "effects": [
-          "Deal 7 damage"
+          "Deal 7 damage",
+          "4 hits"
         ],
         "title": "Maelstrom"
       },
@@ -5104,7 +5145,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 19
           },
           {
             "type": "debuff"
@@ -5151,7 +5192,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 17
           }
         ],
         "effects": [
@@ -5165,7 +5206,7 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 3
+            "damage": 4
           }
         ],
         "effects": [
@@ -5216,7 +5257,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 23
+            "damage": 25
           }
         ],
         "effects": [],
@@ -5227,7 +5268,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 19
           }
         ],
         "effects": [],
@@ -5257,7 +5298,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 12
           },
           {
             "type": "debuff"
@@ -5324,7 +5365,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 18
           }
         ],
         "effects": [
@@ -5337,7 +5378,8 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 3
+            "damage": 4,
+            "hits": 3
           },
           {
             "type": "buff"
@@ -5411,7 +5453,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 20
+            "damage": 22
           }
         ],
         "effects": [
@@ -5424,7 +5466,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 16
           },
           {
             "type": "debuff"
@@ -5441,7 +5483,8 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 10
+            "damage": 11,
+            "hits": 3
           }
         ],
         "effects": [
@@ -5455,7 +5498,7 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 10
+            "damage": 11
           }
         ],
         "effects": [
@@ -5552,7 +5595,8 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 8
+            "damage": 8,
+            "hits": 2
           },
           {
             "type": "buff"
@@ -5560,6 +5604,7 @@
         ],
         "effects": [
           "Deal 8 damage",
+          "2 hits",
           "Apply 2 Strength"
         ],
         "title": "Barrage"
@@ -5616,7 +5661,8 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 10
+            "damage": 10,
+            "hits": 2
           },
           {
             "type": "buff"
@@ -5624,6 +5670,7 @@
         ],
         "effects": [
           "Deal 10 damage",
+          "2 hits",
           "Apply 4 Strength"
         ],
         "title": "Barrage"
@@ -5680,7 +5727,8 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 9
+            "damage": 9,
+            "hits": 2
           },
           {
             "type": "buff"
@@ -5688,6 +5736,7 @@
         ],
         "effects": [
           "Deal 9 damage",
+          "2 hits",
           "Apply 3 Strength"
         ],
         "title": "Barrage"
@@ -5783,7 +5832,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 8
+            "damage": 9
           }
         ],
         "effects": [],
@@ -5795,7 +5844,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 8
+            "damage": 9
           }
         ],
         "effects": [],
@@ -5806,7 +5855,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 28
+            "damage": 31
           }
         ],
         "effects": [],
@@ -5866,7 +5915,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 4
+            "damage": 5
           }
         ],
         "effects": [
@@ -5910,7 +5959,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 10
+            "damage": 11
           }
         ],
         "effects": [
@@ -5933,14 +5982,15 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 7
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 7 damage"
+          "Deal 7 damage",
+          "Gain 7 Block"
         ],
         "title": "Hardening Strike"
       }
@@ -5981,7 +6031,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 19
           },
           {
             "type": "debuff"
@@ -5997,7 +6047,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 16
           }
         ],
         "effects": [
@@ -6010,7 +6060,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 21
+            "damage": 23
           }
         ],
         "effects": [
@@ -6071,11 +6121,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 3
+            "damage": 4,
+            "hits": 3
           }
         ],
         "effects": [
-          "Deal 4 damage"
+          "Deal 4 damage",
+          "3 hits"
         ],
         "title": "Spike Spit"
       },
@@ -6084,7 +6136,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 8
           }
         ],
         "effects": [
@@ -6127,7 +6179,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 19
           }
         ],
         "effects": [],
@@ -6138,7 +6190,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 19
           }
         ],
         "effects": [],
@@ -6161,7 +6213,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 15
           }
         ],
         "effects": [],
@@ -6172,7 +6224,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 15
           }
         ],
         "effects": [],
@@ -6216,7 +6268,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 4
+            "damage": 5
           }
         ],
         "effects": [
@@ -6264,11 +6316,13 @@
         "intents": [
           {
             "type": "multi_attack",
-            "damage": 1
+            "damage": 1,
+            "hits": 9
           }
         ],
         "effects": [
-          "Deal 1 damage"
+          "Deal 1 damage",
+          "9 hits"
         ],
         "title": "Unleash the Hounds"
       }
@@ -6298,7 +6352,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 15
           }
         ],
         "effects": [
@@ -6317,7 +6371,8 @@
           }
         ],
         "effects": [
-          "Apply 1 Burrowed"
+          "Apply 1 Burrowed",
+          "Gain 37 Block"
         ],
         "title": "Burrow"
       },
@@ -6326,7 +6381,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 23
+            "damage": 26
           }
         ],
         "effects": [],
@@ -6371,7 +6426,7 @@
           {
             "type": "multi_attack",
             "hits": 5,
-            "damage": 3
+            "damage": 4
           }
         ],
         "effects": [],
@@ -6383,7 +6438,7 @@
           {
             "type": "multi_attack",
             "hits": 5,
-            "damage": 3
+            "damage": 4
           }
         ],
         "effects": [],
@@ -6425,7 +6480,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 12
           }
         ],
         "effects": [
@@ -6477,7 +6532,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 4
+            "damage": 5
           }
         ],
         "effects": [],
@@ -6508,7 +6563,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           }
         ],
         "effects": [
@@ -6521,7 +6576,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 7
           }
         ],
         "effects": [
@@ -6573,7 +6628,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 8
           }
         ],
         "effects": [
@@ -6587,7 +6642,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 6
+            "damage": 7
           }
         ],
         "effects": [
@@ -6601,7 +6656,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 27
+            "damage": 30
           },
           {
             "type": "status"
@@ -6652,7 +6707,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 9
           },
           {
             "type": "debuff"
@@ -6670,7 +6725,7 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 6
+            "damage": 7
           }
         ],
         "effects": [
@@ -6684,7 +6739,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 18
           }
         ],
         "effects": [
@@ -6728,7 +6783,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 16
           },
           {
             "type": "debuff"
@@ -6749,7 +6804,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 10
+            "damage": 11
           },
           {
             "type": "buff"
@@ -6797,7 +6852,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 14
           },
           {
             "type": "buff"
@@ -6863,7 +6918,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 7
           }
         ],
         "effects": [],
@@ -6917,7 +6972,7 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 15
           }
         ],
         "effects": [

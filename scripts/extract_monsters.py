@@ -158,29 +158,23 @@ def parse_move_effects(content: str, move_id: str) -> list[str]:
 
     effects: list[str] = []
 
-    # DamageCmd.Attack(N)
-    for m in re.finditer(r"DamageCmd\.Attack\((\d+)\)", body):
-        effects.append(f"Deal {m.group(1)} damage")
-
-    # DamageCmd.Attack(variable) — try to resolve from properties
+    # DamageCmd.Attack (literal, decimal literal, or variable)
+    seen_damage = False
     for m in re.finditer(r"DamageCmd\.Attack\((\w+)\)", body):
-        name = m.group(1)
-        if name.isdigit():
-            continue
-        # Try to find the property value in the class
-        prop_m = re.search(rf"{name}\s*=>\s*(\d+)\s*;", content)
-        if prop_m:
-            effects.append(f"Deal {prop_m.group(1)} damage")
-        else:
-            prop_m = re.search(rf"{name}\s*=>\s*AscensionHelper[^;]*,\s*(\d+),\s*(\d+)\)", content)
-            if prop_m:
-                effects.append(f"Deal {prop_m.group(1)} damage")
-            else:
-                effects.append("Deal damage")
+        name = _strip_cs_suffix(m.group(1))
+        val = _resolve_property(name, content)
+        if val is not None:
+            effects.append(f"Deal {val} damage")
+            seen_damage = True
+        elif not name.isdigit() and not seen_damage:
+            effects.append("Deal damage")
 
-    # WithHitCount
-    for m in re.finditer(r"WithHitCount\((\d+)\)", body):
-        effects.append(f"{m.group(1)} hits")
+    # WithHitCount (literal or variable)
+    for m in re.finditer(r"WithHitCount\((\w+)\)", body):
+        name = _strip_cs_suffix(m.group(1))
+        val = _resolve_property(name, content)
+        if val is not None:
+            effects.append(f"{val} hits")
 
     # PowerCmd.Apply<PowerName>(target, amount, ...)
     for m in re.finditer(r"PowerCmd\.Apply<(\w+)>\([^,]+,\s*(\d+)", body):
@@ -210,9 +204,12 @@ def parse_move_effects(content: str, move_id: str) -> list[str]:
             else:
                 effects.append(f"Apply {power}")
 
-    # GainBlock
-    for m in re.finditer(r"GainBlock\([^,]*,\s*(\d+)", body):
-        effects.append(f"Gain {m.group(1)} Block")
+    # GainBlock (literal or variable)
+    for m in re.finditer(r"GainBlock\([^,]*,\s*(\w+)", body):
+        name = _strip_cs_suffix(m.group(1))
+        val = _resolve_property(name, content)
+        if val is not None:
+            effects.append(f"Gain {val} Block")
 
     # CardPileCmd.AddToCombatAndPreview<CardName>
     for m in re.finditer(r"AddToCombatAndPreview<(\w+)>", body):
@@ -426,6 +423,33 @@ def _describe_pattern(pattern: dict, move_titles: dict[str, str]) -> str:
     return " ".join(parts)
 
 
+def _strip_cs_suffix(name: str) -> str:
+    """Strip C# numeric literal suffixes (e.g. ``10m`` → ``10``)."""
+    if name.endswith(("m", "f", "d")) and name[:-1].isdigit():
+        return name[:-1]
+    return name
+
+
+def _resolve_property(var_name: str, content: str) -> int | None:
+    """Resolve a variable name to its integer value from a class property.
+
+    Handles both simple literals (``Foo => 5;``) and AscensionHelper
+    expressions, always returning the ascension (higher difficulty) value.
+    """
+    if var_name.isdigit():
+        return int(var_name)
+    prop_m = re.search(rf"{var_name}\s*=>\s*(\d+)\s*;", content)
+    if prop_m:
+        return int(prop_m.group(1))
+    prop_m = re.search(
+        rf"{var_name}\s*=>\s*AscensionHelper[^;]*,\s*(\d+),\s*(\d+)\)",
+        content,
+    )
+    if prop_m:
+        return int(prop_m.group(1))
+    return None
+
+
 def parse_moves(content: str) -> tuple[list[dict], dict]:
     """Parse MoveState declarations from GenerateMoveStateMachine()."""
     method_body = extract_method_body(content, "GenerateMoveStateMachine")
@@ -477,7 +501,7 @@ def parse_moves(content: str) -> tuple[list[dict], dict]:
         # Parse effects from the move's execution method
         effects = parse_move_effects(content, move_id)
 
-        # Try to resolve damage from intents that reference properties
+        # Try to resolve damage/hits from intents that reference properties
         for intent in intents:
             if intent["type"] in ("attack", "multi_attack") and "damage" not in intent:
                 # Look for the damage property referenced in the intent
@@ -489,16 +513,22 @@ def parse_moves(content: str) -> tuple[list[dict], dict]:
                 )
                 if intent_text:
                     var_name = intent_text.group(2)
-                    prop_m = re.search(rf"{var_name}\s*=>\s*(\d+)", content)
-                    if prop_m:
-                        intent["damage"] = int(prop_m.group(1))
-                    else:
-                        prop_m = re.search(
-                            rf"{var_name}\s*=>\s*AscensionHelper[^;]*,\s*(\d+)",
-                            content,
-                        )
-                        if prop_m:
-                            intent["damage"] = int(prop_m.group(1))
+                    damage = _resolve_property(var_name, content)
+                    if damage is not None:
+                        intent["damage"] = damage
+
+            if intent["type"] == "multi_attack" and "hits" not in intent:
+                # Find the second argument of MultiAttackIntent
+                intent_text = re.search(
+                    rf'"{move_id}".*?MultiAttackIntent\s*\(\w+,\s*(\w+)',
+                    method_body,
+                    re.DOTALL,
+                )
+                if intent_text:
+                    var_name = intent_text.group(1)
+                    hits = _resolve_property(var_name, content)
+                    if hits is not None:
+                        intent["hits"] = hits
 
         moves.append(
             {

@@ -32,11 +32,18 @@ MONSTER_NOTES: dict[str, str] = {
         "Bloat spawns Gas Bomb minions with escalating count: "
         "1 on first use, 2 on second, up to a maximum of 5 per Bloat."
     ),
+    "FakeMerchantMonster": (
+        "Bug: Throw Relic's intent shows 10/9 damage (ThrowRelicDamage), but the move "
+        "code uses SwipeDamage (15/13) instead. The actual damage dealt is higher than "
+        "the intent icon indicates."
+    ),
     "Doormaker": (
         "Starts the fight with 999,999,999 HP and an infinite health bar display. "
         "On Dramatic Open, HP is set back to its real value, all existing powers "
-        "are removed, and Hunger of the Void is applied to each player. "
-        "Pulverize gains +2/3 Strength per use."
+        "are removed, and debuffs are applied to each player. "
+        "In v0.101.0, the moves were reworked: Hunger exhausts cards you play, "
+        "Scrutiny prevents extra draws, and Grasp makes the first card each turn "
+        "cost 1 more Energy."
     ),
     "Queen": (
         "Two-phase fight based on whether Torch Head Amalgam is alive:\n\n"
@@ -111,9 +118,9 @@ MONSTER_NOTES: dict[str, str] = {
     ),
     "Vantom": ("Dismember adds 3 Wound to Discard pile. Starts with 9 stacks of Slippery."),
     "HauntedShip": (
-        "Ramming Speed adds 2 Wound to Discard pile. Move selection alternates "
-        "between attack rounds (odd turns) and Haunt rounds (even turns). "
-        "Haunt can only be used once per combat."
+        "Starts with Haunt (adds Dazed to Discard). Ramming Speed applies Weak. "
+        "Move selection alternates between attack rounds (odd turns) and "
+        "Haunt rounds (even turns). Haunt can only be used once per combat."
     ),
     "GremlinMerc": (
         "Uses Thievery power (amount 20) — steals gold on every attack move. "
