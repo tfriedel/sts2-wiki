@@ -260,8 +260,10 @@ def main() -> None:
         sources = ench_sources.get(class_name, [])
         ench["sources"] = sources
         amounts = [s["amount"] for s in sources if "amount" in s]
-        if amounts and "{" in ench.get("description", ""):
-            ench["description"] = resolve_description(ench["description"], amounts)
+        if amounts:
+            for field in ("description", "extra_card_text"):
+                if "{" in ench.get(field, ""):
+                    ench[field] = resolve_description(ench[field], amounts)
 
         enchantments.append(ench)
 
