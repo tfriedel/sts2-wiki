@@ -15,12 +15,11 @@ export async function getStaticPaths() {
 
 const { ench } = Astro.props;
 
-// Find events that reference this enchantment
+// Build slug lookups for linking sources
 const allEvents = await getCollection('events');
-const relatedEvents = allEvents.filter(e => {
-  const desc = (e.data.description_html || '') + e.data.options.map(o => o.description).join('');
-  return desc.toLowerCase().includes(ench.data.title.toLowerCase());
-});
+const eventSlugs = new Map(allEvents.map(e => [e.data.class_name, e.id]));
+const allRelics = await getCollection('relics');
+const relicSlugs = new Map(allRelics.map(r => [r.data.class_name, r.id]));
 ---
 
 <BaseLayout title={ench.data.title}>
@@ -57,13 +56,18 @@ const relatedEvents = allEvents.filter(e => {
       )}
     </table>
 
-    {relatedEvents.length > 0 && (
+    {ench.data.sources.length > 0 && (
       <>
         <h2 class="section-heading">Sources</h2>
         <ul class="linked-list">
-          {relatedEvents.map(e => (
-            <li><a href={`${base}events/${e.id}/`}>{e.data.title}</a></li>
-          ))}
+          {ench.data.sources.map(s => {
+            const slug = s.type === 'event' ? eventSlugs.get(s.class_name) : relicSlugs.get(s.class_name);
+            const href = slug ? `${base}${s.type === 'event' ? 'events' : 'relics'}/${slug}/` : null;
+            const label = s.amount != null ? `${s.title} (${s.type}, amount: ${s.amount})` : `${s.title} (${s.type})`;
+            return (
+              <li>{href ? <a href={href}>{label}</a> : label}</li>
+            );
+          })}
         </ul>
       </>
     )}

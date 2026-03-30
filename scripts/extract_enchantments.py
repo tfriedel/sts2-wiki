@@ -86,6 +86,130 @@ def parse_enchantment_file(class_name: str, content: str) -> dict | None:
     return enchantment
 
 
+def _strip_cs_suffix(name: str) -> str:
+    """Strip C# numeric literal suffixes (e.g. ``10m`` -> ``10``)."""
+    if name.endswith(("m", "f", "d")) and name[:-1].isdigit():
+        return name[:-1]
+    return name
+
+
+def find_enchantment_sources(
+    decompiled_dir: str,
+    loc_data_events: dict[str, str],
+    loc_data_relics: dict[str, str],
+) -> dict[str, list[dict]]:
+    """Scan events and relics for enchantment application calls.
+
+    Returns a dict mapping enchantment class name -> list of sources.
+    Each source has: type ("event"|"relic"), class_name, title, amount.
+    """
+    sources: dict[str, list[dict]] = {}
+
+    for source_type, subdir, loc_data in [
+        ("event", "MegaCrit.Sts2.Core.Models.Events", loc_data_events),
+        ("relic", "MegaCrit.Sts2.Core.Models.Relics", loc_data_relics),
+    ]:
+        source_dir = os.path.join(decompiled_dir, subdir)
+        if not os.path.isdir(source_dir):
+            continue
+        for class_name, content in read_cs_files(source_dir):
+            # Pattern 1: CardCmd.Enchant<EnchName>(card, Nm)
+            for m in re.finditer(r"CardCmd\.Enchant<(\w+)>\(\w+,\s*(\w+)\)", content):
+                ench_name = m.group(1)
+                amount_str = _strip_cs_suffix(m.group(2))
+                amount = int(amount_str) if amount_str.isdigit() else None
+                _add_source(sources, ench_name, source_type, class_name, loc_data, amount)
+
+            # Pattern 2: CardCmd.Enchant(enchObj, card, Nm) or with DynamicVars
+            for m in re.finditer(r"CardCmd\.Enchant\([^,]+,\s*\w+,\s*(\w+)\)", content):
+                amount_str = _strip_cs_suffix(m.group(1))
+                amount = int(amount_str) if amount_str.isdigit() else None
+                # Find which enchantment type from nearby context
+                for em in re.finditer(r"ModelDb\.Enchantment<(\w+)>", content):
+                    ench_name = em.group(1)
+                    _add_source(sources, ench_name, source_type, class_name, loc_data, amount)
+                    break
+
+            # Pattern 3: DynamicVar amounts used in Enchant calls
+            # Find lines like: CardCmd.Enchant(..., base.DynamicVars["VarName"].BaseValue)
+            for m in re.finditer(r'Enchant.*?DynamicVars\["(\w+)"\]', content):
+                var_name = m.group(1)
+                # Resolve the DynamicVar's default value
+                var_m = re.search(rf'DynamicVar\("{var_name}",\s*(\d+)m?\)', content)
+                if not var_m:
+                    continue
+                var_val = int(var_m.group(1))
+                # Find which enchantment is nearby
+                # Look for Enchantment<Type> near this Enchant call
+                context = content[max(0, m.start() - 500) : m.end() + 200]
+                ench_m = re.search(r"Enchantment<(\w+)>", context)
+                if ench_m:
+                    _add_source(
+                        sources, ench_m.group(1), source_type, class_name, loc_data, var_val
+                    )
+
+            # Pattern 4: SelectAndEnchant<EnchName>(amount, ...)
+            for m in re.finditer(r"SelectAndEnchant<(\w+)>\((\d+)", content):
+                ench_name = m.group(1)
+                amount = int(m.group(2))
+                _add_source(sources, ench_name, source_type, class_name, loc_data, amount)
+
+    return sources
+
+
+def _add_source(
+    sources: dict[str, list[dict]],
+    ench_name: str,
+    source_type: str,
+    class_name: str,
+    loc_data: dict[str, str],
+    amount: int | None,
+) -> None:
+    """Add a source entry, deduplicating by class_name."""
+    loc_key = find_loc_key(class_name, loc_data)
+    title = loc_data.get(f"{loc_key}.title", class_name) if loc_key else class_name
+    entry: dict[str, str | int] = {"type": source_type, "class_name": class_name, "title": title}
+    if amount is not None:
+        entry["amount"] = amount
+    if ench_name not in sources:
+        sources[ench_name] = []
+    # Deduplicate
+    if not any(s["class_name"] == class_name for s in sources[ench_name]):
+        sources[ench_name].append(entry)
+
+
+def resolve_description(desc: str, amounts: list[int]) -> str:
+    """Resolve template variables in enchantment descriptions.
+
+    Replaces {Amount}, {Amount:energyIcons()}, {Amount:plural:...},
+    {Block:diff()} with concrete values.
+    """
+    if not amounts:
+        return desc
+
+    if len(set(amounts)) == 1:
+        val = amounts[0]
+    else:
+        # Multiple different amounts — show range
+        val_min, val_max = min(amounts), max(amounts)
+        val_range = f"{val_min}-{val_max}"
+        desc = re.sub(r"\{Amount:energyIcons\(\)\}", f"{val_range} Energy", desc)
+        desc = re.sub(r"\{Amount:plural:(\w+)\|(\w+)\}", r"\2", desc)
+        desc = re.sub(r"\{Amount\}", val_range, desc)
+        desc = re.sub(r"\{Block:diff\(\)\}", val_range, desc)
+        return desc
+
+    desc = re.sub(r"\{Amount:energyIcons\(\)\}", f"{val} Energy", desc)
+    desc = re.sub(
+        r"\{Amount:plural:(\w+)\|(\w+)\}",
+        lambda m: m.group(1) if val == 1 else m.group(2),
+        desc,
+    )
+    desc = re.sub(r"\{Amount\}", str(val), desc)
+    desc = re.sub(r"\{Block:diff\(\)\}", str(val), desc)
+    return desc
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Extract STS2 enchantment data")
     parser.add_argument(
@@ -101,6 +225,11 @@ def main() -> None:
     output_dir = os.path.expanduser(args.output_dir)
 
     loc_data = load_localization(loc_dir, "enchantments")
+    loc_data_events = load_localization(loc_dir, "events")
+    loc_data_relics = load_localization(loc_dir, "relics")
+
+    # Find sources (events/relics that grant each enchantment)
+    ench_sources = find_enchantment_sources(decompiled_dir, loc_data_events, loc_data_relics)
 
     enchantments_dir = os.path.join(
         decompiled_dir,
@@ -126,6 +255,13 @@ def main() -> None:
             title = re.sub(r"([a-z])([A-Z])", r"\1 \2", class_name)
             ench["title"] = title
             ench["description"] = ""
+
+        # Attach sources and resolve description templates
+        sources = ench_sources.get(class_name, [])
+        ench["sources"] = sources
+        amounts = [s["amount"] for s in sources if "amount" in s]
+        if amounts and "{" in ench.get("description", ""):
+            ench["description"] = resolve_description(ench["description"], amounts)
 
         enchantments.append(ench)
 

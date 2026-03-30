@@ -251,6 +251,12 @@ const enchantments = defineCollection({
     extra_card_text: z.string().optional(),
     restrictions: z.array(z.string()).default([]),
     stackable: z.boolean().default(false),
+    sources: z.array(z.object({
+      type: z.string(),
+      class_name: z.string(),
+      title: z.string(),
+      amount: z.number().optional(),
+    })).default([]),
   }),
 });
 

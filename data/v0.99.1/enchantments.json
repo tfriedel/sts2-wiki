@@ -47,6 +47,13 @@
     ]
   },
   {
+    "class_name": "Favored",
+    "card_type": "Any",
+    "title": "Favored",
+    "description": "This card's attack damage is doubled.",
+    "sources": []
+  },
+  {
     "class_name": "Glam",
     "card_type": "Any",
     "title": "Glam",
@@ -97,8 +104,12 @@
   {
     "class_name": "Instinct",
     "card_type": "Any",
+    "restrictions": [
+      "Excludes X-cost cards",
+      "Excludes Unplayable cards"
+    ],
     "title": "Instinct",
-    "description": "This card's attack damage is doubled.",
+    "description": "Decrease the cost of this card by [blue]1[/blue].",
     "sources": [
       {
         "type": "relic",

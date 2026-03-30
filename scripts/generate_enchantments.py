@@ -84,6 +84,8 @@ def main() -> None:
         restrictions = ench.get("restrictions", [])
         lines.append(f"restrictions: {json.dumps(restrictions)}")
         lines.append(f"stackable: {str(ench.get('stackable', False)).lower()}")
+        sources = ench.get("sources", [])
+        lines.append(f"sources: {json.dumps(sources)}")
         lines.append("---")
         lines.append("")
 
