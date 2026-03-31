@@ -110,23 +110,49 @@ def parse_is_allowed(content: str) -> list[str]:
     # Act requirements: Act == N or ActNumber or CurrentActIndex
     for m in re.finditer(r"(?:Act|ActNumber)\s*(>=?|<=?|==)\s*(\d+)", body):
         conditions.append(f"Act {m.group(1)} {m.group(2)}")
-    # CurrentActIndex checks — these appear in rejection clauses
-    # (if condition: return false), so the meaning is inverted:
-    # "if CurrentActIndex < 1: return false" means "requires Act 2+"
-    for m in re.finditer(r"CurrentActIndex\s*(<|>|<=|>=)\s*(\d+)", body):
+    # CurrentActIndex comparisons (0-indexed: 0=Act 1, 1=Act 2, 2=Act 3)
+    # These can appear as direct returns or rejection guards, so we map
+    # the comparison to a human-readable act constraint.
+    act_index_map = {
+        ("==", 0): "Act 1 only",
+        ("==", 1): "Act 2 only",
+        ("==", 2): "Act 3 only",
+        ("<", 1): "Act 1 only",
+        ("<", 2): "Acts 1-2 only",
+        ("<", 3): "Acts 1-3 only",
+        ("<=", 0): "Act 1 only",
+        ("<=", 1): "Acts 1-2 only",
+        ("<=", 2): "Acts 1-3 only",
+        (">", 0): "Act 2+",
+        (">", 1): "Act 3+",
+        (">=", 1): "Act 2+",
+        (">=", 2): "Act 3+",
+    }
+    for m in re.finditer(r"CurrentActIndex\s*(==|<|>|<=|>=)\s*(\d+)", body):
         op = m.group(1)
         idx = int(m.group(2))
-        # In IsAllowed, these are rejection conditions, so invert:
-        # "< 1 → reject" means "requires >= 1" = Act 2+
-        # "> 0 → accept" (in direct return) means Act 2+
-        if op == "<" and idx == 1:
-            conditions.append("Act 2+")
-        elif op == ">" and idx == 0:
-            conditions.append("Act 2+")
-        elif op == "<" and idx == 2:
-            conditions.append("Act 3 excluded")
+        # Check context: is this a rejection guard (return false) or acceptance?
+        after = body[m.end() : m.end() + 80]
+        is_rejection = bool(re.search(r"return\s+false", after))
+        if is_rejection:
+            # Invert the condition: "if idx < 1: return false" means "requires Act 2+"
+            inverted = {
+                "<": ">=",
+                "<=": ">",
+                ">": "<=",
+                ">=": "<",
+                "==": "!=",
+            }
+            inv_op = inverted.get(op, op)
+            if inv_op == "!=":
+                # "!= 0" means "not Act 1" = "Act 2+"
+                label = f"Not Act {idx + 1}"
+            else:
+                label = act_index_map.get((inv_op, idx), f"Act index {inv_op} {idx}")
         else:
-            conditions.append(f"Act index {op} {idx}")
+            label = act_index_map.get((op, idx), f"Act index {op} {idx}")
+        if label not in conditions:
+            conditions.append(label)
 
     # HasRelic checks
     for m in re.finditer(r"HasRelic<(\w+)>", body):
@@ -143,14 +169,6 @@ def parse_is_allowed(content: str) -> list[str]:
     # Deck size checks
     for m in re.finditer(r"(?:DeckSize|Deck\.Count)\s*(>=?|<=?)\s*(\d+)", body):
         conditions.append(f"Deck size {m.group(1)} {m.group(2)}")
-
-    # CurrentActIndex == 0 with return false means Act 2+ (rejection of Act 1)
-    if re.search(r"CurrentActIndex\s*==\s*0\)?\s*\{?\s*return\s+false", body, re.DOTALL):
-        if "Act 2+" not in conditions:
-            conditions.append("Act 2+")
-    # CurrentActIndex == 0 in acceptance context means Act 1 only
-    elif re.search(r"CurrentActIndex\s*==\s*0", body):
-        conditions.append("Act 1 only")
 
     # Enchantment requirements (has enchantable cards)
     if re.search(r"CanEnchant", body):
@@ -293,12 +311,17 @@ def parse_event_file(class_name: str, content: str) -> dict | None:
 def build_act_event_map(decompiled_dir: str) -> dict[str, list[str]]:
     """Parse act model files to find which events appear in which acts.
 
+    Also checks ModelDb.AllSharedEvents — events in the shared pool
+    appear in every act.
+
     Returns a mapping of event class name -> list of act names.
     """
     acts_dir = os.path.join(decompiled_dir, "MegaCrit.Sts2.Core.Models.Acts")
     event_to_acts: dict[str, list[str]] = {}
 
+    act_names: list[str] = []
     for act_class_name, content in read_cs_files(acts_dir):
+        act_names.append(act_class_name)
         # Look for ModelDb.Event<ClassName>() references
         for m in re.finditer(r"ModelDb\.Event<(\w+)>\(\)", content):
             event_class = m.group(1)
@@ -306,6 +329,24 @@ def build_act_event_map(decompiled_dir: str) -> dict[str, list[str]]:
                 event_to_acts[event_class] = []
             if act_class_name not in event_to_acts[event_class]:
                 event_to_acts[event_class].append(act_class_name)
+
+    # Shared events (ModelDb.AllSharedEvents) appear in all acts
+    model_db_path = os.path.join(
+        decompiled_dir, "MegaCrit.Sts2.Core.Models", "ModelDb.cs"
+    )
+    if os.path.exists(model_db_path):
+        with open(model_db_path) as f:
+            model_db = f.read()
+        # Find the AllSharedEvents block
+        shared_m = re.search(
+            r"AllSharedEvents.*?new\s+EventModel\[.*?\{(.*?)\}\)",
+            model_db,
+            re.DOTALL,
+        )
+        if shared_m:
+            for m in re.finditer(r"Event<(\w+)>\(\)", shared_m.group(1)):
+                event_class = m.group(1)
+                event_to_acts[event_class] = sorted(act_names)
 
     return event_to_acts
 

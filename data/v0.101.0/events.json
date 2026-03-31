@@ -123,7 +123,12 @@
         "description": "Lose [red]5[/red] HP. Gain a Colorless card reward."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "Bugslayer",
@@ -251,7 +256,12 @@
         "description": "Gain a [red]Debt[/red]. [purple]Divine[/purple] [blue]6[/blue] times."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "DenseVegetation",
@@ -323,7 +333,12 @@
         "description": "Lose [red]15[/red] HP. Choose [blue]1[/blue] of [blue]3[/blue] [gold]Doll Relics[/gold]."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "DoorsOfLightAndDark",
@@ -462,7 +477,12 @@
     "title": "The Merchant???",
     "description": "Placeholder",
     "options": [],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "FieldOfManSizedHoles",
@@ -682,7 +702,12 @@
         "description": "Procure [blue]1[/blue] random [gold]Uncommon Potion[/gold]."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "PunchOff",
@@ -740,7 +765,12 @@
         "description": "You don't have any Relics that can be given."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "Reflections",
@@ -785,7 +815,12 @@
         "description": "Trade [gold]{BottomRelicOwned}[/gold] for [gold]{BottomRelicNew}[/gold]."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "RoomFullOfCheese",
@@ -805,7 +840,12 @@
         "description": "Lose [red]14[/red] HP. Obtain the [gold]Chosen Cheese[/gold]."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "RoundTeaParty",
@@ -896,7 +936,12 @@
         "description": "You don't have any cards that can be Enchanted."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "SlipperyBridge",
@@ -916,7 +961,12 @@
         "description": "Lose [red]{HpLoss}[/red] HP. The card in the above option is randomized."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "SpiralingWhirlpool",
@@ -984,7 +1034,12 @@
         "description": "Lose [red]6[/red] HP. [gold]Enchant[/gold] an Attack with [purple]Vigorous[/purple] [blue]8[/blue]."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "SunkenStatue",
@@ -1056,7 +1111,12 @@
         "description": "Choose a card to [gold]Transform[/gold]."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "TabletOfTruth",
@@ -1134,7 +1194,12 @@
         "description": "{TeaOfDiscourtesyDescription}"
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "TheArchitect",
@@ -1158,7 +1223,12 @@
         "description": "Lose [gold]{Potion}[/gold]. Obtain an [gold]Upgraded[/gold] [gold]{Rarity} {Type}[/gold]."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "TheLanternKey",
@@ -1203,7 +1273,12 @@
         "description": "Lose [red]8[/red] HP. Procure [blue]1[/blue] random [gold]Potion[/gold]."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "ThisOrThat",
@@ -1228,7 +1303,12 @@
         "description": "Add [red]Clumsy[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "TinkerTime",
@@ -1441,7 +1521,12 @@
         "description": "Lose [gold]Lantern Key[/gold]. Procure [blue]2[/blue] random [gold]Potions[/gold]. Obtain [blue]2[/blue] random [gold]Relics[/gold]."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "WaterloggedScriptorium",
@@ -1515,7 +1600,12 @@
         "description": "[red]Downgrade[/red] a random card."
       }
     ],
-    "acts": []
+    "acts": [
+      "Glory",
+      "Hive",
+      "Overgrowth",
+      "Underdocks"
+    ]
   },
   {
     "class_name": "Wellspring",
