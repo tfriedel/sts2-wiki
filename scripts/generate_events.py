@@ -193,12 +193,6 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
         },
         "notes": "Heal amount is exactly 33% of your Max HP (rounded).",
     },
-    "SpiritGrafter": {
-        "option_overrides": {
-            "Let It In": {"description": "Heal [green]25[/green] HP."},
-            "Rejection": {"description": "Lose [red]9[/red] HP. Upgrade a card."},
-        },
-    },
     "StoneOfAllTime": {
         "option_overrides": {
             "Drink and Lift": {
@@ -240,9 +234,13 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
     },
     "SunkenStatue": {
         "option_overrides": {
-            "Grab the Sword": {"description": "Obtain a random [gold]Relic[/gold]."},
+            "Grab the Sword": {"description": "Obtain the [gold]Sword of Stone[/gold]."},
         },
-        "notes": "Gold is randomized: [blue]101–121[/blue] gold.",
+        "notes": (
+            "Gold is randomized: [blue]101–121[/blue] gold. "
+            "The HP loss from Dive into the Water is [red]unblockable[/red] "
+            "and unaffected by powers."
+        ),
     },
     "TrashHeap": {
         "option_overrides": {
