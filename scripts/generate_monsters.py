@@ -37,6 +37,21 @@ def main() -> None:
     with open(os.path.join(data_dir, "monsters.json")) as f:
         monsters = json.load(f)
 
+    # Load per-entity JSON overrides from data/{version}/monsters/*.json
+    per_entity_dir = os.path.join(data_dir, "monsters")
+    if os.path.isdir(per_entity_dir):
+        monsters_by_class = {m["class_name"]: m for m in monsters}
+        for fname in os.listdir(per_entity_dir):
+            if fname.endswith(".json"):
+                with open(os.path.join(per_entity_dir, fname)) as f:
+                    entity_data = json.load(f)
+                cname = entity_data.get("class_name", fname.removesuffix(".json"))
+                if cname in monsters_by_class:
+                    monsters_by_class[cname].update(entity_data)
+                else:
+                    monsters_by_class[cname] = entity_data
+        monsters = list(monsters_by_class.values())
+
     # Load encounter data for cross-referencing
     encounter_lookup: dict[str, list[dict]] = {}
     encounters_path = os.path.join(data_dir, "encounters.json")
@@ -65,7 +80,19 @@ def main() -> None:
     out.mkdir(parents=True, exist_ok=True)
 
     # Filter out test/debug monsters and unfightable entities
-    test_classes = {"BigDummy", "OneHpMonster", "TenHpMonster", "Architect"}
+    test_classes = {
+        "Architect",
+        "BigDummy",
+        "DeprecatedMonster",
+        "MultiAttackMoveMonster",
+        "OneHpMonster",
+        "SingleAttackMoveMonster",
+        "TenHpMonster",
+        "TestSubject",
+        "TheAdversaryMkOne",
+        "TheAdversaryMkThree",
+        "TheAdversaryMkTwo",
+    }
 
     count = 0
     for monster in monsters:
@@ -91,13 +118,21 @@ def main() -> None:
         lines.append(f"max_hp: {monster.get('max_hp', 0)}")
         lines.append(f"is_companion: {str(is_companion).lower()}")
         lines.append(f"moves: {json.dumps(monster.get('moves', []))}")
-        lines.append(f"move_pattern: {escape_yaml(monster.get('move_pattern_desc', ''))}")
+        # Resolve move pattern: per-entity string takes precedence over bulk desc
+        pattern_desc = monster.get("move_pattern_desc", "")
+        mp = monster.get("move_pattern")
+        if isinstance(mp, str) and mp:
+            pattern_desc = mp
+        lines.append(f"move_pattern: {escape_yaml(pattern_desc)}")
         lines.append(f"powers_on_spawn: {json.dumps(monster.get('powers_on_spawn', []))}")
         lines.append(f"encounters: {json.dumps(enc_refs)}")
 
-        from scripts.monster_notes import MONSTER_NOTES
+        # Notes: prefer per-entity data notes, fall back to monster_notes.py
+        note = monster.get("notes", "")
+        if not note:
+            from scripts.monster_notes import MONSTER_NOTES
 
-        note = MONSTER_NOTES.get(monster["class_name"], "")
+            note = MONSTER_NOTES.get(monster["class_name"], "")
         if note:
             lines.append(f"notes: {escape_yaml(note)}")
         lines.append("---")

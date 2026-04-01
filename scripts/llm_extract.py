@@ -22,11 +22,13 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 # Maps entity type to the decompiled source subdirectory
 ENTITY_TYPE_DIRS: dict[str, str] = {
     "events": "MegaCrit.Sts2.Core.Models.Events",
+    "monsters": "MegaCrit.Sts2.Core.Models.Monsters",
 }
 
 # Maps entity type to the localization file name
 ENTITY_TYPE_LOC: dict[str, str] = {
     "events": "events",
+    "monsters": "monsters",
 }
 
 CACHE_PATH = PROJECT_ROOT / "data" / ".llm_cache.json"
@@ -80,6 +82,11 @@ def slugify(name: str) -> str:
 def is_event_class(content: str) -> bool:
     """Check if this .cs file defines an EventModel subclass."""
     return ": EventModel" in content and ": AncientEventModel" not in content
+
+
+def is_monster_class(content: str) -> bool:
+    """Check if this .cs file defines a MonsterModel subclass."""
+    return ": MonsterModel" in content
 
 
 def get_shared_events(decompiled_dir: str) -> set[str]:
@@ -205,18 +212,29 @@ The source file is at: {source_path}
 6. When satisfied, say "Done"
 """
 
-    async for message in query(
-        prompt=agent_prompt,
-        options=ClaudeAgentOptions(
-            cwd=str(PROJECT_ROOT),
-            model=MODEL,
-            allowed_tools=["Read", "Write", "Edit", "Bash", "Glob", "Grep"],
-            permission_mode="bypassPermissions",
-            max_turns=30,
-        ),
-    ):
-        if isinstance(message, ResultMessage):
-            print(f"  Agent result: {message.result[:200] if message.result else '(empty)'}")
+    entity_file = PROJECT_ROOT / "data" / version / entity_type / f"{class_name}.json"
+    try:
+        async for message in query(
+            prompt=agent_prompt,
+            options=ClaudeAgentOptions(
+                cwd=str(PROJECT_ROOT),
+                model=MODEL,
+                allowed_tools=["Read", "Write", "Edit", "Bash", "Glob", "Grep"],
+                permission_mode="bypassPermissions",
+                max_turns=30,
+            ),
+        ):
+            if isinstance(message, ResultMessage):
+                print(f"  Agent result: {message.result[:200] if message.result else '(empty)'}")
+    except Exception as e:
+        # claude_agent_sdk may raise after the agent completes when run inside
+        # Claude Code (nested subprocess conflict). Check if the entity file was
+        # created successfully before deciding whether to treat this as an error.
+        if entity_file.exists():
+            print(f"  Warning: agent subprocess cleanup error (entity file was created): {e}")
+        else:
+            print(f"  Error: agent failed and entity file not created: {e}")
+            return
 
     # Update cache
     cache[entity_cache_key] = {
@@ -277,22 +295,26 @@ async def async_main() -> None:
 
         if entity_type == "events" and not is_event_class(content):
             continue
+        if entity_type == "monsters" and not is_monster_class(content):
+            continue
 
         loc_entries = get_loc_entries_for_entity(loc_data, class_name)
 
-        # Determine act info
-        if class_name in shared_events:
-            all_acts = ", ".join(act_names)
-            act_info = (
-                "This is a SHARED event (ModelDb.AllSharedEvents), available "
-                f"in all acts: {all_acts}. However, check IsAllowed() for "
-                "act restrictions that may limit which acts it actually appears in."
-            )
-        elif class_name in act_events:
-            acts = act_events[class_name]
-            act_info = f"This event is specific to: {', '.join(acts)}"
-        else:
-            act_info = "No act assignment found."
+        # Determine act info (events only)
+        act_info = ""
+        if entity_type == "events":
+            if class_name in shared_events:
+                all_acts = ", ".join(act_names)
+                act_info = (
+                    "This is a SHARED event (ModelDb.AllSharedEvents), available "
+                    f"in all acts: {all_acts}. However, check IsAllowed() for "
+                    "act restrictions that may limit which acts it actually appears in."
+                )
+            elif class_name in act_events:
+                acts = act_events[class_name]
+                act_info = f"This event is specific to: {', '.join(acts)}"
+            else:
+                act_info = "No act assignment found."
 
         await process_entity(
             class_name=class_name,

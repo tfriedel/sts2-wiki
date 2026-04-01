@@ -45,15 +45,17 @@ MONSTER_IMAGE_ALIASES: dict[str, str] = {
 
 # Monsters that are test/unused and should be skipped
 SKIP_MONSTERS = {
+    "Architect",
     "BigDummy",
+    "DeprecatedMonster",
     "MultiAttackMoveMonster",
     "OneHpMonster",
     "SingleAttackMoveMonster",
     "TenHpMonster",
     "TestSubject",
     "TheAdversaryMkOne",
-    "TheAdversaryMkTwo",
     "TheAdversaryMkThree",
+    "TheAdversaryMkTwo",
 }
 
 # Monsters without rendered images.
