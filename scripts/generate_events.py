@@ -104,17 +104,6 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
         },
         "notes": "Gold from option 1 is randomized: [blue]61–100[/blue] gold.",
     },
-    "DrowningBeacon": {
-        "option_overrides": {
-            "Bottle": {"description": "Procure a random [aqua]Potion[/aqua]."},
-            "Climb": {"description": "Obtain a random [gold]Relic[/gold]."},
-        },
-        "notes": (
-            "The potion is drawn from your character's pool + shared pool "
-            "(65% Common, 25% Uncommon, 10% Rare).\n\n"
-            "The relic is the next from the standard relic pool."
-        ),
-    },
     "FieldOfManSizedHoles": {
         "option_overrides": {
             "Enter Your Hole": {
@@ -436,9 +425,6 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
             "[gold]Examine Each[/gold]: see all [blue]3[/blue] to choose from "
             "(costs [red]15[/red] unblockable HP)."
         ),
-    },
-    "PunchOff": {
-        "notes": "Gold from Nab is randomized: [blue]91–98[/blue] gold.",
     },
     "SunkenTreasury": {
         "notes": (
