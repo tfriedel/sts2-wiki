@@ -15,9 +15,16 @@ import sys
 from pathlib import Path
 
 import anyio
-from claude_agent_sdk import ClaudeAgentOptions, ResultMessage, query
+from claude_agent_sdk import (
+    AssistantMessage,
+    ClaudeAgentOptions,
+    ResultMessage,
+    SystemMessage,
+    query,
+)
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+LOGS_DIR = PROJECT_ROOT / "logs" / "llm_extract"
 
 # Maps entity type to the decompiled source subdirectory
 ENTITY_TYPE_DIRS: dict[str, str] = {
@@ -213,6 +220,22 @@ The source file is at: {source_path}
 """
 
     entity_file = PROJECT_ROOT / "data" / version / entity_type / f"{class_name}.json"
+
+    # Set up transcript logging
+    log_dir = LOGS_DIR / entity_type
+    log_dir.mkdir(parents=True, exist_ok=True)
+    log_path = log_dir / f"{class_name}.log"
+    log_file = open(log_path, "w")
+
+    def log(text: str) -> None:
+        log_file.write(text + "\n")
+        log_file.flush()
+
+    log(f"=== Processing {entity_type}/{class_name} ===")
+    log(f"Source: {source_path}")
+    log(f"Cache key: {cache_key}")
+    log("")
+
     try:
         async for message in query(
             prompt=agent_prompt,
@@ -224,17 +247,30 @@ The source file is at: {source_path}
                 max_turns=30,
             ),
         ):
-            if isinstance(message, ResultMessage):
-                print(f"  Agent result: {message.result[:200] if message.result else '(empty)'}")
+            if isinstance(message, AssistantMessage):
+                for block in message.content:
+                    if hasattr(block, "text") and block.text:
+                        log(f"[assistant] {block.text}")
+                    elif hasattr(block, "type"):
+                        log(f"[assistant tool_use] {block.type}")
+            elif isinstance(message, SystemMessage):
+                log(f"[system:{message.subtype}] {str(message.data)[:200]}")
+            elif isinstance(message, ResultMessage):
+                result_text = message.result[:500] if message.result else "(empty)"
+                log(f"[result] {result_text}")
+                print(f"  Agent result: {result_text[:200]}")
     except Exception as e:
-        # claude_agent_sdk may raise after the agent completes when run inside
-        # Claude Code (nested subprocess conflict). Check if the entity file was
-        # created successfully before deciding whether to treat this as an error.
+        log(f"[error] {e}")
         if entity_file.exists():
-            print(f"  Warning: agent subprocess cleanup error (entity file was created): {e}")
+            print(f"  Warning: agent error (entity file was created): {e}")
         else:
             print(f"  Error: agent failed and entity file not created: {e}")
+            log_file.close()
             return
+    finally:
+        log_file.close()
+
+    print(f"  Transcript: {log_path.relative_to(PROJECT_ROOT)}")
 
     # Update cache
     cache[entity_cache_key] = {
