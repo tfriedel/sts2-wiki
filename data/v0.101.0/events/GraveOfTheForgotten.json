@@ -1,0 +1,27 @@
+{
+  "class_name": "GraveOfTheForgotten",
+  "title": "Grave of the Forgotten",
+  "description": "There is a single grave with a [jitter][aqua]roiling blue flame[/aqua][/jitter]...\n\nA prideful warrior died in battle but its soul is restless. It wants to keep fighting, you feel it [sine]begging[/sine] to journey with you.\n\nBut perhaps it's better for it to face the [red]truth[/red]?",
+  "options": [
+    {
+      "title": "Confront with Truth",
+      "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. [gold]Enchant[/gold] a card that [gold]Exhausts[/gold] with [purple]Soul's Power[/purple].",
+      "requires": "You have no cards with [gold]Exhaust[/gold] that can be [purple]Enchanted[/purple]."
+    },
+    {
+      "title": "Accept the Forgotten Soul",
+      "description": "Obtain [gold]Forgotten Soul[/gold]."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [
+    "Requires at least one Exhaust card in your deck that can be Enchanted with Soul's Power"
+  ],
+  "notes": "The [gold]Confront with Truth[/gold] option first adds [red]Decay[/red] to your deck, then lets you select one [gold]Exhaust[/gold] card from your deck to receive the [purple]Soul's Power[/purple] enchantment at level 1. If no eligible card exists, the option is locked.",
+  "card_refs": [
+    {"class_name": "Decay", "title": "Decay", "slug": "decay"}
+  ],
+  "relic_refs": [
+    {"class_name": "ForgottenSoul", "title": "Forgotten Soul", "slug": "forgotten-soul"}
+  ]
+}

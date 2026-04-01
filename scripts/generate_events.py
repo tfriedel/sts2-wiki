@@ -111,18 +111,6 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
             },
         },
     },
-    "GraveOfTheForgotten": {
-        "option_overrides": {
-            "Accept the {Relic}": {
-                "title": "Accept the Relic",
-                "description": "Obtain a random [gold]Relic[/gold].",
-            },
-            "Confront with Truth": {
-                "description": "Add [red]Decay[/red] to your Deck. "
-                "Enchant a card that Exhausts with a random [purple]Enchantment[/purple].",
-            },
-        },
-    },
     "HungryForMushrooms": {
         "options": [
             {
