@@ -5,14 +5,16 @@
   "options": [
     {
       "title": "Trudge On",
-      "description": "Gain [blue]61–100[/blue] [gold]Gold[/gold]. Lose [red]8[/red] HP."
+      "description": "Gain [blue]61\u201399[/blue] [gold]Gold[/gold]. Lose [red]8[/red] HP."
     },
     {
       "title": "Rest",
-      "description": "Heal [green]{Heal}[/green] HP. Fight some [red]enemies[/red]."
+      "description": "Heal [green][rest site amount][/green] HP. Fight some [red]enemies[/red]."
     }
   ],
   "acts": ["Overgrowth"],
   "conditions": [],
-  "notes": "The [blue]Gold[/blue] from [gold]Trudge On[/gold] is randomly determined: [blue]61\u201399[/blue] [gold]Gold[/gold]. The [red]8[/red] HP loss is [red]Unblockable[/red] and [red]Unpowered[/red] (cannot be blocked or reduced by powers).\n\nThe [green]Heal[/green] from [gold]Rest[/gold] uses the standard rest site formula. After healing, you are ambushed and [red]must fight[/red] a combat encounter\u2014you are shown a new scene and the only option is \u201cFight!\u201d. The combat provides [red]no rewards[/red] and the event ends after the fight regardless of outcome."
+  "notes": "The [red]8[/red] HP loss from [gold]Trudge On[/gold] is [red]Unblockable[/red] and [red]Unpowered[/red]\u2014it cannot be blocked or reduced by powers or relics. [gold]Gold[/gold] gained is randomly rolled: [blue]61\u201399[/blue] [gold]Gold[/gold].\n\nChoosing [gold]Rest[/gold] heals you for the standard rest site amount (roughly 30% of max HP), then immediately triggers a forced combat encounter. You are shown a new page with only the option \u201cFight!\u201d. The combat provides [red]no rewards[/red], and the event ends after the fight regardless of outcome.",
+  "card_refs": [],
+  "relic_refs": []
 }

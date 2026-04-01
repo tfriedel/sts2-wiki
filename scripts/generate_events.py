@@ -102,7 +102,15 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
         "option_overrides": {
             "Rest": {"description": "Heal [green]30%[/green] of max HP. Then fight some enemies."},
         },
-        "notes": "Gold from option 1 is randomized: [blue]61–100[/blue] gold.",
+        "notes": (
+            "The [red]8[/red] HP loss from [gold]Trudge On[/gold] is [red]unblockable[/red] "
+            "and [red]unpowered[/red] — it cannot be blocked or reduced by any powers or relics. "
+            "[gold]Gold[/gold] gained is random: [blue]61\u201399[/blue] [gold]Gold[/gold].\n\n"
+            "Choosing [gold]Rest[/gold] heals you for the standard rest site amount "
+            "(roughly [green]30%[/green] of max HP), then immediately forces combat "
+            "against a [red]Dense Vegetation encounter[/red]. "
+            "This combat provides [red]no rewards[/red], and the event ends after the fight."
+        ),
     },
     "FieldOfManSizedHoles": {
         "option_overrides": {
