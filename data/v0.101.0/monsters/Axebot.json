@@ -9,7 +9,7 @@
       "id": "BOOT_UP_MOVE",
       "title": "Boot Up",
       "intents": [
-        {"type": "block"},
+        {"type": "block", "amount": 10},
         {"type": "buff"}
       ],
       "effects": ["Gain 10 Block", "Apply 1 Strength"]
@@ -40,7 +40,7 @@
       "effects": ["Deal 10 damage", "Apply 1 Weak", "Apply 1 Frail"]
     }
   ],
-  "move_pattern": "Normally starts with a random cycle between The One-Two (weighted), Sharpen (cannot repeat consecutively), and Hammer Uppercut (weighted). When respawned via Stock, starts with Boot Up then enters the random cycle.",
-  "powers_on_spawn": ["Stock 2"],
-  "notes": "Axebot has 2 Stock charges by default (tracked by StockPower). It can respawn — when it does, it starts its move sequence with Boot Up (gaining Block and Strength) before returning to the random cycle of attacks."
+  "move_pattern": "Normally starts in a random cycle: randomly selects between The One-Two (weight 2), Sharpen (cannot repeat consecutively), and Hammer Uppercut (weight 2), returning to random selection after each move. When spawned mid-combat (respawn scenario), starts with Boot Up first, then joins the same random cycle.",
+  "powers_on_spawn": ["2 Stock"],
+  "notes": "Axebot enters combat with 2 stacks of Stock power, suggesting it can die and respawn during the encounter. Boot Up is only used when the Axebot is summoned mid-combat (e.g., upon respawn via its stock), at which point it gains 10 Block and 1 Strength before joining the normal random move rotation."
 }
