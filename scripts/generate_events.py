@@ -421,11 +421,14 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
     },
     "DollRoom": {
         "notes": (
-            "3 dolls are available, each containing a different relic "
-            "(Daughter of the Wind, Mr. Struggles, and either Bing Bong or Fable).\n\n"
-            "[gold]Random[/gold] (free): get 1 random doll.\n"
-            "[gold]Take Some Time[/gold] (5 HP): see 2 of 3, choose 1.\n"
-            "[gold]Examine[/gold] (15 HP): see all 3, choose 1."
+            "There are [blue]3[/blue] possible Doll Relics: "
+            "[gold]Daughter of the Wind[/gold], [gold]Mr. Struggles[/gold], "
+            "and [gold]Bing Bong[/gold].\n\n"
+            "[gold]Pick at Random[/gold]: get 1 of the 3 relics at random (free).\n"
+            "[gold]Take Some Time[/gold]: see [blue]2[/blue] of the 3 to choose from "
+            "(costs [red]5[/red] unblockable HP).\n"
+            "[gold]Examine Each[/gold]: see all [blue]3[/blue] to choose from "
+            "(costs [red]15[/red] unblockable HP)."
         ),
     },
     "PunchOff": {
@@ -548,6 +551,29 @@ def main() -> None:
     with open(os.path.join(data_dir, "events.json")) as f:
         events = json.load(f)
 
+    # Load per-entity JSON overrides from data/{version}/events/*.json
+    per_entity_dir = os.path.join(data_dir, "events")
+    per_entity_data: dict[str, dict] = {}
+    if os.path.isdir(per_entity_dir):
+        for fname in os.listdir(per_entity_dir):
+            if fname.endswith(".json"):
+                with open(os.path.join(per_entity_dir, fname)) as f:
+                    entity_data = json.load(f)
+                cname = entity_data.get("class_name", fname.removesuffix(".json"))
+                per_entity_data[cname] = entity_data
+
+    # Merge per-entity data over combined data (per-entity takes precedence)
+    events_by_class = {e["class_name"]: e for e in events}
+    for cname, entity_data in per_entity_data.items():
+        if cname in events_by_class:
+            events_by_class[cname].update(entity_data)
+        else:
+            events_by_class[cname] = entity_data
+    events = list(events_by_class.values())
+
+    # Load override directory path
+    overrides_dir = os.path.join(os.path.dirname(os.path.dirname(data_dir)), "overrides", "events")
+
     out = Path(output_dir)
     if out.exists():
         for p in out.glob("*.md"):
@@ -642,6 +668,33 @@ def main() -> None:
         if filepath.exists():
             slug = f"{slug}-{event['class_name'].lower()}"
             filepath = out / f"{slug}.md"
+
+        # Merge per-page override if it exists
+        override_path = os.path.join(overrides_dir, f"{slug}.md")
+        if os.path.exists(override_path):
+            with open(override_path) as f:
+                override_content = f.read().strip()
+            if override_content:
+                # Parse override: if it has YAML frontmatter, merge fields
+                if override_content.startswith("---"):
+                    parts = override_content.split("---", 2)
+                    if len(parts) >= 3:
+                        # Override frontmatter fields into the lines
+                        for line in parts[1].strip().split("\n"):
+                            if ":" in line:
+                                key = line.split(":")[0].strip()
+                                # Replace matching line in generated output
+                                for idx, gen_line in enumerate(lines):
+                                    if gen_line.startswith(f"{key}:"):
+                                        lines[idx] = line
+                                        break
+                        # Append body content
+                        body = parts[2].strip()
+                        if body:
+                            lines.append(body)
+                else:
+                    # Plain markdown — append after frontmatter
+                    lines.append(override_content)
 
         filepath.write_text("\n".join(lines))
         count += 1
