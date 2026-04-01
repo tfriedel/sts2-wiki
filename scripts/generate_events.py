@@ -443,7 +443,7 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
     "ThisOrThat": {
         "option_overrides": {
             "This": {
-                "description": "Lose [red]6[/red] HP. Gain [blue]41–69[/blue] [gold]Gold[/gold]."
+                "description": "Lose [red]6[/red] HP. Gain [blue]41–68[/blue] [gold]Gold[/gold]."
             },
         },
         "notes": (
