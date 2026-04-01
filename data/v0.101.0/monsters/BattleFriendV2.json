@@ -1,0 +1,22 @@
+{
+  "class_name": "BattleFriendV2",
+  "title": "Battle Friend V2.0",
+  "min_hp": 150,
+  "max_hp": 150,
+  "is_companion": true,
+  "moves": [
+    {
+      "id": "NOTHING_MOVE",
+      "title": "Nothing",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Repeats Nothing every turn.",
+  "powers_on_spawn": ["BattlewornDummyTimeLimitPower (3)"],
+  "notes": "A companion that does nothing each turn. Has a time limit power (BattlewornDummyTimeLimitPower, 3 stacks) applied on spawn."
+}
