@@ -1,0 +1,34 @@
+{
+  "class_name": "Chomper",
+  "title": "Chomper",
+  "min_hp": 63,
+  "max_hp": 67,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CLAMP_MOVE",
+      "title": "Clamp",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 9,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 9 damage", "2 hits"]
+    },
+    {
+      "id": "SCREECH_MOVE",
+      "title": "Screech",
+      "intents": [
+        {
+          "type": "status"
+        }
+      ],
+      "effects": ["Add 3 Dazed to discard"]
+    }
+  ],
+  "move_pattern": "Alternates between Clamp and Screech. Normally starts with Clamp, but may start with Screech in some encounters.",
+  "powers_on_spawn": ["2 Artifact"],
+  "notes": "Starts combat with 2 Artifact, making it immune to the first 2 debuffs applied to it. Screech shuffles 3 Dazed cards into the player's discard pile."
+}
