@@ -16,7 +16,7 @@
       "effects": []
     }
   ],
-  "move_pattern": "Always uses Nothing (hidden intent), looping indefinitely.",
+  "move_pattern": "Always performs Nothing (hidden intent), looping indefinitely.",
   "powers_on_spawn": [],
-  "notes": "The Architect has 9999 HP and only performs a hidden Nothing move — it is not a combat encounter in the traditional sense. Likely used as a non-combat entity or scripted encounter."
+  "notes": "The Architect is a non-combatant narrative entity. It has 9999 HP, always performs a hidden Nothing move, and loops indefinitely — it is not a conventional combat encounter."
 }
