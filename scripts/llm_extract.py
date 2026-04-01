@@ -141,6 +141,34 @@ def get_act_events(decompiled_dir: str) -> dict[str, list[str]]:
     return result
 
 
+def _build_instructions(entity_type: str, version: str, skip_build: bool) -> str:
+    """Build the Instructions section for the agent prompt."""
+    if skip_build:
+        return """\
+## Instructions
+
+1. Read the source file to understand the monster fully
+2. Write the JSON data file using the Write tool
+3. When satisfied, say "Done"
+
+Note: Do NOT run the page generator or site build — this is batch mode."""
+    return f"""\
+## Instructions
+
+1. Read the source file to understand the entity fully
+2. Write the JSON data file using the Write tool
+3. Run the page generator and site build using Bash:
+   ```
+   uv run python -m scripts.generate_{entity_type} \\
+     data/{version} site/src/content/{entity_type}
+   cd site && npm run build
+   ```
+4. Read the rendered HTML to review the page
+5. Fix any problems by updating the data file or creating an override, then rebuild
+6. When satisfied, say "Done"
+"""
+
+
 async def process_entity(
     class_name: str,
     source_path: str,
@@ -151,6 +179,7 @@ async def process_entity(
     act_info: str,
     cache: dict[str, object],
     force: bool,
+    skip_build: bool = False,
 ) -> None:
     """Process a single entity through the LLM agent."""
     with open(source_path) as f:
@@ -204,20 +233,7 @@ The source file is at: {source_path}
 - Generated page will be at: site/src/content/{entity_type}/{{slug}}.md
 - Rendered HTML will be at: site/dist/{entity_type}/{{slug}}/index.html
 
-## Instructions
-
-1. Read the source file to understand the event fully
-2. Write the JSON data file using the Write tool
-3. Run the page generator and site build using Bash:
-   ```
-   uv run python -m scripts.generate_{entity_type} \
-     data/{version} site/src/content/{entity_type}
-   cd site && npm run build
-   ```
-4. Read the rendered HTML to review the page
-5. Fix any problems by updating the data file or creating an override, then rebuild
-6. When satisfied, say "Done"
-"""
+{_build_instructions(entity_type, version, skip_build)}"""
 
     entity_file = PROJECT_ROOT / "data" / version / entity_type / f"{class_name}.json"
 
@@ -286,6 +302,11 @@ async def async_main() -> None:
     parser.add_argument("--version", default="v0.101.0")
     parser.add_argument("--entity", help="Process a single entity by class name")
     parser.add_argument("--force", action="store_true", help="Ignore cache")
+    parser.add_argument(
+        "--skip-build",
+        action="store_true",
+        help="Skip page generation and site build (batch mode — review separately)",
+    )
     args = parser.parse_args()
 
     entity_type = args.type
@@ -362,6 +383,7 @@ async def async_main() -> None:
             act_info=act_info,
             cache=cache,
             force=args.force,
+            skip_build=args.skip_build,
         )
 
     print("\nDone.")

@@ -1,0 +1,46 @@
+{
+  "class_name": "Axebot",
+  "title": "Axebot",
+  "min_hp": 42,
+  "max_hp": 46,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BOOT_UP_MOVE",
+      "title": "Boot Up",
+      "intents": [
+        {"type": "block"},
+        {"type": "buff"}
+      ],
+      "effects": ["Gain 10 Block", "Apply 1 Strength"]
+    },
+    {
+      "id": "ONE_TWO_MOVE",
+      "title": "The One-Two",
+      "intents": [
+        {"type": "multi_attack", "damage": 6, "hits": 2}
+      ],
+      "effects": ["Deal 6 damage", "2 hits"]
+    },
+    {
+      "id": "SHARPEN_MOVE",
+      "title": "Sharpen",
+      "intents": [
+        {"type": "buff"}
+      ],
+      "effects": ["Apply 4 Strength"]
+    },
+    {
+      "id": "HAMMER_UPPERCUT_MOVE",
+      "title": "Hammer Uppercut",
+      "intents": [
+        {"type": "attack", "damage": 10},
+        {"type": "debuff"}
+      ],
+      "effects": ["Deal 10 damage", "Apply 1 Weak", "Apply 1 Frail"]
+    }
+  ],
+  "move_pattern": "Normally starts with a random cycle between The One-Two (weighted), Sharpen (cannot repeat consecutively), and Hammer Uppercut (weighted). When respawned via Stock, starts with Boot Up then enters the random cycle.",
+  "powers_on_spawn": ["Stock 2"],
+  "notes": "Axebot has 2 Stock charges by default (tracked by StockPower). It can respawn — when it does, it starts its move sequence with Boot Up (gaining Block and Strength) before returning to the random cycle of attacks."
+}
