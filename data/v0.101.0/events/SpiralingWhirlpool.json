@@ -9,12 +9,14 @@
     },
     {
       "title": "Drink",
-      "description": "Heal [green]{Heal}[/green] HP."
+      "description": "Heal [green][33% of max HP][/green] HP."
     }
   ],
   "acts": ["Underdocks"],
   "conditions": [
-    "All players must have at least one card in their deck that can be enchanted with Spiral"
+    "Each player has at least one card enchantable with Spiral in their deck"
   ],
-  "notes": "The [green]Heal[/green] amount from [blue]Drink[/blue] is [green]33%[/green] of the player's maximum HP (rounded down to an integer).\n\nThe [purple]Observe[/purple] option prompts the player to select a card from their deck that can accept the [purple]Spiral[/purple] enchantment. The selected card is then enchanted with [purple]Spiral[/purple]."
+  "notes": "The [gold]Drink[/gold] option heals [green]33%[/green] of the player's maximum HP (rounded down to an integer). The [gold]Observe[/gold] option prompts the player to select one card from their deck that can receive the [purple]Spiral[/purple] enchantment — currently Strike and Defend cards qualify.",
+  "card_refs": [],
+  "relic_refs": []
 }
