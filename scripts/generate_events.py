@@ -107,8 +107,7 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
     "FieldOfManSizedHoles": {
         "option_overrides": {
             "Enter Your Hole": {
-                "description": "[gold]Enchant[/gold] a card with "
-                "a random [purple]Enchantment[/purple]."
+                "description": "[gold]Enchant[/gold] a card with [purple]Perfect Fit[/purple]."
             },
         },
     },
@@ -267,11 +266,6 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
             "Gold from Search is randomized: [blue]45–75[/blue] gold.\n\n"
             "The relic from Capture is pulled from the standard relic pool."
         ),
-    },
-    "RoundTeaParty": {
-        "option_overrides": {
-            "Enjoy Your Tea": {"description": "Obtain a random [red]Relic[/red]."},
-        },
     },
     "SunkenStatue": {
         "option_overrides": {
