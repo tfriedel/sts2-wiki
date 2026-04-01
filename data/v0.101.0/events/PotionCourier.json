@@ -1,0 +1,18 @@
+{
+  "class_name": "PotionCourier",
+  "title": "Potion Courier",
+  "description": "There is a [sine]sour[/sine] smell in the air and shortly after, you find a [gold]Potion Courier[/gold] collapsed on the ground.\nUnmoving. Lifeless. [jitter]Dead!?[/jitter]\nWhile their belongings have been ransacked, there is a batch of [green][sine]Foul Smelling Potions[/sine][/green] with a note: \"Recipient: Merchant\".",
+  "options": [
+    {
+      "title": "Grab Potions",
+      "description": "Procure [blue]3[/blue] [gold]Foul Potions[/gold]."
+    },
+    {
+      "title": "Ransack",
+      "description": "Procure [blue]1[/blue] random [gold]Uncommon Potion[/gold]."
+    }
+  ],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": ["Act 2+"],
+  "notes": "The [gold]Ransack[/gold] option picks one random [gold]Uncommon Potion[/gold] from the pool of all unlocked uncommon potions available to your character (both character-specific and shared potion pools). If no uncommon potions are unlocked, nothing is awarded."
+}
