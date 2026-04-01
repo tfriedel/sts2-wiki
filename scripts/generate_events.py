@@ -397,22 +397,28 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
     },
     "WelcomeToWongos": {
         "option_overrides": {
-            "Wongo's Featured Item": {"description": "Obtain a random [gold]Relic[/gold]."},
+            "Wongo's Featured Item": {
+                "description": "Pay [red]200[/red] [gold]Gold[/gold]. "
+                "Obtain a random [gold]Rare Relic[/gold]."
+            },
         },
         "notes": (
-            "[gold]Bargain Bin[/gold]: pulls from the Common relic pool specifically.\n"
-            "[gold]Featured Item[/gold]: pulls from the Rare relic pool specifically.\n"
-            "[gold]Mystery Box[/gold]: gives the Wongo's Mystery Ticket "
-            "relic (deferred rewards over 5 combats).\n\n"
-            "[gold]Leave[/gold] randomly downgrades 1 upgraded card from your deck.\n\n"
-            "Wongo Points accumulate across runs — every 2000 points earns a "
-            "Wongo Customer Appreciation Badge."
+            "[gold]Bargain Bin[/gold]: pulls from the Common relic pool. "
+            "Earns [blue]32[/blue] [gold]Wongo Points[/gold].\n"
+            "[gold]Featured Item[/gold]: pulls from the Rare relic pool; "
+            "the specific relic is shown in the option. "
+            "Earns [blue]16[/blue] [gold]Wongo Points[/gold].\n"
+            "[gold]Mystery Box[/gold]: gives the [gold]Wongo's Mystery Ticket[/gold] "
+            "relic (delivers [blue]3[/blue] relics after [blue]5[/blue] combats). "
+            "Earns [blue]8[/blue] [gold]Wongo Points[/gold].\n\n"
+            "[gold]Wongo Points[/gold] persist across runs. "
+            "Every [blue]2000[/blue] points earns a "
+            "[gold]Wongo Customer Appreciation Badge[/gold]. "
+            "After each purchase the clerk announces your running total "
+            "and remaining points to the next badge.\n\n"
+            "[red]Leave[/red]: only downgrades an [blue]upgraded[/blue] card "
+            "chosen at random. If you have no upgraded cards, nothing happens."
         ),
-    },
-    "WoodCarvings": {
-        "option_overrides": {
-            "Snake": {"description": "[gold]Enchant[/gold] 1 card with [purple]Slither[/purple]."},
-        },
     },
     "ColorfulPhilosophers": {
         "description": (
