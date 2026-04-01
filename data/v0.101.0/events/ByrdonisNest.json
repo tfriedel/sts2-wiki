@@ -1,0 +1,21 @@
+{
+  "class_name": "ByrdonisNest",
+  "title": "Byrdonis Nest",
+  "description": "You spot an enormous [jitter][red]Shambling Beast[/red][/jitter] chase off an injured [green][sine]Green Byrd[/sine][/green].\n\nIn the alcove the byrd fled from, a [gold]single unguarded egg[/gold] lies abandoned.\n\n[sine]Your stomach gurgles...[/sine]",
+  "options": [
+    {
+      "title": "Eat the Egg",
+      "description": "Gain [blue]7[/blue] Max HP."
+    },
+    {
+      "title": "Take the Egg",
+      "description": "Add [gold]Byrdonis Egg[/gold] to your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": ["No player has an event pet"],
+  "card_refs": [
+    {"class_name": "ByrdonisEgg", "title": "Byrdonis Egg", "slug": "byrdonis-egg"}
+  ],
+  "relic_refs": []
+}
