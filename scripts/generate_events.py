@@ -234,26 +234,6 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
             },
         },
     },
-    "TeaMaster": {
-        "options": [
-            {
-                "title": "Bone Tea",
-                "description": "Pay [red]50[/red] [gold]Gold[/gold]. "
-                "Obtain the [gold]Bone Tea[/gold] relic.",
-                "requires": "Requires [blue]50[/blue] [gold]Gold[/gold].",
-            },
-            {
-                "title": "Ember Tea",
-                "description": "Pay [red]150[/red] [gold]Gold[/gold]. "
-                "Obtain the [gold]Ember Tea[/gold] relic.",
-                "requires": "Requires [blue]150[/blue] [gold]Gold[/gold].",
-            },
-            {
-                "title": "Tea of Discourtesy",
-                "description": "Free. Obtain the [gold]Tea of Discourtesy[/gold] relic.",
-            },
-        ],
-    },
     "TheFutureOfPotions": {
         "description": (
             "A strange device promises to transform your potions into something greater.\n\n"
@@ -324,17 +304,15 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
             "[gold]Dish selection[/gold] uses weighted randomization. "
             "Every 5th grab is always Seapunk Salad (adds Feeding Frenzy card). "
             "Otherwise, dishes are drawn by weight from those currently available:\n\n"
-            "Caviar (upgrade a card): weight 6\n"
-            "Clam Roll (heal): weight 6, only if not at full HP\n"
+            "Caviar (+4 Max HP): weight 6\n"
+            "Clam Roll (heal 10 HP): weight 6, only if not at full HP\n"
             "Spicy Snappy (random upgrade): weight 3\n"
-            "Jelly Liver (+5 Max HP): weight 3\n"
+            "Jelly Liver (transform a card): weight 3\n"
             "Fried Eel (random colorless card): weight 3\n"
             "Suspicious Condiment (random potion): weight 3, only if you have open potion slots\n"
             "Golden Fysh (free, +75 gold): weight 1, only after first grab\n\n"
             "The previous dish cannot repeat. Spicy Snappy and Observe the Chef both "
             "upgrade a random card from your deck (not player-chosen). "
-            "Suspicious Condiment draws from character + shared potion pool "
-            "(65% Common, 25% Uncommon, 10% Rare). "
             "Fried Eel adds a random colorless card directly to your deck (no choice)."
         ),
     },
