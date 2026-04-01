@@ -153,15 +153,15 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
         "option_overrides": {
             "Read the Back": {
                 "description": "Choose an Attack to [gold]Enchant[/gold] "
-                "with a random [purple]Enchantment[/purple] at level [blue]2[/blue]."
+                "with [purple]Sharp[/purple] [blue]2[/blue]."
             },
             "Read a Random Passage": {
                 "description": "Choose a Skill to [gold]Enchant[/gold] "
-                "with a random [purple]Enchantment[/purple] at level [blue]2[/blue]."
+                "with [purple]Nimble[/purple] [blue]2[/blue]."
             },
             "Read the Entire Book": {
                 "description": "Choose a Power to [gold]Enchant[/gold] "
-                "with a random [purple]Enchantment[/purple] at level [blue]2[/blue]."
+                "with [purple]Swift[/purple] [blue]2[/blue]."
             },
         },
     },
