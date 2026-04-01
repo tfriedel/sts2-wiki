@@ -4,11 +4,11 @@
   "description": "You feel a faint rumbling as you round the corner to discover a gigantic spinning apparatus!\nIt has several slots which appear to convert liquids into a highly compressed digestible tablet.\n\nThe idea of turning these health tonics into a tiny morsel is uncomfortable but perhaps it's good to try new things?",
   "options": [
     {
-      "title": "Insert {Rarity} Potion",
-      "description": "Lose [gold]{Potion}[/gold]. Obtain an [gold]Upgraded[/gold] [gold]{Rarity} {Type}[/gold]."
+      "title": "Insert [rarity] Potion",
+      "description": "Lose [gold][your potion][/gold]. Obtain an [gold]Upgraded[/gold] [gold][matching rarity] [random type][/gold]."
     }
   ],
   "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
   "conditions": ["All players must have at least 2 potions"],
-  "notes": "One option appears for each of your first [gold]3[/gold] potions (up to 3 total). Selecting a potion sacrifices it and presents a choice of [gold]3 Upgraded[/gold] cards.\n\n[gold]Potion rarity → Card rarity:[/gold] Rare or Event potion → [gold]Rare[/gold] card; Uncommon potion → [gold]Uncommon[/gold] card; Common or Token potion → [gold]Common[/gold] card.\n\n[gold]Card type[/gold] is chosen randomly from Attack, Skill, and Power. Common and Token potions cannot produce Power cards.\n\nYou cannot remove potions during this event."
+  "notes": "One option appears for each of your first [gold]3[/gold] potions (up to 3 total). Selecting a potion sacrifices it and presents a choice of [gold]3 Upgraded[/gold] cards drawn from your character's card pool.\n\n[gold]Potion rarity → Card rarity:[/gold] Rare or Event potion → [gold]Rare[/gold] card; Uncommon potion → [blue]Uncommon[/blue] card; Common or Token potion → Common card.\n\n[gold]Card type[/gold] is randomly selected at the start of the event. Common and Token potions choose from Attack or Skill only; all other rarities can also produce Power cards.\n\nYou cannot remove potions during this event."
 }

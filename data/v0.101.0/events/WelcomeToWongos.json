@@ -23,12 +23,28 @@
       "description": "[red]Downgrade[/red] a random card."
     }
   ],
-  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
-  "conditions": ["Act 2 only", "At least 100 Gold"],
+  "acts": [
+    "Glory",
+    "Hive",
+    "Overgrowth",
+    "Underdocks"
+  ],
+  "conditions": [
+    "Act 2 only",
+    "At least 100 Gold"
+  ],
   "notes": "**Wongo Points** are a persistent currency tracked across all runs. Each purchase earns points: [gold]Bargain Bin[/gold] = [blue]32[/blue] points, [gold]Featured Item[/gold] = [blue]16[/blue] points, [gold]Mystery Box[/gold] = [blue]8[/blue] points. Accumulating [blue]2000[/blue] total Wongo Points rewards a [gold]Wongo Customer Appreciation Badge[/gold] relic. After every purchase, the clerk announces your current point total and how many remain until your next badge.\n\nThe [gold]Featured Item[/gold] is always a random [gold]Rare[/gold] relic eligible for shops, drawn before options are displayed, and its name is shown in the option text.\n\nThe [gold]Mystery Box[/gold] gives a [gold]Wongo's Mystery Ticket[/gold] relic, which delivers [blue]3[/blue] random relics after [blue]5[/blue] combats.\n\nThe [red]Leave[/red] option only downgrades an [blue]upgraded[/blue] card. If you have no upgraded cards, nothing happens.",
   "card_refs": [],
   "relic_refs": [
-    {"class_name": "WongosMysteryTicket", "title": "Wongo's Mystery Ticket", "slug": "wongos-mystery-ticket"},
-    {"class_name": "WongoCustomerAppreciationBadge", "title": "Wongo Customer Appreciation Badge", "slug": "wongo-customer-appreciation-badge"}
+    {
+      "class_name": "WongosMysteryTicket",
+      "title": "Wongo's Mystery Ticket",
+      "slug": "wongo-s-mystery-ticket"
+    },
+    {
+      "class_name": "WongoCustomerAppreciationBadge",
+      "title": "Wongo Customer Appreciation Badge",
+      "slug": "wongo-customer-appreciation-badge"
+    }
   ]
 }

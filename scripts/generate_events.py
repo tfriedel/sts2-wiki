@@ -354,26 +354,31 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
         ),
     },
     "Trial": {
-        "option_overrides": {
-            "Guilty": {
-                "description": "Effects vary by trial type. "
-                "May include: relics + a curse, healing, or gold."
-            },
-            "Innocent": {
-                "description": "Effects vary by trial type. "
-                "May include: card upgrades + a curse, gold + a curse, "
-                "or card transforms + a curse."
-            },
-        },
         "notes": (
-            "The trial scenario (Merchant/Noble/Nondescript) is chosen "
-            "randomly. Each scenario has different outcomes:\n\n"
-            "Merchant: Guilty gives 2 relics + Clumsy curse. "
-            "Innocent gives gold + Normality curse.\n\n"
-            "Noble: Guilty gives healing. "
-            "Innocent gives card transforms + Clumsy curse.\n\n"
-            "Nondescript: Guilty gives 2 card rewards from your pool. "
-            "Innocent gives card upgrades + Normality curse."
+            "This is a multi-stage event. Choosing [gold]Reject[/gold] on the initial screen "
+            "leads to a second page where the [gold]Grand Arbiter[/gold] threatens death for "
+            "refusal. From there you can still [gold]Accept[/gold] (give in) or "
+            "[red]Double Down[/red] \u2014 [red]Double Down[/red] deals [red]9999[/red] damage "
+            "(instant death) and shows an abandon-run confirmation dialog.\n\n"
+            "After [gold]Accepting[/gold] (from either screen), one of three trial scenarios "
+            "is chosen at random ([blue]1 in 3[/blue] each):\n\n"
+            "[gold]The Merchant[/gold] \u2014 accused of murder; evidence is thin. "
+            "[red]Guilty[/red]: Add [red]Regret[/red] to deck, gain [blue]2[/blue] random relics. "
+            "[green]Innocent[/green]: Add [red]Shame[/red] to deck, "
+            "upgrade [blue]2[/blue] cards.\n\n"
+            "[gold]The Noble[/gold] \u2014 charged with corruption; slips you a bribe note. "
+            "[red]Guilty[/red]: Heal [green]10[/green] HP. "
+            "[green]Innocent[/green]: Add [red]Regret[/red] to deck, "
+            "gain [blue]300[/blue] gold.\n\n"
+            "[gold]The Nondescript Woman[/gold] \u2014 charged with theft and con-artistry; "
+            "both sides compelling. "
+            "[red]Guilty[/red]: Add [red]Doubt[/red] to deck, gain [blue]2[/blue] card rewards. "
+            "[green]Innocent[/green]: Add [red]Doubt[/red] to deck, "
+            "transform [blue]2[/blue] cards.\n\n"
+            "The entrant number in the flavor text is randomly chosen between [blue]101[/blue] and "
+            "[blue]999[/blue] when the event is generated. "
+            "The [blue]2[/blue] random relics from the Merchant Guilty outcome are drawn from "
+            "the front of your character\u2019s relic pool."
         ),
     },
     "DollRoom": {

@@ -3,23 +3,17 @@
   "title": "The Merchant???",
   "description": "Placeholder",
   "options": [],
-  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "acts": [
+    "Glory",
+    "Hive",
+    "Overgrowth",
+    "Underdocks"
+  ],
   "conditions": [
     "Act 2+ only",
     "Single player only",
     "At least 100 Gold or a Foul Potion in your inventory"
   ],
   "notes": "6 relics are randomly selected from a pool of 9 to stock the shop each visit. Relics cost [gold]50 Gold[/gold] each.\n\nThrowing a [purple]Foul Potion[/purple] starts a fight with The Merchant??? ([blue]175 HP[/blue]). Winning rewards [gold]The Merchant's Rug???[/gold] plus all unsold relics still stocked in the shop.",
-  "relic_refs": [
-    {"class_name": "FakeAnchor", "title": "Anchor???", "slug": "fake-anchor"},
-    {"class_name": "FakeBloodVial", "title": "Blood Vial???", "slug": "fake-blood-vial"},
-    {"class_name": "FakeHappyFlower", "title": "Happy Flower???", "slug": "fake-happy-flower"},
-    {"class_name": "FakeLeesWaffle", "title": "Lee's Waffle???", "slug": "fake-lees-waffle"},
-    {"class_name": "FakeMango", "title": "Mango???", "slug": "fake-mango"},
-    {"class_name": "FakeOrichalcum", "title": "Orichalcum???", "slug": "fake-orichalcum"},
-    {"class_name": "FakeSneckoEye", "title": "Snecko Eye???", "slug": "fake-snecko-eye"},
-    {"class_name": "FakeStrikeDummy", "title": "Strike Dummy???", "slug": "fake-strike-dummy"},
-    {"class_name": "FakeVenerableTeaSet", "title": "Venerable Tea Set???", "slug": "fake-venerable-tea-set"},
-    {"class_name": "FakeMerchantsRug", "title": "The Merchant's Rug???", "slug": "fake-merchants-rug"}
-  ]
+  "relic_refs": []
 }

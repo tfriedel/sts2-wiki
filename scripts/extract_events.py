@@ -331,9 +331,7 @@ def build_act_event_map(decompiled_dir: str) -> dict[str, list[str]]:
                 event_to_acts[event_class].append(act_class_name)
 
     # Shared events (ModelDb.AllSharedEvents) appear in all acts
-    model_db_path = os.path.join(
-        decompiled_dir, "MegaCrit.Sts2.Core.Models", "ModelDb.cs"
-    )
+    model_db_path = os.path.join(decompiled_dir, "MegaCrit.Sts2.Core.Models", "ModelDb.cs")
     if os.path.exists(model_db_path):
         with open(model_db_path) as f:
             model_db = f.read()

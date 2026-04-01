@@ -1,0 +1,30 @@
+{
+  "class_name": "ColorfulPhilosophers",
+  "title": "Colorful Philosophers",
+  "description": "Before you is a rather epic sight.\nYou see 3 different colored statues towering over a dais, having a [jitter][red]heated debate[/red][/jitter] over the philosophical implications of color.\n\nAs you listen in, you get a sense that the most important question at hand is which color truly is [gold]THE BEST[/gold].\n\nYou chime in with your thoughts.",
+  "options": [
+    {
+      "title": "Pink",
+      "description": "Obtain [blue]3[/blue] Necrobinder cards."
+    },
+    {
+      "title": "Red",
+      "description": "Obtain [blue]3[/blue] Ironclad cards."
+    },
+    {
+      "title": "Orange",
+      "description": "Obtain [blue]3[/blue] Regent cards."
+    },
+    {
+      "title": "Green",
+      "description": "Obtain [blue]3[/blue] Silent cards."
+    },
+    {
+      "title": "Blue",
+      "description": "Obtain [blue]3[/blue] Defect cards."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [],
+  "notes": "Options are dynamically generated. The player's own class is always excluded. Only card pools the player has [gold]unlocked[/gold] are eligible. Up to [gold]3[/gold] options are shown, randomly selected from eligible other-class pools (drawn in order: Necrobinder, Ironclad, Regent, Silent, Defect).\n\nWhen an option is chosen, the player receives [gold]3 separate card rewards[/gold] simultaneously — one [red]Common[/red], one [yellow]Uncommon[/yellow], and one [purple]Rare[/purple] — each offering a choice of 3 cards from that class (Uniform odds, no rarity modification).\n\nAn [gold]Equality[/gold] option granting a [gold]Prismatic Shard[/gold] exists in the localization data but is not currently implemented in the game code."
+}
