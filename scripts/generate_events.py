@@ -340,7 +340,9 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
     "RoomFullOfCheese": {
         "notes": (
             "[gold]Gorge[/gold]: generates 8 Common-rarity cards from your character's pool, "
-            "then you pick 2."
+            "then you pick 2.\n\n"
+            "[gold]Search[/gold]: the [red]14[/red] HP loss is [red]unblockable[/red] "
+            "and not affected by powers or relics."
         ),
     },
     "Reflections": {
