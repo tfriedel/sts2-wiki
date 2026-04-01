@@ -241,8 +241,7 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
     "Symbiote": {
         "option_overrides": {
             "Approach": {
-                "description": "[gold]Enchant[/gold] an Attack "
-                "with a random [purple]Enchantment[/purple]."
+                "description": "[gold]Enchant[/gold] an Attack with [purple]Corrupted[/purple]."
             },
         },
     },
