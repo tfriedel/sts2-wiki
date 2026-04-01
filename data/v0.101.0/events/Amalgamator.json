@@ -1,0 +1,26 @@
+{
+  "class_name": "Amalgamator",
+  "title": "Amalgamator",
+  "description": "[b][jitter]CLANG! CLANG!!![/jitter][/b]\n\nYou hear the echoes of metal upon metal on the otherside of a wall...\n\nAs you press your head against the wall to listen in\u2014the wall opens up, revealing a [orange]hulking six-armed figure[/orange] toiling away.\nIts \u201cface\u201d is a [gold][sine]swirling vortex of glowing sigils[/sine][/gold] that shift about.\n\n\u201cOne with an [aqua]Ascending Spirit[/aqua] has found my workshop? Let\u2019s get [jitter]COMBINING[/jitter]!\u201d",
+  "options": [
+    {
+      "title": "Combine Strikes",
+      "description": "Remove [blue]2[/blue] [gold]Strikes[/gold]. Add [gold]Ultimate Strike[/gold] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Combine Defends",
+      "description": "Remove [blue]2[/blue] [gold]Defends[/gold]. Add [gold]Ultimate Defend[/gold] to your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [
+    "At least 2 basic removable Strike cards in deck",
+    "At least 2 basic removable Defend cards in deck"
+  ],
+  "notes": "You choose which 2 [gold]Strike[/gold] or [gold]Defend[/gold] cards to remove via a card selection screen. Only [gold]Basic[/gold] rarity Strike/Defend cards that are removable (not Seared) count toward the requirements and can be selected. Both options are always available as long as spawn conditions are met.",
+  "card_refs": [
+    {"class_name": "UltimateStrike", "title": "Ultimate Strike", "slug": "ultimate-strike"},
+    {"class_name": "UltimateDefend", "title": "Ultimate Defend", "slug": "ultimate-defend"}
+  ],
+  "relic_refs": []
+}
