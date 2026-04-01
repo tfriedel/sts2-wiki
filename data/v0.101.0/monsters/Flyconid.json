@@ -1,0 +1,37 @@
+{
+  "class_name": "Flyconid",
+  "title": "Flyconid",
+  "min_hp": 51,
+  "max_hp": 53,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "VULNERABLE_SPORES_MOVE",
+      "title": "Weakening Spores",
+      "intents": [
+        {"type": "debuff"}
+      ],
+      "effects": ["Apply 2 Vulnerable to all targets"]
+    },
+    {
+      "id": "FRAIL_SPORES_MOVE",
+      "title": "Frail Spores",
+      "intents": [
+        {"type": "attack", "damage": 9},
+        {"type": "debuff"}
+      ],
+      "effects": ["Deal 9 damage", "Apply 2 Frail to all targets"]
+    },
+    {
+      "id": "SMASH_MOVE",
+      "title": "Smash",
+      "intents": [
+        {"type": "attack", "damage": 12}
+      ],
+      "effects": ["Deal 12 damage"]
+    }
+  ],
+  "move_pattern": "First turn picks randomly (no repeat) from: Frail Spores (weight 2) or Smash. After that, picks randomly (no repeat) from: Weakening Spores (weight 3), Frail Spores (weight 2), or Smash.",
+  "powers_on_spawn": [],
+  "notes": "On the first turn, the INITIAL random branch excludes Weakening Spores, picking only from Frail Spores or Smash. Subsequent turns use the full random pool. No move can repeat consecutively. Frail Spores also deals 9 damage in addition to applying 2 Frail to all targets."
+}

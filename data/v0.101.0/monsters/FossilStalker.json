@@ -1,0 +1,37 @@
+{
+  "class_name": "FossilStalker",
+  "title": "Fossil Stalker",
+  "min_hp": 54,
+  "max_hp": 56,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "LATCH_MOVE",
+      "title": "Latch",
+      "intents": [
+        {"type": "attack", "damage": 14}
+      ],
+      "effects": ["Deal 14 damage"]
+    },
+    {
+      "id": "TACKLE_MOVE",
+      "title": "Tackle",
+      "intents": [
+        {"type": "attack", "damage": 11},
+        {"type": "debuff"}
+      ],
+      "effects": ["Deal 11 damage", "Apply 1 Frail"]
+    },
+    {
+      "id": "LASH_MOVE",
+      "title": "Lash",
+      "intents": [
+        {"type": "multi_attack", "damage": 4, "hits": 2}
+      ],
+      "effects": ["Deal 4 damage 2 times"]
+    }
+  ],
+  "move_pattern": "Starts with Latch, then randomly picks from: Latch (weight 2), Tackle (weight 2), or Lash (weight 2). No move can repeat consecutively.",
+  "powers_on_spawn": ["Suck (3)"],
+  "notes": "Spawns with 3 Suck power. Tackle deals 11 damage and applies 1 Frail. Lash hits twice for 4 each. All moves in the random pool have equal weight (2 each) and none can repeat consecutively."
+}
