@@ -1,0 +1,22 @@
+{
+  "class_name": "BigDummy",
+  "title": "Big Dummy",
+  "min_hp": 9999,
+  "max_hp": 9999,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "NOTHING",
+      "title": "Nothing",
+      "intents": [
+        {
+          "type": "hidden"
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Loops the Nothing move indefinitely.",
+  "powers_on_spawn": [],
+  "notes": "Test/debug monster. Does nothing every turn."
+}
