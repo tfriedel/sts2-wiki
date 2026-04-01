@@ -1,0 +1,24 @@
+{
+  "class_name": "BattlewornDummy",
+  "title": "Battleworn Dummy",
+  "description": "As you approach, it begins to rumble and fizzle and lights up brilliantly!\n\n\u201c[jitter]BZZZT![/jitter] TIME TO TRAIN!!! YOU HAVE [blue]3 TURNS[/blue] TO DEFEAT ME!\nCHOOSE A SETTING OR FACE [red]LETHAL HUMILIATION[/red].\nHere are the options:\u201d\n\nAfter the terrifying message, the dummy carefully reads out detailed instructions.\n\nWhat do you choose?",
+  "options": [
+    {
+      "title": "Setting 1",
+      "description": "Fight a [blue]75[/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+    },
+    {
+      "title": "Setting 2",
+      "description": "Fight a [blue]150[/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
+    },
+    {
+      "title": "Setting 3",
+      "description": "Fight a [blue]300[/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "This is a combat event. You must defeat the dummy within [blue]3 turns[/blue] — all three settings apply a [red]time limit power[/red] of 3. If you run out of time without defeating the dummy, you receive [red]no reward[/red] and a humiliating defeat message.\n\nThe HP values shown ([blue]75[/blue] / [blue]150[/blue] / [blue]300[/blue]) are base single-player values and scale upward in multiplayer runs.\n\nFor [gold]Setting 2[/gold], only upgradable cards in your deck are eligible. The game shuffles them and upgrades up to [blue]2[/blue].\n\nFor [gold]Setting 3[/gold], the relic is drawn from the front of your character's relic pool.",
+  "card_refs": [],
+  "relic_refs": []
+}
