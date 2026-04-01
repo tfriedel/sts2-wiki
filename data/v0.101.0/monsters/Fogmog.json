@@ -33,14 +33,14 @@
     },
     {
       "id": "HEADBUTT_MOVE",
-      "title": "Thwack",
+      "title": "Headbutt",
       "intents": [
         {"type": "attack", "damage": 16}
       ],
       "effects": ["Deal 16 damage"]
     }
   ],
-  "move_pattern": "Starts with Illusion (summons EyeWithTeeth), then Swipe (9 damage + 1 Strength), then randomly either Swipe Random (→ Headbutt) or Headbutt directly (→ Swipe). After the random branch resolves, cycles back to Swipe.",
+  "move_pattern": "Starts with Illusory Spores (summons an EyeWithTeeth), then Thwack. After each Thwack, randomly either uses Thwack again (40%, then forced into Headbutt) or goes directly to Headbutt (60%). Headbutt always leads back to Thwack, repeating the cycle.",
   "powers_on_spawn": [],
-  "notes": "Opens by summoning an EyeWithTeeth illusion. Then Swipe, followed by a random branch: 40% chance to Swipe again (forced to Headbutt next), or 60% chance to go straight to Headbutt (then back to Swipe). Swipe/Swipe Random both deal 9 damage and grant 1 Strength. Headbutt deals 16 damage. No move can repeat consecutively in the random branch."
+  "notes": "Illusory Spores summons an EyeWithTeeth monster into combat on the first turn. Each use of Thwack (both SWIPE_MOVE and SWIPE_RANDOM_MOVE) also grants the Fogmog 1 Strength, so its attack damage increases over the course of the fight. The random branch after Thwack uses CannotRepeat, preventing consecutive use of the same branch."
 }

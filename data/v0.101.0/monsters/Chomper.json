@@ -28,7 +28,7 @@
       "effects": ["Add 3 Dazed to discard"]
     }
   ],
-  "move_pattern": "Alternates between Clamp and Screech. Normally starts with Clamp, but may start with Screech in some encounters.",
-  "powers_on_spawn": ["2 Artifact"],
-  "notes": "Starts combat with 2 Artifact, making it immune to the first 2 debuffs applied to it. Screech shuffles 3 Dazed cards into the player's discard pile."
+  "move_pattern": "Alternates: Clamp → Screech → (repeat). Normally starts with Clamp, but may start with Screech in certain encounters.",
+  "powers_on_spawn": ["Artifact 2"],
+  "notes": "Starts combat with 2 Artifact, making it immune to the first 2 debuffs applied to it. Screech adds 3 Dazed cards directly to the player's discard pile. The Chomper may be configured via ScreamFirst to open with Screech instead of Clamp in specific encounters."
 }

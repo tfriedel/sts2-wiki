@@ -7,11 +7,11 @@
   "moves": [
     {
       "id": "VULNERABLE_SPORES_MOVE",
-      "title": "Weakening Spores",
+      "title": "Vulnerable Spores",
       "intents": [
         {"type": "debuff"}
       ],
-      "effects": ["Apply 2 Vulnerable to all targets"]
+      "effects": ["Apply 2 Vulnerable"]
     },
     {
       "id": "FRAIL_SPORES_MOVE",
@@ -20,7 +20,7 @@
         {"type": "attack", "damage": 9},
         {"type": "debuff"}
       ],
-      "effects": ["Deal 9 damage", "Apply 2 Frail to all targets"]
+      "effects": ["Deal 9 damage", "Apply 2 Frail"]
     },
     {
       "id": "SMASH_MOVE",
@@ -31,7 +31,7 @@
       "effects": ["Deal 12 damage"]
     }
   ],
-  "move_pattern": "First turn picks randomly (no repeat) from: Frail Spores (weight 2) or Smash. After that, picks randomly (no repeat) from: Weakening Spores (weight 3), Frail Spores (weight 2), or Smash.",
+  "move_pattern": "First turn randomly picks from: Frail Spores (weight 2) or Smash (weight 1), no repeats. After each subsequent move, randomly picks from: Vulnerable Spores (weight 3), Frail Spores (weight 2), or Smash (weight 1), no repeats.",
   "powers_on_spawn": [],
-  "notes": "On the first turn, the INITIAL random branch excludes Weakening Spores, picking only from Frail Spores or Smash. Subsequent turns use the full random pool. No move can repeat consecutively. Frail Spores also deals 9 damage in addition to applying 2 Frail to all targets."
+  "notes": "Vulnerable Spores is unavailable on the very first turn (not in the INITIAL branch). From turn two onward it is the most likely move (weight 3 vs 2 and 1). No move can repeat consecutively."
 }

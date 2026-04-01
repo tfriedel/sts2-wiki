@@ -1,0 +1,45 @@
+{
+  "class_name": "Entomancer",
+  "title": "Entomancer",
+  "min_hp": 155,
+  "max_hp": 155,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BEES_MOVE",
+      "title": "Beeeees!",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 3,
+          "hits": 8
+        }
+      ],
+      "effects": ["Deal 3 damage", "8 hits"]
+    },
+    {
+      "id": "SPEAR_MOVE",
+      "title": "Spear!",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 20
+        }
+      ],
+      "effects": ["Deal 20 damage"]
+    },
+    {
+      "id": "PHEROMONE_SPIT_MOVE",
+      "title": "Pheromone Spit",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["If Personal Hive < 3: Gain 1 Personal Hive and Gain 1 Strength; Otherwise: Gain 2 Strength"]
+    }
+  ],
+  "move_pattern": "Starts with Beeeees!, then cycles: Beeeees! → Spear! → Pheromone Spit → repeat",
+  "powers_on_spawn": ["PersonalHivePower"],
+  "notes": "The Entomancer starts combat with 1 stack of Personal Hive. Pheromone Spit has conditional behavior: if Personal Hive is below 3, it gains 1 Personal Hive and 1 Strength; once Personal Hive reaches 3 or more, it gains 2 Strength instead. Over repeated cycles, the Entomancer steadily stacks Strength, hitting harder with Beeeees! and Spear! as the fight goes on."
+}

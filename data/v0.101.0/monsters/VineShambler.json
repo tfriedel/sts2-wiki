@@ -1,0 +1,49 @@
+{
+  "class_name": "VineShambler",
+  "title": "Vine Shambler",
+  "min_hp": 64,
+  "max_hp": 64,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "GRASPING_VINES_MOVE",
+      "title": "Grasping Vines",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 9 damage", "Apply 1 Tangled"]
+    },
+    {
+      "id": "SWIPE_MOVE",
+      "title": "Swipe",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 7,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 7 damage", "2 hits"]
+    },
+    {
+      "id": "CHOMP_MOVE",
+      "title": "Chomp",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        }
+      ],
+      "effects": ["Deal 18 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Swipe, then cycles: Swipe → Grasping Vines → Chomp → repeat.",
+  "powers_on_spawn": [],
+  "notes": "Grasping Vines both deals damage and applies 1 Tangled to the target."
+}

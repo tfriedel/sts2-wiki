@@ -146,5 +146,97 @@
   "monsters:Architect": {
     "cache_key": "1a09aeabf7b48f1f6c24d1d0186524223ea80014469d03e0910855dd76b54ddf",
     "last_processed": "1774726378.1105974"
+  },
+  "monsters:AxeRubyRaider": {
+    "cache_key": "5871cb965bf508dd94c0a80f83dd5d5e5d177109a3990cff230659edb12019b2",
+    "last_processed": "1774726378.1658976"
+  },
+  "monsters:Axebot": {
+    "cache_key": "0f80f73e596a49b4ae1249ca3a1799278149c96138dcd27f5f2be30e993dd821",
+    "last_processed": "1774726378.153282"
+  },
+  "monsters:BattleFriendV1": {
+    "cache_key": "52b9f3ea1681d0ce5afe44a436d9dbeb6da3936681f2c68fa908fd26739e698f",
+    "last_processed": "1774726378.175982"
+  },
+  "monsters:BigDummy": {
+    "cache_key": "120508bb27c6a7140f1cfcfe1e32ec8799c4da7674a7e3e02e78ef355dd88fa3",
+    "last_processed": "1774726378.1945996"
+  },
+  "monsters:BowlbugNectar": {
+    "cache_key": "23f6402c42b32041595da627b10655228f108abf23d735f06867f53ffc673744",
+    "last_processed": "1774726378.2288368"
+  },
+  "monsters:BattleFriendV3": {
+    "cache_key": "9182269da503e4fce97536de6c82b8986501127a3429814f16ebd84a50318715",
+    "last_processed": "1774726378.191426"
+  },
+  "monsters:BattleFriendV2": {
+    "cache_key": "b2a99e257f25da23d20cceac6ee870061a15b11679c97043c535417db70030ed",
+    "last_processed": "1774726378.186444"
+  },
+  "monsters:BowlbugEgg": {
+    "cache_key": "4fe9a9c265b0cfb222cf8b8aed9da98266eeaf38ab9237b27b0387ac0929aae8",
+    "last_processed": "1774726378.2120976"
+  },
+  "monsters:BruteRubyRaider": {
+    "cache_key": "bfca367a4f5a89fe7c1ed27c6a82e6e296213f1cb303426387f37bf533fdf0e8",
+    "last_processed": "1774726378.2852423"
+  },
+  "monsters:Chomper": {
+    "cache_key": "ee668533e8f3e4236ba91171c1da502de1a151e1f4a422bd533a7b24f7bb6852",
+    "last_processed": "1774726378.4413154"
+  },
+  "monsters:CorpseSlug": {
+    "cache_key": "995db6261b50dceed473fb0c122b0b1009cfc58312415fb6c2f18921aa7c0603",
+    "last_processed": "1774726378.4581454"
+  },
+  "monsters:DecimillipedeSegment": {
+    "cache_key": "854e2381606bf5b377347c31d25edb22a49be6b57d81a1218dbb1d4ac2cc22c1",
+    "last_processed": "1774726378.6092694"
+  },
+  "monsters:DeprecatedMonster": {
+    "cache_key": "ddcc2f4743a6f45f381f459f3c12c0d68509ba38ae60e1a4c75eff4483e9da6e",
+    "last_processed": "1774726378.6191473"
+  },
+  "monsters:DevotedSculptor": {
+    "cache_key": "de5da6d8a275b647e5cfe49c199a26cfb68185728190e0b8c99357aa563f1fd1",
+    "last_processed": "1774726378.6422772"
+  },
+  "monsters:Doormaker": {
+    "cache_key": "b1aac7a8f03dd4104ee86ddddc208955eb9466c91f4510209a74bad8a0c50077",
+    "last_processed": "1774726378.70076"
+  },
+  "monsters:Entomancer": {
+    "cache_key": "7f731b7b77870395f9a089152d8eea689c4c494671849fb8311cf359f2f3b3da",
+    "last_processed": "1774726378.7378662"
+  },
+  "monsters:Exoskeleton": {
+    "cache_key": "2194a35282d5868b886e71f6689e6977095909f524c13b92d766721222a8615a",
+    "last_processed": "1774726378.1514971"
+  },
+  "monsters:EyeWithTeeth": {
+    "cache_key": "cd8d65ad54a279d4e6ef5093885df352064e6f114228db83f7c746bcf9195d38",
+    "last_processed": "1774726378.1635191"
+  },
+  "monsters:Fabricator": {
+    "cache_key": "5a167b87fb6721312346734616eeb1e511cbd5106c7d8e2ee903c714eedecf77",
+    "last_processed": "1774726378.190526"
+  },
+  "monsters:FakeMerchantMonster": {
+    "cache_key": "9817d5be7339d16e5a374458ff15b3919c5d51cd95ed66b7302acf029d675881",
+    "last_processed": "1774726378.2214148"
+  },
+  "monsters:FatGremlin": {
+    "cache_key": "326b5095d325bbaa41824b25b388177f852a954823a8a732d32b483d27c527d7",
+    "last_processed": "1774726378.2317564"
+  },
+  "monsters:FlailKnight": {
+    "cache_key": "1875c11225f01b7edd26e8fd6c42e4278d093f7433e5d72317412f4277757526",
+    "last_processed": "1774726378.2435904"
+  },
+  "monsters:Flyconid": {
+    "cache_key": "54ff08034ba3cc43488d0e20513f63b9983f47f6543af99351944e85e0b8fe3c",
+    "last_processed": "1774726378.266542"
   }
 }

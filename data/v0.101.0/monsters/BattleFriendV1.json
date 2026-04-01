@@ -12,7 +12,7 @@
       "effects": []
     }
   ],
-  "move_pattern": "Repeats Nothing indefinitely (self-loop).",
+  "move_pattern": "Loops on Nothing indefinitely — the companion takes no actions.",
   "powers_on_spawn": ["BattlewornDummyTimeLimitPower (3)"],
-  "notes": "A companion unit. Does nothing each turn. Enters combat with 3 stacks of BattlewornDummyTimeLimitPower."
+  "notes": "A companion that fights alongside the player. Applies BattlewornDummyTimeLimitPower with 3 stacks on entering combat, suggesting a 3-turn time limit before some effect triggers. Takes no actions of its own each turn."
 }

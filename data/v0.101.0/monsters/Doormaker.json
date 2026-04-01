@@ -1,0 +1,81 @@
+{
+  "class_name": "Doormaker",
+  "title": "Doormaker",
+  "min_hp": 512,
+  "max_hp": 512,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "DRAMATIC_OPEN_MOVE",
+      "title": "Dramatic Open",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Reveal true form",
+        "Set HP to 512",
+        "Remove all powers",
+        "Apply 1 Hunger"
+      ]
+    },
+    {
+      "id": "HUNGER_MOVE",
+      "title": "Hunger",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 13,
+          "hits": 2
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 13 damage",
+        "2 hits",
+        "Apply 1 Scrutiny"
+      ]
+    },
+    {
+      "id": "SCRUTINY_MOVE",
+      "title": "Scrutiny",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 35
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 35 damage",
+        "Apply 1 Grasp"
+      ]
+    },
+    {
+      "id": "GRASP_MOVE",
+      "title": "Grasp",
+      "intents": [
+        {
+          "type": "buff"
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Gain 5 Strength",
+        "Apply -1 Strength to all players",
+        "Apply -1 Dexterity to all players",
+        "Apply 1 Hunger"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Dramatic Open (phase transition). Then cycles: Hunger → Scrutiny → Grasp → Hunger (repeating).",
+  "powers_on_spawn": [],
+  "notes": "The Doormaker begins combat disguised as a 'Door' with effectively infinite HP and no visible health bar. On its first turn (Dramatic Open), it reveals its true form — resetting its HP to 512, removing all powers, and applying 1 Hunger. After Dramatic Open, it cycles through three phases (Hunger → Scrutiny → Grasp), each swapping a cosmetic phase power (Hunger, Scrutiny, Grasp) that visually indicates the current phase. The Grasp move permanently weakens the player (-1 Strength and -1 Dexterity) while strengthening itself (+5 Strength) each cycle."
+}

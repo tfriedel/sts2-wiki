@@ -40,7 +40,7 @@
       "effects": ["Deal 10 damage", "Apply 1 Weak", "Apply 1 Frail"]
     }
   ],
-  "move_pattern": "Normally starts in a random cycle: randomly selects between The One-Two (weight 2), Sharpen (cannot repeat consecutively), and Hammer Uppercut (weight 2), returning to random selection after each move. When spawned mid-combat (respawn scenario), starts with Boot Up first, then joins the same random cycle.",
-  "powers_on_spawn": ["2 Stock"],
-  "notes": "Axebot enters combat with 2 stacks of Stock power, suggesting it can die and respawn during the encounter. Boot Up is only used when the Axebot is summoned mid-combat (e.g., upon respawn via its stock), at which point it gains 10 Block and 1 Strength before joining the normal random move rotation."
+  "move_pattern": "Normally starts directly in a random rotation: The One-Two (weight 2), Sharpen (cannot repeat consecutively), or Hammer Uppercut (weight 2). All moves loop back to the same random rotation. When summoned via a special effect that sets a stock override amount, starts with Boot Up before entering the random rotation.",
+  "powers_on_spawn": ["Stock 2"],
+  "notes": "Axebot spawns with 2 Stock by default. Boot Up (Block + Strength) is only the opening move when Axebot is summoned mid-combat with an explicit stock override — normal encounters skip it and go straight to the random rotation. Sharpen applies 4 Strength but cannot be used twice in a row. Hammer Uppercut applies both Weak and Frail to its target."
 }

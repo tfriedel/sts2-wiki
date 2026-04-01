@@ -1,0 +1,35 @@
+{
+  "class_name": "TheLost",
+  "title": "The Lost",
+  "min_hp": 99,
+  "max_hp": 99,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "DEBILITATING_SMOG",
+      "title": "Debilitating Smog",
+      "intents": [
+        { "type": "debuff" },
+        { "type": "buff" }
+      ],
+      "effects": [
+        "Apply -2 Strength to all enemies",
+        "Gain 2 Strength"
+      ]
+    },
+    {
+      "id": "EYE_LASERS",
+      "title": "Eye Lasers",
+      "intents": [
+        { "type": "multi_attack", "damage": 5, "hits": 2 }
+      ],
+      "effects": [
+        "Deal 5 damage",
+        "2 hits"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Debilitating Smog → Eye Lasers → Debilitating Smog → ...",
+  "powers_on_spawn": ["PossessStrength"],
+  "notes": "Starts with 1 PossessStrength. Debilitating Smog steals 2 Strength from each enemy (reduces their Strength by 2, gains 2 Strength itself), making it progressively stronger if repeatedly allowed to use it."
+}

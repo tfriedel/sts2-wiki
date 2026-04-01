@@ -1,0 +1,33 @@
+{
+  "class_name": "DevotedSculptor",
+  "title": "Devoted Sculptor",
+  "min_hp": 172,
+  "max_hp": 172,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "FORBIDDEN_INCANTATION_MOVE",
+      "title": "Forbidden Incantation",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 9 Ritual"]
+    },
+    {
+      "id": "SAVAGE_MOVE",
+      "title": "Savage",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": ["Deal 15 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Forbidden Incantation (applies Ritual to itself), then uses Savage every turn indefinitely.",
+  "powers_on_spawn": [],
+  "notes": "Opens combat by applying 9 Ritual to itself — Ritual increases Strength by 1 at the end of each turn. After the opening buff, it attacks every turn with Savage for 15 damage, which grows stronger as Ritual stacks."
+}

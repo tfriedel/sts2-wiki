@@ -9,7 +9,10 @@
       "id": "RELOAD_MOVE",
       "title": "Reload",
       "intents": [
-        {"type": "block", "amount": 3}
+        {
+          "type": "block",
+          "amount": 3
+        }
       ],
       "effects": ["Gain 3 Block"]
     },
@@ -17,12 +20,14 @@
       "id": "FIRE_MOVE",
       "title": "Fire!",
       "intents": [
-        {"type": "attack", "damage": 16}
+        {
+          "type": "attack",
+          "damage": 16
+        }
       ],
       "effects": ["Deal 16 damage"]
     }
   ],
-  "move_pattern": "Starts with Reload (Gain 3 Block), then alternates: Fire → Reload → Fire → Reload indefinitely.",
-  "powers_on_spawn": [],
-  "notes": "Alternates between reloading (gaining 3 Block) and firing (dealing 16 damage). Starts with Reload on the first turn."
+  "move_pattern": "Starts with Reload, then alternates: Fire → Reload → Fire → Reload...",
+  "powers_on_spawn": []
 }

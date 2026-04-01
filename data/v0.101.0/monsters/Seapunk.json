@@ -36,12 +36,14 @@
           "type": "buff"
         },
         {
-          "type": "block"
+          "type": "block",
+          "amount": 8
         }
       ],
       "effects": ["Gain 8 Block", "Apply 2 Strength"]
     }
   ],
   "move_pattern": "Cycles: Sea Kick → Spinning Kick → Bubble Burp → (repeat)",
-  "powers_on_spawn": []
+  "powers_on_spawn": [],
+  "notes": "Each use of Bubble Burp applies 2 Strength to the Seapunk, increasing the damage of all subsequent attacks."
 }

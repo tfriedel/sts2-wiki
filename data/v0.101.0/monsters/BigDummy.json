@@ -16,7 +16,7 @@
       "effects": []
     }
   ],
-  "move_pattern": "Loops the Nothing move indefinitely.",
+  "move_pattern": "Always performs Nothing (hidden intent), looping indefinitely.",
   "powers_on_spawn": [],
-  "notes": "Test/debug monster. Does nothing every turn."
+  "notes": "Test/debug monster with 9999 HP that does nothing each turn. Loops the Nothing move indefinitely."
 }

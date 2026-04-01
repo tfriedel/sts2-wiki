@@ -28,7 +28,7 @@
         {"type": "multi_attack", "damage": 7, "hits": 2},
         {"type": "debuff"}
       ],
-      "effects": ["Deal 7 damage 2 times", "Apply 2 Weak", "Apply 2 Frail"]
+      "effects": ["Deal 7 damage", "2 hits", "Apply 2 Weak", "Apply 2 Frail"]
     },
     {
       "id": "ADAPT_MOVE",
@@ -49,6 +49,6 @@
     }
   ],
   "move_pattern": "Fixed cycle: Thrash → Enlarging Strike → Bug Sting → Adapt → Guarded Strike → Thrash (repeating).",
-  "powers_on_spawn": ["BackAttackLeft (1)", "CrabRage (1)"],
-  "notes": "Part of the Kaiser Crab boss encounter. Spawns with BackAttackLeft and CrabRage powers. Follows a strict 5-move rotation. Guarded Strike both deals damage and gains 18 Block. Bug Sting applies 2 Weak and 2 Frail. Adapt gains 3 Strength (ascension value). Has special background arm animations."
+  "powers_on_spawn": ["BackAttackLeftPower", "CrabRagePower"],
+  "notes": "Part of the Kaiser Crab boss encounter. Spawns with Back Attack (Left) and Crab Rage powers. Follows a strict 5-move rotation with no randomness. Bug Sting hits twice and applies 2 Weak and 2 Frail. Adapt permanently gains 3 Strength each cycle. Guarded Strike both attacks and gains 18 Block."
 }

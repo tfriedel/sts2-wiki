@@ -8,15 +8,11 @@
     {
       "id": "NOTHING_MOVE",
       "title": "Nothing",
-      "intents": [
-        {
-          "type": "sleep"
-        }
-      ],
+      "intents": [],
       "effects": []
     }
   ],
-  "move_pattern": "Repeats Nothing every turn.",
+  "move_pattern": "Loops on Nothing indefinitely — the companion takes no actions.",
   "powers_on_spawn": ["BattlewornDummyTimeLimitPower (3)"],
-  "notes": "A companion that does nothing each turn. Has a time limit power (BattlewornDummyTimeLimitPower, 3 stacks) applied on spawn."
+  "notes": "A companion that fights alongside the player. Applies BattlewornDummyTimeLimitPower with 3 stacks on entering combat, suggesting a 3-turn time limit before some effect triggers. Takes no actions of its own each turn."
 }

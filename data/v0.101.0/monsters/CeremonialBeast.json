@@ -11,7 +11,7 @@
       "intents": [
         {"type": "buff"}
       ],
-      "effects": ["Apply 150 Plow to self"]
+      "effects": ["Apply 160 Plow"]
     },
     {
       "id": "PLOW_MOVE",
@@ -56,7 +56,7 @@
       "effects": ["Deal 19 damage", "Gain 4 Strength"]
     }
   ],
-  "move_pattern": "Starts with Stamp (applies Plow 150 to self), then Plow repeating indefinitely. When the Plow power is removed (e.g. via card effect), the beast becomes Stunned for one turn, then transitions to phase 2: Beast Cry → Stomp → Crush → Beast Cry (cycling).",
+  "move_pattern": "Starts with Stamp (applies 160 Plow to self), then Plow repeating indefinitely. When PlowPower expires or is removed, the beast becomes Stunned for one mandatory turn, then transitions to phase 2: Beast Cry → Stomp → Crush → Beast Cry (cycling).",
   "powers_on_spawn": [],
-  "notes": "Two-phase boss. Phase 1: Stamp applies 150 Plow, then Plow attacks every turn (dealing 20 damage) and gains 2 Strength per hit. When Plow is removed externally, the beast is stunned for one mandatory turn (STUN_MOVE), then enters Phase 2. Phase 2 cycles: Beast Cry (1 Ringing to all) → Stomp (17 damage) → Crush (19 damage + 4 Strength) → Beast Cry. CrushStrength ascension value is 4."
+  "notes": "Two-phase fight. Phase 1: Stamp applies 160 stacks of PlowPower, then Plow loops indefinitely — dealing 20 damage and gaining 2 Strength each use. When PlowPower expires naturally or is stripped by the player, SetStunned() is called by the power, forcing the state machine into the Stun move (immobilized for one mandatory turn with MustPerformOnceBeforeTransitioning). Phase 2: Cycles Beast Cry (applies 1 Ringing to the player) → Stomp (17 damage) → Crush (19 damage + 4 Strength) → Beast Cry indefinitely. Removing PlowPower early triggers the phase transition sooner."
 }

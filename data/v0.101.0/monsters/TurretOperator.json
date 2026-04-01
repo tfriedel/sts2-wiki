@@ -1,0 +1,46 @@
+{
+  "class_name": "TurretOperator",
+  "title": "Turret Operator",
+  "min_hp": 51,
+  "max_hp": 51,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "UNLOAD_MOVE_1",
+      "title": "Unload!",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 5
+        }
+      ],
+      "effects": ["Deal 4 damage", "5 hits"]
+    },
+    {
+      "id": "UNLOAD_MOVE_2",
+      "title": "Unload!",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 5
+        }
+      ],
+      "effects": ["Deal 4 damage", "5 hits"]
+    },
+    {
+      "id": "RELOAD_MOVE",
+      "title": "Loading",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 1 Strength to self"]
+    }
+  ],
+  "move_pattern": "Cycles: Unload! → Unload! → Loading → repeat",
+  "powers_on_spawn": [],
+  "notes": "Gains 1 Strength each cycle via Loading, permanently increasing damage on all subsequent Unload! attacks. The two consecutive Unload! states deal 5 hits each before the operator reloads and buffs itself."
+}

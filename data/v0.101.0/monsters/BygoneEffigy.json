@@ -1,0 +1,53 @@
+{
+  "class_name": "BygoneEffigy",
+  "title": "Bygone Effigy",
+  "min_hp": 132,
+  "max_hp": 132,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "INITIAL_SLEEP_MOVE",
+      "title": "Initial Sleep",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": ["Speak: 'Your journey ends here...'"]
+    },
+    {
+      "id": "WAKE_MOVE",
+      "title": "Wake",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 10 Strength"]
+    },
+    {
+      "id": "SLEEP_MOVE",
+      "title": "Sleep",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "SLASHES_MOVE",
+      "title": "Slashes",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": ["Deal 15 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Initial Sleep (dormant turn). Then uses Wake (gains 10 Strength). Then repeats Slashes indefinitely. A separate Sleep state exists in the machine but is unreachable in normal play.",
+  "powers_on_spawn": ["Slow 1"],
+  "notes": "Begins combat sleeping — the first turn it does nothing but display a menacing thought bubble (\"Your journey ends here...\"). On turn 2 it wakes up, says \"Shall we begin?\", and immediately gains 10 [red]Strength[/red]. From turn 3 onward it attacks every turn with Slashes (15 damage, boosted by its Strength). Spawns with [yellow]Slow[/yellow] 1. The Wake transition also triggers the elite second-phase music cue, marking this as an elite-tier encounter."
+}

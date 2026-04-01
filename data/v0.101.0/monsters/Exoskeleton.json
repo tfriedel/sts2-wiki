@@ -1,0 +1,45 @@
+{
+  "class_name": "Exoskeleton",
+  "title": "Exoskeleton",
+  "min_hp": 25,
+  "max_hp": 29,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SKITTER_MOVE",
+      "title": "Skitter",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 1,
+          "hits": 4
+        }
+      ],
+      "effects": ["Deal 1 damage", "4 hits"]
+    },
+    {
+      "id": "MANDIBLE_MOVE",
+      "title": "Mandibles",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        }
+      ],
+      "effects": ["Deal 9 damage"]
+    },
+    {
+      "id": "ENRAGE_MOVE",
+      "title": "Enrage",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 2 Strength"]
+    }
+  ],
+  "move_pattern": "Starting move depends on combat slot: first slot uses Skitter, second uses Mandibles, third uses Enrage, fourth picks randomly. After the opening, randomly alternates between Skitter and Mandibles (no immediate repeats). Mandibles is always followed by Enrage before returning to random selection.",
+  "powers_on_spawn": ["Hard To Kill 9"],
+  "notes": "Designed for group encounters — the Exoskeleton's first move is determined by its position in the fight. Mandibles is always followed by Enrage (gaining 2 Strength), making it increasingly dangerous if not killed quickly."
+}

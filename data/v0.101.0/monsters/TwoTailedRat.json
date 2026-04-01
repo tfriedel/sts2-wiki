@@ -1,0 +1,54 @@
+{
+  "class_name": "TwoTailedRat",
+  "title": "Two-Tailed Rat",
+  "min_hp": 18,
+  "max_hp": 22,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SCRATCH_MOVE",
+      "title": "Scratch",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        }
+      ],
+      "effects": ["Deal 9 damage"]
+    },
+    {
+      "id": "DISEASE_BITE_MOVE",
+      "title": "Disease Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        }
+      ],
+      "effects": ["Deal 7 damage"]
+    },
+    {
+      "id": "SCREECH_MOVE",
+      "title": "Screech",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Apply 1 Frail"]
+    },
+    {
+      "id": "CALL_FOR_BACKUP_MOVE",
+      "title": "Call for Backup",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": ["Summon a Two-Tailed Rat"]
+    }
+  ],
+  "move_pattern": "Randomly selects from Scratch, Disease Bite, Screech, or Call for Backup each turn. No move can repeat back-to-back. Screech can be used at most 3 times total per rat. Call for Backup can only be used once per rat instance. When summon conditions are not met, Call for Backup is never chosen; when they are met, it is chosen with ~75% weight.",
+  "powers_on_spawn": [],
+  "notes": "Call for Backup is gated by multiple conditions: (1) TurnsUntilSummonable starts at 2 and decrements with each non-summon move — the rat cannot summon for its first 2 turns; (2) the total summon count (CallForBackupCount) is shared and synced across all Two-Tailed Rats in the encounter, capped at 3; (3) there must be an empty enemy slot available; (4) no other rat in the encounter may already be planning Call for Backup. Summoned rats start with the same restrictions and count toward the shared limit of 3 summons."
+}

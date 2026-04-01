@@ -9,7 +9,7 @@
       "id": "FIRST_ACID_GOOP",
       "title": "Acid Goop",
       "intents": [
-        {"type": "attack", "damage": 6, "hits": 1}
+        {"type": "attack", "damage": 6}
       ],
       "effects": ["Deal 6 damage"]
     },
@@ -19,18 +19,18 @@
       "intents": [
         {"type": "buff"}
       ],
-      "effects": ["Gain 7 Strength"]
+      "effects": ["Apply 7 Strength to self"]
     },
     {
       "id": "ACID_GOOP",
       "title": "Acid Goop",
       "intents": [
-        {"type": "attack", "damage": 6, "hits": 1}
+        {"type": "attack", "damage": 6}
       ],
       "effects": ["Deal 6 damage"]
     }
   ],
-  "move_pattern": "Starts with First Acid Goop → Inhale → Acid Goop → Acid Goop → Inhale → (repeats Inhale/Acid Goop loop).",
+  "move_pattern": "Starts with First Acid Goop, then cycles every 3 turns: Acid Goop → Inhale → Acid Goop → repeat.",
   "powers_on_spawn": [],
-  "notes": "After the opening Acid Goop, the monster Inhales (gaining 7 Strength and entering a puffed state visually), then loops between Acid Goop and Inhale. Both Acid Goop moves use the same effect."
+  "notes": "Inhale applies 7 Strength to the Fuzzy Wurm Crawler each time it is used. Strength stacks permanently, so Acid Goop deals 13 damage after the first Inhale, 20 after the second, and continues scaling throughout a prolonged fight."
 }

@@ -1,0 +1,18 @@
+{
+  "class_name": "SingleAttackMoveMonster",
+  "title": "Big Dummy",
+  "min_hp": 999,
+  "max_hp": 999,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "POKE",
+      "title": "Poke",
+      "intents": [{"type": "attack", "damage": 1}],
+      "effects": ["Deal 1 damage"]
+    }
+  ],
+  "move_pattern": "Repeats Poke (single attack) indefinitely.",
+  "powers_on_spawn": [],
+  "notes": "Test/debug monster. Uses BIG_DUMMY localization. Filtered out by generator."
+}
