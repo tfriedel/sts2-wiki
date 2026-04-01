@@ -1,0 +1,18 @@
+{
+  "class_name": "Stabbot",
+  "title": "Stabbot",
+  "min_hp": 19,
+  "max_hp": 24,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "STAB_MOVE",
+      "title": "Stab",
+      "intents": [{"type": "attack", "damage": 12}, {"type": "debuff"}],
+      "effects": ["Deal 12 damage", "Apply 1 FrailPower"]
+    }
+  ],
+  "move_pattern": "Start: STAB_MOVE → STAB_MOVE (repeating, single move cycle).",
+  "powers_on_spawn": [],
+  "notes": "HP range 19-24 (ascension). Damage value is ascension (DeadlyEnemies): 12. Spawns via FabricatorNormal encounter."
+}

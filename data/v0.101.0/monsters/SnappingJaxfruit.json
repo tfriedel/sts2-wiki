@@ -1,0 +1,18 @@
+{
+  "class_name": "SnappingJaxfruit",
+  "title": "Snapping Jaxfruit",
+  "min_hp": 34,
+  "max_hp": 36,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "ENERGY_ORB_MOVE",
+      "title": "Energy Orb",
+      "intents": [{"type": "attack", "damage": 4, "hits": 1}, {"type": "buff"}],
+      "effects": ["Deal 4 damage", "Gain 2 Strength"]
+    }
+  ],
+  "move_pattern": "Repeats Energy Orb every turn.",
+  "powers_on_spawn": [],
+  "notes": "Only has one move which it repeats. Gains 2 Strength each turn. The COLLECT_POWER localization entry exists but is not used in the current code."
+}

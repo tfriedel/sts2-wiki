@@ -1,0 +1,36 @@
+{
+  "class_name": "SkulkingColony",
+  "title": "Skulking Colony",
+  "min_hp": 79,
+  "max_hp": 79,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SMASH_MOVE",
+      "title": "Smash",
+      "intents": [{"type": "attack", "damage": 11, "hits": 1}],
+      "effects": ["Deal 11 damage"]
+    },
+    {
+      "id": "ZOOM_MOVE",
+      "title": "Zoom",
+      "intents": [{"type": "attack", "damage": 16, "hits": 1}, {"type": "block", "amount": 13}],
+      "effects": ["Deal 16 damage", "Gain 13 Block"]
+    },
+    {
+      "id": "INERTIA_MOVE",
+      "title": "Inertia",
+      "intents": [{"type": "buff"}],
+      "effects": ["Gain 3 Strength"]
+    },
+    {
+      "id": "PIERCING_STABS_MOVE",
+      "title": "Piercing Stabs",
+      "intents": [{"type": "multi_attack", "damage": 8, "hits": 2}],
+      "effects": ["Deal 8 damage twice"]
+    }
+  ],
+  "move_pattern": "Starts with Smash, then cycles: Smash -> Zoom -> Inertia -> Piercing Stabs -> Smash...",
+  "powers_on_spawn": ["HardenedShell (15)"],
+  "notes": "Zoom block amount on ascension (ToughEnemies) is 13, base 10. Smash move has no localization title entry."
+}

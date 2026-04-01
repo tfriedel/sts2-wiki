@@ -1,0 +1,36 @@
+{
+  "class_name": "SlimedBerserker",
+  "title": "Slimed Berserker",
+  "min_hp": 276,
+  "max_hp": 276,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "VOMIT_ICHOR_MOVE",
+      "title": "Vomit Ichor",
+      "intents": [{"type": "status", "amount": 10}],
+      "effects": ["Add 10 Slimed cards to player's discard pile"]
+    },
+    {
+      "id": "FURIOUS_PUMMELING_MOVE",
+      "title": "Furious Pummeling",
+      "intents": [{"type": "multi_attack", "damage": 5, "hits": 4}],
+      "effects": ["Deal 5 damage 4 times"]
+    },
+    {
+      "id": "LEECHING_HUG_MOVE",
+      "title": "Leeching Hug",
+      "intents": [{"type": "debuff"}, {"type": "buff"}],
+      "effects": ["Apply 3 Weak to player", "Gain 3 Strength"]
+    },
+    {
+      "id": "SMOTHER_MOVE",
+      "title": "Smother",
+      "intents": [{"type": "attack", "damage": 33, "hits": 1}],
+      "effects": ["Deal 33 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Vomit Ichor, then Furious Pummeling, then Leeching Hug, then Smother, then repeats from Vomit Ichor.",
+  "powers_on_spawn": [],
+  "notes": "Boss/elite monster with 276 HP. Vomit Ichor adds 10 Slimed status cards to the player's discard pile. Leeching Hug applies Weak to the player and gives the Berserker Strength. Some localization keys are missing the .title suffix and SLIME_WHIRLWIND appears in localization but not in the current code."
+}

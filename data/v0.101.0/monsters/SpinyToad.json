@@ -1,0 +1,30 @@
+{
+  "class_name": "SpinyToad",
+  "title": "Spiny Toad",
+  "min_hp": 121,
+  "max_hp": 124,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "PROTRUDING_SPIKES_MOVE",
+      "title": "Protruding Spikes",
+      "intents": [{"type": "buff"}],
+      "effects": ["Apply 5 ThornsPower to self"]
+    },
+    {
+      "id": "SPIKE_EXPLOSION_MOVE",
+      "title": "Spike Explosion",
+      "intents": [{"type": "attack", "damage": 25}],
+      "effects": ["Deal 25 damage", "Remove 5 ThornsPower from self"]
+    },
+    {
+      "id": "TONGUE_LASH_MOVE",
+      "title": "Tongue Lash",
+      "intents": [{"type": "attack", "damage": 19}],
+      "effects": ["Deal 19 damage"]
+    }
+  ],
+  "move_pattern": "Fixed cycle: PROTRUDING_SPIKES_MOVE → SPIKE_EXPLOSION_MOVE → TONGUE_LASH_MOVE → PROTRUDING_SPIKES_MOVE (repeating).",
+  "powers_on_spawn": [],
+  "notes": "HP range 121-124 (ascension). Damage values are ascension (DeadlyEnemies): Spike Explosion 25, Tongue Lash 19. Gains 5 Thorns on Protruding Spikes, then removes them on Spike Explosion."
+}
