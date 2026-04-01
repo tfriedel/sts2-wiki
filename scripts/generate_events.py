@@ -161,14 +161,6 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
             {"title": "Leave", "description": "Walk away."},
         ],
     },
-    "SapphireSeed": {
-        "option_overrides": {
-            "Plant and Nourish": {
-                "description": "[gold]Enchant[/gold] a card with "
-                "a random [purple]Enchantment[/purple]."
-            },
-        },
-    },
     "SelfHelpBook": {
         "option_overrides": {
             "Read the Back": {
