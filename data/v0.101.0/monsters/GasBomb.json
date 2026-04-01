@@ -11,10 +11,10 @@
       "intents": [
         {"type": "death_blow", "damage": 9}
       ],
-      "effects": ["Deal 9 damage", "Die"]
+      "effects": ["Deal 9 damage", "Dies after attacking"]
     }
   ],
-  "move_pattern": "Always uses Explode, which deals damage and kills itself.",
-  "powers_on_spawn": ["Minion (1)"],
-  "notes": "Summoned by Living Fog via the Bloat move. Uses a DeathBlowIntent — it always attacks then kills itself. A minion of Living Fog."
+  "move_pattern": "Uses Explode once, then dies.",
+  "powers_on_spawn": ["Minion"],
+  "notes": "A minion that uses its single move (Explode) and immediately kills itself afterward via CreatureCmd.Kill. Has the Minion power, meaning it is removed if its summoner is defeated. Sound effects indicate it is associated with Living Fog."
 }

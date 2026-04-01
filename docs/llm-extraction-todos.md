@@ -14,11 +14,11 @@
 - [ ] Remove _EVENT_ENRICHMENTS dict from generate_events.py (once LLM data covers all)
 
 ## Monsters
-- [ ] Write monster extraction prompt (scripts/prompts/extract_monster.md)
-- [ ] Add "monsters" to ENTITY_TYPE_DIRS in llm_extract.py
-- [ ] Adapt generate_monsters.py to read per-entity JSON + overrides
-- [ ] Process all monsters for v0.101.0
-- [ ] Review and fix issues
+- [x] Write monster extraction prompt (scripts/prompts/extract_monster.md)
+- [x] Add "monsters" to ENTITY_TYPE_DIRS in llm_extract.py
+- [x] Adapt generate_monsters.py to read per-entity JSON + overrides
+- [x] Process all monsters for v0.101.0
+- [x] Review and fix issues (1 issue: DeprecatedMonster 0 HP, expected)
 - [ ] Process monsters for older versions
 
 ## Enchantments

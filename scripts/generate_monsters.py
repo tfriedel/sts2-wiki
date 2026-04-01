@@ -80,6 +80,8 @@ def main() -> None:
     out.mkdir(parents=True, exist_ok=True)
 
     # Filter out test/debug monsters and unfightable entities
+    # Note: TestSubject is a real in-game boss (multi-phase, persistent kill counter)
+    # and must NOT be filtered here, despite its name.
     test_classes = {
         "Architect",
         "BigDummy",
@@ -88,7 +90,6 @@ def main() -> None:
         "OneHpMonster",
         "SingleAttackMoveMonster",
         "TenHpMonster",
-        "TestSubject",
         "TheAdversaryMkOne",
         "TheAdversaryMkThree",
         "TheAdversaryMkTwo",

@@ -44,6 +44,8 @@ MONSTER_IMAGE_ALIASES: dict[str, str] = {
 }
 
 # Monsters that are test/unused and should be skipped
+# Note: TestSubject is a real in-game boss and should NOT be skipped here,
+# but it does lack a rendered image so it is listed in NO_IMAGE_MONSTERS below.
 SKIP_MONSTERS = {
     "Architect",
     "BigDummy",
@@ -52,7 +54,6 @@ SKIP_MONSTERS = {
     "OneHpMonster",
     "SingleAttackMoveMonster",
     "TenHpMonster",
-    "TestSubject",
     "TheAdversaryMkOne",
     "TheAdversaryMkThree",
     "TheAdversaryMkTwo",
@@ -68,6 +69,7 @@ KNOWN_MISSING_MONSTERS = {
     "Flyconid",  # No spine skel
     "Ovicopter",  # Has spine skel but not rendered
     "Rocket",  # No spine skel
+    "TestSubject",  # Real boss but image not yet rendered
 }
 
 

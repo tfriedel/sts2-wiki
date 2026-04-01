@@ -15,6 +15,7 @@ import sys
 from pathlib import Path
 
 import anyio
+from anyio import Semaphore
 from claude_agent_sdk import (
     AssistantMessage,
     ClaudeAgentOptions,
@@ -30,12 +31,14 @@ LOGS_DIR = PROJECT_ROOT / "logs" / "llm_extract"
 ENTITY_TYPE_DIRS: dict[str, str] = {
     "events": "MegaCrit.Sts2.Core.Models.Events",
     "monsters": "MegaCrit.Sts2.Core.Models.Monsters",
+    "enchantments": "MegaCrit.Sts2.Core.Models.Enchantments",
 }
 
 # Maps entity type to the localization file name
 ENTITY_TYPE_LOC: dict[str, str] = {
     "events": "events",
     "monsters": "monsters",
+    "enchantments": "enchantments",
 }
 
 CACHE_PATH = PROJECT_ROOT / "data" / ".llm_cache.json"
@@ -92,8 +95,20 @@ def is_event_class(content: str) -> bool:
 
 
 def is_monster_class(content: str) -> bool:
-    """Check if this .cs file defines a MonsterModel subclass."""
-    return ": MonsterModel" in content
+    """Check if this .cs file defines a MonsterModel subclass (direct or indirect)."""
+    # Match any public class with inheritance — all files in the Monsters directory
+    # are MonsterModel subclasses (some extend MonsterModel directly, others extend
+    # intermediate subclasses like DecimillipedeSegment or FlailKnight).
+    return bool(re.search(r"public\s+(?:sealed\s+|abstract\s+)?class\s+\w+\s*:", content))
+
+
+def is_enchantment_class(content: str, class_name: str) -> bool:
+    """Check if this .cs file defines a concrete EnchantmentModel subclass."""
+    if "Deprecated" in class_name or "Mock" in class_name:
+        return False
+    if f"abstract class {class_name}" in content:
+        return False
+    return ": EnchantmentModel" in content
 
 
 def get_shared_events(decompiled_dir: str) -> set[str]:
@@ -180,6 +195,7 @@ async def process_entity(
     cache: dict[str, object],
     force: bool,
     skip_build: bool = False,
+    semaphore: Semaphore | None = None,
 ) -> None:
     """Process a single entity through the LLM agent."""
     with open(source_path) as f:
@@ -252,7 +268,7 @@ The source file is at: {source_path}
     log(f"Cache key: {cache_key}")
     log("")
 
-    try:
+    async def _run_agent() -> None:
         async for message in query(
             prompt=agent_prompt,
             options=ClaudeAgentOptions(
@@ -274,13 +290,20 @@ The source file is at: {source_path}
             elif isinstance(message, ResultMessage):
                 result_text = message.result[:500] if message.result else "(empty)"
                 log(f"[result] {result_text}")
-                print(f"  Agent result: {result_text[:200]}")
+                print(f"  [{class_name}] {result_text[:200]}")
+
+    try:
+        if semaphore is not None:
+            async with semaphore:
+                await _run_agent()
+        else:
+            await _run_agent()
     except Exception as e:
         log(f"[error] {e}")
         if entity_file.exists():
-            print(f"  Warning: agent error (entity file was created): {e}")
+            print(f"  Warning: [{class_name}] agent error (entity file was created): {e}")
         else:
-            print(f"  Error: agent failed and entity file not created: {e}")
+            print(f"  Error: [{class_name}] agent failed and entity file not created: {e}")
             log_file.close()
             return
     finally:
@@ -306,6 +329,12 @@ async def async_main() -> None:
         "--skip-build",
         action="store_true",
         help="Skip page generation and site build (batch mode — review separately)",
+    )
+    parser.add_argument(
+        "--concurrency",
+        type=int,
+        default=1,
+        help="Number of entities to process in parallel (default: 1)",
     )
     args = parser.parse_args()
 
@@ -338,6 +367,8 @@ async def async_main() -> None:
 
     cache = load_cache()
 
+    # Collect entities to process
+    entities: list[tuple[str, str, str]] = []  # (class_name, source_path, act_info)
     for fname in sorted(os.listdir(source_dir)):
         if not fname.endswith(".cs"):
             continue
@@ -355,8 +386,6 @@ async def async_main() -> None:
         if entity_type == "monsters" and not is_monster_class(content):
             continue
 
-        loc_entries = get_loc_entries_for_entity(loc_data, class_name)
-
         # Determine act info (events only)
         act_info = ""
         if entity_type == "events":
@@ -373,18 +402,29 @@ async def async_main() -> None:
             else:
                 act_info = "No act assignment found."
 
-        await process_entity(
-            class_name=class_name,
-            source_path=source_path,
-            entity_type=entity_type,
-            version=version,
-            loc_entries=loc_entries,
-            prompt_content=prompt_content,
-            act_info=act_info,
-            cache=cache,
-            force=args.force,
-            skip_build=args.skip_build,
-        )
+        entities.append((class_name, source_path, act_info))
+
+    semaphore = Semaphore(args.concurrency)
+
+    async def process_one(class_name: str, source_path: str, act_info: str) -> None:
+        loc_entries = get_loc_entries_for_entity(loc_data, class_name)
+        async with semaphore:
+            await process_entity(
+                class_name=class_name,
+                source_path=source_path,
+                entity_type=entity_type,
+                version=version,
+                loc_entries=loc_entries,
+                prompt_content=prompt_content,
+                act_info=act_info,
+                cache=cache,
+                force=args.force,
+                skip_build=args.skip_build,
+            )
+
+    async with anyio.create_task_group() as tg:
+        for class_name, source_path, act_info in entities:
+            tg.start_soon(process_one, class_name, source_path, act_info)
 
     print("\nDone.")
 
