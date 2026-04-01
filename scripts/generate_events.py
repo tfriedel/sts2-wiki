@@ -238,15 +238,6 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
             "All generated cards are pre-upgraded."
         ),
     },
-    "LostWisp": {
-        "option_overrides": {
-            "Capture the Wisp": {"description": "Obtain a random [gold]Relic[/gold]."},
-        },
-        "notes": (
-            "Gold from Search is randomized: [blue]45–75[/blue] gold.\n\n"
-            "The relic from Capture is pulled from the standard relic pool."
-        ),
-    },
     "SunkenStatue": {
         "option_overrides": {
             "Grab the Sword": {"description": "Obtain a random [gold]Relic[/gold]."},
