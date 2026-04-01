@@ -5,20 +5,20 @@
   "options": [
     {
       "title": "Take the Top One",
-      "description": "Trade [gold]{TopRelicOwned}[/gold] for [gold]{TopRelicNew}[/gold]."
+      "description": "Trade [gold]one of your relics[/gold] for [gold]a new relic from the pool[/gold]."
     },
     {
       "title": "Take the Middle One",
-      "description": "Trade [gold]{MiddleRelicOwned}[/gold] for [gold]{MiddleRelicNew}[/gold]."
+      "description": "Trade [gold]one of your relics[/gold] for [gold]a new relic from the pool[/gold]."
     },
     {
       "title": "Take the Bottom One",
-      "description": "Trade [gold]{BottomRelicOwned}[/gold] for [gold]{BottomRelicNew}[/gold]."
+      "description": "Trade [gold]one of your relics[/gold] for [gold]a new relic from the pool[/gold]."
     }
   ],
   "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
   "conditions": ["Act 2+", "Each player must have at least 5 tradeable relics"],
-  "notes": "The event randomly selects [blue]3[/blue] of the player\u2019s [gold]tradeable relics[/gold] (shuffled) and pairs each with a relic pulled from the front of the relic pool \u2014 the same relics you would receive from future elite rewards. Because the event requires 5+ tradeable relics to spawn, all three trade slots will always be filled. You may accept only one trade per visit.",
+  "notes": "The event randomly selects [blue]3[/blue] of the player\u2019s [gold]tradeable relics[/gold] (shuffled) and pairs each with a relic pulled from the front of the relic pool \u2014 the same relics you would receive from future elite rewards. Because the event requires 5+ tradeable relics to spawn, all three trade slots will always be filled. You may accept only one trade per visit. Not all relics are tradeable \u2014 some relics have a non-tradeable flag and will never appear as trade candidates.",
   "card_refs": [],
   "relic_refs": []
 }
