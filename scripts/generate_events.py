@@ -664,6 +664,8 @@ def main() -> None:
         notes = ""
         if enrichments and enrichments.get("notes"):
             notes = enrichments["notes"]
+        elif event.get("notes"):
+            notes = event["notes"]
         if notes:
             lines.append(f"notes: {escape_yaml(render_description_html(notes))}")
         lines.append(f"card_refs: {json.dumps(event.get('card_refs', []))}")
