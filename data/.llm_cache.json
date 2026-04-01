@@ -138,5 +138,13 @@
   "events:WelcomeToWongos": {
     "cache_key": "abdf876f8c5be7ba2e8b7083c7e7a457cdbc84b01c0a75d5d8fd3e225bb26d8c",
     "last_processed": "1774726378.8653586"
+  },
+  "monsters:AssassinRubyRaider": {
+    "cache_key": "de87476a3f92ed89e59035d0c3205899879e3488207b84273e8c6fbf8033bef8",
+    "last_processed": "1774726378.1177988"
+  },
+  "monsters:Architect": {
+    "cache_key": "1a09aeabf7b48f1f6c24d1d0186524223ea80014469d03e0910855dd76b54ddf",
+    "last_processed": "1774726378.1105974"
   }
 }
