@@ -1,0 +1,36 @@
+{
+  "class_name": "PhantasmalGardener",
+  "title": "Phantasmal Gardener",
+  "min_hp": 27,
+  "max_hp": 32,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [{"type": "attack", "damage": 5, "hits": 1}],
+      "effects": ["Deal 5 damage"]
+    },
+    {
+      "id": "LASH_MOVE",
+      "title": "Lash",
+      "intents": [{"type": "attack", "damage": 7, "hits": 1}],
+      "effects": ["Deal 7 damage"]
+    },
+    {
+      "id": "FLAIL_MOVE",
+      "title": "Flail",
+      "intents": [{"type": "multi_attack", "damage": 1, "hits": 3}],
+      "effects": ["Deal 1 damage 3 times"]
+    },
+    {
+      "id": "ENLARGE_MOVE",
+      "title": "Enlarge",
+      "intents": [{"type": "buff"}],
+      "effects": ["Gain 3 Strength", "Grow larger (scale increases logarithmically with each Enlarge)"]
+    }
+  ],
+  "move_pattern": "Starting move depends on slot: first slot starts with Flail, second with Bite, third with Lash, fourth with Enlarge. Cycle: Bite -> Lash -> Flail -> Enlarge -> Bite (repeating)",
+  "powers_on_spawn": ["Skittish (7)"],
+  "notes": "Grows physically larger each time Enlarge is used (scale = 1 + 0.1 * log(enlargeCount + 1)). Has different visual skins for tall (first/third slots) and short (second/fourth slots). Skittish power causes a different hurt animation when block has been gained this turn."
+}

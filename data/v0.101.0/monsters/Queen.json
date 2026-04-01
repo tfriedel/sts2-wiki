@@ -1,0 +1,48 @@
+{
+  "class_name": "Queen",
+  "title": "Queen",
+  "min_hp": 419,
+  "max_hp": 419,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "PUPPET_STRINGS_MOVE",
+      "title": "Impossible",
+      "intents": [{"type": "debuff"}],
+      "effects": ["Apply 3 Chains of Binding to player"]
+    },
+    {
+      "id": "YOUR_MINE_MOVE",
+      "title": "You're Mine",
+      "intents": [{"type": "debuff"}],
+      "effects": ["Apply 99 Frail to player", "Apply 99 Weak to player", "Apply 99 Vulnerable to player"]
+    },
+    {
+      "id": "BURN_BRIGHT_FOR_ME_MOVE",
+      "title": "Burn Bright for Me",
+      "intents": [{"type": "buff"}, {"type": "block"}],
+      "effects": ["Apply 1 Strength to each living ally (except self)", "Gain 20 Block"]
+    },
+    {
+      "id": "OFF_WITH_YOUR_HEAD_MOVE",
+      "title": "Off with Your Head",
+      "intents": [{"type": "multi_attack", "damage": 4, "hits": 5}],
+      "effects": ["Deal 4 damage 5 times"]
+    },
+    {
+      "id": "EXECUTION_MOVE",
+      "title": "Execution",
+      "intents": [{"type": "attack", "damage": 18, "hits": 1}],
+      "effects": ["Deal 18 damage"]
+    },
+    {
+      "id": "ENRAGE_MOVE",
+      "title": "Summon",
+      "intents": [{"type": "buff"}],
+      "effects": ["Gain 2 Strength"]
+    }
+  ],
+  "move_pattern": "Starts with Puppet Strings -> You're Mine -> (if TorchHeadAmalgam alive: Burn Bright for Me loop; if Amalgam dead: Off with Your Head). After Amalgam dies: Off with Your Head -> Execution -> Enrage -> Off with Your Head (repeating). If Burn Bright for Me is queued when Amalgam dies, immediately switches to Enrage.",
+  "powers_on_spawn": [],
+  "notes": "Phase 1: Queen cycles between Puppet Strings, You're Mine, and Burn Bright for Me (buffing allies and blocking) while the TorchHeadAmalgam companion is alive. Phase 2: When TorchHeadAmalgam dies, Queen transitions to an aggressive loop of Off with Your Head (5-hit attack) -> Execution (big hit) -> Enrage (+2 Strength) repeating. If she was mid-Burn Bright for Me cycle when the Amalgam died, she immediately jumps to Enrage. Fight is paired with TorchHeadAmalgam enemy."
+}
