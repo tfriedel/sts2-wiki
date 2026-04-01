@@ -201,7 +201,9 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
         "option_overrides": {
             "Overcome": {"description": "A random card is removed from your [gold]Deck[/gold]."},
             "Hold On": {
-                "description": "Lose [red]3[/red] HP (increases by 1 each time you Hold On)."
+                "description": "Lose [red]3[/red] HP (increases by 1 each time you Hold On). "
+                "Damage is [red]unblockable[/red]. "
+                "The card in the Overcome option is re-randomized."
             },
         },
         "notes": (
@@ -209,7 +211,12 @@ _EVENT_ENRICHMENTS: dict[str, dict] = {
             "Subsequent removals pick from cards of a "
             "[gold]different type[/gold] than the previous one "
             "(falls back to any removable card if none qualify).\n\n"
-            "Hold On HP cost escalates: 3, 4, 5, 6... (increases by 1 each time)."
+            "Hold On HP cost escalates: [red]3[/red], [red]4[/red], [red]5[/red], [red]6[/red]... "
+            "(increases by 1 each time). "
+            "The damage is [red]unblockable[/red] and ignores powers.\n\n"
+            "The event has 7 unique pages of escalating distress text. "
+            "After 7 or more holds, the text loops indefinitely — "
+            "the developer apologizes for running out of content."
         ),
     },
     "SpiralingWhirlpool": {
