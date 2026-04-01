@@ -1,0 +1,36 @@
+{
+  "class_name": "KinFollower",
+  "title": "Kin Follower",
+  "min_hp": 62,
+  "max_hp": 63,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "QUICK_SLASH_MOVE",
+      "title": "Quick Slash",
+      "intents": [
+        {"type": "attack", "damage": 5, "hits": 1}
+      ],
+      "effects": ["Deal 5 damage"]
+    },
+    {
+      "id": "BOOMERANG_MOVE",
+      "title": "Boomerang",
+      "intents": [
+        {"type": "multi_attack", "damage": 2, "hits": 2}
+      ],
+      "effects": ["Deal 2 damage 2 times"]
+    },
+    {
+      "id": "POWER_DANCE_MOVE",
+      "title": "Power Dance",
+      "intents": [
+        {"type": "buff"}
+      ],
+      "effects": ["Gain 3 Strength"]
+    }
+  ],
+  "move_pattern": "Standard follower starts with Quick Slash → Boomerang → Power Dance → Quick Slash (repeats). If StartsWithDance is set, starts with Power Dance instead.",
+  "powers_on_spawn": ["Minion (1)"],
+  "notes": "Minion Power is applied on spawn. When all KinFollowers die, the KinPriest's AllFollowerDeathResponse is triggered. The StartsWithDance property can alter the starting move. Music parameter 'the_kin_progress' is updated on death."
+}

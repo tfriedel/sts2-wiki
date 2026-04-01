@@ -1,0 +1,20 @@
+{
+  "class_name": "GasBomb",
+  "title": "Gas Bomb",
+  "min_hp": 8,
+  "max_hp": 8,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "EXPLODE_MOVE",
+      "title": "Explode",
+      "intents": [
+        {"type": "death_blow", "damage": 9}
+      ],
+      "effects": ["Deal 9 damage", "Die"]
+    }
+  ],
+  "move_pattern": "Always uses Explode, which deals damage and kills itself.",
+  "powers_on_spawn": ["Minion (1)"],
+  "notes": "Summoned by Living Fog via the Bloat move. Uses a DeathBlowIntent — it always attacks then kills itself. A minion of Living Fog."
+}

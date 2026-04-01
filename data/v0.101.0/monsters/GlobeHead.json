@@ -1,0 +1,38 @@
+{
+  "class_name": "GlobeHead",
+  "title": "Globe Head",
+  "min_hp": 158,
+  "max_hp": 158,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SHOCKING_SLAP",
+      "title": "Shocking Slap",
+      "intents": [
+        {"type": "attack", "damage": 14, "hits": 1},
+        {"type": "debuff"}
+      ],
+      "effects": ["Deal 14 damage", "Apply 2 Frail"]
+    },
+    {
+      "id": "THUNDER_STRIKE",
+      "title": "Channel Lightning",
+      "intents": [
+        {"type": "multi_attack", "damage": 7, "hits": 3}
+      ],
+      "effects": ["Deal 7 damage 3 times"]
+    },
+    {
+      "id": "GALVANIC_BURST",
+      "title": "Dual Cast",
+      "intents": [
+        {"type": "attack", "damage": 17, "hits": 1},
+        {"type": "buff"}
+      ],
+      "effects": ["Deal 17 damage", "Gain 2 Strength"]
+    }
+  ],
+  "move_pattern": "Starts with Shocking Slap → Thunder Strike (Channel Lightning) → Galvanic Burst (Dual Cast) → Shocking Slap → (repeats).",
+  "powers_on_spawn": ["Galvanic (6)"],
+  "notes": "Galvanic Power is applied on spawn. The localization titles differ from move IDs: THUNDER_STRIKE is titled 'Channel Lightning' and GALVANIC_BURST is titled 'Dual Cast'."
+}

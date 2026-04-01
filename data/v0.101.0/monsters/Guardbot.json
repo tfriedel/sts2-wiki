@@ -1,0 +1,20 @@
+{
+  "class_name": "Guardbot",
+  "title": "Guardbot",
+  "min_hp": 17,
+  "max_hp": 21,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "GUARD_MOVE",
+      "title": "Guard",
+      "intents": [
+        {"type": "block", "amount": 15}
+      ],
+      "effects": ["Grant 15 Block to all allied Fabricators"]
+    }
+  ],
+  "move_pattern": "Always uses Guard, granting block to allied Fabricators each turn.",
+  "powers_on_spawn": [],
+  "notes": "Guard grants 15 Block to all allied Fabricator monsters, not to itself. This monster is associated with Fabricator encounters."
+}

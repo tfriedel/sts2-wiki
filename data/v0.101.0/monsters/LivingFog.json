@@ -1,0 +1,38 @@
+{
+  "class_name": "LivingFog",
+  "title": "Living Fog",
+  "min_hp": 82,
+  "max_hp": 82,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "ADVANCED_GAS_MOVE",
+      "title": "Advanced Gas",
+      "intents": [
+        {"type": "attack", "damage": 9, "hits": 1},
+        {"type": "debuff"}
+      ],
+      "effects": ["Deal 9 damage", "Apply 1 Smoggy"]
+    },
+    {
+      "id": "BLOAT_MOVE",
+      "title": "Bloat",
+      "intents": [
+        {"type": "attack", "damage": 6, "hits": 1},
+        {"type": "summon"}
+      ],
+      "effects": ["Summon 1 Gas Bomb (increases each use, max 5)", "Deal 6 damage"]
+    },
+    {
+      "id": "SUPER_GAS_BLAST_MOVE",
+      "title": "Super Gas Blast",
+      "intents": [
+        {"type": "attack", "damage": 9, "hits": 1}
+      ],
+      "effects": ["Deal 9 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Advanced Gas → Bloat → Super Gas Blast → Bloat → Super Gas Blast → (Bloat/Super Gas Blast alternate).",
+  "powers_on_spawn": [],
+  "notes": "Bloat summons Gas Bomb minions into available enemy slots. The number of Gas Bombs summoned starts at 1 and increases by 1 each time Bloat is used, capping at 5. Gas Bombs use a death-blow Explode move (9 damage) and die afterward."
+}

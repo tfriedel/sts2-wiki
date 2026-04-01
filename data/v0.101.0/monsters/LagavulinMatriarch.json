@@ -1,0 +1,54 @@
+{
+  "class_name": "LagavulinMatriarch",
+  "title": "Lagavulin Matriarch",
+  "min_hp": 233,
+  "max_hp": 233,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SLEEP_MOVE",
+      "title": "Sleep",
+      "intents": [
+        {"type": "sleep"}
+      ],
+      "effects": ["Does nothing while Asleep"]
+    },
+    {
+      "id": "SLASH_MOVE",
+      "title": "Slash",
+      "intents": [
+        {"type": "attack", "damage": 21, "hits": 1}
+      ],
+      "effects": ["Deal 21 damage"]
+    },
+    {
+      "id": "DISEMBOWEL_MOVE",
+      "title": "Disembowel",
+      "intents": [
+        {"type": "multi_attack", "damage": 10, "hits": 2}
+      ],
+      "effects": ["Deal 10 damage 2 times"]
+    },
+    {
+      "id": "SLASH2_MOVE",
+      "title": "Slash",
+      "intents": [
+        {"type": "attack", "damage": 14, "hits": 1},
+        {"type": "block", "amount": 14}
+      ],
+      "effects": ["Deal 14 damage", "Gain 14 Block"]
+    },
+    {
+      "id": "SOUL_SIPHON_MOVE",
+      "title": "Soul Siphon",
+      "intents": [
+        {"type": "debuff"},
+        {"type": "buff"}
+      ],
+      "effects": ["Apply -2 Strength to player", "Apply -2 Dexterity to player", "Gain 2 Strength"]
+    }
+  ],
+  "move_pattern": "Starts with Sleep. While Asleep Power is active, repeats Sleep. When Asleep expires (after 3 turns or when woken by damage), switches to: Slash → Disembowel → Slash2 → Soul Siphon → Slash → (repeats).",
+  "powers_on_spawn": ["Plating (12)", "Asleep (3)"],
+  "notes": "Starts sleeping with Asleep Power (3 stacks) and Plating (12). Sleep move does nothing while the Asleep Power is active. When HP drops to 50% or lower, eyes open animation triggers. Wake-up sequence triggers when Asleep Power expires. Soul Siphon drains -2 Strength and -2 Dexterity from the player and gains 2 Strength for itself."
+}

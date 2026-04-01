@@ -1,0 +1,36 @@
+{
+  "class_name": "FuzzyWurmCrawler",
+  "title": "Fuzzy Wurm Crawler",
+  "min_hp": 58,
+  "max_hp": 59,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "FIRST_ACID_GOOP",
+      "title": "Acid Goop",
+      "intents": [
+        {"type": "attack", "damage": 6, "hits": 1}
+      ],
+      "effects": ["Deal 6 damage"]
+    },
+    {
+      "id": "INHALE",
+      "title": "Inhale",
+      "intents": [
+        {"type": "buff"}
+      ],
+      "effects": ["Gain 7 Strength"]
+    },
+    {
+      "id": "ACID_GOOP",
+      "title": "Acid Goop",
+      "intents": [
+        {"type": "attack", "damage": 6, "hits": 1}
+      ],
+      "effects": ["Deal 6 damage"]
+    }
+  ],
+  "move_pattern": "Starts with First Acid Goop → Inhale → Acid Goop → Acid Goop → Inhale → (repeats Inhale/Acid Goop loop).",
+  "powers_on_spawn": [],
+  "notes": "After the opening Acid Goop, the monster Inhales (gaining 7 Strength and entering a puffed state visually), then loops between Acid Goop and Inhale. Both Acid Goop moves use the same effect."
+}
