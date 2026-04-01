@@ -5,7 +5,7 @@
   "options": [
     {
       "title": "Overcome",
-      "description": "[red]{RandomCard}[/red] is removed from your [gold]Deck[/gold]."
+      "description": "[red][a random card from your deck][/red] is removed from your [gold]Deck[/gold]."
     },
     {
       "title": "Hold On",
@@ -14,7 +14,7 @@
   ],
   "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
   "conditions": ["Floor 7+", "All players must have at least one removable card"],
-  "notes": "Each time you choose [gold]Hold On[/gold], you take [red]unblockable[/red] damage and the event advances to a new page. The HP cost starts at [red]3[/red] and increases by 1 with each hold ([red]3[/red], [red]4[/red], [red]5[/red], ...). After each hold, a new card is selected for the [gold]Overcome[/gold] option.\n\nThe [gold]Overcome[/gold] card is chosen from removable cards in your deck, preferring non-Basic cards on the first selection. On subsequent holds, it tries to pick a different card type than the one shown previously. If no alternative exists, it falls back to any removable card.\n\nThe event has 7 unique pages of escalating distress text (HOLD_ON_0 through HOLD_ON_6). After 7 or more holds, the page loops indefinitely with the developer's apology for running out of text.",
+  "notes": "Each time you choose [gold]Hold On[/gold], you take [red]unblockable[/red] damage (ignores powers) and the event advances to a new page. The HP cost starts at [red]3[/red] and increases by 1 with each hold ([red]3[/red], [red]4[/red], [red]5[/red], ...). After each hold, a new card is selected for the [gold]Overcome[/gold] option — but no card is actually removed until you choose [gold]Overcome[/gold].\n\nThe [gold]Overcome[/gold] card selection: on the initial page, a random non-Basic removable card is chosen. After each [gold]Hold On[/gold], a card of a [gold]different type[/gold] than the previously shown card is selected. If no such card exists, it falls back to any removable card.\n\nThe event has 7 unique pages of escalating distress text. After 7 or more holds, the page loops indefinitely — the developer apologizes for running out of content.",
   "card_refs": [],
   "relic_refs": []
 }
