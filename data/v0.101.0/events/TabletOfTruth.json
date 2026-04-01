@@ -1,0 +1,25 @@
+{
+  "class_name": "TabletOfTruth",
+  "title": "Tablet of Truth",
+  "description": "You defeat a pair of [blue]Guardian Kin[/blue] and make your way into a protected vault.\n\nInside is a [purple][sine]tablet with familiar inscriptions[/sine][/purple]. Your intuition tells you that this language can be deciphered rather easily... However, once you begin deciphering you'll be locked in.\n\nThe tablet gives off a soothing energy and you can smash it to receive its [green]healing energies[/green] instead.",
+  "options": [
+    {
+      "title": "Decipher",
+      "description": "Lose [red]3[/red] Max HP. [gold]Upgrade[/gold] a random card.",
+      "requires": "Max HP must exceed 3"
+    },
+    {
+      "title": "Smash",
+      "description": "Heal [green]20[/green] HP."
+    },
+    {
+      "title": "Give Up",
+      "description": "Stop reading the text and leave."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [],
+  "notes": "This is a multi-step event. Choosing [gold]Decipher[/gold] locks you into a chain of up to 5 readings, each costing more Max HP. After each step (except the last), you may [gold]Give Up[/gold] and leave.\n\n[gold]Decipher chain costs and rewards:[/gold]\n- Step 1: Lose [red]3[/red] Max HP — upgrade a random card\n- Step 2: Lose [red]6[/red] Max HP — upgrade a random card\n- Step 3: Lose [red]12[/red] Max HP — upgrade a random card\n- Step 4: Lose [red]24[/red] Max HP — upgrade a random card\n- Step 5 (\"Lose Everything\"): Lose [red]MaxHp − 1[/red] Max HP — upgrade [gold]ALL[/gold] upgradable cards\n\nEach decipher step is unavailable if your Max HP does not exceed the step's cost. The final step always leaves you at exactly [red]1[/red] Max HP. Only upgradable cards in your deck are affected. [gold]Give Up[/gold] is not available on the initial page — you must choose between Decipher and Smash.",
+  "card_refs": [],
+  "relic_refs": []
+}
