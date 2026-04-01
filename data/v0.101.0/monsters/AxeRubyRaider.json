@@ -47,6 +47,6 @@
       "effects": ["Deal 13 damage"]
     }
   ],
-  "move_pattern": "Cycles: Swing 1 → Swing 2 → Big Swing → (repeat)",
+  "move_pattern": "Cycles: Swing 1 → Swing 2 → Big Swing → repeat",
   "powers_on_spawn": []
 }
