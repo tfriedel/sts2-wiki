@@ -5,5 +5,5 @@
   "is_weak": false,
   "monsters": ["SlimedBerserker"],
   "total_monsters": 1,
-  "tags": ["Slimes"]
+  "tags": []
 }
