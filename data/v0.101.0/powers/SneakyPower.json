@@ -1,0 +1,8 @@
+{
+  "class_name": "SneakyPower",
+  "title": "Sneaky",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever another player attacks an enemy, gain [gold]Block[/gold].",
+  "smart_description": "Whenever another player attacks an enemy, gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+}
