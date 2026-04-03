@@ -14,8 +14,10 @@
       "upgraded_value": 2
     }
   ],
-  "description": "This turn, your next Skill is played an extra time.",
-  "upgraded_description": "This turn, your next 2 Skills are played an extra time.",
+  "description_plain": "This turn, your next Skill is played an extra time.",
+  "description_html": "This turn, your next Skill is played an extra time.",
+  "upgraded_description_plain": "This turn, your next 2 Skills are played an extra time.",
+  "upgraded_description_html": "This turn, your next 2 Skills are played an extra time.",
   "x_cost": false,
   "referenced_powers": [
     {
