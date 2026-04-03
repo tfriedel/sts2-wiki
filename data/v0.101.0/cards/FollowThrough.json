@@ -1,0 +1,32 @@
+{
+  "class_name": "FollowThrough",
+  "title": "Follow Through",
+  "character": "Silent",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 8
+    },
+    {
+      "type": "Weak",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Deal 6 damage to ALL enemies.\nIf the last card you played this turn was a Skill, apply 1 [gold]Weak[/gold] to ALL enemies.",
+  "upgraded_description": "Deal 8 damage to ALL enemies.\nIf the last card you played this turn was a Skill, apply 2 [gold]Weak[/gold] to ALL enemies.",
+  "referenced_powers": [
+    {
+      "class_name": "WeakPower",
+      "title": "Weak",
+      "slug": "weak"
+    }
+  ],
+  "notes": "Glow effect triggers when the last card played this turn was a Skill."
+}

@@ -4,6 +4,6 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "Whenever you play a [gold]Soul[/gold], a random enemy loses [blue]3[/blue] HP.",
-  "smart_description": "Whenever you play a [gold]Soul[/gold], a random enemy loses [blue]3[/blue] HP.",
+  "smart_description": "Whenever you play a [gold]Soul[/gold], a random enemy loses [blue]{Amount}[/blue] HP.",
   "notes": "Triggers on Soul card plays. Selects a random hittable enemy to damage."
 }

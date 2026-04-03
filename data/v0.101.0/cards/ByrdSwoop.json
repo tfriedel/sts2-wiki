@@ -1,7 +1,7 @@
 {
   "class_name": "ByrdSwoop",
   "title": "Byrd Swoop",
-  "character": "Event",
+  "character": "Regent",
   "energy_cost": 0,
   "type": "Attack",
   "rarity": "Event",
@@ -15,5 +15,6 @@
     }
   ],
   "description": "Deal 14 damage.",
-  "notes": "Uses Byrdpip (Ironclad's pet) for attack animation."
+  "upgraded_description": "Deal 18 damage.",
+  "notes": "Uses Byrdpip (Regent's pet) for attack animation."
 }

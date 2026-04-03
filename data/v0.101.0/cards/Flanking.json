@@ -1,0 +1,27 @@
+{
+  "class_name": "Flanking",
+  "title": "Flanking",
+  "character": "Token",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Power",
+      "base_value": 2
+    }
+  ],
+  "description": "The enemy takes double damage from other players this turn.",
+  "upgraded_cost": 1,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "FlankingPower",
+      "title": "Flanking",
+      "slug": "flanking"
+    }
+  ],
+  "notes": "Multiplayer-only card. Applies Flanking power to a single enemy, causing them to take double damage from other players this turn."
+}

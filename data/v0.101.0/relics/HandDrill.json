@@ -2,6 +2,6 @@
   "class_name": "HandDrill",
   "title": "Hand Drill",
   "rarity": "Event",
-  "description": "Whenever you break an enemy's Block, apply 2 Vulnerable.",
+  "description": "Whenever you break an enemy's [gold]Block[/gold], apply [blue]2[/blue] [gold]Vulnerable[/gold].",
   "flavor": "[red]Details for this relic will be revealed in the future...[/red]"
 }

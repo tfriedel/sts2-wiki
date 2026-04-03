@@ -4,6 +4,5 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "When killed, returns all the stolen [gold]Gold[/gold].",
-  "smart_description": "When killed, returns all the stolen [gold]Gold[/gold].",
-  "notes": "This power uses Counter stack type to track stolen gold. When the creature bearing this power dies, all stolen gold is returned to the player as a GoldReward."
+  "smart_description": "When killed, returns all the stolen [gold]Gold[/gold]."
 }

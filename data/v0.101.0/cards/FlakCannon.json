@@ -1,0 +1,19 @@
+{
+  "class_name": "FlakCannon",
+  "title": "Flak Cannon",
+  "character": "Ironclad",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 11
+    }
+  ],
+  "description": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards. Deal 8 damage to a random enemy for each card [gold]Exhausted[/gold].",
+  "notes": "The number of hits equals the number of Status cards exhausted. Can distribute damage across multiple enemies via random targeting."
+}
