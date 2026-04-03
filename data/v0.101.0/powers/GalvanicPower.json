@@ -1,0 +1,8 @@
+{
+  "class_name": "GalvanicPower",
+  "title": "Galvanic",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Powers are afflicted with [gold]Galvanized[/gold].",
+  "smart_description": "Powers are afflicted with [gold]Galvanized[/gold]."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "DrumOfBattlePower",
+  "title": "Drum of Battle",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, [gold]Exhaust[/gold] the top {Amount:plural:card|[blue]{}[/blue] cards} of your [gold]Draw Pile[/gold].",
+  "smart_description": "At the start of your turn, [gold]Exhaust[/gold] the top {Amount:plural:card|[blue]{}[/blue] cards} of your [gold]Draw Pile[/gold]."
+}

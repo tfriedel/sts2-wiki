@@ -1,0 +1,7 @@
+{
+  "class_name": "IterationPower",
+  "title": "Iteration",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "The first time you draw a [gold]Status[/gold] card each turn, draw more cards."
+}

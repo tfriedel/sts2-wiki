@@ -1,0 +1,8 @@
+{
+  "class_name": "FriendshipPower",
+  "title": "Friendship",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Gain [blue]1[/blue] [gold]Energy[/gold] at the start of each turn.",
+  "smart_description": "Gain {Amount:energyIcons()} at the start of each turn."
+}

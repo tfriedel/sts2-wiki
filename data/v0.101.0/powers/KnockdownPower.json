@@ -1,0 +1,9 @@
+{
+  "class_name": "KnockdownPower",
+  "title": "Knockdown",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "This creature takes [blue]{Amount}[/blue] times the damage from other players this turn.",
+  "smart_description": "Other allies deal [blue]{Amount}[/blue] times more damage to this enemy this turn.",
+  "notes": "This power is removed at the end of the turn. It only affects powered attacks from allies other than the applier. The applier's name is stored in the power instance."
+}

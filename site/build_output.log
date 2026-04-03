@@ -1,0 +1,15 @@
+
+> site@0.0.1 build
+> astro build
+
+20:19:17 [content] Syncing content
+20:19:19 [content] Synced content
+20:19:19 [types] Generated 3.93s
+20:19:19 [build] output: "static"
+20:19:19 [build] mode: "static"
+20:19:19 [build] directory: /Users/drmaciver/Projects/sts2-wiki/site/dist/
+20:19:19 [build] Collecting build info...
+20:19:19 [build] ✓ Completed in 3.97s.
+20:19:20 [build] Building static entrypoints...
+20:19:33 [WARN] [vite] "matchHostname", "matchPathname", "matchPort" and "matchProtocol" are imported from external module "@astrojs/internal-helpers/remote" but never used in "node_modules/astro/dist/assets/utils/index.js".
+20:19:34 [vite] ✓ built in 13.94s

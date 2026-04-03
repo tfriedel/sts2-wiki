@@ -1,0 +1,8 @@
+{
+  "class_name": "GrapplePower",
+  "title": "Grapple",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Whenever you gain [gold]Block[/gold] this turn, deal [blue]5[/blue] damage to the enemy.",
+  "smart_description": "Whenever you gain [gold]Block[/gold] this turn, deal [blue]5[/blue] damage to the enemy."
+}

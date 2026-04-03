@@ -1,0 +1,8 @@
+{
+  "class_name": "JeweledMask",
+  "title": "Jeweled Mask",
+  "rarity": "Ancient",
+  "description": "At the start of combat put a random Power from your Draw Pile into your Hand, it's free to play.",
+  "flavor": "Details for this relic will be revealed in the future...",
+  "notes": "Triggers before hand draw on turn 1. Selects a random Power card from your draw pile and makes it free to play that turn."
+}

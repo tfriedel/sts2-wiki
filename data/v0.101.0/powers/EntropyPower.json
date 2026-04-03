@@ -1,0 +1,8 @@
+{
+  "class_name": "EntropyPower",
+  "title": "Entropy",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, [gold]Transform[/gold] [blue]1[/blue] card in your [gold]Hand[/gold].",
+  "notes": "This power is stack-aware via Counter type. The number of cards transformed scales with the power's stack count."
+}

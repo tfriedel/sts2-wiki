@@ -85,7 +85,7 @@ def main() -> None:
 
         # Skip encounters that only contain test monsters
         enc_monsters = enc.get("monsters", [])
-        if all(m in test_monster_classes for m in enc_monsters):
+        if enc_monsters and all(m in test_monster_classes for m in enc_monsters):
             continue
 
         # Enrich monster list
@@ -124,6 +124,10 @@ def main() -> None:
         lines.append(f"acts: {json.dumps(enc.get('acts', []))}")
         lines.append("---")
         lines.append("")
+
+        # Add notes as content body if present
+        if enc.get("notes"):
+            lines.append(enc.get("notes"))
 
         filepath = out / f"{slug}.md"
         if filepath.exists():

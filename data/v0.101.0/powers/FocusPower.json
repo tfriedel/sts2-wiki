@@ -1,0 +1,8 @@
+{
+  "class_name": "FocusPower",
+  "title": "Focus",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Increases the effectiveness of Orbs.",
+  "smart_description": "Increases the effectiveness of Orbs when positive, or decreases when negative, by the absolute value of the stack amount."
+}

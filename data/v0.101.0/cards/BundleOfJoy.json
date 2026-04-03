@@ -1,0 +1,22 @@
+{
+  "class_name": "BundleOfJoy",
+  "title": "Bundle of Joy",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 3,
+      "upgraded_value": 4
+    }
+  ],
+  "description": "Add 3 random Colorless cards into your [gold]Hand[/gold].",
+  "upgraded_description": "Add 4 random Colorless cards into your [gold]Hand[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Adds randomly selected Colorless cards to your hand during combat. Exhaust removes this card from play after use."
+}

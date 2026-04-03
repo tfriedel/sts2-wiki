@@ -1,0 +1,8 @@
+{
+  "class_name": "FreeAttackPower",
+  "title": "Free Attack",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Your next Attack costs [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
+  "smart_description": "Your next {Amount:plural:Attack costs|[blue]{}[/blue] Attacks cost} [blue]0[/blue] {energyPrefix:energyIcons(1)}."
+}
