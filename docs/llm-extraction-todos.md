@@ -50,11 +50,11 @@
 - [ ] Review and fix issues
 
 ## Potions
-- [ ] Write potion extraction prompt
-- [ ] Add "potions" to ENTITY_TYPE_DIRS
-- [ ] Adapt generate_potions.py for per-entity JSON + overrides
-- [ ] Process all 64 potions for v0.101.0
-- [ ] Review and fix issues
+- [x] Write potion extraction prompt
+- [x] Add "potions" to ENTITY_TYPE_DIRS
+- [x] Adapt generate_potions.py for per-entity JSON + overrides
+- [x] Process all 64 potions for v0.101.0
+- [x] Review and fix issues (0 issues)
 
 ## Encounters
 - [ ] Write encounter extraction prompt
