@@ -1,0 +1,8 @@
+{
+  "class_name": "ScrollBoxes",
+  "title": "Scroll Boxes",
+  "rarity": "Ancient",
+  "description": "Upon pickup, lose all [gold]Gold[/gold] and choose [blue]1[/blue] of [blue]2[/blue] packs of cards to add to your [gold]Deck[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Each pack contains 2 Common cards and 1 Uncommon card from your character's card pool. Special case: Defect has a 1% chance for a pack of 3 Claw cards instead. Requires at least 4 Common and 2 Uncommon cards to be unlocked for generation."
+}

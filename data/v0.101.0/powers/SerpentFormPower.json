@@ -1,0 +1,9 @@
+{
+  "class_name": "SerpentFormPower",
+  "title": "Serpent Form",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card, deal [blue]4[/blue] damage to a random enemy.",
+  "smart_description": "Whenever you play a card, deal [blue]{Amount}[/blue] damage to a random enemy.",
+  "notes": "Triggers immediately after each card played by the player owner. Deals damage equal to the power's Amount to a random hittable enemy. Uses Counter stack type to track stacked instances."
+}

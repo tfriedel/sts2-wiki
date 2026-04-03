@@ -1,0 +1,8 @@
+{
+  "class_name": "Orichalcum",
+  "title": "Orichalcum",
+  "rarity": "Uncommon",
+  "description": "If you end your turn without [gold]Block[/gold], gain [blue]6[/blue] [gold]Block[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This relic only triggers if you have exactly 0 block remaining at the end of your turn. The block gain occurs in the BeforeTurnEnd phase, which is very late in turn resolution."
+}

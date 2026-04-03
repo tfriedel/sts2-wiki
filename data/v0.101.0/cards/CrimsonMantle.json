@@ -1,0 +1,28 @@
+{
+  "class_name": "CrimsonMantle",
+  "title": "Crimson Mantle",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 8,
+      "upgraded_value": 10
+    }
+  ],
+  "description": "At the start of your turn, lose 1 HP and gain 8 [gold]Block[/gold].",
+  "upgraded_description": "At the start of your turn, lose 1 HP and gain 10 [gold]Block[/gold].",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "CrimsonMantlePower",
+      "title": "Crimson Mantle",
+      "slug": "crimson-mantle"
+    }
+  ],
+  "notes": "This power deals 1 self-damage each turn in exchange for scaling block, incentivizing HP-loss synergies."
+}

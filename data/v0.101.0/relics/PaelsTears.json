@@ -1,0 +1,8 @@
+{
+  "class_name": "PaelsTears",
+  "title": "Pael's Tears",
+  "rarity": "Ancient",
+  "description": "If you end your turn with unspent energy, gain an additional 2 energy next turn.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Triggers at the start of each turn if you ended the previous turn with unspent energy. The effect resets after combat ends."
+}

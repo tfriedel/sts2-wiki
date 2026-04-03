@@ -1,0 +1,9 @@
+{
+  "class_name": "SandpitPower",
+  "title": "Sandpit",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "A power used by The Insatiable.",
+  "smart_description": "When The Insatiable takes its turn or in a number of turns, you will be eaten and die.",
+  "notes": "This is a countdown counter. Each enemy turn, it decreases by 1. When removed, all player creatures and pets are killed. The power positions affected creatures closer to The Insatiable as the counter decreases."
+}

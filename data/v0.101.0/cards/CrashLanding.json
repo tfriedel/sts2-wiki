@@ -1,0 +1,20 @@
+{
+  "class_name": "CrashLanding",
+  "title": "Crash Landing",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 21,
+      "upgraded_value": 26
+    }
+  ],
+  "description": "Deal 21 damage to ALL enemies.\nFill your [gold]Hand[/gold] with [gold]Debris[/gold].",
+  "referenced_powers": [],
+  "notes": "Fills your remaining hand slots (up to 10 total cards) with Debris tokens."
+}

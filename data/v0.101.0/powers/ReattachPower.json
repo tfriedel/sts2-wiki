@@ -1,0 +1,9 @@
+{
+  "class_name": "ReattachPower",
+  "title": "Reattach",
+  "power_type": "Buff",
+  "stack_type": "None",
+  "description": "If other segments are still alive, revives in [blue]2[/blue] turns with [blue]25[/blue] HP.",
+  "smart_description": "If other segments are still alive, revives in [blue]2[/blue] turns with [blue]25[/blue] HP.",
+  "notes": "This power is part of the Decimillipede multi-segment mechanic. The creature cannot be removed from combat while this power is active and other segments are alive. While reviving, the creature becomes uninteractable. If all other segments die, the power becomes fatal on the next death."
+}

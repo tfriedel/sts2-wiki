@@ -4,6 +4,5 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "Whenever you play an Attack, add a random Attack into your [gold]Hand[/gold].",
-  "smart_description": "Whenever you play an Attack, add a random Attack into your [gold]Hand[/gold].",
-  "notes": "The smart description scales with the power's Amount value. When Amount exceeds 1, it displays multiple random Attacks being added, with the quantity highlighted."
+  "smart_description": "Whenever you play an Attack, add {Amount:plural:a random Attack|[blue]{}[/blue] random Attacks} into your [gold]Hand[/gold]."
 }

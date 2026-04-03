@@ -1,0 +1,8 @@
+{
+  "class_name": "OrnamentalFan",
+  "title": "Ornamental Fan",
+  "rarity": "Uncommon",
+  "description": "Every time you play [blue]3[/blue] Attacks in a single turn, gain [blue]4[/blue] [gold]Block[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Tracks attacks played per turn (resets at start of each turn). Triggers block gain every 3 attacks played. Counter displays current attack count modulo 3, showing progress toward next trigger."
+}
