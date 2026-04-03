@@ -4,5 +4,6 @@
   "power_type": "Debuff",
   "stack_type": "Counter",
   "description": "At the end of the enemy turn, if it has at least as much Doom as HP, it dies.",
-  "smart_description": "At the end of the {OnPlayer:player|enemy} turn, if [gold]{OwnerName}[/gold] has [blue]{Amount}[/blue] or less HP, it dies."
+  "smart_description": "At the end of the creature's turn, if it has Doom stacks equal to or exceeding its maximum HP, it dies.",
+  "notes": "Doom is a counter-type debuff that stacks through various effects. Each stack represents a damage threshold. If the afflicted creature's current HP is at or below their Doom stack count at the end of their turn, they are instantly killed and removed from combat."
 }

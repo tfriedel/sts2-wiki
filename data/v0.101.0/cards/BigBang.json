@@ -26,6 +26,6 @@
     }
   ],
   "description": "Draw 1 card.\nGain 1 Energy.\nGain 1 Star.\n[gold]Forge[/gold] 5.",
-  "x_cost": false,
-  "notes": "Upgrade adds Innate keyword."
+  "upgraded_keywords": ["Exhaust", "Innate"],
+  "x_cost": false
 }
