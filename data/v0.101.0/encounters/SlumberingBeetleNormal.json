@@ -11,5 +11,6 @@
   "total_monsters": 3,
   "tags": [
     "Workers"
-  ]
+  ],
+  "notes": "Encounter has a custom scene with specialized camera positioning (scaling 0.85, offset 50 units up) for cinematic presentation."
 }
