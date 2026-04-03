@@ -1156,10 +1156,10 @@
     "loc_key": "BEAT_INTO_SHAPE",
     "title": "Beat into Shape",
     "description_template": "Deal {Damage:diff()} damage.\n[gold]Forge[/gold] {CalculatedForge:diff()}.\n[gold]Forges[/gold] an additional {CalculationExtra:diff()} for every other time you've hit the enemy this turn.",
-    "description_plain": "Deal 5 damage.\nForge X.\nForges an additional X for every other time you've hit the enemy this turn.",
-    "description_html": "Deal 5 damage.<br><span class=\"desc-gold\">Forge</span> X.<br><span class=\"desc-gold\">Forges</span> an additional X for every other time you've hit the enemy this turn.",
-    "upgraded_description_plain": "Deal 7 damage.\nForge X.\nForges an additional X for every other time you've hit the enemy this turn.",
-    "upgraded_description_html": "Deal 7 damage.<br><span class=\"desc-gold\">Forge</span> X.<br><span class=\"desc-gold\">Forges</span> an additional X for every other time you've hit the enemy this turn."
+    "description_plain": "Deal 5 damage. Forge 5 for each powered attack against this enemy this turn, reduced by 5 for each hit this card deals.",
+    "description_html": "Deal 5 damage. <span class=\"desc-gold\">Forge</span> 5 for each powered attack against this enemy this turn, reduced by 5 for each hit this card deals.",
+    "upgraded_description_plain": "Deal 7 damage. Forge 7 for each powered attack against this enemy this turn, reduced by 7 for each hit this card deals.",
+    "upgraded_description_html": "Deal 7 damage. <span class=\"desc-gold\">Forge</span> 7 for each powered attack against this enemy this turn, reduced by 7 for each hit this card deals."
   },
   {
     "class_name": "Beckon",
