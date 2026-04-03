@@ -111,6 +111,11 @@ def main() -> None:
                 break
             desc = new_desc
 
+        # Process smart_description: apply tag conversion but keep {Amount} placeholders
+        smart_desc_processed = smart_desc
+        if smart_desc_processed:
+            smart_desc_processed = smart_desc_processed.replace("{singleStarIcon}", "Star")
+
         lines = ["---"]
         lines.append(f"title: {escape_yaml(power['title'])}")
         lines.append(f"class_name: {escape_yaml(power['class_name'])}")
@@ -118,7 +123,7 @@ def main() -> None:
         lines.append(f"stack_type: {escape_yaml(power.get('stack_type', 'None'))}")
         lines.append(f"description_plain: {escape_yaml(strip_tags(desc))}")
         lines.append(f"description_html: {escape_yaml(render_description_html(desc))}")
-        lines.append('smart_description: ""')
+        lines.append(f"smart_description: {escape_yaml(smart_desc_processed)}")
         lines.append("---")
         lines.append("")
 
