@@ -16,6 +16,5 @@
   ],
   "description": "[gold]Summon[/gold] 5.",
   "upgraded_description": "[gold]Summon[/gold] 7.",
-  "referenced_powers": [],
-  "notes": "Summons a Bodyguard creature token"
+  "x_cost": false
 }
