@@ -10,5 +10,5 @@
   ],
   "total_monsters": 3,
   "tags": [],
-  "notes": "Multi-segment creature with three distinct parts. Each segment has a randomized starter move (offset by 1 from the previous segment)."
+  "notes": "The Decimillipede consists of three segments that work together. Each segment is assigned a different starting move based on RNG, rotating through a sequence of three moves."
 }
