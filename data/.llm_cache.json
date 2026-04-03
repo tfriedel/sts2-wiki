@@ -175,10 +175,6 @@
     "cache_key": "b2a99e257f25da23d20cceac6ee870061a15b11679c97043c535417db70030ed",
     "last_processed": "1774726378.186444"
   },
-  "monsters:BowlbugEgg": {
-    "cache_key": "4fe9a9c265b0cfb222cf8b8aed9da98266eeaf38ab9237b27b0387ac0929aae8",
-    "last_processed": "1774726378.2120976"
-  },
   "monsters:BruteRubyRaider": {
     "cache_key": "bfca367a4f5a89fe7c1ed27c6a82e6e296213f1cb303426387f37bf533fdf0e8",
     "last_processed": "1774726378.2852423"
@@ -187,9 +183,129 @@
     "cache_key": "ee668533e8f3e4236ba91171c1da502de1a151e1f4a422bd533a7b24f7bb6852",
     "last_processed": "1774726378.4413154"
   },
+  "monsters:BowlbugEgg": {
+    "cache_key": "4fe9a9c265b0cfb222cf8b8aed9da98266eeaf38ab9237b27b0387ac0929aae8",
+    "last_processed": "1774726378.2120976"
+  },
+  "monsters:FakeMerchantMonster": {
+    "cache_key": "9817d5be7339d16e5a374458ff15b3919c5d51cd95ed66b7302acf029d675881",
+    "last_processed": "1774726378.2214148"
+  },
+  "monsters:BowlbugRock": {
+    "cache_key": "970d41c50de182cb403516159f9c936314716ae4150feb359cef5bddf67ee41b",
+    "last_processed": "1774726378.2633185"
+  },
+  "monsters:KinPriest": {
+    "cache_key": "a9f4c2bfc7d87bb14789fd4ae02a8fa7210606ac731e81caad303c3e1c6a48bb",
+    "last_processed": "1774726378.5430107"
+  },
+  "monsters:Mawler": {
+    "cache_key": "e6c0a077fb7c2b24e0f846543ac43ecbec1e58417aae247e8ade2f3803690d2d",
+    "last_processed": "1774726378.7951593"
+  },
+  "monsters:Seapunk": {
+    "cache_key": "e17aa1b3ed298080f53ee2b4591f5fead97b324bfb65902a9d214314c2290f03",
+    "last_processed": "1774726378.6616282"
+  },
+  "monsters:SludgeSpinner": {
+    "cache_key": "ea2d344fa62b5a21b5c2e78eada93f0a138620ff1dd2adaa7a720102f53660a5",
+    "last_processed": "1774726378.8096702"
+  },
+  "monsters:KnowledgeDemon": {
+    "cache_key": "7f43d22d699802abe4f9b1eef62785133ca82a41e62beb555b842d388fdd0c19",
+    "last_processed": "1774726378.5957146"
+  },
+  "monsters:TenHpMonster": {
+    "cache_key": "a764e731b808bed8c285a17a786919bdd723cf363c377c3b46989356f6d2e247",
+    "last_processed": "1774726378.9869788"
+  },
+  "monsters:TheAdversaryMkOne": {
+    "cache_key": "29864e7d80b842447be4746505f9c120cf2aad3b6e9361b01073815064e58876",
+    "last_processed": "1774726379.103478"
+  },
+  "monsters:TheAdversaryMkThree": {
+    "cache_key": "0c90253c0694751aebe8b5bd19aa6ad0dcd1423a0b6fdf784f0340d9fa0558f2",
+    "last_processed": "1774726379.1128469"
+  },
+  "monsters:TheAdversaryMkTwo": {
+    "cache_key": "61399b46772ca93c3d94fbcf325589e3a34c74c842c85d2be7e6c801693c7464",
+    "last_processed": "1774726379.126163"
+  },
+  "monsters:TerrorEel": {
+    "cache_key": "f667ac329f69e270a51ae4b7693561baa83304af39ec6d02ae2d549ecd253969",
+    "last_processed": "1774726379.0097363"
+  },
+  "monsters:TheLost": {
+    "cache_key": "9389e98252e63cd997441f8bdb321133f346e34c73f88898e6609a8b0d2b9c6f",
+    "last_processed": "1774726379.22595"
+  },
+  "monsters:TheForgotten": {
+    "cache_key": "599860454c7790c537c5f179d380455cdb096e96207d3c6af6cf705bfca310a3",
+    "last_processed": "1774726379.141426"
+  },
+  "monsters:TestSubject": {
+    "cache_key": "4f3249830f6a80c283c8be76969fd0287aa4f232d3a030660b2e57cb36a41cf4",
+    "last_processed": "1774726379.0847168"
+  },
+  "monsters:TheObscura": {
+    "cache_key": "5e35fed15b9c648e90cd5f60ba224d55abe03e4bddadfc1561675cdfa6861bba",
+    "last_processed": "1774726379.2504706"
+  },
+  "monsters:TheInsatiable": {
+    "cache_key": "28ce0704585fbad1ecf5d03b617c890444bbc86fe08893115271780a5f7ebc0e",
+    "last_processed": "1774726379.2006056"
+  },
+  "monsters:Toadpole": {
+    "cache_key": "396b560eb814812067d734c3e4658e964de3c760dc2209283b35c7096c934e65",
+    "last_processed": "1774726379.3183737"
+  },
+  "monsters:TorchHeadAmalgam": {
+    "cache_key": "9cd8269c7e5b34a6e00c29afd8cab757f1f22624475a8decd6c8eccbd1b0b4df",
+    "last_processed": "1774726379.3423593"
+  },
+  "monsters:BowlbugSilk": {
+    "cache_key": "f64eeb33e1ba23b85deca64f331b70110591c459d9522fc49f00100dc80a1f2a",
+    "last_processed": "1774726378.2784579"
+  },
+  "monsters:BygoneEffigy": {
+    "cache_key": "ee337d6a020ea37e8b2ae53c99a853a4cd22d43e5d6fe7cfee8a0ee2549fcf45",
+    "last_processed": "1774726378.309277"
+  },
+  "monsters:Byrdonis": {
+    "cache_key": "3e1a6e7f62a55ac0d934b612b332e7d963e9d714ef5e2956d3ee4a446d78baea",
+    "last_processed": "1774726378.3240714"
+  },
+  "monsters:Byrdpip": {
+    "cache_key": "1744b51f20488bc7e1342da6bea0d7a788568f683d090b1fd195c8b154bb7160",
+    "last_processed": "1774726378.3282475"
+  },
+  "monsters:CalcifiedCultist": {
+    "cache_key": "a0bf0ce5ab0be3f2163c7362735129de55e44e376ba20f12abe7b706f4e06ea5",
+    "last_processed": "1774726378.3599465"
+  },
+  "monsters:CeremonialBeast": {
+    "cache_key": "2dcae076f410dadea76ef1f07eb62535ffe4f23b17fcd0fee6d7cf1ec2212621",
+    "last_processed": "1774726378.4314349"
+  },
   "monsters:CorpseSlug": {
     "cache_key": "995db6261b50dceed473fb0c122b0b1009cfc58312415fb6c2f18921aa7c0603",
     "last_processed": "1774726378.4581454"
+  },
+  "monsters:CrossbowRubyRaider": {
+    "cache_key": "f19186e1f2d01c49f85ed05efb7df9d61ee9ba200874d9bcd9353cf2e663012d",
+    "last_processed": "1774726378.4709055"
+  },
+  "monsters:Crusher": {
+    "cache_key": "9b3b500c34359057e4fe476604e4cd9da4dc00a520a694f7814542832317b21d",
+    "last_processed": "1774726378.5006113"
+  },
+  "monsters:CubexConstruct": {
+    "cache_key": "625ee482412af77a9d5f25a6f6430a2a7914cd86588d4d919ae518980d576ac2",
+    "last_processed": "1774726378.521773"
+  },
+  "monsters:DampCultist": {
+    "cache_key": "1ba3e569d4c49773646cb264bad886dbc6cc40149e0d1220c0c51cc61f494e5e",
+    "last_processed": "1774726378.5449355"
   },
   "monsters:DecimillipedeSegment": {
     "cache_key": "854e2381606bf5b377347c31d25edb22a49be6b57d81a1218dbb1d4ac2cc22c1",
@@ -223,10 +339,6 @@
     "cache_key": "5a167b87fb6721312346734616eeb1e511cbd5106c7d8e2ee903c714eedecf77",
     "last_processed": "1774726378.190526"
   },
-  "monsters:FakeMerchantMonster": {
-    "cache_key": "9817d5be7339d16e5a374458ff15b3919c5d51cd95ed66b7302acf029d675881",
-    "last_processed": "1774726378.2214148"
-  },
   "monsters:FatGremlin": {
     "cache_key": "326b5095d325bbaa41824b25b388177f852a954823a8a732d32b483d27c527d7",
     "last_processed": "1774726378.2317564"
@@ -238,5 +350,265 @@
   "monsters:Flyconid": {
     "cache_key": "54ff08034ba3cc43488d0e20513f63b9983f47f6543af99351944e85e0b8fe3c",
     "last_processed": "1774726378.266542"
+  },
+  "monsters:Fogmog": {
+    "cache_key": "9fad6b891c5d2c18743fdef61969ef5da398c2f7acd5ea2013bbd4ff3fc156a0",
+    "last_processed": "1774726378.2932553"
+  },
+  "monsters:FossilStalker": {
+    "cache_key": "a588634dee293535cef54a36e877df8a0a18991279c0f28d9e3a09af99f658c4",
+    "last_processed": "1774726378.313649"
+  },
+  "monsters:FrogKnight": {
+    "cache_key": "6eb25590aae387505633e337eb07dc55d99f55b6b46e89972b7f0225d502e243",
+    "last_processed": "1774726378.3321862"
+  },
+  "monsters:FuzzyWurmCrawler": {
+    "cache_key": "97a5bc6019b715f6bf7f8c2556dafc546f9736c7185e1824abbf1ad6f71f358e",
+    "last_processed": "1774726378.3444052"
+  },
+  "monsters:GasBomb": {
+    "cache_key": "d1456e5685046aa0b672c2b109ca9966930277e09e444f9ed48fa10ee425fd01",
+    "last_processed": "1774726378.3545904"
+  },
+  "monsters:GlobeHead": {
+    "cache_key": "7d81840f2d497905922410aa90e09652a183c8ed7623b59979e5ac4d9041ffc9",
+    "last_processed": "1774726378.3656468"
+  },
+  "monsters:GremlinMerc": {
+    "cache_key": "23a09af95f825e82c37c659942a95d2a261cffd4853daeac864f2070d310179e",
+    "last_processed": "1774726378.3840058"
+  },
+  "monsters:Guardbot": {
+    "cache_key": "6e5bf696bdb69f61150f5c44fdf63bf170aaf0c5541bcf175c7213d9f95eb6d4",
+    "last_processed": "1774726378.391054"
+  },
+  "monsters:HauntedShip": {
+    "cache_key": "da005803467b54493f9dea49a7baa59b81b9d3d0259c716fb5247abbfde0d4a4",
+    "last_processed": "1774726378.4247928"
+  },
+  "monsters:HunterKiller": {
+    "cache_key": "f22fda0467036f520ac5fd85feec9ecd771d4d08ab5ac46fc2531cfc52460060",
+    "last_processed": "1774726378.4406087"
+  },
+  "monsters:InfestedPrism": {
+    "cache_key": "d94ccd98d247d56bca94545acf43e4e95636585871f2393fbf0bc25de01dda4a",
+    "last_processed": "1774726378.4658923"
+  },
+  "monsters:Inklet": {
+    "cache_key": "d9f9157ba2127cdc179097a37bbbc4b67f7e77d8622b1622c5760da58df82cf7",
+    "last_processed": "1774726378.4802566"
+  },
+  "monsters:KinFollower": {
+    "cache_key": "18c3d8e2685a2aa1f611ac451ea1028406fa03c6c54700d97ba22e12cb3476a8",
+    "last_processed": "1774726378.5126655"
+  },
+  "monsters:LagavulinMatriarch": {
+    "cache_key": "45c05d5cacc3e2725ae2bd086de353590212805d37f5038eaef37e8ad0f360f0",
+    "last_processed": "1774726378.6454277"
+  },
+  "monsters:LeafSlimeM": {
+    "cache_key": "ee7295dddf5e50d5f6b37c8985a7651750b4bad5cd20c958e445bd29fbd73101",
+    "last_processed": "1774726378.6663797"
+  },
+  "monsters:LeafSlimeS": {
+    "cache_key": "f5ae592d3a0b26e7e7ed7fe99861225d5658f90fbe8e51c35807a865e9321a19",
+    "last_processed": "1774726378.6825335"
+  },
+  "monsters:LivingFog": {
+    "cache_key": "8350ad5a39d34036d460fab9a06f26fed7ee7478f8ffef04fd9c3cb83daa2814",
+    "last_processed": "1774726378.7091076"
+  },
+  "monsters:LivingShield": {
+    "cache_key": "0e9e4af566b5333dd0a191e1c9211f9068ff30ef1341bb7c7ce24102e0699911",
+    "last_processed": "1774726378.7341378"
+  },
+  "monsters:LouseProgenitor": {
+    "cache_key": "9c88f5a64cc35c554208474778a3b5eee389a176aef567a6d680310db8881e3d",
+    "last_processed": "1774726378.7561054"
+  },
+  "monsters:MagiKnight": {
+    "cache_key": "590411d889f7820f8d7467bfcd609c1bf05bc63467184a8718ddaebe33d9ccdc",
+    "last_processed": "1774726378.7805605"
+  },
+  "monsters:MechaKnight": {
+    "cache_key": "81d01ddae56685c8309b2b3bcb21a0393c0b9313abf15413a968aa343024d9c0",
+    "last_processed": "1774726378.822247"
+  },
+  "monsters:MultiAttackMoveMonster": {
+    "cache_key": "22740891e3465a5de0f6e861f69603071533be4b76cfd6c869bb1851489cb526",
+    "last_processed": "1774726378.8260293"
+  },
+  "monsters:Myte": {
+    "cache_key": "f49be50880f132e77dc9e0a07572868f10ed6b65a7c734895b28e3c8da6401ab",
+    "last_processed": "1774726378.309295"
+  },
+  "monsters:Nibbit": {
+    "cache_key": "0625ab4c595e59c43b128ad2526b7914ec1fdcbfbba01bedde0f50667d8dd2f1",
+    "last_processed": "1774726378.3307846"
+  },
+  "monsters:Noisebot": {
+    "cache_key": "42a9e965a45eb035cabccbb75a57a085c5e91af77185b430983ff98779efe270",
+    "last_processed": "1774726378.3485906"
+  },
+  "monsters:OneHpMonster": {
+    "cache_key": "5b885c1b19cd221f5d94d2a25f16c1142ec472c4a437ea831aeb4acf67965c67",
+    "last_processed": "1774726378.3519943"
+  },
+  "monsters:Osty": {
+    "cache_key": "8dbce92888851ccdf6421d1febcb03250d58ee8dce5902c15410281413090fa8",
+    "last_processed": "1774726378.3643436"
+  },
+  "monsters:Ovicopter": {
+    "cache_key": "dd269cb3a1ea9628491272490280dcc7cc7b4dfc527bb5c2b47f0992645c5148",
+    "last_processed": "1774726378.3844614"
+  },
+  "monsters:OwlMagistrate": {
+    "cache_key": "00c672321628a1a5834763e4ced0b316a721f337276c9c247af541873fc02d39",
+    "last_processed": "1774726378.408045"
+  },
+  "monsters:PaelsLegion": {
+    "cache_key": "1df3eb760edb0e4e12ccbf5c292071f242c1e6563f3e4c8bb732a000e6b2a11d",
+    "last_processed": "1774726378.4260387"
+  },
+  "monsters:Parafright": {
+    "cache_key": "7fc5c62827d2f571eeb5351b49850c185ad8834437069da3395d35e0ab7c4af7",
+    "last_processed": "1774726378.4354985"
+  },
+  "monsters:PhantasmalGardener": {
+    "cache_key": "6fbbf8fbb375cada47f0443ef762a6027b91bfaac495bae8ab503c98fc7ac569",
+    "last_processed": "1774726378.4740522"
+  },
+  "monsters:PhrogParasite": {
+    "cache_key": "b08b49244b6860517fb6c43493bd355c9a49f714490f87ba0427ee17b9cec9db",
+    "last_processed": "1774726378.496057"
+  },
+  "monsters:PunchConstruct": {
+    "cache_key": "16ff01f210e642dfb32b87262253f269091977cf6e0171b9054a6564cc253076",
+    "last_processed": "1774726378.522934"
+  },
+  "monsters:Queen": {
+    "cache_key": "ea20757ff9fb5742117281c0cfe98879d137e3f8d24fdc4ddd4b05f6286ec5f0",
+    "last_processed": "1774726378.56712"
+  },
+  "monsters:Rocket": {
+    "cache_key": "a305c2b32a683cbb0824cbd0e2f2858f38eca559927f926b323bf256c662fd73",
+    "last_processed": "1774726378.6102924"
+  },
+  "monsters:ScrollOfBiting": {
+    "cache_key": "66d00125686628990069b29c53a905e73117fd32c4c923514acbb928731c82e6",
+    "last_processed": "1774726378.6426907"
+  },
+  "monsters:SewerClam": {
+    "cache_key": "d54490080e27bdc370f3962382e93f9db4084e27b58441d1fb754c45dd107f2a",
+    "last_processed": "1774726378.6783724"
+  },
+  "monsters:ShrinkerBeetle": {
+    "cache_key": "6142aa53837d18224ec89221d27e48da8f56e80504fe065e0101ee4cbabad0ca",
+    "last_processed": "1774726378.6901832"
+  },
+  "monsters:SingleAttackMoveMonster": {
+    "cache_key": "0903f24021488cfc586cbc00a666f4c6ed9d7b46e7fcb08f6f5ff2fcce05a6dc",
+    "last_processed": "1774726378.7067525"
+  },
+  "monsters:SkulkingColony": {
+    "cache_key": "319559779875ed7285db9f47de5bc721d7a68ec159e23404edd2c756aa0787dc",
+    "last_processed": "1774726378.7498407"
+  },
+  "monsters:SlimedBerserker": {
+    "cache_key": "abf0321ad4804bbbe150964030525ec39e40a92ad574dcc6d14f0ce9664cca88",
+    "last_processed": "1774726378.7726655"
+  },
+  "monsters:SlitheringStrangler": {
+    "cache_key": "0f23ff79acb6dcdf71484d8fe0645cad3a073031ab48bce5021265d0269ed36a",
+    "last_processed": "1774726378.7883604"
+  },
+  "monsters:SlumberingBeetle": {
+    "cache_key": "7c6632000843145ad98292908f86c66f664654fc6bf382da30a190b87558d0e7",
+    "last_processed": "1774726378.8413506"
+  },
+  "monsters:SnappingJaxfruit": {
+    "cache_key": "8b8fcf001367c711e1195cd41e38ba12cd555ce77f3b76138029bc31dd974734",
+    "last_processed": "1774726378.8593671"
+  },
+  "monsters:SneakyGremlin": {
+    "cache_key": "f2bb957afeb6cc306ea6ed27b69e7765bda01c27248fce82bdc4f87a46db3002",
+    "last_processed": "1774726378.8693602"
+  },
+  "monsters:SoulFysh": {
+    "cache_key": "05905870dd501721252b3cef342a785c24127bc39abf530b1adbbe6e0f774786",
+    "last_processed": "1774726378.9164379"
+  },
+  "monsters:SoulNexus": {
+    "cache_key": "5c41de57a399758a9f6cbd11fe6d5cfca599856c500adce6495befcc8021e568",
+    "last_processed": "1774726378.9364614"
+  },
+  "monsters:SpectralKnight": {
+    "cache_key": "c35d2cc07e9b9c4ec5afaebeb89a5dd4be4724f1e1557c7f8f2f8b484dc9028e",
+    "last_processed": "1774726378.9563715"
+  },
+  "monsters:SpinyToad": {
+    "cache_key": "2f98fd19edc5355b344cdb46d1852928d08799ca922054c70bdda3cf824b4260",
+    "last_processed": "1774726378.9758177"
+  },
+  "monsters:Stabbot": {
+    "cache_key": "b9658af8b01657dd8fa84d8f8f2eddb3c563e81838e84c59f1ad36c4ba4be535",
+    "last_processed": "1774726378.9844532"
+  },
+  "monsters:ThievingHopper": {
+    "cache_key": "bf4743ece3edac138cc55c63441227b916b0de7819a5d952bc535b3cb8140779",
+    "last_processed": "1774726379.2961829"
+  },
+  "monsters:ToughEgg": {
+    "cache_key": "ecb4511bb5844c91aa4a5ef7e9f0417b9ae509782da24e9d59638298ec82f057",
+    "last_processed": "1774726379.3712928"
+  },
+  "monsters:TrackerRubyRaider": {
+    "cache_key": "067aa3c0f4107b1f25402ad61e680b06c363d7703013d2ad318fd9486748353b",
+    "last_processed": "1774726379.395633"
+  },
+  "monsters:Tunneler": {
+    "cache_key": "649eb2641ba3a19e80c0d00e193b57027b0c1b2c2b7dd98a1b0b8e22bba7d392",
+    "last_processed": "1774726379.408642"
+  },
+  "monsters:TurretOperator": {
+    "cache_key": "a855711e85e56d2f284348859d7ce27bcb02bb4b31a7263b1377b069fe9a1027",
+    "last_processed": "1774726379.4162426"
+  },
+  "monsters:TwigSlimeM": {
+    "cache_key": "9c307712fd0fab1c55f43e1a7265a67f1564d03c4dd8cb4fcb7af94319bff00e",
+    "last_processed": "1774726379.425651"
+  },
+  "monsters:TwigSlimeS": {
+    "cache_key": "1f54aaf88b568f561748ee1287f564037e2143d16ef23c464c9509d7d4b26354",
+    "last_processed": "1774726379.4297893"
+  },
+  "monsters:TwoTailedRat": {
+    "cache_key": "1261bf2ca2082c51a84371b49bc5def7d9eaa78f5c7406fec4a2af15ff4ee0aa",
+    "last_processed": "1774726379.4708567"
+  },
+  "monsters:Vantom": {
+    "cache_key": "e0c5251dbbce2ca4b5a6aedcb157a25f782c463b4524a59c2d8af7a0c017bcce",
+    "last_processed": "1774726379.503345"
+  },
+  "monsters:VineShambler": {
+    "cache_key": "f94b94600db448c6127c919e006963d86cc59014d94625a008c32575fa4dbd62",
+    "last_processed": "1774726379.5134118"
+  },
+  "monsters:WaterfallGiant": {
+    "cache_key": "27506fa887f85fb47dda438875047e3c014ea4367b8123b3e98bf5b7b8195606",
+    "last_processed": "1774726379.56063"
+  },
+  "monsters:Wriggler": {
+    "cache_key": "ae81d1b7186655e2b877b8b7b4a437b1f252017bdbe33ee0592934e2ae77c0a3",
+    "last_processed": "1774726379.5719879"
+  },
+  "monsters:Zapbot": {
+    "cache_key": "13063c481225fa7c63ec4714eff75a7a852ae1cfb035a2603d0732ae06929f06",
+    "last_processed": "1774726379.5781314"
+  },
+  "enchantments:Vigorous": {
+    "cache_key": "8aaaeb929d94f31f8e3aaf9a6a7a848555dc7e397f83329bae17a1d80ea44013",
+    "last_processed": "1774726378.4944448"
   }
 }

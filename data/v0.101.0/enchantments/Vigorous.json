@@ -1,0 +1,17 @@
+{
+  "class_name": "Vigorous",
+  "title": "Vigorous",
+  "description": "The first time this card is played, it deals 8 additional damage.",
+  "card_type": "Attack",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": true,
+  "sources": [
+    {
+      "type": "event",
+      "class_name": "StoneOfAllTime",
+      "title": "Stone of All Time",
+      "amount": 8
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "class_name": "Glam",
+  "title": "Glam",
+  "description": "This card has [gold]Replay[/gold] once per combat.",
+  "card_type": "Any",
+  "restrictions": [],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "relic",
+      "class_name": "Glitter",
+      "title": "Glitter",
+      "amount": 1
+    }
+  ],
+  "notes": "On the first play of the enchanted card each combat, the card is replayed once (EnchantPlayCount adds 1). After replay, the enchantment sets itself to Disabled for the rest of combat."
+}

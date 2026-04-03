@@ -43,7 +43,7 @@ ENTITY_TYPE_LOC: dict[str, str] = {
 
 CACHE_PATH = PROJECT_ROOT / "data" / ".llm_cache.json"
 PROMPTS_DIR = PROJECT_ROOT / "scripts" / "prompts"
-MODEL = "claude-sonnet-4-6"
+MODEL = "claude-haiku-4-5"
 
 
 def load_cache() -> dict[str, object]:
@@ -384,6 +384,8 @@ async def async_main() -> None:
         if entity_type == "events" and not is_event_class(content):
             continue
         if entity_type == "monsters" and not is_monster_class(content):
+            continue
+        if entity_type == "enchantments" and not is_enchantment_class(content, class_name):
             continue
 
         # Determine act info (events only)
