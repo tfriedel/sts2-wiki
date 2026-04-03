@@ -60,11 +60,11 @@
 - [x] Write encounter extraction prompt
 - [x] Add "encounters" to ENTITY_TYPE_DIRS
 - [x] Adapt generate_encounters.py for per-entity JSON + overrides
-- [~] Process all encounters for v0.101.0 (running)
-- [ ] Review and fix issues
+- [x] Process all encounters for v0.101.0
+- [x] Review and fix issues (0 issues)
 
 ## Infrastructure
-- [ ] Optimize: skip per-entity site rebuild for simple entities (major bottleneck)
+- [x] Optimize: skip per-entity site rebuild (--skip-build flag, ~15x faster)
 - [ ] Add justfile targets for LLM extraction
 - [ ] Update the sts2-new-patch skill to include LLM extraction steps
 - [ ] Clean up: remove old regex extraction scripts once all types migrated
