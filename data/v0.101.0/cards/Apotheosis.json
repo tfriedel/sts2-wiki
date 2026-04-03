@@ -1,7 +1,7 @@
 {
   "class_name": "Apotheosis",
   "title": "Apotheosis",
-  "character": "Event",
+  "character": "Colorless",
   "energy_cost": 2,
   "type": "Skill",
   "rarity": "Ancient",
@@ -12,5 +12,5 @@
   "upgraded_cost": 1,
   "x_cost": false,
   "referenced_powers": [],
-  "notes": "Upgrades all other upgradable cards in hand."
+  "notes": "Upgrades all other upgradable cards in your deck."
 }
