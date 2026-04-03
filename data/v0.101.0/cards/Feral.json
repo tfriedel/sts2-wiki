@@ -1,0 +1,26 @@
+{
+  "class_name": "Feral",
+  "title": "Feral",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 1
+    }
+  ],
+  "description": "The first time you play a 1 Energy Attack each turn,\nreturn it to your [gold]Hand[/gold].",
+  "upgraded_cost": 1,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "FeralPower",
+      "title": "Feral",
+      "slug": "feral"
+    }
+  ]
+}
