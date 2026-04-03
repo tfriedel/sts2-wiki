@@ -1,7 +1,7 @@
 {
   "class_name": "Buffer",
   "title": "Buffer",
-  "character": "Colorless",
+  "character": "Defect",
   "energy_cost": 2,
   "type": "Power",
   "rarity": "Rare",
@@ -9,7 +9,7 @@
   "keywords": [],
   "vars": [
     {
-      "type": "Power",
+      "type": "Stacks",
       "base_value": 1,
       "upgraded_value": 2
     }
