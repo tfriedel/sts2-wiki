@@ -4,5 +4,6 @@
   "power_type": "Debuff",
   "stack_type": "Counter",
   "description": "Other allies deal [blue]2x[/blue] more damage to this enemy this turn.",
+  "smart_description": "Other allies deal [blue]{Amount}[/blue] times more damage to this enemy this turn.",
   "notes": "Applied to an enemy when flanked by allies. Each stack increases the damage multiplier (by the Amount value). Removed at the end of the enemy's turn. Only affects powered attacks from creatures other than the one who applied the power."
 }

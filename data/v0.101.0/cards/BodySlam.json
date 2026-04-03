@@ -13,6 +13,6 @@
       "base_value": 1
     }
   ],
-  "description": "Deal damage equal to your Block.",
+  "description": "Deal damage equal to your [gold]Block[/gold].",
   "upgraded_cost": 0
 }

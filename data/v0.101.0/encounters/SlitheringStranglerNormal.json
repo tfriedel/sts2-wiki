@@ -5,13 +5,8 @@
   "is_weak": false,
   "monsters": [
     "SlitheringStrangler",
-    "SnappingJaxfruit",
-    "LeafSlimeM",
-    "TwigSlimeM",
-    "LeafSlimeS",
-    "TwigSlimeS"
+    "SnappingJaxfruit"
   ],
-  "total_monsters": "2-3",
-  "tags": ["Slimes"],
-  "notes": "Encounter spawns the Slithering Strangler with one randomly selected secondary enemy: either a Snapping Jaxfruit (1 monster), a medium slime variant (1 monster), or two small slime variants (2 monsters). Total monster count ranges from 2-3 depending on secondary enemy selection."
+  "tags": [],
+  "notes": "This encounter randomly spawns the SlitheringStrangler with one of three secondary enemy options: a SnappingJaxfruit (2 total monsters), one Medium Slime - LeafSlimeM or TwigSlimeM (2 total monsters), or two Small Slimes from LeafSlimeS and TwigSlimeS (3 total monsters)."
 }

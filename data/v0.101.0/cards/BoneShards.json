@@ -20,5 +20,7 @@
     }
   ],
   "description": "If [gold]Osty[/gold] is alive, he deals 9 damage to ALL enemies and you gain 9 [gold]Block[/gold].\n[gold]Osty[/gold] dies.",
-  "upgraded_description": "If [gold]Osty[/gold] is alive, he deals 12 damage to ALL enemies and you gain 12 [gold]Block[/gold].\n[gold]Osty[/gold] dies."
+  "upgraded_description": "If [gold]Osty[/gold] is alive, he deals 12 damage to ALL enemies and you gain 12 [gold]Block[/gold].\n[gold]Osty[/gold] dies.",
+  "referenced_powers": [],
+  "notes": "Osty must be alive for the card to have an effect. Osty dies after the attack resolves."
 }

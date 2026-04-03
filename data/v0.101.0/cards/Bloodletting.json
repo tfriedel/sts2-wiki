@@ -21,5 +21,6 @@
   "description": "Lose 3 HP.\nGain 2 Energy.",
   "upgraded_description": "Lose 3 HP.\nGain 3 Energy.",
   "x_cost": false,
-  "referenced_powers": []
+  "referenced_powers": [],
+  "notes": "Damage dealt is unblockable and unpowered."
 }

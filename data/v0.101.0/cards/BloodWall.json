@@ -19,5 +19,6 @@
     }
   ],
   "description": "Lose 2 HP.\nGain 16 [gold]Block[/gold].",
+  "upgraded_description": "Lose 2 HP.\nGain 20 [gold]Block[/gold].",
   "referenced_powers": []
 }

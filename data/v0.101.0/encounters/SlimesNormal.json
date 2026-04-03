@@ -4,10 +4,10 @@
   "room_type": "Monster",
   "is_weak": false,
   "monsters": [
-    "LeafSlimeS",
-    "TwigSlimeS",
     "TwigSlimeM",
-    "LeafSlimeM"
+    "LeafSlimeM",
+    "LeafSlimeS",
+    "TwigSlimeS"
   ],
   "total_monsters": 4,
   "tags": [
