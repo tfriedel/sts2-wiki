@@ -4,5 +4,5 @@
   "rarity": "Shop",
   "description": "While you have no potions, you have [blue]2[/blue] additional [gold]Dexterity[/gold].",
   "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-  "notes": "Dexterity is dynamically applied when your potion inventory is empty and removed when you obtain potions. The effect updates after combat, potion use, and inventory changes."
+  "notes": "The Dexterity bonus is applied when you enter combat or obtain the relic if you have no potions. It is immediately removed when you obtain a potion and reapplied when you use or discard a potion and have none remaining. The effect is cleared after combat ends."
 }
