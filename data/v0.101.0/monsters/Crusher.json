@@ -49,6 +49,6 @@
     }
   ],
   "move_pattern": "Fixed cycle: Thrash → Enlarging Strike → Bug Sting → Adapt → Guarded Strike → Thrash (repeating).",
-  "powers_on_spawn": ["BackAttackLeftPower", "CrabRagePower"],
+  "powers_on_spawn": ["Back Attack Left", "Crab Rage"],
   "notes": "Part of the Kaiser Crab boss encounter. Spawns with Back Attack (Left) and Crab Rage powers. Follows a strict 5-move rotation with no randomness. Bug Sting hits twice and applies 2 Weak and 2 Frail. Adapt permanently gains 3 Strength each cycle. Guarded Strike both attacks and gains 18 Block."
 }

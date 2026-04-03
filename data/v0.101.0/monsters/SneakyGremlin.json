@@ -7,18 +7,18 @@
   "moves": [
     {
       "id": "SPAWNED_MOVE",
-      "title": "Tackle",
+      "title": "Spawned",
       "intents": [{"type": "stun"}],
-      "effects": ["Stun (wake up animation, no action)"]
+      "effects": ["Wake up"]
     },
     {
       "id": "TACKLE_MOVE",
       "title": "Tackle",
-      "intents": [{"type": "attack", "damage": 10, "hits": 1}],
+      "intents": [{"type": "attack", "damage": 10}],
       "effects": ["Deal 10 damage"]
     }
   ],
-  "move_pattern": "Starts with Spawned (stun/wake-up, does nothing), then repeats Tackle forever.",
+  "move_pattern": "Starts with Spawned (stun intent, wake-up animation only). Then loops Tackle every turn.",
   "powers_on_spawn": [],
-  "notes": "First turn is a stun (wake-up animation). From turn 2 onward it only uses Tackle. The SPAWNED_MOVE has no separate localization entry; it shares the 'Tackle' title in the loc file."
+  "notes": "The Sneaky Gremlin begins combat asleep. Its first move shows a stun intent and plays a wake-up animation with no gameplay effect on the player. From the second turn onward it repeats Tackle (10 damage) every turn."
 }

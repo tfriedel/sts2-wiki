@@ -84,8 +84,8 @@
         { "type": "stun" }
       ],
       "effects": [
-        "Convert all Steam Eruption stacks into eruption damage",
-        "Become invincible (HP set to infinite)"
+        "Store accumulated Steam Eruption stack count as eruption damage",
+        "Remove Steam Eruption"
       ]
     },
     {
@@ -100,7 +100,7 @@
       ]
     }
   ],
-  "move_pattern": "Starts with Pressurize. Then cycles: Stomp → Ram → Siphon → Pressure Gun → Pressure Up → back to Stomp. When externally triggered (at a threshold), interrupts into About to Blow (once), then Explode repeating.",
+  "move_pattern": "Starts with Pressurize. Then cycles: Stomp → Ram → Siphon → Pressure Gun → Pressure Up → back to Stomp. After completing the first full 6-move cycle (Pressurize through Pressure Up), an external trigger fires: the monster becomes invincible (HP set to infinite), performs About to Blow once, then loops on Explode.",
   "powers_on_spawn": [],
-  "notes": "Each move applies Steam Eruption to the Waterfall Giant itself: Pressurize grants 20 stacks, and every subsequent move grants 3 stacks. Pressure Gun starts at 23 damage and increases by 5 each time it is used. When a trigger threshold is reached, TriggerAboutToBlowState() is called externally: the monster's HP is set to infinite (invincible), and on its next turn it performs About to Blow — saving its total Steam Eruption stack count as eruption damage and removing the power. It then repeatedly uses Explode, dealing that saved damage to the player before dying. Siphon heals 15 HP per player, so it scales in multiplayer. The monster only fades on death if it has not yet built up any pressure (PressureBuildupIdx == 0). ShouldDisappearFromDoom is true only when the monster lacks Steam Eruption."
+  "notes": "Each move builds up Steam Eruption on the Waterfall Giant: Pressurize adds 20 stacks; every other move adds 3 stacks. After 6 total moves (one full cycle), the fight transitions: TriggerAboutToBlowState() is called externally, making the monster's HP effectively infinite. About to Blow saves the accumulated Steam Eruption stack count as eruption damage and removes the power; Explode then deals that full amount to all players before the monster dies. Pressure Gun starts at 23 damage and increases by 5 each time it is used (second use: 28, third use: 33, etc.). Siphon heals 15 HP per player, scaling in multiplayer. The monster only fades on death if no pressure has built up (PressureBuildupIdx == 0). Doom does not affect this monster while it has Steam Eruption stacks."
 }

@@ -9,7 +9,7 @@
       "id": "JAB_MOVE",
       "title": "Jab",
       "intents": [
-        {"type": "attack", "damage": 24, "hits": 1}
+        {"type": "attack", "damage": 24}
       ],
       "effects": ["Deal 24 damage"]
     },
@@ -17,7 +17,7 @@
       "id": "RADIATE_MOVE",
       "title": "Radiate",
       "intents": [
-        {"type": "attack", "damage": 18, "hits": 1},
+        {"type": "attack", "damage": 18},
         {"type": "block", "amount": 18}
       ],
       "effects": ["Deal 18 damage", "Gain 18 Block"]
@@ -28,7 +28,7 @@
       "intents": [
         {"type": "multi_attack", "damage": 10, "hits": 3}
       ],
-      "effects": ["Deal 10 damage 3 times"]
+      "effects": ["Deal 10 damage", "3 hits"]
     },
     {
       "id": "PULSATE_MOVE",
@@ -37,10 +37,10 @@
         {"type": "buff"},
         {"type": "block", "amount": 22}
       ],
-      "effects": ["Gain 22 Block", "Gain 5 Strength"]
+      "effects": ["Gain 22 Block", "Apply 5 Strength"]
     }
   ],
-  "move_pattern": "Starts with Jab → Radiate → Whirlwind → Pulsate → Jab → (repeats).",
-  "powers_on_spawn": ["VitalSpark (1)"],
-  "notes": "VitalSpark Power is applied on spawn."
+  "move_pattern": "Cycles: Jab → Radiate → Whirlwind → Pulsate → repeat",
+  "powers_on_spawn": ["VitalSpark 1"],
+  "notes": "Follows a strict, predictable 4-move cycle with no randomness."
 }

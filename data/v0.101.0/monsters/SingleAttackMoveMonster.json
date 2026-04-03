@@ -8,11 +8,16 @@
     {
       "id": "POKE",
       "title": "Poke",
-      "intents": [{"type": "attack", "damage": 1}],
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 1
+        }
+      ],
       "effects": ["Deal 1 damage"]
     }
   ],
-  "move_pattern": "Repeats Poke (single attack) indefinitely.",
+  "move_pattern": "Repeats Poke indefinitely.",
   "powers_on_spawn": [],
-  "notes": "Test/debug monster. Uses BIG_DUMMY localization. Filtered out by generator."
+  "notes": "Test/debug monster. Uses the BIG_DUMMY localization key. Fixed 999 HP and a single 1-damage attack that loops forever."
 }

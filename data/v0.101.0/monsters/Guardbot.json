@@ -9,12 +9,15 @@
       "id": "GUARD_MOVE",
       "title": "Guard",
       "intents": [
-        {"type": "block", "amount": 15}
+        {
+          "type": "block",
+          "amount": 15
+        }
       ],
-      "effects": ["Grant 15 Block to all allied Fabricators"]
+      "effects": ["Give 15 Block to all Fabricators"]
     }
   ],
-  "move_pattern": "Always uses Guard, granting block to allied Fabricators each turn.",
+  "move_pattern": "Always repeats Guard.",
   "powers_on_spawn": [],
-  "notes": "Guard grants 15 Block to all allied Fabricator monsters, not to itself. This monster is associated with Fabricator encounters."
+  "notes": "Guard gives 15 Block to all Fabricator monsters in the same combat, not to itself. Guardbot acts as a support monster protecting Fabricators."
 }

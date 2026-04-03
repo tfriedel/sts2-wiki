@@ -8,29 +8,53 @@
     {
       "id": "SMASH_MOVE",
       "title": "Smash",
-      "intents": [{"type": "attack", "damage": 11, "hits": 1}],
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        }
+      ],
       "effects": ["Deal 11 damage"]
     },
     {
       "id": "ZOOM_MOVE",
       "title": "Zoom",
-      "intents": [{"type": "attack", "damage": 16, "hits": 1}, {"type": "block", "amount": 13}],
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        },
+        {
+          "type": "block",
+          "amount": 13
+        }
+      ],
       "effects": ["Deal 16 damage", "Gain 13 Block"]
     },
     {
       "id": "INERTIA_MOVE",
       "title": "Inertia",
-      "intents": [{"type": "buff"}],
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
       "effects": ["Gain 3 Strength"]
     },
     {
       "id": "PIERCING_STABS_MOVE",
       "title": "Piercing Stabs",
-      "intents": [{"type": "multi_attack", "damage": 8, "hits": 2}],
-      "effects": ["Deal 8 damage twice"]
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 8,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 8 damage", "2 hits"]
     }
   ],
-  "move_pattern": "Starts with Smash, then cycles: Smash -> Zoom -> Inertia -> Piercing Stabs -> Smash...",
-  "powers_on_spawn": ["HardenedShell (15)"],
-  "notes": "Zoom block amount on ascension (ToughEnemies) is 13, base 10. Smash move has no localization title entry."
+  "move_pattern": "Starts with Smash. Then cycles: Smash → Zoom → Inertia → Piercing Stabs → repeat.",
+  "powers_on_spawn": ["Hardened Shell 15"],
+  "notes": "Spawns with 15 Hardened Shell, reducing all incoming damage. Inertia gains 3 Strength each cycle, permanently increasing all subsequent attack damage."
 }

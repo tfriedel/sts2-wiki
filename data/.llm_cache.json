@@ -610,5 +610,9 @@
   "enchantments:Vigorous": {
     "cache_key": "8aaaeb929d94f31f8e3aaf9a6a7a848555dc7e397f83329bae17a1d80ea44013",
     "last_processed": "1774726378.4944448"
+  },
+  "potions:Ashwater": {
+    "cache_key": "bdc5ba6b92b14e8966dfd608876131f8495e2c1e6a831ab8f9c64a1fa227b114",
+    "last_processed": "1774726378.2092564"
   }
 }

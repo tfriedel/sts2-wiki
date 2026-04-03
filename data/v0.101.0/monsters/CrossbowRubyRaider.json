@@ -29,5 +29,6 @@
     }
   ],
   "move_pattern": "Starts with Reload, then alternates: Fire → Reload → Fire → Reload...",
-  "powers_on_spawn": []
+  "powers_on_spawn": [],
+  "notes": "Tracks an internal loaded/unloaded state — animations (hurt, death) differ based on whether the crossbow is reloaded, but this has no effect on combat mechanics."
 }

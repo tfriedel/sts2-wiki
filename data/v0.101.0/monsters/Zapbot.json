@@ -17,7 +17,6 @@
       "effects": ["Deal 15 damage"]
     }
   ],
-  "move_pattern": "Repeats Zap every turn.",
-  "powers_on_spawn": ["High Voltage 2"],
-  "notes": "Zapbot spawns with 2 stacks of High Voltage. Has armor sound effects when taking damage."
+  "move_pattern": "Repeatedly uses Zap every turn.",
+  "powers_on_spawn": ["High Voltage 2"]
 }

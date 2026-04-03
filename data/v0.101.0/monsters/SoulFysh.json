@@ -7,36 +7,78 @@
   "moves": [
     {
       "id": "BECKON_MOVE",
-      "title": "Burp",
-      "intents": [{"type": "status", "amount": 2}],
-      "effects": ["Add 2 Beckon status cards to player's hand (1 to draw pile, 1 to discard pile)"]
+      "title": "Beckon",
+      "intents": [
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Add 1 Beckon to draw pile",
+        "Add 1 Beckon to discard pile"
+      ]
     },
     {
       "id": "DE_GAS_MOVE",
       "title": "De-Gas",
-      "intents": [{"type": "attack", "damage": 17, "hits": 1}],
-      "effects": ["Deal 17 damage"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": [
+        "Deal 17 damage"
+      ]
     },
     {
       "id": "GAZE_MOVE",
       "title": "Gaze",
-      "intents": [{"type": "attack", "damage": 8, "hits": 1}, {"type": "status", "amount": 1}],
-      "effects": ["Deal 8 damage", "Add 1 Beckon status card to player's discard pile"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "Add 1 Beckon to discard pile"
+      ]
     },
     {
       "id": "FADE_MOVE",
       "title": "Fade",
-      "intents": [{"type": "buff"}],
-      "effects": ["Gain 2 Intangible"]
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Gain 2 Intangible"
+      ]
     },
     {
       "id": "SCREAM_MOVE",
       "title": "Scream",
-      "intents": [{"type": "attack", "damage": 12, "hits": 1}, {"type": "debuff"}],
-      "effects": ["Deal 12 damage", "Apply 3 Vulnerable to player", "Become visible again (exit intangible)"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 12
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 12 damage",
+        "Apply 3 Vulnerable"
+      ]
     }
   ],
-  "move_pattern": "Starts with Beckon (Burp), then De-Gas, then Gaze, then Fade, then Scream, then repeats from Beckon.",
+  "move_pattern": "Cycles: Beckon → De-Gas → Gaze → Fade → Scream → (repeat)",
   "powers_on_spawn": [],
-  "notes": "Boss monster with 221 HP. Beckon adds Beckon status cards to the player's draw and discard piles. Fade grants Intangible making the monster untargetable. Scream re-reveals the monster. BECKON_MOVE localization maps to 'Burp' title. GAZE_MOVE and FADE_MOVE have no localization entries."
+  "notes": "During Fade, the Soul Fysh becomes invisible and gains 2 Intangible, making it immune to damage for 2 turns. It remains invisible until Scream, which reveals it again. Beckon and Gaze both add Beckon status cards to the player's deck."
 }

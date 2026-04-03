@@ -9,30 +9,30 @@
       "id": "SHOCKING_SLAP",
       "title": "Shocking Slap",
       "intents": [
-        {"type": "attack", "damage": 14, "hits": 1},
+        {"type": "attack", "damage": 14},
         {"type": "debuff"}
       ],
       "effects": ["Deal 14 damage", "Apply 2 Frail"]
     },
     {
       "id": "THUNDER_STRIKE",
-      "title": "Channel Lightning",
+      "title": "Thunder Strike",
       "intents": [
         {"type": "multi_attack", "damage": 7, "hits": 3}
       ],
-      "effects": ["Deal 7 damage 3 times"]
+      "effects": ["Deal 7 damage", "3 hits"]
     },
     {
       "id": "GALVANIC_BURST",
-      "title": "Dual Cast",
+      "title": "Galvanic Burst",
       "intents": [
-        {"type": "attack", "damage": 17, "hits": 1},
+        {"type": "attack", "damage": 17},
         {"type": "buff"}
       ],
       "effects": ["Deal 17 damage", "Gain 2 Strength"]
     }
   ],
-  "move_pattern": "Starts with Shocking Slap → Thunder Strike (Channel Lightning) → Galvanic Burst (Dual Cast) → Shocking Slap → (repeats).",
+  "move_pattern": "Cycles: Shocking Slap → Thunder Strike → Galvanic Burst → repeat",
   "powers_on_spawn": ["Galvanic (6)"],
-  "notes": "Galvanic Power is applied on spawn. The localization titles differ from move IDs: THUNDER_STRIKE is titled 'Channel Lightning' and GALVANIC_BURST is titled 'Dual Cast'."
+  "notes": "Begins combat with 6 Galvanic power. Each use of Galvanic Burst grants the Globe Head 2 Strength, increasing the damage of all subsequent attacks."
 }

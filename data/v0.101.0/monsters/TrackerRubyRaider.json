@@ -28,7 +28,7 @@
       "effects": ["Deal 1 damage", "9 hits"]
     }
   ],
-  "move_pattern": "Starts with Track (applies Frail), then Unleash the Hounds repeats every turn for the rest of combat.",
+  "move_pattern": "Starts with Track, then loops Unleash the Hounds indefinitely.",
   "powers_on_spawn": [],
-  "notes": "Opens with Track to apply 2 Frail before unleashing 9 rapid hits of 1 damage each turn thereafter. The Frail debuff increases the player's vulnerability to card effects, synergizing with the barrage of hits."
+  "notes": "Opens with Track to apply 2 Frail (reducing block gained from cards), then repeats Unleash the Hounds every turn for the rest of combat — 9 hits of 1 damage each."
 }

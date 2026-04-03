@@ -48,6 +48,6 @@
     }
   ],
   "move_pattern": "Starts with Thievery → Flutter → Hat Trick → Nab → Escape. After Escape the monster flees and does not return.",
-  "powers_on_spawn": ["Escape Artist 5"],
+  "powers_on_spawn": ["Escape Artist (5)"],
   "notes": "Thievery steals one card per target from the player's draw or discard pile, removing it from combat for the rest of the fight (only cards with a DeckVersion — permanent deck cards, not combat-generated cards). The hopper gains 1 stack of Swipe per stolen card. Card selection follows a strict priority: (1) non-Imbued Uncommon, (2) non-Imbued Common/Rare/Event, (3) non-Imbued Basic/Quest, (4) Ancient or Imbued. Flutter puts the hopper into a permanent hovering state (IsHovering = true), which changes its animations and sound effects for the remainder of combat. The Escape Artist power starts at 5 stacks on spawn."
 }

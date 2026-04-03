@@ -10,7 +10,8 @@
       "title": "Haunt",
       "intents": [
         {
-          "type": "status"
+          "type": "status",
+          "amount": 5
         }
       ],
       "effects": ["Add 5 Dazed to discard"]

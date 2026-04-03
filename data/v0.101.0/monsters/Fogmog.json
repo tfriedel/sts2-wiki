@@ -15,7 +15,7 @@
     },
     {
       "id": "SWIPE_MOVE",
-      "title": "Thwack",
+      "title": "Swipe",
       "intents": [
         {"type": "attack", "damage": 9},
         {"type": "buff"}
@@ -24,7 +24,7 @@
     },
     {
       "id": "SWIPE_RANDOM_MOVE",
-      "title": "Thwack",
+      "title": "Swipe",
       "intents": [
         {"type": "attack", "damage": 9},
         {"type": "buff"}
@@ -40,7 +40,7 @@
       "effects": ["Deal 16 damage"]
     }
   ],
-  "move_pattern": "Starts with Illusory Spores (summons an EyeWithTeeth), then Thwack. After each Thwack, randomly either uses Thwack again (40%, then forced into Headbutt) or goes directly to Headbutt (60%). Headbutt always leads back to Thwack, repeating the cycle.",
+  "move_pattern": "Starts with Illusory Spores (summons an EyeWithTeeth). Then uses Swipe. After Swipe, randomly branches: 60% chance goes directly to Headbutt, 40% chance uses Swipe again before Headbutt (CannotRepeat enforced on both branches). After Headbutt, always returns to Swipe and repeats the branch.",
   "powers_on_spawn": [],
-  "notes": "Illusory Spores summons an EyeWithTeeth monster into combat on the first turn. Each use of Thwack (both SWIPE_MOVE and SWIPE_RANDOM_MOVE) also grants the Fogmog 1 Strength, so its attack damage increases over the course of the fight. The random branch after Thwack uses CannotRepeat, preventing consecutive use of the same branch."
+  "notes": "Illusory Spores summons an EyeWithTeeth monster into combat on the first turn. Each use of Swipe (both SWIPE_MOVE and SWIPE_RANDOM_MOVE call the same method) grants the Fogmog 1 Strength, so its attack damage increases over the course of the fight. Since Swipe appears at least once per cycle — and sometimes twice — the Strength stacks build quickly."
 }

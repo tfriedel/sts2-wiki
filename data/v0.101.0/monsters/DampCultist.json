@@ -9,7 +9,9 @@
       "id": "INCANTATION_MOVE",
       "title": "Incantation",
       "intents": [
-        {"type": "buff"}
+        {
+          "type": "buff"
+        }
       ],
       "effects": ["Apply 6 Ritual to self"]
     },
@@ -17,12 +19,15 @@
       "id": "DARK_STRIKE_MOVE",
       "title": "Dark Strike",
       "intents": [
-        {"type": "attack", "damage": 3}
+        {
+          "type": "attack",
+          "damage": 3
+        }
       ],
       "effects": ["Deal 3 damage"]
     }
   ],
-  "move_pattern": "Starts with Incantation (gains 6 Ritual), then uses Dark Strike every turn indefinitely.",
+  "move_pattern": "Starts with Incantation, then repeatedly uses Dark Strike.",
   "powers_on_spawn": [],
-  "notes": "Similar pattern to CalcifiedCultist but with higher Ritual (6) and lower base attack damage (3). Ritual causes Strength to increase each turn, so Dark Strike damage ramps up significantly over time. Uses the slug skin variant."
+  "notes": "Ritual causes the Damp Cultist to gain 1 Strength at the end of each turn, so its Dark Strike damage escalates significantly over a long fight."
 }

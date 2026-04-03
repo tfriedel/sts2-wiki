@@ -43,7 +43,7 @@
       "effects": ["Deal 18 damage"]
     }
   ],
-  "move_pattern": "Starts with Swipe, then cycles: Swipe → Grasping Vines → Chomp → repeat.",
+  "move_pattern": "Starts with Swipe. Then cycles: Swipe → Grasping Vines → Chomp → repeat.",
   "powers_on_spawn": [],
-  "notes": "Grasping Vines both deals damage and applies 1 Tangled to the target."
+  "notes": "Grasping Vines deals damage and applies 1 Tangled to the target in addition to the attack."
 }

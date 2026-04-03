@@ -94,6 +94,21 @@ def main() -> None:
     with open(os.path.join(data_dir, "potions.json")) as f:
         potions = json.load(f)
 
+    # Load per-entity JSON overrides
+    per_entity_dir = os.path.join(data_dir, "potions")
+    if os.path.isdir(per_entity_dir):
+        potions_by_class = {p["class_name"]: p for p in potions}
+        for fname in os.listdir(per_entity_dir):
+            if fname.endswith(".json"):
+                with open(os.path.join(per_entity_dir, fname)) as f:
+                    entity_data = json.load(f)
+                cname = entity_data.get("class_name", fname.removesuffix(".json"))
+                if cname in potions_by_class:
+                    potions_by_class[cname].update(entity_data)
+                else:
+                    potions_by_class[cname] = entity_data
+        potions = list(potions_by_class.values())
+
     out = Path(output_dir)
     if out.exists():
         for p in out.glob("*.md"):

@@ -8,23 +8,44 @@
     {
       "id": "PROTRUDING_SPIKES_MOVE",
       "title": "Protruding Spikes",
-      "intents": [{"type": "buff"}],
-      "effects": ["Apply 5 ThornsPower to self"]
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 5 Thorns to self"
+      ]
     },
     {
       "id": "SPIKE_EXPLOSION_MOVE",
       "title": "Spike Explosion",
-      "intents": [{"type": "attack", "damage": 25}],
-      "effects": ["Deal 25 damage", "Remove 5 ThornsPower from self"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 25
+        }
+      ],
+      "effects": [
+        "Deal 25 damage",
+        "Remove 5 Thorns from self"
+      ]
     },
     {
       "id": "TONGUE_LASH_MOVE",
       "title": "Tongue Lash",
-      "intents": [{"type": "attack", "damage": 19}],
-      "effects": ["Deal 19 damage"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 19
+        }
+      ],
+      "effects": [
+        "Deal 19 damage"
+      ]
     }
   ],
-  "move_pattern": "Fixed cycle: PROTRUDING_SPIKES_MOVE → SPIKE_EXPLOSION_MOVE → TONGUE_LASH_MOVE → PROTRUDING_SPIKES_MOVE (repeating).",
+  "move_pattern": "Cycles: Protruding Spikes → Spike Explosion → Tongue Lash → repeat",
   "powers_on_spawn": [],
-  "notes": "HP range 121-124 (ascension). Damage values are ascension (DeadlyEnemies): Spike Explosion 25, Tongue Lash 19. Gains 5 Thorns on Protruding Spikes, then removes them on Spike Explosion."
+  "notes": "The Spiny Toad alternates between a spiked and unspiked state. Protruding Spikes arms itself with 5 Thorns (dealing damage back to attackers). Spike Explosion fires those spikes as an attack and removes the Thorns. Tongue Lash is a simple follow-up attack before the cycle repeats."
 }

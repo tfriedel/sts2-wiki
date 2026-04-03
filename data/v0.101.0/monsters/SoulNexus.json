@@ -8,23 +8,30 @@
     {
       "id": "SOUL_BURN_MOVE",
       "title": "Soul Burn",
-      "intents": [{"type": "attack", "damage": 31, "hits": 1}],
+      "intents": [
+        {"type": "attack", "damage": 31}
+      ],
       "effects": ["Deal 31 damage"]
     },
     {
       "id": "MAELSTROM_MOVE",
       "title": "Maelstrom",
-      "intents": [{"type": "multi_attack", "damage": 7, "hits": 4}],
-      "effects": ["Deal 7 damage 4 times"]
+      "intents": [
+        {"type": "multi_attack", "damage": 7, "hits": 4}
+      ],
+      "effects": ["Deal 7 damage", "4 hits"]
     },
     {
       "id": "DRAIN_LIFE_MOVE",
       "title": "Drain Life",
-      "intents": [{"type": "attack", "damage": 19, "hits": 1}, {"type": "debuff"}],
-      "effects": ["Deal 19 damage", "Apply 2 Vulnerable to player", "Apply 2 Weak to player"]
+      "intents": [
+        {"type": "attack", "damage": 19},
+        {"type": "debuff"}
+      ],
+      "effects": ["Deal 19 damage", "Apply 2 Vulnerable", "Apply 2 Weak"]
     }
   ],
-  "move_pattern": "Starts with Soul Burn. After each move, randomly picks one of the three moves, not repeating the previous (CannotRepeat). All three moves lead to the same random branch.",
+  "move_pattern": "Starts with Soul Burn. After each move, randomly selects from Soul Burn, Maelstrom, or Drain Life, never repeating the previous move.",
   "powers_on_spawn": [],
-  "notes": "Boss monster with 254 HP. ShouldFadeAfterDeath is false. All three moves feed into a random branch that prevents consecutive repetition."
+  "notes": "Drain Life deals damage then applies 2 Vulnerable and 2 Weak to the player. The monster does not fade after death (ShouldFadeAfterDeath is false)."
 }

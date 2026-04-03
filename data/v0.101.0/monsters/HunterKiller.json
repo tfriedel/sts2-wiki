@@ -17,7 +17,7 @@
       "id": "BITE_MOVE",
       "title": "Bite",
       "intents": [
-        {"type": "attack", "damage": 19, "hits": 1}
+        {"type": "attack", "damage": 19}
       ],
       "effects": ["Deal 19 damage"]
     },

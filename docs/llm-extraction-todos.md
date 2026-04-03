@@ -25,8 +25,8 @@
 - [x] Write enchantment extraction prompt
 - [x] Add "enchantments" to ENTITY_TYPE_DIRS
 - [x] Adapt generate_enchantments.py for per-entity JSON + overrides
-- [~] Process all enchantments for v0.101.0
-- [ ] Review and fix issues
+- [x] Process all enchantments for v0.101.0
+- [x] Review and fix issues (0 issues)
 
 ## Cards
 - [ ] Write card extraction prompt

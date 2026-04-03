@@ -9,7 +9,9 @@
       "id": "INCANTATION_MOVE",
       "title": "Incantation",
       "intents": [
-        {"type": "buff"}
+        {
+          "type": "buff"
+        }
       ],
       "effects": ["Apply 2 Ritual to self"]
     },
@@ -17,12 +19,15 @@
       "id": "DARK_STRIKE_MOVE",
       "title": "Dark Strike",
       "intents": [
-        {"type": "attack", "damage": 11}
+        {
+          "type": "attack",
+          "damage": 11
+        }
       ],
       "effects": ["Deal 11 damage"]
     }
   ],
-  "move_pattern": "Starts with Incantation (gains 2 Ritual), then uses Dark Strike every turn indefinitely.",
+  "move_pattern": "Starts with Incantation. Then repeats Dark Strike every turn for the rest of combat.",
   "powers_on_spawn": [],
-  "notes": "Uses Ritual Power, gaining 2 Ritual on the first turn. Each stack of Ritual grants +1 Strength at the end of each turn, so 2 Ritual = +2 Strength per turn. Dark Strike's effective damage grows by 2 each turn."
+  "notes": "Ritual causes the Calcified Cultist to gain 1 Strength at the end of each turn per stack, so with 2 Ritual it gains 2 Strength per turn — Dark Strike's damage grows by 2 each round after the first."
 }

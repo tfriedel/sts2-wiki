@@ -34,8 +34,7 @@
         }
       ],
       "effects": [
-        "Deal 13 damage",
-        "2 hits",
+        "Deal 13 damage × 2 hits",
         "Apply 1 Scrutiny"
       ]
     },
@@ -75,7 +74,7 @@
       ]
     }
   ],
-  "move_pattern": "Starts with Dramatic Open (phase transition). Then cycles: Hunger → Scrutiny → Grasp → Hunger (repeating).",
+  "move_pattern": "Starts with Dramatic Open (one-time phase transition). Then cycles: Hunger → Scrutiny → Grasp → Hunger (repeating).",
   "powers_on_spawn": [],
-  "notes": "The Doormaker begins combat disguised as a 'Door' with effectively infinite HP and no visible health bar. On its first turn (Dramatic Open), it reveals its true form — resetting its HP to 512, removing all powers, and applying 1 Hunger. After Dramatic Open, it cycles through three phases (Hunger → Scrutiny → Grasp), each swapping a cosmetic phase power (Hunger, Scrutiny, Grasp) that visually indicates the current phase. The Grasp move permanently weakens the player (-1 Strength and -1 Dexterity) while strengthening itself (+5 Strength) each cycle."
+  "notes": "The Doormaker begins combat disguised as a 'Door' with effectively infinite HP and no visible health bar. On its first turn (Dramatic Open), it reveals its true form — resetting HP to 512, removing all powers, and applying Hunger. Each move ends by swapping its active phase power (Hunger → Scrutiny → Grasp → Hunger), which cycles endlessly and acts as a visual indicator of the current mode. The Grasp move permanently weakens the player (-1 Strength and -1 Dexterity) while strengthening itself (+5 Strength) each cycle."
 }

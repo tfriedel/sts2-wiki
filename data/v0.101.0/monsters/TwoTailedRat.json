@@ -45,10 +45,10 @@
           "type": "summon"
         }
       ],
-      "effects": ["Summon a Two-Tailed Rat"]
+      "effects": ["Summon another Two-Tailed Rat into an empty enemy slot"]
     }
   ],
-  "move_pattern": "Randomly selects from Scratch, Disease Bite, Screech, or Call for Backup each turn. No move can repeat back-to-back. Screech can be used at most 3 times total per rat. Call for Backup can only be used once per rat instance. When summon conditions are not met, Call for Backup is never chosen; when they are met, it is chosen with ~75% weight.",
+  "move_pattern": "Randomly selects from Scratch, Disease Bite, and Screech (no move can repeat back-to-back; Screech limited to 3 uses per rat) until summoning becomes available. Once summon conditions are met, Call for Backup is chosen with 75% weight, with roughly 8% weight each for Scratch, Disease Bite, and Screech. Each individual rat may only use Call for Backup once.",
   "powers_on_spawn": [],
-  "notes": "Call for Backup is gated by multiple conditions: (1) TurnsUntilSummonable starts at 2 and decrements with each non-summon move — the rat cannot summon for its first 2 turns; (2) the total summon count (CallForBackupCount) is shared and synced across all Two-Tailed Rats in the encounter, capped at 3; (3) there must be an empty enemy slot available; (4) no other rat in the encounter may already be planning Call for Backup. Summoned rats start with the same restrictions and count toward the shared limit of 3 summons."
+  "notes": "Call for Backup is gated by multiple conditions: (1) TurnsUntilSummonable starts at 2 and decrements with each use of Scratch, Disease Bite, or Screech — the rat cannot summon for its first 2 turns; (2) the total summon count (CallForBackupCount) is shared and synced across all Two-Tailed Rats in the encounter, capped at 3 total summons; (3) there must be an empty enemy slot available; (4) no other rat in the encounter may already be planning Call for Backup that same turn. Despite its name, Disease Bite deals damage only — no disease or debuff is applied."
 }

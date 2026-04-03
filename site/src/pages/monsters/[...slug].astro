@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { getMoveIntents, getMoveEffectLines, parsePattern, intentIconFile, monsterImageName, isSoloEncounter } from '../../utils';
+import { getMoveIntents, getMoveEffectLines, parsePattern, intentIconFile, monsterImageName, isSoloEncounter, processBBCode } from '../../utils';
 
 export async function getStaticPaths() {
   const monsters = await getCollection('monsters');
@@ -151,9 +151,7 @@ const hasGroup = groupEncounters.length > 0;
     {monster.data.notes && (
       <>
         <h2 class="section-heading">Mechanics</h2>
-        <div class="desc-text" style="font-size: 0.9rem; line-height: 1.7; white-space: pre-line;">
-          {monster.data.notes}
-        </div>
+        <div class="desc-text" style="font-size: 0.9rem; line-height: 1.7; white-space: pre-line;" set:html={processBBCode(monster.data.notes ?? '')} />
       </>
     )}
 

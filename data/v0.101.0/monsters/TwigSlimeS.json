@@ -14,10 +14,11 @@
           "damage": 5
         }
       ],
-      "effects": ["Deal 5 damage"]
+      "effects": [
+        "Deal 5 damage"
+      ]
     }
   ],
-  "move_pattern": "Repeatedly uses Tackle every turn.",
-  "powers_on_spawn": [],
-  "notes": "Move ID in source is BUTT_MOVE; title resolved from method name TackleMove matching localization TWIG_SLIME_S.moves.TACKLE.title. A GOOP move appears in localization but has no corresponding move in this source file."
+  "move_pattern": "Repeats Tackle every turn.",
+  "powers_on_spawn": []
 }

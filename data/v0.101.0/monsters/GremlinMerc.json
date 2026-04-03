@@ -9,30 +9,60 @@
       "id": "GIMME_MOVE",
       "title": "Gimme",
       "intents": [
-        {"type": "multi_attack", "damage": 8, "hits": 2}
+        {
+          "type": "multi_attack",
+          "damage": 8,
+          "hits": 2
+        }
       ],
-      "effects": ["Deal 8 damage 2 times", "Steal gold via Thievery Power"]
+      "effects": [
+        "Deal 8 damage",
+        "2 hits",
+        "Steal gold"
+      ]
     },
     {
       "id": "DOUBLE_SMASH_MOVE",
       "title": "Double Smash",
       "intents": [
-        {"type": "multi_attack", "damage": 7, "hits": 2},
-        {"type": "debuff"}
+        {
+          "type": "multi_attack",
+          "damage": 7,
+          "hits": 2
+        },
+        {
+          "type": "debuff"
+        }
       ],
-      "effects": ["Deal 7 damage 2 times", "Apply 2 Weak", "Steal gold via Thievery Power"]
+      "effects": [
+        "Deal 7 damage",
+        "2 hits",
+        "Steal gold",
+        "Apply 2 Weak"
+      ]
     },
     {
       "id": "HEHE_MOVE",
       "title": "Hehe",
       "intents": [
-        {"type": "attack", "damage": 9, "hits": 1},
-        {"type": "buff"}
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "buff"
+        }
       ],
-      "effects": ["Deal 9 damage", "Gain 2 Strength", "Steal gold via Thievery Power"]
+      "effects": [
+        "Deal 9 damage",
+        "Steal gold",
+        "Gain 2 Strength"
+      ]
     }
   ],
-  "move_pattern": "Starts with Gimme → Double Smash → Hehe → Gimme → (repeats).",
-  "powers_on_spawn": ["Surprise (1)", "Thievery (20) on each player"],
-  "notes": "Applies Thievery Power (20) to each player on spawn and also applies Surprise (1) to itself. Every move triggers Thievery Power to steal gold. On first Gimme, also plays banter speech."
+  "move_pattern": "Cycles: Gimme → Double Smash → Hehe → Gimme (repeating)",
+  "powers_on_spawn": [
+    "Surprise"
+  ],
+  "notes": "On entering combat, applies [gold]Surprise[/gold] (1 stack) to itself and [gold]Thievery[/gold] (20 stacks) to each player. Every move triggers Thievery, stealing gold from the player after dealing damage. Gimme only plays its banter the first time it is used."
 }

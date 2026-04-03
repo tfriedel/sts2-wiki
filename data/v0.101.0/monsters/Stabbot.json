@@ -8,11 +8,21 @@
     {
       "id": "STAB_MOVE",
       "title": "Stab",
-      "intents": [{"type": "attack", "damage": 12}, {"type": "debuff"}],
-      "effects": ["Deal 12 damage", "Apply 1 FrailPower"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 12
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 12 damage",
+        "Apply 1 Frail"
+      ]
     }
   ],
-  "move_pattern": "Start: STAB_MOVE → STAB_MOVE (repeating, single move cycle).",
-  "powers_on_spawn": [],
-  "notes": "HP range 19-24 (ascension). Damage value is ascension (DeadlyEnemies): 12. Spawns via FabricatorNormal encounter."
+  "move_pattern": "Repeats Stab every turn.",
+  "powers_on_spawn": []
 }
