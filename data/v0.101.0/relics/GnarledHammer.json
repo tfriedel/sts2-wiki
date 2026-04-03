@@ -4,5 +4,5 @@
   "rarity": "Shop",
   "description": "Upon pickup, [gold]Enchant[/gold] up to [blue]3[/blue] Attacks with [purple]Sharp[/purple] [blue]+3[/blue].",
   "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-  "notes": "Upon obtaining this relic, you must manually select up to 3 Attack cards from your deck to enchant with Sharp (grants +3 attack). The selection cannot be cancelled and requires manual confirmation."
+  "notes": "Automatically opens a card selection dialog upon pickup to choose up to 3 Attack cards to enchant with Sharp +3. The selection is mandatory and requires manual confirmation."
 }
