@@ -13,5 +13,7 @@
       "base_value": 6
     }
   ],
-  "description": "At the end of your turn, if this is in your [gold]Hand[/gold], lose 6 HP."
+  "description": "At the end of your turn, if this is in your [gold]Hand[/gold], lose 6 HP.",
+  "x_cost": false,
+  "notes": "This card causes damage to the player at the end of each turn as long as it remains in the player's hand. The damage is unblockable and unpowered."
 }
