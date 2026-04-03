@@ -4,5 +4,6 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "At the start of your turn, [gold]Transform[/gold] [blue]1[/blue] card in your [gold]Hand[/gold].",
-  "notes": "This power is stack-aware via Counter type. The number of cards transformed scales with the power's stack count."
+  "smart_description": "At the start of your turn, [gold]Transform[/gold] [blue]{Amount}[/blue] {Amount:plural:card|cards} in your [gold]Hand[/gold].",
+  "notes": "Counter type - the smart description updates based on current stack value. Transforms the specified number of cards from your hand into random cards."
 }
