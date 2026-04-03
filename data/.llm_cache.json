@@ -866,5 +866,9 @@
   "potions:WeakPotion": {
     "cache_key": "74fad3670dd4969deb364ba97d0e0be2add1c42e3761c0b4671b9628a6cdccaf",
     "last_processed": "1774726378.2413254"
+  },
+  "cards:StrikeIronclad": {
+    "cache_key": "7741c994a475f69a0d3074883f52f6052549be7aa67ba130ff171ff0ff0bc78c",
+    "last_processed": "1774726378.980611"
   }
 }

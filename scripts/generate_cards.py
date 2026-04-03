@@ -100,6 +100,21 @@ def main() -> None:
     with open(cards_path) as f:
         cards = json.load(f)
 
+    # Load per-entity JSON overrides
+    per_entity_dir = os.path.join(data_dir, "cards")
+    if os.path.isdir(per_entity_dir):
+        cards_by_class = {c["class_name"]: c for c in cards}
+        for fname in os.listdir(per_entity_dir):
+            if fname.endswith(".json"):
+                with open(os.path.join(per_entity_dir, fname)) as f:
+                    entity_data = json.load(f)
+                cname = entity_data.get("class_name", fname.removesuffix(".json"))
+                if cname in cards_by_class:
+                    cards_by_class[cname].update(entity_data)
+                else:
+                    cards_by_class[cname] = entity_data
+        cards = list(cards_by_class.values())
+
     # Clear output directory
     out = Path(output_dir)
     if out.exists():

@@ -33,6 +33,7 @@ ENTITY_TYPE_DIRS: dict[str, str] = {
     "monsters": "MegaCrit.Sts2.Core.Models.Monsters",
     "enchantments": "MegaCrit.Sts2.Core.Models.Enchantments",
     "potions": "MegaCrit.Sts2.Core.Models.Potions",
+    "cards": "MegaCrit.Sts2.Core.Models.Cards",
 }
 
 # Maps entity type to the localization file name
@@ -41,6 +42,7 @@ ENTITY_TYPE_LOC: dict[str, str] = {
     "monsters": "monsters",
     "enchantments": "enchantments",
     "potions": "potions",
+    "cards": "cards",
 }
 
 CACHE_PATH = PROJECT_ROOT / "data" / ".llm_cache.json"
@@ -116,6 +118,11 @@ def is_enchantment_class(content: str, class_name: str) -> bool:
 def is_potion_class(content: str) -> bool:
     """Check if this .cs file defines a PotionModel subclass."""
     return ": PotionModel" in content
+
+
+def is_card_class(content: str) -> bool:
+    """Check if this .cs file defines a CardModel subclass."""
+    return ": CardModel" in content
 
 
 def get_shared_events(decompiled_dir: str) -> set[str]:
@@ -395,6 +402,8 @@ async def async_main() -> None:
         if entity_type == "enchantments" and not is_enchantment_class(content, class_name):
             continue
         if entity_type == "potions" and not is_potion_class(content):
+            continue
+        if entity_type == "cards" and not is_card_class(content):
             continue
 
         # Determine act info (events only)
