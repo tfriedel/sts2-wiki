@@ -3,6 +3,6 @@
   "title": "Genesis",
   "power_type": "Buff",
   "stack_type": "Counter",
-  "description": "At the start of your turn, gain a star.",
-  "smart_description": "At the start of your turn, gain stars equal to this power's stack."
+  "description": "At the start of your turn, gain {singleStarIcon}.",
+  "smart_description": "At the start of your turn, gain {Amount:starIcons()}."
 }
