@@ -879,292 +879,304 @@
     "cache_key": "ef0e8c93d4d71bd1844590298cf2a56b14eb75cf619ccf54091eabb5abb6dcbc",
     "last_processed": "1774726378.6342545"
   },
-  "encounters:AxebotsNormal": {
-    "cache_key": "3138618cc37c35a327adfbdfe05846ade6e41bf09f8ca73912203baa04a50d74",
-    "last_processed": "1774726378.9434934"
-  },
-  "encounters:BattlewornDummyEventEncounter": {
-    "cache_key": "40285a362e77154df42ce3e35f5da7c577cb5f0ae8eb23ff784f00bd983f16a0",
-    "last_processed": "1774726378.956239"
-  },
-  "encounters:BowlbugsNormal": {
-    "cache_key": "aeecca018179e3374749703e5a8bb8f7977071789bbe90bad1b12d01c4454d8e",
-    "last_processed": "1774726378.9629521"
-  },
-  "encounters:BowlbugsWeak": {
-    "cache_key": "9c7cd4d3c311e091c33f23dfe86148031dd7efb411dcfea54b81238d1e07ef71",
-    "last_processed": "1774726378.9668443"
-  },
-  "encounters:BygoneEffigyElite": {
-    "cache_key": "d8bd4a082ee77f7c36fa7896b3d0029571592420ea07de98c05dd2192b0b42e3",
-    "last_processed": "1774726378.9713125"
-  },
-  "encounters:ByrdonisElite": {
-    "cache_key": "faed3716cbe604ab7235da25b981092cbd960a683b3485186658d5810a66e3db",
-    "last_processed": "1774726378.9778976"
-  },
-  "encounters:CeremonialBeastBoss": {
-    "cache_key": "e84b1da842efd230cfa9fcffb6b2d7c1c47efd0f8f8207e59aea527342604be1",
-    "last_processed": "1774726378.9814205"
-  },
-  "encounters:ChompersNormal": {
-    "cache_key": "7288d77357145f458b075da470402ffd1b2d331ce0999104bdfab4a111d13e46",
-    "last_processed": "1774726378.3495271"
-  },
-  "encounters:ConstructMenagerieNormal": {
-    "cache_key": "6bbd1f26439872c4dbcf38a6c36cf93ae64462a61f6b793bb33e104875a59107",
-    "last_processed": "1774726378.351958"
-  },
-  "encounters:CorpseSlugsNormal": {
-    "cache_key": "d8a39021b8074b7298f2efec0400cbe842f6c41439a5226e8f89881def570cf9",
-    "last_processed": "1774726378.356488"
-  },
-  "encounters:CorpseSlugsWeak": {
-    "cache_key": "332749568b9ed18d88737ce4ec28e75d34f746d7b2c3a21a819208c218e0c8e8",
-    "last_processed": "1774726378.3609662"
-  },
-  "encounters:CubexConstructNormal": {
-    "cache_key": "7acb5d3224a5d685c3429934e181e47d7b638b014aab44777552a3cdcd94e438",
-    "last_processed": "1774726378.3627198"
-  },
-  "encounters:CultistsNormal": {
-    "cache_key": "0eb5f2177d176d9c238b30b29f70982ab1ddd776d5eb48ef24d599b678090987",
-    "last_processed": "1774726378.3650203"
-  },
-  "encounters:DecimillipedeElite": {
-    "cache_key": "e8b7a5bd08e7784c43906e7fb899e6125cfe753f72127451da23bd8f48deff90",
-    "last_processed": "1774726378.3742158"
-  },
-  "encounters:DenseVegetationEventEncounter": {
-    "cache_key": "ad23bf668f6f587c4fe033a61c291fa9776f5b5dd181069c0f31a96eadc10ff4",
-    "last_processed": "1774726378.3862276"
-  },
-  "encounters:DeprecatedEncounter": {
-    "cache_key": "fb30107dd4bc84e90464d20eff8e2faacdf6b7836e16faed12e811f975d872f0",
-    "last_processed": "1774726378.387862"
-  },
-  "encounters:DevotedSculptorWeak": {
-    "cache_key": "902cef4b1a517febc1d36d4e09403ceee237b5aefe79854aad7c75d9daaa1cf2",
-    "last_processed": "1774726378.3898733"
-  },
-  "encounters:DoormakerBoss": {
-    "cache_key": "bd5d80407290cda6e278598f1482205bd6b9daeaebd9c7d407bdb1fafb86e7cd",
-    "last_processed": "1774726378.3961842"
-  },
-  "encounters:EntomancerElite": {
-    "cache_key": "00c4098141ce2872466acf76fd0fcb2a9078f0db608c5bd85b409934914710f7",
-    "last_processed": "1774726378.4007735"
-  },
-  "encounters:ExoskeletonsNormal": {
-    "cache_key": "2771fda6f794312808176dec54bed0b7b0627cc5fba5aff550d6fec97f2eac95",
-    "last_processed": "1774726378.4093075"
-  },
-  "encounters:ExoskeletonsWeak": {
-    "cache_key": "5af8fac6ba4c2abc0aa84710c5f5cf92901b967faf8f5a7bedce24eb7e743a2b",
-    "last_processed": "1774726378.413091"
-  },
-  "encounters:FabricatorNormal": {
-    "cache_key": "791cfe881f87bc9cf3e99287805cb4347995725988dbde05ba4f7e24993c305f",
-    "last_processed": "1774726378.433064"
-  },
-  "encounters:FakeMerchantEventEncounter": {
-    "cache_key": "5cb05426b647de563d5d400f87a84af2cee1713fd99a76d2f01e3c3f65b2db94",
-    "last_processed": "1774726378.438072"
-  },
-  "encounters:FlyconidNormal": {
-    "cache_key": "16cb8cc3fa2f6a7f5ce2ceef5dd7e7f8713eee23a69e2f8767e3ab82950a8d9b",
-    "last_processed": "1774726378.4433353"
-  },
-  "encounters:FogmogNormal": {
-    "cache_key": "d2779b2a324edeedb2500abe3637bf2d1983a15e3db4b9594dd8eb7bbcac3f94",
-    "last_processed": "1774726378.4471354"
-  },
-  "encounters:FossilStalkerNormal": {
-    "cache_key": "e4393b0cf9a5d0ed67b273caada27dc11bd7f330e92fa7147f1420f595225679",
-    "last_processed": "1774726378.4491642"
-  },
-  "encounters:FrogKnightNormal": {
-    "cache_key": "24f8c517b89f88dc6e3960261d5727916847c67f376ad749f1e84d45d3fced34",
-    "last_processed": "1774726378.4511745"
-  },
-  "encounters:FuzzyWurmCrawlerWeak": {
-    "cache_key": "eb76d4dbfeebd537c49065be10705cf726244d3d0303632c6c187afd538efe0a",
-    "last_processed": "1774726378.4539804"
-  },
-  "encounters:GlobeHeadNormal": {
-    "cache_key": "c21185646551880a8662c8e79df8145a8bdfec622b19288b35522d877aa0aa8e",
-    "last_processed": "1774726378.4568374"
-  },
-  "encounters:GremlinMercNormal": {
-    "cache_key": "a32262b21fc4f8bbc10c40ae995bfb960eab05943f811aabcc27d0c0f530b40b",
-    "last_processed": "1774726378.4626424"
-  },
-  "encounters:HauntedShipNormal": {
-    "cache_key": "a8f578ed84b80fdb2a84f4b2bb4835f82256c390bcfd32f64df9c9ee7c18f714",
-    "last_processed": "1774726378.4644353"
-  },
-  "encounters:HunterKillerNormal": {
-    "cache_key": "d38c37e8c55dd90f43ccf3f02c714599c9fae89a64af800409af8da86b2dfa28",
-    "last_processed": "1774726378.4661624"
-  },
-  "encounters:InfestedPrismsElite": {
-    "cache_key": "9f01a116de5863cf22791eb01a186717153bbea11188fa79e06ae9c616486e6d",
-    "last_processed": "1774726378.4678545"
-  },
-  "encounters:InkletsNormal": {
-    "cache_key": "25f7bdba1bd8d84c92ae5a82aebaa209c0ef061a153bc20c840daf1e7cd68d1e",
-    "last_processed": "1774726378.4775603"
-  },
-  "encounters:KaiserCrabBoss": {
-    "cache_key": "ffc1297c08675322a3cee4ee4b284b0283cf4c81f129fbafe5e7448f45ef2ef0",
-    "last_processed": "1774726378.4842336"
-  },
-  "encounters:KnightsElite": {
-    "cache_key": "d35679af353cc946db23ded65d5c1fe062960d67abaae22dfe7c292c8af10fa7",
-    "last_processed": "1774726378.4899712"
-  },
-  "encounters:KnowledgeDemonBoss": {
-    "cache_key": "74a34ef56c04a05188328502d460dfad52fd58810388e7dd61073c5f8f69e874",
-    "last_processed": "1774726378.4954987"
-  },
-  "encounters:LagavulinMatriarchBoss": {
-    "cache_key": "4eb55a50e1251c16d848dd8ef4f87bb1ef9dda7077ef48dd7d20d3ff091c3fbb",
-    "last_processed": "1774726378.50307"
-  },
-  "encounters:LivingFogNormal": {
-    "cache_key": "2f7be9349bc86d561875dbf96406a0e5d7b5a41431e730814fe7df417e5bac1d",
-    "last_processed": "1774726378.511639"
-  },
-  "encounters:LouseProgenitorNormal": {
-    "cache_key": "8405de40f2768f0e6671b5e89e06f04a2231a4162d9aaae20e876a4280b9e70e",
-    "last_processed": "1774726378.5164833"
-  },
-  "encounters:MawlerNormal": {
-    "cache_key": "f81ff6fb2b7ed5b3b74916401a0309429e390384d1e5a305444da0ba4dd7a648",
-    "last_processed": "1774726378.5185878"
-  },
-  "encounters:MechaKnightElite": {
-    "cache_key": "af49d5cb5da64501f362cc72459461e1f6497f9b5003207ca29b0eb56e0d0fc9",
-    "last_processed": "1774726378.5258274"
-  },
-  "encounters:MysteriousKnightEventEncounter": {
-    "cache_key": "3f2d313c143bea495d79a62e50b69ba194f23b8ae83a64adbc0c12d20f43d98e",
-    "last_processed": "1774726378.5318236"
-  },
-  "encounters:MytesNormal": {
-    "cache_key": "031f6103adf33a037cbf479c9ea447ac97aaf94e05e05438ad5e7587c2958d12",
-    "last_processed": "1774726378.5393758"
-  },
-  "encounters:NibbitsNormal": {
-    "cache_key": "12538c88cf0900cb5b30c9e6e52908b746ce56fc8e4294668e417e84938d0183",
-    "last_processed": "1774726378.542892"
-  },
-  "encounters:NibbitsWeak": {
-    "cache_key": "d43d8071365c435237f7d8cc6f3654eccb6f3e33898da24f27000797ae2d83ba",
-    "last_processed": "1774726378.5473597"
-  },
-  "encounters:OvergrowthCrawlers": {
-    "cache_key": "4e0a9e6ac2b05def0855469dfb79fb0c2c7b03454c98fb0b24e09d6eba8c1003",
-    "last_processed": "1774726378.5599723"
-  },
-  "encounters:OvicopterNormal": {
-    "cache_key": "ccdf6e44633e671b7281bb716438fc0aa6ef3c3064c7c92dba4eae52c1cfb26d",
-    "last_processed": "1774726378.569852"
-  },
-  "encounters:OwlMagistrateNormal": {
-    "cache_key": "6c39ef888ecd9754d52d6433d549099c07685763a612ef39b1bfcc2abb97dea0",
-    "last_processed": "1774726378.5725849"
-  },
-  "encounters:PhantasmalGardenersElite": {
-    "cache_key": "ff7f4b62fd93299fdb55d98ebd2a62ef834d41bb7ef007fffb64f5f1348ceab3",
-    "last_processed": "1774726378.5867352"
-  },
-  "encounters:PhrogParasiteElite": {
-    "cache_key": "53d4c12beb463ba8111befbef0cdecaa8354413f5a88113fcdd50b4b5a5dcc0a",
-    "last_processed": "1774726378.5913541"
-  },
-  "encounters:PunchConstructNormal": {
-    "cache_key": "c60307fd105146e3823c4e6b19f48ed3f5805eb52583a6c79c3cf601b1df52d9",
-    "last_processed": "1774726378.5931973"
-  },
-  "encounters:PunchOffEventEncounter": {
-    "cache_key": "01adfde1d64b4f5801edbc41f73e0f8a0ee7c3eeef3f9d0b5ad38ff995d9336f",
-    "last_processed": "1774726378.595602"
-  },
-  "encounters:QueenBoss": {
-    "cache_key": "5fed5e77f09ee6c3d57d3d0968418fc472e7fa7629e76276e2b2899234df6728",
-    "last_processed": "1774726378.600724"
-  },
-  "encounters:RubyRaidersNormal": {
-    "cache_key": "1dd910b23371c0abf66b908d8827d921388c98cbdb72f69f7efef6470f512843",
-    "last_processed": "1774726378.6064596"
-  },
-  "encounters:ScrollsOfBitingNormal": {
-    "cache_key": "2e9c8e7a59074687f4d9a2cbcc0a6c19f4431358beab6d25030bd20387787221",
-    "last_processed": "1774726378.6101196"
-  },
-  "encounters:ScrollsOfBitingWeak": {
-    "cache_key": "804f6049f834137a46eae68b534d6670aa3782786fb1cf9044acf03655b17020",
-    "last_processed": "1774726378.617658"
-  },
-  "encounters:SeapunkNormal": {
-    "cache_key": "4ab1a30c1c19db3ab05d5761fce528aa8402ffc040a74cedde28c3290d680900",
-    "last_processed": "1774726378.622167"
-  },
-  "encounters:SeapunkWeak": {
-    "cache_key": "04bde3ebcfbd332ddf372d8f79f344e6979d45e59f9db88016c90efc78744b3e",
-    "last_processed": "1774726378.6247153"
-  },
-  "encounters:SewerClamNormal": {
-    "cache_key": "755078bfa64c3146ac7d74935654f47a2c7f4c7445192b686c7a95145e68228a",
-    "last_processed": "1774726378.6274722"
-  },
-  "encounters:ShrinkerBeetleWeak": {
-    "cache_key": "9121fb4f6126a4cb607b02488df80780769962b1f07560ab4af12e16119ca9a3",
-    "last_processed": "1774726378.6335006"
-  },
-  "encounters:SkulkingColonyElite": {
-    "cache_key": "90f7b7c484952adf219217d8313e24d7b59a7dcd5e767277173b3dae6d92ca9f",
-    "last_processed": "1774726378.637693"
-  },
-  "encounters:SlimedBerserkerNormal": {
-    "cache_key": "8a29342c7d1a384c110a1b045f181fe33eae44d15fcae38729ba3c6cd209afcc",
-    "last_processed": "1774726378.6394937"
-  },
-  "encounters:SlimesNormal": {
-    "cache_key": "22aa25ada086010fb038e19b2e04eef9f0f215bef775a7fc0f276ffdbe9c6575",
-    "last_processed": "1774726378.647512"
-  },
-  "encounters:SlimesWeak": {
-    "cache_key": "98f84ee7671bba117e752ba8fb74311a9cd713eef989de781f97678d269bb06f",
-    "last_processed": "1774726378.666224"
-  },
-  "encounters:SlitheringStranglerNormal": {
-    "cache_key": "4cb69b485dd50e4bec9227f922dbd725886cc7d55c992335b9f5597d291e8955",
-    "last_processed": "1774726378.6870317"
-  },
-  "encounters:SludgeSpinnerWeak": {
-    "cache_key": "ff36cdc3aa12934571f124804c0e76c155e017bf69a1f1e58daf94c6af88dddc",
-    "last_processed": "1774726378.6891248"
-  },
-  "encounters:SlumberingBeetleNormal": {
-    "cache_key": "48565db9791beaa76683234877ddb5dafebc3c56115d4aa6418c12aa0da435c5",
-    "last_processed": "1774726378.6952968"
-  },
-  "encounters:SnappingJaxfruitNormal": {
-    "cache_key": "192c9e9de6b7689dfe6741a15d285f5711b6ba61ae87f93c847c272c206c9bd7",
-    "last_processed": "1774726378.6979866"
-  },
-  "encounters:SoulFyshBoss": {
-    "cache_key": "843b4a3ed12ee6b47b8587c6fd773f32a9b66f3314cf8632ecbf3e5c54c129aa",
-    "last_processed": "1774726378.7007563"
-  },
-  "encounters:SoulNexusElite": {
-    "cache_key": "3dc389840b78fbf0d8a9cd36d45f39654bcba10028b35a85560298ef5dd22f63",
-    "last_processed": "1774726378.7041757"
-  },
-  "encounters:SpinyToadNormal": {
-    "cache_key": "08cbbc3355da3a08f6c8fa623a148a15a308122b11e4a4b3b3a38acb058d8799",
-    "last_processed": "1774726378.351126"
+  "powers:AccelerantPower": {
+    "cache_key": "b29ec4c2d805cfa5dfc2d87a079f266abe8f924387c9b351e875f8c2a5a6073a",
+    "last_processed": "1774726377.8600233"
+  },
+  "powers:AccuracyPower": {
+    "cache_key": "b06d3d24957e5207a05e4895fbbe5d57e400803b73823e22a7c176c219e7ee3b",
+    "last_processed": "1774726377.8669004"
+  },
+  "powers:AdaptablePower": {
+    "cache_key": "a25d78e9825b4b50bd07a1283183a1160b62f6c107481ea1b154e1f3fdf132f8",
+    "last_processed": "1774726377.8762698"
+  },
+  "powers:AfterimagePower": {
+    "cache_key": "28294c810b9b806922f8f92af0b0cbc9198065f0c34cf8d8d102ceb1afb101c7",
+    "last_processed": "1774726377.8835385"
+  },
+  "powers:AggressionPower": {
+    "cache_key": "8eec10d91ce3996df09fbc1839e5c0b19ad1f03948bfa89133fc5fe5f0a2c98e",
+    "last_processed": "1774726377.8898444"
+  },
+  "powers:ArsenalPower": {
+    "cache_key": "8186f3c7ffc6debe493774284b3eca259603a9b0332d3115814cedbfd66c782e",
+    "last_processed": "1774726377.895444"
+  },
+  "powers:ArtifactPower": {
+    "cache_key": "966afc33b51b3e78facb1284823db673987241f10e008fb0aa6a639d09eac9e5",
+    "last_processed": "1774726377.9044735"
+  },
+  "powers:AsleepPower": {
+    "cache_key": "33441e33f9fca43fa180bc42fecf64ed2f9df1b829892afaa20af9199257b873",
+    "last_processed": "1774726377.9180627"
+  },
+  "powers:AutomationPower": {
+    "cache_key": "2c1670a193d16302623ee5ee849aa50a3835b79cb9e5296164a523d7644231ae",
+    "last_processed": "1774726377.928818"
+  },
+  "powers:BackAttackLeftPower": {
+    "cache_key": "fbe725b4d6d1bb36556f657a630dbc2797925740a9249e0db356bde215f514f3",
+    "last_processed": "1774726377.9317038"
+  },
+  "powers:BackAttackRightPower": {
+    "cache_key": "c020ba5cc20471c064c92580ed211b53549e7063855485b01826419387068926",
+    "last_processed": "1774726377.9345698"
+  },
+  "powers:BarricadePower": {
+    "cache_key": "4fba646da608df550f34485304e6a1c98f45402b27a51d559959feef947c749d",
+    "last_processed": "1774726377.9439359"
+  },
+  "powers:BattlewornDummyTimeLimitPower": {
+    "cache_key": "4207571738af9e3ce8263b8fe6c3032fbede547422220b65a915534208b0a9ce",
+    "last_processed": "1774726377.9495718"
+  },
+  "powers:BeaconOfHopePower": {
+    "cache_key": "b2acf086d420030b00b3057fdbd20715ddc0b1271ab92713c0aec72732dec4ab",
+    "last_processed": "1774726377.961932"
+  },
+  "powers:BiasedCognitionPower": {
+    "cache_key": "aabae1f8a3c3144d54d0e63f30b7c33a209628977ad2e3179931f2f7af51be1d",
+    "last_processed": "1774726377.9655612"
+  },
+  "powers:BlackHolePower": {
+    "cache_key": "c3ef421be06ea0c1eec7a1b7be8e068fd161625800d0d4a69754c29ca45621a7",
+    "last_processed": "1774726377.8836946"
+  },
+  "powers:BladeOfInkPower": {
+    "cache_key": "3f0c85d2a0e6145dde07a1b8409a58d3e03d9403cf445c41107c17dbf2a05028",
+    "last_processed": "1774726377.893021"
+  },
+  "powers:BlockNextTurnPower": {
+    "cache_key": "2c508499e8376dd3ad67177f81c154a4d3164215c97ab995082f224033438398",
+    "last_processed": "1774726377.900746"
+  },
+  "powers:BlurPower": {
+    "cache_key": "ea692338b5a6b5675045cf2f88c9eff08a0955a034e436be86d8d1b7ce9e4f6c",
+    "last_processed": "1774726377.9075475"
+  },
+  "powers:BufferPower": {
+    "cache_key": "ca560605e0e3ae327e9289ab278d9500697c6b45c619435a354ef97c53c7e261",
+    "last_processed": "1774726377.91027"
+  },
+  "powers:BurrowedPower": {
+    "cache_key": "a3ee4aa547a417b71f89991d9c10956af853333376fdc032445b9758f64514cd",
+    "last_processed": "1774726377.9155502"
+  },
+  "powers:BurstPower": {
+    "cache_key": "22278ff89181bc5b2f355baf890d272018cfadef512e016ef08934b4603704a7",
+    "last_processed": "1774726377.9194956"
+  },
+  "powers:CalamityPower": {
+    "cache_key": "2ed4c6157311a8ca9436774d71aaec840c4bea0accffdbfa253b02cf198f7754",
+    "last_processed": "1774726377.925954"
+  },
+  "powers:CalcifyPower": {
+    "cache_key": "f9f13c63278ee23bda08ab41fcb4038b238c916dff2757f547c055760f2d1aac",
+    "last_processed": "1774726377.9283736"
+  },
+  "powers:CallOfTheVoidPower": {
+    "cache_key": "2fc7fd302fd748863d49deaa42ea3c8339c3778790df3cd7379372dcf0fa0453",
+    "last_processed": "1774726377.9348216"
+  },
+  "powers:ChainsOfBindingPower": {
+    "cache_key": "b7510b4974b005fdbc77279d64653ccaa63f0b2387503f523edd9d861b54a193",
+    "last_processed": "1774726377.949912"
+  },
+  "powers:ChildOfTheStarsPower": {
+    "cache_key": "ad89b841e737bb9617a49eb22bbaccaf176baa0389ec4a0765dc3c7929bb25c5",
+    "last_processed": "1774726377.9528732"
+  },
+  "powers:ClarityPower": {
+    "cache_key": "aad2901073786c80ab819b761f7546576f1894fba055b00c43c5de4ecc4dea4c",
+    "last_processed": "1774726377.9557695"
+  },
+  "powers:ColossusPower": {
+    "cache_key": "b8db876da52f3fb06ffa1571f295ad2efaaa54ce6815b3f06046a6db9d972990",
+    "last_processed": "1774726377.9610407"
+  },
+  "powers:ConfusedPower": {
+    "cache_key": "b87f441d0beed43cf4141dff2d9957c50283d400e214245f85347cf30fe548cc",
+    "last_processed": "1774726377.9650793"
+  },
+  "powers:ConquerorPower": {
+    "cache_key": "554ad642cfc563fb5bc90e678dd71de5f51e657b67b056057a7054ccc900f837",
+    "last_processed": "1774726377.9689105"
+  },
+  "powers:ConstrictPower": {
+    "cache_key": "0d6fc0d01758d0b86e2428951d7eef9569c8a9ca2fd03e407af4916c636dc03d",
+    "last_processed": "1774726377.978367"
+  },
+  "powers:ConsumingShadowPower": {
+    "cache_key": "15d1ef10473021edab994d5f19d28d0d7770693a52afc80bbbd47e1ab1dfb6f4",
+    "last_processed": "1774726377.9843132"
+  },
+  "powers:CoolantPower": {
+    "cache_key": "dd5bb3b8f6b7cd4fd8776b2045ac1e12217b59fe1b33c8fc78def68d35097e67",
+    "last_processed": "1774726377.9927723"
+  },
+  "powers:CorrosiveWavePower": {
+    "cache_key": "4ec618678c3cdd632e89d28bfa9cd844923f0bd4a3cf85f2cced44665222d553",
+    "last_processed": "1774726378.019467"
+  },
+  "powers:CorruptionPower": {
+    "cache_key": "1781aa6c6144ba8fb2f419a9bf5e6ae92f684f940786916650b7f7c5f522ddc6",
+    "last_processed": "1774726378.0236914"
+  },
+  "powers:CountdownPower": {
+    "cache_key": "abb76efcd5edd693c00a3e584f47e207e2feb41dd8aa82d03a19e23b8914701e",
+    "last_processed": "1774726378.029942"
+  },
+  "powers:CoveredPower": {
+    "cache_key": "09acd81caf1c44f0b48cfa286db3f3a6943704ef01da2499a486d98b604d4793",
+    "last_processed": "1774726378.0417006"
+  },
+  "powers:CrabRagePower": {
+    "cache_key": "c90479aafa9e454baae53052fea5c7dd9d98849c1c644b42de13053d1ecb29ef",
+    "last_processed": "1774726378.0561087"
+  },
+  "powers:CreativeAiPower": {
+    "cache_key": "4c4a568b8815dc436cb09be45f4a8a5155ae54c17b36cf1cfa3b544ce8b54eaa",
+    "last_processed": "1774726378.065045"
+  },
+  "powers:CrimsonMantlePower": {
+    "cache_key": "cacbae3e2fe5280e306d127888c5969a64c9e267395f48188b21d2412459b675",
+    "last_processed": "1774726378.079428"
+  },
+  "powers:CrueltyPower": {
+    "cache_key": "332b0edb7189199a6d9d9234373a1af287f747d51b7af003ec8df5703d96927d",
+    "last_processed": "1774726378.0831475"
+  },
+  "powers:CuriousPower": {
+    "cache_key": "f49b7e0e5ae44cb0186e55df1647fcc848bf36ea4216b5a0bf0a515b5cc5fa00",
+    "last_processed": "1774726378.0866468"
+  },
+  "powers:CurlUpPower": {
+    "cache_key": "4528219173d6386e08efb2ebb40228012d41cf7877362f394a06cebeed36abc6",
+    "last_processed": "1774726378.0936782"
+  },
+  "powers:DampenPower": {
+    "cache_key": "3a7ad92d4543f7f45c766517af434c4e4fb4a8c3d07c15f7c09727a7661c418d",
+    "last_processed": "1774726378.1017098"
+  },
+  "powers:DanseMacabrePower": {
+    "cache_key": "01cc087dddb5e1a61ef90c791581d1cdac0e12530b5dc460c5230091eca5708c",
+    "last_processed": "1774726377.9212644"
+  },
+  "powers:DarkEmbracePower": {
+    "cache_key": "809543cfdaca36e64f1981c5debb105737a626990e7d93353f2d9d39d303d179",
+    "last_processed": "1774726377.9270728"
+  },
+  "powers:DebilitatePower": {
+    "cache_key": "1ec926cd8c34b628ede35bb52b72ff4d4c9afc091b6df1bfd66dea3868d852d0",
+    "last_processed": "1774726377.9402714"
+  },
+  "powers:DemesnePower": {
+    "cache_key": "cce642cf04f39a048e9551136d181d2bd7fe01d3f3c0a58ae5270e77c41616a7",
+    "last_processed": "1774726377.9459226"
+  },
+  "powers:DemisePower": {
+    "cache_key": "cb6447d423849d35a3dd1b6f2cd08d187eb07a73e95f82d1b970f5615f93261a",
+    "last_processed": "1774726377.950943"
+  },
+  "powers:DemonFormPower": {
+    "cache_key": "cef07da3ef04e0744ffd20616068d6c221298a9f4e63158223471859d2be785a",
+    "last_processed": "1774726377.9603932"
+  },
+  "powers:DevourLifePower": {
+    "cache_key": "619163835626e84bdbefe771ab589e6e69b6f07ca808fe704e5034ecaf683636",
+    "last_processed": "1774726377.972296"
+  },
+  "powers:DexterityPower": {
+    "cache_key": "14d970aba94b01efc9bd2236ddf74d45617b5ec3ab3a43b7f6467b7182b4af4e",
+    "last_processed": "1774726377.9767182"
+  },
+  "powers:DiamondDiademPower": {
+    "cache_key": "785f458cb0ba8c9b571a8f88b26d14d1c1c9d8aff9b91dbd7e115bcb8b59de28",
+    "last_processed": "1774726377.9868634"
+  },
+  "powers:DieForYouPower": {
+    "cache_key": "f43e7d39ecde2832ceb1c8a3775465b9a5e88ba81eac9ddb29471285dbd9f294",
+    "last_processed": "1774726377.9900527"
+  },
+  "powers:DisintegrationPower": {
+    "cache_key": "0cddd85706b7e2a22a638ced45b2ed58c8c6b59778a5506697dd730e4cc64e21",
+    "last_processed": "1774726377.9929092"
+  },
+  "powers:DoomPower": {
+    "cache_key": "651d20457363248740fe00e035904215011ed8d598ae559a4463c9eefe64b595",
+    "last_processed": "1774726378.0270634"
+  },
+  "powers:DoubleDamagePower": {
+    "cache_key": "640575493b2545d79ef565dec42d23c5ce1e76d265c7bc391bb24041ca6a5111",
+    "last_processed": "1774726378.0306556"
+  },
+  "powers:DrawCardsNextTurnPower": {
+    "cache_key": "ecd8ab5b74d19df6a1ed7e568ac5cb4beb2d30c92e5314f6f381cb8ab3215891",
+    "last_processed": "1774726378.0337217"
+  },
+  "powers:DrumOfBattlePower": {
+    "cache_key": "b750e3543205b749867cde0c1cc4b0d1c79bb9b6b8ecea7b01f8b75325a061ce",
+    "last_processed": "1774726378.0385766"
+  },
+  "powers:DuplicationPower": {
+    "cache_key": "b01b3d54af4be6a1d15c95c0a1f4a13e5de3991d90a513efc7fff63d9d19aede",
+    "last_processed": "1774726378.0453112"
+  },
+  "powers:EchoFormPower": {
+    "cache_key": "4cc10931dda618cab7361a3b8a246ca3e5d7577ea5f3dabb41bc2669664e15ac",
+    "last_processed": "1774726378.049965"
+  },
+  "powers:EnergyNextTurnPower": {
+    "cache_key": "17522730603b8e05da1af16a8135830edd0a4a6a192139a4c05811b860a2e625",
+    "last_processed": "1774726378.0568454"
+  },
+  "powers:EnragePower": {
+    "cache_key": "0071fde88e1030fcbe901ec0fec78539a72824f101de92e0ee134f75ae95d84a",
+    "last_processed": "1774726378.0616744"
+  },
+  "powers:EntropyPower": {
+    "cache_key": "22bc53536909a478d76ea1aa0ea09e8e13a7e7c2700d06a4e6271997b984e96f",
+    "last_processed": "1774726378.0668159"
+  },
+  "powers:EnvenomPower": {
+    "cache_key": "55b9252a2c0e8ed1d3fd2b02f14ac69a9a1911465a9485eb5159aca104bf69e1",
+    "last_processed": "1774726378.0830653"
+  },
+  "powers:EscapeArtistPower": {
+    "cache_key": "9445edf480f7d091dd44d675ee7ee6dca2f4bff7f2e0db26b3ad8d4ccd74c2c8",
+    "last_processed": "1774726378.0919142"
+  },
+  "powers:FanOfKnivesPower": {
+    "cache_key": "0b6e1c1601068a16875d5bc5b10368043dc25aefbc2e1b3d1c819797d2dec133",
+    "last_processed": "1774726378.0960944"
+  },
+  "powers:FastenPower": {
+    "cache_key": "af71504443bf984ef485b4c49627ee2c63d957fc3c58a7692a8845d0b2bb1464",
+    "last_processed": "1774726378.100733"
+  },
+  "powers:FeelNoPainPower": {
+    "cache_key": "3211a315c444dcdf1c0bada68aebade708b4bbf62f86fec0f78a935c79b4b76f",
+    "last_processed": "1774726378.1052234"
+  },
+  "powers:FeralPower": {
+    "cache_key": "f02757027ad6b53bbda263d5775908ef7f77556a0c3cafd54d41d3a149450333",
+    "last_processed": "1774726378.1151679"
+  },
+  "powers:FlameBarrierPower": {
+    "cache_key": "8a99beb57b140f941875b2dcaecf1a90acec8d233cd694fd520554ae84a36bad",
+    "last_processed": "1774726378.1201053"
+  },
+  "powers:FlankingPower": {
+    "cache_key": "360c76cffd4b04eac93e3730bf2063c8ccf74964d7cb13cca6d61dbd6622c36a",
+    "last_processed": "1774726378.1252797"
+  },
+  "powers:FlutterPower": {
+    "cache_key": "100dd35f6c1ab9a01fe281afc430e75be98a6186811f333f32d1145c46bab4cd",
+    "last_processed": "1774726377.9304504"
+  },
+  "powers:FocusPower": {
+    "cache_key": "c704b51f8fb3638c57d603550c473335dc92aa4347c669bd1c578a635f0e7311",
+    "last_processed": "1774726377.9336553"
   }
 }

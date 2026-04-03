@@ -6,5 +6,5 @@
   "monsters": ["TestSubject"],
   "total_monsters": 1,
   "tags": [],
-  "notes": "Boss encounter with custom music and background"
+  "notes": "Boss encounter with custom music (event:/music/act3_boss_test_subject) and custom background."
 }
