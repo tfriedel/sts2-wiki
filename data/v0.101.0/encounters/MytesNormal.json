@@ -6,5 +6,5 @@
   "monsters": ["Myte"],
   "total_monsters": 2,
   "tags": [],
-  "notes": null
+  "notes": "Two Myte monsters spawn in named slots. Uses custom scene with camera scaled to 0.9x and 50-unit downward offset."
 }
