@@ -34,6 +34,9 @@ ENTITY_TYPE_DIRS: dict[str, str] = {
     "enchantments": "MegaCrit.Sts2.Core.Models.Enchantments",
     "potions": "MegaCrit.Sts2.Core.Models.Potions",
     "cards": "MegaCrit.Sts2.Core.Models.Cards",
+    "powers": "MegaCrit.Sts2.Core.Models.Powers",
+    "relics": "MegaCrit.Sts2.Core.Models.Relics",
+    "encounters": "MegaCrit.Sts2.Core.Models.Encounters",
 }
 
 # Maps entity type to the localization file name
@@ -43,6 +46,9 @@ ENTITY_TYPE_LOC: dict[str, str] = {
     "enchantments": "enchantments",
     "potions": "potions",
     "cards": "cards",
+    "powers": "powers",
+    "relics": "relics",
+    "encounters": "encounters",
 }
 
 CACHE_PATH = PROJECT_ROOT / "data" / ".llm_cache.json"
@@ -123,6 +129,21 @@ def is_potion_class(content: str) -> bool:
 def is_card_class(content: str) -> bool:
     """Check if this .cs file defines a CardModel subclass."""
     return ": CardModel" in content
+
+
+def is_power_class(content: str) -> bool:
+    """Check if this .cs file defines a PowerModel subclass."""
+    return ": PowerModel" in content
+
+
+def is_relic_class(content: str) -> bool:
+    """Check if this .cs file defines a RelicModel subclass."""
+    return ": RelicModel" in content
+
+
+def is_encounter_class(content: str) -> bool:
+    """Check if this .cs file defines an EncounterModel subclass."""
+    return ": EncounterModel" in content
 
 
 def get_shared_events(decompiled_dir: str) -> set[str]:
@@ -404,6 +425,12 @@ async def async_main() -> None:
         if entity_type == "potions" and not is_potion_class(content):
             continue
         if entity_type == "cards" and not is_card_class(content):
+            continue
+        if entity_type == "powers" and not is_power_class(content):
+            continue
+        if entity_type == "relics" and not is_relic_class(content):
+            continue
+        if entity_type == "encounters" and not is_encounter_class(content):
             continue
 
         # Determine act info (events only)

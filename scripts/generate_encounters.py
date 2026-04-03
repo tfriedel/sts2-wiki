@@ -36,6 +36,21 @@ def main() -> None:
     with open(os.path.join(data_dir, "encounters.json")) as f:
         encounters = json.load(f)
 
+    # Load per-entity JSON overrides
+    per_entity_dir = os.path.join(data_dir, "encounters")
+    if os.path.isdir(per_entity_dir):
+        enc_by_class = {e["class_name"]: e for e in encounters}
+        for fname in os.listdir(per_entity_dir):
+            if fname.endswith(".json"):
+                with open(os.path.join(per_entity_dir, fname)) as f:
+                    entity_data = json.load(f)
+                cname = entity_data.get("class_name", fname.removesuffix(".json"))
+                if cname in enc_by_class:
+                    enc_by_class[cname].update(entity_data)
+                else:
+                    enc_by_class[cname] = entity_data
+        encounters = list(enc_by_class.values())
+
     # Filter out test/debug encounters
     test_monster_classes = {"BigDummy", "OneHpMonster", "TenHpMonster"}
 
