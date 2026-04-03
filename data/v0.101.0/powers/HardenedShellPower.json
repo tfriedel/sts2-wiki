@@ -4,5 +4,6 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "This creature cannot lose more than [blue]20[/blue] HP each turn.",
-  "notes": "Damage cap resets at the start of each player turn. Tracks cumulative damage dealt to the owner during that turn and prevents the owner from losing more than 20 HP total in a single turn."
+  "smart_description": "[gold]{OwnerName}[/gold] cannot lose more than [blue]20[/blue] HP each turn.",
+  "notes": "Caps the damage the owner takes per turn to the power's Amount value (20). Tracks cumulative unblocked damage during a turn and resets at the start of each player turn. The displayed amount shows the remaining damage cap for the current turn."
 }
