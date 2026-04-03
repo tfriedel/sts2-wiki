@@ -1,7 +1,7 @@
 {
   "class_name": "BlackHole",
   "title": "Black Hole",
-  "character": "Colorless",
+  "character": "Regent",
   "energy_cost": 1,
   "type": "Power",
   "rarity": "Uncommon",
@@ -15,6 +15,7 @@
     }
   ],
   "description": "Whenever you spend or gain {singleStarIcon}, deal 3 damage to ALL enemies.",
+  "upgraded_description": "Whenever you spend or gain {singleStarIcon}, deal 4 damage to ALL enemies.",
   "x_cost": false,
   "referenced_powers": [
     {
