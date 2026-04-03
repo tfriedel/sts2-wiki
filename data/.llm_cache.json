@@ -879,96 +879,120 @@
     "cache_key": "ef0e8c93d4d71bd1844590298cf2a56b14eb75cf619ccf54091eabb5abb6dcbc",
     "last_processed": "1774726378.6342545"
   },
-  "relics:Akabeko": {
-    "cache_key": "3101b9aa4ab4705bb78898f05190c67be0f71c8f52aade876f36d2026b9c0559",
-    "last_processed": "1774726378.071402"
+  "encounters:AxebotsNormal": {
+    "cache_key": "3138618cc37c35a327adfbdfe05846ade6e41bf09f8ca73912203baa04a50d74",
+    "last_processed": "1774726378.9434934"
   },
-  "relics:AlchemicalCoffer": {
-    "cache_key": "60fb4788fd1cbd17822a10705372ec66e10753c3c2c50a1e198c17d79e0f218a",
-    "last_processed": "1774726378.0762348"
+  "encounters:BattlewornDummyEventEncounter": {
+    "cache_key": "40285a362e77154df42ce3e35f5da7c577cb5f0ae8eb23ff784f00bd983f16a0",
+    "last_processed": "1774726378.956239"
   },
-  "relics:AmethystAubergine": {
-    "cache_key": "3fb72e06ad88732d6af9d6c41aa01d02b5f06faf0a96d12b662aaf61856e63e6",
-    "last_processed": "1774726378.0854425"
+  "encounters:BowlbugsNormal": {
+    "cache_key": "aeecca018179e3374749703e5a8bb8f7977071789bbe90bad1b12d01c4454d8e",
+    "last_processed": "1774726378.9629521"
   },
-  "relics:Anchor": {
-    "cache_key": "743f4f21e783deaccaa6f41010ab3ebd10e33dab2c7b3fe2a9b0926c4678f8d2",
-    "last_processed": "1774726378.0899062"
+  "encounters:BowlbugsWeak": {
+    "cache_key": "9c7cd4d3c311e091c33f23dfe86148031dd7efb411dcfea54b81238d1e07ef71",
+    "last_processed": "1774726378.9668443"
   },
-  "relics:ArcaneScroll": {
-    "cache_key": "07a841ea5b5338156ba02825900e0951a95de71f0c07271c940448e64351a501",
-    "last_processed": "1774726378.0956337"
+  "encounters:BygoneEffigyElite": {
+    "cache_key": "d8bd4a082ee77f7c36fa7896b3d0029571592420ea07de98c05dd2192b0b42e3",
+    "last_processed": "1774726378.9713125"
   },
-  "relics:ArchaicTooth": {
-    "cache_key": "cac0319fd44d8a6fca2c81df5511f806c60efc20f321823ee17ffe2fcec20725",
-    "last_processed": "1774726378.1172113"
+  "encounters:ByrdonisElite": {
+    "cache_key": "faed3716cbe604ab7235da25b981092cbd960a683b3485186658d5810a66e3db",
+    "last_processed": "1774726378.9778976"
   },
-  "relics:ArtOfWar": {
-    "cache_key": "e94a541e8e4267e88934307412b68449c6b0114d84d7672bcda4b898a546ccaa",
-    "last_processed": "1774726378.1269987"
+  "encounters:CeremonialBeastBoss": {
+    "cache_key": "e84b1da842efd230cfa9fcffb6b2d7c1c47efd0f8f8207e59aea527342604be1",
+    "last_processed": "1774726378.9814205"
   },
-  "relics:Astrolabe": {
-    "cache_key": "2a5e41eebb261c64a94f233d9bb438eda0022a9ec30e33801ec5bef5fa49034f",
-    "last_processed": "1774726378.1330311"
+  "encounters:ChompersNormal": {
+    "cache_key": "7288d77357145f458b075da470402ffd1b2d331ce0999104bdfab4a111d13e46",
+    "last_processed": "1774726378.3495271"
   },
-  "relics:BagOfMarbles": {
-    "cache_key": "a606d76e76db37ca0d69519ccfee74b4923e7443d474c0fa5c0f4b0ac3806d6a",
-    "last_processed": "1774726378.1373127"
+  "encounters:ConstructMenagerieNormal": {
+    "cache_key": "6bbd1f26439872c4dbcf38a6c36cf93ae64462a61f6b793bb33e104875a59107",
+    "last_processed": "1774726378.351958"
   },
-  "relics:BagOfPreparation": {
-    "cache_key": "b231374367f463b7e883bcc41892eba0ea352e173f94371bafcf2dd4a61bc15b",
-    "last_processed": "1774726378.1396978"
+  "encounters:CorpseSlugsNormal": {
+    "cache_key": "d8a39021b8074b7298f2efec0400cbe842f6c41439a5226e8f89881def570cf9",
+    "last_processed": "1774726378.356488"
   },
-  "relics:BeatingRemnant": {
-    "cache_key": "752291ed18933d06d5bd8d12ac83a5793b8e6b90c6b031577e998e1722b6f442",
-    "last_processed": "1774726378.1447518"
+  "encounters:CorpseSlugsWeak": {
+    "cache_key": "332749568b9ed18d88737ce4ec28e75d34f746d7b2c3a21a819208c218e0c8e8",
+    "last_processed": "1774726378.3609662"
   },
-  "relics:BeautifulBracelet": {
-    "cache_key": "45f24fdae74e7a2ca420e8b20ddc2c837d723d0adae973b3168ba3cf80a70623",
-    "last_processed": "1774726378.1552382"
+  "encounters:CubexConstructNormal": {
+    "cache_key": "7acb5d3224a5d685c3429934e181e47d7b638b014aab44777552a3cdcd94e438",
+    "last_processed": "1774726378.3627198"
   },
-  "relics:Bellows": {
-    "cache_key": "3874f41e0635801b09b3d2cea3b1010b3d33081e4a1601a5aa8e6ec0ff350f08",
-    "last_processed": "1774726378.162239"
+  "encounters:CultistsNormal": {
+    "cache_key": "0eb5f2177d176d9c238b30b29f70982ab1ddd776d5eb48ef24d599b678090987",
+    "last_processed": "1774726378.3650203"
   },
-  "relics:BeltBuckle": {
-    "cache_key": "54a79f462ad51643e76954056aec4ace9920bde9da819a0f9455addcb4cadb0d",
-    "last_processed": "1774726378.180581"
+  "encounters:DecimillipedeElite": {
+    "cache_key": "e8b7a5bd08e7784c43906e7fb899e6125cfe753f72127451da23bd8f48deff90",
+    "last_processed": "1774726378.3742158"
   },
-  "relics:BigHat": {
-    "cache_key": "25b3f0e4ace68136ac8a5c60f5925bc81837e08d09c62469e1eb409f9856a23a",
-    "last_processed": "1774726378.190123"
+  "encounters:DenseVegetationEventEncounter": {
+    "cache_key": "ad23bf668f6f587c4fe033a61c291fa9776f5b5dd181069c0f31a96eadc10ff4",
+    "last_processed": "1774726378.3862276"
   },
-  "relics:BigMushroom": {
-    "cache_key": "a32eec5dbd7eb1cf4cc70e8575242d632481b668d10ca83786a5a65cfcc90ee0",
-    "last_processed": "1774726378.1988897"
+  "encounters:DeprecatedEncounter": {
+    "cache_key": "fb30107dd4bc84e90464d20eff8e2faacdf6b7836e16faed12e811f975d872f0",
+    "last_processed": "1774726378.387862"
   },
-  "relics:BiiigHug": {
-    "cache_key": "d29e685446ee9445b648dd47cb1adb530647598b2db38dfd5c04f69746f91cd7",
-    "last_processed": "1774726378.2136338"
+  "encounters:DevotedSculptorWeak": {
+    "cache_key": "902cef4b1a517febc1d36d4e09403ceee237b5aefe79854aad7c75d9daaa1cf2",
+    "last_processed": "1774726378.3898733"
   },
-  "relics:BingBong": {
-    "cache_key": "509b08677339c2ea4d97470264693a2cda3a4d349e392f36e6b75bc6d807cc68",
-    "last_processed": "1774726378.2208736"
+  "encounters:DoormakerBoss": {
+    "cache_key": "bd5d80407290cda6e278598f1482205bd6b9daeaebd9c7d407bdb1fafb86e7cd",
+    "last_processed": "1774726378.3961842"
   },
-  "relics:BlackBlood": {
-    "cache_key": "cadb65c9d50dd05b5bd6721a543554f33bc9568032edbd2a20d73131c2d3f9c2",
-    "last_processed": "1774726378.2238617"
+  "encounters:EntomancerElite": {
+    "cache_key": "00c4098141ce2872466acf76fd0fcb2a9078f0db608c5bd85b409934914710f7",
+    "last_processed": "1774726378.4007735"
   },
-  "relics:BlackStar": {
-    "cache_key": "5b9c8ebbf77196c34f1412bacd5327006c760de0ff1a018e94e819b890dfa675",
-    "last_processed": "1774726378.2255206"
+  "encounters:ExoskeletonsNormal": {
+    "cache_key": "2771fda6f794312808176dec54bed0b7b0627cc5fba5aff550d6fec97f2eac95",
+    "last_processed": "1774726378.4093075"
   },
-  "relics:BlessedAntler": {
-    "cache_key": "359e570ceac65b6572c62b76a2882e7ac660bf9f750bd6700f9361092a1aecb0",
-    "last_processed": "1774726378.237466"
+  "encounters:ExoskeletonsWeak": {
+    "cache_key": "5af8fac6ba4c2abc0aa84710c5f5cf92901b967faf8f5a7bedce24eb7e743a2b",
+    "last_processed": "1774726378.413091"
   },
-  "relics:BloodSoakedRose": {
-    "cache_key": "33a49dba5e9e80347eb456f19e55893d59d2e99aa7ce228bc0e473462b910f7d",
-    "last_processed": "1774726378.2447731"
+  "encounters:FabricatorNormal": {
+    "cache_key": "791cfe881f87bc9cf3e99287805cb4347995725988dbde05ba4f7e24993c305f",
+    "last_processed": "1774726378.433064"
   },
-  "relics:BloodVial": {
-    "cache_key": "f476e027034e47cd3045d13ffb8dcfbe6f03ed24fe1e047ebf869dc6064518ca",
-    "last_processed": "1774726378.2670515"
+  "encounters:FakeMerchantEventEncounter": {
+    "cache_key": "5cb05426b647de563d5d400f87a84af2cee1713fd99a76d2f01e3c3f65b2db94",
+    "last_processed": "1774726378.438072"
+  },
+  "encounters:FlyconidNormal": {
+    "cache_key": "16cb8cc3fa2f6a7f5ce2ceef5dd7e7f8713eee23a69e2f8767e3ab82950a8d9b",
+    "last_processed": "1774726378.4433353"
+  },
+  "encounters:FogmogNormal": {
+    "cache_key": "d2779b2a324edeedb2500abe3637bf2d1983a15e3db4b9594dd8eb7bbcac3f94",
+    "last_processed": "1774726378.4471354"
+  },
+  "encounters:FossilStalkerNormal": {
+    "cache_key": "e4393b0cf9a5d0ed67b273caada27dc11bd7f330e92fa7147f1420f595225679",
+    "last_processed": "1774726378.4491642"
+  },
+  "encounters:FrogKnightNormal": {
+    "cache_key": "24f8c517b89f88dc6e3960261d5727916847c67f376ad749f1e84d45d3fced34",
+    "last_processed": "1774726378.4511745"
+  },
+  "encounters:FuzzyWurmCrawlerWeak": {
+    "cache_key": "eb76d4dbfeebd537c49065be10705cf726244d3d0303632c6c187afd538efe0a",
+    "last_processed": "1774726378.4539804"
+  },
+  "encounters:GlobeHeadNormal": {
+    "cache_key": "c21185646551880a8662c8e79df8145a8bdfec622b19288b35522d877aa0aa8e",
+    "last_processed": "1774726378.4568374"
   }
 }

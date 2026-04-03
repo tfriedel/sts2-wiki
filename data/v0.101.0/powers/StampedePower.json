@@ -1,0 +1,8 @@
+{
+  "class_name": "StampedePower",
+  "title": "Stampede",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of your turn, [blue]1[/blue] random Attack in your [gold]Hand[/gold] is played against a random enemy.",
+  "smart_description": "At the end of your turn, [blue]{Amount}[/blue] random {Amount:plural:Attack|Attacks} in your [gold]Hand[/gold] {Amount:plural:is played against a random enemy.|are played against a random enemy.}"
+}
