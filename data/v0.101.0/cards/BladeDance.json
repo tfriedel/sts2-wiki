@@ -19,6 +19,12 @@
   "description": "Add 3 [gold]Shivs[/gold] into your [gold]Hand[/gold].",
   "upgraded_description": "Add 4 [gold]Shivs[/gold] into your [gold]Hand[/gold].",
   "x_cost": false,
-  "referenced_powers": [],
+  "referenced_powers": [
+    {
+      "class_name": "Shiv",
+      "title": "Shiv",
+      "slug": "shiv"
+    }
+  ],
   "notes": "Creates Shiv tokens in hand with animation delay between each card. Shivs are 0-cost Ironclad Attack cards."
 }
