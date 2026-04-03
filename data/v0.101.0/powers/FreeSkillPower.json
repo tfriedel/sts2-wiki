@@ -4,6 +4,6 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "The next Skill you play costs [blue]0[/blue] energy.",
-  "smart_description": "The next [blue]{Amount}[/blue] Skill(s) you play cost [blue]0[/blue] energy.",
+  "smart_description": "The next [blue]{Amount}[/blue] Skill you play costs [blue]0[/blue] energy.",
   "notes": "Counter power that decrements by 1 each time you play a Skill. Only affects Skills in your hand or play pile."
 }
