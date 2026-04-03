@@ -1,0 +1,25 @@
+{
+  "class_name": "Disintegration",
+  "title": "Disintegration",
+  "character": "Status",
+  "energy_cost": -1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6
+    }
+  ],
+  "description": "At the end of your turn, take 6 damage.",
+  "referenced_powers": [
+    {
+      "class_name": "DisintegrationPower",
+      "title": "Disintegration",
+      "slug": "disintegration-power"
+    }
+  ],
+  "notes": "Status card that cannot be generated in combat. Applied when chosen as a reward (implements KnowledgeDemon.IChoosable)."
+}

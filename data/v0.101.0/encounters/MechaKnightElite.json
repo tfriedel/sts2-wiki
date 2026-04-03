@@ -5,5 +5,6 @@
   "is_weak": false,
   "monsters": ["MechaKnight"],
   "total_monsters": 1,
-  "tags": []
+  "tags": [],
+  "notes": "Special camera adjustments: scaling 0.9, offset down 50"
 }

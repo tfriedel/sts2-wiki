@@ -5,7 +5,7 @@
   "energy_cost": 9,
   "type": "Attack",
   "rarity": "Rare",
-  "target": "AllEnemy",
+  "target": "All",
   "keywords": ["Ethereal"],
   "vars": [
     {
@@ -17,7 +17,7 @@
       "base_value": 2
     }
   ],
-  "description": "Deal 33 damage to ALL enemies.\nCosts 2 less for each [gold]Ethereal[/gold] card played this combat.",
+  "description": "Deal 33 damage to ALL enemies.\nCosts 2 Energy less for each [gold]Ethereal[/gold] card played this combat.",
   "upgraded_cost": 7,
   "notes": "When this card enters combat, it scans history for Ethereal cards played this turn and reduces cost accordingly. Each subsequent Ethereal card played in combat further reduces this card's cost by 2."
 }

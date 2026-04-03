@@ -1,0 +1,8 @@
+{
+  "class_name": "WhisperingEarring",
+  "title": "Whispering Earring",
+  "rarity": "Ancient",
+  "description": "Gain 1 Energy at the start of each turn. Vakuu plays your first turn for you.",
+  "flavor": "Details for this relic will be revealed in the future...",
+  "notes": "On the first turn of combat, Vakuu automatically plays cards from your hand in the following order: first, all cards with Imbued enchantment, then any remaining playable cards up to a maximum of 13 cards total. If all 13 cards are played, Vakuu displays a warning message; otherwise an approval message is shown."
+}

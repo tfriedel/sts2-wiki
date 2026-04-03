@@ -6,5 +6,5 @@
   "monsters": ["KnowledgeDemon"],
   "total_monsters": 1,
   "tags": [],
-  "notes": null
+  "notes": "Boss encounter with custom camera scaling (0.85x) and offset. Uses custom background and special BGM (event:/music/act2_boss_knowledge_demon)."
 }

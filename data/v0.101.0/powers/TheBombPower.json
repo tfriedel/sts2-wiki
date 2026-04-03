@@ -1,0 +1,8 @@
+{
+  "class_name": "TheBombPower",
+  "title": "The Bomb",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of [blue]3[/blue] turns, deal [blue]40[/blue] damage to ALL enemies.",
+  "smart_description": "At the end of [blue]3[/blue] turns, deal [blue]40[/blue] damage to ALL enemies."
+}

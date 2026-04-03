@@ -9,6 +9,7 @@
   "keywords": [],
   "vars": [],
   "description": "Whenever you gain [gold]Block[/gold] on your turn, other players gain half that much [gold]Block[/gold].",
+  "upgraded_description": "Innate. Whenever you gain [gold]Block[/gold] on your turn, other players gain half that much [gold]Block[/gold].",
   "x_cost": false,
   "referenced_powers": [
     {

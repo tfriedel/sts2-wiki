@@ -12,5 +12,5 @@
   "tags": [
     "Knights"
   ],
-  "notes": "Elite encounter featuring three distinct knight types. Uses Hexed affliction overlay effects."
+  "notes": "Features custom scene rendering with adjusted camera scaling (0.87x) and offset. Contains Hexed affliction overlay asset."
 }

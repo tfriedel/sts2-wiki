@@ -4,5 +4,6 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "Whenever a card is [gold]Exhausted[/gold], draw [blue]1[/blue] card.",
-  "smart_description": "Whenever a card is [gold]Exhausted[/gold], draw [blue]{Amount}[/blue] {Amount:plural:card|cards}."
+  "smart_description": "Whenever a card is [gold]Exhausted[/gold], draw [blue]1[/blue] card.",
+  "notes": "Exhausts caused by Ethereal effects are tracked separately and grant draw at the end of turn instead of immediately."
 }

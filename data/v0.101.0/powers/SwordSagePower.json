@@ -1,0 +1,9 @@
+{
+  "class_name": "SwordSagePower",
+  "title": "Sword Sage",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Sovereign Blade[/gold] now hits [blue]1[/blue] additional time.",
+  "smart_description": "[gold]Sovereign Blade[/gold] now hits [blue]N[/blue] additional times (where N = current power stack count).",
+  "notes": "Counter-stacking power that increases the number of repetitions of Sovereign Blade. Smart description updates dynamically to show total additional hits based on current stacks."
+}
