@@ -4,5 +4,5 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "At the start of your turn, [gold]Forge[/gold] [blue]5[/blue].",
-  "smart_description": "At the start of your turn, [gold]Forge[/gold] [blue]{Amount}[/blue]."
+  "smart_description": "At the start of your turn, [gold]Forge[/gold] [blue]5[/blue]."
 }

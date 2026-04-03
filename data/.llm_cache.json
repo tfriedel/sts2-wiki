@@ -879,304 +879,796 @@
     "cache_key": "ef0e8c93d4d71bd1844590298cf2a56b14eb75cf619ccf54091eabb5abb6dcbc",
     "last_processed": "1774726378.6342545"
   },
-  "powers:AccelerantPower": {
-    "cache_key": "b29ec4c2d805cfa5dfc2d87a079f266abe8f924387c9b351e875f8c2a5a6073a",
-    "last_processed": "1774726377.8600233"
-  },
-  "powers:AccuracyPower": {
-    "cache_key": "b06d3d24957e5207a05e4895fbbe5d57e400803b73823e22a7c176c219e7ee3b",
-    "last_processed": "1774726377.8669004"
-  },
-  "powers:AdaptablePower": {
-    "cache_key": "a25d78e9825b4b50bd07a1283183a1160b62f6c107481ea1b154e1f3fdf132f8",
-    "last_processed": "1774726377.8762698"
-  },
-  "powers:AfterimagePower": {
-    "cache_key": "28294c810b9b806922f8f92af0b0cbc9198065f0c34cf8d8d102ceb1afb101c7",
-    "last_processed": "1774726377.8835385"
-  },
-  "powers:AggressionPower": {
-    "cache_key": "8eec10d91ce3996df09fbc1839e5c0b19ad1f03948bfa89133fc5fe5f0a2c98e",
-    "last_processed": "1774726377.8898444"
-  },
-  "powers:ArsenalPower": {
-    "cache_key": "8186f3c7ffc6debe493774284b3eca259603a9b0332d3115814cedbfd66c782e",
-    "last_processed": "1774726377.895444"
-  },
-  "powers:ArtifactPower": {
-    "cache_key": "966afc33b51b3e78facb1284823db673987241f10e008fb0aa6a639d09eac9e5",
-    "last_processed": "1774726377.9044735"
-  },
-  "powers:AsleepPower": {
-    "cache_key": "33441e33f9fca43fa180bc42fecf64ed2f9df1b829892afaa20af9199257b873",
-    "last_processed": "1774726377.9180627"
-  },
-  "powers:AutomationPower": {
-    "cache_key": "2c1670a193d16302623ee5ee849aa50a3835b79cb9e5296164a523d7644231ae",
-    "last_processed": "1774726377.928818"
-  },
-  "powers:BackAttackLeftPower": {
-    "cache_key": "fbe725b4d6d1bb36556f657a630dbc2797925740a9249e0db356bde215f514f3",
-    "last_processed": "1774726377.9317038"
-  },
-  "powers:BackAttackRightPower": {
-    "cache_key": "c020ba5cc20471c064c92580ed211b53549e7063855485b01826419387068926",
-    "last_processed": "1774726377.9345698"
-  },
-  "powers:BarricadePower": {
-    "cache_key": "4fba646da608df550f34485304e6a1c98f45402b27a51d559959feef947c749d",
-    "last_processed": "1774726377.9439359"
-  },
-  "powers:BattlewornDummyTimeLimitPower": {
-    "cache_key": "4207571738af9e3ce8263b8fe6c3032fbede547422220b65a915534208b0a9ce",
-    "last_processed": "1774726377.9495718"
-  },
-  "powers:BeaconOfHopePower": {
-    "cache_key": "b2acf086d420030b00b3057fdbd20715ddc0b1271ab92713c0aec72732dec4ab",
-    "last_processed": "1774726377.961932"
-  },
-  "powers:BiasedCognitionPower": {
-    "cache_key": "aabae1f8a3c3144d54d0e63f30b7c33a209628977ad2e3179931f2f7af51be1d",
-    "last_processed": "1774726377.9655612"
-  },
-  "powers:BlackHolePower": {
-    "cache_key": "c3ef421be06ea0c1eec7a1b7be8e068fd161625800d0d4a69754c29ca45621a7",
-    "last_processed": "1774726377.8836946"
-  },
-  "powers:BladeOfInkPower": {
-    "cache_key": "3f0c85d2a0e6145dde07a1b8409a58d3e03d9403cf445c41107c17dbf2a05028",
-    "last_processed": "1774726377.893021"
-  },
-  "powers:BlockNextTurnPower": {
-    "cache_key": "2c508499e8376dd3ad67177f81c154a4d3164215c97ab995082f224033438398",
-    "last_processed": "1774726377.900746"
-  },
-  "powers:BlurPower": {
-    "cache_key": "ea692338b5a6b5675045cf2f88c9eff08a0955a034e436be86d8d1b7ce9e4f6c",
-    "last_processed": "1774726377.9075475"
-  },
-  "powers:BufferPower": {
-    "cache_key": "ca560605e0e3ae327e9289ab278d9500697c6b45c619435a354ef97c53c7e261",
-    "last_processed": "1774726377.91027"
-  },
-  "powers:BurrowedPower": {
-    "cache_key": "a3ee4aa547a417b71f89991d9c10956af853333376fdc032445b9758f64514cd",
-    "last_processed": "1774726377.9155502"
-  },
-  "powers:BurstPower": {
-    "cache_key": "22278ff89181bc5b2f355baf890d272018cfadef512e016ef08934b4603704a7",
-    "last_processed": "1774726377.9194956"
-  },
-  "powers:CalamityPower": {
-    "cache_key": "2ed4c6157311a8ca9436774d71aaec840c4bea0accffdbfa253b02cf198f7754",
-    "last_processed": "1774726377.925954"
-  },
-  "powers:CalcifyPower": {
-    "cache_key": "f9f13c63278ee23bda08ab41fcb4038b238c916dff2757f547c055760f2d1aac",
-    "last_processed": "1774726377.9283736"
-  },
-  "powers:CallOfTheVoidPower": {
-    "cache_key": "2fc7fd302fd748863d49deaa42ea3c8339c3778790df3cd7379372dcf0fa0453",
-    "last_processed": "1774726377.9348216"
-  },
-  "powers:ChainsOfBindingPower": {
-    "cache_key": "b7510b4974b005fdbc77279d64653ccaa63f0b2387503f523edd9d861b54a193",
-    "last_processed": "1774726377.949912"
-  },
-  "powers:ChildOfTheStarsPower": {
-    "cache_key": "ad89b841e737bb9617a49eb22bbaccaf176baa0389ec4a0765dc3c7929bb25c5",
-    "last_processed": "1774726377.9528732"
-  },
-  "powers:ClarityPower": {
-    "cache_key": "aad2901073786c80ab819b761f7546576f1894fba055b00c43c5de4ecc4dea4c",
-    "last_processed": "1774726377.9557695"
-  },
-  "powers:ColossusPower": {
-    "cache_key": "b8db876da52f3fb06ffa1571f295ad2efaaa54ce6815b3f06046a6db9d972990",
-    "last_processed": "1774726377.9610407"
-  },
-  "powers:ConfusedPower": {
-    "cache_key": "b87f441d0beed43cf4141dff2d9957c50283d400e214245f85347cf30fe548cc",
-    "last_processed": "1774726377.9650793"
-  },
-  "powers:ConquerorPower": {
-    "cache_key": "554ad642cfc563fb5bc90e678dd71de5f51e657b67b056057a7054ccc900f837",
-    "last_processed": "1774726377.9689105"
-  },
-  "powers:ConstrictPower": {
-    "cache_key": "0d6fc0d01758d0b86e2428951d7eef9569c8a9ca2fd03e407af4916c636dc03d",
-    "last_processed": "1774726377.978367"
-  },
-  "powers:ConsumingShadowPower": {
-    "cache_key": "15d1ef10473021edab994d5f19d28d0d7770693a52afc80bbbd47e1ab1dfb6f4",
-    "last_processed": "1774726377.9843132"
-  },
-  "powers:CoolantPower": {
-    "cache_key": "dd5bb3b8f6b7cd4fd8776b2045ac1e12217b59fe1b33c8fc78def68d35097e67",
-    "last_processed": "1774726377.9927723"
-  },
-  "powers:CorrosiveWavePower": {
-    "cache_key": "4ec618678c3cdd632e89d28bfa9cd844923f0bd4a3cf85f2cced44665222d553",
-    "last_processed": "1774726378.019467"
-  },
-  "powers:CorruptionPower": {
-    "cache_key": "1781aa6c6144ba8fb2f419a9bf5e6ae92f684f940786916650b7f7c5f522ddc6",
-    "last_processed": "1774726378.0236914"
-  },
-  "powers:CountdownPower": {
-    "cache_key": "abb76efcd5edd693c00a3e584f47e207e2feb41dd8aa82d03a19e23b8914701e",
-    "last_processed": "1774726378.029942"
-  },
-  "powers:CoveredPower": {
-    "cache_key": "09acd81caf1c44f0b48cfa286db3f3a6943704ef01da2499a486d98b604d4793",
-    "last_processed": "1774726378.0417006"
-  },
-  "powers:CrabRagePower": {
-    "cache_key": "c90479aafa9e454baae53052fea5c7dd9d98849c1c644b42de13053d1ecb29ef",
-    "last_processed": "1774726378.0561087"
-  },
-  "powers:CreativeAiPower": {
-    "cache_key": "4c4a568b8815dc436cb09be45f4a8a5155ae54c17b36cf1cfa3b544ce8b54eaa",
-    "last_processed": "1774726378.065045"
-  },
-  "powers:CrimsonMantlePower": {
-    "cache_key": "cacbae3e2fe5280e306d127888c5969a64c9e267395f48188b21d2412459b675",
-    "last_processed": "1774726378.079428"
-  },
-  "powers:CrueltyPower": {
-    "cache_key": "332b0edb7189199a6d9d9234373a1af287f747d51b7af003ec8df5703d96927d",
-    "last_processed": "1774726378.0831475"
-  },
-  "powers:CuriousPower": {
-    "cache_key": "f49b7e0e5ae44cb0186e55df1647fcc848bf36ea4216b5a0bf0a515b5cc5fa00",
-    "last_processed": "1774726378.0866468"
-  },
-  "powers:CurlUpPower": {
-    "cache_key": "4528219173d6386e08efb2ebb40228012d41cf7877362f394a06cebeed36abc6",
-    "last_processed": "1774726378.0936782"
-  },
-  "powers:DampenPower": {
-    "cache_key": "3a7ad92d4543f7f45c766517af434c4e4fb4a8c3d07c15f7c09727a7661c418d",
-    "last_processed": "1774726378.1017098"
-  },
-  "powers:DanseMacabrePower": {
-    "cache_key": "01cc087dddb5e1a61ef90c791581d1cdac0e12530b5dc460c5230091eca5708c",
-    "last_processed": "1774726377.9212644"
-  },
-  "powers:DarkEmbracePower": {
-    "cache_key": "809543cfdaca36e64f1981c5debb105737a626990e7d93353f2d9d39d303d179",
-    "last_processed": "1774726377.9270728"
-  },
-  "powers:DebilitatePower": {
-    "cache_key": "1ec926cd8c34b628ede35bb52b72ff4d4c9afc091b6df1bfd66dea3868d852d0",
-    "last_processed": "1774726377.9402714"
-  },
-  "powers:DemesnePower": {
-    "cache_key": "cce642cf04f39a048e9551136d181d2bd7fe01d3f3c0a58ae5270e77c41616a7",
-    "last_processed": "1774726377.9459226"
-  },
-  "powers:DemisePower": {
-    "cache_key": "cb6447d423849d35a3dd1b6f2cd08d187eb07a73e95f82d1b970f5615f93261a",
-    "last_processed": "1774726377.950943"
-  },
-  "powers:DemonFormPower": {
-    "cache_key": "cef07da3ef04e0744ffd20616068d6c221298a9f4e63158223471859d2be785a",
-    "last_processed": "1774726377.9603932"
-  },
-  "powers:DevourLifePower": {
-    "cache_key": "619163835626e84bdbefe771ab589e6e69b6f07ca808fe704e5034ecaf683636",
-    "last_processed": "1774726377.972296"
-  },
-  "powers:DexterityPower": {
-    "cache_key": "14d970aba94b01efc9bd2236ddf74d45617b5ec3ab3a43b7f6467b7182b4af4e",
-    "last_processed": "1774726377.9767182"
-  },
-  "powers:DiamondDiademPower": {
-    "cache_key": "785f458cb0ba8c9b571a8f88b26d14d1c1c9d8aff9b91dbd7e115bcb8b59de28",
-    "last_processed": "1774726377.9868634"
-  },
-  "powers:DieForYouPower": {
-    "cache_key": "f43e7d39ecde2832ceb1c8a3775465b9a5e88ba81eac9ddb29471285dbd9f294",
-    "last_processed": "1774726377.9900527"
-  },
-  "powers:DisintegrationPower": {
-    "cache_key": "0cddd85706b7e2a22a638ced45b2ed58c8c6b59778a5506697dd730e4cc64e21",
-    "last_processed": "1774726377.9929092"
-  },
-  "powers:DoomPower": {
-    "cache_key": "651d20457363248740fe00e035904215011ed8d598ae559a4463c9eefe64b595",
-    "last_processed": "1774726378.0270634"
-  },
-  "powers:DoubleDamagePower": {
-    "cache_key": "640575493b2545d79ef565dec42d23c5ce1e76d265c7bc391bb24041ca6a5111",
-    "last_processed": "1774726378.0306556"
-  },
-  "powers:DrawCardsNextTurnPower": {
-    "cache_key": "ecd8ab5b74d19df6a1ed7e568ac5cb4beb2d30c92e5314f6f381cb8ab3215891",
-    "last_processed": "1774726378.0337217"
-  },
-  "powers:DrumOfBattlePower": {
-    "cache_key": "b750e3543205b749867cde0c1cc4b0d1c79bb9b6b8ecea7b01f8b75325a061ce",
-    "last_processed": "1774726378.0385766"
-  },
-  "powers:DuplicationPower": {
-    "cache_key": "b01b3d54af4be6a1d15c95c0a1f4a13e5de3991d90a513efc7fff63d9d19aede",
-    "last_processed": "1774726378.0453112"
-  },
-  "powers:EchoFormPower": {
-    "cache_key": "4cc10931dda618cab7361a3b8a246ca3e5d7577ea5f3dabb41bc2669664e15ac",
-    "last_processed": "1774726378.049965"
-  },
-  "powers:EnergyNextTurnPower": {
-    "cache_key": "17522730603b8e05da1af16a8135830edd0a4a6a192139a4c05811b860a2e625",
-    "last_processed": "1774726378.0568454"
-  },
-  "powers:EnragePower": {
-    "cache_key": "0071fde88e1030fcbe901ec0fec78539a72824f101de92e0ee134f75ae95d84a",
-    "last_processed": "1774726378.0616744"
-  },
-  "powers:EntropyPower": {
-    "cache_key": "22bc53536909a478d76ea1aa0ea09e8e13a7e7c2700d06a4e6271997b984e96f",
-    "last_processed": "1774726378.0668159"
-  },
-  "powers:EnvenomPower": {
-    "cache_key": "55b9252a2c0e8ed1d3fd2b02f14ac69a9a1911465a9485eb5159aca104bf69e1",
-    "last_processed": "1774726378.0830653"
-  },
-  "powers:EscapeArtistPower": {
-    "cache_key": "9445edf480f7d091dd44d675ee7ee6dca2f4bff7f2e0db26b3ad8d4ccd74c2c8",
-    "last_processed": "1774726378.0919142"
-  },
-  "powers:FanOfKnivesPower": {
-    "cache_key": "0b6e1c1601068a16875d5bc5b10368043dc25aefbc2e1b3d1c819797d2dec133",
-    "last_processed": "1774726378.0960944"
-  },
-  "powers:FastenPower": {
-    "cache_key": "af71504443bf984ef485b4c49627ee2c63d957fc3c58a7692a8845d0b2bb1464",
-    "last_processed": "1774726378.100733"
-  },
-  "powers:FeelNoPainPower": {
-    "cache_key": "3211a315c444dcdf1c0bada68aebade708b4bbf62f86fec0f78a935c79b4b76f",
-    "last_processed": "1774726378.1052234"
-  },
-  "powers:FeralPower": {
-    "cache_key": "f02757027ad6b53bbda263d5775908ef7f77556a0c3cafd54d41d3a149450333",
-    "last_processed": "1774726378.1151679"
-  },
-  "powers:FlameBarrierPower": {
-    "cache_key": "8a99beb57b140f941875b2dcaecf1a90acec8d233cd694fd520554ae84a36bad",
-    "last_processed": "1774726378.1201053"
-  },
-  "powers:FlankingPower": {
-    "cache_key": "360c76cffd4b04eac93e3730bf2063c8ccf74964d7cb13cca6d61dbd6622c36a",
-    "last_processed": "1774726378.1252797"
-  },
-  "powers:FlutterPower": {
-    "cache_key": "100dd35f6c1ab9a01fe281afc430e75be98a6186811f333f32d1145c46bab4cd",
-    "last_processed": "1774726377.9304504"
-  },
-  "powers:FocusPower": {
-    "cache_key": "c704b51f8fb3638c57d603550c473335dc92aa4347c669bd1c578a635f0e7311",
-    "last_processed": "1774726377.9336553"
+  "encounters:AxebotsNormal": {
+    "cache_key": "3138618cc37c35a327adfbdfe05846ade6e41bf09f8ca73912203baa04a50d74",
+    "last_processed": "1774726378.9434934"
+  },
+  "encounters:BattlewornDummyEventEncounter": {
+    "cache_key": "40285a362e77154df42ce3e35f5da7c577cb5f0ae8eb23ff784f00bd983f16a0",
+    "last_processed": "1774726378.956239"
+  },
+  "encounters:BowlbugsNormal": {
+    "cache_key": "aeecca018179e3374749703e5a8bb8f7977071789bbe90bad1b12d01c4454d8e",
+    "last_processed": "1774726378.9629521"
+  },
+  "cards:Accuracy": {
+    "cache_key": "2906bb30ace84535a84b037cd8da8cd91783e45d6bf70192a6e2d08d6f1d71a1",
+    "last_processed": "1774726378.6485727"
+  },
+  "cards:Acrobatics": {
+    "cache_key": "3db5320ea6fd9c742e9cdfeec160d4a572c0fddb480ac42f055751906a08e67a",
+    "last_processed": "1774726378.6551244"
+  },
+  "cards:AdaptiveStrike": {
+    "cache_key": "611785619857b932392f532025ccdf1ea3a5b0a8a39c0b09031ebaaf1036a69b",
+    "last_processed": "1774726378.67368"
+  },
+  "cards:Adrenaline": {
+    "cache_key": "e1bf6199958848161225925fa4aa74d561ef0b1f926ad5c8cbee5f5dc757284c",
+    "last_processed": "1774726378.680042"
+  },
+  "cards:Afterimage": {
+    "cache_key": "ed5275bfe580f2e38f6c14bd024dcd355e710b15269bef78357c1bb18de59284",
+    "last_processed": "1774726378.6842768"
+  },
+  "cards:Afterlife": {
+    "cache_key": "272de9a75663e9e8318fb3c373d8700b14b0f5cde98bfe602e5ceabc223f32fd",
+    "last_processed": "1774726378.689125"
+  },
+  "cards:Aggression": {
+    "cache_key": "694167db673007abb751bc300ac479448597f6c582e7d1ff9dc2c9ed1a91d49c",
+    "last_processed": "1774726378.6915953"
+  },
+  "cards:Alchemize": {
+    "cache_key": "286e293df0ed6c9e8e774962a1f0afdfaa8b163b6e7f4ebd82162285ab1d64b0",
+    "last_processed": "1774726378.6955767"
+  },
+  "cards:Alignment": {
+    "cache_key": "c53f5e4811a6542b8dc315a3da316dae477f0b0b923e03676d458f862ae7adf1",
+    "last_processed": "1774726378.4975023"
+  },
+  "cards:AllForOne": {
+    "cache_key": "e500f352ff158782aa4dc315737da8070adc48ff740debc052fb940940777e3a",
+    "last_processed": "1774726378.5093226"
+  },
+  "cards:Anger": {
+    "cache_key": "ee03440fbf41ca13b738d50aea773411ed1ebf759c203106528a54de869f34a2",
+    "last_processed": "1774726378.520117"
+  },
+  "cards:Anointed": {
+    "cache_key": "d6fcc8fd3c3087003a35f53109c47067e3f90da1326b037f56487fa70822e87e",
+    "last_processed": "1774726378.5238826"
+  },
+  "cards:Anticipate": {
+    "cache_key": "fd91ec5875e9230f9ea0eff568059e3daae24a714cbb8ea3851e557c0360b861",
+    "last_processed": "1774726378.5340228"
+  },
+  "cards:Apotheosis": {
+    "cache_key": "3887b7f3d0687929c25657308b2df2ee11f3c2b2aaa1f3b6f4afa2a6a2cb487c",
+    "last_processed": "1774726378.53785"
+  },
+  "cards:Apparition": {
+    "cache_key": "74415b5b7d255b8f4a72f586fd517e33e8aceb11756cfe3929c525dab2ba7a48",
+    "last_processed": "1774726378.5428054"
+  },
+  "cards:Armaments": {
+    "cache_key": "e804714e56dbc2cc7a638d45e6acbaedb7ee257783e18a589180a53a71509984",
+    "last_processed": "1774726378.5488794"
+  },
+  "cards:Arsenal": {
+    "cache_key": "1352b04c1c419ae6711552ca8555604d15c24dacae7a31a4d626dea095456fbb",
+    "last_processed": "1774726378.5546582"
+  },
+  "cards:AscendersBane": {
+    "cache_key": "1d9337555d8e27dcaf1e2caf71e427f582b3d6eadf7680f08483f980061770c2",
+    "last_processed": "1774726378.5595458"
+  },
+  "cards:AshenStrike": {
+    "cache_key": "08d90f9c64e03b5240b6dc6ff3d5d7fbcdb93441f1aff76db604261355487e42",
+    "last_processed": "1774726378.571004"
+  },
+  "cards:Assassinate": {
+    "cache_key": "9f0432d5686366308f5b918415b472dc274edac620c596b70f19b6ea87638690",
+    "last_processed": "1774726378.5934072"
+  },
+  "cards:AstralPulse": {
+    "cache_key": "f56f596074e8990a32ddfb81b716d86a6eb55eea7073519c746f66ce6d385d76",
+    "last_processed": "1774726378.6004977"
+  },
+  "cards:Automation": {
+    "cache_key": "ff80016fc15086b653f57359fa0e4ed365e9fe598e608823b4e354d259e82ce7",
+    "last_processed": "1774726378.610708"
+  },
+  "cards:Backflip": {
+    "cache_key": "b841307a59f981fda93b5ad3380ddbcb941ed14ae8037eb2d35755cd10238cea",
+    "last_processed": "1774726378.6153462"
+  },
+  "cards:Backstab": {
+    "cache_key": "fef14930458f22bf3c19be38ab3672567edafe18ef19a6d4352c479787c608f4",
+    "last_processed": "1774726378.6341724"
+  },
+  "cards:BadLuck": {
+    "cache_key": "77c28ff74c4b87af925a64eac9b5b43785b04ba7f029ebce1557aa9f598f993e",
+    "last_processed": "1774726378.6397839"
+  },
+  "cards:BallLightning": {
+    "cache_key": "ea9b7eb1a1291393c5e09e5ac5f0bd438627d9c01440a2bd4d894af50d0e3773",
+    "last_processed": "1774726378.644532"
+  },
+  "cards:BansheesCry": {
+    "cache_key": "27901c48b7b9b095d96a30fde98950c53c10958268140a422db68a5b4b081637",
+    "last_processed": "1774726378.6578875"
+  },
+  "cards:Barrage": {
+    "cache_key": "4861e274432a736787f5c91eb5c777c7a00704584b15629d8e26b15d2233d055",
+    "last_processed": "1774726378.6647043"
+  },
+  "cards:Barricade": {
+    "cache_key": "e04212c3140c178538964466b91f6e1e77e2026817275360d64ef0df12e224a6",
+    "last_processed": "1774726378.6714337"
+  },
+  "cards:Bash": {
+    "cache_key": "af8fbfc3ea0ac78ae29ee452010594e0bb94302917a4db6c8dc6762abe2f1f25",
+    "last_processed": "1774726378.6766152"
+  },
+  "cards:BattleTrance": {
+    "cache_key": "64f0ce182b753f5d100be9e02ec57c10047b3fd8ccfa0249023eb94035e22eca",
+    "last_processed": "1774726378.6889827"
+  },
+  "cards:BeaconOfHope": {
+    "cache_key": "e9651ea212bb6dd5bba0a0b29dd9baf561d827113404903ddab6052cdd61b611",
+    "last_processed": "1774726378.693441"
+  },
+  "cards:BeamCell": {
+    "cache_key": "37a15db8212c49149a7f7298896ba133b008fbd9fd143574136a1c85b68b1ca0",
+    "last_processed": "1774726378.6983361"
+  },
+  "cards:BeatDown": {
+    "cache_key": "53a2c41dbfb0064fd4a76d75b57a6a1698782d6cd7096bd7326a3c53b5267401",
+    "last_processed": "1774726378.7132604"
+  },
+  "cards:BeatIntoShape": {
+    "cache_key": "9215f4c00bf2abf16a90c51d170329c6a51495bd82e8386b060219f8fff5be75",
+    "last_processed": "1774726378.7315078"
+  },
+  "cards:Beckon": {
+    "cache_key": "d122117ea6b51c1feaa4ad2a9ec5eec7efb6b49f7ec99b691bcf682a3e177269",
+    "last_processed": "1774726378.735009"
+  },
+  "cards:Begone": {
+    "cache_key": "efc23b69e4bf1908d169af4d83e7d046874ef4fda98a974f91ba2283fcf3522d",
+    "last_processed": "1774726378.7413297"
+  },
+  "cards:BelieveInYou": {
+    "cache_key": "59927cdbfc9454765f081344f3c03ea3f8049ad467cb035838a51a17135e4996",
+    "last_processed": "1774726378.7466602"
+  },
+  "cards:BiasedCognition": {
+    "cache_key": "5b664194468bee61a7c3a4139caff01b01b0b23d7411474ffd0df9ecff1e00c3",
+    "last_processed": "1774726378.7522886"
+  },
+  "cards:BigBang": {
+    "cache_key": "2d5b8d14e994647621cc83bff7fcfd3657a1333d8b8f6f8e9d2b9392ba427b03",
+    "last_processed": "1774726378.760001"
+  },
+  "cards:BlackHole": {
+    "cache_key": "85b74bf070c6611d87650eb901b7243c3733fb50ccf91b315f1222f3603a78cc",
+    "last_processed": "1774726378.5719752"
+  },
+  "cards:BladeDance": {
+    "cache_key": "d07ca49ea11d9d52227b07d4dca2e12d1606130707e9d2778b1a857a9868fce1",
+    "last_processed": "1774726378.588316"
+  },
+  "cards:BladeOfInk": {
+    "cache_key": "183914cc63cc811b4d92015e8be7f8dc6b68d2c099d1556784f774c3e5660452",
+    "last_processed": "1774726378.6009977"
+  },
+  "cards:BlightStrike": {
+    "cache_key": "f70671a3c96eb6b94032b3033ba3cf3d9f63529214a47062f710e7b4a7efc817",
+    "last_processed": "1774726378.6104305"
+  },
+  "cards:BloodWall": {
+    "cache_key": "fc27ce5b33e0beced64a38d15943bdeefb7cce0f48397c71c8bc93179b35c52d",
+    "last_processed": "1774726378.633884"
+  },
+  "cards:Bloodletting": {
+    "cache_key": "48211935e7e4039cb49bc3cc9e8c4ff127a17e31ff5659a98163a5a0c97bd5ea",
+    "last_processed": "1774726378.6190562"
+  },
+  "cards:Bludgeon": {
+    "cache_key": "a2324e91463616f2e25a67d12071316f9a9935cb093f69e6fb08624feed07002",
+    "last_processed": "1774726378.6406803"
+  },
+  "cards:Blur": {
+    "cache_key": "7f23ea06c7a6591d52ebdb19528ebca7b5e1acafb8712c626aa253ef8c339d3f",
+    "last_processed": "1774726378.6518629"
+  },
+  "cards:BodySlam": {
+    "cache_key": "28dc2cbb4334dc50cbd80691bc0b38030b1e4f262ff3a462104f99ed289d34a8",
+    "last_processed": "1774726378.6718893"
+  },
+  "cards:Bodyguard": {
+    "cache_key": "e2d56484720d83c5ded3897e6ec57e441669f749e0fad48f436b3dbc78f97396",
+    "last_processed": "1774726378.6631815"
+  },
+  "cards:Bolas": {
+    "cache_key": "0ffac5a45591be2cfe854eb982b5c21b50d2aff65f7095f84c9ef4fa27921d38",
+    "last_processed": "1774726378.6805396"
+  },
+  "cards:Bombardment": {
+    "cache_key": "a3524c0b883a94124d12fc971d3e364ca73d6be0db887634678a681fec474808",
+    "last_processed": "1774726378.7009866"
+  },
+  "cards:BoneShards": {
+    "cache_key": "b2a743b21870d93f5e5aead9f57c7dd4cf47ef4efb7c52828da200e1125658e1",
+    "last_processed": "1774726378.707183"
+  },
+  "cards:BoostAway": {
+    "cache_key": "0df93c4b5ba82a8b534efeef8be3cc0c64f17e19d9db171deea6f151943c6a8f",
+    "last_processed": "1774726378.7240732"
+  },
+  "cards:BootSequence": {
+    "cache_key": "1e25849c7601543d9707b4d18801ea07c6a8deef2faa1d69724d35a1c9823d74",
+    "last_processed": "1774726378.7283978"
+  },
+  "cards:BorrowedTime": {
+    "cache_key": "843d426fb8948021020d0ce53f495ac50c8ed461afe39754342248f74484380d",
+    "last_processed": "1774726378.733415"
+  },
+  "cards:BouncingFlask": {
+    "cache_key": "4c17ed56e01426cd6c81ba0aef510e19a34ef88c5678cbaafd7ecd47eed95d22",
+    "last_processed": "1774726378.7484853"
+  },
+  "cards:Brand": {
+    "cache_key": "756d695a2901a09d6c9521abc15f84d2edca5c50c470c6e417468d49184ed4ce",
+    "last_processed": "1774726378.7592607"
+  },
+  "cards:Break": {
+    "cache_key": "3a20ead11c52255676b5f03c098e136cdcde386726e269e7853f2d401ad620c2",
+    "last_processed": "1774726378.7651215"
+  },
+  "cards:Breakthrough": {
+    "cache_key": "bae9899417613aad5ae93a66b3beefc6601e986c1b816c1d68044117526b09e3",
+    "last_processed": "1774726378.7753313"
+  },
+  "cards:BrightestFlame": {
+    "cache_key": "e22b2fd15e593a3eb19057bc56e4cca32c657c85a326ad3ff98e94ca6d408630",
+    "last_processed": "1774726378.78054"
+  },
+  "cards:BubbleBubble": {
+    "cache_key": "964420d2352dacf53b59cacfa098f1ec83cf40110284cc2ac801b986b9dff0d3",
+    "last_processed": "1774726378.7931492"
+  },
+  "cards:Buffer": {
+    "cache_key": "3609df18923654e5d7ba2b1108b9f9221f7a53a1a6aca5c4ac9aa8df9e09df1f",
+    "last_processed": "1774726378.7970881"
+  },
+  "cards:BulkUp": {
+    "cache_key": "03a9deec73273b5824bbaf3b2c73767463b49735584baf15e03f288abc7a375a",
+    "last_processed": "1774726378.8030267"
+  },
+  "cards:BulletTime": {
+    "cache_key": "316d1c7368e548d2302e604e9595578b4bba7b8bf79f4f6c07440702e5d0d95d",
+    "last_processed": "1774726378.8070002"
+  },
+  "cards:Bully": {
+    "cache_key": "30b9178b9429bf891236ef21af72f561cfff6b7bdc07d3c89db9f4f43e516441",
+    "last_processed": "1774726378.8137372"
+  },
+  "cards:Bulwark": {
+    "cache_key": "47779270b88fe0fbed588df4505c771ce170d1162caf70081cdc823c0fd5c422",
+    "last_processed": "1774726378.8208702"
+  },
+  "cards:BundleOfJoy": {
+    "cache_key": "d2b2fd883037100cb3e7b6261d5dd05a62636ee31b36d3198d9d384f77242397",
+    "last_processed": "1774726378.8257048"
+  },
+  "cards:Burn": {
+    "cache_key": "cfb55b248a331b29151b75405a29b18d7a10205f649e152157aa901836a31f58",
+    "last_processed": "1774726378.8402905"
+  },
+  "cards:BurningPact": {
+    "cache_key": "a2eaadb85d6d8cde75a03573e398165a316d047e1912ce768ff0e6850ba46647",
+    "last_processed": "1774726378.8456357"
+  },
+  "cards:Burst": {
+    "cache_key": "4c8b415b069bffd7aa5908a6210f182509dbd8ab3e3df340627fcb716beddd7b",
+    "last_processed": "1774726378.8489618"
+  },
+  "cards:Bury": {
+    "cache_key": "0eb3e834866830ae7b4b2d41dd828e028ff576740488ea69a1a5e235d2a26911",
+    "last_processed": "1774726378.8521402"
+  },
+  "cards:ByrdSwoop": {
+    "cache_key": "a39f9a7c899794638201a4b73d8bbf6b8ae692d6227ad03ba9b48180f92dec04",
+    "last_processed": "1774726378.8576813"
+  },
+  "cards:ByrdonisEgg": {
+    "cache_key": "3b9dc373d89964daa7bd114f5b3e4440bcc1664217b5726c26e7ca24ac2d4990",
+    "last_processed": "1774726378.8542044"
+  },
+  "cards:Calamity": {
+    "cache_key": "31aaf3cc85be6e2f0f43677c11b4ecef6b03bb4e4c96dd11c0d3de7c851a434f",
+    "last_processed": "1774726378.8598185"
+  },
+  "cards:Calcify": {
+    "cache_key": "0ad40076227df3dc33220031b34446e8b3347ddf31638760467366e2cec5f023",
+    "last_processed": "1774726378.8638685"
+  },
+  "cards:CalculatedGamble": {
+    "cache_key": "8f37566e395fc959d936e3a031bdde7cd747b96650c61e7b098447a04e5710ad",
+    "last_processed": "1774726378.866989"
+  },
+  "cards:CallOfTheVoid": {
+    "cache_key": "d64cc0e13c52e09aef5d8e2f3c16c16ee0a651f4ae51243e0c77948a40f218ea",
+    "last_processed": "1774726378.8713484"
+  },
+  "cards:Caltrops": {
+    "cache_key": "d02067d2cd617969455ff50c5f87f7de963cf69606332fa1ad4bc79cc4afb6d6",
+    "last_processed": "1774726378.8760724"
+  },
+  "cards:Capacitor": {
+    "cache_key": "2cdb3ce36fd43edd4435bedda0ae57960ec9ebe2310d8893b15c33cbc84347fb",
+    "last_processed": "1774726378.8830557"
+  },
+  "cards:CaptureSpirit": {
+    "cache_key": "9df65b217acf20613b8ff9cc2641d29852804674130f17960a201723f24eeec3",
+    "last_processed": "1774726378.8981893"
+  },
+  "cards:Cascade": {
+    "cache_key": "26bd97beffb78bb214cd15af1d46550bcab0c35b21d622e204967cd13b868c5f",
+    "last_processed": "1774726378.9043143"
+  },
+  "cards:Catastrophe": {
+    "cache_key": "1583de57354992b142211747cc2f2e8f494facfbcce8aa7a4663f995ff82e35b",
+    "last_processed": "1774726378.9213119"
+  },
+  "cards:CelestialMight": {
+    "cache_key": "aa0cd6226248083f57015960b858847a69a6c9914d77fd991252d182a4d0c032",
+    "last_processed": "1774726378.9265683"
+  },
+  "cards:Chaos": {
+    "cache_key": "36a60dc3c5fb352a022a3fab8bee4de1ed1114a841f91b4018eaa568bb720b8f",
+    "last_processed": "1774726378.9315925"
+  },
+  "cards:Charge": {
+    "cache_key": "e886661f9ef1f55968adcbe60ea084879fa8a5b2c59fcd3a699f514d16432006",
+    "last_processed": "1774726378.9382846"
+  },
+  "cards:ChargeBattery": {
+    "cache_key": "526f8eeff62c2eca92d4f4cd77eaa06bb51ac07625c6ab28c8d3c3ef48ea774f",
+    "last_processed": "1774726378.943036"
+  },
+  "cards:ChildOfTheStars": {
+    "cache_key": "ef198f95ba867bbc7bf753018a8ea283f9be77872ec585f49510606961c0a725",
+    "last_processed": "1774726378.9553537"
+  },
+  "cards:Chill": {
+    "cache_key": "ac33cffa05312963fa59cc66bc2d8d99fb7a03ffa5d143d4748d45e05f1e6ae7",
+    "last_processed": "1774726378.9675333"
+  },
+  "cards:Cinder": {
+    "cache_key": "879711451f3db8c1efcdfa6add250899d35f58ce9667ac00804fddad7df26793",
+    "last_processed": "1774726378.9745204"
+  },
+  "cards:Clash": {
+    "cache_key": "14a6300384c9e29b795a7c247f4260dfe75abc4db4f6d22c9aa5af6682db610d",
+    "last_processed": "1774726378.9861987"
+  },
+  "cards:Claw": {
+    "cache_key": "65ca7edb53063db55c8cff726280ba82b1053b1ef87dc8355fb3f23599cc5f45",
+    "last_processed": "1774726378.9931152"
+  },
+  "cards:Cleanse": {
+    "cache_key": "2e8d61b8a530114636f166c6c09c3be4245c8fcc7392666b569f5c7358d920fe",
+    "last_processed": "1774726379.0044467"
+  },
+  "cards:CloakAndDagger": {
+    "cache_key": "d382d1b0be1e25db95a531a8b119297d7c57e23c06e07a483a006747beb9f3df",
+    "last_processed": "1774726379.0097427"
+  },
+  "cards:CloakOfStars": {
+    "cache_key": "0415a6a6ec785a90e782e776d5866fcf2b785a8a1393b9e7368fc8543844cdc3",
+    "last_processed": "1774726379.0157194"
+  },
+  "cards:Clumsy": {
+    "cache_key": "0e85fe47334cd554c7f3ffa24f030bc24f91f69eea27c1bf5bb2e64e28636073",
+    "last_processed": "1774726379.0175762"
+  },
+  "cards:ColdSnap": {
+    "cache_key": "c409be1b97ad37a0bc702611ba54f68516e22f082095a6be4f934a1b03574b31",
+    "last_processed": "1774726379.0243852"
+  },
+  "cards:CollisionCourse": {
+    "cache_key": "c0854551cb832992410df9570e6aeff1d72a743b053f8a6eac28de495f9728ca",
+    "last_processed": "1774726379.0329301"
+  },
+  "cards:Colossus": {
+    "cache_key": "429dd5c67b9a4812f9c505a0f5492b8b68f7cf33ef9f2d8179f80fc748a8c3cd",
+    "last_processed": "1774726379.038246"
+  },
+  "cards:Comet": {
+    "cache_key": "ac9bf35af9eb5d6d5ea857f204739087d56bb0f5fdb7bfc155a17ca064ea8a98",
+    "last_processed": "1774726379.0458448"
+  },
+  "cards:Compact": {
+    "cache_key": "800e77b1b4e30a349f297d44571ee9418fb7b4240dd80c85df5fccf19ac6d534",
+    "last_processed": "1774726379.0632792"
+  },
+  "cards:CompileDriver": {
+    "cache_key": "7ec841562e12292c4a3ccbc56b3e8b4bf9508676c7908ed90177c2c7c93c1d60",
+    "last_processed": "1774726379.0714905"
+  },
+  "cards:Conflagration": {
+    "cache_key": "5863e3747fcfdf89f3f97e9eebece5c5ab79857dcc0d057dfad057f8a6e0fcac",
+    "last_processed": "1774726379.0866494"
+  },
+  "cards:Conqueror": {
+    "cache_key": "ccf667cdf157162c954ac37f1cc491689490d5c87fb01ed0b81fb2070b71f900",
+    "last_processed": "1774726379.091836"
+  },
+  "cards:ConsumingShadow": {
+    "cache_key": "5d5fc5d4234e7d86bd0f3b0ccf768a2c0d641d46d3e0c8a9b44c7c205e338357",
+    "last_processed": "1774726378.6438313"
+  },
+  "cards:Convergence": {
+    "cache_key": "59e9b2e4cf5f156f2e842ba5f12b067510fb0e797e6819fb860e6376b668c0bb",
+    "last_processed": "1774726378.6493044"
+  },
+  "cards:Coolant": {
+    "cache_key": "3a77c98e8f1403f640c860fc04278dc115a46fe9d56c8bf4b48718f75b6bacfe",
+    "last_processed": "1774726378.6537533"
+  },
+  "cards:Coolheaded": {
+    "cache_key": "0dc840dcc2034966bd7a855827075cfb7bd6f652a8137bd5097c1bdc6c7c74a1",
+    "last_processed": "1774726378.6584876"
+  },
+  "cards:Coordinate": {
+    "cache_key": "35b484985a0ede39b11477ce36b6ccda33cbdc0ed2076401eddf2c6d4bb07da9",
+    "last_processed": "1774726378.6628535"
+  },
+  "cards:CorrosiveWave": {
+    "cache_key": "ad3be52306398a1d795f0902761e983f438ed1bf030e234243d8518056196cbc",
+    "last_processed": "1774726378.6668978"
+  },
+  "cards:Corruption": {
+    "cache_key": "fd17565168c7fc236690f05bb66739981c66fc9b6f7e92673e1e713c1d98e9a6",
+    "last_processed": "1774726378.671145"
+  },
+  "cards:CosmicIndifference": {
+    "cache_key": "71a208e80ba02ce7b602f73169341e907f1bfcef6bef0d5bdbb80edf74edd5f0",
+    "last_processed": "1774726378.6769302"
+  },
+  "cards:Countdown": {
+    "cache_key": "fdbbbfd3d9ae5222f99ef91a66cb744d4032cba5e964b2b7d61981b982927991",
+    "last_processed": "1774726378.6861048"
+  },
+  "cards:CrashLanding": {
+    "cache_key": "2df3455b9dbb93aafe66effc42fbb691ebcfd07a8a5623fe0df90148b23cc417",
+    "last_processed": "1774726378.6915956"
+  },
+  "cards:CreativeAi": {
+    "cache_key": "279b90730abd86c264ed185358f5c624f5711ece73f73f2082187afa9b04ff09",
+    "last_processed": "1774726378.6948874"
+  },
+  "cards:CrescentSpear": {
+    "cache_key": "15b8fc5492d666bfdad078da101c2bdb796bd285e4c8e85fee09406dbec56228",
+    "last_processed": "1774726378.7007148"
+  },
+  "cards:CrimsonMantle": {
+    "cache_key": "61edde20db0149e2de20321cfbed409b055db40b27bad8921bcfdfb82eec7d28",
+    "last_processed": "1774726378.7074256"
+  },
+  "cards:Cruelty": {
+    "cache_key": "897a94b9d14f3d147a3fd5129a957fab3848e6e9330f66d89d629504c2a8b47b",
+    "last_processed": "1774726378.7138357"
+  },
+  "cards:CrushUnder": {
+    "cache_key": "3d7740309e64e799e839b3d191009f333eef6efb87494df8c1d08792f6900858",
+    "last_processed": "1774726378.7382524"
+  },
+  "cards:CurseOfTheBell": {
+    "cache_key": "fe4af3d63a172354320b336085a5ed7e34627238b0b0af5318e99fad5f0dd4a5",
+    "last_processed": "1774726378.7405362"
+  },
+  "cards:DaggerSpray": {
+    "cache_key": "0a4408999dcdca26f02da446e8f84baee81c956e935f8e0d65f4c3c7fc7b8d30",
+    "last_processed": "1774726378.7471564"
+  },
+  "cards:DaggerThrow": {
+    "cache_key": "b62a4a4594d4113c52357b3f30f913c5b442f14a7e6fbcbbbbf9c7b59f744445",
+    "last_processed": "1774726378.7541935"
+  },
+  "cards:DanseMacabre": {
+    "cache_key": "350d991f55d162f6931e94ca48f1de4c2db02f3101d9a811311390837a237abc",
+    "last_processed": "1774726378.7647336"
+  },
+  "cards:DarkEmbrace": {
+    "cache_key": "2845de5027c6620890093ea90a6bdb35a2c313fce57ca3b5411f2a40563483d5",
+    "last_processed": "1774726378.7676034"
+  },
+  "cards:DarkShackles": {
+    "cache_key": "8272484ece84556a7e9ba58c7de5fc71d045ae0d3f92e4bd8793eb21732bb655",
+    "last_processed": "1774726378.7807617"
+  },
+  "cards:Darkness": {
+    "cache_key": "c373d0583b1b96915675db9c440934aa1911eaa0b61bf56b18c61eff856acefa",
+    "last_processed": "1774726378.7732563"
+  },
+  "cards:Dash": {
+    "cache_key": "7b0896091229906460592d0091263bc3a0c8b842b4fbf5693a7e0c1510b0b986",
+    "last_processed": "1774726378.785278"
+  },
+  "cards:Dazed": {
+    "cache_key": "fd2756c41dab034506fd0a6c6554e2e37a904f135be01170e4ace826176cb62d",
+    "last_processed": "1774726378.7895715"
+  },
+  "cards:DeadlyPoison": {
+    "cache_key": "f231caefc71b107387e7177381937d6dac70451a43b45c16af5261eda7812c2a",
+    "last_processed": "1774726378.7990193"
+  },
+  "cards:DeathMarch": {
+    "cache_key": "36614e2c0a2221bc4faf1439338ee98df648ad403bb2e8b5a8d6bc4135af2e3e",
+    "last_processed": "1774726378.8118844"
+  },
+  "cards:Deathbringer": {
+    "cache_key": "9a8fea74d78f70e3cd98ebfb7ef6949cce4f34a3d6ed022da0f48ee3e1ebda77",
+    "last_processed": "1774726378.804212"
+  },
+  "cards:DeathsDoor": {
+    "cache_key": "373fcbdf7c1a2249a212690c03b3485dfc04bb0ff61e257b093acdec2089f4fc",
+    "last_processed": "1774726378.824054"
+  },
+  "cards:Debilitate": {
+    "cache_key": "2ef6d60afdc7f69222f98ecc196722495c9ead1e080ecb0ae2c090bd01e533ca",
+    "last_processed": "1774726378.8367088"
+  },
+  "cards:Debris": {
+    "cache_key": "291d225fb0d34d7e82746f4cffe5645efffeac269315c3f60a3a81627d7c7774",
+    "last_processed": "1774726378.8387287"
+  },
+  "cards:Debt": {
+    "cache_key": "9984133647aa5e26976bbec3461d86ccd60439134e648fb620aee4360eb88613",
+    "last_processed": "1774726378.853027"
+  },
+  "cards:Decay": {
+    "cache_key": "110321060e31fcd476118096f9d217286cf83f386a2566de586841907dfaf76c",
+    "last_processed": "1774726378.857315"
+  },
+  "cards:DecisionsDecisions": {
+    "cache_key": "a161381da342ab11d4813434b6a200026ea2ad4a59b72ee83daa4c95ab0a9abf",
+    "last_processed": "1774726378.8666854"
+  },
+  "cards:DefendDefect": {
+    "cache_key": "2cedf1fb5cca1903ea0902ecb082e3374e323ac0d8f3564704c44e433c640934",
+    "last_processed": "1774726378.8711584"
+  },
+  "cards:DefendIronclad": {
+    "cache_key": "b04000fcd4500ba31df2772e119c90d18a93d6a50ac75ed94690f2e0633eeb1b",
+    "last_processed": "1774726378.8755612"
+  },
+  "cards:DefendNecrobinder": {
+    "cache_key": "0ff64218e6ee062f01bdede4eddb41d2b91bd5c54acafe21fac2279051ea241f",
+    "last_processed": "1774726378.8802412"
+  },
+  "cards:DefendRegent": {
+    "cache_key": "d298dbf5f9ec74946be03e965be32dd42c9ab4e9606d65d75e6d9ff9163944b5",
+    "last_processed": "1774726378.8928847"
+  },
+  "cards:DefendSilent": {
+    "cache_key": "f276ba855e84028ab97257f8889826ee30389ef3d758b0527a6ab2b3743fd7f9",
+    "last_processed": "1774726378.8973556"
+  },
+  "cards:Defile": {
+    "cache_key": "5ba5d7fcb74a5454fb395610fc5bcb0366e65ed1afbd30ffb32ac740f0582f8a",
+    "last_processed": "1774726378.9011538"
+  },
+  "cards:Deflect": {
+    "cache_key": "5e625679b50fe315529c7dd2c645433568325bde3ef5059f02f16c65096b2b53",
+    "last_processed": "1774726378.9065146"
+  },
+  "cards:Defragment": {
+    "cache_key": "d69e2d8ccd5dc74bcd58b2edae0165e134c3453ed2df94390d91fbaf2bdd4b4a",
+    "last_processed": "1774726378.9152057"
+  },
+  "cards:Defy": {
+    "cache_key": "140e11783f100bcc5dfebb92314f5bc5c5daa024c41fa3a050db93051714cd71",
+    "last_processed": "1774726378.925933"
+  },
+  "cards:Delay": {
+    "cache_key": "86ca7ce96900264bf6fbaeda9322687f2849914624c12157b802a872fae386c6",
+    "last_processed": "1774726378.9343212"
+  },
+  "cards:Demesne": {
+    "cache_key": "58dc9e642518d82cd532905a0db5825a4f24a76820e8f1ad0740c63c12947a08",
+    "last_processed": "1774726378.939649"
+  },
+  "cards:DemonForm": {
+    "cache_key": "ee801df50bceb6e68db510967b9b021db294eed28651f940b3ab3390d31d73cd",
+    "last_processed": "1774726378.9435842"
+  },
+  "cards:DemonicShield": {
+    "cache_key": "6ca4bec66e73bff4225d94daed7f62e8050817b722f707e55ebedc3700c8869b",
+    "last_processed": "1774726378.9548945"
+  },
+  "cards:DeprecatedCard": {
+    "cache_key": "1d1e931059d71b54d10f24c8fe48e7e5397923acf7c1bf3d7aecf2623dce4709",
+    "last_processed": "1774726378.960152"
+  },
+  "cards:Devastate": {
+    "cache_key": "2e903c9451bd49384df5be6a48260ea39178a8f52cb704f48e980fc750704dd9",
+    "last_processed": "1774726378.9636903"
+  },
+  "cards:DevourLife": {
+    "cache_key": "f5c9853550204d47829245e53c2f7d9f1dd74820ffcb4a16b213f42de4471dbe",
+    "last_processed": "1774726378.9680538"
+  },
+  "cards:Dirge": {
+    "cache_key": "7e07c27a4f43ffde2c65c62a6be99a875f1644cb8d9a57d63cad4c5bb370b7ee",
+    "last_processed": "1774726378.9798489"
+  },
+  "cards:Discovery": {
+    "cache_key": "105ac567ee298ad1a0fcffb1cf652d5e8200c4010bfe4b8be07bf7b928f0d4e0",
+    "last_processed": "1774726378.9845023"
+  },
+  "cards:Disintegration": {
+    "cache_key": "9d692032bb42de892a96cd6aa4e04f99f8d8155a8bce74e0283b4902b9e0ff5b",
+    "last_processed": "1774726378.9892106"
+  },
+  "cards:Dismantle": {
+    "cache_key": "cd6b446a85e4d78783d94d3e157906d42a0010138b4ae2a34a422e4be09f0c23",
+    "last_processed": "1774726378.9958594"
+  },
+  "cards:Distraction": {
+    "cache_key": "70653ca14473f0e8c02771ad1c68be4404e6798393c871387e99a9870292e23f",
+    "last_processed": "1774726379.005835"
+  },
+  "cards:DodgeAndRoll": {
+    "cache_key": "a237e6b5e2d4030393523b791df54f27424ef3998bdc7d30b3851903d6088ee7",
+    "last_processed": "1774726379.0100174"
+  },
+  "cards:Dominate": {
+    "cache_key": "afc004210e96c8fc4468162c63d8fed36b6c639486b7fdab25a52e35516ab2e3",
+    "last_processed": "1774726379.0188298"
+  },
+  "cards:DoubleEnergy": {
+    "cache_key": "279fad18c71d777d4efa56b7fc436a54872523817412ec7ee7c2185ebc9ea73c",
+    "last_processed": "1774726379.0265028"
+  },
+  "cards:Doubt": {
+    "cache_key": "88c0ac15ae3a36d4b05ed82406421c232639a0b6eea7ddf9af215afa7b6d3a7a",
+    "last_processed": "1774726379.031536"
+  },
+  "cards:DrainPower": {
+    "cache_key": "8e8ee984beb97d7ec4e18155ff20c074a672deb1bd1c117fc79e195e8e713adf",
+    "last_processed": "1774726379.0368922"
+  },
+  "cards:DramaticEntrance": {
+    "cache_key": "78d50675b643cfb03bb0030a816ab47096aeacc5e228ecc98e3d766f2b7629a9",
+    "last_processed": "1774726379.0416472"
+  },
+  "cards:Dredge": {
+    "cache_key": "158cfb30108652d8dedff7d86a837c462bc5642d08d418c92b85b737e569a890",
+    "last_processed": "1774726379.0521817"
+  },
+  "cards:DrumOfBattle": {
+    "cache_key": "a48cdd50cc438200347845f5695c9cddf406b13bc160d6d9562ac59365a369e2",
+    "last_processed": "1774726379.0567784"
+  },
+  "cards:DualWield": {
+    "cache_key": "d617df786a5d7f580ecaaf687f3443a428081b0ac86f0e6e4961bd7707542c41",
+    "last_processed": "1774726379.0701332"
+  },
+  "cards:Dualcast": {
+    "cache_key": "47cf0c2301693b4e306f2f5aa29183a4d729c393f60456839b7ca2b570ebefe2",
+    "last_processed": "1774726379.063727"
+  },
+  "cards:DyingStar": {
+    "cache_key": "667cdd96b6df8b87854b40520c7f7fe942060025d24f4cb5d72ec3944333302b",
+    "last_processed": "1774726378.7048652"
+  },
+  "cards:EchoForm": {
+    "cache_key": "c526876b86d1de1e0770c49b6a21a795fb9e6793afa03d030e5730d26df10aa0",
+    "last_processed": "1774726378.7087944"
+  },
+  "cards:EchoingSlash": {
+    "cache_key": "986f2082660ad195b0b22087341ecec759b90d8cf39b5a4019c6e33b870995b3",
+    "last_processed": "1774726378.7262046"
+  },
+  "cards:Eidolon": {
+    "cache_key": "28b93990aa0b2566bb5fc1cf02f2e8060d9ae680191f8295ac11a5fab8d579af",
+    "last_processed": "1774726378.7385395"
+  },
+  "cards:EndOfDays": {
+    "cache_key": "b784edc3605b6cf177a23fa7b1083ccb08fd6d462a3c7b8bd0a711d94e5fa83e",
+    "last_processed": "1774726378.749467"
+  },
+  "cards:EnergySurge": {
+    "cache_key": "a13c07684769d4e60ba80c96cdeb9f447cb7582cf946a636183a25ce7a9a9d33",
+    "last_processed": "1774726378.758685"
+  },
+  "cards:EnfeeblingTouch": {
+    "cache_key": "26a666d0cd2762365fe372331e8b787a241b8495eac8b680dcbfa44a19915e46",
+    "last_processed": "1774726378.7655373"
+  },
+  "cards:Enlightenment": {
+    "cache_key": "d2338082b6bb975d0aa9d84e6d7a8fa907bd46425d644a1c8d567f1e5aff03b2",
+    "last_processed": "1774726378.769363"
+  },
+  "cards:Enthralled": {
+    "cache_key": "bd610435e3476aa09fca335d3733585281a069558d9e916984de5fd35375cada",
+    "last_processed": "1774726378.779787"
+  },
+  "cards:Entrench": {
+    "cache_key": "db8af579bb5b3959d521b03ba223361217dc5d0bde178174aeeb57c85beddefe",
+    "last_processed": "1774726378.7829509"
+  },
+  "cards:Entropy": {
+    "cache_key": "7e4075612bab32593bb1202ad60b476b5a2fde9533d3f599a2de922924283bbe",
+    "last_processed": "1774726378.7877634"
+  },
+  "cards:Envenom": {
+    "cache_key": "2cbfd2a777d1992b4e8a6a54045b28c77230001238e746197fc28e4feab6e959",
+    "last_processed": "1774726378.791938"
+  },
+  "cards:Equilibrium": {
+    "cache_key": "26f8feeb57653ffeac86c2e7589e04c4a8db74321f5cb2a07176e276de94780c",
+    "last_processed": "1774726378.7980704"
+  },
+  "cards:Eradicate": {
+    "cache_key": "4fb4c391314305883980e52674cd50baebabc547b0d345a0157ddd230597a00d",
+    "last_processed": "1774726378.8063333"
+  },
+  "cards:EscapePlan": {
+    "cache_key": "aa35b417dafe841c268ee57d1212c96bb7392939fb80acf070c368492f1d9e3d",
+    "last_processed": "1774726378.8115292"
+  },
+  "cards:EternalArmor": {
+    "cache_key": "cc62f8f8f91920165f7955d071f1bdcff5e27a9b77d8f7409582bf6ff9b16ffe",
+    "last_processed": "1774726378.8198197"
+  },
+  "cards:EvilEye": {
+    "cache_key": "c27a777c0f5122605c65480c1a33883651fc7fd48cd7a48e509f5747fcf9dfcd",
+    "last_processed": "1774726378.8371913"
+  },
+  "cards:ExpectAFight": {
+    "cache_key": "cb7658a764ac25fc4fe4bdf88ad604599440b0af098d1ff0826c93e7b584e38c",
+    "last_processed": "1774726378.8595397"
+  },
+  "cards:Expertise": {
+    "cache_key": "351dc69793aa021a27819c01bdddfc8c8a3d076a13cb20d599dc4ab404de847a",
+    "last_processed": "1774726378.8634121"
+  },
+  "cards:Expose": {
+    "cache_key": "d9ddab2ebdb718ce5dd5a6950abefeb0cc6b467d6041b4c3cfcb588a415cf45c",
+    "last_processed": "1774726378.8720565"
+  },
+  "cards:Exterminate": {
+    "cache_key": "237e72a07abac4a887192094d72b909733cfa3df5abb78f82f71814236f45365",
+    "last_processed": "1774726378.8791804"
+  },
+  "cards:FallingStar": {
+    "cache_key": "0b983972713aa084d71cd8eb844a8c101a9650f30b0d4f5597fc648375477cf2",
+    "last_processed": "1774726378.8958578"
+  },
+  "cards:FanOfKnives": {
+    "cache_key": "6ab5286ebef9519e9726a50357b53dbfcdd6a29efdad34e9db760bcc8789b000",
+    "last_processed": "1774726378.9092624"
+  },
+  "cards:Fasten": {
+    "cache_key": "6b875efaa9b80698bd94844b49ada6738ec8c4eac86a4d6d68a083c1ee0d662a",
+    "last_processed": "1774726378.9222252"
+  },
+  "cards:Fear": {
+    "cache_key": "370ea4b1a677475690c7cb978f66b99873e62fb5b7157a77f018bc32ab0104b9",
+    "last_processed": "1774726378.928526"
+  },
+  "cards:Feed": {
+    "cache_key": "75d7373f56a18212dfc0ddd7468385805ea473cf174662b98e304fab3b1ea5c7",
+    "last_processed": "1774726378.939262"
+  },
+  "cards:FeedingFrenzy": {
+    "cache_key": "e6386ea1229760be03e61df04e5d4f39157164cdf74e7ec15656b05ef73b1838",
+    "last_processed": "1774726378.9500787"
   }
 }

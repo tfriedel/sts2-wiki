@@ -1,0 +1,25 @@
+{
+  "class_name": "FeedingFrenzy",
+  "title": "Feeding Frenzy",
+  "character": "Event",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Event",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Strength",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Gain 5 [gold]Strength[/gold] this turn.",
+  "referenced_powers": [
+    {
+      "class_name": "FeedingFrenzyPower",
+      "title": "Feeding Frenzy",
+      "slug": "feeding-frenzy-power"
+    }
+  ]
+}

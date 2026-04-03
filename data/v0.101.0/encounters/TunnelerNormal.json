@@ -12,5 +12,5 @@
     "Burrower",
     "Chomper"
   ],
-  "notes": "The Chomper has ScreamFirst=true, causing it to attack first in this encounter."
+  "notes": "The Chomper spawns with ScreamFirst enabled, causing it to scream on its first turn."
 }
