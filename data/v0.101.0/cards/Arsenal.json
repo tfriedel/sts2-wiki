@@ -1,7 +1,7 @@
 {
   "class_name": "Arsenal",
   "title": "Arsenal",
-  "character": "Colorless",
+  "character": "Ironclad",
   "energy_cost": 1,
   "type": "Power",
   "rarity": "Rare",
@@ -20,7 +20,12 @@
       "class_name": "ArsenalPower",
       "title": "Arsenal",
       "slug": "arsenal"
+    },
+    {
+      "class_name": "StrengthPower",
+      "title": "Strength",
+      "slug": "strength"
     }
   ],
-  "notes": "Upgraded version gains Innate keyword."
+  "notes": "Upgrade adds Innate keyword."
 }
