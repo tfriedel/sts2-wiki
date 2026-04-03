@@ -870,5 +870,29 @@
   "cards:StrikeIronclad": {
     "cache_key": "7741c994a475f69a0d3074883f52f6052549be7aa67ba130ff171ff0ff0bc78c",
     "last_processed": "1774726378.980611"
+  },
+  "cards:Abrasive": {
+    "cache_key": "a9d141a2de69c61bff4ccc23b80ec6715ff7365c2ec1ceea6bcc69134615f8a4",
+    "last_processed": "1774726378.6300972"
+  },
+  "cards:Accelerant": {
+    "cache_key": "ef0e8c93d4d71bd1844590298cf2a56b14eb75cf619ccf54091eabb5abb6dcbc",
+    "last_processed": "1774726378.6342545"
+  },
+  "relics:Akabeko": {
+    "cache_key": "3101b9aa4ab4705bb78898f05190c67be0f71c8f52aade876f36d2026b9c0559",
+    "last_processed": "1774726378.071402"
+  },
+  "relics:AlchemicalCoffer": {
+    "cache_key": "60fb4788fd1cbd17822a10705372ec66e10753c3c2c50a1e198c17d79e0f218a",
+    "last_processed": "1774726378.0762348"
+  },
+  "relics:AmethystAubergine": {
+    "cache_key": "3fb72e06ad88732d6af9d6c41aa01d02b5f06faf0a96d12b662aaf61856e63e6",
+    "last_processed": "1774726378.0854425"
+  },
+  "relics:Anchor": {
+    "cache_key": "743f4f21e783deaccaa6f41010ab3ebd10e33dab2c7b3fe2a9b0926c4678f8d2",
+    "last_processed": "1774726378.0899062"
   }
 }

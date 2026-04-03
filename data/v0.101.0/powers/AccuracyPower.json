@@ -1,0 +1,8 @@
+{
+  "class_name": "AccuracyPower",
+  "title": "Accuracy",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Shivs[/gold] deal additional damage.",
+  "notes": "This is a counter-type power that tracks Shiv casts. Each stack grants +1 damage to Shiv cards."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "AdaptablePower",
+  "title": "Adaptable",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "When this creature would be defeated, it instead revives even stronger.",
+  "smart_description": "When [gold]{OwnerName}[/gold] would be defeated, it instead revives even stronger."
+}
