@@ -23,7 +23,8 @@
   "referenced_powers": [
     {
       "class_name": "RetainHandPower",
-      "title": "Retain Hand"
+      "title": "Retain Hand",
+      "slug": "retain-hand"
     }
   ]
 }
