@@ -16,6 +16,7 @@
   ],
   "description": "Play 3 random Attacks from your [gold]Discard Pile[/gold].",
   "upgraded_description": "Play 4 random Attacks from your [gold]Discard Pile[/gold].",
+  "x_cost": false,
   "referenced_powers": [],
   "notes": "Randomly selects Attacks from the Discard Pile, excluding Unplayable cards. Each selected card's own targeting and effects are maintained."
 }
