@@ -4,5 +4,5 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "Vulnerable enemies take additional damage.",
-  "smart_description": "Each stack causes [gold]Vulnerable[/gold] enemies to take an additional 1% damage."
+  "smart_description": "[gold]Vulnerable[/gold] enemies take an additional [blue]{Amount}%[/blue] damage."
 }
