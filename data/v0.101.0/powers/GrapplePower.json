@@ -4,5 +4,6 @@
   "power_type": "Debuff",
   "stack_type": "Counter",
   "description": "Whenever you gain [gold]Block[/gold] this turn, deal [blue]5[/blue] damage to the enemy.",
-  "smart_description": "Whenever you gain [gold]Block[/gold] this turn, deal [blue]5[/blue] damage to the enemy."
+  "smart_description": "Whenever you gain [gold]Block[/gold] this turn, deal [blue]{Amount}[/blue] damage to [gold]{OwnerName}[/gold].",
+  "notes": "This is a debuff that triggers once per block gain during the turn it was applied. It is removed at the end of the turn."
 }
