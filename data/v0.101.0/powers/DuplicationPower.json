@@ -4,5 +4,5 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "Your next card is played an extra time.",
-  "smart_description": "Your next card(s) are played an extra time."
+  "smart_description": "Your next {Amount:plural:card is|[blue]{}[/blue] cards are} played an extra time."
 }
