@@ -14,5 +14,6 @@
     }
   ],
   "description": "Gain 5 [gold]Block[/gold].\n[gold]Upgrade[/gold] a card in your [gold]Hand[/gold].",
-  "upgraded_description": "Gain 5 [gold]Block[/gold].\n[gold]Upgrade[/gold] ALL cards in your [gold]Hand[/gold]."
+  "upgraded_description": "Gain 5 [gold]Block[/gold].\n[gold]Upgrade[/gold] ALL cards in your [gold]Hand[/gold].",
+  "notes": "When upgraded, applies upgrades to all upgradable cards in hand instead of selecting one. GainsBlock property is true."
 }
