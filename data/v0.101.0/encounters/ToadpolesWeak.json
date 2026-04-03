@@ -3,8 +3,7 @@
   "title": "Toadpoles",
   "room_type": "Monster",
   "is_weak": true,
-  "monsters": ["Toadpole"],
-  "total_monsters": 2,
+  "monsters": ["Toadpole", "Toadpole"],
   "tags": [],
   "notes": "Spawns 2 Toadpoles with one positioned in front and one in back."
 }
