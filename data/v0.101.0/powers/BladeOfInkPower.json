@@ -1,0 +1,9 @@
+{
+  "class_name": "BladeOfInkPower",
+  "title": "Blade of Ink",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play an Attack this turn, gain [blue]2[/blue] [gold]Strength[/gold] this turn.",
+  "smart_description": "Whenever you play an Attack this turn, gain [blue]2[/blue] [gold]Strength[/gold] this turn.",
+  "notes": "Counter increments each time an Attack is played. All gained Strength is removed at the end of the turn."
+}

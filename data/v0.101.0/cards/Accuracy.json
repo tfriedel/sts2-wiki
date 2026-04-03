@@ -9,7 +9,7 @@
   "keywords": [],
   "vars": [
     {
-      "type": "Magic",
+      "type": "Damage",
       "base_value": 4,
       "upgraded_value": 6
     }

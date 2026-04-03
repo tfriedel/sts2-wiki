@@ -1,0 +1,9 @@
+{
+  "class_name": "MechaKnightElite",
+  "title": "Mecha Knight",
+  "room_type": "Elite",
+  "is_weak": false,
+  "monsters": ["MechaKnight"],
+  "total_monsters": 1,
+  "tags": []
+}

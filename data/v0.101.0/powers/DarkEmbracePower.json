@@ -1,0 +1,8 @@
+{
+  "class_name": "DarkEmbracePower",
+  "title": "Dark Embrace",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever a card is [gold]Exhausted[/gold], draw [blue]1[/blue] card.",
+  "smart_description": "Whenever a card is [gold]Exhausted[/gold], draw [blue]{Amount}[/blue] {Amount:plural:card|cards}."
+}

@@ -18,5 +18,9 @@
       "base_value": 2
     }
   ],
-  "description": "Gain 1 Energy.\nDraw 2 cards."
+  "description": "Gain 1 Energy.\nDraw 2 cards.",
+  "upgraded_description": "Gain 2 Energy.\nDraw 2 cards.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Free to play with Exhaust keyword. Upgrade increases Energy gain from 1 to 2."
 }

@@ -4,5 +4,5 @@
   "rarity": "Ancient",
   "description": "Upon pickup, [gold]Transform[/gold] a starter card with an ancient version.",
   "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-  "notes": "This relic transforms one of five specific starter cards into its ancient version when obtained: Bash → Break, Neutralize → Suppress, Unleash → Protector, Falling Star → Meteor Shower, or Dualcast → Quadcast. The relic will automatically select a compatible card from the player's deck if available."
+  "notes": "Upon pickup, transforms one of five specific starter cards into its ancient version: Bash → Break, Neutralize → Suppress, Unleash → Protector, Falling Star → Meteor Shower, or Dualcast → Quadcast. If a matching starter card is found in the player's deck, it's automatically selected. Card upgrades and enchantments are preserved during transformation. If no matching starter card is in the deck, the relic transforms into Doubt instead."
 }

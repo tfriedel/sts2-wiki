@@ -1,7 +1,7 @@
 {
   "class_name": "AdaptiveStrike",
   "title": "Adaptive Strike",
-  "character": "Ironclad",
+  "character": "Defect",
   "energy_cost": 2,
   "type": "Attack",
   "rarity": "Rare",
@@ -15,6 +15,5 @@
     }
   ],
   "description": "Deal 18 damage.\nAdd a free copy of this card into your [gold]Discard Pile[/gold].",
-  "upgraded_description": "Deal 23 damage.\nAdd a free copy of this card into your [gold]Discard Pile[/gold].",
   "notes": "Creates a free copy of itself in the Discard Pile when played."
 }

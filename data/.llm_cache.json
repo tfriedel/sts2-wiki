@@ -879,20 +879,160 @@
     "cache_key": "ef0e8c93d4d71bd1844590298cf2a56b14eb75cf619ccf54091eabb5abb6dcbc",
     "last_processed": "1774726378.6342545"
   },
-  "relics:Akabeko": {
-    "cache_key": "3101b9aa4ab4705bb78898f05190c67be0f71c8f52aade876f36d2026b9c0559",
-    "last_processed": "1774726378.071402"
+  "encounters:AxebotsNormal": {
+    "cache_key": "3138618cc37c35a327adfbdfe05846ade6e41bf09f8ca73912203baa04a50d74",
+    "last_processed": "1774726378.9434934"
   },
-  "relics:AlchemicalCoffer": {
-    "cache_key": "60fb4788fd1cbd17822a10705372ec66e10753c3c2c50a1e198c17d79e0f218a",
-    "last_processed": "1774726378.0762348"
+  "encounters:BattlewornDummyEventEncounter": {
+    "cache_key": "40285a362e77154df42ce3e35f5da7c577cb5f0ae8eb23ff784f00bd983f16a0",
+    "last_processed": "1774726378.956239"
   },
-  "relics:AmethystAubergine": {
-    "cache_key": "3fb72e06ad88732d6af9d6c41aa01d02b5f06faf0a96d12b662aaf61856e63e6",
-    "last_processed": "1774726378.0854425"
+  "encounters:BowlbugsNormal": {
+    "cache_key": "aeecca018179e3374749703e5a8bb8f7977071789bbe90bad1b12d01c4454d8e",
+    "last_processed": "1774726378.9629521"
   },
-  "relics:Anchor": {
-    "cache_key": "743f4f21e783deaccaa6f41010ab3ebd10e33dab2c7b3fe2a9b0926c4678f8d2",
-    "last_processed": "1774726378.0899062"
+  "cards:Accuracy": {
+    "cache_key": "2906bb30ace84535a84b037cd8da8cd91783e45d6bf70192a6e2d08d6f1d71a1",
+    "last_processed": "1774726378.6485727"
+  },
+  "cards:Acrobatics": {
+    "cache_key": "3db5320ea6fd9c742e9cdfeec160d4a572c0fddb480ac42f055751906a08e67a",
+    "last_processed": "1774726378.6551244"
+  },
+  "cards:AdaptiveStrike": {
+    "cache_key": "611785619857b932392f532025ccdf1ea3a5b0a8a39c0b09031ebaaf1036a69b",
+    "last_processed": "1774726378.67368"
+  },
+  "cards:Adrenaline": {
+    "cache_key": "e1bf6199958848161225925fa4aa74d561ef0b1f926ad5c8cbee5f5dc757284c",
+    "last_processed": "1774726378.680042"
+  },
+  "cards:Afterimage": {
+    "cache_key": "ed5275bfe580f2e38f6c14bd024dcd355e710b15269bef78357c1bb18de59284",
+    "last_processed": "1774726378.6842768"
+  },
+  "cards:Afterlife": {
+    "cache_key": "272de9a75663e9e8318fb3c373d8700b14b0f5cde98bfe602e5ceabc223f32fd",
+    "last_processed": "1774726378.689125"
+  },
+  "cards:Aggression": {
+    "cache_key": "694167db673007abb751bc300ac479448597f6c582e7d1ff9dc2c9ed1a91d49c",
+    "last_processed": "1774726378.6915953"
+  },
+  "cards:Alchemize": {
+    "cache_key": "286e293df0ed6c9e8e774962a1f0afdfaa8b163b6e7f4ebd82162285ab1d64b0",
+    "last_processed": "1774726378.6955767"
+  },
+  "cards:Alignment": {
+    "cache_key": "c53f5e4811a6542b8dc315a3da316dae477f0b0b923e03676d458f862ae7adf1",
+    "last_processed": "1774726378.4975023"
+  },
+  "cards:AllForOne": {
+    "cache_key": "e500f352ff158782aa4dc315737da8070adc48ff740debc052fb940940777e3a",
+    "last_processed": "1774726378.5093226"
+  },
+  "cards:Anger": {
+    "cache_key": "ee03440fbf41ca13b738d50aea773411ed1ebf759c203106528a54de869f34a2",
+    "last_processed": "1774726378.520117"
+  },
+  "cards:Anointed": {
+    "cache_key": "d6fcc8fd3c3087003a35f53109c47067e3f90da1326b037f56487fa70822e87e",
+    "last_processed": "1774726378.5238826"
+  },
+  "cards:Anticipate": {
+    "cache_key": "fd91ec5875e9230f9ea0eff568059e3daae24a714cbb8ea3851e557c0360b861",
+    "last_processed": "1774726378.5340228"
+  },
+  "cards:Apotheosis": {
+    "cache_key": "3887b7f3d0687929c25657308b2df2ee11f3c2b2aaa1f3b6f4afa2a6a2cb487c",
+    "last_processed": "1774726378.53785"
+  },
+  "cards:Apparition": {
+    "cache_key": "74415b5b7d255b8f4a72f586fd517e33e8aceb11756cfe3929c525dab2ba7a48",
+    "last_processed": "1774726378.5428054"
+  },
+  "cards:Armaments": {
+    "cache_key": "e804714e56dbc2cc7a638d45e6acbaedb7ee257783e18a589180a53a71509984",
+    "last_processed": "1774726378.5488794"
+  },
+  "cards:Arsenal": {
+    "cache_key": "1352b04c1c419ae6711552ca8555604d15c24dacae7a31a4d626dea095456fbb",
+    "last_processed": "1774726378.5546582"
+  },
+  "cards:AscendersBane": {
+    "cache_key": "1d9337555d8e27dcaf1e2caf71e427f582b3d6eadf7680f08483f980061770c2",
+    "last_processed": "1774726378.5595458"
+  },
+  "cards:AshenStrike": {
+    "cache_key": "08d90f9c64e03b5240b6dc6ff3d5d7fbcdb93441f1aff76db604261355487e42",
+    "last_processed": "1774726378.571004"
+  },
+  "cards:Assassinate": {
+    "cache_key": "9f0432d5686366308f5b918415b472dc274edac620c596b70f19b6ea87638690",
+    "last_processed": "1774726378.5934072"
+  },
+  "cards:AstralPulse": {
+    "cache_key": "f56f596074e8990a32ddfb81b716d86a6eb55eea7073519c746f66ce6d385d76",
+    "last_processed": "1774726378.6004977"
+  },
+  "cards:Automation": {
+    "cache_key": "ff80016fc15086b653f57359fa0e4ed365e9fe598e608823b4e354d259e82ce7",
+    "last_processed": "1774726378.610708"
+  },
+  "cards:Backflip": {
+    "cache_key": "b841307a59f981fda93b5ad3380ddbcb941ed14ae8037eb2d35755cd10238cea",
+    "last_processed": "1774726378.6153462"
+  },
+  "cards:Backstab": {
+    "cache_key": "fef14930458f22bf3c19be38ab3672567edafe18ef19a6d4352c479787c608f4",
+    "last_processed": "1774726378.6341724"
+  },
+  "cards:BadLuck": {
+    "cache_key": "77c28ff74c4b87af925a64eac9b5b43785b04ba7f029ebce1557aa9f598f993e",
+    "last_processed": "1774726378.6397839"
+  },
+  "cards:BallLightning": {
+    "cache_key": "ea9b7eb1a1291393c5e09e5ac5f0bd438627d9c01440a2bd4d894af50d0e3773",
+    "last_processed": "1774726378.644532"
+  },
+  "cards:BansheesCry": {
+    "cache_key": "27901c48b7b9b095d96a30fde98950c53c10958268140a422db68a5b4b081637",
+    "last_processed": "1774726378.6578875"
+  },
+  "cards:Barrage": {
+    "cache_key": "4861e274432a736787f5c91eb5c777c7a00704584b15629d8e26b15d2233d055",
+    "last_processed": "1774726378.6647043"
+  },
+  "cards:Barricade": {
+    "cache_key": "e04212c3140c178538964466b91f6e1e77e2026817275360d64ef0df12e224a6",
+    "last_processed": "1774726378.6714337"
+  },
+  "cards:Bash": {
+    "cache_key": "af8fbfc3ea0ac78ae29ee452010594e0bb94302917a4db6c8dc6762abe2f1f25",
+    "last_processed": "1774726378.6766152"
+  },
+  "cards:BattleTrance": {
+    "cache_key": "64f0ce182b753f5d100be9e02ec57c10047b3fd8ccfa0249023eb94035e22eca",
+    "last_processed": "1774726378.6889827"
+  },
+  "cards:BeaconOfHope": {
+    "cache_key": "e9651ea212bb6dd5bba0a0b29dd9baf561d827113404903ddab6052cdd61b611",
+    "last_processed": "1774726378.693441"
+  },
+  "cards:BeamCell": {
+    "cache_key": "37a15db8212c49149a7f7298896ba133b008fbd9fd143574136a1c85b68b1ca0",
+    "last_processed": "1774726378.6983361"
+  },
+  "cards:BeatDown": {
+    "cache_key": "53a2c41dbfb0064fd4a76d75b57a6a1698782d6cd7096bd7326a3c53b5267401",
+    "last_processed": "1774726378.7132604"
+  },
+  "cards:BeatIntoShape": {
+    "cache_key": "9215f4c00bf2abf16a90c51d170329c6a51495bd82e8386b060219f8fff5be75",
+    "last_processed": "1774726378.7315078"
+  },
+  "cards:Beckon": {
+    "cache_key": "d122117ea6b51c1feaa4ad2a9ec5eec7efb6b49f7ec99b691bcf682a3e177269",
+    "last_processed": "1774726378.735009"
   }
 }

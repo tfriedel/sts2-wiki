@@ -1,0 +1,9 @@
+{
+  "class_name": "BarricadePower",
+  "title": "Barricade",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "[gold]Block[/gold] is not removed at the start of this creature's turn.",
+  "smart_description": "[gold]Block[/gold] is not removed at the start of {ApplierName.StringValue:cond:[gold]{OwnerName}'s[/gold]|your} turn.",
+  "notes": "Dynamic variable 'ApplierName' stores the applying creature's formatted title. Smart description contains a conditional template that renders either the applier's name or 'your' depending on runtime context. The power's effect is implemented in ShouldClearBlock() method—Block is only preserved if the power owner is the affected creature, preventing block removal on their turn."
+}

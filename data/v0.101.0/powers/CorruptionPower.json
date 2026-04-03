@@ -1,0 +1,7 @@
+{
+  "class_name": "CorruptionPower",
+  "title": "Corruption",
+  "power_type": "Buff",
+  "stack_type": "None",
+  "description": "Skills cost [blue]0[/blue].\nWhenever you play a Skill, [gold]Exhaust[/gold] it."
+}

@@ -1,0 +1,15 @@
+{
+  "class_name": "RubyRaidersNormal",
+  "title": "Ruby Raiders",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "AxeRubyRaider",
+    "AssassinRubyRaider",
+    "BruteRubyRaider",
+    "CrossbowRubyRaider",
+    "TrackerRubyRaider"
+  ],
+  "total_monsters": 3,
+  "tags": []
+}

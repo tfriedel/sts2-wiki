@@ -4,5 +4,5 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "Whenever you play a card, gain [blue]1[/blue] [gold]Block[/gold].",
-  "smart_description": "Whenever you play a card, gain [blue]{Amount}[/blue] [gold]Block[/gold]."
+  "smart_description": "Whenever you play a card, gain [blue]1[/blue] [gold]Block[/gold]."
 }

@@ -1,0 +1,26 @@
+{
+  "class_name": "BeatIntoShape",
+  "title": "Beat into Shape",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    },
+    {
+      "type": "Forge",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 5 damage. [gold]Forge[/gold] based on attacks made to this enemy this turn. [gold]Forge[/gold] an additional 5 for each attack.",
+  "upgraded_description": "Deal 7 damage. [gold]Forge[/gold] based on attacks made to this enemy this turn. [gold]Forge[/gold] an additional 7 for each attack.",
+  "referenced_powers": [],
+  "notes": "CalculatedForge scales with the number of powered attacks made to the target this turn. The card's actual Forge mechanic involves CalculationBase (upgraded value) as a multiplier and CalculationExtra adjustment per hit from this card."
+}

@@ -1,0 +1,17 @@
+{
+  "class_name": "ScrollsOfBitingNormal",
+  "title": "Many Scrolls of Biting",
+  "room_type": "Monster",
+  "is_weak": false,
+  "monsters": [
+    "ScrollOfBiting",
+    "ScrollOfBiting",
+    "ScrollOfBiting",
+    "ScrollOfBiting"
+  ],
+  "total_monsters": 4,
+  "tags": [
+    "Scrolls"
+  ],
+  "notes": "Encounter spawns 4 ScrollOfBiting monsters with varied starter moves. The first three use a rotating pattern of moves (0, 1, 2), while the fourth always uses move 2."
+}

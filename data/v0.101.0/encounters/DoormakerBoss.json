@@ -1,0 +1,12 @@
+{
+  "class_name": "DoormakerBoss",
+  "title": "The Doormaker",
+  "room_type": "Boss",
+  "is_weak": false,
+  "monsters": [
+    "Doormaker"
+  ],
+  "total_monsters": 1,
+  "tags": [],
+  "notes": "Single boss encounter with the Doormaker. Uses custom boss music (act3_boss_queen) and adjusted camera scaling/offset for battle presentation."
+}

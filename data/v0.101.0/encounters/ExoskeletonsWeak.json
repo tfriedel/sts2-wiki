@@ -1,0 +1,9 @@
+{
+  "class_name": "ExoskeletonsWeak",
+  "title": "Exoskeletons",
+  "room_type": "Monster",
+  "is_weak": true,
+  "monsters": ["Exoskeleton"],
+  "total_monsters": 3,
+  "tags": ["Exoskeletons"]
+}

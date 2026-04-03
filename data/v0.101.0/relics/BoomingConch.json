@@ -1,0 +1,8 @@
+{
+  "class_name": "BoomingConch",
+  "title": "Booming Conch",
+  "rarity": "Ancient",
+  "description": "At the start of [gold]Elite[/gold] combats, draw [blue]2[/blue] additional cards.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Booming Conch only triggers on the first turn (round 1) of Elite combats. The extra card draw is applied when the initial hand is drawn at the start of combat."
+}

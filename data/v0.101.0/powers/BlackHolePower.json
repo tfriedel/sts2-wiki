@@ -1,0 +1,7 @@
+{
+  "class_name": "BlackHolePower",
+  "title": "Black Hole",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you spend or gain a star, deal [blue]3[/blue] damage to ALL enemies."
+}
