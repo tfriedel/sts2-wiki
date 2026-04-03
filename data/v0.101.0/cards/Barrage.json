@@ -16,5 +16,7 @@
   ],
   "description": "Deal 5 damage for each [gold]Channeled[/gold] Orb.",
   "upgraded_description": "Deal 7 damage for each [gold]Channeled[/gold] Orb.",
+  "x_cost": false,
+  "referenced_powers": [],
   "notes": "Hits multiple times—once for each Channeled Orb currently in your Orb queue."
 }
