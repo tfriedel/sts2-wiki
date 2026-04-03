@@ -1,0 +1,8 @@
+{
+  "class_name": "StableSerum",
+  "title": "Stable Serum",
+  "rarity": "Uncommon",
+  "usage": "CombatOnly",
+  "target": "AnyPlayer",
+  "description": "[gold]Retain[/gold] your [gold]Hand[/gold] for [blue]2[/blue] turns."
+}

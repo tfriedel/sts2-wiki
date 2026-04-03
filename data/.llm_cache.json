@@ -702,5 +702,169 @@
   "potions:FairyInABottle": {
     "cache_key": "11aa85c3fc86c79c39d393503d30d568559f25e9cbe192884a2ad63f5d099b6a",
     "last_processed": "1774726378.3770401"
+  },
+  "potions:FirePotion": {
+    "cache_key": "de251e0fe50c83e518fc95e04c4a5eff816267018995d4a19ba85f47052d0e7d",
+    "last_processed": "1774726378.3841953"
+  },
+  "potions:FlexPotion": {
+    "cache_key": "b1f2ab90781df87eedad8a35bdb623f92d3a378610ee740e053c57d472f611ef",
+    "last_processed": "1774726378.388911"
+  },
+  "potions:FocusPotion": {
+    "cache_key": "b552a0a18094c75ffd8c284139f1a26597cb2cd2f0fadc2d8e16cd301000ba90",
+    "last_processed": "1774726378.3951046"
+  },
+  "potions:Fortifier": {
+    "cache_key": "d6ad5c86c3ce536df4429a6d1f43b2bb63f335ed911b162fe7fd9eea84321ecb",
+    "last_processed": "1774726378.404829"
+  },
+  "potions:FoulPotion": {
+    "cache_key": "b8cdff578fc077d605da8ebf6275eff02a610ac63259f477d43682c47f7b4df0",
+    "last_processed": "1774726378.4278646"
+  },
+  "potions:FruitJuice": {
+    "cache_key": "f6237f6c1d975f6c265b8a50d67de857e169683cd73ee9485ba7a833f23b23ea",
+    "last_processed": "1774726378.4317071"
+  },
+  "potions:FyshOil": {
+    "cache_key": "df7f4181522e79c4752c4a8006bccf9f53254da252cc3e3227eeec1230983be6",
+    "last_processed": "1774726378.4414737"
+  },
+  "potions:GamblersBrew": {
+    "cache_key": "06cab687318ceda087523fb10828b99155c6c04c2f1281eda5370b307d2471e5",
+    "last_processed": "1774726378.4502554"
+  },
+  "potions:GhostInAJar": {
+    "cache_key": "0fc69a2ef4d3d78c0d9ed7c82421c68d360c41ea3a1eb2755397b45ea1ed4403",
+    "last_processed": "1774726378.4552279"
+  },
+  "potions:GigantificationPotion": {
+    "cache_key": "467b7e7768e72dbf3cf428c7a5416d8375cc923fe6be900d4cfd16d690c54eed",
+    "last_processed": "1774726378.4593778"
+  },
+  "potions:GlowwaterPotion": {
+    "cache_key": "06b1db6cd006a5ca70a3fe702e124596515dc38d653225c936640ded0054af2b",
+    "last_processed": "1774726378.478949"
+  },
+  "potions:HeartOfIron": {
+    "cache_key": "655f5156b74e311bb8d1f5902e37e886a981f5f2f1c3a8564411f7f444b2f2db",
+    "last_processed": "1774726378.4880488"
+  },
+  "potions:KingsCourage": {
+    "cache_key": "f4623435399fb236de5f449c8f82f74e362a48167d2b7cbdcf9128f6ce4aacaa",
+    "last_processed": "1774726378.4942267"
+  },
+  "potions:LiquidBronze": {
+    "cache_key": "342b708ed43a527e49ad450b9cb7b361196d251e056bec0b421b9be442f988bb",
+    "last_processed": "1774726378.498715"
+  },
+  "potions:LiquidMemories": {
+    "cache_key": "4fc2c848c1f5fe740ba4496a41883f2690c9505ef79e254871e5b41d1b4b41ce",
+    "last_processed": "1774726378.5039232"
+  },
+  "potions:LuckyTonic": {
+    "cache_key": "9b7e12a5ba8754ec59235e943fee10bdb82d0ed8b372fd6fddb99e207238317f",
+    "last_processed": "1774726378.5130863"
+  },
+  "potions:MazalethsGift": {
+    "cache_key": "1a5f1ac75cc74c90958f3b7286562d55fd9681d350f8d7b6d293386cbdd7353d",
+    "last_processed": "1774726378.5210829"
+  },
+  "potions:OrobicAcid": {
+    "cache_key": "5392c5893c90c7f02bb37d1c59e008da12fb8550ac63e167532badb8184c9245",
+    "last_processed": "1774726378.5337365"
+  },
+  "potions:PoisonPotion": {
+    "cache_key": "83b734888792c21b220a9d30d62f4a516e44218aa7404c424e4306d18c44c330",
+    "last_processed": "1774726378.5406842"
+  },
+  "potions:PotOfGhouls": {
+    "cache_key": "df763692d6550981eb3392eb01854a9e70136388f4e1687c4cd93ebfcea90bc4",
+    "last_processed": "1774726378.1060958"
+  },
+  "potions:PotionOfBinding": {
+    "cache_key": "9ed4cd833757a5d1f96cc5f1b271803e98363a391b32dd23ca5f7dd7391c08d8",
+    "last_processed": "1774726378.5532503"
+  },
+  "potions:PotionOfCapacity": {
+    "cache_key": "c3e984d25e196b94c157932ab825b3cfd77846b60132ec4e2ca9dd5f9a13c6be",
+    "last_processed": "1774726378.557099"
+  },
+  "potions:PotionOfDoom": {
+    "cache_key": "158cc3103272208aa89f8523ab28afe9bd8e2ab6e96279564d3e41fc3ec5de3e",
+    "last_processed": "1774726378.5640204"
+  },
+  "potions:PotionShapedRock": {
+    "cache_key": "07685b1d2a3da74961e74d002c33652a35adf97c5ca3ea0814f249659b438d5b",
+    "last_processed": "1774726378.5683217"
+  },
+  "potions:PowderedDemise": {
+    "cache_key": "f31725e7fb8f4422d7b1b4f6f2f078b7531db6bad0b97e5d1425a38282fd3ddd",
+    "last_processed": "1774726378.1139667"
+  },
+  "potions:PowerPotion": {
+    "cache_key": "6adb5ba1b26096b6eda0b58c0b474e52093fff537309164cdf808ba1040ddab5",
+    "last_processed": "1774726378.1224082"
+  },
+  "potions:RadiantTincture": {
+    "cache_key": "d20ff5638feefd2d6cc6b0cdb945c38aa4a62a1862a8706ddc0b737436282e20",
+    "last_processed": "1774726378.1278725"
+  },
+  "potions:RegenPotion": {
+    "cache_key": "a3cfd004f25fa196a714ef7d099eda6e1132c1400888b32402ae3133fc709659",
+    "last_processed": "1774726378.1333783"
+  },
+  "potions:ShacklingPotion": {
+    "cache_key": "fa4965ecd33910399e926b125336f50e683cdd62a48a53f1319055360eb988f6",
+    "last_processed": "1774726378.145118"
+  },
+  "potions:ShipInABottle": {
+    "cache_key": "f311936f6ef65f50da50cc82f4e8b51f35fcc1e885b682bce60945e21af555b4",
+    "last_processed": "1774726378.1598105"
+  },
+  "potions:SkillPotion": {
+    "cache_key": "d47039854b2a1df07907874b4bf5b107b50e5d7902aac5fbf026326efa5876d4",
+    "last_processed": "1774726378.171498"
+  },
+  "potions:SneckoOil": {
+    "cache_key": "74be1500284c456a0c64743f2311c00b860578380d2dedc67a20115f26d0efe5",
+    "last_processed": "1774726378.1862316"
+  },
+  "potions:SoldiersStew": {
+    "cache_key": "651a0733a621b6d9ae67d81d20bc39a7b5333aa7e4e2d0441aafccc32b3bc1d9",
+    "last_processed": "1774726378.1923168"
+  },
+  "potions:SpeedPotion": {
+    "cache_key": "4fd316c7a1ed56232f60d67f460f06bf58f45736271dd1b3b1503bb2ed84ce36",
+    "last_processed": "1774726378.197497"
+  },
+  "potions:StableSerum": {
+    "cache_key": "7beadebf364ab9d8863271fbf394be19b1080815d968d60b4bd4b9c4737b69d3",
+    "last_processed": "1774726378.2022653"
+  },
+  "potions:StarPotion": {
+    "cache_key": "d92338f0b3a80de03df69c0f35a2b1e12aa28ceb3e37dbb1cb08da212cbe4826",
+    "last_processed": "1774726378.2057045"
+  },
+  "potions:StrengthPotion": {
+    "cache_key": "a9f42358475a8c5cba1d0d5aed6986baee50a31915542fd553e95b1cd2b8df4a",
+    "last_processed": "1774726378.2121463"
+  },
+  "potions:SwiftPotion": {
+    "cache_key": "fb3be4816bed2d57b22e8edb3e3ce79e26b55cd87c22a0213348c04688864da1",
+    "last_processed": "1774726378.2166414"
+  },
+  "potions:TouchOfInsanity": {
+    "cache_key": "556a1e36fd118303358ff0f69c14801c527dfc9c5dfb8a1604012d6b73befc6f",
+    "last_processed": "1774726378.2227345"
+  },
+  "potions:VulnerablePotion": {
+    "cache_key": "2c2a704602bc3b24da0f27c0835b151ed091b870f0e23cbee62387af84757e19",
+    "last_processed": "1774726378.2313876"
+  },
+  "potions:WeakPotion": {
+    "cache_key": "74fad3670dd4969deb364ba97d0e0be2add1c42e3761c0b4671b9628a6cdccaf",
+    "last_processed": "1774726378.2413254"
   }
 }

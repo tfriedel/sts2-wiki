@@ -1,0 +1,9 @@
+{
+  "class_name": "HeartOfIron",
+  "title": "Heart of Iron",
+  "rarity": "Uncommon",
+  "usage": "Unknown",
+  "target": "AnyPlayer",
+  "description": "Gain [blue]7[/blue] [gold]Plating[/gold].",
+  "notes": "Combat-only potion. Can only be used during combat encounters."
+}

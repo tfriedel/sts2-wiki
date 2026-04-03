@@ -1,0 +1,8 @@
+{
+  "class_name": "RegenPotion",
+  "title": "Regen Potion",
+  "rarity": "Uncommon",
+  "usage": "Combat Only",
+  "target": "Any Player",
+  "description": "Gain [green]5[/green] [gold]Regen[/gold]."
+}
