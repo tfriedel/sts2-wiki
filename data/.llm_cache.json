@@ -614,5 +614,93 @@
   "potions:Ashwater": {
     "cache_key": "bdc5ba6b92b14e8966dfd608876131f8495e2c1e6a831ab8f9c64a1fa227b114",
     "last_processed": "1774726378.2092564"
+  },
+  "potions:AttackPotion": {
+    "cache_key": "ce4ad51bcb0da6a6decc06e2dc2064ef2213a5d3c98c64e3f03b3b39d6b31d25",
+    "last_processed": "1774726378.220596"
+  },
+  "potions:BeetleJuice": {
+    "cache_key": "8a5ee0fbc6bb5b2e59c17f0aa1e2175eb87604e43d5bb0417c7f75ae421eff06",
+    "last_processed": "1774726378.2253098"
+  },
+  "potions:BlessingOfTheForge": {
+    "cache_key": "2b448a880663e95346f01b3b1a0fafeb25294d4470a8e676dcc0c31a807bcee1",
+    "last_processed": "1774726378.228498"
+  },
+  "potions:BlockPotion": {
+    "cache_key": "994cf21ecde50a84901a4d941ddf83da5d80236aad55e84e039daebb611af5ac",
+    "last_processed": "1774726378.232965"
+  },
+  "potions:BloodPotion": {
+    "cache_key": "d5cf8b0b1dc26b8b6be5a1ee51655200e2728c972efdd9e31999793b671e2720",
+    "last_processed": "1774726378.2372918"
+  },
+  "potions:BoneBrew": {
+    "cache_key": "c047822a82e0951af8d8f3981d759124ac33c363080a4d5294a64e2c6a156914",
+    "last_processed": "1774726378.2593462"
+  },
+  "potions:BottledPotential": {
+    "cache_key": "b68cf96ae2a3aec05a4d300b2e7a3a127c63ccbbb3802941fae0e8e334299ce2",
+    "last_processed": "1774726378.275337"
+  },
+  "potions:Clarity": {
+    "cache_key": "222677de0c7b3d26929fb70affcbe5bfb82483fb9f6f67d2c8e01047146817ac",
+    "last_processed": "1774726378.2835512"
+  },
+  "potions:ColorlessPotion": {
+    "cache_key": "8eaa613639277bdf07acb3bf7def8c20a81944adbc6736ada7c385c027df7f9a",
+    "last_processed": "1774726378.2932608"
+  },
+  "potions:CosmicConcoction": {
+    "cache_key": "f829899afb0f101a3b943176f0901713a7591f9ce9b81c9ba0e6a3dde13cb568",
+    "last_processed": "1774726378.300781"
+  },
+  "potions:CunningPotion": {
+    "cache_key": "57d5e86223e173dc04d37fac62617ba88670d902f2dc3e30b6d979f7f7f775ec",
+    "last_processed": "1774726378.309858"
+  },
+  "potions:CureAll": {
+    "cache_key": "a6471b2d9eeb859a1f155d61f38b3bf36801354f4af38c6fd01f3f9f31efb9fb",
+    "last_processed": "1774726378.321148"
+  },
+  "potions:DeprecatedPotion": {
+    "cache_key": "0621afde9c87634039b791ffcc590fb6d9ccf42da8dbccaf8704083d76edfdfa",
+    "last_processed": "1774726378.322632"
+  },
+  "potions:DexterityPotion": {
+    "cache_key": "80dc5a6ac75de58af47c2c76cff5eb66ae37c0c0e7ca6923d83bb9cb6c632957",
+    "last_processed": "1774726378.3279111"
+  },
+  "potions:DistilledChaos": {
+    "cache_key": "8fc5d0fb768ca9edf851bd49679e9421770bc73360ea7cd3aed9b2369c50de16",
+    "last_processed": "1774726378.331705"
+  },
+  "potions:DropletOfPrecognition": {
+    "cache_key": "f91468a5d7b5bcd6173e04b8c71d544ff0677b0861cad80966ea65213829dbbb",
+    "last_processed": "1774726378.340403"
+  },
+  "potions:Duplicator": {
+    "cache_key": "07f9a6460257d4e4b6a1c8e069b8b14ece194b53d20b1277a01590b05832e5e5",
+    "last_processed": "1774726378.3442202"
+  },
+  "potions:EnergyPotion": {
+    "cache_key": "5475797e5eaccff536cc097b9226616d9df45dc344b94701477d91c834583b91",
+    "last_processed": "1774726378.349134"
+  },
+  "potions:EntropicBrew": {
+    "cache_key": "2e000d072524c1de0b4461f259bc38efba9b0012158279a68eef67daacf8edfe",
+    "last_processed": "1774726378.3522685"
+  },
+  "potions:EssenceOfDarkness": {
+    "cache_key": "3a9e29993d1577f4c8b9e40efb22b7cf0caf3289e7b585e7765baae23f0b97fa",
+    "last_processed": "1774726378.3565269"
+  },
+  "potions:ExplosiveAmpoule": {
+    "cache_key": "6fabd94cbf93acaaa5c0802ad70b0c12cda679fc0385e696c8b764b0ef51b433",
+    "last_processed": "1774726378.3672805"
+  },
+  "potions:FairyInABottle": {
+    "cache_key": "11aa85c3fc86c79c39d393503d30d568559f25e9cbe192884a2ad63f5d099b6a",
+    "last_processed": "1774726378.3770401"
   }
 }
