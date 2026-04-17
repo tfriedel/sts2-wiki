@@ -2043,6 +2043,74 @@
     "cache_key": "71f590bf0c8524f93f31bfec714161fde5f568dda31808a4d017d7756a4284b3",
     "last_processed": "1774726377.9975784"
   },
+  "powers:AccelerantPower": {
+    "cache_key": "b29ec4c2d805cfa5dfc2d87a079f266abe8f924387c9b351e875f8c2a5a6073a",
+    "last_processed": "1774726377.8600233"
+  },
+  "powers:AccuracyPower": {
+    "cache_key": "b06d3d24957e5207a05e4895fbbe5d57e400803b73823e22a7c176c219e7ee3b",
+    "last_processed": "1774726377.8669004"
+  },
+  "powers:AdaptablePower": {
+    "cache_key": "a25d78e9825b4b50bd07a1283183a1160b62f6c107481ea1b154e1f3fdf132f8",
+    "last_processed": "1774726377.8762698"
+  },
+  "powers:AfterimagePower": {
+    "cache_key": "28294c810b9b806922f8f92af0b0cbc9198065f0c34cf8d8d102ceb1afb101c7",
+    "last_processed": "1774726377.8835385"
+  },
+  "powers:AggressionPower": {
+    "cache_key": "8eec10d91ce3996df09fbc1839e5c0b19ad1f03948bfa89133fc5fe5f0a2c98e",
+    "last_processed": "1774726377.8898444"
+  },
+  "powers:ArsenalPower": {
+    "cache_key": "8186f3c7ffc6debe493774284b3eca259603a9b0332d3115814cedbfd66c782e",
+    "last_processed": "1774726377.895444"
+  },
+  "powers:ArtifactPower": {
+    "cache_key": "966afc33b51b3e78facb1284823db673987241f10e008fb0aa6a639d09eac9e5",
+    "last_processed": "1774726377.9044735"
+  },
+  "powers:AsleepPower": {
+    "cache_key": "33441e33f9fca43fa180bc42fecf64ed2f9df1b829892afaa20af9199257b873",
+    "last_processed": "1774726377.9180627"
+  },
+  "powers:AutomationPower": {
+    "cache_key": "2c1670a193d16302623ee5ee849aa50a3835b79cb9e5296164a523d7644231ae",
+    "last_processed": "1774726377.928818"
+  },
+  "powers:BackAttackLeftPower": {
+    "cache_key": "fbe725b4d6d1bb36556f657a630dbc2797925740a9249e0db356bde215f514f3",
+    "last_processed": "1774726377.9317038"
+  },
+  "powers:BackAttackRightPower": {
+    "cache_key": "c020ba5cc20471c064c92580ed211b53549e7063855485b01826419387068926",
+    "last_processed": "1774726377.9345698"
+  },
+  "powers:BarricadePower": {
+    "cache_key": "4fba646da608df550f34485304e6a1c98f45402b27a51d559959feef947c749d",
+    "last_processed": "1774726377.9439359"
+  },
+  "powers:BattlewornDummyTimeLimitPower": {
+    "cache_key": "4207571738af9e3ce8263b8fe6c3032fbede547422220b65a915534208b0a9ce",
+    "last_processed": "1774726377.9495718"
+  },
+  "powers:BeaconOfHopePower": {
+    "cache_key": "b2acf086d420030b00b3057fdbd20715ddc0b1271ab92713c0aec72732dec4ab",
+    "last_processed": "1774726377.961932"
+  },
+  "powers:BiasedCognitionPower": {
+    "cache_key": "aabae1f8a3c3144d54d0e63f30b7c33a209628977ad2e3179931f2f7af51be1d",
+    "last_processed": "1774726377.9655612"
+  },
+  "powers:BlackHolePower": {
+    "cache_key": "c3ef421be06ea0c1eec7a1b7be8e068fd161625800d0d4a69754c29ca45621a7",
+    "last_processed": "1774726377.8836946"
+  },
+  "powers:BladeOfInkPower": {
+    "cache_key": "3f0c85d2a0e6145dde07a1b8409a58d3e03d9403cf445c41107c17dbf2a05028",
+    "last_processed": "1774726377.893021"
+  },
   "cards:Accuracy": {
     "cache_key": "2906bb30ace84535a84b037cd8da8cd91783e45d6bf70192a6e2d08d6f1d71a1",
     "last_processed": "1774726378.6485727"
@@ -2075,12 +2143,12 @@
     "cache_key": "286e293df0ed6c9e8e774962a1f0afdfaa8b163b6e7f4ebd82162285ab1d64b0",
     "last_processed": "1774726378.6955767"
   },
-  "cards:Alignment": {
-    "cache_key": "c53f5e4811a6542b8dc315a3da316dae477f0b0b923e03676d458f862ae7adf1",
-    "last_processed": "1774726378.4975023"
+  "powers:BlockNextTurnPower": {
+    "cache_key": "2c508499e8376dd3ad67177f81c154a4d3164215c97ab995082f224033438398",
+    "last_processed": "1774726377.900746"
   },
-  "cards:AllForOne": {
-    "cache_key": "e500f352ff158782aa4dc315737da8070adc48ff740debc052fb940940777e3a",
-    "last_processed": "1774726378.5093226"
+  "cards:Fuel": {
+    "cache_key": "8e131e73f61c57b084bfdc6f3b70b25bb22e26002e2088ae947d722646d44bde",
+    "last_processed": "1774726379.2054176"
   }
 }

@@ -32,22 +32,22 @@
 - [x] Write card extraction prompt
 - [x] Add "cards" to ENTITY_TYPE_DIRS
 - [x] Adapt generate_cards.py for per-entity JSON + overrides
-- [~] Process all 575 cards for v0.101.0 (running — ~7 done, very slow due to per-entity site rebuild)
+- [~] Process all 577 cards for v0.101.0 (225/577 — sequential batch running)
 - [ ] Review and fix issues
 
 ## Relics
 - [x] Write relic extraction prompt
 - [x] Add "relics" to ENTITY_TYPE_DIRS
 - [x] Adapt generate_relics.py for per-entity JSON + overrides
-- [~] Process all 290 relics for v0.101.0 (running)
-- [ ] Review and fix issues
+- [x] Process all 291 relics for v0.101.0
+- [x] Review and fix issues (0 issues)
 
 ## Powers
 - [x] Write power extraction prompt
 - [x] Add "powers" to ENTITY_TYPE_DIRS
 - [x] Adapt generate_powers.py for per-entity JSON + overrides
-- [~] Process all 260 powers for v0.101.0 (running)
-- [ ] Review and fix issues
+- [x] Process all 244 powers for v0.101.0
+- [x] Review and fix issues (0 issues; {Amount} placeholders in smart_description are intentional runtime vars)
 
 ## Potions
 - [x] Write potion extraction prompt

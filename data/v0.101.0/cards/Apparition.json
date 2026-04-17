@@ -6,7 +6,10 @@
   "type": "Skill",
   "rarity": "Ancient",
   "target": "Self",
-  "keywords": ["Ethereal", "Exhaust"],
+  "keywords": [
+    "Ethereal",
+    "Exhaust"
+  ],
   "vars": [
     {
       "type": "Magic",
@@ -22,5 +25,5 @@
       "slug": "intangible"
     }
   ],
-  "notes": "Upgrade removes Ethereal keyword"
+  "notes": "Upgrade removes Ethereal keyword, allowing the card to be retained in hand instead of being exhausted."
 }

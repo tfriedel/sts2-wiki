@@ -15,7 +15,6 @@
     }
   ],
   "description": "Gain 2 [gold]Dexterity[/gold] this turn.",
-  "upgraded_description": "Gain 3 [gold]Dexterity[/gold] this turn.",
   "referenced_powers": [
     {
       "class_name": "AnticipatePower",
