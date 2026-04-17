@@ -89,10 +89,8 @@ def main() -> None:
         if not desc or desc == "TODO":
             desc = smart_desc
 
-        # Replace known placeholders in descriptions
-        desc = desc.replace("{singleStarIcon}", "Star")
-
         # Multi-pass resolution to handle nested braces
+        # (rich_text_to_html handles {singleStarIcon} → img tag; keep it as-is here)
         for _ in range(3):
             # Resolve innermost {} (empty braces used as value ref in plurals)
             new_desc = desc.replace("{}", "X")
@@ -111,15 +109,14 @@ def main() -> None:
                 break
             desc = new_desc
 
-        # Process smart_description: apply tag conversion but keep {Amount} placeholders
+        # Keep smart_description as-is; rich_text_to_html handles icon placeholders
         smart_desc_processed = smart_desc
-        if smart_desc_processed:
-            smart_desc_processed = smart_desc_processed.replace("{singleStarIcon}", "Star")
 
         lines = ["---"]
         lines.append(f"title: {escape_yaml(power['title'])}")
         lines.append(f"class_name: {escape_yaml(power['class_name'])}")
-        lines.append(f"power_type: {escape_yaml(power.get('type', 'None'))}")
+        # LLM writes `power_type`; regex extractor wrote `type`
+        lines.append(f"power_type: {escape_yaml(power.get('power_type', power.get('type', 'None')))}")
         lines.append(f"stack_type: {escape_yaml(power.get('stack_type', 'None'))}")
         lines.append(f"description_plain: {escape_yaml(strip_tags(desc))}")
         lines.append(f"description_html: {escape_yaml(render_description_html(desc))}")

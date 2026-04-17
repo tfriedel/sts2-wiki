@@ -16,6 +16,5 @@
   ],
   "description": "Draw 3 cards.\nDiscard 1 card.",
   "upgraded_description": "Draw 4 cards.\nDiscard 1 card.",
-  "x_cost": false,
   "referenced_powers": []
 }
