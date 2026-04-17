@@ -1318,5 +1318,769 @@
   "relics:HappyFlower": {
     "cache_key": "1f8e37bbad64716a45e2d47d9da4a61826b0ce71cb49411313c550b876de246f",
     "last_processed": "1774726377.6314254"
+  },
+  "relics:HeftyTablet": {
+    "cache_key": "e3f21323aed56e8544d25c59a933dd985e7f1b1ebba54cead88b682776dcf049",
+    "last_processed": "1774726377.6534488"
+  },
+  "relics:HelicalDart": {
+    "cache_key": "a9e70db618d0c3501de26afc4369f79f90687ba0b9de72e03f9fc967a7c14b60",
+    "last_processed": "1774726377.6606624"
+  },
+  "relics:HistoryCourse": {
+    "cache_key": "420b0a90a77fa27aaea282258b11207650d4ce7974877f2ac51fde81689ee9e4",
+    "last_processed": "1774726377.6653833"
+  },
+  "relics:HornCleat": {
+    "cache_key": "b2dcfa8070fe45e6e132c7cf03cd93373ae18be4905f9b6f9b214c720c11d558",
+    "last_processed": "1774726377.6738124"
+  },
+  "relics:IceCream": {
+    "cache_key": "86669c26c8ce7c3d8a58f2ded8214f533f21e47ccce640b70fe898d48f0db5b9",
+    "last_processed": "1774726377.6785843"
+  },
+  "relics:InfusedCore": {
+    "cache_key": "88c28030dd3339125296f10e3184228f9b12fbbe3b962b7ef31449220203468d",
+    "last_processed": "1774726377.6869366"
+  },
+  "relics:IntimidatingHelmet": {
+    "cache_key": "866994d67560581b8b8cb0d445fc6a79e2ec88f152577e8af201ff91e6bc2f81",
+    "last_processed": "1774726377.692533"
+  },
+  "relics:IronClub": {
+    "cache_key": "ed02aeefebec85f51d911d368304cc2adc93abdc48c9143190ea4ba8314cb93f",
+    "last_processed": "1774726377.5932288"
+  },
+  "relics:IvoryTile": {
+    "cache_key": "c424fb80e679de2df06edd728c0f8c2981f592bf383344073d7e3e990c32ccb9",
+    "last_processed": "1774726377.598357"
+  },
+  "relics:JeweledMask": {
+    "cache_key": "604d19540a2a3102b8682df3353070a547d5270acda904619bbc3e6467b9b7c0",
+    "last_processed": "1774726377.6026242"
+  },
+  "relics:JewelryBox": {
+    "cache_key": "069a4978a3f3c02cb39ca651eef3c09e6c324acd8d5476cec7bc4dded5246a19",
+    "last_processed": "1774726377.6117706"
+  },
+  "relics:JossPaper": {
+    "cache_key": "019d7f3245faaf024660e8e35bcf3f9b5e15574e4a9545c934cfe27a90d1b448",
+    "last_processed": "1774726377.643793"
+  },
+  "relics:JuzuBracelet": {
+    "cache_key": "7b1afa85ec3188b08bb2200ea3e55a97bfed7c2824c46a0769b7e6876a6ef653",
+    "last_processed": "1774726377.6528945"
+  },
+  "relics:Kifuda": {
+    "cache_key": "48b3576af55eaee8b224965858ec4620f8bf4e4b305e224a693147996ba4ebe2",
+    "last_processed": "1774726377.6600423"
+  },
+  "relics:Kunai": {
+    "cache_key": "a2f551ad05b4c2ac1f47eace6089cb66f9853b270a2b60cabf289e1634781580",
+    "last_processed": "1774726377.6721814"
+  },
+  "relics:Kusarigama": {
+    "cache_key": "937f3b572a9a743624f96baa0230639551c4360bbbc4e6a57fbb5a32127ddb18",
+    "last_processed": "1774726377.684228"
+  },
+  "relics:Lantern": {
+    "cache_key": "cd5b2007cbca320a5a21fa7936f180d588a413203b7cd675eb4c1927761069a6",
+    "last_processed": "1774726377.6883767"
+  },
+  "relics:LargeCapsule": {
+    "cache_key": "c309623f233714761850fe209dfe6b1ef09b6f4fe9871f12bb7a4fa2d3472883",
+    "last_processed": "1774726377.7066944"
+  },
+  "relics:LastingCandy": {
+    "cache_key": "2910fb834a265162cdb9429afbafa97bf9af4c103d1d2439db0253bd22d7134c",
+    "last_processed": "1774726377.7204533"
+  },
+  "relics:LavaLamp": {
+    "cache_key": "12f20908dad6f055c47850fb92dc26b47e7c420826e10f1f04859f27c7d2ea65",
+    "last_processed": "1774726377.7308593"
+  },
+  "relics:LavaRock": {
+    "cache_key": "f511dd7ccf35f1326b952ae2758f443c2e0fa1ac5832c5790911769a1d78c4fa",
+    "last_processed": "1774726377.7619162"
+  },
+  "relics:LeadPaperweight": {
+    "cache_key": "a46dd750aad6c3020d7a6330ed645ea7632a5a99635b7afb35c49bef33e558b9",
+    "last_processed": "1774726377.7719193"
+  },
+  "relics:LeafyPoultice": {
+    "cache_key": "9aa1f317b50dc752582e0f917788e61d7de165c90adb840388dcd116ca1dcb87",
+    "last_processed": "1774726377.7895367"
+  },
+  "relics:LeesWaffle": {
+    "cache_key": "9602b4a8cc5732b5b4e9871022aba36b55dcae44f8c82ae003ff698f89d9eba3",
+    "last_processed": "1774726377.7950811"
+  },
+  "relics:LetterOpener": {
+    "cache_key": "a3b911ca75987f5c09134b08636127276fff23b713a86f2cbb4496344ea55c63",
+    "last_processed": "1774726377.8216197"
+  },
+  "relics:LizardTail": {
+    "cache_key": "9f6b36fb92c340b1cbe1f466cfb9d2661718dd53c3528a71181d8feedb67656c",
+    "last_processed": "1774726377.8292332"
+  },
+  "relics:LoomingFruit": {
+    "cache_key": "8a2ed22bfccd714d0c3ccbd087a27da097a9ffead3b67ecbd94e42731b58149d",
+    "last_processed": "1774726377.83534"
+  },
+  "relics:LordsParasol": {
+    "cache_key": "fa4186b4d3cab5c17d8aa47f02718f72e60fb7cde07a3e23554040248827a476",
+    "last_processed": "1774726377.8470454"
+  },
+  "relics:LostCoffer": {
+    "cache_key": "7728d5d2c526918f576b418840f7c4b89920dc7cfb3a95f45be047c9a9f3a279",
+    "last_processed": "1774726377.8503585"
+  },
+  "relics:LostWisp": {
+    "cache_key": "0b9d1f988582434c53d5d013d75e833c54f4b367eb0935abfbb40a6ca056f269",
+    "last_processed": "1774726377.854118"
+  },
+  "relics:LuckyFysh": {
+    "cache_key": "95a3098727b6a8378eb52ac3883aabb64b47b06f9f80e74bf73cbeec6632f52f",
+    "last_processed": "1774726377.858117"
+  },
+  "relics:LunarPastry": {
+    "cache_key": "e053d3e3c6fe6bc454b7302030e5f6e6d332a9cd5decdc1456e589b13eda2922",
+    "last_processed": "1774726377.6957753"
+  },
+  "relics:Mango": {
+    "cache_key": "f381c6e4914278e192a4adbad359a3dc1b867b6beb9273fe85007204657ecb2b",
+    "last_processed": "1774726377.6991189"
+  },
+  "relics:MassiveScroll": {
+    "cache_key": "8aad6f94190e824e450fa7246b1a8c9e5ebcbc7ec248699456b7a1754d0bbd5f",
+    "last_processed": "1774726377.7093527"
+  },
+  "relics:MawBank": {
+    "cache_key": "97087c5a2fdcc6cecbacfe63f867a53eda9bcf84bc83d595357b16c2d44b3183",
+    "last_processed": "1774726377.7242029"
+  },
+  "relics:MealTicket": {
+    "cache_key": "05d33169051173e1ec0072a7120b7d5bea3823b8c611887b3d72e6626b6cfdad",
+    "last_processed": "1774726377.7320356"
+  },
+  "relics:MeatCleaver": {
+    "cache_key": "7ad562f6b46b30fbfff4bcd52a60dbfba2421d7b4571bb1b7a61d1e2a2341266",
+    "last_processed": "1774726377.7344923"
+  },
+  "relics:MeatOnTheBone": {
+    "cache_key": "0fe87a38c1fde896f33272a07cd80679068d80e3adfe2c4bc272f1e331a0b973",
+    "last_processed": "1774726377.7651196"
+  },
+  "relics:MembershipCard": {
+    "cache_key": "24c06e760907d12bdfcb8210e6e3ebfc42b0ca4f71ef713276ed9ca6ae228539",
+    "last_processed": "1774726377.7676969"
+  },
+  "relics:MercuryHourglass": {
+    "cache_key": "5eeb12ed942214daf3a730794b1c855655f7bab76ba4d46c0866e86214c07cbe",
+    "last_processed": "1774726377.7712772"
+  },
+  "relics:Metronome": {
+    "cache_key": "7d2fbf49dcdc9c9fa791bc21057bd82a4f0454f74321c3e41487babb56b61bf2",
+    "last_processed": "1774726377.7856932"
+  },
+  "relics:MiniRegent": {
+    "cache_key": "2dae17b66a4335390ea8d58755d8a31a8c6e1542ccd3c43f77edfe85195b0a64",
+    "last_processed": "1774726377.8011956"
+  },
+  "relics:MiniatureCannon": {
+    "cache_key": "eca3f02fdc7c3aea64195fe1e4f826e991418ecb3cfc60553015e83ec5e262f8",
+    "last_processed": "1774726377.7932358"
+  },
+  "relics:MiniatureTent": {
+    "cache_key": "c8620baa3e818dab0d3d1f68b5d5e5ab2226ea8be43db70bd37d05263fc9a017",
+    "last_processed": "1774726377.7944884"
+  },
+  "relics:MoltenEgg": {
+    "cache_key": "0f1cab9b287d0259135337c7b4bdd4b94766d1d96820a4b403417e4978835f6d",
+    "last_processed": "1774726377.8065028"
+  },
+  "relics:MrStruggles": {
+    "cache_key": "cc111baca5dd5a8fa04a8efd2e3b64865650111e1ce5108f301c1b396e10ff8a",
+    "last_processed": "1774726377.8094258"
+  },
+  "relics:MummifiedHand": {
+    "cache_key": "73a1ba28f6e0e0eb9ed4dcf985a9810889944690eaa98bec1b1cc89be5895ee8",
+    "last_processed": "1774726377.8165226"
+  },
+  "relics:MusicBox": {
+    "cache_key": "9a4e7a43a7c32a60a9dfc11170db5529b18d43e91959176a5d5a8224083d1e9c",
+    "last_processed": "1774726377.8236647"
+  },
+  "relics:MysticLighter": {
+    "cache_key": "cc7496b992924723e0d4176d37cbc8fc52c715a9adf987996dd652668f7872a2",
+    "last_processed": "1774726377.8264575"
+  },
+  "relics:NeowsTalisman": {
+    "cache_key": "db39aa2ab11e66b9eda5d5ba2006a768014d47ac2fc111849e8465bc32336ff6",
+    "last_processed": "1774726377.8312016"
+  },
+  "relics:NeowsTorment": {
+    "cache_key": "5cf5efa1e4cfe49e41584feb6ff5aaeb4a6c2507f127c02cbf0cc11256a0a298",
+    "last_processed": "1774726377.8348303"
+  },
+  "relics:NewLeaf": {
+    "cache_key": "b54603459dc6fc5206c9fefc4f6aadbf34351ac18861fede17797f8bcd4f0ace",
+    "last_processed": "1774726377.847959"
+  },
+  "relics:NinjaScroll": {
+    "cache_key": "65d1519690486d41a9d40f10c63f902538dfb197c93b5ac292e3c2441ff68a5a",
+    "last_processed": "1774726377.8565912"
+  },
+  "relics:Nunchaku": {
+    "cache_key": "adf5128878c89762afce9d57727756575029f18609e9803accd94e12d76af6d2",
+    "last_processed": "1774726377.8677313"
+  },
+  "relics:NutritiousOyster": {
+    "cache_key": "c28492b5435bb11ef7c8322e3cf983ccfb052200e78ad3896c94d2cea5eb5df0",
+    "last_processed": "1774726377.8708932"
+  },
+  "relics:NutritiousSoup": {
+    "cache_key": "7dd1611bd284dd74370c583250d5b80b4dc5accee73aebde65feeff9a9c6d41c",
+    "last_processed": "1774726377.8751993"
+  },
+  "relics:OddlySmoothStone": {
+    "cache_key": "90965330fe6701dd311772f8cf83abb55c4282a62047af508f740ec609e9a29e",
+    "last_processed": "1774726377.8813546"
+  },
+  "relics:OldCoin": {
+    "cache_key": "536164b30afa3f681ee8326b63293e2a7e92ac149c2ea0eb091e127fb957be01",
+    "last_processed": "1774726377.885159"
+  },
+  "relics:OrangeDough": {
+    "cache_key": "34c9909ac44b87cbd09c0680379b8dc37425f0f1eb091f8daf1c1975b35171aa",
+    "last_processed": "1774726377.8892574"
+  },
+  "relics:Orichalcum": {
+    "cache_key": "c62e38480fdc5859d85442e3077356bf58270f9b05eaa97bce050970c03f4b9a",
+    "last_processed": "1774726377.8983502"
+  },
+  "relics:OrnamentalFan": {
+    "cache_key": "5ebc761b1f1fe1b1c81570d22e7c74560a95a6185762e406f454b6a1887f5b82",
+    "last_processed": "1774726377.9137874"
+  },
+  "relics:Orrery": {
+    "cache_key": "e62d79a4f400d5bcef8438b56a06a35d1e7eca889b4d8d90b64a9efa9f56a91c",
+    "last_processed": "1774726377.918387"
+  },
+  "relics:PaelsBlood": {
+    "cache_key": "b909cb73ba90ae9aaedb70d7e25f3b02929959045337eec5b11f8e9500681825",
+    "last_processed": "1774726377.9209054"
+  },
+  "relics:PaelsClaw": {
+    "cache_key": "941cfc161b79b3569a22e3679547771a77ee4dfecab63cac9aeab5b625d01f60",
+    "last_processed": "1774726377.7047186"
+  },
+  "relics:PaelsEye": {
+    "cache_key": "864b0cda7f95e4f35a9f08e6bed961cb29e1f5d202b90eaef5f68569dd3da1ca",
+    "last_processed": "1774726377.7232692"
+  },
+  "relics:PaelsFlesh": {
+    "cache_key": "a79ae1081839f116a3f77884b54aacd05c50303b0aab65ade32fee59e484944c",
+    "last_processed": "1774726377.7301707"
+  },
+  "relics:PaelsGrowth": {
+    "cache_key": "6eb9791d46914ded197e40122cc719c00b946a5fadf161cb15380a2c399637b4",
+    "last_processed": "1774726377.7625577"
+  },
+  "relics:PaelsHorn": {
+    "cache_key": "d5d66e0b17880f6e8b939e832aab08819182b77558b8a1adb0c7c5104d57b7b2",
+    "last_processed": "1774726377.766692"
+  },
+  "relics:PaelsLegion": {
+    "cache_key": "a3a6a9e6d35ca9ad080ad6af12d026412d39f08d42dc898e3456111f314bff3d",
+    "last_processed": "1774726377.8005066"
+  },
+  "relics:PaelsTears": {
+    "cache_key": "dc56c572c4b820d9ad81188e0c19972d4bf3941571bd6829dfa3fb32fd7a0ceb",
+    "last_processed": "1774726377.8140378"
+  },
+  "relics:PaelsTooth": {
+    "cache_key": "5b606a7770e84373844177b8764f38083c6a97307b97ddfbe9952bdb6ac9bfcf",
+    "last_processed": "1774726377.8334403"
+  },
+  "relics:PaelsWing": {
+    "cache_key": "56b7ec3935356a3b99e68835d107abbd5d5adceb39637f026797172a27709d56",
+    "last_processed": "1774726377.8494928"
+  },
+  "relics:PandorasBox": {
+    "cache_key": "c103d0f12802968bd1611c9b1ef2f2b2b54be2b7c169e28be2b90e1767b6cdb0",
+    "last_processed": "1774726377.8583279"
+  },
+  "relics:Pantograph": {
+    "cache_key": "70945497ea5c3a835f6a3b887452eaf909dbbb5c9c0ebd7362f439fb278af1a1",
+    "last_processed": "1774726377.8711243"
+  },
+  "relics:PaperKrane": {
+    "cache_key": "55f3a727e3fc20aecbcbcc76b36afa6185bc4f4c6696d4d290ba0247f771dcb5",
+    "last_processed": "1774726377.8737667"
+  },
+  "relics:PaperPhrog": {
+    "cache_key": "514ab034dbb61d95bc4f0d4ae77176a05afdb857c59618783277251956d8a3d0",
+    "last_processed": "1774726377.881746"
+  },
+  "relics:ParryingShield": {
+    "cache_key": "1f5f21e506c21e5a07912b9ded5d25365f3ec2e6de37e2b35da7c24b0cf758d9",
+    "last_processed": "1774726377.887624"
+  },
+  "relics:Pear": {
+    "cache_key": "55466c532ab24480aa59f13702dd3572bc6efdc6c69f36c26d5c0b0a6df1b080",
+    "last_processed": "1774726377.890688"
+  },
+  "relics:PenNib": {
+    "cache_key": "650d90b16d302b01be8c7f21d8163eb58de0a91bc7967e14fe40f4ce1f533b0f",
+    "last_processed": "1774726377.9213836"
+  },
+  "relics:Pendulum": {
+    "cache_key": "a9f254f9ff80bb1f3f2c17d09b67aca86949191440614436e609a55ce8f1bd40",
+    "last_processed": "1774726377.900672"
+  },
+  "relics:Permafrost": {
+    "cache_key": "a4504af6eff86bec883c3647a9a6050d08368116a65c0bbd548f08749eb67686",
+    "last_processed": "1774726377.9285362"
+  },
+  "relics:PetrifiedToad": {
+    "cache_key": "65826dfcc4232115d9708e6eeb54396e33b9dcf74e3acdb38afe49c8a472e91f",
+    "last_processed": "1774726377.9314723"
+  },
+  "relics:PhilosophersStone": {
+    "cache_key": "f7122b9bf853e30123ffbb82022fce09cbb717d6347ddb72358153f461574c16",
+    "last_processed": "1774726377.9401903"
+  },
+  "relics:PhylacteryUnbound": {
+    "cache_key": "a9b6417191f058c933b89bf24ea0605e89260b7673dc3ceed87e7e66f8503d97",
+    "last_processed": "1774726377.9529324"
+  },
+  "relics:Planisphere": {
+    "cache_key": "c5f97774fae1f3e5b65cfa30c970306a2e5f971194154eea89fd8a3355a691cc",
+    "last_processed": "1774726377.965952"
+  },
+  "relics:Pocketwatch": {
+    "cache_key": "ad7109e55cad9cf562b501204db6a7da6a7fd8993aab9be394957022f59892eb",
+    "last_processed": "1774726377.9758358"
+  },
+  "relics:PollinousCore": {
+    "cache_key": "f39a43eae7d2f11867f34a136484adc7a423fad3f0a21c92f9b83fde7dfa4a7c",
+    "last_processed": "1774726377.9929638"
+  },
+  "relics:Pomander": {
+    "cache_key": "1e0c8742f3d8649a3cfc98cdf3d015db797a5236c77249d1fa2c3c870ea73125",
+    "last_processed": "1774726377.9969807"
+  },
+  "relics:PotionBelt": {
+    "cache_key": "282f654a6464b46a955c7d3ddb831ade1fb68dd90e5466861905b2284ab75458",
+    "last_processed": "1774726378.0001094"
+  },
+  "relics:PowerCell": {
+    "cache_key": "f0827c18210e9e25a903bace78f0360aa9c623edd8084b85aa4711a72147f4be",
+    "last_processed": "1774726378.0183258"
+  },
+  "relics:PrayerWheel": {
+    "cache_key": "70768250f8f3e47d7604f7eaecc94c2c1943f99ebccb2ac4a8104fc548d941f5",
+    "last_processed": "1774726378.0237775"
+  },
+  "relics:PrecariousShears": {
+    "cache_key": "a38e70c4752cee96f14f0fea1efafd1957303fdef882c8e94ba95e8bc755626f",
+    "last_processed": "1774726378.0315306"
+  },
+  "relics:PreciseScissors": {
+    "cache_key": "86ff16b47413e852b47015db3cb07017e5b216c58d9675352c205239d9b84724",
+    "last_processed": "1774726378.0358374"
+  },
+  "relics:PreservedFog": {
+    "cache_key": "563619691f05c3513e6de6fca515dfe4d7898eca6d8c189f07111b0168fc812e",
+    "last_processed": "1774726378.0509403"
+  },
+  "relics:PrismaticGem": {
+    "cache_key": "56014655070da9776371f5de75619c87c7f9ea3fd2ed2589194386595a924cef",
+    "last_processed": "1774726378.0564635"
+  },
+  "relics:PumpkinCandle": {
+    "cache_key": "64775de36496d45249d7e7ac9ed98a2e7682c05fc8f37a33b9217fda579fdee9",
+    "last_processed": "1774726377.7882028"
+  },
+  "relics:PunchDagger": {
+    "cache_key": "ee582f3a11997af933bf0c4868e634deeb6e2f067e7baf2ec63ad051435f55d6",
+    "last_processed": "1774726377.7950714"
+  },
+  "relics:RadiantPearl": {
+    "cache_key": "cc3572f0fdb65db735c7bf63fece4557df40026779d2849fafc7594d2f246bbd",
+    "last_processed": "1774726377.8060498"
+  },
+  "relics:RainbowRing": {
+    "cache_key": "f10bb097b8082df731681cdc53cdfc90a53a32a736c27ce2f51a80faac9dc4dc",
+    "last_processed": "1774726377.821024"
+  },
+  "relics:RazorTooth": {
+    "cache_key": "732e98b7144ff35b1c0c800c006948330132fb671269bc5f8fc405c6af3c60a8",
+    "last_processed": "1774726377.825701"
+  },
+  "relics:RedMask": {
+    "cache_key": "713b7b0e14502a4dc7b3eadc75682b7e62da79b77386acc5bf99a0bb0df90191",
+    "last_processed": "1774726377.8312886"
+  },
+  "relics:RedSkull": {
+    "cache_key": "493bf55a4bfd36d95a2e30fcf35d01684bac2d37cc5bfa0d6124addafd003156",
+    "last_processed": "1774726377.8420372"
+  },
+  "relics:RegalPillow": {
+    "cache_key": "ddf7c782e41c306d56d7c6ce68fae4ffe5167366589efc0e30b2a2625448a50e",
+    "last_processed": "1774726377.8567238"
+  },
+  "relics:Regalite": {
+    "cache_key": "42b57b2d07abffaa69c37c2d2887edb51e5e4e1ae2e247a93b3be6e23b680d5f",
+    "last_processed": "1774726377.8464408"
+  },
+  "relics:ReptileTrinket": {
+    "cache_key": "c97269cfdb9f06e615da2014264f7f4f874fb8c439a2157e336e419a8be4e94e",
+    "last_processed": "1774726377.861543"
+  },
+  "relics:RingOfTheDrake": {
+    "cache_key": "8455b551b8edeff7dbb9db2e57c05f595c853814c068fa904be6fac56602ea97",
+    "last_processed": "1774726377.8731425"
+  },
+  "relics:RingOfTheSnake": {
+    "cache_key": "d2eb2f4c3a86a396b720e096de7091c051fb6242e4285bb92e838656299606cf",
+    "last_processed": "1774726377.8766346"
+  },
+  "relics:RingingTriangle": {
+    "cache_key": "a1336768b92267036c3abe4c2f4c378e13da7d19f4bb8028bfc859da3cc871ea",
+    "last_processed": "1774726377.863773"
+  },
+  "relics:RippleBasin": {
+    "cache_key": "cd6575d25cbdddd47393111d745657553784eead4eaa9b4f540c5fdca3ecaa9e",
+    "last_processed": "1774726377.8904097"
+  },
+  "relics:RoyalPoison": {
+    "cache_key": "671b63e3b7b4705abf7a436f727e8a2afda11158ce70ebcf3194b6aef74788f1",
+    "last_processed": "1774726377.8953147"
+  },
+  "relics:RoyalStamp": {
+    "cache_key": "5e4fdc824997993e0e9aed3371fc6374bef76fc3c2421e1f14d5bc01310c0f52",
+    "last_processed": "1774726377.9031732"
+  },
+  "relics:RuinedHelmet": {
+    "cache_key": "7af862613b85ccff89806c7da6532d8cdadca3e293d36f4ceb9634926826d22f",
+    "last_processed": "1774726377.9073002"
+  },
+  "relics:RunicCapacitor": {
+    "cache_key": "eec10696939e74a191fbeb32e57598f26fd3d22ab45743f1d551742844ec0a3d",
+    "last_processed": "1774726377.9141371"
+  },
+  "relics:RunicPyramid": {
+    "cache_key": "ac78c23f86c2265c3c54a46dcd9a319eac09491cf6d6eacc9de51a20cb80ac8a",
+    "last_processed": "1774726377.915484"
+  },
+  "relics:Sai": {
+    "cache_key": "bb154e1236d3bbe8cd1e87e572ac43a91e7cfd9a219c87b05b40ae2f70fc44a7",
+    "last_processed": "1774726377.923515"
+  },
+  "relics:SandCastle": {
+    "cache_key": "9a8faf0c3bc58fae8d98c19930a4e9d816c62852e18b6a55516c951338a75c96",
+    "last_processed": "1774726377.9295332"
+  },
+  "relics:ScreamingFlagon": {
+    "cache_key": "e77380a4030c7355c481a8c49a1359c047963354a14f6dbcbb4d1eb2a3b74c6f",
+    "last_processed": "1774726377.9331615"
+  },
+  "relics:ScrollBoxes": {
+    "cache_key": "9d4c51d7fd6f98fe85a2f4b093e4e6a9321d66c7acf1aacc9f8f503d59c4d92e",
+    "last_processed": "1774726377.95332"
+  },
+  "relics:SeaGlass": {
+    "cache_key": "6eb09d83965bf44b805085fdb2b4c8fe556f9c17e1916668c38329f179b6caaf",
+    "last_processed": "1774726377.972932"
+  },
+  "relics:SealOfGold": {
+    "cache_key": "763240f885cb1a27594932a97d7ee060e9180f099d9cb51e37994dbf2544e7ae",
+    "last_processed": "1774726377.9816077"
+  },
+  "relics:SelfFormingClay": {
+    "cache_key": "72570d434788e368632cc8b47da13a1a35823a3f165cef45de7d07b4e008bf11",
+    "last_processed": "1774726377.9896846"
+  },
+  "relics:SereTalon": {
+    "cache_key": "2ff7580718e1b7e4e542c613332f1857f26e9bb11905a45b87c1fae4f573a2f8",
+    "last_processed": "1774726377.9991868"
+  },
+  "relics:Shovel": {
+    "cache_key": "873336b49f9eeeb391c333ed5e9a7810d2c85371553acf8a1ffbb1652febf5cb",
+    "last_processed": "1774726378.0008304"
+  },
+  "relics:Shuriken": {
+    "cache_key": "ee55f98c07f843bc6ba6f2e059078ad6c7d6e45e8f64527f93b6924f9eb45a1f",
+    "last_processed": "1774726378.041334"
+  },
+  "relics:SignetRing": {
+    "cache_key": "73df619ac05ff6a584e9d066f7d0877acae19d3dad325621726428f3eb544647",
+    "last_processed": "1774726378.0453455"
+  },
+  "relics:SilverCrucible": {
+    "cache_key": "379d169cc3e2e5abb70c712551220adabd4ac82b828d04eb9fa62ca55865ee70",
+    "last_processed": "1774726378.055154"
+  },
+  "relics:SlingOfCourage": {
+    "cache_key": "543f4561cb2600f3409be17306aa2ef29b98f0e2c18ddc8cfc385a358aafe2dc",
+    "last_processed": "1774726378.0593333"
+  },
+  "relics:SmallCapsule": {
+    "cache_key": "38686371e2bdc6fa4e25e100d5b4f2e734d69e57fe1aa88daaf4d8c246f49b65",
+    "last_processed": "1774726377.769127"
+  },
+  "relics:SneckoEye": {
+    "cache_key": "fe89810c61c9bb093095b3b4a74c393be4e3dff75a77f3ad7a33d4e00d7f4b7a",
+    "last_processed": "1774726377.7839572"
+  },
+  "relics:SneckoSkull": {
+    "cache_key": "8be9d83204f04e5d3b95d2c698bbbb4e1ab3685600d447c107bc230e8cf47339",
+    "last_processed": "1774726377.7890964"
+  },
+  "relics:Sozu": {
+    "cache_key": "efa67c0292be46aa7e58f233fb366f273e263ced3e682dd1b84a665a9e3fb51b",
+    "last_processed": "1774726377.7990348"
+  },
+  "relics:SparklingRouge": {
+    "cache_key": "6cff5fdcd70696b20ebe68462a463e23ddbd26bc746fceb4efb7d2c5abe2eead",
+    "last_processed": "1774726377.806874"
+  },
+  "relics:SpikedGauntlets": {
+    "cache_key": "07a318d73065152b39db0ef70815ee61f4588fb86f24a5e08f4dfa12daea6203",
+    "last_processed": "1774726377.8132353"
+  },
+  "relics:StoneCalendar": {
+    "cache_key": "4bb07aa3cd8458efb340d84c859063c0501e78c087ea4655fd7bb4d17363be5a",
+    "last_processed": "1774726377.8370996"
+  },
+  "relics:StoneCracker": {
+    "cache_key": "2a16d1843d6c68a6268bd07c30c9745edabe28a72eb7e77aee1374d3022b83b2",
+    "last_processed": "1774726377.842048"
+  },
+  "relics:StoneHumidifier": {
+    "cache_key": "375cfa292c766571bcf0283890f11e8e18d7627b92c7fb692585b1ac28924b8c",
+    "last_processed": "1774726377.8470457"
+  },
+  "relics:Storybook": {
+    "cache_key": "5ea18fbdf359d620d33814e11ac48c6c007eb88c1b079571ca8fd6a761f5f175",
+    "last_processed": "1774726377.8503559"
+  },
+  "relics:Strawberry": {
+    "cache_key": "d09e134a936921b6649d6a6cee8d98170c609552146c4705ce96d13f4a2a7c2a",
+    "last_processed": "1774726377.8534384"
+  },
+  "relics:StrikeDummy": {
+    "cache_key": "c808cd42ad34680b1529eeba24d353a123b8bef6f568965b11341626e82d2381",
+    "last_processed": "1774726377.8564816"
+  },
+  "relics:SturdyClamp": {
+    "cache_key": "aa1fe1f946f8e2c8c55609a9e47bdaaa39dc3bff1ef63eeb774bbd70a25228dc",
+    "last_processed": "1774726377.8612466"
+  },
+  "relics:SwordOfJade": {
+    "cache_key": "24de6dc38256864031d38e5e03105c6d84a328a8807774b15f4462577f1a1f25",
+    "last_processed": "1774726377.8650966"
+  },
+  "relics:SwordOfStone": {
+    "cache_key": "6af0945d720dd4856657064ff20e1dc5951b9d0793e10d19e456859678324d6b",
+    "last_processed": "1774726377.8759682"
+  },
+  "relics:SymbioticVirus": {
+    "cache_key": "b3ad0eda6e7a06ee2d72dd288045a876917086b204c90e3078fdd00aa0b63cf9",
+    "last_processed": "1774726377.8808436"
+  },
+  "relics:TanxsWhistle": {
+    "cache_key": "907be9307ba7d53c7f574fd51deb69f2b92dfbc31f594ee82ed8df7f664d330b",
+    "last_processed": "1774726377.885319"
+  },
+  "relics:TeaOfDiscourtesy": {
+    "cache_key": "2207c5c9ed3efd066342123953872ec82c00ae6d3fd907bfd77addd8b369b563",
+    "last_processed": "1774726377.9055808"
+  },
+  "relics:TheAbacus": {
+    "cache_key": "95478dc52a74b5088dbd210a3f6fa95ca00e8fd0736c6e5d9a0043df62ddc421",
+    "last_processed": "1774726377.909859"
+  },
+  "relics:TheBoot": {
+    "cache_key": "9566b17b8ccf41efbec43cd2f984d19e1eac3657f6897dacc05321566b28e7ac",
+    "last_processed": "1774726377.9134436"
+  },
+  "relics:TheCourier": {
+    "cache_key": "8fd138e43a44be4de553da7f7a3c3a11551398399bfb2c0f7c7335513981ee3b",
+    "last_processed": "1774726377.9252312"
+  },
+  "relics:ThrowingAxe": {
+    "cache_key": "ac2173507202220f076fcefc95305201d0392ed3b6eb4995996f42d2d96a6f0e",
+    "last_processed": "1774726377.934086"
+  },
+  "relics:Tingsha": {
+    "cache_key": "d365da046269480070bdf495674c532b2551b5f651f87911d92831194ce76732",
+    "last_processed": "1774726377.9387856"
+  },
+  "relics:TinyMailbox": {
+    "cache_key": "664c0c64c08d4bb7c75483972497f824ddbceef6ee252253481fb7bb6ef21475",
+    "last_processed": "1774726377.9421697"
+  },
+  "relics:ToastyMittens": {
+    "cache_key": "31ed6121c53a10bce199439ab71461ab112688f8cb6a32298040f6e6b77c4480",
+    "last_processed": "1774726377.9542243"
+  },
+  "relics:Toolbox": {
+    "cache_key": "13ea6b4a80505c107451c0dfb1d48e05b0b036817fd0093d2aadf24f7a0ef4a6",
+    "last_processed": "1774726377.961886"
+  },
+  "relics:TouchOfOrobas": {
+    "cache_key": "5d07538d18644ef872e9b2437db37a7f9b881a8522209a0a5b6dcb17eddfc37b",
+    "last_processed": "1774726377.986461"
+  },
+  "relics:ToughBandages": {
+    "cache_key": "a49159ffc09b2c32a23aefb1fcc09f402d1730bb5c319ddfc539b274211ab672",
+    "last_processed": "1774726377.9934385"
+  },
+  "relics:ToxicEgg": {
+    "cache_key": "49c79cd74e063b16b18d15dc23fb070e5018df406cc310fea4701dd48f9769b3",
+    "last_processed": "1774726377.9970083"
+  },
+  "relics:ToyBox": {
+    "cache_key": "81ce5cc22e710cfe7e2c734988b8f163ab27c0f390b6c1520e3eaa6e82e21783",
+    "last_processed": "1774726378.032943"
+  },
+  "relics:TriBoomerang": {
+    "cache_key": "3083dbc7185d89198b1dba24f1a012a4741b5231bf77ab50fc41e648890ca14c",
+    "last_processed": "1774726378.0444255"
+  },
+  "relics:TungstenRod": {
+    "cache_key": "b1138bb6515acb215b4f3bfd46fa762b709c967d11404a51f5bd18b75c4dca22",
+    "last_processed": "1774726378.0473685"
+  },
+  "relics:TuningFork": {
+    "cache_key": "e7e6c8916f3f08bde1b68ebff61b512e1114a895005c4bc1f67d035e76dddf19",
+    "last_processed": "1774726377.8507257"
+  },
+  "relics:TwistedFunnel": {
+    "cache_key": "fca96488138d3b5fc4216174fd1c8518335656fe684f40806f3e016fbf1b96a1",
+    "last_processed": "1774726377.860221"
+  },
+  "relics:UnceasingTop": {
+    "cache_key": "435cf0316743f657c54d23d2b897a71948a4b91971341fccbd70078a76fe770c",
+    "last_processed": "1774726377.8653436"
+  },
+  "relics:UndyingSigil": {
+    "cache_key": "a96c5435d344e6fa822656ebaab6de2c9105ce50f66be419502e685a2193ba36",
+    "last_processed": "1774726377.8690965"
+  },
+  "relics:UnsettlingLamp": {
+    "cache_key": "1a4f594c65edd41f4e914c38e972557e97414e677af097cedb04caafa1f44aa2",
+    "last_processed": "1774726377.8809576"
+  },
+  "relics:Vajra": {
+    "cache_key": "9ea865d35a1469c0c956de0aba0d9efc96834475900d57fcd99287c68f7ac841",
+    "last_processed": "1774726377.8853238"
+  },
+  "relics:Vambrace": {
+    "cache_key": "23a39cc688c98d202569925855fc6b59dca3c21f72afd095f457936fd0e510b0",
+    "last_processed": "1774726377.8940148"
+  },
+  "relics:VelvetChoker": {
+    "cache_key": "27f0e76293e360c4ef6750d4ec3a76bfdd4e4b1b51a3ff130767977bc83f7bf9",
+    "last_processed": "1774726377.9089231"
+  },
+  "relics:VenerableTeaSet": {
+    "cache_key": "ff24f3a335069319cc6dd00b3142abcebdc27e6abdf09aada7ebab0d33b6e571",
+    "last_processed": "1774726377.9148307"
+  },
+  "relics:VeryHotCocoa": {
+    "cache_key": "029d2141e8500a09f29365f25240ac0c52cb4ff4f6f6d4101902ac427dfb27ed",
+    "last_processed": "1774726377.9186215"
+  },
+  "relics:VexingPuzzlebox": {
+    "cache_key": "870c4868c5d5c064287fc3b7609f2eb6311e30a969bbc9f9fbd7ae59b682273f",
+    "last_processed": "1774726377.9216535"
+  },
+  "relics:VitruvianMinion": {
+    "cache_key": "5cd61db55ea703ad303795f110e1daff83ee2bf14dcfec1c8d02381438c10d2d",
+    "last_processed": "1774726377.9266663"
+  },
+  "relics:WarHammer": {
+    "cache_key": "c1b46f034758dfaf99c066e9b454e4919f97962cdfd74661682645e424cb88db",
+    "last_processed": "1774726377.9324794"
+  },
+  "relics:WarPaint": {
+    "cache_key": "db44b9ad53b9b6b8883f4eae9fa98b803e58397c0a692d3f9d6c6aa42a309d23",
+    "last_processed": "1774726377.9421349"
+  },
+  "relics:Whetstone": {
+    "cache_key": "3e5c68fc3c608cad71031d2ceb816b06d8a1917205b986d0826348e6dd7fed14",
+    "last_processed": "1774726377.949182"
+  },
+  "relics:WhisperingEarring": {
+    "cache_key": "da1b33a92c78b979deb2658024d8182f0e34ea158d820779344a7b3e8fdc1e6f",
+    "last_processed": "1774726377.9620864"
+  },
+  "relics:WhiteBeastStatue": {
+    "cache_key": "d4473c8305983af4d41281753b7a09dbc3b11c6dbe0b8f0992dbc36398ecfbe2",
+    "last_processed": "1774726377.9637375"
+  },
+  "relics:WhiteStar": {
+    "cache_key": "363f0d5abd06bb041f72829544d5f3c4fc9026a60766eadc8d3b3e477b847a7a",
+    "last_processed": "1774726377.965803"
+  },
+  "relics:WingCharm": {
+    "cache_key": "d5406b5bb71aa7eeee903917a5f2505d59e9ff9dec1608257e88c45a90135e22",
+    "last_processed": "1774726377.9711397"
+  },
+  "relics:WongoCustomerAppreciationBadge": {
+    "cache_key": "3d70d4db4df49b70d773795a9820793cce5361bbb70906f3815c93de06cd15f0",
+    "last_processed": "1774726377.9750402"
+  },
+  "relics:WongosMysteryTicket": {
+    "cache_key": "42f5e100458bce9df2e4e34de34ac711df3e182fa1b4603e30435da34498e74c",
+    "last_processed": "1774726377.9853961"
+  },
+  "relics:YummyCookie": {
+    "cache_key": "71f590bf0c8524f93f31bfec714161fde5f568dda31808a4d017d7756a4284b3",
+    "last_processed": "1774726377.9975784"
+  },
+  "cards:Accuracy": {
+    "cache_key": "2906bb30ace84535a84b037cd8da8cd91783e45d6bf70192a6e2d08d6f1d71a1",
+    "last_processed": "1774726378.6485727"
+  },
+  "cards:Acrobatics": {
+    "cache_key": "3db5320ea6fd9c742e9cdfeec160d4a572c0fddb480ac42f055751906a08e67a",
+    "last_processed": "1774726378.6551244"
+  },
+  "cards:AdaptiveStrike": {
+    "cache_key": "611785619857b932392f532025ccdf1ea3a5b0a8a39c0b09031ebaaf1036a69b",
+    "last_processed": "1774726378.67368"
+  },
+  "cards:Adrenaline": {
+    "cache_key": "e1bf6199958848161225925fa4aa74d561ef0b1f926ad5c8cbee5f5dc757284c",
+    "last_processed": "1774726378.680042"
+  },
+  "cards:Afterimage": {
+    "cache_key": "ed5275bfe580f2e38f6c14bd024dcd355e710b15269bef78357c1bb18de59284",
+    "last_processed": "1774726378.6842768"
+  },
+  "cards:Afterlife": {
+    "cache_key": "272de9a75663e9e8318fb3c373d8700b14b0f5cde98bfe602e5ceabc223f32fd",
+    "last_processed": "1774726378.689125"
+  },
+  "cards:Aggression": {
+    "cache_key": "694167db673007abb751bc300ac479448597f6c582e7d1ff9dc2c9ed1a91d49c",
+    "last_processed": "1774726378.6915953"
+  },
+  "cards:Alchemize": {
+    "cache_key": "286e293df0ed6c9e8e774962a1f0afdfaa8b163b6e7f4ebd82162285ab1d64b0",
+    "last_processed": "1774726378.6955767"
+  },
+  "cards:Alignment": {
+    "cache_key": "c53f5e4811a6542b8dc315a3da316dae477f0b0b923e03676d458f862ae7adf1",
+    "last_processed": "1774726378.4975023"
+  },
+  "cards:AllForOne": {
+    "cache_key": "e500f352ff158782aa4dc315737da8070adc48ff740debc052fb940940777e3a",
+    "last_processed": "1774726378.5093226"
   }
 }

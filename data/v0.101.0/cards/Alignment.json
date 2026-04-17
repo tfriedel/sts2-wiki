@@ -15,6 +15,9 @@
     }
   ],
   "description": "Gain 2 Energy.",
+  "upgraded_description": "Gain 3 Energy.",
   "x_cost": false,
-  "star_cost": 3
+  "star_cost": 3,
+  "referenced_powers": [],
+  "notes": "Uses Star resource instead of standard energy cost."
 }

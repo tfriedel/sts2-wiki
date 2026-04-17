@@ -18,5 +18,5 @@
   "upgraded_description": "Deal 14 damage.\nPut ALL 0-cost cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
   "x_cost": false,
   "referenced_powers": [],
-  "notes": "Only moves Attack, Skill, and Power type cards from the discard pile (excluding X-cost cards)."
+  "notes": "Only 0-cost Attack, Skill, and Power type cards from the discard pile are put into hand. X-cost cards are excluded."
 }

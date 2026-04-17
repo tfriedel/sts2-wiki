@@ -4,6 +4,5 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "At the start of your turn, put a random Attack from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold] and [gold]Upgrade[/gold] it for the rest of combat.",
-  "smart_description": "At the start of your turn, put [blue]1[/blue] random Attack from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold] and [gold]Upgrade[/gold] it for the rest of combat.",
-  "notes": "Counter type: effect scales with stack count. At 2+ stacks, multiple Attacks are drawn and upgraded each turn."
+  "smart_description": "At the start of your turn, put [blue]{Amount}[/blue] random {Amount:plural:Attack|Attacks} from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold] and [gold]Upgrade[/gold] {Amount:plural:it|them} for the rest of combat."
 }

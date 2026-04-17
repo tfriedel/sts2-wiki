@@ -9,6 +9,7 @@
   "keywords": [],
   "vars": [],
   "description": "At the start of your turn, put a random Attack from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold] and [gold]Upgrade[/gold] it.",
+  "x_cost": false,
   "referenced_powers": [
     {
       "class_name": "AggressionPower",

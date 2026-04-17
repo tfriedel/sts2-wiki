@@ -14,5 +14,6 @@
       "upgraded_value": 9
     }
   ],
-  "description": "[gold]Summon[/gold] 6."
+  "description": "[gold]Summon[/gold] 6.",
+  "x_cost": false
 }

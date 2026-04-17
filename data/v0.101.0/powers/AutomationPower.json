@@ -4,6 +4,5 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "Every [blue]10[/blue] cards you draw, gain [gold]Energy[/gold].",
-  "smart_description": "Every [blue]10[/blue] cards you draw, gain {Amount:energyIcons()}.",
-  "notes": "Smart description uses {Amount:energyIcons()} format which is resolved at runtime. Trigger counter resets after gaining Energy."
+  "smart_description": "Every [blue]10[/blue] cards you draw, gain [Amount] energy."
 }

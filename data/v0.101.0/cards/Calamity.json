@@ -10,6 +10,7 @@
   "vars": [],
   "description": "Whenever you play an Attack, add a random Attack into your [gold]Hand[/gold].",
   "upgraded_cost": 2,
+  "x_cost": false,
   "referenced_powers": [
     {
       "class_name": "CalamityPower",

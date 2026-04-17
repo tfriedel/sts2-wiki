@@ -149,9 +149,41 @@ _COLOR_TAGS = {
 }
 
 
-def rich_text_to_html(text: str) -> str:
+# Map of inline icon tokens (from raw text OR bracket form) to (alt_text, image_file)
+_ICON_IMAGES: dict[str, tuple[str, str]] = {
+    "singleStarIcon": ("Star", "star_icon.png"),
+    "starIcon": ("Star", "star_icon.png"),
+    "goldIcon": ("Gold", "gold_icon.png"),
+    "cardIcon": ("Card", "card_icon.png"),
+    "potionIcon": ("Potion", "potion_icon.png"),
+    "chestIcon": ("Chest", "chest_icon.png"),
+    "ironcladEnergyIcon": ("Energy", "ironclad_energy_icon.png"),
+    "silentEnergyIcon": ("Energy", "silent_energy_icon.png"),
+    "defectEnergyIcon": ("Energy", "defect_energy_icon.png"),
+    "regentEnergyIcon": ("Energy", "regent_energy_icon.png"),
+    "necrobinderEnergyIcon": ("Energy", "necrobinder_energy_icon.png"),
+    "colorlessEnergyIcon": ("Energy", "colorless_energy_icon.png"),
+    "watcherEnergyIcon": ("Energy", "watcher_energy_icon.png"),
+}
+
+
+def _render_icon_html(name: str, base_url: str = "/sts2-wiki/") -> str:
+    alt, img = _ICON_IMAGES[name]
+    return (
+        f'<img src="{base_url}images/sprite_fonts/{img}" alt="{alt}" '
+        f'class="inline-icon" style="height:1em;vertical-align:-0.15em;display:inline" />'
+    )
+
+
+def rich_text_to_html(text: str, base_url: str = "/sts2-wiki/") -> str:
     """Convert game rich text tags to HTML spans."""
     html = text
+    # Replace {iconName} placeholders with <img> tags
+    for name in _ICON_IMAGES:
+        html = html.replace("{" + name + "}", _render_icon_html(name, base_url))
+    # Also handle [star] legacy bracket form
+    html = html.replace("[star]", _render_icon_html("singleStarIcon", base_url))
+    html = html.replace("[energy]", _render_icon_html("ironcladEnergyIcon", base_url))
     for tag, css_class in _COLOR_TAGS.items():
         html = re.sub(
             rf"\[{tag}\](.*?)\[/{tag}\]",
@@ -165,8 +197,11 @@ def rich_text_to_html(text: str) -> str:
 
 def strip_rich_text(text: str) -> str:
     """Strip all game rich text tags for plain text."""
-    # Convert icon tags to readable text before stripping
-    result = text.replace("[star]", "\u2605")
+    result = text
+    # Convert icon placeholders to readable text
+    for name, (alt, _) in _ICON_IMAGES.items():
+        result = result.replace("{" + name + "}", alt)
+    result = result.replace("[star]", "\u2605")
     result = result.replace("[energy]", "Energy")
     return re.sub(r"\[/?[^\]]*\]", "", result)
 

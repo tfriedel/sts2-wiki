@@ -15,5 +15,6 @@
     }
   ],
   "description": "Deal 18 damage.\nAdd a free copy of this card into your [gold]Discard Pile[/gold].",
+  "x_cost": false,
   "notes": "Creates a free copy of itself in the Discard Pile when played."
 }

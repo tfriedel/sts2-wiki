@@ -55,22 +55,43 @@ def generate_card_markdown(card: dict) -> str:
     vars_list = card.get("vars", [])
     lines.append(f"vars: {json.dumps(vars_list)}")
 
-    # Descriptions
-    lines.append(f"description_plain: {escape_yaml(card.get('description_plain', ''))}")
-    lines.append(f"description_html: {escape_yaml(card.get('description_html', ''))}")
+    # Descriptions: LLM's `description` (if present) takes precedence over old
+    # `description_plain`/`description_html` from regex extraction.
+    from scripts.common import rich_text_to_html, strip_rich_text
 
-    if card.get("upgraded_description_plain"):
-        lines.append(
-            f"upgraded_description_plain: {escape_yaml(card['upgraded_description_plain'])}"
-        )
-    if card.get("upgraded_description_html"):
-        lines.append(f"upgraded_description_html: {escape_yaml(card['upgraded_description_html'])}")
+    if card.get("description"):
+        desc_plain = strip_rich_text(card["description"])
+        desc_html = rich_text_to_html(card["description"])
+    else:
+        desc_plain = card.get("description_plain", "")
+        desc_html = card.get("description_html", "")
+    lines.append(f"description_plain: {escape_yaml(desc_plain)}")
+    lines.append(f"description_html: {escape_yaml(desc_html)}")
+
+    if card.get("upgraded_description"):
+        up_plain = strip_rich_text(card["upgraded_description"])
+        up_html = rich_text_to_html(card["upgraded_description"])
+    else:
+        up_plain = card.get("upgraded_description_plain")
+        up_html = card.get("upgraded_description_html")
+    if up_plain:
+        lines.append(f"upgraded_description_plain: {escape_yaml(up_plain)}")
+    if up_html:
+        lines.append(f"upgraded_description_html: {escape_yaml(up_html)}")
     if card.get("upgraded_cost") is not None:
         lines.append(f"upgraded_cost: {card['upgraded_cost']}")
 
-    # Referenced powers
+    # Referenced powers (re-slugify; filter out anything that isn't a real Power)
     powers = card.get("referenced_powers", [])
-    lines.append(f"referenced_powers: {json.dumps(powers)}")
+    filtered_powers = []
+    for p in powers:
+        title = p.get("title", "")
+        if title:
+            p["slug"] = slugify(title)
+        # Only keep entries whose class_name ends with "Power" (actual PowerModel)
+        if p.get("class_name", "").endswith("Power"):
+            filtered_powers.append(p)
+    lines.append(f"referenced_powers: {json.dumps(filtered_powers)}")
 
     # Epoch unlock
     if card.get("unlocked_by"):

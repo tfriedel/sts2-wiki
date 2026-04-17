@@ -10,6 +10,7 @@ import io
 import json
 import logging
 import os
+import re
 import struct
 from pathlib import Path
 
@@ -231,6 +232,38 @@ def main() -> None:
         print(f"  Total for {atlas_name}: {atlas_total} sprites")
         total += atlas_total
         total += count
+
+    # Extract sprite_font icons (star_icon, energy icons, gold_icon, etc.)
+    # Each .png.import in images/packed/sprite_fonts/ points at a .ctex in .godot/imported/
+    sprite_font_dir = os.path.join(output_dir, "sprite_fonts")
+    Path(sprite_font_dir).mkdir(parents=True, exist_ok=True)
+    sf_count = 0
+    for pck_file_path in pck_index:
+        if not pck_file_path.startswith("images/packed/sprite_fonts/"):
+            continue
+        if not pck_file_path.endswith(".png.import"):
+            continue
+        import_data = read_pck_file(pck_file_path)
+        if not import_data:
+            continue
+        import_text = import_data.decode("utf-8", errors="replace")
+        ctex_match = re.search(r'path="res://([^"]+\.ctex)"', import_text)
+        if not ctex_match:
+            continue
+        ctex_path = ctex_match.group(1)
+        ctex_data = read_pck_file(ctex_path)
+        if not ctex_data:
+            continue
+        img = decode_ctex(ctex_data)
+        if not img:
+            continue
+        # Output file name from original .png.import path
+        name = os.path.basename(pck_file_path).removesuffix(".import")
+        img.save(os.path.join(sprite_font_dir, name), "PNG")
+        sf_count += 1
+    if sf_count:
+        print(f"  Extracted {sf_count} sprite font icons")
+        total += sf_count
 
     # Also extract individual card portrait images if available
     card_portrait_dir = os.path.join(output_dir, "card_portraits")
