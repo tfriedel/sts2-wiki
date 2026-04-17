@@ -4,6 +4,5 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "[gold]Shivs[/gold] deal additional damage.",
-  "smart_description": "[gold]Shivs[/gold] deal additional damage per counter level.",
-  "notes": "This power is a counter that increases damage dealt by Shivs. Each counter stack adds a fixed amount of damage to Shiv attacks. The exact damage bonus per counter level is determined by the power configuration."
+  "smart_description": "[gold]Shivs[/gold] deal [blue]bonus[/blue] additional damage equal to this power's current stack count."
 }
