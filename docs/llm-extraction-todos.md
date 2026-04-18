@@ -68,5 +68,7 @@
 - [x] Optimize: skip per-entity site rebuild (--skip-build flag, ~15x faster)
 - [x] Add justfile targets for LLM extraction
 - [x] Update the sts2-new-patch skill to include LLM extraction steps
-- [ ] Clean up: remove old regex extraction scripts once all types migrated
+- [~] Clean up: remove old regex extraction scripts once all types migrated
+  - [x] extract_events.py (removed; events fully migrated)
+  - [ ] extract_cards.py, extract_relics.py, extract_powers.py, extract_potions.py, extract_encounters.py, extract_enchantments.py, extract_monsters.py (consider if still needed)
 - [x] Validate all per-entity data against content.config.ts schemas (`just check-content` runs `astro sync`)
