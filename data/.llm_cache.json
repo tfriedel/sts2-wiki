@@ -4818,5 +4818,13 @@
   "v0.98.2:monsters:TerrorEel": {
     "cache_key": "473e0376178c518c201f8d274855850c40523964350c320caf67cfc069552795",
     "last_processed": "1773566830.8192677"
+  },
+  "v0.98.2:monsters:TheForgotten": {
+    "cache_key": "653dc1390717ab877d0cbf3611e0f9078c26036ea50904212c2cd4bcb4a00886",
+    "last_processed": "1773566830.8279727"
+  },
+  "v0.101.0:events:DeprecatedEvent": {
+    "cache_key": "9114f99afbbab6401d52fe410d47d890557bafcbda4ecbf4aec6823ae67b7043",
+    "last_processed": "1774726378.3112206"
   }
 }

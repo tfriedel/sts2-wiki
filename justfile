@@ -94,16 +94,14 @@ extract-relics:
 extract-epochs:
     uv run python -m scripts.extract_epochs decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
-extract-events:
-    uv run python -m scripts.extract_events decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
-
 extract-characters:
     uv run python -m scripts.extract_characters decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
 extract-enchantments:
     uv run python -m scripts.extract_enchantments decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
-extract: extract-powers extract-cards extract-monsters extract-encounters extract-potions extract-relics extract-ancients extract-events extract-enchantments extract-characters extract-epochs
+# Note: events are extracted by llm-extract-events (per-entity JSON in data/{version}/events/).
+extract: extract-powers extract-cards extract-monsters extract-encounters extract-potions extract-relics extract-ancients extract-enchantments extract-characters extract-epochs
 
 # --- LLM-based extraction ---
 # These replace the regex-based extractors above for the migrated entity types.
