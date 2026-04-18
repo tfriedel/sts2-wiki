@@ -107,15 +107,15 @@
     },
     {
       "id": "ABOUT_TO_BLOW_MOVE",
-      "title": "About To Blow",
+      "title": "About to Blow",
       "intents": [
         {
           "type": "stun"
         }
       ],
       "effects": [
-        "Stun self",
-        "Prepare explosion"
+        "Store accumulated Steam Eruption as explosion damage",
+        "Remove all Steam Eruption Power"
       ]
     },
     {
@@ -127,7 +127,7 @@
         }
       ],
       "effects": [
-        "Deal damage equal to accumulated Steam Eruption",
+        "Deal damage equal to stored Steam Eruption amount",
         "Kill self"
       ]
     }
