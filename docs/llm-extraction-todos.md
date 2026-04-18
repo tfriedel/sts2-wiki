@@ -9,9 +9,11 @@
 - [x] Build orchestrator (scripts/llm_extract.py)
 - [x] Write event extraction prompt
 - [x] Process all EventModel (regular) events: v0.101.0 (58/58), v0.100.0 (59/59), v0.99.1 (59/59), v0.98.2 (59/59) — 235/235 total ✓
-- [ ] Note: AncientEventModel (9 per version) handled separately via extract-ancients script
 - [x] Remove old extract_events.py regex script (migrated to per-entity JSON + LLM extraction)
-- [ ] Remove _EVENT_ENRICHMENTS dict from generate_events.py (needed for legacy enrichments during transition)
+
+Notes:
+- AncientEventModel subclasses (9 per version) are handled separately via the extract-ancients script, not the LLM events pipeline.
+- _EVENT_ENRICHMENTS in generate_events.py stays for now: it supplies hand-written descriptions/options/notes for events whose data is defined in code rather than localization (e.g. FakeMerchant), which the LLM extractor cannot yet recover from source alone. Revisit once the LLM prompt is extended to read C# constructor bodies.
 
 ## Monsters
 - [x] Write monster extraction prompt (scripts/prompts/extract_monster.md)
