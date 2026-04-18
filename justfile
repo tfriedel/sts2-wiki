@@ -14,7 +14,7 @@ default: check build
 
 # --- Sanity checks ---
 
-check: check-format check-types check-links check-images
+check: check-format check-types check-content check-links check-images
 
 check-format:
     uv run ruff check scripts/
@@ -22,6 +22,13 @@ check-format:
 
 check-types:
     uv run mypy scripts/
+
+# Validates generated content/*.md frontmatter against site/src/content.config.ts
+# zod schemas. This is the end-to-end validation that the per-entity JSON in
+# data/{version}/ produces valid Astro content after the generate step.
+# Requires content to have been generated first (run `just generate-from-data`).
+check-content:
+    cd site && npx --no-install astro sync
 
 check-links:
     uv run python -m scripts.check_links site/dist
@@ -97,6 +104,40 @@ extract-enchantments:
     uv run python -m scripts.extract_enchantments decompiled/{{version}} extracted/{{version}}/localization/eng data/{{version}}
 
 extract: extract-powers extract-cards extract-monsters extract-encounters extract-potions extract-relics extract-ancients extract-events extract-enchantments extract-characters extract-epochs
+
+# --- LLM-based extraction ---
+# These replace the regex-based extractors above for the migrated entity types.
+# Use --skip-build for batch mode (~15x faster); the per-entity generate step
+# is not needed when running the full pipeline because `just generate` rebuilds
+# all pages from the committed per-entity JSON.
+
+llm_concurrency := env("STS2_LLM_CONCURRENCY", "8")
+
+llm-extract-events:
+    uv run python -m scripts.llm_extract --type events --version {{version}} --concurrency {{llm_concurrency}} --skip-build
+
+llm-extract-monsters:
+    uv run python -m scripts.llm_extract --type monsters --version {{version}} --concurrency {{llm_concurrency}} --skip-build
+
+llm-extract-enchantments:
+    uv run python -m scripts.llm_extract --type enchantments --version {{version}} --concurrency {{llm_concurrency}} --skip-build
+
+llm-extract-potions:
+    uv run python -m scripts.llm_extract --type potions --version {{version}} --concurrency {{llm_concurrency}} --skip-build
+
+llm-extract-cards:
+    uv run python -m scripts.llm_extract --type cards --version {{version}} --concurrency {{llm_concurrency}} --skip-build
+
+llm-extract-powers:
+    uv run python -m scripts.llm_extract --type powers --version {{version}} --concurrency {{llm_concurrency}} --skip-build
+
+llm-extract-relics:
+    uv run python -m scripts.llm_extract --type relics --version {{version}} --concurrency {{llm_concurrency}} --skip-build
+
+llm-extract-encounters:
+    uv run python -m scripts.llm_extract --type encounters --version {{version}} --concurrency {{llm_concurrency}} --skip-build
+
+llm-extract: llm-extract-events llm-extract-monsters llm-extract-enchantments llm-extract-potions llm-extract-cards llm-extract-powers llm-extract-relics llm-extract-encounters
 
 # --- Site generation ---
 

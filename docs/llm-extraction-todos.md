@@ -65,7 +65,7 @@
 
 ## Infrastructure
 - [x] Optimize: skip per-entity site rebuild (--skip-build flag, ~15x faster)
-- [ ] Add justfile targets for LLM extraction
-- [ ] Update the sts2-new-patch skill to include LLM extraction steps
+- [x] Add justfile targets for LLM extraction
+- [x] Update the sts2-new-patch skill to include LLM extraction steps
 - [ ] Clean up: remove old regex extraction scripts once all types migrated
-- [ ] Validate all per-entity data against content.config.ts schemas
+- [x] Validate all per-entity data against content.config.ts schemas (`just check-content` runs `astro sync`)
