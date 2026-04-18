@@ -10,11 +10,19 @@
     {
       "title": "Abstain",
       "description": "Heal [green]10[/green] HP."
+    },
+    {
+      "title": "Linger",
+      "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
+    },
+    {
+      "title": "Exit Baths",
+      "description": ""
     }
   ],
   "acts": ["Underdocks"],
   "conditions": [],
-  "notes": "Choosing [gold]Immerse[/gold] enters a looping phase where you can repeatedly [gold]Linger[/gold] in the baths or [gold]Exit[/gold]. Each linger gains [green]2 Max HP[/green] but deals escalating [red]damage[/red] starting at 3, then 4, 5, etc. (unblockable and unpowered). The event tracks how many times you've lingered (up to 9) and displays corresponding atmospheric descriptions. When the next linger would deal lethal damage, the event displays a special warning but still allows you to proceed. You can exit the baths safely at any time after immersing.",
+  "notes": "Choosing [gold]Immerse[/gold] initiates a looping phase where you can repeatedly [gold]Linger[/gold] or safely [gold]Exit Baths[/gold]. Each immersion and linger grants [green]2 Max HP[/green] but also inflicts [red]damage[/red] (unblockable, unpowered) that increases each time: the net cost after the Max HP gain is [red]1 HP[/red] on first immersion, then [red]2 HP, 3 HP, 4 HP[/red], etc. on each subsequent linger. The linger count is capped at 9, with increasingly surreal descriptions as you lose track of time. When the next linger would reduce your current HP to 0 or below, the event shows a [sine][red]death warning[/red][/sine] page but still offers the choice to linger (and die) or exit safely. [gold]Abstain[/gold] is the safer initial choice, granting [green]10 HP[/green] healing immediately without entering the baths.",
   "card_refs": [],
   "relic_refs": []
 }
