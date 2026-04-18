@@ -4,17 +4,17 @@
   "description": "While crossing a rickety wooden bridge, there is a sudden [blue][jitter]torrent of rain[/jitter][/blue]. [purple][sine]Massive gusts of wind[/sine][/purple] buffet you, threatening to end your journey.",
   "options": [
     {
-      "title": "Overcome",
-      "description": "[red][a random card from your deck][/red] is removed from your [gold]Deck[/gold]."
-    },
-    {
       "title": "Hold On",
       "description": "Lose [red]3 HP[/red] (increases by 1 with each Hold On). The card in the above option is randomized."
+    },
+    {
+      "title": "Overcome",
+      "description": "[red]a card from your deck[/red] is removed from your [gold]Deck[/gold]."
     }
   ],
-  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
-  "conditions": ["Floor 7+", "All players must have at least one removable card"],
-  "notes": "Each time you choose [gold]Hold On[/gold], you take [red]unblockable[/red] damage (ignores powers) and the event advances to a new page. The HP cost starts at [red]3[/red] and increases by 1 with each hold ([red]3[/red], [red]4[/red], [red]5[/red], ...). After each hold, a new card is selected for the [gold]Overcome[/gold] option — but no card is actually removed until you choose [gold]Overcome[/gold].\n\nThe [gold]Overcome[/gold] card selection: on the initial page, a random non-Basic removable card is chosen. After each [gold]Hold On[/gold], a card of a [gold]different type[/gold] than the previously shown card is selected. If no such card exists, it falls back to any removable card.\n\nThe event has 7 unique pages of escalating distress text. After 7 or more holds, the page loops indefinitely — the developer apologizes for running out of content.",
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": ["Floor 7+", "All players must have at least one removable card in deck"],
+  "notes": "Each time you choose [gold]Hold On[/gold], you take [red]unblockable[/red] damage that ignores powers. The HP cost starts at [red]3[/red] and increases by 1 with each consecutive hold. The event progresses through 7 distinct pages (INITIAL → HOLD_ON_0 through HOLD_ON_5 → HOLD_ON_LOOP), each with increasingly dramatic flavor text reflecting your desperation.\n\nOn the [gold]Overcome[/gold] option, a random card from your deck is selected to be removed. The card is freshly randomized after each [gold]Hold On[/gold]. Initially, a non-Basic removable card is chosen; after that, the game tries to select a card of a [gold]different type[/gold] than the previously offered card. If no such card exists, it falls back to any removable card. The card is only actually removed from your deck when you select [gold]Overcome[/gold]; before that, it's just the card being offered.\n\nAfter 7 or more successful holds, the event enters an infinite loop page. The developer message on this page explains: \"The developer would like to inform you that there is no additional text for players who have held on this long. We apologize for the inconvenience.\" You can continue holding on indefinitely in this loop (the cost continues increasing: 10, 11, 12, ... HP), or escape by choosing [gold]Overcome[/gold] at any time.",
   "card_refs": [],
   "relic_refs": []
 }

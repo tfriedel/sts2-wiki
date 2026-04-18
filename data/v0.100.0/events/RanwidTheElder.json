@@ -1,7 +1,7 @@
 {
   "class_name": "RanwidTheElder",
   "title": "Ranwid the Elder",
-  "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]\"We meet once more... it's me, Ranwid!\"[/sine]\n\nYou do not know this man.",
+  "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]\u201cWe meet once more... it's me, Ranwid!\u201d[/sine]\n\nYou do not know this man.",
   "options": [
     {
       "title": "Give [your chosen Potion]",

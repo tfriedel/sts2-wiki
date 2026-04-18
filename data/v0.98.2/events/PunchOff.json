@@ -1,0 +1,26 @@
+{
+  "class_name": "PunchOff",
+  "title": "Punch Off",
+  "description": "Two [gold]Punch Constructs[/gold] are duking it out and you see some treasure in between them...\n\nShould you try to nab it?",
+  "options": [
+    {
+      "title": "Nab",
+      "description": "Add [red]Injury[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
+    },
+    {
+      "title": "I Can Take Them",
+      "description": "Fight them for [gold]Greater Rewards[/gold]."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": ["Floor 6 or later"],
+  "notes": "Two Punch Constructs continuously fight each other in the background throughout the event, with a looping animation of attacks and hit reactions. Choosing [gold]Nab[/gold] interrupts the fight and awards [red]Injury[/red] curse plus a random [gold]Relic[/gold]. The event then shows: 'You successfully nab the relic!...or so you thought. A right-hook [jitter][red]clocks you in the face[/red][/jitter].' Choosing [gold]I Can Take Them[/gold] stops the background animation, shows 'The [gold]Constructs[/gold] turn to you menacingly! You put your dukes up,' and enters a combat encounter against the 2 Punch Constructs. Combat victory awards a random [gold]Relic[/gold] and a random [gold]Potion[/gold]. The event generates a random gold amount (91-98) as part of its mechanics. Potions cannot be removed while the Nab sequence is occurring.",
+  "card_refs": [
+    {
+      "class_name": "Injury",
+      "title": "Injury",
+      "slug": "injury"
+    }
+  ],
+  "relic_refs": []
+}

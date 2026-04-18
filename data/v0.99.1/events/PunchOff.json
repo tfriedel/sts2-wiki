@@ -13,8 +13,8 @@
     }
   ],
   "acts": ["Underdocks"],
-  "conditions": ["Floor 6 or higher"],
-  "notes": "This is a two-stage encounter. Choosing [gold]Nab[/gold] adds an [red]Injury[/red] curse to your deck and immediately offers a random relic, but you take a hit from one of the constructs before succeeding. Choosing [gold]I Can Take Them[/gold] leads to combat against two [gold]Punch Constructs[/gold]. Victory grants [gold]Greater Rewards[/gold]: a random relic and a random potion. During the initial event, the two constructs continuously punch each other for visual atmosphere.",
+  "conditions": ["Floor 6 or later"],
+  "notes": "[gold]Event Flow:[/gold] Two [gold]Punch Constructs[/gold] continuously attack each other in combat-like animations. The [gold]Nab[/gold] option attempts to grab treasure between them but backfires—you receive screen shake and a sound effect representing the counter-punch, then gain a random [gold]Relic[/gold] but add [red]Injury[/red] curse to your deck. The [gold]I Can Take Them[/gold] option enters full combat against both constructs. Victory yields greater rewards: a random [gold]Relic[/gold] and a random [gold]Potion[/gold]. [red]CRITICAL:[/red] After the combat encounter concludes (regardless of outcome), the run ends immediately—this is the final event of the Underdocks act.",
   "card_refs": [
     {
       "class_name": "Injury",

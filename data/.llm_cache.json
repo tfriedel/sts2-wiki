@@ -3966,5 +3966,21 @@
   "v0.99.1:events:GraveOfTheForgotten": {
     "cache_key": "c78b6f7ec18c46c9159649b37e69df2adc0e95285fc90020d53eb8f8c91a5c26",
     "last_processed": "1773852295.1664684"
+  },
+  "v0.100.0:events:DollRoom": {
+    "cache_key": "89643d30f78e3cbd5b2797674da54885dd23c4b34f2bb9327101782790295d81",
+    "last_processed": "1774043038.5894556"
+  },
+  "v0.100.0:events:DrowningBeacon": {
+    "cache_key": "5126c590ea86ddb55299f974a0f445ccaf519877a6b333458bab6db73871d64b",
+    "last_processed": "1774043038.6188653"
+  },
+  "v0.100.0:events:AbyssalBaths": {
+    "cache_key": "af405afef456c9c71229fa5fddffff9683f7f422c3f70ab805ec0e6a6d501da1",
+    "last_processed": "1774043038.2856913"
+  },
+  "v0.100.0:events:FakeMerchant": {
+    "cache_key": "c59f4459ad990bb10ef2c124a8e9a5b2f646f06c914b9d4d82a1146da04c2ace",
+    "last_processed": "1774043038.2713692"
   }
 }

@@ -4,48 +4,48 @@
   "description": "You lumber into a shack with a bright but crooked sign that reads:\n[aqua]\"ENDLESS FEAST - PAY WHAT YOU HUNGER!\"[/aqua]\n\nInside, a [orange]willowy multi-armed chef[/orange] is deftly preparing [green]bites of food[/green] and placing them onto a [sine]winding chitinous belt[/sine].\n\nOne of the chef's arms point to a sign:\n[blue]40[/blue] [gold]Gold[/gold] each",
   "options": [
     {
-      "title": "Observe the Chef",
-      "description": "[gold]Upgrade[/gold] a random card in your [gold]Deck[/gold]. [Ends the event]"
-    },
-    {
       "title": "Grab Caviar off the Belt",
-      "description": "Pay [red]40[/red] [gold]Gold[/gold]. Gain [green]4[/green] Max HP. Continue feasting!"
+      "description": "Pay [red]40[/red] [gold]Gold[/gold]. Gain [green]4[/green] Max HP. Continue feasting!",
+      "requires": "At least 40 Gold"
     },
     {
       "title": "Grab Clam Roll off the Belt",
       "description": "Pay [red]40[/red] [gold]Gold[/gold]. Heal [green]10[/green] HP. Continue feasting!",
-      "requires": "Only appears if not at full HP"
+      "requires": "At least 40 Gold; only available if damaged"
     },
     {
       "title": "Grab Fried Eel off the Belt",
-      "description": "Pay [red]40[/red] [gold]Gold[/gold]. Add a random Colorless Card to your [gold]Deck[/gold]. Continue feasting!"
+      "description": "Pay [red]40[/red] [gold]Gold[/gold]. Add a random Colorless Card to your [gold]Deck[/gold]. Continue feasting!",
+      "requires": "At least 40 Gold"
     },
     {
       "title": "Grab Golden Fysh off the Belt",
       "description": "[green]LUCKY WINNER![/green] Gain [blue]75[/blue] [gold]Gold[/gold].",
-      "requires": "Only appears after first grab (weight: 1, very rare)"
+      "requires": "After first grab; free grab"
     },
     {
       "title": "Grab Jelly Liver off the Belt",
-      "description": "Pay [red]40[/red] [gold]Gold[/gold]. [gold]Transform[/gold] a card. Continue feasting!"
+      "description": "Pay [red]40[/red] [gold]Gold[/gold]. [gold]Transform[/gold] a card. Continue feasting!",
+      "requires": "At least 40 Gold"
     },
     {
       "title": "Grab Seapunk Salad off the Belt",
-      "description": "Pay [red]40[/red] [gold]Gold[/gold]. Add [gold]Feeding Frenzy[/gold] to your [gold]Deck[/gold]. Continue feasting!"
+      "description": "Pay [red]40[/red] [gold]Gold[/gold]. Add [gold]Feeding Frenzy[/gold] to your [gold]Deck[/gold]. Continue feasting!",
+      "requires": "At least 40 Gold"
     },
     {
       "title": "Grab Spicy Snappy off the Belt",
-      "description": "Pay [red]40[/red] [gold]Gold[/gold]. [gold]Upgrade[/gold] a random card. Continue feasting!"
+      "description": "Pay [red]40[/red] [gold]Gold[/gold]. [gold]Upgrade[/gold] a random card. Continue feasting!",
+      "requires": "At least 40 Gold"
     },
     {
       "title": "Grab Suspicious Condiment off the Belt",
       "description": "Pay [red]40[/red] [gold]Gold[/gold]. Procure a random [gold]Potion[/gold]. Continue feasting!",
-      "requires": "Only appears if has open potion slots"
+      "requires": "At least 40 Gold; only available if potion slot open"
     },
     {
-      "title": "Broke",
-      "description": "You could eat more but you are out of [gold]Gold[/gold].",
-      "requires": "Appears when you cannot afford to grab another dish"
+      "title": "Observe the Chef",
+      "description": "[gold]Upgrade[/gold] a random card in your [gold]Deck[/gold]."
     },
     {
       "title": "Leave",
@@ -54,7 +54,7 @@
   ],
   "acts": ["Underdocks"],
   "conditions": ["All players must have at least 120 Gold"],
-  "notes": "This is a looping event where you repeatedly choose dishes from a conveyor belt. After each grab, a new dish is rolled and displayed for your next choice. The event continues until you run out of Gold or choose to Leave.\n\n[gold]Event Flow:[/gold]\n1. [blue]Initial choice[/blue]: Pick a random dish or Observe the Chef (ends event immediately)\n2. [blue]After each grab[/blue]: A new dish is rolled, and you can grab it or Leave\n3. [blue]When broke[/blue]: The grab option becomes locked and shows \"Broke\" — you must Leave\n\n[gold]Dish Costs and Rewards:[/gold]\nAll dishes cost [red]40 Gold[/red] to grab except Golden Fysh (free):\n- [blue]Caviar[/blue]: Gain 4 Max HP\n- [blue]Clam Roll[/blue]: Heal 10 HP\n- [blue]Fried Eel[/blue]: Add random Colorless card\n- [blue]Golden Fysh[/blue]: Gain 75 Gold (no cost, very rare)\n- [blue]Jelly Liver[/blue]: Transform a card\n- [blue]Seapunk Salad[/blue]: Add [gold]Feeding Frenzy[/gold] card\n- [blue]Spicy Snappy[/blue]: Upgrade a random card\n- [blue]Suspicious Condiment[/blue]: Get a random potion\n\n[gold]Dish Selection Mechanics:[/gold]\nEach new dish is selected as follows:\n- [blue]Every 5th grab[/blue] → always Seapunk Salad\n- [blue]Otherwise[/blue] → weighted random from available dishes (excluding the one you just grabbed)\n- Caviar and Clam Roll have weight 6 (most common)\n- Spicy Snappy, Jelly Liver, Fried Eel, Suspicious Condiment have weight 3\n- Golden Fysh has weight 1 (rarest)\n- Clam Roll is excluded if already at full HP\n- Suspicious Condiment is excluded if no potion slots available\n- Golden Fysh only appears after the first grab\n\n[gold]Key Notes:[/gold]\n- Golden Fysh is the only way to gain Gold in this event — crucial for multiple grabs\n- Seapunk Salad cannot be chosen randomly; it's guaranteed every 5 grabs\n- The same dish never rolls twice in a row\n- Observe the Chef is only available on the initial choice and immediately ends the event",
+  "notes": "This is a looping event where you grab items from a magical conveyor belt. Each grab costs [gold]40 Gold[/gold] (except Golden Fysh, which grants [blue]75 Gold[/blue] for free). The event continues until you choose to leave or run out of gold.\n\n[blue]Dish Selection Mechanics[/blue]: Each time a new dish is rolled:\n- Every 5th grab: always [gold]Seapunk Salad[/gold]\n- Otherwise: weighted random from available dishes (same dish cannot be selected twice in a row)\n\n[blue]Availability and Weights[/blue]: Dishes have these weights for random selection:\n- [gold]Caviar[/gold] (weight 6): Always available\n- [gold]Spicy Snappy[/gold] (weight 3): Always available\n- [gold]Jelly Liver[/gold] (weight 3): Always available\n- [gold]Fried Eel[/gold] (weight 3): Always available\n- [gold]Suspicious Condiment[/gold] (weight 3): Only if you have an open Potion slot\n- [gold]Clam Roll[/gold] (weight 6): Only if your current HP is less than Max HP\n- [gold]Golden Fysh[/gold] (weight 1): Only after your first grab (no cost, instant gain)\n- [gold]Seapunk Salad[/gold]: Guaranteed on every 5th grab\n\n[blue]Key Mechanics[/blue]: Golden Fysh is the only way to gain Gold in this event, making it crucial if you want multiple grabs. When you run out of Gold, the grab option becomes unavailable and you must Leave the event. Observe the Chef is only available on the initial choice and immediately ends the event.",
   "card_refs": [
     {
       "class_name": "FeedingFrenzy",

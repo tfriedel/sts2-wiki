@@ -10,11 +10,19 @@
     {
       "title": "Abstain",
       "description": "Heal [green]10[/green] HP."
+    },
+    {
+      "title": "Linger",
+      "description": "Gain [green]2[/green] Max HP. Take [red]escalating damage[/red] (starts at [red]4[/red], increases by [red]1[/red] per linger)."
+    },
+    {
+      "title": "Exit Baths",
+      "description": "Leave the baths."
     }
   ],
   "acts": ["Underdocks"],
   "conditions": [],
-  "notes": "[gold]Multi-stage Event:[/gold] This event features two distinct paths: immerse yourself in the dangerous pools or abstain.\n\n[gold]Immerse Path:[/gold] Choosing to immerse triggers an action that [green]gains 2 Max HP[/green] and [red]deals damage[/red] (starting at 3). You then unlock repeated [gold]Linger[/gold] and [gold]Exit[/gold] options. Each linger repeats the same Max HP gain and damage, but the damage increases by 1 each time (sequence: 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 damage). The page description escalates through 9 stages reflecting your deteriorating state. If a linger would kill you, a death warning appears instead of the next stage description, allowing one final choice to linger dangerously or exit safely.\n\n[gold]Abstain Path:[/gold] Immediately exit and heal 10 HP without entering the baths.\n\n[gold]Mechanics:[/gold] All damage from this event is unblockable and unpowered. Max HP gain and damage occur simultaneously as part of each immerse/linger action, before the next choice is presented.",
+  "notes": "[gold]Multi-stage event with escalating stakes.[/gold] The event has two initial choices: Immerse or Abstain.\n\n[gold]Abstain:[/gold] Immediately heal [green]10[/green] HP and end the event with flavor text about declining the waters.\n\n[gold]Immerse & Linger Loop:[/gold] Choosing Immerse (or Linger after immersion) executes the same action: gain [green]2[/green] Max HP and take [red]unblockable, unpowered[/red] damage. The damage sequence is: [red]3[/red] (first immerse) → [red]4[/red] (first linger) → [red]5[/red] → [red]6[/red] → [red]7[/red] → [red]8[/red] → [red]9[/red] → [red]10[/red] → [red]11[/red] → [red]12[/red] (capped after 9 lingerings). Each subsequent choice shows the next Linger and Exit options with updated damage values.\n\n[gold]Page Progression:[/gold] After immersing, you see the IMMERSE page. Each time you linger, the game increments a counter (LINGER1 through LINGER9) with corresponding flavor text showing escalating heat, psychological effects, and eventually transcendence. These counters cap at 9 stages.\n\n[gold]Death Warning:[/gold] If the next linger would deal fatal damage, a special DEATH_WARNING page appears with red sine-wave text: \"[sine][red]If you bathe any longer you will die.[/red][/sine]\" You can still choose to Linger (instant death) or Exit safely.\n\n[gold]Exit:[/gold] Available after the initial immerse and at any linger stage. Ends the event immediately.",
   "card_refs": [],
   "relic_refs": []
 }

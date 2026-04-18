@@ -15,7 +15,7 @@
   ],
   "acts": ["Hive"],
   "conditions": [],
-  "notes": "The SEARCH option grants a variable amount of Gold: the base amount is 60, but a random variance of ±15 is applied when the event is generated, resulting in a total gain of 45-75 Gold. The CLAIM option can be locked if the player's Max HP is too low, preventing them from capturing the Wisp.",
+  "notes": "The SEARCH option grants a variable amount of [blue]Gold[/blue]: the base amount is 60, but a random variance of ±15 is applied when the event is generated, resulting in a total gain of [blue]45-75 Gold[/blue]. The CLAIM option can be locked if the player's Max HP is too low, preventing them from capturing the Wisp.",
   "card_refs": [
     {
       "class_name": "Decay",

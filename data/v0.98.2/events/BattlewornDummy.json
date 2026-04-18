@@ -5,20 +5,20 @@
   "options": [
     {
       "title": "Setting 1",
-      "description": "Fight a [blue]{Setting1Hp}[/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+      "description": "Face the weakest training dummy in combat (3 turns). If victorious, obtain [blue]1[/blue] random [gold]Potion[/gold]."
     },
     {
       "title": "Setting 2",
-      "description": "Fight a [blue]{Setting2Hp}[/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
+      "description": "Face a medium difficulty training dummy in combat (3 turns). If victorious, [gold]Upgrade[/gold] [blue]2[/blue] random upgradable cards from your deck."
     },
     {
       "title": "Setting 3",
-      "description": "Fight a [blue]{Setting3Hp}[/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
+      "description": "Face the strongest training dummy in combat (3 turns). If victorious, obtain a random [gold]Relic[/gold]."
     }
   ],
   "acts": ["Glory"],
   "conditions": [],
-  "notes": "This event presents a timed training challenge with three difficulty settings. You have [blue]3 turns[/blue] to defeat your chosen dummy.\n\n[gold]Setting 1[/gold]: The weakest dummy. On victory, you receive a random potion.\n\n[gold]Setting 2[/gold]: Medium difficulty. On victory, [gold]2[/gold] random upgradable cards from your deck are upgraded.\n\n[gold]Setting 3[/gold]: The strongest dummy. On victory, you obtain a random relic from the next relic pull.\n\nIf you fail to defeat the dummy within [blue]3 turns[/blue], the event ends in defeat, but you may continue your run without additional penalty.",
+  "notes": "The Battleworn Dummy presents a timed training challenge featuring three difficulty settings with increasing dummy HP values. Each choice starts a combat encounter where you have [blue]3 turns[/blue] to defeat your selected dummy.\n\n**Rewards by Setting:**\n- [gold]Setting 1[/gold]: Receive [blue]1[/blue] random [gold]Potion[/gold]\n- [gold]Setting 2[/gold]: [gold]Upgrade[/gold] [blue]2[/blue] random cards from your deck (only upgradable cards are selected from your full deck)\n- [gold]Setting 3[/gold]: Obtain a random [gold]Relic[/gold] from the normal relic pool\n\nIf you defeat the dummy within the 3-turn limit, you win the corresponding reward. If time runs out, the event ends in [red]humiliation[/red] with no reward, though you may continue your run without additional penalties. The three difficulty opponents are BattleFriendV1, BattleFriendV2, and BattleFriendV3 respectively.",
   "card_refs": [],
   "relic_refs": []
 }

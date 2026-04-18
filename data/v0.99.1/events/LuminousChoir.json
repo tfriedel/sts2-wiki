@@ -9,14 +9,14 @@
     },
     {
       "title": "Offer Tribute",
-      "description": "Pay [red]99-149[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold].",
-      "requires": "[blue]99-149[/blue] [gold]Gold[/gold]"
+      "description": "Pay [red]100-149[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold].",
+      "requires": "Requires [blue]100-149[/blue] [gold]Gold[/gold]"
     }
   ],
   "acts": ["Overgrowth"],
   "conditions": [
-    "Each player must have at least 99-149 Gold",
-    "Each player must have available relics"
+    "At least 149 Gold",
+    "At least one relic available in relic pool"
   ],
   "card_refs": [
     {
@@ -25,5 +25,6 @@
       "slug": "spore-mind"
     }
   ],
-  "notes": "The gold cost varies randomly between 99-149 Gold per event instance (base 149 minus 0-50). The 'Offer Tribute' option is only available if you have at least this amount of Gold."
+  "relic_refs": [],
+  "notes": "The gold cost for [gold]Offer Tribute[/gold] varies: it starts at a base of 149 Gold but is reduced by a random amount of 0-49 at event initialization, resulting in a final cost of 100-149 Gold. If you don't have enough Gold, the [gold]Offer Tribute[/gold] option appears locked. When selecting [gold]Reach into the Flesh[/gold], you must choose exactly 2 cards from your deck to remove; the [red]Spore Mind[/red] curse is then added."
 }

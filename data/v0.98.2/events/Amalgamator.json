@@ -14,8 +14,8 @@
   ],
   "acts": ["Hive"],
   "conditions": [
-    "All players must have at least 2 basic Strike cards in their deck",
-    "All players must have at least 2 basic Defend cards in their deck"
+    "All players must have at least 2 removable basic Strike cards in their deck",
+    "All players must have at least 2 removable basic Defend cards in their deck"
   ],
   "notes": "When you choose either option, the game prompts you to select which 2 Strike or Defend cards to remove. The chosen cards are removed from your deck and replaced with a single upgraded Ultimate card. The event then displays completion text showing the Amalgamator striking its Bone Anvil as you gain your new technique.",
   "card_refs": [

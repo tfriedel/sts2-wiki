@@ -14,7 +14,7 @@
   ],
   "acts": ["Hive"],
   "conditions": [],
-  "notes": "This event offers a straightforward choice between two event-exclusive attack cards. [gold]Exterminate[/gold] is a multi-hit attack dealing damage to all enemies, while [gold]Squash[/gold] is a single-target attack that also applies [gold]Vulnerable[/gold]. Both cards are immediately added to your deck upon selection.",
+  "notes": "This is a pure reward event with no drawbacks. Choosing either option immediately adds the corresponding card to your deck and displays a technique demonstration scene. The warrior nods silently and walks away after teaching you the technique.",
   "card_refs": [
     {
       "class_name": "Exterminate",

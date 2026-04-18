@@ -5,15 +5,15 @@
   "options": [
     {
       "title": "Setting 1",
-      "description": "Fight a [blue]{Setting1Hp}[/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+      "description": "Fight a [blue][varies by difficulty][/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
     },
     {
       "title": "Setting 2",
-      "description": "Fight a [blue]{Setting2Hp}[/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
+      "description": "Fight a [blue][varies by difficulty][/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
     },
     {
       "title": "Setting 3",
-      "description": "Fight a [blue]{Setting3Hp}[/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
+      "description": "Fight a [blue][varies by difficulty][/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
     }
   ],
   "acts": ["Glory"],
