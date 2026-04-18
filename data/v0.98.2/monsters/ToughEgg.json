@@ -1,0 +1,41 @@
+{
+  "class_name": "ToughEgg",
+  "title": "Tough Egg",
+  "min_hp": 15,
+  "max_hp": 19,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "HATCH_MOVE",
+      "title": "Hatch",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Hatch into Hatchling",
+        "Remove HatchPower",
+        "Reset HP to 20-23"
+      ]
+    },
+    {
+      "id": "NIBBLE_MOVE",
+      "title": "Nibble",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 5
+        }
+      ],
+      "effects": [
+        "Deal 5 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Uses Hatch on first turn, then repeatedly uses Nibble",
+  "powers_on_spawn": [
+    "HatchPower"
+  ],
+  "notes": "Two-phase monster: starts as an Egg with HatchPower applied. On the first turn, uses Hatch move to transform into Hatchling form, which triggers an animation, removes HatchPower, and resets the creature's max and current HP to 20-23 (ascension value based on ToughEnemies difficulty). All non-Minion powers are removed during hatching. After transformation, continuously uses Nibble attack (5 damage per hit)."
+}

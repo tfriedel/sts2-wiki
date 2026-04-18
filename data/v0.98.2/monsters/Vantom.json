@@ -1,0 +1,71 @@
+{
+  "class_name": "Vantom",
+  "title": "Vantom",
+  "min_hp": 183,
+  "max_hp": 183,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "INK_BLOT_MOVE",
+      "title": "Ink Blot",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        }
+      ],
+      "effects": [
+        "Deal 8 damage"
+      ]
+    },
+    {
+      "id": "INKY_LANCE_MOVE",
+      "title": "Inky Lance",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 7,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "DISMEMBER_MOVE",
+      "title": "Dismember",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 30
+        },
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Deal 30 damage",
+        "Add 3 Wounds to your discard pile"
+      ]
+    },
+    {
+      "id": "PREPARE_MOVE",
+      "title": "Prepare",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through Ink Blot → Inky Lance → Dismember → Prepare, then repeats",
+  "powers_on_spawn": [
+    "Slippery 9"
+  ],
+  "notes": "Vantom features progressive charging mechanics throughout the battle. Each move triggers charge-up animations and music parameter updates that progress through different animation states. The monster cycles through a consistent pattern of damage, multi-hit attacks, wound generation, and self-buffing."
+}

@@ -1,0 +1,44 @@
+{
+  "class_name": "TheLost",
+  "title": "The Lost",
+  "min_hp": 99,
+  "max_hp": 99,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "DEBILITATING_SMOG",
+      "title": "Debilitating Smog",
+      "intents": [
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply -2 Strength to enemies",
+        "Apply 2 Strength to self"
+      ]
+    },
+    {
+      "id": "EYE_LASERS",
+      "title": "Eye Lasers",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 5 damage",
+        "2 hits"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles between Debilitating Smog and Eye Lasers. Starts with Debilitating Smog.",
+  "powers_on_spawn": [
+    "Possess Strength"
+  ]
+}

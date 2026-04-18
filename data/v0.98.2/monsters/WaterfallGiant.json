@@ -1,0 +1,138 @@
+{
+  "class_name": "WaterfallGiant",
+  "title": "Waterfall Giant",
+  "min_hp": 260,
+  "max_hp": 260,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "PRESSURIZE_MOVE",
+      "title": "Pressurize",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 20 Steam Eruption"
+      ]
+    },
+    {
+      "id": "STOMP_MOVE",
+      "title": "Stomp",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        },
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 16 damage",
+        "Apply 1 Weak",
+        "Apply 3 Steam Eruption"
+      ]
+    },
+    {
+      "id": "RAM_MOVE",
+      "title": "Ram",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 11 damage",
+        "Apply 3 Steam Eruption"
+      ]
+    },
+    {
+      "id": "SIPHON_MOVE",
+      "title": "Siphon",
+      "intents": [
+        {
+          "type": "heal"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Heal 15 HP per player",
+        "Apply 3 Steam Eruption"
+      ]
+    },
+    {
+      "id": "PRESSURE_GUN_MOVE",
+      "title": "Pressure Gun",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 23
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 23 damage (increases by 5 each use)",
+        "Apply 3 Steam Eruption"
+      ]
+    },
+    {
+      "id": "PRESSURE_UP_MOVE",
+      "title": "Pressure Up",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 14 damage",
+        "Apply 3 Steam Eruption"
+      ]
+    },
+    {
+      "id": "ABOUT_TO_BLOW_MOVE",
+      "title": "About To Blow",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": [
+        "Stun self",
+        "Prepare explosion"
+      ]
+    },
+    {
+      "id": "EXPLODE_MOVE",
+      "title": "Explode",
+      "intents": [
+        {
+          "type": "death_blow"
+        }
+      ],
+      "effects": [
+        "Deal damage equal to accumulated Steam Eruption",
+        "Kill self"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Pressurize, then cycles: Stomp → Ram → Siphon → Pressure Gun → Pressure Up → (repeat cycle). When Steam Eruption accumulation triggers the 'About to Blow' state, the monster becomes invulnerable and prepares to explode with damage equal to the total Steam Eruption accumulated.",
+  "powers_on_spawn": [],
+  "notes": "Waterfall Giant uses a pressure buildup mechanic. During normal combat, it applies 3 Steam Eruption power per move (except Pressurize which applies 20 on the first turn). Pressure Gun's damage starts at 23 and increases by 5 each time it's used. Siphon heals the monster for 15 HP per player in combat. When Steam Eruption reaches a threshold (determined by TriggerAboutToBlowState), the monster becomes immune to damage, reveals its 'About to Blow' state, and transitions to the Explode move which deals damage equal to the total Steam Eruption accumulated and kills the monster. This is a multi-phase boss with a climactic explosion mechanic."
+}

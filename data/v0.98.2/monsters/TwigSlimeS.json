@@ -1,0 +1,24 @@
+{
+  "class_name": "TwigSlimeS",
+  "title": "Twig Slime (S)",
+  "min_hp": 8,
+  "max_hp": 12,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BUTT_MOVE",
+      "title": "Tackle",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 5
+        }
+      ],
+      "effects": [
+        "Deal 5 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Repeats Tackle every turn.",
+  "powers_on_spawn": []
+}

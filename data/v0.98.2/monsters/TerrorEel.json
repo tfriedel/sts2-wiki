@@ -29,7 +29,7 @@
           "type": "buff"
         }
       ],
-      "effects": ["Deal 4 damage, 3 hits", "Apply 7 Vigor"]
+      "effects": ["Deal 4 damage (3 hits)", "Apply 7 Vigor"]
     },
     {
       "id": "STUN_MOVE",
@@ -39,7 +39,7 @@
           "type": "stun"
         }
       ],
-      "effects": ["No action taken"]
+      "effects": []
     },
     {
       "id": "TERROR_MOVE",
@@ -49,10 +49,10 @@
           "type": "debuff"
         }
       ],
-      "effects": ["Apply 99 Vulnerable to all enemies"]
+      "effects": ["Apply 99 Vulnerable"]
     }
   ],
-  "move_pattern": "Primarily cycles: Crash → Thrash → Crash. Can also use Stun → Terror → Crash.",
-  "powers_on_spawn": ["75 Shriek"],
-  "notes": "Stun move has a StunIntent but performs no action during combat—the move method returns immediately. Terror applies extreme Vulnerable (99) to all targets, significantly weakening player defenses. Shriek power increases all damage taken."
+  "move_pattern": "Alternates between Crash and Thrash",
+  "powers_on_spawn": ["Shriek"],
+  "notes": "Stun move does nothing (empty implementation). Terror applies extreme Vulnerable (99) to all targets."
 }
