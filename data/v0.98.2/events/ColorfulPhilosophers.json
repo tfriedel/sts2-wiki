@@ -25,10 +25,8 @@
     }
   ],
   "acts": ["Hive"],
-  "conditions": [
-    "Requires at least one unlocked character card pool other than your current character"
-  ],
-  "notes": "This event offers cards from your other characters' pools, excluding your current character's pool. The event randomly selects [blue]3[/blue] options from the [blue]5[/blue] available colors. Each selection offers one [blue]Common[/blue], one [blue]Uncommon[/blue], and one [blue]Rare[/blue] card from the selected character's pool.",
+  "conditions": [],
+  "notes": "This event offers cards from other characters' card pools, excluding your current character's pool. To see valid options, you must have unlocked at least one character pool other than your current character. The event randomly selects [blue]3[/blue] options from the [blue]5[/blue] available card pools (Necrobinder, Ironclad, Regent, Silent, Defect). Each choice grants one [blue]common[/blue]-rarity, one [blue]uncommon[/blue]-rarity, and one [blue]rare[/blue]-rarity card from the selected pool, with no rarity modification applied.",
   "card_refs": [],
   "relic_refs": []
 }
