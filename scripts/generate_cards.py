@@ -132,6 +132,13 @@ def main() -> None:
     with open(cards_path) as f:
         cards = json.load(f)
 
+    # Fields the LLM extractor cannot reliably determine from a single card
+    # source file, because they depend on how other files reference this card
+    # (e.g. which CardPool it belongs to). For these, the aggregate value
+    # produced by extract_cards.py is authoritative and must not be clobbered
+    # by per-entity data.
+    _AGGREGATE_AUTHORITATIVE = {"character"}
+
     # Load per-entity JSON overrides
     per_entity_dir = os.path.join(data_dir, "cards")
     if os.path.isdir(per_entity_dir):
@@ -142,6 +149,8 @@ def main() -> None:
                     entity_data = json.load(f)
                 cname = entity_data.get("class_name", fname.removesuffix(".json"))
                 if cname in cards_by_class:
+                    for field in _AGGREGATE_AUTHORITATIVE:
+                        entity_data.pop(field, None)
                     cards_by_class[cname].update(entity_data)
                 else:
                     cards_by_class[cname] = entity_data
