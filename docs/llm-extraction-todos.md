@@ -9,7 +9,7 @@
 - [x] Build orchestrator (scripts/llm_extract.py)
 - [x] Write event extraction prompt
 - [x] Process all 58 events for v0.101.0
-- [ ] Process events for v0.100.0, v0.99.1, v0.98.2
+- [~] Process events for v0.100.0, v0.99.1, v0.98.2
 - [ ] Remove old extract_events.py regex script (once all versions migrated)
 - [ ] Remove _EVENT_ENRICHMENTS dict from generate_events.py (once LLM data covers all)
 
