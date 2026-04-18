@@ -5,16 +5,17 @@
   "options": [
     {
       "title": "Big Mushroom",
-      "description": "You bite into the [orange]Big Mushroom[/orange]. Its flesh is firm, starchy, and satisfying. The more you eat, the hungrier you become, as if the mushroom is feeding on your hunger.\n\n[sine]So yummy... you enter a [red]food coma[/red].[/sine]\nThis gluttony will cost you."
+      "description": "You bite into the [orange]Big Mushroom[/orange]. Its flesh is firm, starchy, and satisfying. The more you eat, the hungrier you become, as if the mushroom is feeding on your hunger.\n\n[sine]So yummy... you enter a [red]food coma[/red].[/sine]\nThis gluttony will cost you.\n\n[gold]Obtain:[/gold] BigMushroom relic"
     },
     {
       "title": "Fragrant Mushroom",
-      "description": "You sample the [green]Fragrant One[/green], a small woody mushroom with a delicate scent of shellfish...\n\nA burst of energy spurs you to run, jump, and [gold]rigorously train[/gold]!\nThen, a sudden [red][jitter]stabbing pain[/jitter][/red] hits you as the living fungi struggles within you during its brief final moments."
+      "description": "You sample the [green]Fragrant One[/green], a small woody mushroom with a delicate scent of shellfish...\n\nA burst of energy spurs you to run, jump, and [gold]rigorously train[/gold]!\nThen, a sudden [red][jitter]stabbing pain[/jitter][/red] hits you as the living fungi struggles within you during its brief final moments.\n\n[gold]Obtain:[/gold] FragrantMushroom relic",
+      "requires": "Costs [red]15[/red] HP"
     }
   ],
   "acts": ["Glory"],
   "conditions": [],
-  "notes": "Selecting the Fragrant Mushroom costs 15 HP.",
+  "notes": "Both options reward a relic: the [orange]Big Mushroom[/orange] relic is free, while the [green]Fragrant Mushroom[/green] relic costs [red]15[/red] HP. The event outcomes are primarily determined by the effects of the obtained relics rather than explicit event mechanics.",
   "card_refs": [],
   "relic_refs": [
     {

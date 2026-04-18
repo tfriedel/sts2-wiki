@@ -14,7 +14,7 @@
   ],
   "acts": ["Underdocks"],
   "conditions": [],
-  "notes": "Both gold amounts vary randomly. [gold]SmallChestGold[/gold] is 60 ± 8 gold (range 52–68). [gold]LargeChestGold[/gold] is 333 ± 30 gold (range 303–363). Choosing the Second Chest adds the [red]Greed[/red] curse to your deck and triggers character-specific dialogue.",
+  "notes": "Both gold amounts vary randomly. [gold]SmallChestGold[/gold] is 60 ± 7.5 gold (range 52–67). [gold]LargeChestGold[/gold] is 333 ± 30 gold (range 303–363). Choosing the Second Chest adds the [red]Greed[/red] curse to your deck and triggers character-specific dialogue.",
   "card_refs": [
     {
       "class_name": "Greed",

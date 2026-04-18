@@ -1,0 +1,28 @@
+{
+  "class_name": "GasBomb",
+  "title": "Gas Bomb",
+  "min_hp": 12,
+  "max_hp": 12,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "EXPLODE_MOVE",
+      "title": "Explode",
+      "intents": [
+        {
+          "type": "death_blow",
+          "damage": 9
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Kill self"
+      ]
+    }
+  ],
+  "move_pattern": "Explodes in a single attack that destroys itself.",
+  "powers_on_spawn": [
+    "Minion"
+  ],
+  "notes": "A fragile minion that has only one action: explode and deal damage to all enemies before dying. Does not fade after death."
+}

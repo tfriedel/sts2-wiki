@@ -15,7 +15,7 @@
   ],
   "acts": ["Glory"],
   "conditions": [],
-  "notes": "Choosing [purple]Confront with Truth[/purple] adds a [red]Decay[/red] curse to the player's deck and requires selecting one card that [gold]Exhausts[/gold] to [purple]Enchant[/purple] with [purple]Soul's Power[/purple]. The option is locked if no eligible cards are available. Choosing [gold]Accept the Forgotten Soul[/gold] obtains the [gold]Forgotten Soul[/gold] relic instead.",
+  "notes": "**Confront option mechanics**: Adds [red]Decay[/red] to your deck and allows you to enchant one card that [gold]Exhausts[/gold] with [purple]Soul's Power[/purple]. The enchantment removes the [gold]Exhaust[/gold] keyword from the selected card. This option is locked if you have no cards in your deck that can be enchanted by [purple]Soul's Power[/purple] (i.e., no cards with [gold]Exhaust[/gold] that haven't been enchanted).\n\n**Forgotten Soul relic**: An event relic that deals [blue]1[/blue] damage to a random enemy each time you [gold]Exhaust[/gold] a card. This effect triggers whenever any card exhausts, whether from active play or other sources.\n\n**Decay curse**: An [gold]Unplayable[/gold] curse that deals [blue]2[/blue] damage at the end of each turn if it remains in your hand. The damage is affected by player powers and vulnerabilities.",
   "card_refs": [
     {
       "class_name": "Decay",
@@ -28,6 +28,13 @@
       "class_name": "ForgottenSoul",
       "title": "Forgotten Soul",
       "slug": "forgotten-soul"
+    }
+  ],
+  "enchantment_refs": [
+    {
+      "class_name": "SoulsPower",
+      "title": "Soul's Power",
+      "slug": "souls-power"
     }
   ]
 }

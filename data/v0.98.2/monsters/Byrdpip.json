@@ -1,0 +1,18 @@
+{
+  "class_name": "Byrdpip",
+  "title": "Byrdpip",
+  "min_hp": 9999,
+  "max_hp": 9999,
+  "is_companion": true,
+  "moves": [
+    {
+      "id": "NOTHING_MOVE",
+      "title": "Nothing",
+      "intents": [],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Nothing (does not act)",
+  "powers_on_spawn": [],
+  "notes": "Byrdpip is a companion monster that does not take any actions in combat. With 9999 HP and a hidden health bar, it serves as a persistent passive companion that fights alongside the player without direct combat participation."
+}

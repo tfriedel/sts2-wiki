@@ -1,0 +1,45 @@
+{
+  "class_name": "CorpseSlug",
+  "title": "Corpse Slug",
+  "min_hp": 27,
+  "max_hp": 29,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WHIP_SLAP_MOVE",
+      "title": "Whip Slap",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 3,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 3 damage", "2 hits"]
+    },
+    {
+      "id": "GLOMP_MOVE",
+      "title": "Glomp",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        }
+      ],
+      "effects": ["Deal 9 damage"]
+    },
+    {
+      "id": "GOOP_MOVE",
+      "title": "Goop",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Apply 2 Frail"]
+    }
+  ],
+  "move_pattern": "Cycles: Whip Slap → Glomp → Goop → (repeat). Starting move is randomized. When multiple Corpse Slugs appear together, each starts at a different point in the cycle.",
+  "powers_on_spawn": ["Ravenous (5)"],
+  "notes": "When multiple Corpse Slugs appear in the same encounter, they are staggered so each one starts its cycle on a different move (Whip Slap, Glomp, or Goop), preventing them from all attacking simultaneously."
+}

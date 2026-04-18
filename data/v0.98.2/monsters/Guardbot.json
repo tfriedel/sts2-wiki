@@ -1,0 +1,24 @@
+{
+  "class_name": "Guardbot",
+  "title": "Guardbot",
+  "min_hp": 22,
+  "max_hp": 26,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "GUARD_MOVE",
+      "title": "Guard",
+      "intents": [
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Gain 15 Block to allied Fabricators"
+      ]
+    }
+  ],
+  "move_pattern": "Repeats Guard",
+  "powers_on_spawn": [],
+  "notes": "Guardbot is a support monster that protects allied Fabricators in encounters. It repeatedly uses Guard to boost the block of its Fabricator allies."
+}

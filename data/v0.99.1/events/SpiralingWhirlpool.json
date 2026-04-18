@@ -9,7 +9,7 @@
     },
     {
       "title": "Drink",
-      "description": "Heal [green][33% of max HP][/green] HP."
+      "description": "Heal [green]33% of max HP[/green] HP."
     }
   ],
   "acts": ["Underdocks"],

@@ -5,18 +5,18 @@
   "options": [
     {
       "title": "Drink and Lift",
-      "description": "Lose [red][a random potion][/red]. Gain [blue]10[/blue] Max HP.",
-      "requires": "Requires a Potion."
+      "description": "Lose [red][a random potion from your inventory][/red]. Gain [blue]10[/blue] Max HP.",
+      "requires": "At least one potion in inventory"
     },
     {
       "title": "Push",
       "description": "Lose [red]6[/red] HP. [gold]Enchant[/gold] an Attack with [purple]Vigorous[/purple] [blue]8[/blue].",
-      "requires": "Requires an Attack."
+      "requires": "At least one Attack card in deck"
     }
   ],
-  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
-  "conditions": ["Act 2 only", "At least one Potion in deck"],
-  "notes": "Despite the flavor text suggesting no effect, both options have real mechanical benefits. The Push option's damage is unblockable and unpowered. Potions cannot be removed from the inventory while this event is active.",
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": ["Act 2 only", "All players must have at least one potion"],
+  "notes": "Both options present flavor text that suggests nothing actually happens—a reference to a famous scene from Earthbound. The LIFT option consumes a randomly selected potion from your inventory and increases your Max HP. The PUSH option deals damage and allows you to enchant one Attack card with [purple]Vigorous[/purple], which increases damage and grants [green]Block[/green] on attacks.",
   "card_refs": [],
   "relic_refs": []
 }

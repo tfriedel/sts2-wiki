@@ -1,0 +1,24 @@
+{
+  "class_name": "TinkerTime",
+  "title": "Tinker Time",
+  "description": "Navigating through an [red][sine]endless sea of corpses[/sine][/red], you find a [orange]mad scientist[/orange] scavenging for various scraps.\n\n\"Yes. Hi, hello! You look like a capable fighter... I need a tester for my next [green]atrocity device[/green]! How about it?\"",
+  "options": [
+    {
+      "title": "Accept",
+      "description": "Create a custom card to add to your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": [
+    "Glory"
+  ],
+  "conditions": [],
+  "notes": "This is a [gold]multi-stage branching event[/gold]. After accepting, you proceed through two choice stages:\n\n[gold]Stage 1 - Choose Card Type:[/gold] Select from 2 randomly chosen card types:\n• [blue]Weapon[/blue] (Attack card)\n• [blue]Protector[/blue] (Skill card)\n• [blue]Gadget[/blue] (Power card)\n\n[gold]Stage 2 - Choose Rider Effect:[/gold] Select from 2 randomly chosen effects based on your card type:\n\n[orange]Attack riders:[/orange]\n• [blue]Sapping:[/blue] Apply 2 Weak and 2 Vulnerable\n• [blue]Violence:[/blue] Hits 2 additional times\n• [blue]Choking:[/blue] Whenever you play a card this turn, the enemy loses 6 HP\n\n[orange]Skill riders:[/orange]\n• [blue]Energized:[/blue] Gain 2 Energy\n• [blue]Wisdom:[/blue] Draw 3 cards\n• [blue]Chaos:[/blue] Add a random card into your Hand. It costs 0 Energy this turn\n\n[orange]Power riders:[/orange]\n• [blue]Expertise:[/blue] Gain 2 Strength and 2 Dexterity\n• [blue]Curious:[/blue] Powers cost 1 Energy less\n• [blue]Improvement:[/blue] At the end of combat, Upgrade a random card\n\n[gold]Outcome:[/gold] Your completed custom Mad Science card is added to your deck.",
+  "card_refs": [
+    {
+      "class_name": "MadScience",
+      "title": "Mad Science",
+      "slug": "mad-science"
+    }
+  ],
+  "relic_refs": []
+}

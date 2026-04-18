@@ -1,0 +1,73 @@
+{
+  "class_name": "LagavulinMatriarch",
+  "title": "Lagavulin Matriarch",
+  "min_hp": 233,
+  "max_hp": 233,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SLEEP_MOVE",
+      "title": "Sleep",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": ["No action"]
+    },
+    {
+      "id": "SLASH_MOVE",
+      "title": "Slash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 21
+        }
+      ],
+      "effects": ["Deal 21 damage"]
+    },
+    {
+      "id": "SLASH2_MOVE",
+      "title": "Slash 2",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        },
+        {
+          "type": "block",
+          "amount": 14
+        }
+      ],
+      "effects": ["Deal 14 damage", "Gain 14 Block"]
+    },
+    {
+      "id": "DISEMBOWEL_MOVE",
+      "title": "Disembowel",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 10,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 10 damage", "2 hits"]
+    },
+    {
+      "id": "SOUL_SIPHON_MOVE",
+      "title": "Soul Siphon",
+      "intents": [
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Reduce enemy Strength by 2", "Reduce enemy Dexterity by 2", "Gain 2 Strength"]
+    }
+  ],
+  "move_pattern": "Starts asleep with Asleep power. While asleep, repeats Sleep (does nothing). Once the Asleep power expires, cycles through Slash → Disembowel → Slash 2 → Soul Siphon repeatedly.",
+  "powers_on_spawn": ["Plating 12", "Asleep 3"],
+  "notes": "Lagavulin Matriarch begins combat in a sleep state with Asleep 3 power. During this time, it takes no actions. Once the Asleep power expires or is removed, it awakens and enters a combat cycle. The monster has 12 Plating at the start. At 50% HP or below, its eyes open, indicating it is fully awake. The monster gains Strength each time it uses Soul Siphon, making it increasingly dangerous as the fight progresses."
+}

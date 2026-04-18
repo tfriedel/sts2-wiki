@@ -1,0 +1,39 @@
+{
+  "class_name": "BowlbugRock",
+  "title": "Bowlbug (Rock)",
+  "min_hp": 46,
+  "max_hp": 49,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "HEADBUTT_MOVE",
+      "title": "Headbutt",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": [
+        "Deal 16 damage"
+      ]
+    },
+    {
+      "id": "DIZZY_MOVE",
+      "title": "Dizzy",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": [
+        "Stun the player"
+      ]
+    }
+  ],
+  "move_pattern": "Repeats Headbutt. When stunned (off balance), performs Dizzy on the next turn to recover and stun the player.",
+  "powers_on_spawn": [
+    "Imbalanced"
+  ],
+  "notes": "The monster's behavior is tied to its 'off balance' state. While off balance (typically from stuns), it will perform Dizzy instead of Headbutt. Dizzy both applies a stun to the player and allows the monster to recover from its off balance status."
+}

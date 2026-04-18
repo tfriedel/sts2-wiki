@@ -1,0 +1,81 @@
+{
+  "class_name": "DecimillipedeSegment",
+  "title": "Decimillipede",
+  "min_hp": 48,
+  "max_hp": 56,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WRITHE_MOVE",
+      "title": "Writhe",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 6 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "BULK_MOVE",
+      "title": "Bulk",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "CONSTRICT_MOVE",
+      "title": "Constrict",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Weak"
+      ]
+    },
+    {
+      "id": "DEAD_MOVE",
+      "title": "Dead",
+      "intents": [],
+      "effects": []
+    },
+    {
+      "id": "REATTACH_MOVE",
+      "title": "Reattach",
+      "intents": [
+        {
+          "type": "heal"
+        }
+      ],
+      "effects": [
+        "Trigger ReattachPower"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles between Constrict, Bulk, and Writhe. When defeated, becomes Dead (no action), then Reattach (triggers healing via ReattachPower), then randomly selects from Writhe, Bulk, or Constrict.",
+  "powers_on_spawn": [
+    "ReattachPower 25"
+  ],
+  "notes": "Part of the multi-segment Decimillipede boss. When a segment is defeated, it enters a Dead state and then uses ReattachPower to heal and rejoin the fight. HP values are adjusted to avoid duplicates with other segments. Constrict applies Weak to all targets, Bulk applies Strength to itself."
+}

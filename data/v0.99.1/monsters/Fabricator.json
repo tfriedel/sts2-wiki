@@ -1,0 +1,55 @@
+{
+  "class_name": "Fabricator",
+  "title": "Fabricator",
+  "min_hp": 155,
+  "max_hp": 155,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "FABRICATE_MOVE",
+      "title": "Fabricate",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Spawn a defensive bot (Guardbot or Noisebot)",
+        "Spawn an aggressive bot (Zapbot or Stabbot)"
+      ]
+    },
+    {
+      "id": "FABRICATING_STRIKE_MOVE",
+      "title": "Fabricating Strike",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 21
+        },
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Deal 21 damage",
+        "Spawn an aggressive bot (Zapbot or Stabbot)"
+      ]
+    },
+    {
+      "id": "DISINTEGRATE_MOVE",
+      "title": "Disintegrate",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        }
+      ],
+      "effects": [
+        "Deal 13 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Each turn checks if the Fabricator has fewer than 4 alive allies. If so, randomly chooses between Fabricate and Fabricating Strike (equal weight). If 4 or more allies are alive, uses Disintegrate instead. After every move, the condition is re-evaluated.",
+  "powers_on_spawn": [],
+  "notes": "The Fabricator spawns minions with MinionPower applied. Fabricate spawns one defensive bot (Guardbot or Noisebot) and one aggressive bot (Zapbot or Stabbot). Fabricating Strike spawns only one aggressive bot (Zapbot or Stabbot). Bot spawning avoids repeating the same type as the last bot spawned. Once 4 or more allies are alive, the Fabricator switches entirely to Disintegrate until allies die."
+}

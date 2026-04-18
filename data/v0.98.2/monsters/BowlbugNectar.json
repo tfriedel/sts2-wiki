@@ -1,0 +1,44 @@
+{
+  "class_name": "BowlbugNectar",
+  "title": "Bowlbug (Nectar)",
+  "min_hp": 36,
+  "max_hp": 39,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "THRASH_MOVE",
+      "title": "Thrash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 3
+        }
+      ],
+      "effects": ["Deal 3 damage"]
+    },
+    {
+      "id": "BUFF_MOVE",
+      "title": "Buff",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 16 Strength"]
+    },
+    {
+      "id": "THRASH2_MOVE",
+      "title": "Thrash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 3
+        }
+      ],
+      "effects": ["Deal 3 damage"]
+    }
+  ],
+  "move_pattern": "Thrash → Buff → Thrash (repeating)",
+  "powers_on_spawn": [],
+  "notes": "Buff increases the monster's Strength, which amplifies the damage of subsequent Thrash attacks."
+}

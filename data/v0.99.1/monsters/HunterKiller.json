@@ -1,0 +1,36 @@
+{
+  "class_name": "HunterKiller",
+  "title": "Hunter Killer",
+  "min_hp": 126,
+  "max_hp": 126,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "TENDERIZING_GOOP_MOVE",
+      "title": "Tenderizing Goop",
+      "intents": [
+        {"type": "debuff"}
+      ],
+      "effects": ["Apply 1 Tender"]
+    },
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {"type": "attack", "damage": 19}
+      ],
+      "effects": ["Deal 19 damage"]
+    },
+    {
+      "id": "PUNCTURE_MOVE",
+      "title": "Puncture",
+      "intents": [
+        {"type": "multi_attack", "damage": 8, "hits": 3}
+      ],
+      "effects": ["Deal 8 damage 3 times"]
+    }
+  ],
+  "move_pattern": "Starts with Tenderizing Goop, then randomly chooses between Bite (cannot repeat) and Puncture (weighted 2x). After any move, loops back to random selection between Bite and Puncture.",
+  "powers_on_spawn": [],
+  "notes": "After the opening Tenderizing Goop, all subsequent moves are randomly chosen. Bite cannot repeat consecutively; Puncture has weight 2 (twice as likely). Tenderizing Goop also loops back to the random branch."
+}

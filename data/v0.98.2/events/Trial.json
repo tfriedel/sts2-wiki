@@ -1,0 +1,36 @@
+{
+  "class_name": "Trial",
+  "title": "The Trial",
+  "description": "You join a line of people entering a massive building.\n\nAs you pass under a [gold]golden archway[/gold], horns blare, [jitter]confetti explodes[/jitter], and [sine]streamers glide[/sine] down from the ceiling!\n\n\"Entrant [blue][a random number between 101 and 999][/blue], you are the [green]DECIDER[/green] for today's [gold]Trial[/gold].\"",
+  "options": [
+    {
+      "title": "Accept",
+      "description": "Serve as today's Decider."
+    },
+    {
+      "title": "Reject",
+      "description": "[red]You are not allowed to Reject.[/red]"
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "This is a complex multi-stage branching event with randomized scenarios.\n\n[gold]Initial Choice:[/gold] If you Accept, you sit in the [gold]Chair of Decision-Making[/gold]. If you Reject, the [gold]Grand Arbiter of the Courts[/gold] threatens you with [red]DEATH[/red] and forces you to choose again between serving as Decider or facing lethal repercussions (9999 damage).\n\n[gold]Trial Scenarios:[/gold] One of three scenarios is randomly selected (equal 1/3 probability each):\n\n1. [gold]Merchant Trial[/gold] — A wealthy merchant accused of murder. Verdict options:\n   - [green]Guilty[/green]: Add [red]Regret[/red] curse to deck, obtain 2 random Relics\n   - [green]Innocent[/green]: Add [red]Shame[/red] curse to deck, upgrade 2 cards\n\n2. [gold]Noble Trial[/gold] — A powerful noble with corruption charges. A bribe offer is mentioned. Verdict options:\n   - [green]Guilty[/green]: Heal 10 HP\n   - [green]Innocent[/green]: Add [red]Regret[/red] curse to deck, gain 300 Gold\n\n3. [gold]Nondescript Trial[/gold] — A woman accused of theft and con-artistry. Witnesses and her testimony conflict. Verdict options:\n   - [green]Guilty[/green]: Add [red]Doubt[/red] curse to deck, gain 2 card rewards\n   - [green]Innocent[/green]: Add [red]Doubt[/red] curse to deck, transform 2 cards\n\n[gold]Rewards Summary:[/gold] Each verdict leads to a different combination of curses, relics, gold, healing, and card effects. The event ends after rendering your verdict.",
+  "card_refs": [
+    {
+      "class_name": "Regret",
+      "title": "Regret",
+      "slug": "regret"
+    },
+    {
+      "class_name": "Shame",
+      "title": "Shame",
+      "slug": "shame"
+    },
+    {
+      "class_name": "Doubt",
+      "title": "Doubt",
+      "slug": "doubt"
+    }
+  ],
+  "relic_refs": []
+}

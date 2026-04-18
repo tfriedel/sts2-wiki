@@ -1,0 +1,34 @@
+{
+  "class_name": "CrossbowRubyRaider",
+  "title": "Crossbow Raider",
+  "min_hp": 19,
+  "max_hp": 22,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "RELOAD_MOVE",
+      "title": "Reload",
+      "intents": [
+        {
+          "type": "block",
+          "amount": 3
+        }
+      ],
+      "effects": ["Gain 3 Block"]
+    },
+    {
+      "id": "FIRE_MOVE",
+      "title": "Fire!",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": ["Deal 16 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Reload, then alternates: Fire → Reload → Fire → Reload...",
+  "powers_on_spawn": [],
+  "notes": "Tracks an internal loaded/unloaded state — animations (hurt, death) differ based on whether the crossbow is reloaded, but this has no effect on combat mechanics."
+}

@@ -1,0 +1,38 @@
+{
+  "class_name": "LouseProgenitor",
+  "title": "Louse Progenitor",
+  "min_hp": 138,
+  "max_hp": 141,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WEB_CANNON_MOVE",
+      "title": "Web Cannon",
+      "intents": [
+        {"type": "attack", "damage": 10, "hits": 1},
+        {"type": "debuff"}
+      ],
+      "effects": ["Uncurl if curled", "Deal 10 damage", "Apply 2 Frail"]
+    },
+    {
+      "id": "CURL_AND_GROW_MOVE",
+      "title": "Curl and Grow",
+      "intents": [
+        {"type": "block", "amount": 18},
+        {"type": "buff"}
+      ],
+      "effects": ["Gain 18 Block", "Gain 5 Strength", "Enter curled state"]
+    },
+    {
+      "id": "POUNCE_MOVE",
+      "title": "Pounce",
+      "intents": [
+        {"type": "attack", "damage": 16, "hits": 1}
+      ],
+      "effects": ["Uncurl if curled", "Deal 16 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Web Cannon → Curl and Grow → Pounce → Web Cannon → (repeats).",
+  "powers_on_spawn": ["CurlUp (18)"],
+  "notes": "CurlUp Power (18) is applied on spawn. Web Cannon and Pounce both uncurl the monster if it is in the curled state before attacking. Curl and Grow gains block, gains 5 Strength, and sets the curled state. The loc file lists 'Acid Dust' as a move title (not matching any source move ID) — the Pounce move has no localization match."
+}

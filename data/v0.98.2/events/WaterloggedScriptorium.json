@@ -1,0 +1,30 @@
+{
+  "class_name": "WaterloggedScriptorium",
+  "title": "Waterlogged Scriptorium",
+  "description": "Navigating the murky passages, you stumble upon a [aqua]withered figure[/aqua] working a small shop. The multitude of shelves are [sine]stuffed[/sine] full of damp scrolls and parchment.\n\nNoticing a patron has entered, the [aqua]scribe-shopkeeper[/aqua] snaps to attention and gestures at some [gold]implements[/gold] arranged on a desk.",
+  "options": [
+    {
+      "title": "Bloody Ink",
+      "description": "Gain [green]6[/green] Max HP."
+    },
+    {
+      "title": "Tentacle Quill",
+      "description": "Pay [red]65[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] a card with [purple]Steady[/purple].",
+      "requires": "Requires [blue]65[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Prickly Sponge",
+      "description": "Pay [red]155[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] [blue]2[/blue] cards with [purple]Steady[/purple].",
+      "requires": "Requires [blue]155[/blue] [gold]Gold[/gold]."
+    }
+  ],
+  "acts": [
+    "Underdocks"
+  ],
+  "conditions": [
+    "Requires at least 65 Gold"
+  ],
+  "notes": "Choosing Tentacle Quill or Prickly Sponge costs Gold and applies the [purple]Steady[/purple] enchantment to your selected card(s), which increases [green]Block[/green] gains from that card. Choosing Bloody Ink immediately increases your Max HP without costing any resources.",
+  "card_refs": [],
+  "relic_refs": []
+}

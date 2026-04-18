@@ -1,0 +1,20 @@
+{
+  "class_name": "BattleFriendV2",
+  "title": "Battle Friend V2.0",
+  "min_hp": 150,
+  "max_hp": 150,
+  "is_companion": true,
+  "moves": [
+    {
+      "id": "NOTHING_MOVE",
+      "title": "Nothing",
+      "intents": [],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Cycles indefinitely with Nothing move",
+  "powers_on_spawn": [
+    "BattlewornDummyTimeLimitPower"
+  ],
+  "notes": "This is a companion character that fights alongside the player. When added to combat, it gains a time limit power (duration: 3 turns)."
+}

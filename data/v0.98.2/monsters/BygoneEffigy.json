@@ -1,0 +1,53 @@
+{
+  "class_name": "BygoneEffigy",
+  "title": "Bygone Effigy",
+  "min_hp": 132,
+  "max_hp": 132,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "INITIAL_SLEEP_MOVE",
+      "title": "Initial Sleep",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "WAKE_MOVE",
+      "title": "Wake",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 10 Strength"]
+    },
+    {
+      "id": "SLEEP_MOVE",
+      "title": "Sleep",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "SLASHES_MOVE",
+      "title": "Slashes",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": ["Deal 17 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Initial Sleep, then transitions to Wake (gaining 10 Strength), then repeatedly attacks with Slashes.",
+  "powers_on_spawn": ["Slow"],
+  "notes": "Begins combat in a sleeping state with Slow applied. Upon awakening, gains 10 Strength before cycling through repeated slash attacks."
+}

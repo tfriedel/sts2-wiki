@@ -1,0 +1,42 @@
+{
+  "class_name": "WelcomeToWongos",
+  "title": "Welcome to Wongo's",
+  "description": "\"Welcome to Wongo's. We have what you want at Wongtastic prices.\" says the least enthusiastic clerk you have ever met.\n\n\"Peruse our wares and enjoy your time at Wongo's,\" they continue, without even looking up.",
+  "options": [
+    {
+      "title": "Wongo's Bargain Bin",
+      "description": "Pay [red]100[/red] [gold]Gold[/gold]. Obtain [blue]1[/blue] random [gold]Common Relic[/gold].",
+      "requires": "Requires [blue]100[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Wongo's Featured Item",
+      "description": "Pay [red]200[/red] [gold]Gold[/gold]. Obtain [gold][a rare relic][/gold].",
+      "requires": "Requires [blue]200[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Wongo's Mystery Box",
+      "description": "Pay [red]300[/red] [gold]Gold[/gold]. Obtain [blue]3[/blue] random [gold]Relics[/gold] after [blue]5[/blue] combats.",
+      "requires": "Requires [blue]300[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Leave",
+      "description": "[red]Downgrade[/red] a random card."
+    }
+  ],
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": ["Act 2 only", "Requires at least 100 Gold"],
+  "notes": "This event features a Wongo's shop with three purchasable items locked by [gold]Gold[/gold] cost. Buying items grants [gold]Wongo Points[/gold] that accumulate across your entire run: 32 points for [gold]Bargain Bin[/gold], 16 points for [gold]Featured Item[/gold], and 8 points for [gold]Mystery Box[/gold]. Every 2000 accumulated Wongo Points grants a [gold]Wongo Customer Appreciation Badge[/gold] relic. The [gold]Mystery Box[/gold] item grants a [gold]Wongo's Mystery Ticket[/gold] relic, which provides [blue]3[/blue] random relics after [blue]5[/blue] combats are completed. Leaving without a purchase forces you to [red]downgrade[/red] a random upgraded card from your deck.",
+  "card_refs": [],
+  "relic_refs": [
+    {
+      "class_name": "WongosMysteryTicket",
+      "title": "Wongo's Mystery Ticket",
+      "slug": "wongos-mystery-ticket"
+    },
+    {
+      "class_name": "WongoCustomerAppreciationBadge",
+      "title": "Wongo Customer Appreciation Badge",
+      "slug": "wongo-customer-appreciation-badge"
+    }
+  ]
+}

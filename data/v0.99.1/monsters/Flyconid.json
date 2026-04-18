@@ -1,0 +1,54 @@
+{
+  "class_name": "Flyconid",
+  "title": "Flyconid",
+  "min_hp": 51,
+  "max_hp": 53,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "VULNERABLE_SPORES_MOVE",
+      "title": "Vulnerable Spores",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Vulnerable"
+      ]
+    },
+    {
+      "id": "FRAIL_SPORES_MOVE",
+      "title": "Frail Spores",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 2 Frail"
+      ]
+    },
+    {
+      "id": "SMASH_MOVE",
+      "title": "Smash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 12
+        }
+      ],
+      "effects": [
+        "Deal 12 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with either Frail Spores or Smash. Then randomly cycles through all three moves with different weights: Vulnerable Spores (50%), Frail Spores (33%), or Smash (17%), unable to repeat the same move twice in a row.",
+  "powers_on_spawn": [],
+  "notes": "Flyconid relies on spore-based attacks to apply debuffs. The visual effect changes dynamically based on the type of spores being used (vulnerable or frail)."
+}

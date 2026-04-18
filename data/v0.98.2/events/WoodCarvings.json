@@ -1,0 +1,36 @@
+{
+  "class_name": "WoodCarvings",
+  "title": "Wood Carvings",
+  "description": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",
+  "options": [
+    {
+      "title": "Bird",
+      "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Peck[/gold]."
+    },
+    {
+      "title": "Snake",
+      "description": "[gold]Enchant[/gold] [blue]1[/blue] card with [purple]Slither[/purple].",
+      "requires": "None of your cards can be Enchanted with [purple]Slither[/purple]."
+    },
+    {
+      "title": "Torus",
+      "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Toric Toughness[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": ["At least 1 basic removable card in deck"],
+  "notes": "This event presents three options for transforming a starter card or enchanting an existing card. The [purple]Snake[/purple] option becomes locked if none of your cards are able to be enchanted with [purple]Slither[/purple]. After choosing an option, the event shows a brief story page describing the mystical result of placing the chosen carving on the pedestal.",
+  "card_refs": [
+    {
+      "class_name": "Peck",
+      "title": "Peck",
+      "slug": "peck"
+    },
+    {
+      "class_name": "ToricToughness",
+      "title": "Toric Toughness",
+      "slug": "toric-toughness"
+    }
+  ],
+  "relic_refs": []
+}

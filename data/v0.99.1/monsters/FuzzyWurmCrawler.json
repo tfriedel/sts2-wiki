@@ -1,0 +1,36 @@
+{
+  "class_name": "FuzzyWurmCrawler",
+  "title": "Fuzzy Wurm Crawler",
+  "min_hp": 58,
+  "max_hp": 59,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "FIRST_ACID_GOOP",
+      "title": "Acid Goop",
+      "intents": [
+        {"type": "attack", "damage": 6}
+      ],
+      "effects": ["Deal 6 damage"]
+    },
+    {
+      "id": "INHALE",
+      "title": "Inhale",
+      "intents": [
+        {"type": "buff"}
+      ],
+      "effects": ["Apply 7 Strength to self"]
+    },
+    {
+      "id": "ACID_GOOP",
+      "title": "Acid Goop",
+      "intents": [
+        {"type": "attack", "damage": 6}
+      ],
+      "effects": ["Deal 6 damage"]
+    }
+  ],
+  "move_pattern": "3-turn cycle: Acid Goop → Inhale → Acid Goop → (loops back to Acid Goop). Because the cycle returns to Acid Goop rather than Inhale, two consecutive Acid Goop attacks occur at each cycle boundary.",
+  "powers_on_spawn": [],
+  "notes": "Inhale applies 7 Strength to the Fuzzy Wurm Crawler each time it is used. Strength stacks permanently, so Acid Goop deals 13 damage after the first Inhale, 20 after the second, and continues scaling throughout a prolonged fight."
+}

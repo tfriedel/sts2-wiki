@@ -1,0 +1,59 @@
+{
+  "class_name": "FakeMerchantMonster",
+  "title": "The Merchant???",
+  "min_hp": 175,
+  "max_hp": 175,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SWIPE_MOVE",
+      "title": "Swipe",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": ["Deal 15 damage"]
+    },
+    {
+      "id": "SPEW_COINS_MOVE",
+      "title": "Spew Coins",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 2,
+          "hits": 8
+        }
+      ],
+      "effects": ["Deal 2 damage 8 times"]
+    },
+    {
+      "id": "THROW_RELIC_MOVE",
+      "title": "Throw Relic",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 10
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 15 damage", "Apply 1 Frail"]
+    },
+    {
+      "id": "ENRAGE_MOVE",
+      "title": "Enrage",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Gain 2 Strength"]
+    }
+  ],
+  "move_pattern": "Starts with Swipe. Then randomly selects from Swipe, Spew Coins, Throw Relic, or Enrage with no immediate repeats. After Throw Relic, the next move is randomly selected from only Swipe, Spew Coins, or Throw Relic (Enrage is excluded after Throw Relic).",
+  "powers_on_spawn": [],
+  "notes": "Throw Relic's intent displays 10 damage (ThrowRelicDamage) but the move method actually uses SwipeDamage (15) for its attack. Enrage has a weight of 3 in the random branch selector, making it more frequently selected than other moves."
+}

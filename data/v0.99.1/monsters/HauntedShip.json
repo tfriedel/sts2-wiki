@@ -1,0 +1,71 @@
+{
+  "class_name": "HauntedShip",
+  "title": "Haunted Ship",
+  "min_hp": 67,
+  "max_hp": 67,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "RAMMING_SPEED_MOVE",
+      "title": "Ramming Speed",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        },
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Deal 11 damage",
+        "Add 2 Wounds to discard"
+      ]
+    },
+    {
+      "id": "SWIPE_MOVE",
+      "title": "Swipe",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        }
+      ],
+      "effects": [
+        "Deal 14 damage"
+      ]
+    },
+    {
+      "id": "STOMP_MOVE",
+      "title": "Stomp",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 5 damage",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "HAUNT_MOVE",
+      "title": "Haunt",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Weak",
+        "Apply 2 Frail",
+        "Apply 2 Vulnerable"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Ramming Speed. On odd rounds, randomly chooses between Ramming Speed, Swipe, or Stomp. On even rounds, uses Haunt.",
+  "powers_on_spawn": [],
+  "notes": "This monster's behavior alternates based on the round number. During odd rounds, it uses offensive attacks that deal damage or apply status effects. During even rounds, it switches to Haunt, which applies multiple debuffs (Weak, Frail, and Vulnerable) to the player."
+}

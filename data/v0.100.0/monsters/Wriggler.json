@@ -1,0 +1,46 @@
+{
+  "class_name": "Wriggler",
+  "title": "Wriggler",
+  "min_hp": 18,
+  "max_hp": 22,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "NASTY_BITE_MOVE",
+      "title": "Nasty Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        }
+      ],
+      "effects": ["Deal 7 damage"]
+    },
+    {
+      "id": "WRIGGLE_MOVE",
+      "title": "Wriggle",
+      "intents": [
+        {
+          "type": "buff"
+        },
+        {
+          "type": "status"
+        }
+      ],
+      "effects": ["Add 1 Infection to discard", "Gain 2 Strength"]
+    },
+    {
+      "id": "SPAWNED_MOVE",
+      "title": "Spawned",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "move_pattern": "If summoned mid-combat (StartStunned=true), begins with Spawned (stun/pass). Otherwise starts with an INIT_MOVE that picks based on slot position: odd-numbered slots (wriggler1, wriggler3) begin with Nasty Bite; even-numbered slots (wriggler2, wriggler4) begin with Wriggle. Afterward, alternates between Nasty Bite and Wriggle indefinitely.",
+  "powers_on_spawn": [],
+  "notes": "The Wriggler can be summoned mid-combat by other monsters. When spawned this way, StartStunned=true and it passes its first turn with a stun intent before cycling normally. The Wriggle move both grants the Wriggler 2 Strength and adds 1 Infection status card to the player's discard pile. When multiple Wigglers appear together, their staggered slot assignments ensure they take different moves each turn. Note: the provided localization includes keys for PARASITIZE_PLAYER and WRIGGLE_STRIKE that do not correspond to any moves in the current code — these appear to be stale entries from a previous version."
+}

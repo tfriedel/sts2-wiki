@@ -1,0 +1,28 @@
+{
+  "class_name": "GasBomb",
+  "title": "Gas Bomb",
+  "min_hp": 12,
+  "max_hp": 12,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "EXPLODE_MOVE",
+      "title": "Explode",
+      "intents": [
+        {
+          "type": "death_blow",
+          "damage": 9
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Dies after attacking"
+      ]
+    }
+  ],
+  "move_pattern": "Single move: Explodes on first turn, dealing damage before dying.",
+  "powers_on_spawn": [
+    "Minion"
+  ],
+  "notes": "A minion that dies immediately after its first and only attack. Applies the Minion power when spawned."
+}
