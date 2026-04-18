@@ -1,0 +1,20 @@
+{
+  "class_name": "BrainLeech",
+  "title": "Brain Leech",
+  "description": "[jitter]*thunk*[/jitter]\n\nA sharp pain is felt atop your head and a thought stabs into your mind.\n\n[purple][sine]\"SHARE KNOWLEDGE???\"[/sine][/purple]\n\nYou are unsure how to proceed...",
+  "options": [
+    {
+      "title": "Share Knowledge",
+      "description": "Choose [blue]1[/blue] of [blue]5[/blue] random cards to add to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Rip the Leech Off",
+      "description": "Lose [red]5[/red] HP. Gain a Colorless card reward."
+    }
+  ],
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": ["Act 1-2 only"],
+  "notes": "The 5 random card options in Share Knowledge are generated from your character's card pool. The 5 HP damage from Rip the Leech Off is [gold]unblockable[/gold] and [gold]unpowered[/gold] — it cannot be reduced by block or powers. If defeated by this event, the death message reads: \"[character] was consumed by the [gold]Brain Leech[/gold].\"",
+  "card_refs": [],
+  "relic_refs": []
+}
