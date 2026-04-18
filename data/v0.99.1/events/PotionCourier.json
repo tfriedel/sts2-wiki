@@ -14,6 +14,7 @@
   ],
   "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
   "conditions": ["Act 2 or later"],
+  "notes": "The [gold]Grab Potions[/gold] option grants 3 Foul Potions as rewards. The [gold]Ransack[/gold] option grants 1 randomly selected Uncommon potion from both the character's personal potion pool and the Shared Potion Pool.",
   "card_refs": [],
   "relic_refs": []
 }

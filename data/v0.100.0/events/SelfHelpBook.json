@@ -1,7 +1,7 @@
 {
   "class_name": "SelfHelpBook",
   "title": "Self-Help Book",
-  "description": "On the floor lies a tome,\n„Top 3 Ways to Conquer the Spire„\n\nThe book is [red]encrusted with blood[/red] so you find this manuscript highly suspicious.\n\nWill you read it?",
+  "description": "On the floor lies a tome,\n\"Top 3 Ways to Conquer the Spire\"\n\nThe book is [red]encrusted with blood[/red] so you find this manuscript highly suspicious.\n\nWill you read it?",
   "options": [
     {
       "title": "Read the Back",
@@ -25,7 +25,7 @@
   ],
   "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
   "conditions": [],
-  "notes": "This event provides conditional [gold]Enchantment[/gold] options based on your deck composition. Each option (Read the Back, Read a Passage, Read the Entire Book) is only available if you have at least one card of the corresponding type (Attack, Skill, or Power) that can be Enchanted with the respective enchantment. If you have no cards available for enchantment, you can simply move on without gaining anything.",
+  "notes": "This event lets you enchant a card in your deck. The three main options correspond to different card types and enchantments: [blue]Read the Back[/blue] enchants an Attack with [purple]Sharp[/purple] (2), [blue]Read a Random Passage[/blue] enchants a Skill with [purple]Nimble[/purple] (2), and [blue]Read the Entire Book[/blue] enchants a Power with [purple]Swift[/purple] (2). Each option is only available if you have at least one card of that type in your deck that can accept the corresponding enchantment. If you have no cards available for any of these enchantments, only the [blue]Move On[/blue] option is available.",
   "card_refs": [],
   "relic_refs": []
 }

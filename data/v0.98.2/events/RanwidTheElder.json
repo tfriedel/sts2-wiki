@@ -1,0 +1,31 @@
+{
+  "class_name": "RanwidTheElder",
+  "title": "Ranwid the Elder",
+  "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]\u201cWe meet once more... it's me, Ranwid!\u201d[/sine]\n\nYou do not know this man.",
+  "options": [
+    {
+      "title": "Give [a random Potion]",
+      "description": "Obtain a random [gold]Relic[/gold].",
+      "requires": "At least 1 Potion available"
+    },
+    {
+      "title": "Give 100 Gold",
+      "description": "Obtain a random [gold]Relic[/gold]."
+    },
+    {
+      "title": "Give [a random Relic]",
+      "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold].",
+      "requires": "At least 1 tradable Relic available"
+    }
+  ],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": [
+    "Act 2 or later",
+    "All players must have at least 100 Gold",
+    "All players must have at least 1 Potion",
+    "All players must have at least 1 tradable Relic"
+  ],
+  "notes": "Ranwid's three options each reward you with relics. The Potion and Relic options are locked if you lack the required items. Trading a relic gives you 2 relics in return (net +1), while the other options only provide 1 relic each. During the event, [gold]potion removal is disabled[/gold], so you cannot discard potions while interacting with Ranwid.",
+  "card_refs": [],
+  "relic_refs": []
+}

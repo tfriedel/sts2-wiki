@@ -1,0 +1,26 @@
+{
+  "class_name": "Reflections",
+  "title": "Reflections snoitcelfeR",
+  "description": "What is this? Something feels wrong here...\n[sine]...ereh gnorw sleef gnihtemoS ?siht si tahW[/sine]",
+  "options": [
+    {
+      "title": "Touch a Mirror",
+      "description": "[red]Downgrade[/red] [blue]2[/blue] random cards. [green]Upgrade[/green] [blue]4[/blue] random cards."
+    },
+    {
+      "title": "Shatter",
+      "description": "Duplicate your [gold]Deck[/gold]. Receive [purple]Bad Luck[/purple]."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "When selecting cards for [red]Downgrade[/red]/[green]Upgrade[/green], the event will select from already upgraded cards and upgradable cards respectively. If there are fewer cards of the required type than needed (fewer than 2 upgraded cards or fewer than 4 upgradable cards), the event will downgrade/upgrade however many are available.",
+  "card_refs": [
+    {
+      "class_name": "BadLuck",
+      "title": "Bad Luck",
+      "slug": "bad-luck"
+    }
+  ],
+  "relic_refs": []
+}
