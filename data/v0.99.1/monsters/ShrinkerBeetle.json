@@ -1,0 +1,44 @@
+{
+  "class_name": "ShrinkerBeetle",
+  "title": "Shrinker Beetle",
+  "min_hp": 40,
+  "max_hp": 42,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SHRINKER_MOVE",
+      "title": "Shrinker",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Apply 1 Shrink"]
+    },
+    {
+      "id": "CHOMP_MOVE",
+      "title": "Chomp",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        }
+      ],
+      "effects": ["Deal 8 damage"]
+    },
+    {
+      "id": "STOMP_MOVE",
+      "title": "Stomp",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        }
+      ],
+      "effects": ["Deal 14 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Shrinker. Then alternates between Chomp and Stomp.",
+  "powers_on_spawn": [],
+  "notes": "Shrinker applies 1 stack of Shrink (a strong debuff) to the player via ShrinkPower."
+}

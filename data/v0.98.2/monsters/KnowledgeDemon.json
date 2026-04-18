@@ -14,10 +14,8 @@
         }
       ],
       "effects": [
-        "Player chooses a status card to add",
-        "Stage 1: Disintegration (6) or MindRot",
-        "Stage 2: Disintegration (7) or Sloth",
-        "Stage 3: Disintegration (8) or WasteAway"
+        "Force player to choose a card",
+        "Options: Disintegration (damage scales with counter: 6, 7, or 8) + MindRot/Sloth/WasteAway"
       ]
     },
     {
@@ -44,9 +42,7 @@
         }
       ],
       "effects": [
-        "Deal 9 damage",
-        "3 hits",
-        "Enter burnt state"
+        "Deal 9 damage, 3 hits"
       ]
     },
     {
@@ -58,7 +54,8 @@
           "damage": 13
         },
         {
-          "type": "heal"
+          "type": "heal",
+          "amount": 30
         },
         {
           "type": "buff"
@@ -66,13 +63,12 @@
       ],
       "effects": [
         "Deal 13 damage",
-        "Heal 30 per player",
-        "Gain 3 Strength",
-        "Exit burnt state"
+        "Heal 30 HP (per player)",
+        "Apply 3 Strength"
       ]
     }
   ],
-  "move_pattern": "Curse of Knowledge → Slap → Knowledge Overwhelming → Ponder (repeats). After Curse of Knowledge is used 3 times, it's removed from the cycle, leaving: Slap → Knowledge Overwhelming → Ponder (repeats).",
+  "move_pattern": "Curse of Knowledge → Slap → Knowledge Overwhelming → Ponder → loops back to conditional branch. After 3 uses of Curse of Knowledge, the conditional branch switches to use Slap instead, creating the sequence: Slap → Knowledge Overwhelming → Ponder → Slap, etc.",
   "powers_on_spawn": [],
-  "notes": "Knowledge Demon has a 'burnt state' mechanic controlled by its attacks. Knowledge Overwhelming enters burnt state, while Ponder exits it. Curse of Knowledge cycles through 3 stages with different status card choices (player chooses which card to add to their deck). The Disintegration damage on Curse of Knowledge scales across stages (6→7→8). After the 3rd use of Curse of Knowledge, the move cycle removes it entirely, cycling only Slap, Knowledge Overwhelming, and Ponder for the remainder of the fight."
+  "notes": "Knowledge Demon has a counter-based move cycling system. Curse of Knowledge increments a counter and presents the player with a forced card choice—the available cards change based on the counter value (0: MindRot, 1: Sloth, 2: WasteAway), but the first option is always Disintegration with damage equal to 6 + counter. After the counter reaches 3, the move pattern shifts and no longer uses Curse of Knowledge, instead cycling through Slap, Knowledge Overwhelming, and Ponder. The monster has an IsBurnt state: Knowledge Overwhelming sets it to true, and Ponder clears it to false, affecting which idle animation is played. Ponder also has multimodal healing that scales with the number of players in combat."
 }

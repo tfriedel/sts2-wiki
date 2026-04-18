@@ -1,0 +1,56 @@
+{
+  "class_name": "PhantasmalGardener",
+  "title": "Phantasmal Gardener",
+  "min_hp": 29,
+  "max_hp": 33,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 5
+        }
+      ],
+      "effects": ["Deal 5 damage"]
+    },
+    {
+      "id": "LASH_MOVE",
+      "title": "Lash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        }
+      ],
+      "effects": ["Deal 7 damage"]
+    },
+    {
+      "id": "FLAIL_MOVE",
+      "title": "Flail",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 1,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 1 damage", "3 hits"]
+    },
+    {
+      "id": "ENLARGE_MOVE",
+      "title": "Enlarge",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 3 Strength"]
+    }
+  ],
+  "move_pattern": "Move pattern depends on slot position. Starting move: Flail (slot 1) / Bite (slot 2) / Lash (slot 3) / Enlarge (slot 4). After initial move, cycles: Bite → Lash → Flail → Enlarge → Bite",
+  "powers_on_spawn": ["Skittish 7"],
+  "notes": "Each time Enlarge is used, the monster's scale increases based on logarithmic growth: CurrentScale = 1 + 0.1 × ln(EnlargeTriggers + 1). This affects its visual presentation and may impact hit detection. The monster starts with a different first move depending on which creature slot it occupies (first, second, third, or fourth), but always follows the same four-move cycle afterward."
+}

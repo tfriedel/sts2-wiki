@@ -5,7 +5,8 @@
   "options": [
     {
       "title": "Capture the Wisp",
-      "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. Obtain the [gold]Lost Wisp[/gold]."
+      "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. Obtain the [gold]Lost Wisp[/gold].",
+      "requires": "Your Max HP is too low."
     },
     {
       "title": "Search the Nearby Area",
@@ -14,7 +15,7 @@
   ],
   "acts": ["Hive"],
   "conditions": [],
-  "notes": "The Claim option may have a maximum HP requirement based on localization hints (CLAIM_LOCKED variant suggests 'Your Max HP is too low'), but this condition is not visible in the provided source code.",
+  "notes": "The [orange]Wisp[/orange] lashes out with hot steam and flame when you capture it. You can only capture the [orange]Wisp[/orange] if your Max HP is high enough. The gold from searching varies by ±15 from the base amount.",
   "card_refs": [
     {
       "class_name": "Decay",

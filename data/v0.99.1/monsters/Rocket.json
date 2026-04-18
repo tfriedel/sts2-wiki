@@ -1,0 +1,77 @@
+{
+  "class_name": "Rocket",
+  "title": "Rocket",
+  "min_hp": 199,
+  "max_hp": 199,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "TARGETING_RETICLE_MOVE",
+      "title": "Targeting Reticle",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 4
+        }
+      ],
+      "effects": [
+        "Deal 4 damage"
+      ]
+    },
+    {
+      "id": "PRECISION_BEAM_MOVE",
+      "title": "Precision Beam",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 20
+        }
+      ],
+      "effects": [
+        "Deal 20 damage"
+      ]
+    },
+    {
+      "id": "CHARGE_UP_MOVE",
+      "title": "Charge Up",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "LASER_MOVE",
+      "title": "Laser",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 35
+        }
+      ],
+      "effects": [
+        "Deal 35 damage"
+      ]
+    },
+    {
+      "id": "RECHARGE_MOVE",
+      "title": "Recharge",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Cycles through: Targeting Reticle (4 dmg) → Precision Beam (20 dmg) → Charge Up (+2 Strength) → Laser (35 dmg) → Recharge (sleep), then repeats",
+  "powers_on_spawn": [
+    "Surrounded",
+    "Back Attack Right",
+    "Crab Rage"
+  ],
+  "notes": "Boss monster with specialized death animations. Applies Strength during Charge Up, making subsequent attacks more dangerous. Recharge puts the monster to sleep, making it vulnerable but also pausing its attack cycle."
+}

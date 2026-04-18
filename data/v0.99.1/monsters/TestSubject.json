@@ -1,0 +1,134 @@
+{
+  "class_name": "TestSubject",
+  "title": "Test Subject #C{Count}",
+  "min_hp": 111,
+  "max_hp": 111,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 22
+        }
+      ],
+      "effects": [
+        "Deal 22 damage"
+      ]
+    },
+    {
+      "id": "SKULL_BASH_MOVE",
+      "title": "Skull Bash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 16 damage",
+        "Apply 1 Vulnerable"
+      ]
+    },
+    {
+      "id": "POUNCE_MOVE",
+      "title": "Pounce",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 32
+        }
+      ],
+      "effects": [
+        "Deal 32 damage"
+      ]
+    },
+    {
+      "id": "MULTI_CLAW_MOVE",
+      "title": "Multi-Claw",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 11,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 11 damage per hit",
+        "3+ hits (increases by 1 each use)"
+      ]
+    },
+    {
+      "id": "PHASE3_LACERATE_MOVE",
+      "title": "Lacerate",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 11,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 11 damage per hit",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "BIG_POUNCE_MOVE",
+      "title": "Big Pounce",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 45
+        }
+      ],
+      "effects": [
+        "Deal 45 damage"
+      ]
+    },
+    {
+      "id": "BURNING_GROWL_MOVE",
+      "title": "Burning Growl",
+      "intents": [
+        {
+          "type": "status"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Add 5 Burn to player's discard",
+        "Apply 3 Strength"
+      ]
+    },
+    {
+      "id": "RESPAWN_MOVE",
+      "title": "Respawn",
+      "intents": [
+        {
+          "type": "heal"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Heal full HP (scaled by number of players)",
+        "Apply PainfulStabs (first) or Nemesis (second) power",
+        "Increase size"
+      ]
+    }
+  ],
+  "move_pattern": "Three phases with revival mechanics. Phase 1: Starts with Bite, alternates Bite ↔ Skull Bash, then transitions to Pounce ↔ Multi-Claw cycle. After first death, respawns with PainfulStabs and enters Multi-Claw ↔ Pounce cycle. After second death, respawns with Nemesis and cycles: Lacerate → Big Pounce → Burning Growl → Lacerate.",
+  "powers_on_spawn": [
+    "Adaptable",
+    "Enraged (3 stacks)"
+  ],
+  "notes": "Complex revival monster. Starts with the Adaptable power, which allows it to revive twice. After each death, its form changes and it gains new powers. Multi-Claw's hit count starts at 3 and increases by 1 with each use. The Adaptable power grants revives with PainfulStabs after the first death and Nemesis after the second. Once Adaptable expires, the monster stays dead. Each respawn increases the monster's size by 10% (Respawns * 0.1)."
+}

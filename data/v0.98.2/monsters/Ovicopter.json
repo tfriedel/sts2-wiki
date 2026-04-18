@@ -1,0 +1,66 @@
+{
+  "class_name": "Ovicopter",
+  "title": "Ovicopter",
+  "min_hp": 126,
+  "max_hp": 132,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "LAY_EGGS_MOVE",
+      "title": "Lay Eggs",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Summon 3 ToughEggs"
+      ]
+    },
+    {
+      "id": "SMASH_MOVE",
+      "title": "Smash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": [
+        "Deal 17 damage"
+      ]
+    },
+    {
+      "id": "TENDERIZER_MOVE",
+      "title": "Tenderizer",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "Apply 2 Vulnerable"
+      ]
+    },
+    {
+      "id": "NUTRITIONAL_PASTE_MOVE",
+      "title": "Nutritional Paste",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 4 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through Lay Eggs → Smash → Tenderizer. If 3 or fewer allies are alive, repeats from Lay Eggs; otherwise uses Nutritional Paste before Smash.",
+  "powers_on_spawn": [],
+  "notes": "Lay Eggs summons 3 ToughEgg minions. The move pattern adapts based on the number of living allies: uses Lay Eggs when ≤3 allies are alive, and switches to Nutritional Paste when >3 allies are alive. This creates a scaling mechanic where the monster manages its minion count."
+}

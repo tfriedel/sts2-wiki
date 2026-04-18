@@ -1,0 +1,46 @@
+{
+  "class_name": "TheForgotten",
+  "title": "The Forgotten",
+  "min_hp": 111,
+  "max_hp": 111,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "MIASMA",
+      "title": "Miasma",
+      "intents": [
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "block"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply -2 Dexterity",
+        "Gain 8 Block",
+        "Apply +2 Dexterity"
+      ]
+    },
+    {
+      "id": "DREAD",
+      "title": "Dread",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": [
+        "Deal 17 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles between Miasma and Dread, starting with Miasma",
+  "powers_on_spawn": [
+    "Possess Speed"
+  ]
+}

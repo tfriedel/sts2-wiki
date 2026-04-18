@@ -1,0 +1,65 @@
+{
+  "class_name": "Rocket",
+  "title": "Rocket",
+  "min_hp": 199,
+  "max_hp": 199,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "TARGETING_RETICLE_MOVE",
+      "title": "Targeting Reticle",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 4
+        }
+      ],
+      "effects": ["Deal 4 damage"]
+    },
+    {
+      "id": "PRECISION_BEAM_MOVE",
+      "title": "Precision Beam",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 20
+        }
+      ],
+      "effects": ["Deal 20 damage"]
+    },
+    {
+      "id": "CHARGE_UP_MOVE",
+      "title": "Charge Up",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 2 Strength"]
+    },
+    {
+      "id": "LASER_MOVE",
+      "title": "Laser",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 35
+        }
+      ],
+      "effects": ["Deal 35 damage"]
+    },
+    {
+      "id": "RECHARGE_MOVE",
+      "title": "Recharge",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": ["Sleep"]
+    }
+  ],
+  "move_pattern": "Cycles: Targeting Reticle → Precision Beam → Charge Up → Laser → Recharge",
+  "powers_on_spawn": ["BackAttackRight", "CrabRage"],
+  "notes": "Kaiser Crab's right arm (Rocket) appears to be a boss fight phase with escalating damage. The monster builds strength mid-cycle before unleashing its most powerful attack (Laser at 35 damage). After the Laser, it enters a sleep/recharge phase before the cycle repeats. The player gains Surrounded when this monster enters."
+}

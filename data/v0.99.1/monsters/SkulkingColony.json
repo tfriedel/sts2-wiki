@@ -1,0 +1,63 @@
+{
+  "class_name": "SkulkingColony",
+  "title": "Skulking Colony",
+  "min_hp": 84,
+  "max_hp": 84,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "INERTIA_MOVE",
+      "title": "Inertia",
+      "intents": [
+        {
+          "type": "block"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Gain 13 Block", "Apply 3 Strength"]
+    },
+    {
+      "id": "ZOOM_MOVE",
+      "title": "Zoom",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": ["Deal 17 damage"]
+    },
+    {
+      "id": "SUPER_CRAB_MOVE",
+      "title": "Super Crab",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 7,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 7 damage", "2 hits"]
+    },
+    {
+      "id": "SMASH_MOVE",
+      "title": "Smash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        },
+        {
+          "type": "status",
+          "amount": 4
+        }
+      ],
+      "effects": ["Deal 11 damage", "Add 4 Dazed to discard"]
+    }
+  ],
+  "move_pattern": "Cycles: Smash → Zoom → Inertia → Super Crab",
+  "powers_on_spawn": ["Hardened Shell 20"],
+  "notes": "Inertia applies Strength to itself, causing subsequent attacks to scale up in damage. Smash pollutes the player's deck with 4 Dazed cards, a status effect that clogs the hand."
+}

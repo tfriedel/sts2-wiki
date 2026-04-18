@@ -1,0 +1,25 @@
+{
+  "class_name": "Noisebot",
+  "title": "Noisebot",
+  "min_hp": 24,
+  "max_hp": 29,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "NOISE_MOVE",
+      "title": "Noise",
+      "intents": [
+        {
+          "type": "status",
+          "amount": 2
+        }
+      ],
+      "effects": [
+        "Add 2 Dazed to player's deck"
+      ]
+    }
+  ],
+  "move_pattern": "Uses Noise every turn",
+  "powers_on_spawn": [],
+  "notes": "Noisebot applies status cards to player's deck rather than dealing direct damage. Each Noise move adds 2 Dazed cards—one to the discard pile and one to the draw pile. This is a debuff-focused mechanic that clogs the player's deck over time."
+}
