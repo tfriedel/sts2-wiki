@@ -1,0 +1,20 @@
+{
+  "class_name": "AbyssalBaths",
+  "title": "Abyssal Baths",
+  "description": "You discover a secluded chamber.\n\nSteam rises from bubbling pools of hot liquid that shifts colors with hypnotic rhythm. Barnacled growths hang from the ceiling, dripping viscous fluid that hisses and writhes when it touches the surface. The air feels heavy, laden with [blue]salt[/blue] and something [green]unmistakably organic[/green].\n\nAs you approach the edge of the largest pool, the liquid ripples. The waters bubble more intensely as if anticipating your entry.",
+  "options": [
+    {
+      "title": "Immerse",
+      "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
+    },
+    {
+      "title": "Abstain",
+      "description": "Heal [green]10[/green] HP."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": [],
+  "notes": "Choosing [gold]Immerse[/gold] enters a looping phase where you can repeatedly [gold]Linger[/gold] in the baths or [gold]Exit[/gold]. Each linger gains [green]2 Max HP[/green] but deals escalating [red]damage[/red] starting at 3, then 4, 5, etc. (unblockable and unpowered). The event tracks how many times you've lingered (up to 9) and displays corresponding atmospheric descriptions. When the next linger would deal lethal damage, the event displays a special warning but still allows you to proceed. You can exit the baths safely at any time after immersing.",
+  "card_refs": [],
+  "relic_refs": []
+}

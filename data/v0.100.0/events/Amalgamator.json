@@ -1,0 +1,34 @@
+{
+  "class_name": "Amalgamator",
+  "title": "Amalgamator",
+  "description": "[b][jitter]CLANG! CLANG!!![/jitter][/b]\n\nYou hear the echoes of metal upon metal on the otherside of a wall...\n\nAs you press your head against the wall to listen in—the wall opens up, revealing a [orange]hulking six-armed figure[/orange] toiling away.\nIts \"face\" is a [gold][sine]swirling vortex of glowing sigils[/sine][/gold] that shift about.\n\n\"One with an [aqua]Ascending Spirit[/aqua] has found my workshop? Let's get [jitter]COMBINING[/jitter]!\"",
+  "options": [
+    {
+      "title": "Combine Strikes",
+      "description": "Remove [blue]2[/blue] [gold]Strikes[/gold]. Add [gold]{Card1}[/gold] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Combine Defends",
+      "description": "Remove [blue]2[/blue] [gold]Defends[/gold]. Add [gold]{Card2}[/gold] to your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [
+    "At least 2 basic Strike cards in deck",
+    "At least 2 basic Defend cards in deck"
+  ],
+  "notes": "When the player chooses an option, they select which 2 Strike or Defend cards to remove. The Amalgamator forges these cards into an [gold]Ultimate Strike[/gold] or [gold]Ultimate Defend[/gold] card, which is added to the player's deck. Both options trigger screen shake effects and audio cues. The event completion page differs based on which option was chosen, showing the Amalgamator striking its Bone Anvil and unlocking memories of combat or defense techniques.",
+  "card_refs": [
+    {
+      "class_name": "UltimateStrike",
+      "title": "Ultimate Strike",
+      "slug": "ultimate-strike"
+    },
+    {
+      "class_name": "UltimateDefend",
+      "title": "Ultimate Defend",
+      "slug": "ultimate-defend"
+    }
+  ],
+  "relic_refs": []
+}
