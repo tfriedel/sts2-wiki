@@ -57,10 +57,28 @@ MODEL = "claude-haiku-4-5"
 
 
 def load_cache() -> dict[str, object]:
-    if CACHE_PATH.exists():
-        result: dict[str, object] = json.loads(CACHE_PATH.read_text())
-        return result
-    return {}
+    if not CACHE_PATH.exists():
+        return {}
+    result: dict[str, object] = json.loads(CACHE_PATH.read_text())
+
+    # Migrate legacy `{entity_type}:{class_name}` keys to the new
+    # `{version}:{entity_type}:{class_name}` format. Legacy entries are
+    # attributed to whichever version's data/ directory actually contains
+    # the per-entity JSON (the cache was originally built against v0.101.0).
+    data_root = PROJECT_ROOT / "data"
+    migrated: dict[str, object] = {}
+    for key, value in result.items():
+        if key.count(":") == 1 and isinstance(value, dict):
+            entity_type, class_name = key.split(":", 1)
+            for version_dir in data_root.iterdir():
+                if not version_dir.is_dir():
+                    continue
+                if (version_dir / entity_type / f"{class_name}.json").exists():
+                    migrated[f"{version_dir.name}:{entity_type}:{class_name}"] = value
+                    break
+        else:
+            migrated[key] = value
+    return migrated
 
 
 def save_cache(cache: dict[str, object]) -> None:
@@ -242,12 +260,43 @@ async def process_entity(
         prompt_content,
     )
 
-    entity_cache_key = f"{entity_type}:{class_name}"
-    if not force and entity_cache_key in cache:
+    entity_file = PROJECT_ROOT / "data" / version / entity_type / f"{class_name}.json"
+
+    # Cache key includes version because an entity's output lives in a
+    # version-specific directory. Without this, a v0.101.0 hit would cause
+    # us to skip v0.100.0 processing for an identical source file and never
+    # write data/v0.100.0/.../ClassName.json.
+    entity_cache_key = f"{version}:{entity_type}:{class_name}"
+    if not force and entity_cache_key in cache and entity_file.exists():
         cached = cache[entity_cache_key]
         if isinstance(cached, dict) and cached.get("cache_key") == cache_key:
             print(f"  Skipping {class_name} (cached)")
             return
+
+    # Cross-version reuse: when the source+loc+prompt hash matches an output
+    # file written for any other version, copy it rather than re-running the
+    # LLM. This makes incremental patch bumps essentially free for unchanged
+    # entities.
+    if not force and not entity_file.exists():
+        for other_version_dir in sorted((PROJECT_ROOT / "data").iterdir()):
+            if not other_version_dir.is_dir() or other_version_dir.name == version:
+                continue
+            other_key = f"{other_version_dir.name}:{entity_type}:{class_name}"
+            other_cached = cache.get(other_key)
+            if isinstance(other_cached, dict) and other_cached.get("cache_key") == cache_key:
+                other_file = other_version_dir / entity_type / f"{class_name}.json"
+                if other_file.exists():
+                    print(
+                        f"  Copying {class_name} from {other_version_dir.name} (identical source)"
+                    )
+                    entity_file.parent.mkdir(parents=True, exist_ok=True)
+                    entity_file.write_text(other_file.read_text())
+                    cache[entity_cache_key] = {
+                        "cache_key": cache_key,
+                        "last_processed": str(Path(source_path).stat().st_mtime),
+                    }
+                    save_cache(cache)
+                    return
 
     print(f"Processing {class_name}...")
 
@@ -285,8 +334,6 @@ The source file is at: {source_path}
 - Rendered HTML will be at: site/dist/{entity_type}/{{slug}}/index.html
 
 {_build_instructions(entity_type, version, skip_build)}"""
-
-    entity_file = PROJECT_ROOT / "data" / version / entity_type / f"{class_name}.json"
 
     # Set up transcript logging
     log_dir = LOGS_DIR / entity_type
