@@ -1,0 +1,24 @@
+{
+  "class_name": "BattlewornDummy",
+  "title": "Battleworn Dummy",
+  "description": "As you approach, it begins to rumble and fizzle and lights up brilliantly!\n\n\"[jitter]BZZZT![/jitter] TIME TO TRAIN!!! YOU HAVE [blue]3 TURNS[/blue] TO DEFEAT ME!\nCHOOSE A SETTING OR FACE [red]LETHAL HUMILIATION[/red].\nHere are the options:\"\n\nAfter the terrifying message, the dummy carefully reads out detailed instructions.\n\nWhat do you choose?",
+  "options": [
+    {
+      "title": "Setting 1",
+      "description": "Fight a [blue]75[/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+    },
+    {
+      "title": "Setting 2",
+      "description": "Fight a [blue]150[/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
+    },
+    {
+      "title": "Setting 3",
+      "description": "Fight a [blue]300[/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "This is a training event with a [blue]3-turn[/blue] time limit. The player must defeat the selected dummy within 3 turns to win.\n\n[gold]Setting 1:[/gold] 75 HP dummy. Reward on victory: 1 random potion.\n[gold]Setting 2:[/gold] 150 HP dummy. Reward on victory: 2 random cards in your deck are upgraded.\n[gold]Setting 3:[/gold] 300 HP dummy. Reward on victory: 1 random relic obtained.\n\nIf you fail to defeat the dummy within [blue]3 turns[/blue], you lose the event and receive a humiliating message, though you can continue your run.",
+  "card_refs": [],
+  "relic_refs": []
+}
