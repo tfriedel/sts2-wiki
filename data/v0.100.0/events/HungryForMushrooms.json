@@ -5,20 +5,15 @@
   "options": [
     {
       "title": "Big Mushroom",
-      "description": "You bite into the [orange]Big Mushroom[/orange]. Its flesh is firm, starchy, and satisfying. The more you eat, the hungrier you become, as if the mushroom is feeding on your hunger.\n\n[sine]So yummy... you enter a [red]food coma[/red].[/sine]\nThis gluttony will cost you."
+      "description": "You bite into the [orange]Big Mushroom[/orange]. Its flesh is firm, starchy, and satisfying. The more you eat, the hungrier you become, as if the mushroom is feeding on your hunger.\n\n[sine]So yummy... you enter a [red]food coma[/red].[/sine]\nThis gluttony will cost you.\n\nObtain a [gold]Big Mushroom[/gold] relic."
     },
     {
       "title": "Fragrant Mushroom",
-      "description": "You sample the [green]Fragrant One[/green], a small woody mushroom with a delicate scent of shellfish...\n\nA burst of energy spurs you to run, jump, and [gold]rigorously train[/gold]!\nThen, a sudden [red][jitter]stabbing pain[/jitter][/red] hits you as the living fungi struggles within you during its brief final moments.",
-      "requires": "[red]Costs 15 HP[/red]"
+      "description": "You sample the [green]Fragrant One[/green], a small woody mushroom with a delicate scent of shellfish...\n\nA burst of energy spurs you to run, jump, and [gold]rigorously train[/gold]!\nThen, a sudden [red][jitter]stabbing pain[/jitter][/red] hits you as the living fungi struggles within you during its brief final moments.\n\nObtain a [green]Fragrant Mushroom[/green] relic.\n\n[red]Costs 15 HP[/red]"
     }
   ],
-  "acts": [
-    "Glory"
-  ],
+  "acts": ["Glory"],
   "conditions": [],
-  "notes": "Each option obtains a unique relic reward. The Big Mushroom option has no health cost but the relic provides a negative effect (food coma). The Fragrant Mushroom option costs 15 HP but provides training benefits. The localization contains a MEDLEY event outcome not accessible through the initial options, suggesting either a hidden mechanic or unused content.",
-  "card_refs": [],
   "relic_refs": [
     {
       "class_name": "BigMushroom",

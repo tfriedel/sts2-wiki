@@ -21,7 +21,7 @@
   "conditions": [
     "Acts 1-2 only"
   ],
-  "notes": "The Gorge option provides a random selection of [gold]Common[/gold] cards. The Search option deals unblockable, unpowered damage.",
+  "notes": "[b]Gorge[/b]: When selected, displays flavor text: 'You take a little nibble of [b]cheese[/b] but this fuels you to eat even more [b]cheese[/b].' before the card selection. You choose 2 cards from 8 randomly generated [gold]Common[/gold] cards from your character's card pool. After selection, shows: 'You have eaten an awe-inspiring amount of [b]cheese[/b]. Tonight, dreams will be [b]cheese[/b].'\n\n[b]Search[/b]: Deals [red]14[/red] HP of unblockable, unpowered damage and grants the [gold]Chosen Cheese[/gold] relic. Displays flavor text: 'You scrounge about for [sine]hours and hours...[/sine] Time slips by as your mind travels to strange places from the sheer presence of all this [b]cheese[/b], and you fade into a stupor.... You snap awake and realize you're holding something. [b]The Chosen Cheese.[/b]'",
   "card_refs": [],
   "relic_refs": [
     {

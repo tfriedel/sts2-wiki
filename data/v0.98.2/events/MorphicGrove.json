@@ -5,7 +5,7 @@
   "options": [
     {
       "title": "Group",
-      "description": "Lose [red]ALL[/red] of your [gold]Gold[/gold]. [gold]Transform[/gold] [blue]2[/blue] cards."
+      "description": "Lose [red]100[/red] [gold]Gold[/gold]. [gold]Transform[/gold] [blue]2[/blue] cards."
     },
     {
       "title": "Loner",
@@ -13,11 +13,8 @@
     }
   ],
   "acts": ["Overgrowth"],
-  "conditions": [
-    "At least 100 Gold",
-    "At least 2 transformable cards in deck"
-  ],
-  "notes": "The [gold]Group[/gold] option causes you to lose [red]all[/red] your current Gold (via Stolen loss) and then you select 2 transformable cards from your deck to [gold]Transform[/gold] into random cards. The [green]Loner[/green] option grants a permanent [green]+5 Max HP[/green] with no downside. In multiplayer runs, the Group option causes [red]all players[/red] to lose their Gold.",
+  "conditions": ["At least 100 Gold"],
+  "notes": "Choosing the Group option requires transforming 2 cards from your deck. The transformation is random for each selected card. Choosing the Loner option grants you 5 additional Max HP.",
   "card_refs": [],
   "relic_refs": []
 }

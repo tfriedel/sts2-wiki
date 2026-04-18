@@ -13,10 +13,8 @@
     }
   ],
   "acts": ["Hive"],
-  "conditions": [
-    "All players must have at least one card that can be enchanted with Perfect Fit"
-  ],
-  "notes": "This event features a multi-page structure with different flavor text based on which option you choose. The [gold]Resist[/gold] path presents text about walking past the holes and questioning your choice, while the [purple]Enter Your Hole[/purple] path shows you descending into darkness and emerging unchanged but enlightened. Mechanically: Resist removes 2 cards from your deck and adds 1 Normality curse (net -1 card slot). Enter Your Hole enchants a single card with Perfect Fit (level 1), with the game prompting you to select a valid target from your deck.",
+  "conditions": ["At least one enchantable card in deck"],
+  "notes": "This event features two contrasting narrative outcomes. Choosing to enter your hole enchants a single card of your choice with [purple]Perfect Fit[/purple]. Choosing to resist removes 2 cards from your deck and adds a [red]Normality[/red] curse instead. The event requires at least one card in your deck that can be enchanted with [purple]Perfect Fit[/purple] in order to appear.",
   "card_refs": [
     {
       "class_name": "Normality",

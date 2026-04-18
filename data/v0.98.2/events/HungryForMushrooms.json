@@ -15,6 +15,7 @@
   "acts": ["Glory"],
   "conditions": [],
   "notes": "Selecting the Fragrant Mushroom costs 15 HP.",
+  "card_refs": [],
   "relic_refs": [
     {
       "class_name": "BigMushroom",

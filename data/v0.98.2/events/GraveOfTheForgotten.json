@@ -4,18 +4,18 @@
   "description": "There is a single grave with a [jitter][aqua]roiling blue flame[/aqua][/jitter]...\n\nA prideful warrior died in battle but its soul is restless. It wants to keep fighting, you feel it [sine]begging[/sine] to journey with you.\n\nBut perhaps it's better for it to face the [red]truth[/red]?",
   "options": [
     {
-      "title": "Accept the ForgottenSoul",
-      "description": "Obtain [gold]ForgottenSoul[/gold]."
+      "title": "Confront with Truth",
+      "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. [gold]Enchant[/gold] a card that [gold]Exhausts[/gold] with [purple]Soul's Power[/purple].",
+      "requires": "You have no cards with [gold]Exhaust[/gold] that can be [purple]Enchanted[/purple]."
     },
     {
-      "title": "Confront with Truth",
-      "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. [gold]Enchant[/gold] a card that [gold]Exhausts[/gold] with [purple]SoulsPower[/purple].",
-      "requires": "You have no cards with [gold]Exhaust[/gold] that can be [purple]Enchanted[/purple]."
+      "title": "Accept the Forgotten Soul",
+      "description": "Obtain [gold]Forgotten Soul[/gold]."
     }
   ],
   "acts": ["Glory"],
   "conditions": [],
-  "notes": "This event presents a choice between two paths for the restless soul. [gold]Accepting[/gold] provides ForgottenSoul relic with no cost. [gold]Confronting[/gold] requires at least one deck card that can be enchanted with SoulsPower; if available, it adds a Decay curse to the deck and applies SoulsPower enchantment to the selected card. The Confront option is only available if eligible cards exist in your deck.",
+  "notes": "Choosing [purple]Confront with Truth[/purple] adds a [red]Decay[/red] curse to the player's deck and requires selecting one card that [gold]Exhausts[/gold] to [purple]Enchant[/purple] with [purple]Soul's Power[/purple]. The option is locked if no eligible cards are available. Choosing [gold]Accept the Forgotten Soul[/gold] obtains the [gold]Forgotten Soul[/gold] relic instead.",
   "card_refs": [
     {
       "class_name": "Decay",
@@ -26,7 +26,7 @@
   "relic_refs": [
     {
       "class_name": "ForgottenSoul",
-      "title": "ForgottenSoul",
+      "title": "Forgotten Soul",
       "slug": "forgotten-soul"
     }
   ]

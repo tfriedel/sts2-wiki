@@ -4,7 +4,7 @@
   "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]\"We meet once more... it's me, Ranwid!\"[/sine]\n\nYou do not know this man.",
   "options": [
     {
-      "title": "Give a potion",
+      "title": "Give [your chosen Potion]",
       "description": "Obtain a random [gold]Relic[/gold].",
       "requires": "You don't have any Potions that can be given."
     },
@@ -13,24 +13,24 @@
       "description": "Obtain a random [gold]Relic[/gold]."
     },
     {
-      "title": "Give a relic",
+      "title": "Give [your chosen Relic]",
       "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold].",
       "requires": "You don't have any Relics that can be given."
     }
   ],
   "acts": [
-    "Glory",
-    "Hive",
     "Overgrowth",
-    "Underdocks"
+    "Underdocks",
+    "Hive",
+    "Glory"
   ],
   "conditions": [
-    "Acts 2+ only",
-    "At least 100 Gold required",
-    "At least one Potion required",
-    "At least one tradable Relic required"
+    "Act 2+",
+    "At least 100 Gold",
+    "At least one Potion",
+    "At least one tradable Relic"
   ],
-  "notes": "During this event, your Potions become locked and cannot be removed by other means. The potion or relic offered in each choice is randomly selected from what you currently own. Trading a [gold]Potion[/gold] or 100 [gold]Gold[/gold] for a relic nets 1 [gold]Relic[/gold], but trading a [gold]Relic[/gold] nets 2 [gold]Relics[/gold] for a net gain of 1 [gold]Relic[/gold].",
+  "notes": "During this event, your Potions become locked and cannot be removed by other means. The Potion and Relic options display the specific item you'll give up, randomly selected from what you currently own. All three options grant random [gold]Relics[/gold]: the Potion option grants 1, the Gold option grants 1, and the Relic option grants 2 (for a net gain of 1 [gold]Relic[/gold]). Each choice leads to a follow-up page showing Ranwid's reaction to the gift.",
   "card_refs": [],
   "relic_refs": []
 }

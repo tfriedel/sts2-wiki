@@ -14,9 +14,9 @@
   ],
   "acts": ["Underdocks"],
   "conditions": [
-    "At least floor 6 (Acts 2+)"
+    "Floor 6+"
   ],
-  "notes": "This event features a dynamic scenario where two [gold]Punch Constructs[/gold] continuously battle each other in the background while you decide your course of action.\n\n[gold]Nab path:[/gold] Grabbing the treasure triggers an attack from one of the constructs. You receive an [red]Injury[/red] curse added to your deck and a random [gold]Relic[/gold] as compensation, then the event ends.\n\n[gold]Fight path:[/gold] Choosing to fight leads directly into combat against both [gold]Punch Constructs[/gold]. Victory grants a random [gold]Relic[/gold] and [gold]Potion[/gold] as rewards.\n\nDuring the entire event, [red]potion removal is disabled[/red], which may affect your deck management strategy if you're holding unwanted potions. The constructs feature continuous attack animations with visual effects (screen shake, hit sparks) throughout.",
+  "notes": "This event features a dynamic scenario where two [gold]Punch Constructs[/gold] continuously battle each other in the background while you decide your course of action.\n\n[gold]Nab path:[/gold] Attempting to grab the treasure results in being [red]clocked in the face[/red] by one of the constructs' right hook. You receive an [red]Injury[/red] curse added to your deck and a random [gold]Relic[/gold], then the event ends.\n\n[gold]Fight path:[/gold] Choosing to fight enters a combat encounter against both [gold]Punch Constructs[/gold]. Victory grants a random [gold]Relic[/gold] and [gold]Potion[/gold] as rewards.\n\nThe [gold]Nab[/gold] option provides the relic faster but incurs a curse, while [gold]Fight[/gold] offers better total rewards at the cost of an additional combat encounter. Potion removal is disabled during the event.",
   "card_refs": [
     {
       "class_name": "Injury",

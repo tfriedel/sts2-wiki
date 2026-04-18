@@ -5,7 +5,7 @@
   "options": [
     {
       "title": "Bottle",
-      "description": "Procure [aqua]Glowwater Potion[/aqua]."
+      "description": "Procure [aqua]Glowwater[/aqua]."
     },
     {
       "title": "Climb",
@@ -14,7 +14,7 @@
   ],
   "acts": ["Underdocks"],
   "conditions": [],
-  "notes": "The [gold]Bottle[/gold] option gives you the Glowwater Potion, which when used exhausts your entire hand and draws 10 cards. The [gold]Climb[/gold] option costs 13 Max HP but grants the [gold]Fresnel Lens[/gold] relic, which enchants cards with [gold]Nimble[/gold] (+2 Dexterity) both when obtained and whenever cards are offered as rewards or encountered at merchants.",
+  "notes": "The Bottle option grants the Glowwater potion. The Climb option requires sacrificing 13 Max HP to obtain the Fresnel Lens relic. Each choice path provides distinct atmospheric flavor text describing the outcome.",
   "card_refs": [],
   "relic_refs": [
     {

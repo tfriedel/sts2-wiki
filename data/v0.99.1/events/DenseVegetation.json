@@ -4,12 +4,12 @@
   "description": "Having taken the wrong path for a good while, you find yourself in a thick jungle of [green]ferns[/green], [green]shrubs[/green], and [green]vines[/green]. Especially [green]vines[/green]. Exhaustion sets in, and a dark thought comes to mind:\n\n[sine][purple]\"You are lost, unprepared, and the inevitability of death is approaching.\"[/purple][/sine]\n\nWhat do you do?",
   "options": [
     {
-      "title": "Rest",
-      "description": "Heal [green][varies by current HP][/green] HP. Fight some [red]enemies[/red]."
-    },
-    {
       "title": "Trudge On",
       "description": "Remove a card from your [gold]Deck[/gold]. Lose [red]11[/red] HP."
+    },
+    {
+      "title": "Rest",
+      "description": "Heal [green][varies by current HP][/green] HP. Fight some [red]enemies[/red]."
     }
   ],
   "acts": ["Overgrowth"],

@@ -1,7 +1,7 @@
 {
   "class_name": "DenseVegetation",
   "title": "Dense Vegetation",
-  "description": "Having taken the wrong path for a good while, you find yourself in a thick jungle of [green]ferns[/green], [green]shrubs[/green], and [green]vines[/green]. Especially [green]vines[/green]. Exhaustion sets in, and a dark thought comes to mind:\n\n[sine][purple]\"You are lost, unprepared, and the inevitability of death is approaching.\"[/purple][/sine]\n\nWhat do you do?",
+  "description": "Having taken the wrong path for a good while, you find yourself in a thick jungle of [green]ferns[/green], [green]shrubs[/green], and [green]vines[/green]. Especially [green]vines[/green]. Exhaustion sets in, and a dark thought comes to mind:\n\n[sine][purple]\u201cYou are lost, unprepared, and the inevitability of death is approaching.\u201d[/purple][/sine]\n\nWhat do you do?",
   "options": [
     {
       "title": "Trudge On",
@@ -14,7 +14,7 @@
   ],
   "acts": ["Overgrowth"],
   "conditions": [],
-  "notes": "[green]Rest[/green] heals an amount that varies based on current HP (calculated the same way as resting at a rest site), then triggers a mandatory combat encounter. Choosing [green]Trudge On[/green] applies unblockable, unpowered damage.",
+  "notes": "This event features two distinct paths: [gold]Trudge On[/gold] removes a card from your deck and deals 11 HP damage to end the event, or [gold]Rest[/gold] heals you using the standard rest site healing formula and transitions to a forced combat encounter against [gold]DenseVegetationEventEncounter[/gold]. After choosing Rest, you must fight before the event concludes.",
   "card_refs": [],
   "relic_refs": []
 }

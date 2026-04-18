@@ -5,7 +5,7 @@
   "options": [
     {
       "title": "Immerse",
-      "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] unblockable, unpowered damage."
+      "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] [red]unblockable, unpowered[/red] damage."
     },
     {
       "title": "Abstain",
@@ -13,7 +13,7 @@
     },
     {
       "title": "Linger",
-      "description": "Gain [green]2[/green] Max HP. Take unblockable, unpowered damage that escalates (starts at [red]4[/red] damage after first immersion)."
+      "description": "Gain [green]2[/green] Max HP. Take escalating [red]unblockable, unpowered[/red] damage (starts at [red]4[/red] on first linger, increases by 1 each subsequent linger)."
     },
     {
       "title": "Exit Baths",
@@ -22,7 +22,7 @@
   ],
   "acts": ["Underdocks"],
   "conditions": [],
-  "notes": "[gold]Immerse[/gold] locks you into a repeating loop. Each action (initial immersion and subsequent lingerings) grants [green]2 Max HP[/green] and deals [red]3[/red], [red]4[/red], [red]5[/red]... damage respectively (all [red]unblockable, unpowered[/red]). Net HP cost per linger: 1 HP, then 2 HP, 3 HP, etc., since you always gain 2 Max HP simultaneously. The flavor text escalates through 9 linger stages—from increasingly desperate (LINGER1-3) to frantic (LINGER4), then surreal (LINGER5-9). If lingering would reduce your current HP to 0 or below, a [sine][red]death warning[/red][/sine] appears, but you can still attempt it (which will kill you) or [gold]Exit Baths[/gold]. [gold]Abstain[/gold] is available only from the initial choice and immediately heals [green]10 HP[/green] and ends the event safely.",
+  "notes": "[gold]Immerse[/gold] locks you into a repeating loop of increasingly dangerous choices. [gold]Abstain[/gold] is available only on the initial choice and immediately ends the event after healing [green]10 HP[/green]. Once you [gold]Immerse[/gold], each subsequent [gold]Linger[/gold] action grants [green]2 Max HP[/green] but deals escalating [red]unblockable, unpowered[/red] damage: [red]3[/red], [red]4[/red], [red]5[/red], [red]6[/red]... (increasing by 1 each time). Net HP cost = damage minus max HP gain, so: 1 HP, 2 HP, 3 HP, etc. The page descriptions escalate dramatically through 9 linger stages: desperate (LINGER1-3), frantic (LINGER4), then surreal and dissociative (LINGER5-9). When the next [gold]Linger[/gold] would kill you, a [sine][red]death warning[/red][/sine] page appears instead, offering a last chance to [gold]Exit Baths[/gold] safely. You can still choose to [gold]Linger[/gold] from the death warning (which kills you) or exit safely.",
   "card_refs": [],
   "relic_refs": []
 }

@@ -5,20 +5,20 @@
   "options": [
     {
       "title": "Setting 1",
-      "description": "Fight the easiest training dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+      "description": "Fight a [blue]{Setting1Hp}[/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
     },
     {
       "title": "Setting 2",
-      "description": "Fight a medium difficulty training dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards from your deck."
+      "description": "Fight a [blue]{Setting2Hp}[/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
     },
     {
       "title": "Setting 3",
-      "description": "Fight the hardest training dummy. Obtain a random [gold]Relic[/gold]."
+      "description": "Fight a [blue]{Setting3Hp}[/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
     }
   ],
   "acts": ["Glory"],
   "conditions": [],
-  "notes": "This event is a timed training encounter. You have [blue]3 turns[/blue] to defeat the dummy of your chosen difficulty setting. If you run out of time, you fail the training and receive a humiliating message. If you defeat the dummy in time, you receive one of three rewards:\n\n[gold]Setting 1[/gold] grants a random potion from your character's potion pool or the shared potion pool.\n\n[gold]Setting 2[/gold] upgrades [blue]2[/blue] random upgradable cards from your deck.\n\n[gold]Setting 3[/gold] grants a random relic from the relic pool.\n\nHP values scale based on multiplayer difficulty and act progression.",
+  "notes": "This is a [blue]3-turn[/blue] timed combat event. Each setting contains a different dummy variant with corresponding HP values that scale dynamically based on player count and act progression. Defeating the dummy grants a setting-specific reward, while running out of time results in a defeat message with no reward.\n\n[gold]Setting 1[/gold] rewards a random potion drawn from both your character's personal potion pool and the shared potion pool.\n\n[gold]Setting 2[/gold] upgrades up to [blue]2[/blue] random cards from your deck that are upgradable. If fewer than 2 upgradable cards exist, only those available are upgraded.\n\n[gold]Setting 3[/gold] grants a random relic from the relic reward pool.",
   "card_refs": [],
   "relic_refs": []
 }

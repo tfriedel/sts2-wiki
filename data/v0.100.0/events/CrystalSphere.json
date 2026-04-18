@@ -1,7 +1,7 @@
 {
   "class_name": "CrystalSphere",
   "title": "Crystal Sphere",
-  "description": "[sine][blue]"I predicted you'd enter...!"[/blue][/sine]\n\nA [jitter]raspy[/jitter] voice calls out as you enter a [purple]mystic hut[/purple].\n\n[sine][blue]"Your destiny has brought you here. We must uncover your future and fortunes so you can SAVE US ALL!!"[/blue][/sine]\n"Okay, here are the options for the [gold]Crystal Sphere reading[/gold]. Be sure to sign this waiver as well," she says while bringing out pen and parchment.",
+  "description": "[sine][blue]\"I predicted you'd enter...!\"[/blue][/sine]\n\nA [jitter]raspy[/jitter] voice calls out as you enter a [purple]mystic hut[/purple].\n\n[sine][blue]\"Your destiny has brought you here. We must uncover your future and fortunes so you can SAVE US ALL!!\"[/blue][/sine]\n\"Okay, here are the options for the [gold]Crystal Sphere reading[/gold]. Be sure to sign this waiver as well,\" she says while bringing out pen and parchment.",
   "options": [
     {
       "title": "Uncover Future",

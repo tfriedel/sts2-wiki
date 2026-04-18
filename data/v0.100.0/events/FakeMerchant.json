@@ -1,20 +1,20 @@
 {
   "class_name": "FakeMerchant",
   "title": "The Merchant???",
-  "description": "A suspiciously convenient merchant has set up shop. You can browse and purchase relics, or if things don't go well, throw a potion at them.",
+  "description": "Placeholder",
   "options": [],
   "acts": [
-    "Overgrowth",
-    "Underdocks",
+    "Glory",
     "Hive",
-    "Glory"
+    "Overgrowth",
+    "Underdocks"
   ],
   "conditions": [
-    "Act 2+ only",
+    "Act 2 or later",
     "Single player only",
-    "Requires 100+ Gold OR a Foul Potion in inventory"
+    "At least 100 Gold OR possession of Foul Potion"
   ],
-  "notes": "This is a [blue]custom event[/blue] with no standard options. Instead, you interact with the merchant through a custom UI to browse and purchase relics. The merchant stocks 6 random relics from a pool of 9 possible relics: Fake Anchor, Fake Blood Vial, Fake Happy Flower, Fake Lee's Waffle, Fake Mango, Fake Orichalcum, Fake Snecko Eye, Fake Strike Dummy, and Fake Venerable Tea Set. Each relic costs [gold]50 Gold[/gold]. If you have a [red]Foul Potion[/red], you can throw it at the merchant to trigger a combat encounter ([gold]FakeMerchantEventEncounter[/gold]). After defeating the merchant, you receive [gold]Fake Merchant's Rug[/gold] plus any relics you didn't purchase.",
+  "notes": "This is a [blue]custom event[/blue] with no traditional options. The player interacts with a merchant through a custom UI to browse and purchase relics. The merchant stocks [gold]6 random relics[/gold] from a pool of 9 possible fakes: Fake Anchor, Fake Blood Vial, Fake Happy Flower, Fake Lee's Waffle, Fake Mango, Fake Orichalcum, Fake Snecko Eye, Fake Strike Dummy, and Fake Venerable Tea Set. Each relic costs [gold]50 Gold[/gold]. If a [red]Foul Potion[/red] is thrown during the encounter, it triggers a fight ([gold]FakeMerchantEventEncounter[/gold]). After defeating the merchant, the player receives [gold]Fake Merchant's Rug[/gold] plus all unsold relics from the inventory.",
   "card_refs": [],
   "relic_refs": [
     {

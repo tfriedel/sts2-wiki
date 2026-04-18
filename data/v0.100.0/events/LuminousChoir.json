@@ -9,16 +9,16 @@
     },
     {
       "title": "Offer Tribute",
-      "description": "Pay [red]99-149[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold].",
-      "requires": "Requires [blue]99-149[/blue] [gold]Gold[/gold]."
+      "description": "Pay [red]100-149[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold].",
+      "requires": "Requires [blue]100-149[/blue] [gold]Gold[/gold]."
     }
   ],
   "acts": ["Overgrowth"],
   "conditions": [
-    "All players must have at least 99-149 Gold (randomized on event generation)",
+    "All players must have at least 100-149 Gold (randomized on event generation)",
     "Must have available Relics in grab bag"
   ],
-  "notes": "The gold cost for [blue]Offer Tribute[/blue] is randomized when the event is generated. Base cost is 149 Gold, but it's reduced by a random amount between 0-50 Gold, resulting in a final cost between 99-149 Gold. All players must have at least this randomized amount to see this event. The [blue]Offer Tribute[/blue] option is also locked if the player doesn't have enough gold at choice time.",
+  "notes": "The gold cost for [blue]Offer Tribute[/blue] is randomized when the event is generated. Base cost is 149 Gold, but it's reduced by a random amount between 0-49 Gold, resulting in a final cost between 100-149 Gold. All players must have at least this randomized amount to see this event. The [blue]Offer Tribute[/blue] option is also locked if the player doesn't have enough gold at choice time.",
   "card_refs": [
     {
       "class_name": "SporeMind",

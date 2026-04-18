@@ -18,7 +18,7 @@
   ],
   "acts": ["Glory"],
   "conditions": [],
-  "notes": "This is a training encounter where you have [blue]3 turns[/blue] to defeat the Battleworn Dummy. Choose a difficulty setting — higher difficulties have stronger dummies but better rewards. If you defeat the dummy within the time limit, you receive the associated reward. If time runs out, you fail the training (but still progress past the event).",
+  "notes": "This event presents a timed training challenge with three difficulty settings. You have [blue]3 turns[/blue] to defeat your chosen dummy.\n\n[gold]Setting 1[/gold]: The weakest dummy. On victory, you receive a random potion.\n\n[gold]Setting 2[/gold]: Medium difficulty. On victory, [gold]2[/gold] random upgradable cards from your deck are upgraded.\n\n[gold]Setting 3[/gold]: The strongest dummy. On victory, you obtain a random relic from the next relic pull.\n\nIf you fail to defeat the dummy within [blue]3 turns[/blue], the event ends in defeat, but you may continue your run without additional penalty.",
   "card_refs": [],
   "relic_refs": []
 }

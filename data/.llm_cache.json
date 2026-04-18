@@ -3886,5 +3886,85 @@
   "v0.100.0:events:DoorsOfLightAndDark": {
     "cache_key": "06ef9ccc81018a9fa9884f822b0becfbc846dba5ec5a7de26e8bf69c99d07684",
     "last_processed": "1774043038.6067772"
+  },
+  "v0.99.1:events:AromaOfChaos": {
+    "cache_key": "36375f5fef3368f35ac393136c37ef2308591c1c41ae726b529becfe02271e77",
+    "last_processed": "1773852294.7848983"
+  },
+  "v0.99.1:events:ByrdonisNest": {
+    "cache_key": "e33819fd7befea3083457fce0d01bef4d7505ef63da328331d1f86015ab6c687",
+    "last_processed": "1773852294.8658268"
+  },
+  "v0.99.1:events:Amalgamator": {
+    "cache_key": "a0aa59d12ee902d9cc490645be62bb5282c6bbfd612ee421b13de6115bc6d840",
+    "last_processed": "1773852294.7742352"
+  },
+  "v0.99.1:events:BrainLeech": {
+    "cache_key": "59932ca17e53bb77fdd54c3e342d54eae88fc3d1bd5141094029435b39f36339",
+    "last_processed": "1773852294.8234887"
+  },
+  "v0.99.1:events:Bugslayer": {
+    "cache_key": "c752301adb445a0ca665cfba021f63e2d4ea58274aa7d9d2458e931557180202",
+    "last_processed": "1773852294.8525982"
+  },
+  "v0.99.1:events:ColossalFlower": {
+    "cache_key": "6f85c41e61d5be5138b4aba037cd422ca275bfb2652b19027b0c92b0de3bb05b",
+    "last_processed": "1773852294.9029067"
+  },
+  "v0.99.1:events:DeprecatedEvent": {
+    "cache_key": "9114f99afbbab6401d52fe410d47d890557bafcbda4ecbf4aec6823ae67b7043",
+    "last_processed": "1773852294.9849083"
+  },
+  "v0.99.1:events:CrystalSphere": {
+    "cache_key": "73001ba25f032088a19b0e0b06fbb291a0506405ed9e4d3595da7e9d4c19390d",
+    "last_processed": "1773852294.918394"
+  },
+  "v0.99.1:events:ColorfulPhilosophers": {
+    "cache_key": "3aef081957e2a14018709ab42aff3b4ca30eeccb39d7ff4a0c789ad2e1f07987",
+    "last_processed": "1773852294.8854613"
+  },
+  "v0.99.1:events:BattlewornDummy": {
+    "cache_key": "c728f527bc00c020f4cd42e0c3b2c732e7c9cbdd7111ec636049b847c4923819",
+    "last_processed": "1773852294.8094552"
+  },
+  "v0.99.1:events:DenseVegetation": {
+    "cache_key": "4195fe23901a771b3c664e26161693d765af7e82e3e3e78060616e4663ef8728",
+    "last_processed": "1773852294.9813385"
+  },
+  "v0.99.1:events:AbyssalBaths": {
+    "cache_key": "af405afef456c9c71229fa5fddffff9683f7f422c3f70ab805ec0e6a6d501da1",
+    "last_processed": "1773852294.7540457"
+  },
+  "v0.99.1:events:DollRoom": {
+    "cache_key": "89643d30f78e3cbd5b2797674da54885dd23c4b34f2bb9327101782790295d81",
+    "last_processed": "1773852295.0138056"
+  },
+  "v0.99.1:events:DoorsOfLightAndDark": {
+    "cache_key": "06ef9ccc81018a9fa9884f822b0becfbc846dba5ec5a7de26e8bf69c99d07684",
+    "last_processed": "1773852295.0220695"
+  },
+  "v0.99.1:events:FakeMerchant": {
+    "cache_key": "c59f4459ad990bb10ef2c124a8e9a5b2f646f06c914b9d4d82a1146da04c2ace",
+    "last_processed": "1773852295.1344562"
+  },
+  "v0.99.1:events:DrowningBeacon": {
+    "cache_key": "5126c590ea86ddb55299f974a0f445ccaf519877a6b333458bab6db73871d64b",
+    "last_processed": "1773852295.0441756"
+  },
+  "v0.99.1:events:InfestedAutomaton": {
+    "cache_key": "75ddae84168ce2fd3ee6226a6d4f7eaab298fb054a1090cbb7506d0662ce22c2",
+    "last_processed": "1773852295.1972368"
+  },
+  "v0.99.1:events:FieldOfManSizedHoles": {
+    "cache_key": "f2847048d14b14a0eafad5fac0ea547461d56f45ce9966ff730d8d3a405d90be",
+    "last_processed": "1773852295.1501749"
+  },
+  "v0.99.1:events:HungryForMushrooms": {
+    "cache_key": "609e15067d0111268de84cd123a86228bddab36d808cba7e645ae297dc0aecec",
+    "last_processed": "1773852295.1769018"
+  },
+  "v0.99.1:events:GraveOfTheForgotten": {
+    "cache_key": "c78b6f7ec18c46c9159649b37e69df2adc0e95285fc90020d53eb8f8c91a5c26",
+    "last_processed": "1773852295.1664684"
   }
 }

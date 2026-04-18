@@ -1,7 +1,7 @@
 {
   "class_name": "BrainLeech",
   "title": "Brain Leech",
-  "description": "[jitter]*thunk*[/jitter]\n\nA sharp pain is felt atop your head and a thought stabs into your mind.\n\n[purple][sine]"SHARE KNOWLEDGE???"[/sine][/purple]\n\nYou are unsure how to proceed...",
+  "description": "[jitter]*thunk*[/jitter]\n\nA sharp pain is felt atop your head and a thought stabs into your mind.\n\n[purple][sine]\"SHARE KNOWLEDGE???\"[/sine][/purple]\n\nYou are unsure how to proceed...",
   "options": [
     {
       "title": "Share Knowledge",

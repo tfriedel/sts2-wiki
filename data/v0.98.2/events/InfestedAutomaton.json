@@ -12,9 +12,11 @@
       "description": "Obtain a random [gold]0 cost card[/gold]."
     }
   ],
-  "acts": ["Hive"],
+  "acts": [
+    "Hive"
+  ],
   "conditions": [],
-  "notes": "Each choice leads to a different outcome page describing the result:\n\n[gold]Study[/gold]: By studying the [aqua]Glowing Automaton[/aqua] and how its inner workings are laid out, you realize that specific metals and their arrangements resist various ailments! You apply this [blue]Technology[/blue] to yourself.\n\n[gold]Touch the Core[/gold]: At the slightest touch of the [aqua]core[/aqua], you are [jitter]jolted by [gold]electricity[/gold][/jitter]. You scamper away, feeling [sine][purple]altered[/purple][/sine] from the experience.",
+  "notes": "This event grants random cards. [gold]Study[/gold] adds a random Power card to your deck. [gold]Touch the Core[/gold] adds a random 0-cost card to your deck. After choosing an option, an encounter description is displayed before the event closes.",
   "card_refs": [],
   "relic_refs": []
 }

@@ -14,8 +14,10 @@
     }
   ],
   "acts": ["Glory"],
-  "conditions": ["All players must have at least one card that can be enchanted with Soul's Power"],
-  "notes": "The Confront option is locked if you lack any enchantable cards (cards with Exhaust that can receive the Soul's Power enchantment). When you confront the soul, it fights you—represented by the [aqua]SOUL FIGHT[/aqua] mentioned in the multi-page description—and you win despite your exhaustion. The Confront path adds a Decay curse to your deck as a cost but grants you the ability to enhance one of your Exhaust cards. The Accept path is risk-free and grants the Forgotten Soul relic, which the soul offers to accompany you loyally to your final destination.",
+  "conditions": [
+    "In multi-character runs, every character must have at least one card that can be enchanted with [purple]Soul's Power[/purple]"
+  ],
+  "notes": "The [purple]Soul's Power[/purple] enchantment removes the [gold]Exhaust[/gold] keyword from any card it's applied to. The [gold]Forgotten Soul[/gold] relic deals damage to a random enemy whenever you [gold]Exhaust[/gold] a card, creating interesting synergy with both event choices. The [red]Decay[/red] curse is unplayable and damages you at the end of your turn whenever it's in your [gold]Hand[/gold].",
   "card_refs": [
     {
       "class_name": "Decay",

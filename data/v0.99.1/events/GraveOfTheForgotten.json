@@ -15,7 +15,7 @@
   ],
   "acts": ["Glory"],
   "conditions": [],
-  "notes": "The CONFRONT option is locked if the player has no cards with [gold]Exhaust[/gold] in their deck that can be enchanted with [purple]Soul's Power[/purple]. Upon confronting, a soul battle occurs and the soul yields, granting the [purple]Soul's Power[/purple] enchantment on the selected exhaust card.",
+  "notes": "A prideful warrior's restless soul haunts this grave, seeking companionship in battle. The CONFRONT option is locked if the player has no cards with [gold]Exhaust[/gold] in their deck that can be enchanted with [purple]Soul's Power[/purple].\n\n[gold]Accepting[/gold]: The soul recognizes your strength and willingly ascends with you, becoming a loyal guide. You obtain the Forgotten Soul relic and the soul's flames coalesce around you as a [aqua]burning soul[/aqua], escorting you to your final destination.\n\n[gold]Confronting[/gold]: You tell the soul its struggle is over. It contests this truth, crashing into yours in a [jitter][aqua]SOUL FIGHT[/aqua][/jitter]. Stunned by the countless battles you have endured, it finally concedes and moves on. You gain a Decay curse but can [gold]Enchant[/gold] one of your Exhaust cards with [purple]Soul's Power[/purple], a powerful enchantment.",
   "card_refs": [
     {
       "class_name": "Decay",

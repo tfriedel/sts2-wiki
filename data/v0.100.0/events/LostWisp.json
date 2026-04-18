@@ -10,12 +10,12 @@
     },
     {
       "title": "Search the Nearby Area",
-      "description": "Gain [blue]60[/blue] [gold]Gold[/gold]."
+      "description": "Gain [blue]60 ± 15[/blue] [gold]Gold[/gold]."
     }
   ],
   "acts": ["Hive"],
   "conditions": [],
-  "notes": "The gold reward from searching varies by ±15 (45-75 total) based on RNG. The Capture option is locked if your Max HP is below a certain threshold.",
+  "notes": "The SEARCH option's gold reward varies by ±15 from the base 60 (45-75 gold total), determined by RNG when the event is encountered. The CLAIM option requires sufficient Max HP to unlock.",
   "card_refs": [
     {
       "class_name": "Decay",

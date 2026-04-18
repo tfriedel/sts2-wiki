@@ -18,7 +18,7 @@
   ],
   "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
   "conditions": ["Act 2 only"],
-  "notes": "This event provides a choice between three doll relics with different selection mechanisms. The [gold]Pick at Random[/gold] option instantly grants one random relic. The [gold]Take Some Time[/gold] option costs [red]5 unblockable, unpowered damage[/red] and presents a choice from 2 of the 3 relics (shuffled). The [gold]Examine Each[/gold] option costs [red]15 unblockable, unpowered damage[/red] and allows selection from all 3 relics. Ambient sound plays while the event is active.",
+  "notes": "This event provides three options for obtaining a Doll Relic with different costs and selection methods. [gold]Pick at Random[/gold] grants a random relic with no HP cost. [gold]Take Some Time[/gold] costs [red]5 unblockable, unpowered damage[/red] but allows you to choose from 2 of the 3 relics (randomly shuffled). [gold]Examine Each and Make the Best Choice[/gold] costs [red]15 unblockable, unpowered damage[/red] and lets you choose from all 3 available relics. The available relics are [gold]DaughterOfTheWind[/gold], [gold]MrStruggles[/gold], and [gold]BingBong[/gold]. After selecting an option and doll, a unique description for that doll is displayed before the relic is obtained.",
   "card_refs": [],
   "relic_refs": [
     {
