@@ -1,15 +1,25 @@
 {
   "class_name": "FakeMerchant",
   "title": "The Merchant???",
-  "description": "Placeholder",
-  "options": [],
+  "description": "A suspicious merchant offers counterfeit relics for sale.",
+  "options": [
+    {
+      "title": "Open Inventory",
+      "description": "Browse and purchase relics from the merchant's inventory at 50 Gold each."
+    },
+    {
+      "title": "Throw Foul Potion",
+      "description": "Throw a Foul Potion at the merchant to challenge them to combat.",
+      "requires": "Requires a Foul Potion"
+    }
+  ],
   "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
   "conditions": [
-    "Act 2 or later",
-    "Single player only",
-    "At least 100 Gold or have a Foul Potion"
+    "Act 2+ only",
+    "Single-player only",
+    "Requires at least 100 Gold or a Foul Potion"
   ],
-  "notes": "This is a custom merchant event with a unique merchant interface. The merchant offers 6 randomly selected relics from a pool of 9 fake relics, each costing [gold]50 Gold[/gold] to purchase. The player can interact with the merchant to buy relics, or throw a Foul Potion to trigger a fight with the FakeMerchantEventEncounter. Upon defeat or escape from the encounter, the player receives the [gold]Fake Merchant's Rug[/gold] relic along with any relics they purchased during the event.",
+  "notes": "This is a custom merchant event with a unique merchant interface. The merchant's inventory contains [gold]6 randomly selected[/gold] relics chosen from a pool of 9 fake relics, each costing [gold]50 Gold[/gold] to purchase. The player can also throw a Foul Potion to challenge the merchant to combat. Upon defeating the merchant, the player receives [gold]Fake Merchant's Rug[/gold] plus all unsold relics from the merchant's inventory (not just the ones purchased).",
   "card_refs": [],
   "relic_refs": [
     {"class_name": "FakeAnchor", "title": "Fake Anchor", "slug": "fake-anchor"},

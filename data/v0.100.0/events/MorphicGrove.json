@@ -13,11 +13,8 @@
     }
   ],
   "acts": ["Overgrowth"],
-  "conditions": [
-    "At least 100 Gold",
-    "At least 2 transformable cards in deck"
-  ],
-  "notes": "The [gold]Group[/gold] option causes you to lose [red]all[/red] your current Gold (via Stolen loss) and then you select 2 transformable cards from your deck to [gold]Transform[/gold] into random cards. The [green]Loner[/green] option grants a permanent [green]+5 Max HP[/green] with no downside. In multiplayer runs, the Group option causes [red]all players[/red] to lose their Gold.",
+  "conditions": ["At least 100 Gold", "At least 2 transformable cards in deck"],
+  "notes": "The Group option steals all of your gold and requires you to select 2 transformable cards from your deck. Each selected card is then randomly transformed into a different card. The Loner option provides a safer reward of 5 additional Max HP.",
   "card_refs": [],
   "relic_refs": []
 }

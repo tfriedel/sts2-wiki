@@ -9,7 +9,10 @@
 - [x] Build orchestrator (scripts/llm_extract.py)
 - [x] Write event extraction prompt
 - [x] Process all 58 events for v0.101.0
-- [~] Process events for v0.100.0 (59/68), v0.99.1 (31/68), v0.98.2 (32/68) — 122/204 total (60%)
+- [x] Process all EventModel (regular) events for v0.101.0
+- [x] Process all EventModel (regular) events for v0.100.0 (59/59 — 100%)
+- [~] Process EventModel (regular) events for v0.99.1 (41/59 — 70%) and v0.98.2 (32/59 — 54%)
+- [ ] Note: AncientEventModel (9 per version) handled separately via extract-ancients script
 - [ ] Remove old extract_events.py regex script (once all versions migrated)
 - [ ] Remove _EVENT_ENRICHMENTS dict from generate_events.py (once LLM data covers all)
 

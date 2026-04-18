@@ -4250,5 +4250,45 @@
   "v0.98.2:events:TheFutureOfPotions": {
     "cache_key": "de75b6202a25f33268e678ba9decbfd9360131c511dd552e5ee18738f5c825e1",
     "last_processed": "1773566830.7842684"
+  },
+  "v0.98.2:events:TheLegendsWereTrue": {
+    "cache_key": "4332482d5bf60c856944fcfafdd0d64b6332de5b67567125dacee2f601f67233",
+    "last_processed": "1773566830.7780635"
+  },
+  "v0.98.2:events:TheLanternKey": {
+    "cache_key": "f10cf9ac10b845584a07e007a43105fcd7eb7bd00d328642c561535fa472d625",
+    "last_processed": "1773566830.7898998"
+  },
+  "v0.98.2:events:TrashHeap": {
+    "cache_key": "a65a7f5e99bd249e1a2dc66f7328f48f1b88f053846fa58f86410b5474712e05",
+    "last_processed": "1773566830.7894382"
+  },
+  "v0.98.2:events:TabletOfTruth": {
+    "cache_key": "e7854e35e19db01e371690d19d834129d7988cd16f2628d289c6179140760975",
+    "last_processed": "1773566830.787093"
+  },
+  "v0.98.2:events:ThisOrThat": {
+    "cache_key": "519f494bcd0c87df47fa212115a200a0c696916de6cfe067083b6851b8cbb525",
+    "last_processed": "1773566830.776344"
+  },
+  "v0.98.2:events:StoneOfAllTime": {
+    "cache_key": "35e72376d59a2a91c574adba4467ab8164556ddba0d59419d8b668315ed492b1",
+    "last_processed": "1773566830.7823048"
+  },
+  "v0.98.2:events:UnrestSite": {
+    "cache_key": "a49c6d5cdbbf82fe3ba757f7026b5c6e949918060998f98fa20d239a5e96ad41",
+    "last_processed": "1773566830.788979"
+  },
+  "v0.98.2:events:TeaMaster": {
+    "cache_key": "75946b5fe21427a95ccd4c9343d25bbb5365f10e545c60675b4eff0301020167",
+    "last_processed": "1773566830.7847354"
+  },
+  "v0.98.2:events:WarHistorianRepy": {
+    "cache_key": "52113f074edaa56f5e21eeb538eb8e0a8e930b7614c18a00457ae9da45ad5c48",
+    "last_processed": "1773566830.785608"
+  },
+  "v0.98.2:events:Wellspring": {
+    "cache_key": "209a23fddbcf754d447cb1839c0486e4f25a2ad7e2c5ea9b098bb27da6088644",
+    "last_processed": "1773566830.7770452"
   }
 }

@@ -1,0 +1,28 @@
+{
+  "class_name": "UnrestSite",
+  "title": "Unrest Site",
+  "description": "You find a secluded [gold]Rest Site[/gold] and start a [orange]fire[/orange] to get some rest.\nOr so you thought.\n\nOnce the fire is started, it begins to swell, reaching not upwards but [sine]sideways[/sine] towards a grove of [purple]oil-seeping trees[/purple].\n\nShould you try resting anyways?",
+  "options": [
+    {
+      "title": "Rest Anyways",
+      "description": "[green]Heal to full HP.[/green] Receive [red]Poor Sleep[/red]."
+    },
+    {
+      "title": "Kill the Trees",
+      "description": "Lose [red]8[/red] Max HP. Obtain a random [gold]Relic[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [
+    "All players at 70% Max HP or below"
+  ],
+  "notes": "After choosing an option, the event displays an outcome page with additional flavor text:\n\n[gold]Kill the Trees:[/gold] Days later, covered in ash and oily goop, a massive flock of byrd spirits rise from the slain trees and drop a small box at your feet, thanking you for freeing them.\n\n[gold]Rest Anyways:[/gold] You toss and turn as the fire roars through the night with the disgusting trees releasing a wretched scent. You wake up recovered, but not fully replenished.",
+  "card_refs": [
+    {
+      "class_name": "PoorSleep",
+      "title": "Poor Sleep",
+      "slug": "poor-sleep"
+    }
+  ],
+  "relic_refs": []
+}

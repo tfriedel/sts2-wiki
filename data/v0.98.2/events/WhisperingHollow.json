@@ -1,0 +1,20 @@
+{
+  "class_name": "WhisperingHollow",
+  "title": "Whispering Hollow",
+  "description": "Making your way through a [red]hollow of dead trees[/red] you happen upon a single bone-white tree. Clay baubles hang off its branches, which curve inward like protective ribs.\n\nSuch a [purple]creepy tree[/purple]. It whispers.\n\n[sine][blue]...make exchange.....[/blue][/sine]",
+  "options": [
+    {
+      "title": "Exchange Gold",
+      "description": "Lose [red]50[/red] [gold]Gold[/gold]. Procure [blue]2[/blue] random [gold]Potions[/gold]."
+    },
+    {
+      "title": "Hug the Tree",
+      "description": "Lose [red]9[/red] HP. Choose a card to [gold]Transform[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": ["At least 50 Gold"],
+  "notes": "The [gold]Exchange Gold[/gold] option offers two random Potions from the available potion pool. The [gold]Hug the Tree[/gold] option requires you to select one card from your deck to Transform into a random card, and also deals 9 unblockable, unpowered damage.",
+  "card_refs": [],
+  "relic_refs": []
+}

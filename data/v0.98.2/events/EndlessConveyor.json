@@ -5,35 +5,43 @@
   "options": [
     {
       "title": "Grab Caviar off the Belt",
-      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Gain [green]4[/green] Max HP. Continue feasting!"
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Gain [green]4[/green] Max HP. Continue feasting!",
+      "requires": "You could eat more but you are out of [gold]Gold[/gold]."
     },
     {
       "title": "Grab Clam Roll off the Belt",
-      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Heal [green]10[/green] HP. Continue feasting!"
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Heal [green]10[/green] HP. Continue feasting!",
+      "requires": "You could eat more but you are out of [gold]Gold[/gold]."
     },
     {
       "title": "Grab Fried Eel off the Belt",
-      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Add a random Colorless Card to your [gold]Deck[/gold]. Continue feasting!"
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Add a random Colorless Card to your [gold]Deck[/gold]. Continue feasting!",
+      "requires": "You could eat more but you are out of [gold]Gold[/gold]."
     },
     {
       "title": "Grab Golden Fysh off the Belt",
-      "description": "[green]LUCKY WINNER![/green] Gain [blue]75[/blue] [gold]Gold[/gold]."
+      "description": "[green]LUCKY WINNER![/green] Gain [blue]75[/blue] [gold]Gold[/gold].",
+      "requires": "You could eat more but you are out of [gold]Gold[/gold]."
     },
     {
       "title": "Grab Jelly Liver off the Belt",
-      "description": "Pay [red]35[/red] [gold]Gold[/gold]. [gold]Transform[/gold] a card. Continue feasting!"
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. [gold]Transform[/gold] a card. Continue feasting!",
+      "requires": "You could eat more but you are out of [gold]Gold[/gold]."
     },
     {
       "title": "Grab Seapunk Salad off the Belt",
-      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Add [gold]Feeding Frenzy[/gold] to your [gold]Deck[/gold]. Continue feasting!"
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Add [gold]Feeding Frenzy[/gold] to your [gold]Deck[/gold]. Continue feasting!",
+      "requires": "You could eat more but you are out of [gold]Gold[/gold]."
     },
     {
       "title": "Grab Spicy Snappy off the Belt",
-      "description": "Pay [red]35[/red] [gold]Gold[/gold]. [gold]Upgrade[/gold] a random card. Continue feasting!"
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. [gold]Upgrade[/gold] a random card. Continue feasting!",
+      "requires": "You could eat more but you are out of [gold]Gold[/gold]."
     },
     {
       "title": "Grab Suspicious Condiment off the Belt",
-      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Procure a random [gold]Potion[/gold]. Continue feasting!"
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Procure a random [gold]Potion[/gold]. Continue feasting!",
+      "requires": "You could eat more but you are out of [gold]Gold[/gold]."
     },
     {
       "title": "Observe the Chef",
@@ -46,7 +54,7 @@
   ],
   "acts": ["Underdocks"],
   "conditions": [
-    "All players must have at least 105 Gold"
+    "Each player must have at least 105 Gold to encounter"
   ],
   "notes": "The Endless Conveyor is a repeating feast event. You enter a shack with a chef placing dishes on a conveyor belt. From the initial state, you can either grab the first dish or observe the chef. After each grab, a new dish appears on the belt and you can either grab again or leave.\n\n[gold]Dish Selection[/gold]\nDishes appear in weighted random order. Each new grab selects from a weighted pool:\n- Caviar (weight 6): Always available\n- Spicy Snappy (weight 3): Always available\n- Jelly Liver (weight 3): Always available  \n- Fried Eel (weight 3): Always available\n- Suspicious Condiment (weight 3): Only if you have open [gold]Potion[/gold] slots\n- Clam Roll (weight 6): Only if you're not at maximum HP\n- Golden Fysh (weight 1): Only after the first grab; grants 75 Gold at no cost\n- Seapunk Salad: Guaranteed on every 5th grab (grabs 5, 10, 15, etc.); costs 35 Gold\n\nThe same dish never appears twice in a row. If you lack 35 Gold remaining, you cannot grab—the choice becomes \"Broke\" and you must leave the event.",
   "card_refs": [

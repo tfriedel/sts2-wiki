@@ -1,0 +1,21 @@
+{
+  "class_name": "TabletOfTruth",
+  "title": "Tablet of Truth",
+  "description": "You defeat a pair of [blue]Guardian Kin[/blue] and make your way into a protected vault.\n\nInside is a [purple][sine]tablet with familiar inscriptions[/sine][/purple]. Your intuition tells you that this language can be deciphered rather easily... However, once you begin deciphering you'll be locked in.\n\nThe tablet gives off a soothing energy and you can smash it to receive its [green]healing energies[/green] instead.",
+  "options": [
+    {
+      "title": "Decipher",
+      "description": "Lose [red]3[/red] Max HP. [gold]Upgrade[/gold] a random card.",
+      "requires": "Locked if Max HP ≤ 3"
+    },
+    {
+      "title": "Smash",
+      "description": "Heal [green]20[/green] HP."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [],
+  "notes": "This is a multi-step event with two distinct paths:\n\n**Smash Path**: Heal 20 HP and end the event. The tablet shatters, releasing its healing energy.\n\n**Decipher Path**: An escalating sequence where you continue deciphering the tablet at increasing Max HP costs:\n- **Step 1** (DECIPHER_1): \"As you begin deciphering the tablet, the [blue]Kin's Mantra[/blue] speaks to you. The [gold]Truth[/gold] is everything...\" — Lose 6 Max HP, [gold]upgrade[/gold] 1 random card\n- **Step 2** (DECIPHER_2): \"You feel faint from all this reading!\" — Lose 12 Max HP, [gold]upgrade[/gold] 1 random card\n- **Step 3** (DECIPHER_3): \"You're barely holding on... The tablet is nearly deciphered. The [blue]Mantra[/blue] holds the truth...\" — Lose 24 Max HP, [gold]upgrade[/gold] 1 random card\n- **Step 4** (DECIPHER_4): \"In a trance, you decipher the remaining text, abandoning mind and body... One final word remains... It will cost everything.\" — Lose (Max HP - 1) Max HP, [gold]upgrade ALL[/gold] cards in your deck\n- **Step 5** (DECIPHER_5): You black out and awaken to find the final word etched in the floor: [b]\"Air\"[/b]\n\nAt each step after the initial choice (steps 1-4), you can [gold]Give Up[/gold] to end the event and leave the vault.\n\nEach \"continue deciphering\" option is locked if taking the Max HP loss would kill you. This can make later steps inaccessible depending on your current health.",
+  "card_refs": [],
+  "relic_refs": []
+}
