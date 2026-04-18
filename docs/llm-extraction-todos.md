@@ -10,8 +10,8 @@
 - [x] Write event extraction prompt
 - [x] Process all EventModel (regular) events: v0.101.0 (58/58), v0.100.0 (59/59), v0.99.1 (59/59), v0.98.2 (59/59) — 235/235 total ✓
 - [ ] Note: AncientEventModel (9 per version) handled separately via extract-ancients script
-- [ ] Remove old extract_events.py regex script (once all versions migrated)
-- [ ] Remove _EVENT_ENRICHMENTS dict from generate_events.py (once LLM data covers all)
+- [x] Remove old extract_events.py regex script (migrated to per-entity JSON + LLM extraction)
+- [ ] Remove _EVENT_ENRICHMENTS dict from generate_events.py (needed for legacy enrichments during transition)
 
 ## Monsters
 - [x] Write monster extraction prompt (scripts/prompts/extract_monster.md)

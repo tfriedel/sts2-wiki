@@ -513,10 +513,17 @@ def main() -> None:
     data_dir = os.path.expanduser(args.data_dir)
     output_dir = os.path.expanduser(args.output_dir)
 
-    with open(os.path.join(data_dir, "events.json")) as f:
-        events = json.load(f)
+    # Load legacy aggregate events.json if present (produced by the old regex
+    # extractor). Now that every version has per-entity JSONs from the LLM
+    # extractor, this file is optional and used only as a fallback for fields
+    # not yet in per-entity data.
+    aggregate_path = os.path.join(data_dir, "events.json")
+    events: list[dict] = []
+    if os.path.exists(aggregate_path):
+        with open(aggregate_path) as f:
+            events = json.load(f)
 
-    # Load per-entity JSON overrides from data/{version}/events/*.json
+    # Load per-entity JSON from data/{version}/events/*.json
     per_entity_dir = os.path.join(data_dir, "events")
     per_entity_data: dict[str, dict] = {}
     if os.path.isdir(per_entity_dir):
@@ -527,7 +534,7 @@ def main() -> None:
                 cname = entity_data.get("class_name", fname.removesuffix(".json"))
                 per_entity_data[cname] = entity_data
 
-    # Merge per-entity data over combined data (per-entity takes precedence)
+    # Merge per-entity data over aggregate data (per-entity takes precedence)
     events_by_class = {e["class_name"]: e for e in events}
     for cname, entity_data in per_entity_data.items():
         if cname in events_by_class:
