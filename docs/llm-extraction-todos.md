@@ -17,10 +17,10 @@
 - [x] Write monster extraction prompt (scripts/prompts/extract_monster.md)
 - [x] Add "monsters" to ENTITY_TYPE_DIRS in llm_extract.py
 - [x] Adapt generate_monsters.py to read per-entity JSON + overrides
-- [x] Process all monsters for v0.101.0
-- [x] Review and fix issues (1 issue: DeprecatedMonster 0 HP, expected)
+- [x] Process all monsters for v0.101.0 (121/121 — 100%)
 - [x] Process all monsters for v0.100.0 (120/120 — 100%)
-- [~] Process monsters for v0.99.1 (68/121 — 56%) and v0.98.2 (62/121 — 51%) — 250/362 total (69%)
+- [x] Review and fix issues (1 issue: DeprecatedMonster 0 HP, expected)
+- [~] Process monsters for v0.99.1 (75/121 — 62%) and v0.98.2 (64/121 — 53%) — 380/484 total (79%)
 
 ## Enchantments
 - [x] Write enchantment extraction prompt
