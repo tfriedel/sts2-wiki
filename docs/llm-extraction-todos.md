@@ -8,10 +8,7 @@
 ## Events
 - [x] Build orchestrator (scripts/llm_extract.py)
 - [x] Write event extraction prompt
-- [x] Process all 58 events for v0.101.0
-- [x] Process all EventModel (regular) events for v0.101.0
-- [x] Process all EventModel (regular) events for v0.100.0 (59/59 — 100%)
-- [~] Process EventModel (regular) events for v0.99.1 (41/59 — 70%) and v0.98.2 (32/59 — 54%)
+- [x] Process all EventModel (regular) events: v0.101.0 (58/58), v0.100.0 (59/59), v0.99.1 (59/59), v0.98.2 (59/59) — 235/235 total ✓
 - [ ] Note: AncientEventModel (9 per version) handled separately via extract-ancients script
 - [ ] Remove old extract_events.py regex script (once all versions migrated)
 - [ ] Remove _EVENT_ENRICHMENTS dict from generate_events.py (once LLM data covers all)
@@ -22,7 +19,8 @@
 - [x] Adapt generate_monsters.py to read per-entity JSON + overrides
 - [x] Process all monsters for v0.101.0
 - [x] Review and fix issues (1 issue: DeprecatedMonster 0 HP, expected)
-- [~] Process monsters for older versions (v0.100.0: 81/120, v0.99.1: 30/121, v0.98.2: 0/121) — 111/362 total (31%)
+- [x] Process all monsters for v0.100.0 (120/120 — 100%)
+- [~] Process monsters for v0.99.1 (68/121 — 56%) and v0.98.2 (62/121 — 51%) — 250/362 total (69%)
 
 ## Enchantments
 - [x] Write enchantment extraction prompt
