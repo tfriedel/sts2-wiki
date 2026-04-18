@@ -14,6 +14,7 @@
   ],
   "acts": ["Overgrowth"],
   "conditions": ["At least 100 Gold"],
+  "notes": "The GROUP option causes the Morphics to steal 100 Gold from you and then [gold]Transform[/gold] 2 cards from your deck into random cards. The LONER option provides a peaceful interaction with a shy Morphic, granting Max HP instead.",
   "card_refs": [],
   "relic_refs": []
 }
