@@ -25,7 +25,7 @@
   ],
   "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
   "conditions": [],
-  "notes": "This event presents a choice to [gold]Enchant[/gold] a single card in your deck. Choose one of three options based on the card type you want to enhance:\n\n• [blue]Read the Back[/blue] — Choose an Attack to enchant with [purple]Sharp[/purple] (2 stacks)\n• [blue]Read a Random Passage[/blue] — Choose a Skill to enchant with [purple]Nimble[/purple] (2 stacks)\n• [blue]Read the Entire Book[/blue] — Choose a Power to enchant with [purple]Swift[/purple] (2 stacks)\n\nEach option is only available if you have at least one card of that type that can accept the corresponding enchantment. If none of your cards can be enchanted, you can only [blue]Move On[/blue].",
+  "notes": "This event offers the player a choice of three enchantments for cards in their deck: [gold]Sharp[/gold] for Attacks, [gold]Nimble[/gold] for Skills, and [gold]Swift[/gold] for Powers. Each enchantment applies 2 stacks to the selected card. The player only sees options for card types present in their deck — options lacking compatible cards appear locked with an explanation. If the player has no cards of any of these types, they can only choose 'Move On'. After selecting an option, a flavor text page appears describing the book's contents. The three enchantments are: Sharp (for Attack cards), Nimble (for Skill cards), and Swift (for Power cards).",
   "card_refs": [],
   "relic_refs": []
 }

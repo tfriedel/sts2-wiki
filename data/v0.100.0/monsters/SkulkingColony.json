@@ -1,0 +1,82 @@
+{
+  "class_name": "SkulkingColony",
+  "title": "Skulking Colony",
+  "min_hp": 79,
+  "max_hp": 79,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SMASH_MOVE",
+      "title": "Smash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        },
+        {
+          "type": "status",
+          "amount": 5
+        }
+      ],
+      "effects": [
+        "Deal 11 damage",
+        "Add 5 Dazed to discard"
+      ]
+    },
+    {
+      "id": "ZOOM_MOVE",
+      "title": "Zoom",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        },
+        {
+          "type": "block",
+          "amount": 13
+        }
+      ],
+      "effects": [
+        "Deal 17 damage",
+        "Gain 13 Block"
+      ]
+    },
+    {
+      "id": "INERTIA_MOVE",
+      "title": "Inertia",
+      "intents": [
+        {
+          "type": "buff"
+        },
+        {
+          "type": "status",
+          "amount": 3
+        }
+      ],
+      "effects": [
+        "Apply 4 Strength",
+        "Add 3 Dazed to discard"
+      ]
+    },
+    {
+      "id": "PIERCING_STABS_MOVE",
+      "title": "Piercing Stabs",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 8,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "2 hits"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Smash. Cycles: Smash → Zoom → Inertia → Piercing Stabs",
+  "powers_on_spawn": [
+    "HardenedShellPower (15)"
+  ],
+  "notes": "Adds Dazed cards to the player's discard pile (3 from Inertia, 5 from Smash). Gains Strength each Inertia turn, increasing damage output over time. HardenedShellPower on spawn increases its defense."
+}

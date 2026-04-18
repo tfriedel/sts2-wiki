@@ -10,11 +10,19 @@
     {
       "title": "Drink",
       "description": "Heal [green]33% of your maximum HP[/green]."
+    },
+    {
+      "title": "Reach In",
+      "description": "Obtain a random [gold]Relic[/gold]. Add [red]Writhe[/red] to your [gold]Deck[/gold]."
     }
   ],
   "acts": ["Underdocks"],
-  "conditions": ["All players must have at least one card that can be enchanted with Spiral"],
-  "notes": "The Observe option presents a card selection dialog to choose which card in your deck to enchant with [purple]Spiral[/purple]. The Drink option heals a fixed percentage of your current maximum HP. After selecting either option, the event concludes with a narrative description of your choice.",
-  "card_refs": [],
+  "conditions": ["Requires at least one card in your deck that can be enchanted with Spiral"],
+  "notes": "[gold]Observe[/gold]: Prompts you to select a single card from your deck that can be enchanted with Spiral, then applies the Spiral enchantment to it. Cards eligible for Spiral enchantment include Strike, Defend, and other compatible cards.\n\n[gold]Drink[/gold]: Restores [green]33% of your maximum HP[/green].\n\n[gold]Reach In[/gold]: Grants a random relic and adds one copy of Writhe to your deck. By disrupting the whirlpool's equilibrium, the frigid water carves invisible spirals into your arm.",
+  "card_refs": [
+    {"class_name": "Strike", "title": "Strike", "slug": "strike"},
+    {"class_name": "Defend", "title": "Defend", "slug": "defend"},
+    {"class_name": "Writhe", "title": "Writhe", "slug": "writhe"}
+  ],
   "relic_refs": []
 }

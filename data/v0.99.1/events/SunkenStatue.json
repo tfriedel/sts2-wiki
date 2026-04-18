@@ -12,9 +12,12 @@
       "description": "Gain [blue]101-121[/blue] [gold]Gold[/gold]. Lose [red]7[/red] HP."
     }
   ],
-  "acts": ["Underdocks", "Overgrowth"],
+  "acts": [
+    "Underdocks",
+    "Overgrowth"
+  ],
   "conditions": [],
-  "notes": "The gold reward varies each run from [gold]101-121[/gold] depending on random variance. The [red]7[/red] HP damage from [red]Dive into the Water[/red] is [red]unblockable[/red].",
+  "notes": "The gold amount varies between 101-121 based on RNG at event creation. Choosing to grab the sword prevents you from collecting the offerings, while diving for them causes you to take damage from falling stones.",
   "card_refs": [],
   "relic_refs": [
     {

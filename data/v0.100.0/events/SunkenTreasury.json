@@ -5,16 +5,16 @@
   "options": [
     {
       "title": "First Chest",
-      "description": "Gain [blue]52-67[/blue] [gold]Gold[/gold]."
+      "description": "Gain [blue]60[/blue] [gold]Gold[/gold]."
     },
     {
       "title": "Second Chest",
-      "description": "Gain [blue]303-363[/blue] [gold]Gold[/gold]. Receive [red]Greed[/red]."
+      "description": "Gain [blue]333[/blue] [gold]Gold[/gold]. Receive [red]Greed[/red]."
     }
   ],
   "acts": ["Underdocks"],
   "conditions": [],
-  "notes": "Both chest rewards vary based on RNG. The First Chest gives 60 gold with a variance of ±8 (range: 52-67). The Second Chest gives 333 gold with a variance of ±30 (range: 303-363) but curses the player with [red]Greed[/red], adding the curse card permanently to their deck.",
+  "notes": "The gold values are randomized when the event is encountered: the first chest's gold amount varies from 52 to 68 (base 60 ±8), and the second chest's gold amount varies from 303 to 363 (base 333 ±30). Choosing the second chest adds the [red]Greed[/red] curse to your deck.",
   "card_refs": [
     {
       "class_name": "Greed",
