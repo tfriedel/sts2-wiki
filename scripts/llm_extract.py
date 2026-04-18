@@ -285,30 +285,50 @@ async def process_entity(
         save_cache(cache)
         return
 
-    # Cross-version reuse: when the source+loc+prompt hash matches an output
-    # file written for any other version, copy it rather than re-running the
-    # LLM. This makes incremental patch bumps essentially free for unchanged
-    # entities.
+    # Cross-version reuse: if another version's decompiled source + loc for
+    # this entity are byte-identical to the current version's, copy its data
+    # file rather than re-running the LLM. We intentionally compare source
+    # content directly (not stored cache keys) because the stored keys can
+    # drift when the cache-key schema or the prompt file changes, even
+    # though the underlying source has not.
     if not force and not entity_file.exists():
+        src_subdir = ENTITY_TYPE_DIRS[entity_type]
         for other_version_dir in sorted((PROJECT_ROOT / "data").iterdir()):
             if not other_version_dir.is_dir() or other_version_dir.name == version:
                 continue
-            other_key = f"{other_version_dir.name}:{entity_type}:{class_name}"
-            other_cached = cache.get(other_key)
-            if isinstance(other_cached, dict) and other_cached.get("cache_key") == cache_key:
-                other_file = other_version_dir / entity_type / f"{class_name}.json"
-                if other_file.exists():
-                    print(
-                        f"  Copying {class_name} from {other_version_dir.name} (identical source)"
-                    )
-                    entity_file.parent.mkdir(parents=True, exist_ok=True)
-                    entity_file.write_text(other_file.read_text())
-                    cache[entity_cache_key] = {
-                        "cache_key": cache_key,
-                        "last_processed": str(Path(source_path).stat().st_mtime),
-                    }
-                    save_cache(cache)
-                    return
+            other_file = other_version_dir / entity_type / f"{class_name}.json"
+            if not other_file.exists():
+                continue
+            other_src_path = (
+                PROJECT_ROOT
+                / "decompiled"
+                / other_version_dir.name
+                / src_subdir
+                / f"{class_name}.cs"
+            )
+            if not other_src_path.exists():
+                continue
+            other_src = other_src_path.read_text()
+            other_loc_dir = (
+                PROJECT_ROOT / "extracted" / other_version_dir.name / "localization" / "eng"
+            )
+            other_loc_data = load_localization(str(other_loc_dir), ENTITY_TYPE_LOC[entity_type])
+            other_loc_entries = get_loc_entries_for_entity(other_loc_data, class_name)
+            other_cache_key = compute_cache_key(
+                other_src,
+                json.dumps(other_loc_entries, sort_keys=True),
+                prompt_content,
+            )
+            if other_cache_key == cache_key:
+                print(f"  Copying {class_name} from {other_version_dir.name} (identical source)")
+                entity_file.parent.mkdir(parents=True, exist_ok=True)
+                entity_file.write_text(other_file.read_text())
+                cache[entity_cache_key] = {
+                    "cache_key": cache_key,
+                    "last_processed": str(Path(source_path).stat().st_mtime),
+                }
+                save_cache(cache)
+                return
 
     print(f"Processing {class_name}...")
 
