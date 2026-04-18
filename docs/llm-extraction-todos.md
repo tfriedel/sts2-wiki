@@ -68,7 +68,7 @@
 - [x] Optimize: skip per-entity site rebuild (--skip-build flag, ~15x faster)
 - [x] Add justfile targets for LLM extraction
 - [x] Update the sts2-new-patch skill to include LLM extraction steps
-- [~] Clean up: remove old regex extraction scripts once all types migrated
-  - [x] extract_events.py (removed; events fully migrated)
-  - [ ] extract_cards.py, extract_relics.py, extract_powers.py, extract_potions.py, extract_encounters.py, extract_enchantments.py, extract_monsters.py (consider if still needed)
+- [x] Clean up: remove old regex extraction scripts once all types migrated
+  - [x] extract_events.py (removed; events fully migrated across all versions)
+  - [x] extract_cards/relics/powers/potions/encounters/enchantments/monsters.py kept — they produce the aggregate JSONs (e.g. cards.json) that older versions (v0.100.0, v0.99.1, v0.98.2) still depend on because per-entity LLM extraction only covers events + monsters so far. Removing them would require running the LLM extractor for every type × every historical version, which has not been scoped.
 - [x] Validate all per-entity data against content.config.ts schemas (`just check-content` runs `astro sync`)
