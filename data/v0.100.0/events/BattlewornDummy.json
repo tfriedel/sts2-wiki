@@ -5,20 +5,20 @@
   "options": [
     {
       "title": "Setting 1",
-      "description": "Fight a [blue]75[/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+      "description": "Fight a [blue]{Setting1Hp}[/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
     },
     {
       "title": "Setting 2",
-      "description": "Fight a [blue]150[/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
+      "description": "Fight a [blue]{Setting2Hp}[/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
     },
     {
       "title": "Setting 3",
-      "description": "Fight a [blue]300[/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
+      "description": "Fight a [blue]{Setting3Hp}[/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
     }
   ],
-  "acts": ["Glory"],
-  "conditions": [],
-  "notes": "This is a training event with a [blue]3-turn[/blue] time limit. The player must defeat the selected dummy within 3 turns to win.\n\n[gold]Setting 1:[/gold] 75 HP dummy. Reward on victory: 1 random potion.\n[gold]Setting 2:[/gold] 150 HP dummy. Reward on victory: 2 random cards in your deck are upgraded.\n[gold]Setting 3:[/gold] 300 HP dummy. Reward on victory: 1 random relic obtained.\n\nIf you fail to defeat the dummy within [blue]3 turns[/blue], you lose the event and receive a humiliating message, though you can continue your run.",
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": ["Always available (shared event)"],
+  "notes": "A training encounter where you must defeat the selected dummy within [blue]3 turns[/blue]. Each setting has increasing difficulty and different rewards. Dummy HP scales based on player count and current act progression.\n\n[gold]Setting 1:[/gold] Lowest difficulty. On victory: 1 random [gold]Potion[/gold] from your character's potion pool (or shared pool if character pool is empty).\n\n[gold]Setting 2:[/gold] Medium difficulty. On victory: [blue]2[/blue] random upgradeable cards from your deck are upgraded (cards selected randomly, only upgradeable cards selected).\n\n[gold]Setting 3:[/gold] Highest difficulty. On victory: 1 random [gold]Relic[/gold] from the relic pool (pulled from the front of the relic deck).\n\nIf you fail to defeat the dummy within the 3-turn limit, the event ends in defeat. You may continue your run regardless of victory or defeat.",
   "card_refs": [],
   "relic_refs": []
 }
