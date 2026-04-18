@@ -1,0 +1,54 @@
+{
+  "class_name": "Nibbit",
+  "title": "Nibbit",
+  "min_hp": 44,
+  "max_hp": 48,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BUTT_MOVE",
+      "title": "Butt",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        }
+      ],
+      "effects": [
+        "Deal 13 damage"
+      ]
+    },
+    {
+      "id": "SLICE_MOVE",
+      "title": "Hesitant Slice",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 6
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Deal 6 damage",
+        "Gain 5 Block"
+      ]
+    },
+    {
+      "id": "HISS_MOVE",
+      "title": "Hiss",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through Butt → Slice → Hiss on repeat. Starting move depends on positioning: if alone starts with Butt, if in front with Slice, if not in front with Hiss.",
+  "powers_on_spawn": [],
+  "notes": "Nibbit's move cycle is always the same three moves in rotation, but the entry point into the cycle varies based on battle conditions (whether it fights alone or its position in the monster group)."
+}

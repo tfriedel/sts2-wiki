@@ -1,0 +1,78 @@
+{
+  "class_name": "KnowledgeDemon",
+  "title": "Knowledge Demon",
+  "min_hp": 399,
+  "max_hp": 399,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CURSE_OF_KNOWLEDGE_MOVE",
+      "title": "Curse of Knowledge",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Player chooses a status card to add",
+        "Stage 1: Disintegration (6) or MindRot",
+        "Stage 2: Disintegration (7) or Sloth",
+        "Stage 3: Disintegration (8) or WasteAway"
+      ]
+    },
+    {
+      "id": "SLAP_MOVE",
+      "title": "Slap",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        }
+      ],
+      "effects": [
+        "Deal 18 damage"
+      ]
+    },
+    {
+      "id": "KNOWLEDGE_OVERWHELMING_MOVE",
+      "title": "Knowledge Overwhelming",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 9,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "3 hits",
+        "Enter burnt state"
+      ]
+    },
+    {
+      "id": "PONDER_MOVE",
+      "title": "Ponder",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        },
+        {
+          "type": "heal"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 13 damage",
+        "Heal 30 per player",
+        "Gain 3 Strength",
+        "Exit burnt state"
+      ]
+    }
+  ],
+  "move_pattern": "Curse of Knowledge → Slap → Knowledge Overwhelming → Ponder (repeats). After Curse of Knowledge is used 3 times, it's removed from the cycle, leaving: Slap → Knowledge Overwhelming → Ponder (repeats).",
+  "powers_on_spawn": [],
+  "notes": "Knowledge Demon has a 'burnt state' mechanic controlled by its attacks. Knowledge Overwhelming enters burnt state, while Ponder exits it. Curse of Knowledge cycles through 3 stages with different status card choices (player chooses which card to add to their deck). The Disintegration damage on Curse of Knowledge scales across stages (6→7→8). After the 3rd use of Curse of Knowledge, the move cycle removes it entirely, cycling only Slap, Knowledge Overwhelming, and Ponder for the remainder of the fight."
+}

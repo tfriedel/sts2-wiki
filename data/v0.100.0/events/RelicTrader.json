@@ -21,7 +21,7 @@
     "Act 2+ only (cannot appear in Act 1)",
     "All players must own at least 5 tradable relics"
   ],
-  "notes": "This event offers up to three relic trades. The three relics you can trade away are [purple]randomly selected[/purple] from your collection of tradable relics (shuffled order), and the three replacement relics are pulled from the front of the standard relic pool. You will only see trade options for relics you actually own—if you have 5 tradable relics, only the top option appears; 6+ relics shows top and middle; 7+ shows all three. Only relics marked as [gold]tradable[/gold] in their properties are eligible for trade. If the event appears when you have 0 tradable relics (edge case), a [gold]Proceed[/gold] option is shown instead.",
+  "notes": "This event always offers three relic trades. The three relics you can trade away are [purple]randomly selected[/purple] from your collection of tradable relics (shuffled order), and the three replacement relics are pulled from the front of the standard relic pool. Only relics marked as [gold]tradable[/gold] in their properties are eligible for trade. Each trade immediately removes the old relic and adds the new one to your collection.",
   "card_refs": [],
   "relic_refs": []
 }

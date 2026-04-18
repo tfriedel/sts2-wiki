@@ -1,0 +1,20 @@
+{
+  "class_name": "PaelsLegion",
+  "title": "Pael's Legion",
+  "min_hp": 9999,
+  "max_hp": 9999,
+  "is_companion": true,
+  "moves": [
+    {
+      "id": "NOTHING_MOVE",
+      "title": "Nothing",
+      "intents": [],
+      "effects": [
+        "No action"
+      ]
+    }
+  ],
+  "move_pattern": "Uses only the Nothing move, which does nothing",
+  "powers_on_spawn": [],
+  "notes": "Pael's Legion is a companion monster that fights alongside the player. It has 9999 HP with a hidden health bar. While it does nothing in combat, it supports animation states for blocking, sleeping, and waking, indicating it can receive block effects and status effects from combat."
+}

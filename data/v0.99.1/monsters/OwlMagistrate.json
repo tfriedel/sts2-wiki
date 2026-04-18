@@ -1,0 +1,59 @@
+{
+  "class_name": "OwlMagistrate",
+  "title": "Owl Magistrate",
+  "min_hp": 243,
+  "max_hp": 243,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "MAGISTRATE_SCRUTINY",
+      "title": "Magistrate Scrutiny",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": ["Deal 17 damage"]
+    },
+    {
+      "id": "PECK_ASSAULT",
+      "title": "Peck Assault",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 6
+        }
+      ],
+      "effects": ["Deal 4 damage", "6 hits"]
+    },
+    {
+      "id": "JUDICIAL_FLIGHT",
+      "title": "Judicial Flight",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 1 Soar", "Begin flying"]
+    },
+    {
+      "id": "VERDICT",
+      "title": "Verdict",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 36
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 36 damage", "Apply 4 Vulnerable", "Remove Soar", "Land (stop flying)"]
+    }
+  ],
+  "move_pattern": "Strict cycle starting with Magistrate Scrutiny: Magistrate Scrutiny → Peck Assault → Judicial Flight → Verdict → repeat",
+  "powers_on_spawn": [],
+  "notes": "The Owl Magistrate cycles through a grounded phase and a flying phase. On Judicial Flight it takes off and gains 1 Soar. On Verdict it dive-bombs the player, dealing heavy damage and applying 4 Vulnerable, then removes its Soar and lands. Different hurt and death sound effects play depending on whether it is currently flying."
+}

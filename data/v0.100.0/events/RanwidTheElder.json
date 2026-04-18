@@ -25,10 +25,10 @@
     "Glory"
   ],
   "conditions": [
-    "Act 2+",
-    "At least 100 Gold",
-    "At least one Potion",
-    "At least one tradable Relic"
+    "Act 2+ only",
+    "All players must have at least 100 Gold",
+    "All players must have at least one Potion",
+    "All players must have at least one tradable Relic"
   ],
   "notes": "During this event, your Potions become locked and cannot be removed by other means. The Potion and Relic options display the specific item you'll give up, randomly selected from what you currently own. All three options grant random [gold]Relics[/gold]: the Potion option grants 1, the Gold option grants 1, and the Relic option grants 2 (for a net gain of 1 [gold]Relic[/gold]). Each choice leads to a follow-up page showing Ranwid's reaction to the gift.",
   "card_refs": [],

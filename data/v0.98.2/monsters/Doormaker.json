@@ -1,0 +1,54 @@
+{
+  "class_name": "Doormaker",
+  "title": "Doormaker",
+  "min_hp": 512,
+  "max_hp": 512,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WHAT_IS_IT_MOVE",
+      "title": "What is it",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": ["Apply Stun"]
+    },
+    {
+      "id": "BEAM_MOVE",
+      "title": "Beam",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 34
+        }
+      ],
+      "effects": ["Deal 34 damage"]
+    },
+    {
+      "id": "GET_BACK_IN_MOVE",
+      "title": "Get Back In",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 45
+        },
+        {
+          "type": "buff"
+        },
+        {
+          "type": "escape"
+        }
+      ],
+      "effects": [
+        "Deal 45 damage",
+        "Apply 5 Strength",
+        "Escape"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with What is it, then uses Beam, then repeatedly uses Get Back In.",
+  "powers_on_spawn": [],
+  "notes": "Doormaker fights alongside a Door companion. When Get Back In is used, Doormaker applies 5 Strength to itself, then revives the Door if it exists (increasing its max HP by 25 and setting its Strength to 4 × TimesGotBackIn) before removing itself from combat. If no Door companion exists, Doormaker escapes instead. Doormaker's appearance cycles through three different visuals based on how many times it has used Get Back In."
+}
