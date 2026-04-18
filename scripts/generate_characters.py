@@ -61,6 +61,8 @@ def main() -> None:
 
     count = 0
     for char in characters:
+        if "Deprecated" in char["class_name"]:
+            continue
         slug = slugify(char["class_name"])
 
         # Resolve starting deck titles

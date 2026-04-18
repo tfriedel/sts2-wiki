@@ -123,8 +123,7 @@
       "title": "Explode",
       "intents": [
         {
-          "type": "death_blow",
-          "damage": null
+          "type": "death_blow"
         }
       ],
       "effects": [
@@ -132,7 +131,7 @@
       ]
     }
   ],
-  "move_pattern": "Cycles through: Pressurize → Stomp → Ram → Siphon → Pressure Gun → Pressure Up → back to Stomp. When Steam Eruption reaches 6 stacks, transitions to About to Blow → Explode.",
+  "move_pattern": "Cycles through: Pressurize \u2192 Stomp \u2192 Ram \u2192 Siphon \u2192 Pressure Gun \u2192 Pressure Up \u2192 back to Stomp. When Steam Eruption reaches 6 stacks, transitions to About to Blow \u2192 Explode.",
   "powers_on_spawn": [],
-  "notes": "Waterfall Giant is a scaling threat that builds up over the fight. Each move applies 3-20 stacks of Steam Eruption power. When the buildup reaches 6 (tracked internally), the monster transitions to an unstoppable About to Blow state. It then deals an explosion that damages based on the total Steam Eruption accumulated—potentially 26 damage minimum (4 moves × 3 + 1 Pressurize × 20 = conservative estimate) up to 80+ damage in extended fights. Pressure Gun's damage scales up by 5 each use (starting at 23), making it increasingly dangerous. Siphon heals scale with player count in multiplayer. The monster doesn't disappear from Doom effects while it has the Steam Eruption power active."
+  "notes": "Waterfall Giant is a scaling threat that builds up over the fight. Each move applies 3-20 stacks of Steam Eruption power. When the buildup reaches 6 (tracked internally), the monster transitions to an unstoppable About to Blow state. It then deals an explosion that damages based on the total Steam Eruption accumulated\u2014potentially 26 damage minimum (4 moves \u00d7 3 + 1 Pressurize \u00d7 20 = conservative estimate) up to 80+ damage in extended fights. Pressure Gun's damage scales up by 5 each use (starting at 23), making it increasingly dangerous. Siphon heals scale with player count in multiplayer. The monster doesn't disappear from Doom effects while it has the Steam Eruption power active."
 }

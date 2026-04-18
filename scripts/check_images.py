@@ -73,12 +73,22 @@ KNOWN_MISSING_MONSTERS = {
 }
 
 
+# Cards whose atlas sprite metadata (.tres) exists in the game files but
+# whose PNG was not produced by the image extractor. These are typically
+# brand-new beta cards whose atlas region is defined but not yet rendered.
+KNOWN_MISSING_CARDS = {
+    "NotYet",  # v0.103.2 beta card; atlas region exists but extractor skipped it
+}
+
+
 def check_cards(data_dir: Path, images_dir: Path) -> list[tuple[str, str]]:
     """Check card images exist."""
     missing = []
     with open(data_dir / "cards.json") as f:
         cards = json.load(f)
     for card in cards:
+        if card["class_name"] in KNOWN_MISSING_CARDS:
+            continue
         char_dir = card["character"].lower()
         filename = pascal_to_snake(card["class_name"])
         primary = images_dir / "card_atlas" / char_dir / f"{filename}.png"

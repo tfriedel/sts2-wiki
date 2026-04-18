@@ -29,8 +29,9 @@ MONSTER_NOTES: dict[str, str] = {
     ),
     "Chomper": "Screech adds 3 Dazed to your Discard pile.",
     "LivingFog": (
-        "Bloat spawns Gas Bomb minions with escalating count: "
-        "1 on first use, 2 on second, up to a maximum of 5 per Bloat."
+        "Bloat spawns a single Gas Bomb minion each use. "
+        "(In v0.101.0 and earlier, Bloat escalated to spawn up to 5 bombs; "
+        "the escalation was removed in v0.103.2.)"
     ),
     "FakeMerchantMonster": (
         "Bug: Throw Relic's intent shows 10/9 damage (ThrowRelicDamage), but the move "

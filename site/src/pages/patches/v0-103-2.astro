@@ -1,0 +1,265 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Patch v0.103.2">
+  <div class="page-header">
+    <h1>v0.103.2 Balance Patch</h1>
+    <p class="subtitle">Changes from v0.101.0 &rarr; v0.103.2 &mdash; derived from decompiled game data</p>
+  </div>
+
+  <div style="max-width: 900px; margin: 0 auto;">
+
+    <p class="desc-text">
+      v0.103.2 is a content and balance patch. Three new relics (Neow's Bones, Phial Holster, Winged Boots)
+      join the pool, a new <a href={`${base}enchantments/inky/`}>Inky</a> enchantment drives a
+      <a href={`${base}cards/blade-of-ink/`}>Blade of Ink</a> rework, Borrowed Time becomes a Colorless
+      energy-burst card with its own stacking power, and Grasp is redesigned to drain Energy per card
+      played. Several cards move between characters, Living Fog's Bloat is brought down to one minion,
+      and the <code>IsAllowed(IRunState)</code> API refactor touches every event class but affects no
+      gameplay.
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- CARDS                           -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="cards" style="margin-top: 2rem;">Card Changes</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">New Card</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Details</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}cards/not-yet/`}>Not Yet</a></td>
+          <td class="char-ironclad">Ironclad</td>
+          <td>2-cost Rare Skill. <strong>Exhaust</strong>. "Heal 10 HP." Upgrade: heal 13 HP.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--red-bright);">Removed Card</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Was</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Grapple</td>
+          <td class="char-ironclad">Ironclad</td>
+          <td>1-cost Uncommon Attack. 7/9 damage plus Grasp.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Major Reworks</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}cards/blade-of-ink/`}>Blade of Ink</a></td>
+          <td class="char-regent">Regent</td>
+          <td>"This turn, whenever you play an Attack, gain 2 Strength this turn."</td>
+          <td>"Add 2 <a href={`${base}enchantments/inky/`}>Inky</a> Shivs into your Hand." Upgrade: 3 Shivs.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/borrowed-time/`}>Borrowed Time</a></td>
+          <td>Necrobinder &rarr; <strong>Colorless</strong></td>
+          <td>0-cost Skill. Apply 3 Doom. Gain 1 Energy. <em>(Upgrade: Gain 2 Energy)</em></td>
+          <td>1-cost Skill. "Gain 4 Energy. Cards cost an additional 1 Energy this turn." Applies stacking <a href={`${base}powers/borrowed-time/`}>Borrowed Time</a>.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}cards/follow-through/`}>Follow Through</a></td>
+          <td>Silent &rarr; <strong>Ironclad</strong></td>
+          <td>Uncommon. 6/8 AoE damage; if last card was a Skill, apply 1/2 Weak to all enemies.</td>
+          <td><strong>Common</strong>. 7/9 single-target damage; hits an additional time if you have 5+ other cards in hand.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Character Transfers</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}cards/flak-cannon/`}>Flak Cannon</a></td><td>Ironclad</td><td>Colorless (now targets a random enemy instead of all)</td></tr>
+        <tr><td><a href={`${base}cards/flanking/`}>Flanking</a></td><td>Token</td><td>Colorless</td></tr>
+        <tr><td><a href={`${base}cards/guards/`}>Guards</a></td><td>Colorless</td><td>Necrobinder</td></tr>
+        <tr><td><a href={`${base}cards/memento-mori/`}>Memento Mori</a></td><td>Necrobinder</td><td>Colorless</td></tr>
+        <tr><td><a href={`${base}cards/rocket-punch/`}>Rocket Punch</a></td><td>Defect</td><td>Ironclad</td></tr>
+        <tr><td><a href={`${base}cards/seeking-edge/`}>Seeking Edge</a></td><td>Ironclad</td><td>Regent</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Stat &amp; Rarity Changes</h3>
+    <table class="stat-table">
+      <thead><tr><th>Card</th><th>Character</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr><td><a href={`${base}cards/acrobatics/`}>Acrobatics</a></td><td class="char-silent">Silent</td><td>Rarity: Common &rarr; <strong>Uncommon</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/colossus/`}>Colossus</a></td><td class="char-ironclad">Ironclad</td><td>Rarity: Rare &rarr; <strong>Uncommon</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/leading-strike/`}>Leading Strike</a></td><td class="char-silent">Silent</td><td>Damage 7/10 &rarr; <strong>3/6</strong>; Shivs generated 1 &rarr; <strong>2</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/memento-mori/`}>Memento Mori</a></td><td>Colorless</td><td>Base damage 8/10 &rarr; <strong>9/11</strong>.</td></tr>
+        <tr><td><a href={`${base}cards/speedster/`}>Speedster</a></td><td class="char-ironclad">Ironclad</td><td>Upgrade now grants <strong>Innate</strong> instead of +1 damage.</td></tr>
+        <tr><td><a href={`${base}cards/untouchable/`}>Untouchable</a></td><td class="char-silent">Silent</td><td>Block 7/9 &rarr; <strong>6/8</strong>.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- POWERS                          -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="powers" style="margin-top: 2rem;">Power Changes</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">New Power</h3>
+    <table class="stat-table">
+      <thead><tr><th>Power</th><th>Effect</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}powers/borrowed-time/`}>Borrowed Time</a></td>
+          <td>Cards cost an additional Energy this turn. Stacks.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--red-bright);">Removed Powers</h3>
+    <table class="stat-table">
+      <thead><tr><th>Power</th><th>Reason</th></tr></thead>
+      <tbody>
+        <tr><td>Blade of Ink</td><td>Replaced by the new Inky enchantment that Blade of Ink now produces.</td></tr>
+        <tr><td>Grapple</td><td>Removed alongside the Grapple card.</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Reworks</h3>
+    <table class="stat-table">
+      <thead><tr><th>Power</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}powers/grasp/`}>Grasp</a></td>
+          <td>The first card you play each turn costs 1 additional Energy.</td>
+          <td><strong>Whenever you play a card, lose 1 Energy.</strong> Now applies Weighted afflictions to cards in hand.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}powers/flanking/`}>Flanking</a></td>
+          <td>Other allies deal 2x more damage to this enemy this turn.</td>
+          <td>Other allies deal 2x more <strong>attack</strong> damage to this enemy this turn.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- ENCHANTMENTS                    -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="enchantments" style="margin-top: 2rem;">Enchantments</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">New Enchantment</h3>
+    <table class="stat-table">
+      <thead><tr><th>Enchantment</th><th>Effect</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}enchantments/inky/`}>Inky</a></td>
+          <td>The enchanted card deals 2 additional damage and applies 1 Weak. Produced by the reworked Blade of Ink.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- RELICS                          -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="relics" style="margin-top: 2rem;">Relic Changes</h2>
+
+    <h3 style="margin-top: 1.5rem; color: var(--green);">New Relics</h3>
+    <table class="stat-table">
+      <thead><tr><th>Relic</th><th>Rarity</th><th>Effect</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}relics/neow-s-bones/`}>Neow's Bones</a></td>
+          <td>Event</td>
+          <td>Upon pickup, gain 2 random Neow Relics. Add 1 random Curse to your Deck.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/phial-holster/`}>Phial Holster</a></td>
+          <td>Event</td>
+          <td>Upon pickup, gain 1 potion slot and procure 2 random potions.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/winged-boots/`}>Winged Boots</a></td>
+          <td>Uncommon</td>
+          <td>You may ignore paths when choosing the next rooms to travel to, up to 3 times.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 1.5rem; color: var(--accent);">Relic Tweaks</h3>
+    <table class="stat-table">
+      <thead><tr><th>Relic</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}relics/fragrant-mushroom/`}>Fragrant Mushroom</a></td>
+          <td>Upgrades: 3 cards &rarr; <strong>2 cards</strong>. HP cost unchanged at 15.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}relics/regalite/`}>Regalite</a></td>
+          <td>"Whenever you create a <strong>Colorless</strong> card" &rarr; "Whenever you create <strong>a</strong> card" (now triggers on any created card).</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="desc-text" style="font-size: 0.85rem; margin-top: 0.5rem;">
+      Additional text/flavor polish: Archaic Tooth, Beautiful Bracelet, Belt Buckle, Fur Coat, History Course,
+      Large Capsule, Lord's Parasol, Massive Scroll, Pael's Tooth, Scroll Boxes, Silver Crucible, Unsettling Lamp,
+      Whispering Earring, Wing Charm.
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- MONSTERS                        -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="monsters" style="margin-top: 2rem;">Monster Changes</h2>
+
+    <table class="stat-table">
+      <thead><tr><th>Monster</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href={`${base}monsters/living-fog/`}>Living Fog</a></td>
+          <td>Bloat no longer escalates: now spawns exactly 1 Gas Bomb per use instead of 1-5.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}monsters/doormaker/`}>Doormaker</a></td>
+          <td>Hunger damage rebalanced (ascension value notably higher, base lower). Scrutiny damage lowered.</td>
+        </tr>
+        <tr>
+          <td><a href={`${base}monsters/thieving-hopper/`}>Thieving Hopper</a></td>
+          <td>Card-stealing now skips dead targets instead of potentially stalling.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="desc-text" style="font-size: 0.85rem; margin-top: 0.5rem;">
+      Other monsters with data-level tweaks: Bygone Effigy, Byrdonis, Calcified Cultist, Chomper,
+      Crossbow Ruby Raider, Damp Cultist, Devoted Sculptor, Fake Merchant Monster, Fat Gremlin,
+      Gremlin Merc, Kin Follower, Kin Priest, Knowledge Demon, Lagavulin Matriarch, Magi Knight, Queen,
+      Skulking Colony, Test Subject, The Insatiable, Two-Tailed Rat, Vantom, Waterfall Giant.
+      Most are small cleanups or VFX polish.
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- POTIONS                         -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="potions" style="margin-top: 2rem;">Potion Changes</h2>
+    <p class="desc-text">
+      <a href={`${base}potions/foul-potion/`}>Foul Potion</a> had its internal description text updated
+      (mechanics unchanged).
+    </p>
+
+    <!-- ═══════════════════════════════ -->
+    <!-- EVENTS                          -->
+    <!-- ═══════════════════════════════ -->
+    <h2 class="section-heading" id="events" style="margin-top: 2rem;">Events</h2>
+    <p class="desc-text">
+      Nine events received content/balance tweaks, most subtle:
+      Battleworn Dummy, Colorful Philosophers, Self-Help Book, Spiraling Whirlpool, Tablet of Truth,
+      The Architect, Trial, Waterlogged Scriptorium, Whispering Hollow.
+    </p>
+    <p class="desc-text" style="font-size: 0.85rem; margin-top: 0.5rem;">
+      Note: every event class also received the <code>IsAllowed(RunState)</code> &rarr;
+      <code>IsAllowed(IRunState)</code> signature refactor. This is an internal API change only; no
+      behavior is affected.
+    </p>
+
+  </div>
+</BaseLayout>
