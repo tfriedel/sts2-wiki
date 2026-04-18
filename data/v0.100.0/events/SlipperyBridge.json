@@ -5,11 +5,11 @@
   "options": [
     {
       "title": "Hold On",
-      "description": "Lose [red]3 HP[/red] (increases by 1 with each Hold On). The card in the above option is randomized."
+      "description": "Lose [red]3 HP[/red], increasing by 1 each time you hold on. A new random card is offered below if you continue."
     },
     {
       "title": "Overcome",
-      "description": "[red]a card from your deck[/red] is removed from your [gold]Deck[/gold]."
+      "description": "[red]a random non-basic card from your deck[/red] is removed from your [gold]Deck[/gold]."
     }
   ],
   "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],

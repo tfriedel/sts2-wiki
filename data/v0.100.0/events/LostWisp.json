@@ -5,17 +5,16 @@
   "options": [
     {
       "title": "Capture the Wisp",
-      "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. Obtain the [gold]Lost Wisp[/gold].",
-      "requires": "Your Max HP is too low."
+      "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. Obtain the [gold]Lost Wisp[/gold]."
     },
     {
       "title": "Search the Nearby Area",
-      "description": "Gain [blue]60 ± 15[/blue] [gold]Gold[/gold]."
+      "description": "Gain [blue]60±15[/blue] [gold]Gold[/gold]."
     }
   ],
   "acts": ["Hive"],
   "conditions": [],
-  "notes": "The SEARCH option's gold reward varies by ±15 from the base 60 (45-75 gold total), determined by RNG when the event is encountered. The CLAIM option requires sufficient Max HP to unlock.",
+  "notes": "Choosing Capture is a trade-off: the [gold]Lost Wisp[/gold] is a powerful relic, but the [red]Decay[/red] curse adds a weak card to your deck. The Search option provides reliable gold income with variance: the base amount is 60 gold, modified by ±15 RNG, for a range of 45-75 gold.",
   "card_refs": [
     {
       "class_name": "Decay",

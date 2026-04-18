@@ -1,0 +1,33 @@
+{
+  "class_name": "ToughEgg",
+  "title": "Tough Egg",
+  "min_hp": 15,
+  "max_hp": 19,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "HATCH_MOVE",
+      "title": "Hatch",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": ["Transform into Hatchling", "Increase max HP to 20-23"]
+    },
+    {
+      "id": "NIBBLE_MOVE",
+      "title": "Nibble",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 5
+        }
+      ],
+      "effects": ["Deal 5 damage"]
+    }
+  ],
+  "move_pattern": "Uses Hatch once, then repeatedly uses Nibble",
+  "powers_on_spawn": ["Hatch Power"],
+  "notes": "Transforms during combat: starts as an Egg protected by Hatch Power. The Hatch move must be played on the first turn, which removes Hatch Power, increases max HP from 15-19 to 20-23, and transitions to Hatchling form. After hatching, repeatedly attacks with Nibble (5 damage each). Hatchling damage scales with DeadlyEnemies ascension (ascension: 5, base: 4)."
+}

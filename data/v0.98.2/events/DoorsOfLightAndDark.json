@@ -14,7 +14,7 @@
   ],
   "acts": ["Underdocks"],
   "conditions": [],
-  "notes": "The Light Door upgrades up to 2 random [gold]upgradable[/gold] cards from your deck. The Dark Door lets you select any single card to permanently remove from your deck. After either choice, you experience a brief vision before returning to the Underdocks.",
+  "notes": "[gold]Light Door[/gold]: Only upgrades cards that are upgradable (not all cards can be upgraded). Randomly selects and upgrades up to 2 of these eligible cards from your entire deck.\n\n[gold]Dark Door[/gold]: Opens a card selection dialog where you choose exactly 1 card to remove from your deck permanently.\n\nAfter either choice, you experience a brief vision—either of blinding light that strengthens you, or soothing darkness that helps you think—before returning to the Underdocks.",
   "card_refs": [],
   "relic_refs": []
 }

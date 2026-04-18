@@ -5,17 +5,17 @@
   "options": [
     {
       "title": "Decipher",
-      "description": "Lose [red]3[/red] Max HP. [gold]Upgrade[/gold] a random card.",
-      "requires": "Max HP must be greater than 3"
+      "description": "Lose [red]{DecipherMaxHpLoss}[/red] Max HP. [gold]Upgrade[/gold] a random card.",
+      "requires": "Will kill you"
     },
     {
       "title": "Smash",
-      "description": "Heal [green]20[/green] HP."
+      "description": "Heal [green]{SmashHPGain}[/green] HP."
     }
   ],
   "acts": ["Overgrowth"],
   "conditions": [],
-  "notes": "[gold]Multi-stage Progression:[/gold]\n\nChoosing Decipher locks you into a 5-stage progression where you can continue deciphering (at escalating costs) or give up and exit at any point.\n\n[gold]Stage 1:[/gold] Lose 6 Max HP, Upgrade 1 random card — \"Continue Deciphering\" or \"Give Up\"\n[gold]Stage 2:[/gold] Lose 12 Max HP, Upgrade 1 random card — \"Keep Deciphering\" or \"Give Up\"\n[gold]Stage 3:[/gold] Lose 24 Max HP, Upgrade 1 random card — \"KEEP DECIPHERING\" or \"Give Up\"\n[gold]Stage 4 (Final):[/gold] Lose (Max HP - 1) Max HP, [gold]Upgrade ALL[/gold] cards — \"Lose Everything\" or \"Give Up\"\n\nEach continue option is locked if your current Max HP is not greater than the cost. At the final stage, the choice will cost nearly all your Max HP and likely kills you, but upgrades your entire deck. Choosing to give up at any stage cleanly exits the event. The Smash option provides an immediate alternative: heal 20 HP and exit.",
+  "notes": "[gold]Decipher Path — Progressive Multi-Stage Sequence:[/gold]\n\nChoosing Decipher locks you into a series of escalating choices. Each time you choose to continue, you lose Max HP and upgrade cards, then face another decision. You can give up at any stage (except the last) to exit cleanly.\n\n[gold]Costs per stage:[/gold]\n• Initial choice: 3 Max HP, upgrade 1 random card\n• After stage 1: 6 Max HP, upgrade 1 random card\n• After stage 2: 12 Max HP, upgrade 1 random card\n• After stage 3: 24 Max HP, upgrade 1 random card\n• After stage 4: (Max HP - 1) Max HP, [gold]upgrade ALL cards[/gold] — Final choice, likely fatal\n• After final: Event ends with the revelation that the Truth is simply \"Air\"\n\n[gold]Smash Path:[/gold]\nSmash the tablet immediately to heal {SmashHPGain} HP and exit the event.\n\n[blue]Notes:[/blue] Each continue option shows a [red]will kill you[/red] warning if the cost would be fatal. The final decipher stage has a dramatic escalation from 24 Max HP to Max HP - 1, making it nearly impossible to survive (you need at least 2 Max HP). However, it upgrades your entire deck instead of just one random card, making it potentially worth the sacrifice.",
   "card_refs": [],
   "relic_refs": []
 }

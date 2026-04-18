@@ -1,0 +1,32 @@
+{
+  "class_name": "WarHistorianRepy",
+  "title": "War Historian, Repy",
+  "description": "An academic is trapped in a [purple]hanging cage[/purple] next to a [gold]treasure chest[/gold].\n\nThe academic is muttering about [sine][orange]\"One-Time-Use Keys\"[/orange][/sine] while furiously writing something.\n\nLooks like you can unlock the [purple]cage[/purple] or the [gold]chest[/gold].",
+  "options": [
+    {
+      "title": "Unlock the Cage",
+      "description": "Lose [gold]Lantern Key[/gold]. Obtain [gold]History Course[/gold]."
+    },
+    {
+      "title": "Unlock the Chest",
+      "description": "Lose [gold]Lantern Key[/gold]. Procure [blue]2[/blue] random [gold]Potions[/gold]. Obtain [blue]2[/blue] random [gold]Relics[/gold]."
+    }
+  ],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": ["Currently disabled (IsAllowed returns false)"],
+  "notes": "The [gold]Lantern Key[/gold] is a quest card required to access this event. Unlocking the cage grants the [gold]History Course[/gold] relic and records that Repy has been freed in the run state. Unlocking the chest instead provides 2 random potions and 2 random relics. Both options remove all [gold]Lantern Key[/gold] cards from your deck as the final step. The code path shows Repy responds differently to each choice: freeing him earns his gratitude, while taking the treasure prompts his moral disapproval.",
+  "card_refs": [
+    {
+      "class_name": "LanternKey",
+      "title": "Lantern Key",
+      "slug": "lantern-key"
+    }
+  ],
+  "relic_refs": [
+    {
+      "class_name": "HistoryCourse",
+      "title": "History Course",
+      "slug": "history-course"
+    }
+  ]
+}

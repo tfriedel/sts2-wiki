@@ -9,12 +9,12 @@
     },
     {
       "title": "Search",
-      "description": "Lose [red]14[/red] HP. Obtain the [gold]Chosen Cheese[/gold] relic."
+      "description": "Lose [red]14[/red] HP. Obtain the [gold]Chosen Cheese[/gold]."
     }
   ],
   "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
   "conditions": ["Acts 1-2 only"],
-  "notes": "The Gorge option presents 8 random common cards from your character's card pool and allows you to choose 2 to add to your deck. The Search option deals [red]14[/red] unblockable, unpowered damage and grants the [gold]Chosen Cheese[/gold] relic. If you die from the damage dealt by the Search option, the death message will read: [gold]{character} ate too much in the Room Full of Cheese.[/gold]",
+  "notes": "The Gorge option presents 8 random common cards from your character's card pool and allows you to choose 2 to add to your deck. The Search option deals [red]14[/red] unblockable, unpowered damage and grants the [gold]Chosen Cheese[/gold] relic. If you die from the damage dealt by the Search option, the death message will be: [gold]{character} ate too much in the Room Full of Cheese.[/gold]",
   "card_refs": [],
   "relic_refs": [
     {

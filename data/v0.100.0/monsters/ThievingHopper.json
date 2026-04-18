@@ -1,0 +1,53 @@
+{
+  "class_name": "ThievingHopper",
+  "title": "Thieving Hopper",
+  "min_hp": 84,
+  "max_hp": 84,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "THIEVERY_MOVE",
+      "title": "Thievery",
+      "intents": [
+        {"type": "attack", "damage": 19},
+        {"type": "debuff"}
+      ],
+      "effects": ["Steal a card from the player's draw or discard pile", "Apply 1 Swipe (per card stolen)", "Deal 19 damage"]
+    },
+    {
+      "id": "FLUTTER_MOVE",
+      "title": "Flutter",
+      "intents": [
+        {"type": "buff"}
+      ],
+      "effects": ["Enter hovering state", "Apply 5 Flutter"]
+    },
+    {
+      "id": "HAT_TRICK_MOVE",
+      "title": "Hat Trick",
+      "intents": [
+        {"type": "attack", "damage": 23}
+      ],
+      "effects": ["Deal 23 damage"]
+    },
+    {
+      "id": "NAB_MOVE",
+      "title": "Nab",
+      "intents": [
+        {"type": "attack", "damage": 16}
+      ],
+      "effects": ["Deal 16 damage"]
+    },
+    {
+      "id": "ESCAPE_MOVE",
+      "title": "Escape",
+      "intents": [
+        {"type": "escape"}
+      ],
+      "effects": ["Flee from combat"]
+    }
+  ],
+  "move_pattern": "Starts with Thievery → Flutter → Hat Trick → Nab → Escape. After Escape the monster flees and does not return.",
+  "powers_on_spawn": ["Escape Artist (5)"],
+  "notes": "Thievery steals one card per target from the player's draw or discard pile, removing it from combat for the rest of the fight (only cards with a DeckVersion — permanent deck cards, not combat-generated cards). The hopper gains 1 stack of Swipe per stolen card. Card selection follows a strict priority: (1) non-Imbued Uncommon, (2) non-Imbued Common/Rare/Event, (3) non-Imbued Basic/Quest, (4) Ancient or Imbued. Flutter puts the hopper into a permanent hovering state (IsHovering = true), which changes its animations and sound effects for the remainder of combat. The Escape Artist power starts at 5 stacks on spawn."
+}

@@ -1,0 +1,22 @@
+{
+  "class_name": "SpiralingWhirlpool",
+  "title": "Spiraling Whirlpool",
+  "description": "You happen upon a [aqua][sine]Massive Spiraling Whirlpool[/sine][/aqua]. The water swirls with beautiful precision and its surrounding walls are adorned with spiral patterns.\n\n[purple][sine]Around and around... around...\n....and around.... what a sight......[/sine][/purple]\n\nWhat do you do?",
+  "options": [
+    {
+      "title": "Observe",
+      "description": "[gold]Enchant[/gold] a [gold]Strike[/gold] or [gold]Defend[/gold] with [purple]Spiral[/purple]."
+    },
+    {
+      "title": "Drink",
+      "description": "Heal [green][33% of max HP][/green] HP."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": [
+    "Each player has at least one card enchantable with Spiral in their deck"
+  ],
+  "notes": "The [gold]Drink[/gold] option heals [green]33%[/green] of the player's maximum HP (rounded down to an integer). The [gold]Observe[/gold] option prompts the player to select one card from their deck that can receive the [purple]Spiral[/purple] enchantment — currently Strike and Defend cards qualify.",
+  "card_refs": [],
+  "relic_refs": []
+}

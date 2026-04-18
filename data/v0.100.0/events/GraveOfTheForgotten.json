@@ -15,7 +15,7 @@
   ],
   "acts": ["Glory"],
   "conditions": [
-    "In multi-character runs, every character must have at least one card that can be enchanted with [purple]Soul's Power[/purple]"
+    "All players must have at least one card that can be enchanted with [purple]Soul's Power[/purple]"
   ],
   "notes": "The [purple]Soul's Power[/purple] enchantment removes the [gold]Exhaust[/gold] keyword from any card it's applied to. The [gold]Forgotten Soul[/gold] relic deals damage to a random enemy whenever you [gold]Exhaust[/gold] a card, creating interesting synergy with both event choices. The [red]Decay[/red] curse is unplayable and damages you at the end of your turn whenever it's in your [gold]Hand[/gold].",
   "card_refs": [

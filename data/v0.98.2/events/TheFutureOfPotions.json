@@ -1,0 +1,23 @@
+{
+  "class_name": "TheFutureOfPotions",
+  "title": "The Future of Potions?",
+  "description": "You feel a faint rumbling as you round the corner to discover a gigantic spinning apparatus!\nIt has several slots which appear to convert liquids into a highly compressed digestible tablet.\n\nThe idea of turning these health tonics into a tiny morsel is uncomfortable but perhaps it's good to try new things?",
+  "options": [
+    {
+      "title": "Insert [rarity] Potion",
+      "description": "Lose [gold][potion name][/gold]. Obtain an [gold]Upgraded[/gold] [gold][card rarity] [card type][/gold]."
+    }
+  ],
+  "acts": [
+    "Glory",
+    "Hive",
+    "Overgrowth",
+    "Underdocks"
+  ],
+  "conditions": [
+    "All players must have at least 2 potions"
+  ],
+  "notes": "The event generates [gold]1-3 options[/gold] based on the number of potions you own (up to 3 shown). Each option allows you to sacrifice a potion to gain [gold]3 upgraded cards[/gold] of the same rarity as the potion.\n\n[blue]Rarity Mapping:[/blue] Rare and Event potions → Rare cards; Uncommon potions → Uncommon cards; Common and Token potions → Common cards.\n\n[blue]Card Type Selection:[/blue] Each trade grants cards of a random type (Attack, Skill, or Power). Power cards are [red]excluded[/red] when trading Common or Token potions.\n\n[blue]Potion Removal Locked:[/blue] During this event, you cannot remove potions from your inventory.",
+  "card_refs": [],
+  "relic_refs": []
+}

@@ -1,0 +1,23 @@
+{
+  "class_name": "TheArchitect",
+  "title": "The Architect",
+  "description": "",
+  "options": [
+    {
+      "title": "Continue/Respond/Answer",
+      "description": "Advance through character-specific dialogue with The Architect. The text of the button varies depending on who is speaking and the context of the conversation."
+    },
+    {
+      "title": "Proceed",
+      "description": "After dialogue concludes, end the encounter and win the run"
+    }
+  ],
+  "acts": [],
+  "conditions": [
+    "Win condition encounter - appears after defeating The Architect in combat",
+    "Character-specific dialogue based on which character is being played"
+  ],
+  "notes": "[gold]Dialogue-driven encounter:[/gold] This is not a traditional event with choice-based consequences. Instead, it plays character-specific dialogue with The Architect after winning the combat encounter. Each character has unique dialogue trees with different branching depending on how many times that character has won the game and beaten The Architect. The dialogue options use contextual button text (Continue, Respond, Answer, Threaten, etc.) rather than fixed labels. After the final dialogue line, the player clicks Proceed to complete the run.",
+  "card_refs": [],
+  "relic_refs": []
+}

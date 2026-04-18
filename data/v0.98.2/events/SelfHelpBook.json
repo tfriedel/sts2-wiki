@@ -1,0 +1,32 @@
+{
+  "class_name": "SelfHelpBook",
+  "title": "Self-Help Book",
+  "description": "On the floor lies a tome,\n\"Top 3 Ways to Conquer the Spire\"\n\nThe book is [red]encrusted with blood[/red] so you find this manuscript highly suspicious.\n\nWill you read it?",
+  "options": [
+    {
+      "title": "Read the Back",
+      "description": "Choose an Attack to [gold]Enchant[/gold] with [purple]Sharp[/purple] [blue]2[/blue].",
+      "requires": "You don't have any Attacks that can be [gold]Enchanted[/gold]."
+    },
+    {
+      "title": "Read a Random Passage",
+      "description": "Choose a Skill to [gold]Enchant[/gold] with [purple]Nimble[/purple] [blue]2[/blue].",
+      "requires": "You don't have any Skills that can be [gold]Enchanted[/gold]."
+    },
+    {
+      "title": "Read the Entire Book",
+      "description": "Choose a Power to [gold]Enchant[/gold] with [purple]Swift[/purple] [blue]2[/blue].",
+      "requires": "You don't have any Powers that can be [gold]Enchanted[/gold]."
+    },
+    {
+      "title": "Move On",
+      "description": "You don't particularly care for books, let alone blood-encrusted ones.",
+      "requires": "Only available if you don't have any Attacks, Skills, or Powers that can be Enchanted"
+    }
+  ],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": [],
+  "notes": "Each option enchants exactly one card in your deck with a 2-stack enchantment. The card must be of the corresponding type (Attack, Skill, or Power) and must be capable of being enchanted. If you lack cards of any type, that option becomes locked. If you have no cards that can be enchanted at all, only the Move On option is available.",
+  "card_refs": [],
+  "relic_refs": []
+}

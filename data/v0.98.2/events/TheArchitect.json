@@ -1,0 +1,16 @@
+{
+  "class_name": "TheArchitect",
+  "title": "[Missing localization: ancients.THE_ARCHITECT.title]",
+  "description": "[Missing localization: ancients.THE_ARCHITECT.pages.INITIAL.description]",
+  "options": [
+    {
+      "title": "[Proceed]",
+      "description": "End the event and conclude the run"
+    }
+  ],
+  "acts": [],
+  "conditions": [],
+  "notes": "This is a special [gold]combat event[/gold] that presents character-specific dialogue from The Architect. The event uses a dialogue system rather than traditional event choices. Dialogue varies based on character and number of prior encounters with The Architect. After reading through all dialogue lines, the player defeats The Architect in combat and wins the run. The player's attack deals damage divided among character-specific attack effects, with one hit dealing 2-3x normal damage and another dealing only 0.1-0.5x normal damage.",
+  "card_refs": [],
+  "relic_refs": []
+}

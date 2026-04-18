@@ -1,0 +1,53 @@
+{
+  "class_name": "Toadpole",
+  "title": "Toadpole",
+  "min_hp": 22,
+  "max_hp": 26,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SPIKE_SPIT_MOVE",
+      "title": "Spike Spit",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 4 damage",
+        "3 hits",
+        "Remove 2 Thorns"
+      ]
+    },
+    {
+      "id": "WHIRL_MOVE",
+      "title": "Whirl",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        }
+      ],
+      "effects": [
+        "Deal 8 damage"
+      ]
+    },
+    {
+      "id": "SPIKEN_MOVE",
+      "title": "Spiken",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Thorns"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through Whirl → Spiken → Spike Spit. If the Toadpole is in front, it starts with Spiken; otherwise it starts with Whirl.",
+  "powers_on_spawn": [],
+  "notes": "Toadpole manages its Thorns power during combat. Spiken applies 2 Thorns to itself, while Spike Spit removes 2 Thorns. The opening move depends on the monster's position (front or back)."
+}

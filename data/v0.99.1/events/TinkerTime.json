@@ -1,0 +1,18 @@
+{
+  "class_name": "TinkerTime",
+  "title": "Tinker Time",
+  "description": "Navigating through an [red][sine]endless sea of corpses[/sine][/red], you find a [orange]mad scientist[/orange] scavenging for various scraps.\n\n\"Yes. Hi, hello! You look like a capable fighter... I need a tester for my next [green]atrocity device[/green]! How about it?\"",
+  "options": [
+    {
+      "title": "Accept",
+      "description": "Create a custom card to add to your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "This is a multi-page event where you customize a [gold]Mad Science[/gold] card by choosing its type and a special rider effect.\n\n**Step 1 - Card Type:** After accepting, you're offered 2 random card types from [blue]Weapon[/blue] (Attack), [blue]Protector[/blue] (Skill), or [blue]Gadget[/blue] (Power).\n\n**Step 2 - Rider Effect:** Based on your choice, you select 1 of 2 random effects:\n\n[blue]Weapon (Attack)[/blue] options (pick 2 random):\n- [gold]Sapping[/gold]: Apply [blue]2[/blue] [gold]Weak[/gold] and [blue]2[/blue] [gold]Vulnerable[/gold]\n- [gold]Violence[/gold]: Hits [blue]2[/blue] additional times\n- [gold]Choking[/gold]: Whenever you play a card this turn, the enemy loses [blue]6[/blue] HP\n\n[blue]Protector (Skill)[/blue] options (pick 2 random):\n- [gold]Energized[/gold]: Gain [blue]2[/blue] Energy\n- [gold]Wisdom[/gold]: Draw [blue]3[/blue] cards\n- [gold]Chaos[/gold]: Add a random card into your [gold]Hand[/gold] that costs [blue]0[/blue] Energy this turn\n\n[blue]Gadget (Power)[/blue] options (pick 2 random):\n- [gold]Expertise[/gold]: Gain [blue]2[/blue] [gold]Strength[/gold] and [blue]2[/blue] [gold]Dexterity[/gold]\n- [gold]Curious[/gold]: Powers cost [blue]1[/blue] Energy less\n- [gold]Improvement[/gold]: At the end of combat, [gold]Upgrade[/gold] a random card\n\nThe custom card is added to your deck and immediately shown in a preview.",
+  "card_refs": [
+    {"class_name": "MadScience", "title": "Mad Science", "slug": "mad-science"}
+  ],
+  "relic_refs": []
+}

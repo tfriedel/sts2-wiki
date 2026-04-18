@@ -5,15 +5,17 @@
   "options": [
     {
       "title": "Big Mushroom",
-      "description": "You bite into the [orange]Big Mushroom[/orange]. Its flesh is firm, starchy, and satisfying. The more you eat, the hungrier you become, as if the mushroom is feeding on your hunger.\n\n[sine]So yummy... you enter a [red]food coma[/red].[/sine]\nThis gluttony will cost you.\n\nObtain a [gold]Big Mushroom[/gold] relic."
+      "description": "You bite into the [orange]Big Mushroom[/orange]. Its flesh is firm, starchy, and satisfying. The more you eat, the hungrier you become, as if the mushroom is feeding on your hunger.\n\n[sine]So yummy... you enter a [red]food coma[/red].[/sine]\nThis gluttony will cost you."
     },
     {
       "title": "Fragrant Mushroom",
-      "description": "You sample the [green]Fragrant One[/green], a small woody mushroom with a delicate scent of shellfish...\n\nA burst of energy spurs you to run, jump, and [gold]rigorously train[/gold]!\nThen, a sudden [red][jitter]stabbing pain[/jitter][/red] hits you as the living fungi struggles within you during its brief final moments.\n\nObtain a [green]Fragrant Mushroom[/green] relic.\n\n[red]Costs 15 HP[/red]"
+      "description": "You sample the [green]Fragrant One[/green], a small woody mushroom with a delicate scent of shellfish...\n\nA burst of energy spurs you to run, jump, and [gold]rigorously train[/gold]!\nThen, a sudden [red][jitter]stabbing pain[/jitter][/red] hits you as the living fungi struggles within you during its brief final moments.",
+      "requires": "Costs 15 HP"
     }
   ],
   "acts": ["Glory"],
   "conditions": [],
+  "card_refs": [],
   "relic_refs": [
     {
       "class_name": "BigMushroom",

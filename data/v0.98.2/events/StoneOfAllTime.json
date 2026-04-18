@@ -6,17 +6,17 @@
     {
       "title": "Drink and Lift",
       "description": "Lose [red][a random potion from your inventory][/red]. Gain [blue]10[/blue] Max HP.",
-      "requires": "Requires a Potion."
+      "requires": "Requires at least one potion"
     },
     {
       "title": "Push",
       "description": "Lose [red]6[/red] HP. [gold]Enchant[/gold] an Attack with [purple]Vigorous[/purple] [blue]8[/blue].",
-      "requires": "Requires an Attack."
+      "requires": "Requires at least one Attack card in deck"
     }
   ],
   "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
-  "conditions": ["Act 2 only", "At least one potion required"],
-  "notes": "Despite the dramatic narration, both options end with 'Nothing happens' after your choice is made. The event temporarily prevents you from removing potions while the event is active. The Push option applies [purple]Vigorous[/purple] enchantment to a card you select from your deck.",
+  "conditions": ["Act 2 only", "All players must have at least one potion"],
+  "notes": "When choosing \"Drink and Lift\", you randomly consume one of your potions and gain 10 Max HP. When choosing \"Push\", you take 6 unblockable, unpowered damage, then select one Attack card from your deck to enchant with [purple]Vigorous[/purple] at power level 8. Both options have lock conditions: Drink and Lift requires at least one potion in your inventory, and Push requires at least one Attack card in your deck that can be enchanted with Vigorous.",
   "card_refs": [],
   "relic_refs": []
 }

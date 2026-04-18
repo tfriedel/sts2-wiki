@@ -5,7 +5,7 @@
   "options": [
     {
       "title": "Drink and Lift",
-      "description": "Lose [red][a random potion from your inventory][/red]. Gain [blue]10[/blue] Max HP.",
+      "description": "Lose [red][a random potion][/red]. Gain [blue]10[/blue] Max HP.",
       "requires": "Requires a Potion."
     },
     {
@@ -14,9 +14,9 @@
       "requires": "Requires an Attack."
     }
   ],
-  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
-  "conditions": ["Act 2 only", "At least one potion required"],
-  "notes": "Despite the dramatic narration, both options end with 'Nothing happens' after your choice is made. The event temporarily prevents you from removing potions while the event is active. The Push option applies [purple]Vigorous[/purple] enchantment to a card you select from your deck.",
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": ["Act 2 only", "At least one Potion in deck"],
+  "notes": "Despite the flavor text suggesting no effect, both options have real mechanical benefits. The Push option's damage is unblockable and unpowered. Potions cannot be removed from the inventory while this event is active.",
   "card_refs": [],
   "relic_refs": []
 }

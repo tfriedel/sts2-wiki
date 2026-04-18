@@ -1,0 +1,24 @@
+{
+  "class_name": "TheFutureOfPotions",
+  "title": "The Future of Potions?",
+  "description": "You feel a faint rumbling as you round the corner to discover a gigantic spinning apparatus!\nIt has several slots which appear to convert liquids into a highly compressed digestible tablet.\n\nThe idea of turning these health tonics into a tiny morsel is uncomfortable but perhaps it's good to try new things?",
+  "options": [
+    {
+      "title": "Convert [selected potion rarity] Potion",
+      "description": "Trade one of your potions for 3 [gold]Upgraded[/gold] cards of matching rarity. The card type [blue](Attack, Skill, or Power)[/blue] is randomly determined. [blue]Common and Token potions[/blue] cannot produce Power cards.",
+      "requires": null
+    }
+  ],
+  "acts": [
+    "Overgrowth",
+    "Underdocks",
+    "Hive",
+    "Glory"
+  ],
+  "conditions": [
+    "At least 2 Potions required"
+  ],
+  "notes": "This event generates up to 3 interactive options, one for each of the first 3 potions in your inventory. Each option converts that specific potion into a card reward. [gold]Card rarity matches the potion's rarity[/gold]: Common/Token potions → Common cards, Uncommon potions → Uncommon cards, Rare/Event potions → Rare cards. Card type is randomly selected from [blue]Attack, Skill, or Power[/blue], except Common and Token potions cannot produce Power cards. [gold]All cards are automatically upgraded[/gold], making this event valuable for obtaining high-rarity upgraded cards. Potions cannot be removed from your inventory while this event is active.",
+  "card_refs": [],
+  "relic_refs": []
+}

@@ -1,0 +1,67 @@
+{
+  "class_name": "TheInsatiable",
+  "title": "The Insatiable",
+  "min_hp": 341,
+  "max_hp": 341,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "LIQUIFY_GROUND_MOVE",
+      "title": "Liquify Ground",
+      "intents": [
+        { "type": "buff" },
+        { "type": "status" }
+      ],
+      "effects": [
+        "Apply 4 Sandpit to all targets",
+        "Add 3 Frantic Escape to draw pile",
+        "Add 3 Frantic Escape to discard pile"
+      ]
+    },
+    {
+      "id": "THRASH_MOVE_1",
+      "title": "Thrash",
+      "intents": [
+        { "type": "multi_attack", "damage": 9, "hits": 2 }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "LUNGING_BITE_MOVE",
+      "title": "Lunging Bite",
+      "intents": [
+        { "type": "attack", "damage": 31 }
+      ],
+      "effects": [
+        "Deal 31 damage"
+      ]
+    },
+    {
+      "id": "SALIVATE_MOVE",
+      "title": "Salivate",
+      "intents": [
+        { "type": "buff" }
+      ],
+      "effects": [
+        "Apply 3 Strength"
+      ]
+    },
+    {
+      "id": "THRASH_MOVE_2",
+      "title": "Thrash",
+      "intents": [
+        { "type": "multi_attack", "damage": 9, "hits": 2 }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "2 hits"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Liquify Ground (used only once). Then cycles indefinitely: Thrash → Lunging Bite → Salivate → Thrash → Lunging Bite → Salivate → ...",
+  "powers_on_spawn": [],
+  "notes": "Liquify Ground is only used at the start of combat. It applies 4 Sandpit to each player target and shuffles 6 Frantic Escape status cards into the player's deck (3 placed randomly in the draw pile, 3 placed randomly in the discard pile). After Liquify Ground, The Insatiable never uses it again. The repeated Salivate move stacks Strength each cycle, making Thrash and Lunging Bite increasingly dangerous over time. Two separate Thrash move states (THRASH_MOVE_1 and THRASH_MOVE_2) are used to form the loop in the state machine but are functionally identical."
+}

@@ -1,0 +1,47 @@
+{
+  "class_name": "TheForgotten",
+  "title": "The Forgotten",
+  "min_hp": 111,
+  "max_hp": 111,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "MIASMA",
+      "title": "Miasma",
+      "intents": [
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "block"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Steal 3 Dexterity from all enemies",
+        "Gain 8 Block",
+        "Apply 3 Dexterity to self"
+      ]
+    },
+    {
+      "id": "DREAD",
+      "title": "Dread",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": [
+        "Deal damage equal to 15 plus Dexterity"
+      ]
+    }
+  ],
+  "move_pattern": "Alternates between Miasma and Dread: Miasma → Dread → Miasma → ...",
+  "powers_on_spawn": [
+    "Possess Speed"
+  ],
+  "notes": "The Forgotten steals Dexterity from enemies with Miasma, gaining it for itself, which directly increases its Dread attack damage. This creates a scaling threat mechanic where the monster becomes more dangerous as the fight progresses and it accumulates stolen Dexterity."
+}

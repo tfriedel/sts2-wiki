@@ -4,28 +4,28 @@
   "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]\"We meet once more... it's me, Ranwid!\"[/sine]\n\nYou do not know this man.",
   "options": [
     {
-      "title": "Give [your selected potion]",
+      "title": "Give [one of your potions]",
       "description": "Obtain a random [gold]Relic[/gold].",
-      "requires": "Requires at least 1 Potion"
+      "requires": "You don't have any Potions that can be given."
     },
     {
       "title": "Give 100 Gold",
       "description": "Obtain a random [gold]Relic[/gold]."
     },
     {
-      "title": "Give [your selected relic]",
+      "title": "Give [one of your relics]",
       "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold].",
-      "requires": "Requires at least 1 tradable Relic"
+      "requires": "You don't have any Relics that can be given."
     }
   ],
   "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
   "conditions": [
-    "Act 2+ only",
-    "All players must have at least 100 Gold",
-    "All players must have at least 1 Potion",
-    "All players must have at least 1 tradable Relic"
+    "Acts 2+ only",
+    "Each player must have at least 100 Gold",
+    "Each player must have at least one Potion",
+    "Each player must have at least one tradable Relic"
   ],
-  "notes": "Ranwid the Elder is an opportunistic trader who accepts items from the player in exchange for relics. Each choice has a different yield: potions and gold grant 1 relic, while trading an existing relic yields 2 relics, making it the most valuable option if you have a relic you're willing to part with. Potions and relics cannot be removed during this event.",
+  "notes": "[gold]Ranwid trades items for Relics:[/gold] Each choice has a different yield. Trading a Potion or spending 100 Gold both grant 1 random Relic, while trading one of your Relics yields [blue]2[/blue] random Relics, making it the most valuable option if available.\n\nThe specific Potion and Relic presented are randomly selected at event generation time. If you lack the required item (no Potions or no tradable Relics), those options appear locked and cannot be selected.\n\nNote: Only [purple]tradable[/purple] Relics can be given away. Some Relics have the locked property and cannot be traded, so the Relic option only appears if you have at least one tradable Relic.",
   "card_refs": [],
   "relic_refs": []
 }
