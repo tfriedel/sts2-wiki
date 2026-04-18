@@ -1,0 +1,39 @@
+{
+  "class_name": "BowlbugSilk",
+  "title": "Bowlbug (Silk)",
+  "min_hp": 41,
+  "max_hp": 44,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "TOXIC_SPIT_MOVE",
+      "title": "Spin Web",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply 1 Weak"
+      ]
+    },
+    {
+      "id": "TRASH_MOVE",
+      "title": "Thrash",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 5 damage",
+        "2 hits"
+      ]
+    }
+  ],
+  "move_pattern": "Alternates between Spin Web and Thrash, starting with Spin Web",
+  "powers_on_spawn": [],
+  "notes": null
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "DeprecatedEvent",
+  "title": "Deprecated Event",
+  "description": "This event has been removed from the game.",
+  "options": [],
+  "acts": [],
+  "conditions": [],
+  "notes": "This event is no longer active in the game and serves as a placeholder for backwards compatibility."
+}

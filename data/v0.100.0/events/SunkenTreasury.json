@@ -1,0 +1,26 @@
+{
+  "class_name": "SunkenTreasury",
+  "title": "Sunken Treasury",
+  "description": "A path leads you into a partially submerged vault.\nThere are [blue]2[/blue] [gold]chests[/gold] but only [blue]1[/blue] [jitter][purple]brittle key[/purple][/jitter].\n\n[gold]The First Chest:[/gold] Shaking it, you get jingly-jangly noises. Bit of gold.\n[gold]The Second Chest:[/gold] Enormous, ornate, and clearly [red]cursed[/red]. Lots of gold!",
+  "options": [
+    {
+      "title": "First Chest",
+      "description": "Gain [blue]52-67[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Second Chest",
+      "description": "Gain [blue]303-363[/blue] [gold]Gold[/gold]. Receive [red]Greed[/red]."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": [],
+  "notes": "Both chest rewards vary based on RNG. The First Chest gives 60 gold with a variance of ±8 (range: 52-67). The Second Chest gives 333 gold with a variance of ±30 (range: 303-363) but curses the player with [red]Greed[/red], adding the curse card permanently to their deck.",
+  "card_refs": [
+    {
+      "class_name": "Greed",
+      "title": "Greed",
+      "slug": "greed"
+    }
+  ],
+  "relic_refs": []
+}

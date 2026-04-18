@@ -1,0 +1,18 @@
+{
+  "class_name": "Byrdpip",
+  "title": "Byrdpip",
+  "min_hp": 9999,
+  "max_hp": 9999,
+  "is_companion": true,
+  "moves": [
+    {
+      "id": "NOTHING_MOVE",
+      "title": "Nothing",
+      "intents": [],
+      "effects": ["Does nothing"]
+    }
+  ],
+  "move_pattern": "Repeatedly performs no action",
+  "powers_on_spawn": [],
+  "notes": "Byrdpip is a pet companion with 9999 HP and an invisible health bar. It performs no actions in combat and serves as a passive presence. Its appearance is customizable via a relic configuration."
+}

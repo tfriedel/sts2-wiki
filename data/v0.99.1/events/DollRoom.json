@@ -1,0 +1,47 @@
+{
+  "class_name": "DollRoom",
+  "title": "Doll Room",
+  "description": "You enter a hidden room...\n\nIt's packed with an array of dolls. Each are unique, their expressions ranging from [green]joy[/green] to [purple]sorrow[/purple], their attire spanning centuries and realms beyond your own.\n\nA [sine][blue]chorus of whispers[/blue][/sine] grows louder and louder until [jitter][red]the dolls are shouting[/red][/jitter] over each other and calling for you...\n\nYou must choose one and leave immediately.",
+  "options": [
+    {
+      "title": "Pick at Random",
+      "description": "Obtain a random [gold]Doll Relic[/gold]."
+    },
+    {
+      "title": "Take Some Time",
+      "description": "Lose [red]5[/red] HP. Choose [blue]1[/blue] of [blue]2[/blue] [gold]Doll Relics[/gold]."
+    },
+    {
+      "title": "Examine Each and Make the Best Choice",
+      "description": "Lose [red]15[/red] HP. Choose [blue]1[/blue] of [blue]3[/blue] [gold]Doll Relics[/gold]."
+    }
+  ],
+  "acts": [
+    "Glory",
+    "Hive",
+    "Overgrowth",
+    "Underdocks"
+  ],
+  "conditions": [
+    "Act 2 only (player's second act)"
+  ],
+  "notes": "This event presents a choice between three strategies for selecting a [gold]Doll Relic[/gold]. Each choice leads to a unique interaction:\n\n[blue]Pick at Random[/blue] — Immediately grants one of three dolls at random: [gold]Daughter of the Wind[/gold], [gold]Mr Struggles[/gold], or [gold]Bing Bong[/gold].\n\n[blue]Take Some Time[/blue] — Costs [red]5[/red] HP (unblockable, unpowered). After taking damage, the room reveals [blue]2[/blue] randomly selected dolls from the pool of three for the player to choose between.\n\n[blue]Examine Each and Make the Best Choice[/blue] — Costs [red]15[/red] HP (unblockable, unpowered). After taking damage, the room reveals all [blue]3[/blue] dolls for the player to choose from.\n\nEach doll has a unique flavor description that plays when selected. The dolls are presented in random order during the choice phase.",
+  "card_refs": [],
+  "relic_refs": [
+    {
+      "class_name": "DaughterOfTheWind",
+      "title": "Daughter of the Wind",
+      "slug": "daughter-of-the-wind"
+    },
+    {
+      "class_name": "MrStruggles",
+      "title": "Mr Struggles",
+      "slug": "mr-struggles"
+    },
+    {
+      "class_name": "BingBong",
+      "title": "Bing Bong",
+      "slug": "bing-bong"
+    }
+  ]
+}

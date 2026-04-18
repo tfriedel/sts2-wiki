@@ -14,7 +14,7 @@
   ],
   "acts": ["Overgrowth"],
   "conditions": [],
-  "notes": "This is a narrative-focused event with flavor text that varies based on the player's choice. Choosing [gold]Let Go[/gold] reveals a dreamlike sequence where the player sees themselves interacting with others before waking up. Choosing [gold]Maintain Control[/gold] shows the player resisting the aroma's effects by clinging to their character's core principles (character-specific quotes displayed in the outcome). Both outcomes conclude the event after the player makes their card choice (transform or upgrade).",
+  "notes": "This is a narrative-focused event where each option provides different card modification. [gold]Let Go[/gold] transforms a selected card into a random card, with the outcome narration featuring dreamlike visions and mysterious eyes observing the player. [gold]Maintain Control[/gold] upgrades a selected card while the player resists the aroma's effects by anchoring to their character's core principles, which are displayed as character-specific quotes in the outcome text.",
   "card_refs": [],
   "relic_refs": []
 }

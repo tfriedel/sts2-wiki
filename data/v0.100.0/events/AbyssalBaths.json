@@ -5,7 +5,7 @@
   "options": [
     {
       "title": "Immerse",
-      "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
+      "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] unblockable, unpowered damage."
     },
     {
       "title": "Abstain",
@@ -13,16 +13,16 @@
     },
     {
       "title": "Linger",
-      "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
+      "description": "Gain [green]2[/green] Max HP. Take unblockable, unpowered damage that escalates (starts at [red]4[/red] damage after first immersion)."
     },
     {
       "title": "Exit Baths",
-      "description": ""
+      "description": "The heat finally gets to you, and you hop out of the bath."
     }
   ],
   "acts": ["Underdocks"],
   "conditions": [],
-  "notes": "Choosing [gold]Immerse[/gold] initiates a looping phase where you can repeatedly [gold]Linger[/gold] or safely [gold]Exit Baths[/gold]. Each immersion and linger grants [green]2 Max HP[/green] but also inflicts [red]damage[/red] (unblockable, unpowered) that increases each time: the net cost after the Max HP gain is [red]1 HP[/red] on first immersion, then [red]2 HP, 3 HP, 4 HP[/red], etc. on each subsequent linger. The linger count is capped at 9, with increasingly surreal descriptions as you lose track of time. When the next linger would reduce your current HP to 0 or below, the event shows a [sine][red]death warning[/red][/sine] page but still offers the choice to linger (and die) or exit safely. [gold]Abstain[/gold] is the safer initial choice, granting [green]10 HP[/green] healing immediately without entering the baths.",
+  "notes": "[gold]Immerse[/gold] locks you into a repeating loop. Each action (initial immersion and subsequent lingerings) grants [green]2 Max HP[/green] and deals [red]3[/red], [red]4[/red], [red]5[/red]... damage respectively (all [red]unblockable, unpowered[/red]). Net HP cost per linger: 1 HP, then 2 HP, 3 HP, etc., since you always gain 2 Max HP simultaneously. The flavor text escalates through 9 linger stages—from increasingly desperate (LINGER1-3) to frantic (LINGER4), then surreal (LINGER5-9). If lingering would reduce your current HP to 0 or below, a [sine][red]death warning[/red][/sine] appears, but you can still attempt it (which will kill you) or [gold]Exit Baths[/gold]. [gold]Abstain[/gold] is available only from the initial choice and immediately heals [green]10 HP[/green] and ends the event safely.",
   "card_refs": [],
   "relic_refs": []
 }

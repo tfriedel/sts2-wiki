@@ -1,0 +1,36 @@
+{
+  "class_name": "Amalgamator",
+  "title": "Amalgamator",
+  "description": "[b][jitter]CLANG! CLANG!!![/jitter][/b]\n\nYou hear the echoes of metal upon metal on the otherside of a wall...\n\nAs you press your head against the wall to listen in—the wall opens up, revealing a [orange]hulking six-armed figure[/orange] toiling away.\nIts \"face\" is a [gold][sine]swirling vortex of glowing sigils[/sine][/gold] that shift about.\n\n\"One with an [aqua]Ascending Spirit[/aqua] has found my workshop? Let's get [jitter]COMBINING[/jitter]!\"",
+  "options": [
+    {
+      "title": "Combine Strikes",
+      "description": "Remove [blue]2[/blue] [gold]Strikes[/gold]. Add [gold]Ultimate Strike[/gold] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Combine Defends",
+      "description": "Remove [blue]2[/blue] [gold]Defends[/gold]. Add [gold]Ultimate Defend[/gold] to your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": [
+    "Hive"
+  ],
+  "conditions": [
+    "Deck contains at least 2 Basic Strike cards (that are removable)",
+    "Deck contains at least 2 Basic Defend cards (that are removable)"
+  ],
+  "notes": "This event combines two basic cards into a single uncommon card. [gold]Ultimate Strike[/gold] deals 14 damage (20 when upgraded) and costs 1 Energy. [gold]Ultimate Defend[/gold] grants 11 Block (15 when upgraded) and costs 1 Energy.",
+  "card_refs": [
+    {
+      "class_name": "UltimateStrike",
+      "title": "Ultimate Strike",
+      "slug": "ultimate-strike"
+    },
+    {
+      "class_name": "UltimateDefend",
+      "title": "Ultimate Defend",
+      "slug": "ultimate-defend"
+    }
+  ],
+  "relic_refs": []
+}

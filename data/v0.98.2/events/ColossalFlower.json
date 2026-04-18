@@ -1,0 +1,26 @@
+{
+  "class_name": "ColossalFlower",
+  "title": "Colossal Flower",
+  "description": "There is a [green]colossal flower[/green] growing atop a [red][jitter]mountain of bones[/jitter][/red].\n\nAs its [sine][rainbow freq=0.3 sat=0.8 val=1]color-shifting petals[/rainbow][/sine] pulsate, you sense there is a [aqua]Powerful Cluster of Pollen[/aqua] in the center but the undulating petals are [red]razor sharp[/red] and unpredictable.\n\nYou could grab some of the [gold]golden nectar[/gold], but reaching the prize in the center is so tempting...",
+  "options": [
+    {
+      "title": "Extract Nectar",
+      "description": "Gain [blue]35[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Reach Deeper",
+      "description": "Enter deeper. Lose [red]5[/red] HP."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": ["All players must have at least 19 HP"],
+  "notes": "This is a multi-stage event with three decision points. Each time you choose to Reach Deeper, you take damage and advance to the next stage with a new Extract Nectar option offering higher gold.\n\n[gold]Stage 1 (Initial):[/gold]\n• Extract Nectar: Gain 35 Gold, end event\n• Reach Deeper: Lose 5 HP, advance to Stage 2\n\n[gold]Stage 2:[/gold]\n• Extract Nectar: Gain 75 Gold, end event\n• Reach Deeper: Lose 6 HP, advance to Stage 3\n\n[gold]Stage 3 (Final):[/gold]\n• Extract Nectar: Gain 135 Gold, end event\n• Enter the Center: Lose 7 HP, obtain [aqua]Pollinous Core[/aqua] relic, end event\n\nThe event progression text emphasizes the danger: the flower's toxins numb your pain as you go deeper, but the pile of bones suggests others who went too far. Maximum total damage is 18 HP (5 + 6 + 7), and the spawn condition ensures all players have at least 19 HP—enough to guarantee survival regardless of choices.",
+  "card_refs": [],
+  "relic_refs": [
+    {
+      "class_name": "PollinousCore",
+      "title": "Pollinous Core",
+      "slug": "pollinous-core"
+    }
+  ]
+}

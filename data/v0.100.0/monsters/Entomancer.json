@@ -1,0 +1,44 @@
+{
+  "class_name": "Entomancer",
+  "title": "Entomancer",
+  "min_hp": 155,
+  "max_hp": 155,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BEES_MOVE",
+      "title": "Beeeees!",
+      "intents": [
+        {"type": "multi_attack", "damage": 3, "hits": 8}
+      ],
+      "effects": [
+        "Deal 3 damage",
+        "8 hits"
+      ]
+    },
+    {
+      "id": "SPEAR_MOVE",
+      "title": "Spear!",
+      "intents": [
+        {"type": "attack", "damage": 20}
+      ],
+      "effects": [
+        "Deal 20 damage"
+      ]
+    },
+    {
+      "id": "PHEROMONE_SPIT_MOVE",
+      "title": "Pheromone Spit",
+      "intents": [
+        {"type": "buff"}
+      ],
+      "effects": [
+        "If Personal Hive < 3 stacks: Gain 1 Personal Hive, Apply 1 Strength to self",
+        "If Personal Hive >= 3 stacks: Apply 2 Strength to self"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Beeeees!, then cycles: Beeeees! → Spear! → Pheromone Spit → (repeat)",
+  "powers_on_spawn": ["PersonalHivePower"],
+  "notes": "Spawns with 1 stack of Personal Hive. Pheromone Spit changes behavior based on Personal Hive stacks: below 3 stacks it gains 1 more Personal Hive and 1 Strength; at 3 or more stacks it gains 2 Strength instead. This means it steadily accumulates Strength across multiple Pheromone Spit uses, making its Beeeees! and Spear! attacks hit progressively harder."
+}

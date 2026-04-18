@@ -1,0 +1,20 @@
+{
+  "class_name": "DenseVegetation",
+  "title": "Dense Vegetation",
+  "description": "Having taken the wrong path for a good while, you find yourself in a thick jungle of [green]ferns[/green], [green]shrubs[/green], and [green]vines[/green]. Especially [green]vines[/green]. Exhaustion sets in, and a dark thought comes to mind:\n\n[sine][purple]\"You are lost, unprepared, and the inevitability of death is approaching.\"[/purple][/sine]\n\nWhat do you do?",
+  "options": [
+    {
+      "title": "Trudge On",
+      "description": "Remove a card from your [gold]Deck[/gold]. Lose [red]11[/red] HP."
+    },
+    {
+      "title": "Rest",
+      "description": "Heal [green][varies by current HP][/green] HP. Fight some [red]enemies[/red]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [],
+  "notes": "[green]Rest[/green] heals an amount that varies based on current HP (calculated the same way as resting at a rest site), then triggers a mandatory combat encounter. Choosing [green]Trudge On[/green] applies unblockable, unpowered damage.",
+  "card_refs": [],
+  "relic_refs": []
+}

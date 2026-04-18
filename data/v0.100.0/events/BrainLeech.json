@@ -13,7 +13,7 @@
     }
   ],
   "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
-  "conditions": ["Act 1-2 only"],
+  "conditions": ["Acts 1-2 only"],
   "notes": "The 5 random card options in Share Knowledge are generated from your character's card pool. The 5 HP damage from Rip the Leech Off is [gold]unblockable[/gold] and [gold]unpowered[/gold] — it cannot be reduced by block or powers. If defeated by this event, the death message reads: \"[character] was consumed by the [gold]Brain Leech[/gold].\"",
   "card_refs": [],
   "relic_refs": []

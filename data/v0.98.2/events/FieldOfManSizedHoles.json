@@ -1,0 +1,28 @@
+{
+  "class_name": "FieldOfManSizedHoles",
+  "title": "Field of Man-Sized Holes",
+  "description": "The sudden sight of a massive field, [jitter]gouged with large outlines of bodies[/jitter], stops you in your tracks.\n\nOne of these outlines matches your own.\n\n[sine][orange]It's perfect...[/orange][/sine]",
+  "options": [
+    {
+      "title": "Resist",
+      "description": "Remove [blue]2[/blue] cards from your [gold]Deck[/gold]. Add [red]Normality[/red] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Enter Your Hole",
+      "description": "[gold]Enchant[/gold] a card with [purple]Perfect Fit[/purple]."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [
+    "Requires at least one card in your deck that can be enchanted with Perfect Fit"
+  ],
+  "notes": "This is a multi-page event with distinct flavor text after each choice. Choosing \"Resist\" removes 2 cards from your deck and adds a Normality curse, reflecting the character's decision to walk past their destined hole. Choosing \"Enter Your Hole\" allows you to enchant one card with the Perfect Fit enchantment, suggesting a mystical acceptance of fate.",
+  "card_refs": [
+    {
+      "class_name": "Normality",
+      "title": "Normality",
+      "slug": "normality"
+    }
+  ],
+  "relic_refs": []
+}

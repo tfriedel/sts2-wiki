@@ -4,8 +4,8 @@
   "description": "Before you is a rather epic sight.\nYou see 3 different colored statues towering over a dais, having a [jitter][red]heated debate[/red][/jitter] over the philosophical implications of color.\n\nAs you listen in, you get a sense that the most important question at hand is which color truly is [gold]THE BEST[/gold].\n\nYou chime in with your thoughts.",
   "options": [
     {
-      "title": "Blue",
-      "description": "Obtain [blue]3[/blue] Defect cards."
+      "title": "Pink",
+      "description": "Obtain [blue]3[/blue] Necrobinder cards."
     },
     {
       "title": "Red",
@@ -20,13 +20,16 @@
       "description": "Obtain [blue]3[/blue] Silent cards."
     },
     {
-      "title": "Pink",
-      "description": "Obtain [blue]3[/blue] Necrobinder cards."
+      "title": "Blue",
+      "description": "Obtain [blue]3[/blue] Defect cards."
     }
   ],
   "acts": ["Hive"],
-  "conditions": [],
-  "notes": "The event displays 3 randomly selected options from the 5 possible character pools. Your current character's pool is never offered as an option, and only unlocked pools will be available to choose from. Selecting an option grants 3 cards from that pool, one from each rarity tier: 1 common, 1 uncommon, and 1 rare.",
+  "conditions": [
+    "Can only choose a character pool you have unlocked",
+    "Cannot choose your current character's pool"
+  ],
+  "notes": "The event displays [gold]exactly 3 randomly selected options[/gold] from the available color pools (or fewer if fewer pools are unlocked). All 5 character pools are potential options: Necrobinder ([purple]Pink[/purple]), Ironclad ([red]Red[/red]), Regent ([gold]Orange[/gold]), Silent ([green]Green[/green]), and Defect ([blue]Blue[/blue]). However, only pools that have been [gold]unlocked in your character progression[/gold] will appear as choices. Crucially, your [gold]current character's own pool[/gold] is always excluded from the available options, even if it's unlocked. Each color choice grants 3 cards—[gold]1 Common, 1 Uncommon, and 1 Rare[/gold]—from the corresponding character pool.",
   "card_refs": [],
   "relic_refs": []
 }

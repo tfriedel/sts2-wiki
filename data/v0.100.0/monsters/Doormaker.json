@@ -1,0 +1,71 @@
+{
+  "class_name": "Doormaker",
+  "title": "Doormaker",
+  "min_hp": 512,
+  "max_hp": 512,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "DRAMATIC_OPEN_MOVE",
+      "title": "Dramatic Open",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Reset HP to normal",
+        "Remove all powers",
+        "Apply Hunger of the Void to the player"
+      ]
+    },
+    {
+      "id": "BEAM_MOVE",
+      "title": "Laser Beam",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 11,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 11 damage",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "CHOMP_MOVE",
+      "title": "Chomp",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 45
+        }
+      ],
+      "effects": [
+        "Deal 45 damage"
+      ]
+    },
+    {
+      "id": "PULVERIZE_MOVE",
+      "title": "Pulverize",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 22
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 22 damage",
+        "Gain 3 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Dramatic Open. Then cycles: Laser Beam → Chomp → Pulverize → Laser Beam (repeats)",
+  "powers_on_spawn": [],
+  "notes": "The Doormaker begins combat with infinite HP representation. When Dramatic Open is played, the portal opens and the Doormaker's HP is set to normal (512), all powers are removed, and Hunger of the Void is applied to the player. Each move changes the Doormaker's visual appearance. Music parameter 'queen_progress' updates when the portal opens and when the Doormaker dies."
+}

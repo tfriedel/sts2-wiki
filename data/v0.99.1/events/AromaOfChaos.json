@@ -1,0 +1,20 @@
+{
+  "class_name": "AromaOfChaos",
+  "title": "Aroma of Chaos",
+  "description": "Upon trudging through a thick underbrush and making it into a clearing, you're hit with an unplaceable nostalgia.\n\nA mix of [purple]floral scents[/purple], [green]putrid decay[/green], and [orange]something else entirely[/orange]. The scent grows stronger with each step, and you feel as though the world around you is [sine]warping and twisting[/sine].\n\nOvercome with a sense of [sine][rainbow freq=0.3 sat=0.8 val=1]shifting chaos[/rainbow][/sine], you begin to lose your sense of self.",
+  "options": [
+    {
+      "title": "Let Go",
+      "description": "[gold]Transform[/gold] a card in your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Maintain Control",
+      "description": "[gold]Upgrade[/gold] a card in your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [],
+  "notes": "This event presents a choice between two forms of card modification. Upon selecting [gold]Let Go[/gold], you transform a card into a random card. Upon selecting [gold]Maintain Control[/gold], you upgrade a card. Each choice triggers a different outcome sequence with unique flavor text. The [gold]Maintain Control[/gold] outcome references [gold]Core Principles[/gold], which are character-specific and determined at runtime.",
+  "card_refs": [],
+  "relic_refs": []
+}

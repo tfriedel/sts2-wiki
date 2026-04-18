@@ -1,0 +1,26 @@
+{
+  "class_name": "FakeMerchant",
+  "title": "The Merchant???",
+  "description": "A mysterious merchant has set up shop. You can purchase relics from their inventory.",
+  "options": [],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": [
+    "Act 2 and beyond only",
+    "Single player only",
+    "Requires at least 100 Gold OR a Foul Potion"
+  ],
+  "notes": "This is an interactive merchant encounter, not a traditional choice event. The merchant offers up to 6 randomly selected relics from a pool of 9 possibilities (Fake Anchor, Fake Blood Vial, Fake Happy Flower, Fake Lee's Waffle, Fake Mango, Fake Orichalcum, Fake Snecko Eye, Fake Strike Dummy, Fake Venerable Tea Set). Each relic costs [gold]50 Gold[/gold]. If you throw a [purple]Foul Potion[/purple] at the merchant, you enter combat with the [gold][b]Fake Merchant[/b][/gold]. If you defeat them, you receive [yellow]Fake Merchant's Rug[/yellow] and any relics still in their inventory.",
+  "card_refs": [],
+  "relic_refs": [
+    {"class_name": "FakeAnchor", "title": "Fake Anchor", "slug": "fake-anchor"},
+    {"class_name": "FakeBloodVial", "title": "Fake Blood Vial", "slug": "fake-blood-vial"},
+    {"class_name": "FakeHappyFlower", "title": "Fake Happy Flower", "slug": "fake-happy-flower"},
+    {"class_name": "FakeLeesWaffle", "title": "Fake Lee's Waffle", "slug": "fake-lees-waffle"},
+    {"class_name": "FakeMango", "title": "Fake Mango", "slug": "fake-mango"},
+    {"class_name": "FakeOrichalcum", "title": "Fake Orichalcum", "slug": "fake-orichalcum"},
+    {"class_name": "FakeSneckoEye", "title": "Fake Snecko Eye", "slug": "fake-snecko-eye"},
+    {"class_name": "FakeStrikeDummy", "title": "Fake Strike Dummy", "slug": "fake-strike-dummy"},
+    {"class_name": "FakeVenerableTeaSet", "title": "Fake Venerable Tea Set", "slug": "fake-venerable-tea-set"},
+    {"class_name": "FakeMerchantsRug", "title": "Fake Merchant's Rug", "slug": "fake-merchants-rug"}
+  ]
+}

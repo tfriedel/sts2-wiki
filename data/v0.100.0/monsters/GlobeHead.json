@@ -1,0 +1,38 @@
+{
+  "class_name": "GlobeHead",
+  "title": "Globe Head",
+  "min_hp": 158,
+  "max_hp": 158,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SHOCKING_SLAP",
+      "title": "Shocking Slap",
+      "intents": [
+        {"type": "attack", "damage": 14},
+        {"type": "debuff"}
+      ],
+      "effects": ["Deal 14 damage", "Apply 2 Frail"]
+    },
+    {
+      "id": "THUNDER_STRIKE",
+      "title": "Thunder Strike",
+      "intents": [
+        {"type": "multi_attack", "damage": 7, "hits": 3}
+      ],
+      "effects": ["Deal 7 damage", "3 hits"]
+    },
+    {
+      "id": "GALVANIC_BURST",
+      "title": "Galvanic Burst",
+      "intents": [
+        {"type": "attack", "damage": 17},
+        {"type": "buff"}
+      ],
+      "effects": ["Deal 17 damage", "Gain 2 Strength"]
+    }
+  ],
+  "move_pattern": "Cycles: Shocking Slap → Thunder Strike → Galvanic Burst → repeat",
+  "powers_on_spawn": ["Galvanic (6)"],
+  "notes": "Begins combat with 6 Galvanic power. Each use of Galvanic Burst grants the Globe Head 2 Strength, increasing the damage of all subsequent attacks."
+}

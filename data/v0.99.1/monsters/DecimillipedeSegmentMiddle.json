@@ -1,0 +1,62 @@
+{
+  "class_name": "DecimillipedeSegmentMiddle",
+  "title": "Decimillipede Segment",
+  "min_hp": 48,
+  "max_hp": 56,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WRITHE_MOVE",
+      "title": "Writhe",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 6 damage", "2 hits"]
+    },
+    {
+      "id": "BULK_MOVE",
+      "title": "Bulk",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 7 damage", "Apply 2 Strength"]
+    },
+    {
+      "id": "CONSTRICT_MOVE",
+      "title": "Constrict",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 9 damage", "Apply 1 Weak"]
+    },
+    {
+      "id": "REATTACH_MOVE",
+      "title": "Reattach",
+      "intents": [
+        {
+          "type": "heal"
+        }
+      ],
+      "effects": ["Heal"]
+    }
+  ],
+  "move_pattern": "Cycles through Constrict → Bulk → Writhe in sequence, then repeats. Starting move determined by segment index. When segment is defeated, enters Reattach move if ReattachPower is active, then randomly selects from Writhe, Bulk, or Constrict.",
+  "powers_on_spawn": ["Reattach 25"],
+  "notes": "This is a segment of the Decimillipede boss. Segments fight alongside each other. When a segment dies, it can reattach via ReattachPower if the power's uses remain. Each segment's max HP is adjusted to be unique (even number, non-matching teammates) to prevent health pool stacking. The AnimSegmentsAttack animation triggers visual effects on all active segments simultaneously."
+}

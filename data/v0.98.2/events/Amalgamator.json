@@ -1,0 +1,34 @@
+{
+  "class_name": "Amalgamator",
+  "title": "Amalgamator",
+  "description": "[b][jitter]CLANG! CLANG!!![/jitter][/b]\n\nYou hear the echoes of metal upon metal on the otherside of a wall...\n\nAs you press your head against the wall to listen in—the wall opens up, revealing a [orange]hulking six-armed figure[/orange] toiling away.\nIts \"face\" is a [gold][sine]swirling vortex of glowing sigils[/sine][/gold] that shift about.\n\n\"One with an [aqua]Ascending Spirit[/aqua] has found my workshop? Let's get [jitter]COMBINING[/jitter]!\"",
+  "options": [
+    {
+      "title": "Combine Strikes",
+      "description": "Remove [blue]2[/blue] [gold]Strikes[/gold]. Add [gold]Ultimate Strike[/gold] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Combine Defends",
+      "description": "Remove [blue]2[/blue] [gold]Defends[/gold]. Add [gold]Ultimate Defend[/gold] to your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [
+    "At least 2 basic Strike cards in your deck",
+    "At least 2 basic Defend cards in your deck"
+  ],
+  "notes": "When you choose either option, the game prompts you to select which 2 Strike or Defend cards to remove. The chosen cards are removed from your deck and replaced with a single upgraded Ultimate card. The event then displays completion text showing the Amalgamator striking its Bone Anvil as you gain your new technique.",
+  "card_refs": [
+    {
+      "class_name": "UltimateStrike",
+      "title": "Ultimate Strike",
+      "slug": "ultimate-strike"
+    },
+    {
+      "class_name": "UltimateDefend",
+      "title": "Ultimate Defend",
+      "slug": "ultimate-defend"
+    }
+  ],
+  "relic_refs": []
+}

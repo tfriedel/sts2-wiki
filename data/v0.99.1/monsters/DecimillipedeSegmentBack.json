@@ -1,0 +1,62 @@
+{
+  "class_name": "DecimillipedeSegmentBack",
+  "title": "Decimillipede Back",
+  "min_hp": 48,
+  "max_hp": 56,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WRITHE_MOVE",
+      "title": "Writhe",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 6 damage", "2 hits"]
+    },
+    {
+      "id": "BULK_MOVE",
+      "title": "Bulk",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 7 damage", "Apply 2 Strength"]
+    },
+    {
+      "id": "CONSTRICT_MOVE",
+      "title": "Constrict",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 9 damage", "Apply 1 Weak"]
+    },
+    {
+      "id": "REATTACH_MOVE",
+      "title": "Reattach",
+      "intents": [
+        {
+          "type": "heal"
+        }
+      ],
+      "effects": ["Heal"]
+    }
+  ],
+  "move_pattern": "Cycles between Writhe, Constrict, and Bulk attacks in a fixed order. The starting move varies based on segment position (determined by StarterMoveIdx). After dying, transitions through Dead state to Reattach for healing before resuming normal attacks.",
+  "powers_on_spawn": ["Reattach Power"],
+  "notes": "This is a back segment variant of the Decimillipede boss. Multiple segments fight together in the same encounter, each with unique HP adjusted upon entering combat (incremented by 2 if matching teammate HP). The Reattach Power enables the segment to heal via the Reattach move, allowing for survival and recovery during extended battles."
+}

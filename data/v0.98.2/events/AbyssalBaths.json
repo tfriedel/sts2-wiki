@@ -1,0 +1,20 @@
+{
+  "class_name": "AbyssalBaths",
+  "title": "Abyssal Baths",
+  "description": "You discover a secluded chamber.\n\nSteam rises from bubbling pools of hot liquid that shifts colors with hypnotic rhythm. Barnacled growths hang from the ceiling, dripping viscous fluid that hisses and writhes when it touches the surface. The air feels heavy, laden with [blue]salt[/blue] and something [green]unmistakably organic[/green].\n\nAs you approach the edge of the largest pool, the liquid ripples. The waters bubble more intensely as if anticipating your entry.",
+  "options": [
+    {
+      "title": "Immerse",
+      "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
+    },
+    {
+      "title": "Abstain",
+      "description": "Heal [green]10[/green] HP."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": [],
+  "notes": "[gold]Multi-stage Event:[/gold] After immersing, you unlock additional choices to continue lingering or exit.\n\n[gold]Immerse Path:[/gold] Choosing to immerse triggers an automatic action that gains 2 Max HP and deals damage (starting at 3). This then unlocks the LINGER and EXIT options. Each time you choose to linger, the same action repeats with escalating environmental descriptions (9 stages total), but the damage increases by 1 each time: 3 → 4 → 5 → 6, etc. If a linger would reduce your HP to 0 or below, a death warning page displays instead, giving you a final choice to linger (risking death) or exit safely.\n\n[gold]Abstain Path:[/gold] Decline bathing and gain 10 HP to immediately end the event.\n\n[gold]Mechanics:[/gold] All damage from this event is unblockable and unpowered. The Max HP gain and damage occur as part of the immerse/linger action before presenting the next choice.",
+  "card_refs": [],
+  "relic_refs": []
+}

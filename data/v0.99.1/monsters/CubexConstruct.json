@@ -1,0 +1,87 @@
+{
+  "class_name": "CubexConstruct",
+  "title": "Cubex Construct",
+  "min_hp": 70,
+  "max_hp": 70,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CHARGE_UP_MOVE",
+      "title": "Charge Up",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "REPEATER_MOVE",
+      "title": "Repeater Blast",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "REPEATER_MOVE_2",
+      "title": "Repeater Blast",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "EXPEL_BLAST",
+      "title": "Expel Blast",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 6 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "SUBMERGE_MOVE",
+      "title": "Submerge",
+      "intents": [
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Gain 15 Block"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles through Charge Up → Repeater Blast → Repeater Blast → Expel Blast → Repeater Blast (repeats). Submerge is available but not part of the main cycle; if used, it leads back to Charge Up.",
+  "powers_on_spawn": [
+    "1 Artifact Power"
+  ],
+  "notes": "Cubex Construct gains 13 Block when entering combat. Its move cycle is rigid and deterministic, with Charge Up starting the sequence and consistently applying 2 Strength per turn for the first three moves. Strength stacking enables increasingly high damage output. The Artifact Power reduces the effectiveness of player power application."
+}

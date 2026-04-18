@@ -1,0 +1,22 @@
+{
+  "class_name": "StoneOfAllTime",
+  "title": "Stone of All Time",
+  "description": "A massive boulder sits in the middle of an abandoned courtyard.\n\nA plaque reads:\n[gold][b]Stone of All Time[/b][/gold].\n\nIts presence, shape, and adornments indicate that this courtyard was built around this [blue]Stone[/blue] and that it has never moved from this spot.",
+  "options": [
+    {
+      "title": "Drink and Lift",
+      "description": "Lose [red][a random potion][/red]. Gain [blue]10[/blue] Max HP.",
+      "requires": "Requires a Potion."
+    },
+    {
+      "title": "Push",
+      "description": "Lose [red]6[/red] HP. [gold]Enchant[/gold] an Attack with [purple]Vigorous[/purple] [blue]8[/blue].",
+      "requires": "Requires an Attack."
+    }
+  ],
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": ["Act 2 only"],
+  "notes": "Both options feature the humorous theme that despite the player's efforts, nothing ultimately happens to the stone. The Lift option discards a randomly selected potion from inventory and grants Max HP, with the selected potion shown to the player before confirmation. The Push option deals damage to the player and allows enchanting a single Attack card in the Deck with [purple]Vigorous[/purple], which increases damage dealt based on damage received that turn. The event prevents potion removal during its duration to ensure the Lift option remains available.",
+  "card_refs": [],
+  "relic_refs": []
+}

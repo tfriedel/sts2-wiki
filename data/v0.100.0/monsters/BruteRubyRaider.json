@@ -1,0 +1,33 @@
+{
+  "class_name": "BruteRubyRaider",
+  "title": "Brute Raider",
+  "min_hp": 31,
+  "max_hp": 34,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BEAT_MOVE",
+      "title": "Beat",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        }
+      ],
+      "effects": ["Deal 8 damage"]
+    },
+    {
+      "id": "ROAR_MOVE",
+      "title": "Roar",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Gain 3 Strength"]
+    }
+  ],
+  "move_pattern": "Starts with Beat. Alternates: Beat → Roar → Beat → Roar...",
+  "powers_on_spawn": [],
+  "notes": "Each Roar gives the Brute Raider 3 Strength, increasing the damage of all future Beat attacks. The cycle repeats indefinitely, so Beat grows stronger each time Roar is used."
+}

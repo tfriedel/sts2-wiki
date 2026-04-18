@@ -1,0 +1,20 @@
+{
+  "class_name": "GasBomb",
+  "title": "Gas Bomb",
+  "min_hp": 8,
+  "max_hp": 8,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "EXPLODE_MOVE",
+      "title": "Explode",
+      "intents": [
+        {"type": "death_blow", "damage": 9}
+      ],
+      "effects": ["Deal 9 damage", "Dies after attacking"]
+    }
+  ],
+  "move_pattern": "Uses Explode once, then dies.",
+  "powers_on_spawn": ["Minion"],
+  "notes": "A minion that uses its single move (Explode) and immediately kills itself afterward via CreatureCmd.Kill. Has the Minion power, meaning it is removed if its summoner is defeated. Sound effects indicate it is associated with Living Fog."
+}

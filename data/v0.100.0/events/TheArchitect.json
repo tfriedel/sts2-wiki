@@ -1,0 +1,27 @@
+{
+  "class_name": "TheArchitect",
+  "title": "The Architect",
+  "description": "[Dialogue-based final encounter. The Architect converses with the character through character-specific dialogue sequences that vary by how many times the character has defeated the Architect.]",
+  "options": [
+    {
+      "title": "Continue",
+      "description": "Advance through the dialogue sequence"
+    },
+    {
+      "title": "Respond",
+      "description": "Answer The Architect in the dialogue sequence"
+    },
+    {
+      "title": "Proceed",
+      "description": "Finish the encounter and complete your run"
+    }
+  ],
+  "acts": [],
+  "conditions": [
+    "Appears after defeating The Architect in combat",
+    "Dialogue content is character-specific and depends on total number of times the character has defeated The Architect"
+  ],
+  "notes": "[gold]Dialogue-Based Event[/gold]: This event is primarily driven by dialogue sequences. Each character has multiple unique dialogue paths (3-4 variations) that unlock based on how many times that character has beaten The Architect. The dialogue can include attacks from the player, The Architect, or both, depending on the specific dialogue variant. After dialogue completes, the player clicks 'Proceed' to finish the run and claim victory.",
+  "card_refs": [],
+  "relic_refs": []
+}

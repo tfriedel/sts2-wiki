@@ -1,0 +1,24 @@
+{
+  "class_name": "BattlewornDummy",
+  "title": "Battleworn Dummy",
+  "description": "As you approach, it begins to rumble and fizzle and lights up brilliantly!\n\n\"[jitter]BZZZT![/jitter] TIME TO TRAIN!!! YOU HAVE [blue]3 TURNS[/blue] TO DEFEAT ME!\nCHOOSE A SETTING OR FACE [red]LETHAL HUMILIATION[/red].\nHere are the options:\"\n\nAfter the terrifying message, the dummy carefully reads out detailed instructions.\n\nWhat do you choose?",
+  "options": [
+    {
+      "title": "Setting 1",
+      "description": "Fight the easiest training dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+    },
+    {
+      "title": "Setting 2",
+      "description": "Fight a medium difficulty training dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards from your deck."
+    },
+    {
+      "title": "Setting 3",
+      "description": "Fight the hardest training dummy. Obtain a random [gold]Relic[/gold]."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "This event is a timed training encounter. You have [blue]3 turns[/blue] to defeat the dummy of your chosen difficulty setting. If you run out of time, you fail the training and receive a humiliating message. If you defeat the dummy in time, you receive one of three rewards:\n\n[gold]Setting 1[/gold] grants a random potion from your character's potion pool or the shared potion pool.\n\n[gold]Setting 2[/gold] upgrades [blue]2[/blue] random upgradable cards from your deck.\n\n[gold]Setting 3[/gold] grants a random relic from the relic pool.\n\nHP values scale based on multiplayer difficulty and act progression.",
+  "card_refs": [],
+  "relic_refs": []
+}

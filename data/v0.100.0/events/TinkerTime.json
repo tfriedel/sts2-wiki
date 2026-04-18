@@ -1,0 +1,56 @@
+{
+  "class_name": "TinkerTime",
+  "title": "Tinker Time",
+  "description": "Navigating through an [red][sine]endless sea of corpses[/sine][/red], you find a [orange]mad scientist[/orange] scavenging for various scraps.\n\n\"Yes. Hi, hello! You look like a capable fighter... I need a tester for my next [green]atrocity device[/green]! How about it?\"",
+  "options": [
+    {
+      "title": "Sapping",
+      "description": "Apply [blue]2[/blue] [gold]Weak[/gold]. Apply [blue]2[/blue] [gold]Vulnerable[/gold]."
+    },
+    {
+      "title": "Violence",
+      "description": "Hits [blue]2[/blue] additional times."
+    },
+    {
+      "title": "Choking",
+      "description": "Whenever you play a card this turn, the enemy loses [blue]6[/blue] HP."
+    },
+    {
+      "title": "Energized",
+      "description": "Gain 2 Energy."
+    },
+    {
+      "title": "Wisdom",
+      "description": "Draw [blue]3[/blue] cards."
+    },
+    {
+      "title": "Chaos",
+      "description": "Add a random card into your [gold]Hand[/gold]. It costs [blue]0[/blue] Energy this turn."
+    },
+    {
+      "title": "Expertise",
+      "description": "Gain [blue]2[/blue] [gold]Strength[/gold]. Gain [blue]2[/blue] [gold]Dexterity[/gold]."
+    },
+    {
+      "title": "Curious",
+      "description": "Powers cost [blue]1[/blue] Energy less."
+    },
+    {
+      "title": "Improvement",
+      "description": "At the end of combat, [gold]Upgrade[/gold] a random card."
+    }
+  ],
+  "acts": [
+    "Glory"
+  ],
+  "conditions": [],
+  "notes": "This is a multi-stage customization event. After accepting the scientist's offer, you choose a card type: [gold]Weapon[/gold] (Attack), [gold]Protector[/gold] (Skill), or [gold]Gadget[/gold] (Power). Two card type options are shown randomly. Then you select a rider effect that modifies your chosen card — two rider options are shown randomly based on card type.\n\n[gold]Weapon[/gold] riders: Sapping, Violence, Choking\n[gold]Protector[/gold] riders: Energized, Wisdom, Chaos\n[gold]Gadget[/gold] riders: Expertise, Curious, Improvement\n\nThe resulting MadScience card with your chosen type and rider is added to your deck.",
+  "card_refs": [
+    {
+      "class_name": "MadScience",
+      "title": "Mad Science",
+      "slug": "mad-science"
+    }
+  ],
+  "relic_refs": []
+}

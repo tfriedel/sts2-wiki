@@ -1,0 +1,29 @@
+{
+  "class_name": "LuminousChoir",
+  "title": "Luminous Choir",
+  "description": "You stumble upon a clearing bathed in an unnatural blue glow. Towering mushrooms pulse with bioluminescence, their caps swollen and glistening. As you approach, the fungi begin to emit [sine][purple]haunting, melodic tones[/purple][/sine] that reverberate throughout your chest.\n\nYou notice something gleaming, embedded within the largest mushroom's flesh, [sine]pulsing[/sine] in rhythm with the fungal song.",
+  "options": [
+    {
+      "title": "Reach into the Flesh",
+      "description": "Remove [blue]2[/blue] cards from your [gold]Deck[/gold]. Add [red]Spore Mind[/red] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Offer Tribute",
+      "description": "Pay [red]99-149[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold].",
+      "requires": "[blue]99-149[/blue] [gold]Gold[/gold]"
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [
+    "Each player must have at least 99-149 Gold",
+    "Each player must have available relics"
+  ],
+  "card_refs": [
+    {
+      "class_name": "SporeMind",
+      "title": "Spore Mind",
+      "slug": "spore-mind"
+    }
+  ],
+  "notes": "The gold cost varies randomly between 99-149 Gold per event instance (base 149 minus 0-50). The 'Offer Tribute' option is only available if you have at least this amount of Gold."
+}

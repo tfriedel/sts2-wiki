@@ -1,0 +1,32 @@
+{
+  "class_name": "WarHistorianRepy",
+  "title": "War Historian, Repy",
+  "description": "An academic is trapped in a [purple]hanging cage[/purple] next to a [gold]treasure chest[/gold].\n\nThe academic is muttering about [sine][orange]\"One-Time-Use Keys\"[/orange][/sine] while furiously writing something.\n\nLooks like you can unlock the [purple]cage[/purple] or the [gold]chest[/gold].",
+  "options": [
+    {
+      "title": "Unlock the Cage",
+      "description": "Lose [gold]Lantern Key[/gold]. Obtain [gold]History Course[/gold]."
+    },
+    {
+      "title": "Unlock the Chest",
+      "description": "Lose [gold]Lantern Key[/gold]. Procure [blue]2[/blue] random [gold]Potions[/gold]. Obtain [blue]2[/blue] random [gold]Relics[/gold]."
+    }
+  ],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": ["Currently disabled (IsAllowed() always returns false)"],
+  "notes": "This event is currently not available in the game. Both choices consume the [gold]Lantern Key[/gold] card. Choosing to free Repy sets the [blue]FreedRepy[/blue] flag in run state, which may affect other events or mechanics. The chest option provides more immediate rewards but abandons the scholar.",
+  "card_refs": [
+    {
+      "class_name": "LanternKey",
+      "title": "Lantern Key",
+      "slug": "lantern-key"
+    }
+  ],
+  "relic_refs": [
+    {
+      "class_name": "HistoryCourse",
+      "title": "History Course",
+      "slug": "history-course"
+    }
+  ]
+}

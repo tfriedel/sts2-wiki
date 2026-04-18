@@ -1,0 +1,28 @@
+{
+  "class_name": "AbyssalBaths",
+  "title": "Abyssal Baths",
+  "description": "You discover a secluded chamber.\n\nSteam rises from bubbling pools of hot liquid that shifts colors with hypnotic rhythm. Barnacled growths hang from the ceiling, dripping viscous fluid that hisses and writhes when it touches the surface. The air feels heavy, laden with [blue]salt[/blue] and something [green]unmistakably organic[/green].\n\nAs you approach the edge of the largest pool, the liquid ripples. The waters bubble more intensely as if anticipating your entry.",
+  "options": [
+    {
+      "title": "Immerse",
+      "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
+    },
+    {
+      "title": "Abstain",
+      "description": "Heal [green]10[/green] HP."
+    },
+    {
+      "title": "Linger",
+      "description": "Gain [green]2[/green] Max HP. Take [red][escalating damage, starting at 4][/red]."
+    },
+    {
+      "title": "Exit Baths",
+      "description": ""
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": [],
+  "notes": "[gold]Multi-step looping event with escalating damage.[/gold]\n\n[blue]Event Flow:[/blue]\n1. Choose between [green]Immerse[/green] (enter looping bath mechanic) or [green]Abstain[/green] (gain 10 HP and exit immediately)\n2. If Immerse is chosen, you enter the bath and face the [green]Linger[/green] vs [gold]Exit Baths[/gold] loop\n3. [green]Linger[/green] can be repeated up to 9 times\n\n[blue]Damage Escalation:[/blue] The [green]Immerse[/green] action deals [red]3[/red] damage. Each subsequent [green]Linger[/green] action deals increasing damage:\n- 1st Linger: [red]4[/red] damage (Damage becomes 4)\n- 2nd Linger: [red]5[/red] damage (Damage becomes 5)\n- 3rd Linger: [red]6[/red] damage (Damage becomes 6)\n- Continues through 9th Linger: [red]11[/red] damage (Damage becomes 11)\n\nEach action also grants [green]2 Max HP[/green].\n\n[blue]Flavor Progression:[/blue] After each Linger, the page description changes to show your deteriorating mental state:\n- LINGER1-3: Intense heat and physical sensations\n- LINGER4: Mental dissociation ([sine]sine wave text[/sine])\n- LINGER5-7: Calm contentment and acceptance\n- LINGER8-9: Peaceful sleep ([sine]sine wave text[/sine])\n\n[blue]Death Warning:[/blue] If a Linger would deal lethal damage, a [red]DEATH WARNING[/red] page appears (in [sine]oscillating text[/sine]). You can still choose to Linger and risk death, or Exit Baths safely.\n\n[blue]Damage Properties:[/blue] All damage dealt is [gold]Unblockable[/gold] and [gold]Unpowered[/gold].",
+  "card_refs": [],
+  "relic_refs": []
+}

@@ -1,0 +1,30 @@
+{
+  "class_name": "Myte",
+  "title": "Myte",
+  "min_hp": 64,
+  "max_hp": 69,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "TOXIC_MOVE",
+      "title": "Toxic Cornucopia",
+      "intents": [{"type": "status", "amount": 2}],
+      "effects": ["Add 2 Toxic cards to player's hand"]
+    },
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [{"type": "attack", "damage": 15, "hits": 1}],
+      "effects": ["Deal 15 damage"]
+    },
+    {
+      "id": "SUCK_MOVE",
+      "title": "Suck",
+      "intents": [{"type": "attack", "damage": 6, "hits": 1}, {"type": "buff"}],
+      "effects": ["Deal 6 damage", "Gain 3 Strength"]
+    }
+  ],
+  "move_pattern": "If in 'first' slot: starts with Toxic Cornucopia. If in 'second' slot: starts with Suck. Then cycles: Toxic Cornucopia -> Bite -> Suck -> Toxic Cornucopia (repeating)",
+  "powers_on_spawn": [],
+  "notes": "Starting move depends on slot position: first slot begins with Toxic Cornucopia, second slot begins with Suck. The cycle is always Toxic -> Bite -> Suck -> Toxic."
+}

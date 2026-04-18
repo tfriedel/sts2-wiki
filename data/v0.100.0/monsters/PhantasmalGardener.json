@@ -1,0 +1,56 @@
+{
+  "class_name": "PhantasmalGardener",
+  "title": "Phantasmal Gardener",
+  "min_hp": 27,
+  "max_hp": 32,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 5
+        }
+      ],
+      "effects": ["Deal 5 damage"]
+    },
+    {
+      "id": "LASH_MOVE",
+      "title": "Lash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        }
+      ],
+      "effects": ["Deal 7 damage"]
+    },
+    {
+      "id": "FLAIL_MOVE",
+      "title": "Flail",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 1,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 1 damage", "3 hits"]
+    },
+    {
+      "id": "ENLARGE_MOVE",
+      "title": "Enlarge",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Apply 3 Strength"]
+    }
+  ],
+  "move_pattern": "Initial move varies by slot position: Flail (slot 1), Bite (slot 2), Lash (slot 3), or Enlarge (slot 4). Then cycles through: Bite → Lash → Flail → Enlarge.",
+  "powers_on_spawn": ["Apply 7 Skittish"],
+  "notes": "Gains Strength and visually scales up with each Enlarge move (scale increases logarithmically with number of Enlarge uses). Uses different hit animations depending on whether it blocked this turn. Initial move selection depends on its combat slot position."
+}

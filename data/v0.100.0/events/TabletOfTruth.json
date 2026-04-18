@@ -1,0 +1,21 @@
+{
+  "class_name": "TabletOfTruth",
+  "title": "Tablet of Truth",
+  "description": "You defeat a pair of [blue]Guardian Kin[/blue] and make your way into a protected vault.\n\nInside is a [purple][sine]tablet with familiar inscriptions[/sine][/purple]. Your intuition tells you that this language can be deciphered rather easily... However, once you begin deciphering you'll be locked in.\n\nThe tablet gives off a soothing energy and you can smash it to receive its [green]healing energies[/green] instead.",
+  "options": [
+    {
+      "title": "Decipher",
+      "description": "Lose [red]3[/red] Max HP. [gold]Upgrade[/gold] a random card.",
+      "requires": "Max HP must be greater than 3"
+    },
+    {
+      "title": "Smash",
+      "description": "Heal [green]20[/green] HP."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [],
+  "notes": "[gold]Multi-stage Progression:[/gold]\n\nChoosing Decipher locks you into a 5-stage progression where you can continue deciphering (at escalating costs) or give up and exit at any point.\n\n[gold]Stage 1:[/gold] Lose 6 Max HP, Upgrade 1 random card — \"Continue Deciphering\" or \"Give Up\"\n[gold]Stage 2:[/gold] Lose 12 Max HP, Upgrade 1 random card — \"Keep Deciphering\" or \"Give Up\"\n[gold]Stage 3:[/gold] Lose 24 Max HP, Upgrade 1 random card — \"KEEP DECIPHERING\" or \"Give Up\"\n[gold]Stage 4 (Final):[/gold] Lose (Max HP - 1) Max HP, [gold]Upgrade ALL[/gold] cards — \"Lose Everything\" or \"Give Up\"\n\nEach continue option is locked if your current Max HP is not greater than the cost. At the final stage, the choice will cost nearly all your Max HP and likely kills you, but upgrades your entire deck. Choosing to give up at any stage cleanly exits the event. The Smash option provides an immediate alternative: heal 20 HP and exit.",
+  "card_refs": [],
+  "relic_refs": []
+}

@@ -1,0 +1,20 @@
+{
+  "class_name": "JungleMazeAdventure",
+  "title": "Jungle Maze Adventure",
+  "description": "In a clearing, you run into a [green]Ragtag Group of Adventurers[/green] looking down and gesturing at a [purple]gigantic maze[/purple].\n\nThey offer to join forces with you in an [b]Epic Quest[/b] to loot the riches of this maze. As an experienced adventurer yourself, it's clear this maze is filled with [red][jitter]deadly traps[/jitter][/red] and [orange][sine]guardians[/sine][/orange].\n\nIt would be easier if you work together, but then you would have to split the loot.",
+  "options": [
+    {
+      "title": "Join Forces",
+      "description": "Gain [blue]50[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Solo Quest",
+      "description": "Gain [blue]150[/blue] [gold]Gold[/gold]. Lose [red]18[/red] HP."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [],
+  "notes": "[gold]Join Forces[/gold] is the safer choice, granting 50 Gold with no damage.\n\n[gold]Solo Quest[/gold] is riskier but more lucrative, granting 150 Gold but dealing 18 unblockable, unpowered damage. The solo path includes visual effects with sound.\n\nGold amounts vary slightly (±15) each run due to randomization in CalculateVars().",
+  "card_refs": [],
+  "relic_refs": []
+}

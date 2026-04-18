@@ -1,0 +1,36 @@
+{
+  "class_name": "RanwidTheElder",
+  "title": "Ranwid the Elder",
+  "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]\"We meet once more... it's me, Ranwid!\"[/sine]\n\nYou do not know this man.",
+  "options": [
+    {
+      "title": "Give a potion",
+      "description": "Obtain a random [gold]Relic[/gold].",
+      "requires": "You don't have any Potions that can be given."
+    },
+    {
+      "title": "Give 100 Gold",
+      "description": "Obtain a random [gold]Relic[/gold]."
+    },
+    {
+      "title": "Give a relic",
+      "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold].",
+      "requires": "You don't have any Relics that can be given."
+    }
+  ],
+  "acts": [
+    "Glory",
+    "Hive",
+    "Overgrowth",
+    "Underdocks"
+  ],
+  "conditions": [
+    "Acts 2+ only",
+    "At least 100 Gold required",
+    "At least one Potion required",
+    "At least one tradable Relic required"
+  ],
+  "notes": "During this event, your Potions become locked and cannot be removed by other means. The potion or relic offered in each choice is randomly selected from what you currently own. Trading a [gold]Potion[/gold] or 100 [gold]Gold[/gold] for a relic nets 1 [gold]Relic[/gold], but trading a [gold]Relic[/gold] nets 2 [gold]Relics[/gold] for a net gain of 1 [gold]Relic[/gold].",
+  "card_refs": [],
+  "relic_refs": []
+}

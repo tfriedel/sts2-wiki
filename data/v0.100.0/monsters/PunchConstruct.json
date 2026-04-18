@@ -1,0 +1,30 @@
+{
+  "class_name": "PunchConstruct",
+  "title": "Punch Construct",
+  "min_hp": 60,
+  "max_hp": 60,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "READY_MOVE",
+      "title": "READY",
+      "intents": [{"type": "block"}],
+      "effects": ["Gain 10 Block"]
+    },
+    {
+      "id": "STRONG_PUNCH_MOVE",
+      "title": "Strong Punch",
+      "intents": [{"type": "attack", "damage": 16, "hits": 1}],
+      "effects": ["Deal 16 damage"]
+    },
+    {
+      "id": "FAST_PUNCH_MOVE",
+      "title": "Fast Punch",
+      "intents": [{"type": "multi_attack", "damage": 6, "hits": 2}, {"type": "debuff"}],
+      "effects": ["Deal 6 damage 2 times", "Apply 1 Weak"]
+    }
+  ],
+  "move_pattern": "Normally starts with Ready -> Strong Punch -> Fast Punch -> Ready (repeating). If StartsWithStrongPunch flag is set, begins with Strong Punch instead.",
+  "powers_on_spawn": ["Artifact (1)"],
+  "notes": "Some encounters may configure this monster to start with Strong Punch instead of Ready. StartingHpReduction can be set to spawn it with reduced HP (minimum 1). Artifact power absorbs the first debuff applied."
+}

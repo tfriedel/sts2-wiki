@@ -5,20 +5,20 @@
   "options": [
     {
       "title": "Setting 1",
-      "description": "Fight a [blue]{Setting1Hp}[/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+      "description": "Fight a [blue]75[/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
     },
     {
       "title": "Setting 2",
-      "description": "Fight a [blue]{Setting2Hp}[/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
+      "description": "Fight a [blue]150[/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
     },
     {
       "title": "Setting 3",
-      "description": "Fight a [blue]{Setting3Hp}[/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
+      "description": "Fight a [blue]300[/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
     }
   ],
-  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
-  "conditions": ["Always available (shared event)"],
-  "notes": "A training encounter where you must defeat the selected dummy within [blue]3 turns[/blue]. Each setting has increasing difficulty and different rewards. Dummy HP scales based on player count and current act progression.\n\n[gold]Setting 1:[/gold] Lowest difficulty. On victory: 1 random [gold]Potion[/gold] from your character's potion pool (or shared pool if character pool is empty).\n\n[gold]Setting 2:[/gold] Medium difficulty. On victory: [blue]2[/blue] random upgradeable cards from your deck are upgraded (cards selected randomly, only upgradeable cards selected).\n\n[gold]Setting 3:[/gold] Highest difficulty. On victory: 1 random [gold]Relic[/gold] from the relic pool (pulled from the front of the relic deck).\n\nIf you fail to defeat the dummy within the 3-turn limit, the event ends in defeat. You may continue your run regardless of victory or defeat.",
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "A training encounter where you must defeat the selected dummy within [blue]3 turns[/blue]. Each setting has increasing difficulty and different rewards for victory.\n\n[gold]Mechanics:[/gold]\n• The dummy performs no actions (uses NOTHING_MOVE)\n• Victory requires defeating the dummy in [blue]3 turns[/blue] or less\n• Defeat triggers a [red]humiliation[/red] message instead of victory rewards\n• Dummy HP values are base values; they scale with player count in multiplayer runs\n\n[gold]Victory Rewards by Setting:[/gold]\n• [gold]Setting 1:[/gold] 1 random [gold]Potion[/gold] from your character's potion pool (uses shared pool if character pool is empty)\n• [gold]Setting 2:[/gold] [blue]2[/blue] random [blue]upgradeable cards[/blue] from your deck are upgraded\n• [gold]Setting 3:[/gold] 1 random [gold]Relic[/gold] (pulled from the front of the standard relic pool)\n\n[gold]Note:[/gold] You continue your run regardless of victory or defeat. This is purely an optional training challenge.",
   "card_refs": [],
   "relic_refs": []
 }

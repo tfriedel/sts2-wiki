@@ -1,0 +1,49 @@
+{
+  "class_name": "Door",
+  "title": "Door",
+  "min_hp": 165,
+  "max_hp": 165,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "DRAMATIC_OPEN_MOVE",
+      "title": "Dramatic Open",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 28
+        }
+      ],
+      "effects": ["Deal 28 damage"]
+    },
+    {
+      "id": "DOOR_SLAM_MOVE",
+      "title": "Door Slam",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 15,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 15 damage", "2 hits"]
+    },
+    {
+      "id": "ENFORCE_MOVE",
+      "title": "Enforce",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 20
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 20 damage", "Apply 4 Strength"]
+    }
+  ],
+  "move_pattern": "Cycles: Dramatic Open → Door Slam → Enforce",
+  "powers_on_spawn": ["Door Revival Power"],
+  "notes": "The Door has special revival mechanics through the Door Revival Power. It spawns with a Doormaker companion. On defeat, it enters a Dead state that can transition back to Dramatic Open if the Door is revived."
+}

@@ -1,0 +1,70 @@
+{
+  "class_name": "MagiKnight",
+  "title": "Magi Knight",
+  "min_hp": 89,
+  "max_hp": 89,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "FIRST_POWER_SHIELD_MOVE",
+      "title": "Power Shield",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "block",
+          "amount": 9
+        }
+      ],
+      "effects": ["Deal 7 damage", "Gain 9 Block"]
+    },
+    {
+      "id": "DAMPEN_MOVE",
+      "title": "Dampen",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Apply 1 Dampen"]
+    },
+    {
+      "id": "RAM_MOVE",
+      "title": "Ram",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        }
+      ],
+      "effects": ["Deal 11 damage"]
+    },
+    {
+      "id": "PREP_MOVE",
+      "title": "Prep",
+      "intents": [
+        {
+          "type": "block",
+          "amount": 9
+        }
+      ],
+      "effects": ["Gain 9 Block"]
+    },
+    {
+      "id": "MAGIC_BOMB",
+      "title": "Magic Bomb",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 40
+        }
+      ],
+      "effects": ["Deal 40 damage"]
+    }
+  ],
+  "move_pattern": "Opens with Power Shield (attack + block), then Dampen. Then repeating cycle: Ram → Prep → Magic Bomb → Ram → ...",
+  "powers_on_spawn": [],
+  "notes": "Dampen is applied only once at the start of combat — the move checks whether the target already has the power and skips application if so. The opening Power Shield move both attacks (7 damage) and gains block (9); Prep is the same block gain without the attack, used as the pre-Magic Bomb setup move in the recurring cycle."
+}

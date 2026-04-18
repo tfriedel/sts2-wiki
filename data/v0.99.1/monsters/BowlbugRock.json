@@ -1,0 +1,40 @@
+{
+  "class_name": "BowlbugRock",
+  "title": "Bowlbug (Rock)",
+  "min_hp": 46,
+  "max_hp": 49,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "HEADBUTT_MOVE",
+      "title": "Headbutt",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "effects": [
+        "Deal 16 damage",
+        "If off-balance: Stun itself"
+      ]
+    },
+    {
+      "id": "DIZZY_MOVE",
+      "title": "Dizzy",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": [
+        "Restore balance"
+      ]
+    }
+  ],
+  "move_pattern": "Alternates between Headbutt and Dizzy based on balance state. When off-balance, Headbutt stuns itself, triggering Dizzy which restores balance and returns to Headbutt.",
+  "powers_on_spawn": [
+    "Imbalanced"
+  ],
+  "notes": "BowlbugRock operates under an off-balance mechanic managed by ImbalancedPower. When off-balance, Headbutt deals damage and stuns itself, entering the Dizzy state that restores balance. The behavior cycle is controlled by the ImbalancedPower mechanics."
+}

@@ -1,0 +1,28 @@
+{
+  "class_name": "PunchOff",
+  "title": "Punch Off",
+  "description": "Two [gold]Punch Constructs[/gold] are duking it out and you see some treasure in between them...\n\nShould you try to nab it?",
+  "options": [
+    {
+      "title": "Nab",
+      "description": "Add [red]Injury[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
+    },
+    {
+      "title": "I Can Take Them",
+      "description": "Fight them for [gold]Greater Rewards[/gold]."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": [
+    "At least floor 6 (Acts 2+)"
+  ],
+  "notes": "This event features a dynamic scenario where two [gold]Punch Constructs[/gold] continuously battle each other in the background while you decide your course of action.\n\n[gold]Nab path:[/gold] Grabbing the treasure triggers an attack from one of the constructs. You receive an [red]Injury[/red] curse added to your deck and a random [gold]Relic[/gold] as compensation, then the event ends.\n\n[gold]Fight path:[/gold] Choosing to fight leads directly into combat against both [gold]Punch Constructs[/gold]. Victory grants a random [gold]Relic[/gold] and [gold]Potion[/gold] as rewards.\n\nDuring the entire event, [red]potion removal is disabled[/red], which may affect your deck management strategy if you're holding unwanted potions. The constructs feature continuous attack animations with visual effects (screen shake, hit sparks) throughout.",
+  "card_refs": [
+    {
+      "class_name": "Injury",
+      "title": "Injury",
+      "slug": "injury"
+    }
+  ],
+  "relic_refs": []
+}

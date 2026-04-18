@@ -1,0 +1,23 @@
+{
+  "class_name": "HungryForMushrooms",
+  "title": "Hungry for Mushrooms",
+  "description": "[sine]How long has it been since you ate?\n...wait, what's that fantastic smell?[/sine]\n\nFollowing the scent, you reach a cozy campground with all manner of [green]tasty mushrooms[/green] being cooked! You don't consider the safety of eating these mushrooms because you are so hungry.\n(So hungry that you don't notice the dead adventurer)",
+  "options": [
+    {
+      "title": "Big Mushroom",
+      "description": "You bite into the [orange]Big Mushroom[/orange]. Its flesh is firm, starchy, and satisfying. The more you eat, the hungrier you become, as if the mushroom is feeding on your hunger.\n\n[sine]So yummy... you enter a [red]food coma[/red].[/sine]\nThis gluttony will cost you.\n\nObtain the [gold]Big Mushroom[/gold] relic."
+    },
+    {
+      "title": "Fragrant Mushroom",
+      "description": "Costs [red]15[/red] HP.\n\nYou sample the [green]Fragrant One[/green], a small woody mushroom with a delicate scent of shellfish...\n\nA burst of energy spurs you to run, jump, and [gold]rigorously train[/gold]!\nThen, a sudden [red][jitter]stabbing pain[/jitter][/red] hits you as the living fungi struggles within you during its brief final moments.\n\nObtain the [gold]Fragrant Mushroom[/gold] relic."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "Each mushroom choice grants one of two relics. The Big Mushroom comes with no immediate cost beyond the cryptic warning about gluttony. The Fragrant Mushroom provides immediate training benefits but costs 15 HP due to its toxic nature.",
+  "card_refs": [],
+  "relic_refs": [
+    {"class_name": "BigMushroom", "title": "Big Mushroom", "slug": "big-mushroom"},
+    {"class_name": "FragrantMushroom", "title": "Fragrant Mushroom", "slug": "fragrant-mushroom"}
+  ]
+}

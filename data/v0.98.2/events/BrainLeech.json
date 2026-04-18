@@ -1,0 +1,20 @@
+{
+  "class_name": "BrainLeech",
+  "title": "Brain Leech",
+  "description": "[jitter]*thunk*[/jitter]\n\nA sharp pain is felt atop your head and a thought stabs into your mind.\n\n[purple][sine]\u201cSHARE KNOWLEDGE???\u201d[/sine][/purple]\n\nYou are unsure how to proceed...",
+  "options": [
+    {
+      "title": "Share Knowledge",
+      "description": "Choose [blue]1[/blue] of [blue]5[/blue] random cards to add to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Rip the Leech Off",
+      "description": "Lose [red]5[/red] HP. Gain a Colorless card reward."
+    }
+  ],
+  "acts": ["Overgrowth", "Underdocks", "Hive", "Glory"],
+  "conditions": ["Acts 1-2 only"],
+  "notes": "Choosing [gold]Share Knowledge[/gold] opens a card selection screen. You choose [blue]1[/blue] card from [blue]5[/blue] random cards generated from your character's card pool. The selected card is added to your deck.\n\nChoosing [gold]Rip the Leech Off[/gold] deals [red]5[/red] unblockable damage and offers a Colorless card reward with 3 cards to choose from.",
+  "card_refs": [],
+  "relic_refs": []
+}

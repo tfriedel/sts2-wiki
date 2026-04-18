@@ -1,0 +1,20 @@
+{
+  "class_name": "BattleFriendV2",
+  "title": "Battle Friend V2.0",
+  "min_hp": 150,
+  "max_hp": 150,
+  "is_companion": true,
+  "moves": [
+    {
+      "id": "NOTHING_MOVE",
+      "title": "Nothing",
+      "intents": [],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Performs no actions. The move cycles indefinitely but never executes any game effects.",
+  "powers_on_spawn": [
+    "Battleworn Dummy Time Limit (3)"
+  ],
+  "notes": "This is a companion creature that fights alongside the player. It has no active combat abilities and does not perform any actions during battle. The Battleworn Dummy Time Limit power likely restricts how long this companion can remain in the battle."
+}

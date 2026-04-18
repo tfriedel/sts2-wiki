@@ -1,0 +1,60 @@
+{
+  "class_name": "EndlessConveyor",
+  "title": "Endless Conveyor",
+  "description": "You lumber into a shack with a bright but crooked sign that reads:\n[aqua]\"ENDLESS FEAST - PAY WHAT YOU HUNGER!\"[/aqua]\n\nInside, a [orange]willowy multi-armed chef[/orange] is deftly preparing [green]bites of food[/green] and placing them onto a [sine]winding chitinous belt[/sine].\n\nOne of the chef's arms point to a sign:\n[blue]35[/blue] [gold]Gold[/gold] each",
+  "options": [
+    {
+      "title": "Grab Caviar off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Gain [green]4[/green] Max HP. Continue feasting!"
+    },
+    {
+      "title": "Grab Clam Roll off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Heal [green]10[/green] HP. Continue feasting!"
+    },
+    {
+      "title": "Grab Fried Eel off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Add a random Colorless Card to your [gold]Deck[/gold]. Continue feasting!"
+    },
+    {
+      "title": "Grab Golden Fysh off the Belt",
+      "description": "[green]LUCKY WINNER![/green] Gain [blue]75[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Grab Jelly Liver off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. [gold]Transform[/gold] a card. Continue feasting!"
+    },
+    {
+      "title": "Grab Seapunk Salad off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Add [gold]Feeding Frenzy[/gold] to your [gold]Deck[/gold]. Continue feasting!"
+    },
+    {
+      "title": "Grab Spicy Snappy off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. [gold]Upgrade[/gold] a random card. Continue feasting!"
+    },
+    {
+      "title": "Grab Suspicious Condiment off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Procure a random [gold]Potion[/gold]. Continue feasting!"
+    },
+    {
+      "title": "Observe the Chef",
+      "description": "[gold]Upgrade[/gold] a random card in your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Leave",
+      "description": ""
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": [
+    "All players must have at least 105 Gold"
+  ],
+  "notes": "The Endless Conveyor is a repeating feast event. Each grab beyond the initial choice presents a new dish and the option to Leave. Observing the Chef upgrades a random card and ends the event.\n\n[gold]Dish Availability[/gold]\nDishes appear in weighted random order, with each grab selecting from a weighted pool:\n- Caviar (weight 6): Always available\n- Spicy Snappy (weight 3): Always available\n- Jelly Liver (weight 3): Always available\n- Fried Eel (weight 3): Always available\n- Suspicious Condiment (weight 3): Only if you have open [gold]Potion[/gold] slots\n- Clam Roll (weight 6): Only if not at maximum HP\n- Golden Fysh (weight 1): Only available after the first grab; no cost, pure profit\n- Seapunk Salad (weight 0): Guaranteed on every 5th grab (grabs 5, 10, 15, etc.); costs 35 Gold despite the guaranteed appearance\n\nThe same dish never appears on consecutive grabs. If you lack 35 Gold, the dish option becomes \"Broke\" and you cannot continue feasting.",
+  "card_refs": [
+    {
+      "class_name": "FeedingFrenzy",
+      "title": "Feeding Frenzy",
+      "slug": "feeding-frenzy"
+    }
+  ],
+  "relic_refs": []
+}

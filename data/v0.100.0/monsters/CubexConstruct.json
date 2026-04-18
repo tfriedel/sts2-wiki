@@ -1,0 +1,87 @@
+{
+  "class_name": "CubexConstruct",
+  "title": "Cubex Construct",
+  "min_hp": 70,
+  "max_hp": 70,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CHARGE_UP_MOVE",
+      "title": "Charge Up",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "REPEATER_MOVE",
+      "title": "Repeater Blast",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "REPEATER_MOVE_2",
+      "title": "Repeater Blast",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "Apply 2 Strength"
+      ]
+    },
+    {
+      "id": "EXPEL_BLAST",
+      "title": "Expel Blast",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 6,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 6 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "SUBMERGE_MOVE",
+      "title": "Submerge",
+      "intents": [
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Gain 15 Block"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Charge Up. Then cycles: Repeater Blast → Repeater Blast 2 → Expel Blast → (back to Repeater Blast). Submerge transitions to Charge Up.",
+  "powers_on_spawn": [
+    "Artifact"
+  ],
+  "notes": "Gains 13 Block when entering combat. Multiple moves apply Strength each turn, increasing damage output over time. The state machine does not show how Submerge is selected, suggesting it may be chosen randomly or conditionally."
+}

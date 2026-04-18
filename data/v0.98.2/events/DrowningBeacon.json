@@ -1,0 +1,26 @@
+{
+  "class_name": "DrowningBeacon",
+  "title": "Drowning Beacon",
+  "description": "Crossing a dreamscape of rocks and still waters, you emerge to face a [sine]sinking lighthouse[/sine] emitting [purple]anti-light[/purple].\n\nYou can bottle up the [aqua][sine]eerily-glowing water[/sine][/aqua] that has pooled here or climb up the dilapidated structure to retrieve the [gold]lens[/gold].",
+  "options": [
+    {
+      "title": "Bottle",
+      "description": "Procure [aqua]Glowwater[/aqua]."
+    },
+    {
+      "title": "Climb",
+      "description": "Obtain [gold]Fresnel Lens[/gold]. Lose [red]13[/red] Max HP."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": [],
+  "notes": "Choosing Bottle concludes the event peacefully with a Glowwater potion. Choosing Climb requires climbing the sinking lighthouse while taking anti-light damage, ultimately costing 13 maximum HP but granting a Fresnel Lens relic.",
+  "card_refs": [],
+  "relic_refs": [
+    {
+      "class_name": "FresnelLens",
+      "title": "Fresnel Lens",
+      "slug": "fresnel-lens"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "class_name": "DollRoom",
+  "title": "Doll Room",
+  "description": "You enter a hidden room...\n\nIt's packed with an array of dolls. Each are unique, their expressions ranging from [green]joy[/green] to [purple]sorrow[/purple], their attire spanning centuries and realms beyond your own.\n\nA [sine][blue]chorus of whispers[/blue][/sine] grows louder and louder until [jitter][red]the dolls are shouting[/red][/jitter] over each other and calling for you...\n\nYou must choose one and leave immediately.",
+  "options": [
+    {
+      "title": "Pick at Random",
+      "description": "Obtain a random [gold]Doll Relic[/gold]."
+    },
+    {
+      "title": "Take Some Time",
+      "description": "Lose [red]5[/red] HP. Choose [blue]1[/blue] of [blue]2[/blue] [gold]Doll Relics[/gold]."
+    },
+    {
+      "title": "Examine Each and Make the Best Choice",
+      "description": "Lose [red]15[/red] HP. Choose [blue]1[/blue] of [blue]3[/blue] [gold]Doll Relics[/gold]."
+    }
+  ],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": ["Act 2 only"],
+  "notes": "This event presents three ways to choose a Doll Relic: instantly, with minimal deliberation, or with careful examination. There are exactly three Doll Relics in this event's pool: [gold]Daughter of the Wind[/gold], [gold]Mr. Struggles[/gold], and [gold]Bing Bong[/gold]. The [gold]Pick at Random[/gold] option immediately grants one without any choice. The [gold]Take Some Time[/gold] option costs 5 unblockable HP and lets you choose from 2 of the 3 relics (randomly shuffled). The [gold]Examine Each and Make the Best Choice[/gold] option costs 15 unblockable HP and lets you choose from all 3 relics. Each relic choice shows a unique flavor description before being added to your relic pool.",
+  "card_refs": [],
+  "relic_refs": [
+    {
+      "class_name": "DaughterOfTheWind",
+      "title": "Daughter of the Wind",
+      "slug": "daughter-of-the-wind"
+    },
+    {
+      "class_name": "MrStruggles",
+      "title": "Mr. Struggles",
+      "slug": "mr-struggles"
+    },
+    {
+      "class_name": "BingBong",
+      "title": "Bing Bong",
+      "slug": "bing-bong"
+    }
+  ]
+}

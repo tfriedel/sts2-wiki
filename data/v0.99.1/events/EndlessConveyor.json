@@ -1,0 +1,66 @@
+{
+  "class_name": "EndlessConveyor",
+  "title": "Endless Conveyor",
+  "description": "You lumber into a shack with a bright but crooked sign that reads:\n[aqua]\"ENDLESS FEAST - PAY WHAT YOU HUNGER!\"[/aqua]\n\nInside, a [orange]willowy multi-armed chef[/orange] is deftly preparing [green]bites of food[/green] and placing them onto a [sine]winding chitinous belt[/sine].\n\nOne of the chef's arms point to a sign:\n[blue]35[/blue] [gold]Gold[/gold] each",
+  "options": [
+    {
+      "title": "Grab Caviar off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Gain [green]4[/green] Max HP. Continue feasting!",
+      "requires": "At least 35 Gold"
+    },
+    {
+      "title": "Grab Clam Roll off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Heal [green]10[/green] HP. Continue feasting!",
+      "requires": "At least 35 Gold and not at max HP"
+    },
+    {
+      "title": "Grab Fried Eel off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Add a random Colorless Card to your [gold]Deck[/gold]. Continue feasting!",
+      "requires": "At least 35 Gold"
+    },
+    {
+      "title": "Grab Golden Fysh off the Belt",
+      "description": "[green]LUCKY WINNER![/green] Gain [blue]75[/blue] [gold]Gold[/gold].",
+      "requires": "After first grab"
+    },
+    {
+      "title": "Grab Jelly Liver off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. [gold]Transform[/gold] a card. Continue feasting!",
+      "requires": "At least 35 Gold"
+    },
+    {
+      "title": "Grab Seapunk Salad off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Add [gold]Feeding Frenzy[/gold] to your [gold]Deck[/gold]. Continue feasting!",
+      "requires": "Every 5th grab"
+    },
+    {
+      "title": "Grab Spicy Snappy off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. [gold]Upgrade[/gold] a random card. Continue feasting!",
+      "requires": "At least 35 Gold"
+    },
+    {
+      "title": "Grab Suspicious Condiment off the Belt",
+      "description": "Pay [red]35[/red] [gold]Gold[/gold]. Procure a random [gold]Potion[/gold]. Continue feasting!",
+      "requires": "At least 35 Gold and have available potion slot"
+    },
+    {
+      "title": "Observe the Chef",
+      "description": "[gold]Upgrade[/gold] a random card in your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Leave",
+      "description": "Exit the event."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": ["Each player must have at least 105 Gold"],
+  "notes": "This event features a repeating loop where you can continuously grab dishes off a conveyor belt. Each grab (except [green]Golden Fysh[/green]) costs 35 Gold and adds an effect to your run. [gold]Seapunk Salad[/gold] is guaranteed every 5th grab, while other dishes are selected from a weighted random pool (Caviar 6, Clam Roll 6, Spicy Snappy 3, Jelly Liver 3, Fried Eel 3, Suspicious Condiment 3, Golden Fysh 1). The same dish cannot appear twice in a row. Some dishes have conditional availability: [gold]Clam Roll[/gold] only appears when not at full HP, [gold]Suspicious Condiment[/gold] only appears if you have open potion slots, and [green]Golden Fysh[/green] is free and only appears after the first grab. Alternatively, you can [gold]Observe the Chef[/gold] at the start to upgrade a random card and end the event.",
+  "card_refs": [
+    {
+      "class_name": "FeedingFrenzy",
+      "title": "Feeding Frenzy",
+      "slug": "feeding-frenzy"
+    }
+  ],
+  "relic_refs": []
+}

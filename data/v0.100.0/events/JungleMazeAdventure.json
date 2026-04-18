@@ -1,0 +1,20 @@
+{
+  "class_name": "JungleMazeAdventure",
+  "title": "Jungle Maze Adventure",
+  "description": "In a clearing, you run into a [green]Ragtag Group of Adventurers[/green] looking down and gesturing at a [purple]gigantic maze[/purple].\n\nThey offer to join forces with you in an [b]Epic Quest[/b] to loot the riches of this maze. As an experienced adventurer yourself, it's clear this maze is filled with [red][jitter]deadly traps[/jitter][/red] and [orange][sine]guardians[/sine][/orange].\n\nIt would be easier if you work together, but then you would have to split the loot.",
+  "options": [
+    {
+      "title": "Solo Quest",
+      "description": "Gain [blue]150[/blue] [gold]Gold[/gold]. Lose [red]18[/red] HP."
+    },
+    {
+      "title": "Join Forces",
+      "description": "Gain [blue]50[/blue] [gold]Gold[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [],
+  "notes": "The gold rewards vary by a random amount each run: Join Forces grants 35-65 Gold (base 50 ± 15), and Solo Quest grants 135-165 Gold (base 150 ± 15). The damage from Solo Quest is unblockable and unpowered, so it cannot be prevented or reduced by shields or powers.",
+  "card_refs": [],
+  "relic_refs": []
+}

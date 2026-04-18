@@ -1,0 +1,36 @@
+{
+  "class_name": "RanwidTheElder",
+  "title": "Ranwid the Elder",
+  "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]\"We meet once more... it's me, Ranwid!\"\n\nYou do not know this man.",
+  "options": [
+    {
+      "title": "Give [a random potion you own]",
+      "description": "Obtain a random [gold]Relic[/gold].",
+      "requires": "You must have at least one Potion"
+    },
+    {
+      "title": "Give 100 Gold",
+      "description": "Obtain a random [gold]Relic[/gold]."
+    },
+    {
+      "title": "Give [a random tradable Relic you own]",
+      "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold].",
+      "requires": "You must have at least one tradable Relic"
+    }
+  ],
+  "acts": [
+    "Glory",
+    "Hive",
+    "Overgrowth",
+    "Underdocks"
+  ],
+  "conditions": [
+    "Act 2+ only (not Act 1)",
+    "At least 100 Gold",
+    "Must have at least one Potion",
+    "Must have at least one tradable Relic"
+  ],
+  "notes": "Ranwid's preferences vary by choice: he mutters [sine]\"Magnificent\"[/sine] while consuming gold, [sine]\"Exquisite\"[/sine] while drinking a potion ([sine][blue]Glup glup glup[/blue][/sine]), and [sine]\"Exemplary\"[/sine] while examining and eating a relic. During the event, the player cannot voluntarily remove Potions from their inventory.",
+  "card_refs": [],
+  "relic_refs": []
+}

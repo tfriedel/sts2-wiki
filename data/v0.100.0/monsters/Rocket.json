@@ -1,0 +1,42 @@
+{
+  "class_name": "Rocket",
+  "title": "Rocket",
+  "min_hp": 209,
+  "max_hp": 209,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "TARGETING_RETICLE_MOVE",
+      "title": "Targeting Reticle",
+      "intents": [{"type": "attack", "damage": 4, "hits": 1}],
+      "effects": ["Deal 4 damage"]
+    },
+    {
+      "id": "PRECISION_BEAM_MOVE",
+      "title": "Precision Beam",
+      "intents": [{"type": "attack", "damage": 20, "hits": 1}],
+      "effects": ["Deal 20 damage"]
+    },
+    {
+      "id": "CHARGE_UP_MOVE",
+      "title": "Charge Up",
+      "intents": [{"type": "buff"}],
+      "effects": ["Gain 3 Strength"]
+    },
+    {
+      "id": "LASER_MOVE",
+      "title": "Laser",
+      "intents": [{"type": "attack", "damage": 35, "hits": 1}],
+      "effects": ["Deal 35 damage"]
+    },
+    {
+      "id": "RECHARGE_MOVE",
+      "title": "Recharge",
+      "intents": [{"type": "sleep"}],
+      "effects": ["Sleep (recharge)"]
+    }
+  ],
+  "move_pattern": "Starts with Targeting Reticle, then Precision Beam, then Charge Up, then Laser, then Recharge, then repeats from Targeting Reticle.",
+  "powers_on_spawn": ["Surrounded (1)", "BackAttackRight (1)", "CrabRage (1)"],
+  "notes": "Boss monster (part of Kaiser Crab encounter). Controls the right arm of the KaiserCrab background. ShouldFadeAfterDeath and ShouldDisappearFromDoom are false."
+}

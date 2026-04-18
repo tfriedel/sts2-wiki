@@ -1,0 +1,76 @@
+{
+  "class_name": "KnowledgeDemon",
+  "title": "Knowledge Demon",
+  "min_hp": 399,
+  "max_hp": 399,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CURSE_OF_KNOWLEDGE_MOVE",
+      "title": "Curse of Knowledge",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Present each player with a choice between two curse cards to add to their deck",
+        "1st use: Disintegration (6 dmg) or Mind Rot",
+        "2nd use: Disintegration (7 dmg) or Sloth",
+        "3rd use: Disintegration (8 dmg) or Waste Away"
+      ]
+    },
+    {
+      "id": "SLAP_MOVE",
+      "title": "Slap",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        }
+      ],
+      "effects": [
+        "Deal 18 damage"
+      ]
+    },
+    {
+      "id": "KNOWLEDGE_OVERWHELMING_MOVE",
+      "title": "Knowledge Overwhelming",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 9,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "PONDER_MOVE",
+      "title": "Ponder",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        },
+        {
+          "type": "heal"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 13 damage",
+        "Heal 30 HP (per player in combat)",
+        "Gain 3 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Curse of Knowledge. Chains: Curse of Knowledge → Slap → Knowledge Overwhelming → Ponder. After Ponder, loops back to Curse of Knowledge while fewer than 3 curses have been used. Once all 3 curses are used, Curse of Knowledge is permanently skipped and the cycle becomes: Slap → Knowledge Overwhelming → Ponder (repeating indefinitely).",
+  "powers_on_spawn": [],
+  "notes": "Curse of Knowledge forces each player to choose one of two curse cards to add to their deck. The choices scale with each use: (1) Disintegration (6 dmg) or Mind Rot; (2) Disintegration (7 dmg) or Sloth; (3) Disintegration (8 dmg) or Waste Away. After 3 uses the move is permanently replaced by Slap in the rotation. Knowledge Overwhelming sets an internal burnt state (affecting animations); Ponder resets it. Ponder's heal of 30 HP is multiplied by the number of players in the combat."
+}
