@@ -32,8 +32,8 @@
 - [x] Write card extraction prompt
 - [x] Add "cards" to ENTITY_TYPE_DIRS
 - [x] Adapt generate_cards.py for per-entity JSON + overrides
-- [~] Process all 577 cards for v0.101.0 (225/577 — sequential batch running)
-- [ ] Review and fix issues
+- [x] Process all 577 cards for v0.101.0
+- [x] Review and fix issues (1 broken JSON manually fixed; 2 cards written manually after timeout; referenced_powers re-slugify via power_titles lookup)
 
 ## Relics
 - [x] Write relic extraction prompt

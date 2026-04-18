@@ -116,7 +116,8 @@ def main() -> None:
         lines.append(f"title: {escape_yaml(power['title'])}")
         lines.append(f"class_name: {escape_yaml(power['class_name'])}")
         # LLM writes `power_type`; regex extractor wrote `type`
-        lines.append(f"power_type: {escape_yaml(power.get('power_type', power.get('type', 'None')))}")
+        ptype = power.get("power_type", power.get("type", "None"))
+        lines.append(f"power_type: {escape_yaml(ptype)}")
         lines.append(f"stack_type: {escape_yaml(power.get('stack_type', 'None'))}")
         lines.append(f"description_plain: {escape_yaml(strip_tags(desc))}")
         lines.append(f"description_html: {escape_yaml(render_description_html(desc))}")

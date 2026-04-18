@@ -1,0 +1,20 @@
+{
+  "class_name": "Guards",
+  "title": "GUARDS!!!",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [],
+  "description": "[gold]Transform[/gold] any number of cards in your [gold]Hand[/gold] into [gold]Minion Sacrifice[/gold].",
+  "upgraded_description": "[gold]Transform[/gold] any number of cards in your [gold]Hand[/gold] into [gold]Minion Sacrifice+[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "MinionSacrifice",
+      "title": "Minion Sacrifice",
+      "slug": "minion-sacrifice"
+    }
+  ]
+}

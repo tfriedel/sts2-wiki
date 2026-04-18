@@ -1,0 +1,18 @@
+{
+  "class_name": "Hotfix",
+  "title": "Hotfix",
+  "character": "Defect",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 2
+    }
+  ],
+  "description": "Gain +2 [gold]Focus[/gold] this turn.",
+  "notes": "Applies the HotfixPower. When upgraded, the Exhaust keyword is removed."
+}

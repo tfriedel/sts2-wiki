@@ -1,0 +1,31 @@
+{
+  "class_name": "LeadingStrike",
+  "title": "Leading Strike",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Cards",
+      "base_value": 1
+    },
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 10
+    }
+  ],
+  "description": "Deal 7 damage.\nAdd 1 [gold]Shiv[/gold] into your [gold]Hand[/gold].",
+  "upgraded_description": "Deal 10 damage.\nAdd 1 [gold]Shiv[/gold] into your [gold]Hand[/gold].",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "Shiv",
+      "title": "Shiv",
+      "slug": "shiv"
+    }
+  ]
+}

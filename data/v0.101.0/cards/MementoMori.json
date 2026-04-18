@@ -1,0 +1,27 @@
+{
+  "class_name": "MementoMori",
+  "title": "Memento Mori",
+  "character": "Necrobinder",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 10
+    },
+    {
+      "type": "Damage",
+      "base_value": 4,
+      "upgraded_value": 5
+    }
+  ],
+  "description": "Deal 8 damage. Deals 4 additional damage for each card discarded this turn.",
+  "upgraded_description": "Deal 10 damage. Deals 5 additional damage for each card discarded this turn.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Damage scales with the number of cards discarded this turn."
+}

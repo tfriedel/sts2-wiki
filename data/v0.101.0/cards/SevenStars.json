@@ -1,0 +1,22 @@
+{
+  "class_name": "SevenStars",
+  "title": "Seven Stars",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7
+    },
+    {
+      "type": "Repeat",
+      "base_value": 7
+    }
+  ],
+  "description": "Deal 7 damage to ALL enemies 7 times.",
+  "star_cost": 7
+}

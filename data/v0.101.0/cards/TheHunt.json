@@ -1,0 +1,27 @@
+{
+  "class_name": "TheHunt",
+  "title": "The Hunt",
+  "character": "Event",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": ["Exhaust"],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 10,
+      "upgraded_value": 15
+    }
+  ],
+  "description": "Deal 10 damage.\nIf [gold]Fatal[/gold], gain an additional card reward.",
+  "upgraded_description": "Deal 15 damage.\nIf [gold]Fatal[/gold], gain an additional card reward.",
+  "referenced_powers": [
+    {
+      "class_name": "TheHuntPower",
+      "title": "The Hunt",
+      "slug": "the-hunt"
+    }
+  ],
+  "notes": "Applied when a targeted enemy dies to this card's damage. Grants a bonus card reward on Fatal."
+}

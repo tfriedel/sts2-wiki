@@ -1,0 +1,26 @@
+{
+  "class_name": "SwordSage",
+  "title": "Sword Sage",
+  "character": "Regent",
+  "energy_cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Power",
+      "base_value": 1
+    }
+  ],
+  "description": "[gold]Sovereign Blade[/gold] now hits an additional time.",
+  "upgraded_cost": 1,
+  "referenced_powers": [
+    {
+      "class_name": "SwordSagePower",
+      "title": "Sword Sage",
+      "slug": "sword-sage"
+    }
+  ],
+  "notes": "Applies 1 stack of Sword Sage power to yourself. This power increases the repeat count of Sovereign Blade cards, causing them to hit an additional time per stack."
+}

@@ -1,0 +1,27 @@
+{
+  "class_name": "NeutronAegis",
+  "title": "Neutron Aegis",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Plating",
+      "base_value": 8,
+      "upgraded_value": 11
+    }
+  ],
+  "description": "Gain 8 [gold]Plating[/gold].",
+  "upgraded_description": "Gain 11 [gold]Plating[/gold].",
+  "star_cost": 5,
+  "referenced_powers": [
+    {
+      "class_name": "PlatingPower",
+      "title": "Plating",
+      "slug": "plating"
+    }
+  ]
+}

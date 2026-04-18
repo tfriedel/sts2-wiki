@@ -1,0 +1,27 @@
+{
+  "class_name": "Inferno",
+  "title": "Inferno",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 6,
+      "upgraded_value": 9
+    }
+  ],
+  "description": "At the start of your turn, lose 1 HP. Whenever you lose HP on your turn, deal damage to ALL enemies.",
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "InfernoPower",
+      "title": "Inferno",
+      "slug": "inferno"
+    }
+  ],
+  "notes": "Applies InfernoPower which scales damage based on HP lost during your turn. Base damage calculation is multiplied by 6 (9 when upgraded). The power tracks cumulative HP loss and increments self-damage to trigger its effect."
+}

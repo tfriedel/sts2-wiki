@@ -1,0 +1,20 @@
+{
+  "class_name": "IAmInvincible",
+  "title": "I Am Invincible",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 10,
+      "upgraded_value": 13
+    }
+  ],
+  "description": "Gain 10 Block. Automatically plays from your draw pile when it's on top at the end of your turn.",
+  "upgraded_description": "Gain 13 Block. Automatically plays from your draw pile when it's on top at the end of your turn.",
+  "notes": "This card will auto-play from the top of the draw pile at end of turn without being exhausted. The GainsBlock property is set to true."
+}

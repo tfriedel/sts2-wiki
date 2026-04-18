@@ -1,0 +1,20 @@
+{
+  "class_name": "MindRot",
+  "title": "Mind Rot",
+  "character": "Colorless",
+  "energy_cost": -2,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "keywords": [],
+  "vars": [],
+  "description": "Draw 1 fewer card each turn.",
+  "referenced_powers": [
+    {
+      "class_name": "MindRotPower",
+      "title": "Mind Rot",
+      "slug": "mind-rot"
+    }
+  ],
+  "notes": "Unupgradeable Status card (MaxUpgradeLevel = 0). Cannot be generated in combat (CanBeGeneratedInCombat = false). Implements KnowledgeDemon.IChoosable interface - may be chosen as a penalty option during combat."
+}

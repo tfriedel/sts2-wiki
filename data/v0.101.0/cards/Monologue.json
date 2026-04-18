@@ -1,0 +1,33 @@
+{
+  "class_name": "Monologue",
+  "title": "Monologue",
+  "character": "Regent",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Magic",
+      "base_value": 1
+    }
+  ],
+  "description": "Whenever you play a card this turn, gain 1 [gold]Strength[/gold] this turn.",
+  "upgrades": {
+    "keywords_added": ["Retain"]
+  },
+  "referenced_powers": [
+    {
+      "class_name": "MonologuePower",
+      "title": "Monologue",
+      "slug": "monologue"
+    },
+    {
+      "class_name": "StrengthPower",
+      "title": "Strength",
+      "slug": "strength"
+    }
+  ],
+  "notes": "The card applies a temporary power that grants Strength equal to the Power value (1) whenever a card is played this turn. The power expires at the end of the turn."
+}

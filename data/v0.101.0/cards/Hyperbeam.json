@@ -1,0 +1,30 @@
+{
+  "class_name": "Hyperbeam",
+  "title": "Hyperbeam",
+  "character": "Defect",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "All",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 26,
+      "upgraded_value": 34
+    },
+    {
+      "type": "Magic",
+      "base_value": 3
+    }
+  ],
+  "description": "Deal 26 damage to ALL enemies.\nLose 3 [gold]Focus[/gold].",
+  "upgraded_description": "Deal 34 damage to ALL enemies.\nLose 3 [gold]Focus[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "FocusPower",
+      "title": "Focus",
+      "slug": "focus"
+    }
+  ]
+}

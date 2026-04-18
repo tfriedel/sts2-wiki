@@ -27,7 +27,7 @@ def escape_yaml(value: str) -> str:
     return value
 
 
-def generate_card_markdown(card: dict) -> str:
+def generate_card_markdown(card: dict, power_titles: dict[str, str] | None = None) -> str:
     """Generate a markdown file with YAML frontmatter for a card."""
     lines = ["---"]
 
@@ -68,6 +68,8 @@ def generate_card_markdown(card: dict) -> str:
     lines.append(f"description_plain: {escape_yaml(desc_plain)}")
     lines.append(f"description_html: {escape_yaml(desc_html)}")
 
+    up_plain: str | None
+    up_html: str | None
     if card.get("upgraded_description"):
         up_plain = strip_rich_text(card["upgraded_description"])
         up_html = rich_text_to_html(card["upgraded_description"])
@@ -81,16 +83,25 @@ def generate_card_markdown(card: dict) -> str:
     if card.get("upgraded_cost") is not None:
         lines.append(f"upgraded_cost: {card['upgraded_cost']}")
 
-    # Referenced powers (re-slugify; filter out anything that isn't a real Power)
+    # Referenced powers: filter to real PowerModel entries, look up canonical
+    # title/slug from power_titles map. Fall back to CamelCase-split of
+    # class_name when title is missing or has no word breaks.
     powers = card.get("referenced_powers", [])
     filtered_powers = []
     for p in powers:
-        title = p.get("title", "")
-        if title:
-            p["slug"] = slugify(title)
-        # Only keep entries whose class_name ends with "Power" (actual PowerModel)
-        if p.get("class_name", "").endswith("Power"):
-            filtered_powers.append(p)
+        cname = p.get("class_name", "")
+        if not cname.endswith("Power"):
+            continue
+        title = None
+        if power_titles and cname in power_titles:
+            title = power_titles[cname]
+        if not title:
+            title = p.get("title")
+        # If title still has no spaces, split the class_name on camelCase boundaries
+        # (covers cases where the raw localization title is e.g. "DyingStar").
+        if not title or " " not in title:
+            title = re.sub(r"([a-z])([A-Z])", r"\1 \2", cname.removesuffix("Power"))
+        filtered_powers.append({"class_name": cname, "title": title, "slug": slugify(title)})
     lines.append(f"referenced_powers: {json.dumps(filtered_powers)}")
 
     # Epoch unlock
@@ -136,6 +147,24 @@ def main() -> None:
                     cards_by_class[cname] = entity_data
         cards = list(cards_by_class.values())
 
+    # Build power class_name → title lookup (powers.json + per-entity overrides)
+    power_titles: dict[str, str] = {}
+    powers_path = os.path.join(data_dir, "powers.json")
+    if os.path.exists(powers_path):
+        with open(powers_path) as f:
+            for p in json.load(f):
+                if p.get("class_name") and p.get("title"):
+                    power_titles[p["class_name"]] = p["title"]
+    powers_entity_dir = os.path.join(data_dir, "powers")
+    if os.path.isdir(powers_entity_dir):
+        for fname in os.listdir(powers_entity_dir):
+            if not fname.endswith(".json"):
+                continue
+            with open(os.path.join(powers_entity_dir, fname)) as f:
+                pd = json.load(f)
+            if pd.get("class_name") and pd.get("title"):
+                power_titles[pd["class_name"]] = pd["title"]
+
     # Clear output directory
     out = Path(output_dir)
     if out.exists():
@@ -159,7 +188,7 @@ def main() -> None:
             card["notes"] = note
 
         slug = slugify(card["title"])
-        md = generate_card_markdown(card)
+        md = generate_card_markdown(card, power_titles=power_titles)
         filepath = out / f"{slug}.md"
 
         # Handle duplicate slugs (e.g., Defend Ironclad vs Defend Silent)

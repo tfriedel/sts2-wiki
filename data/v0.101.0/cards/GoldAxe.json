@@ -1,0 +1,18 @@
+{
+  "class_name": "GoldAxe",
+  "title": "Gold Axe",
+  "character": "Colorless",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal damage equal to the number of cards played this combat.{InCombat:\n(Deals {CalculatedDamage:diff()} damage);}",
+  "notes": "Upgraded: Adds Retain keyword."
+}

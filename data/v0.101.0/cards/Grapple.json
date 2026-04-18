@@ -1,0 +1,31 @@
+{
+  "class_name": "Grapple",
+  "title": "Grapple",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 9
+    },
+    {
+      "type": "Magic",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 7 damage.\nWhenever you gain [gold]Block[/gold] this turn, deal 5 damage to the enemy.",
+  "upgraded_description": "Deal 9 damage.\nWhenever you gain [gold]Block[/gold] this turn, deal 7 damage to the enemy.",
+  "referenced_powers": [
+    {
+      "class_name": "GrapplePower",
+      "title": "Grapple",
+      "slug": "grapple"
+    }
+  ]
+}
