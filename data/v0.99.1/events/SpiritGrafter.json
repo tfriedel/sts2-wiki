@@ -1,0 +1,26 @@
+{
+  "class_name": "SpiritGrafter",
+  "title": "Spirit Grafter",
+  "description": "Above, a cocoon is [jitter]shaking and wriggling[/jitter], about to burst forth!\n\n...it stops wriggling. [orange][sine]The cocoon ignites[/sine][/orange]! [jitter]What is going on?[/jitter]\nIn a flash of [gold]light[/gold] and [red]flame[/red], a [orange]Spirit Grafter[/orange] rushes into you, threatening to merge with your being to become complete.",
+  "options": [
+    {
+      "title": "Let It In",
+      "description": "Heal [green]25[/green] HP. Add [gold]Metamorphosis[/gold] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Rejection",
+      "description": "Lose [red]9[/red] HP. Remove a card from your [gold]Deck[/gold]."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [],
+  "notes": "The 'Let It In' choice heals you and adds the [gold]Metamorphosis[/gold] card to your deck. The 'Rejection' choice allows you to remove any card from your deck (via the deck removal interface), but deals 9 HP damage in return. The event provides a choice between gaining a new card or pruning your deck at a cost.",
+  "card_refs": [
+    {
+      "class_name": "Metamorphosis",
+      "title": "Metamorphosis",
+      "slug": "metamorphosis"
+    }
+  ],
+  "relic_refs": []
+}

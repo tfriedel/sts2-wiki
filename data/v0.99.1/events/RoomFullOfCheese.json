@@ -1,0 +1,26 @@
+{
+  "class_name": "RoomFullOfCheese",
+  "title": "Room Full of Cheese",
+  "description": "This room is full of [b][jitter]cheese!!![/jitter][/b]\n\nYou look around to see if there are any traps and above you is... more [b]cheese[/b]. The candles in this room appear to be made of [b]cheese[/b]. The furniture is also [b]cheese[/b].\nSuddenly, the door behind you slams shut.\n\nIt is made of [b]cheese[/b].",
+  "options": [
+    {
+      "title": "Gorge",
+      "description": "Choose [blue]2[/blue] of [blue]8[/blue] random [gold]Common[/gold] cards to add to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Search",
+      "description": "Lose [red]14[/red] HP. Obtain the [gold]Chosen Cheese[/gold] relic."
+    }
+  ],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": ["Acts 1-2 only"],
+  "notes": "The Gorge option presents 8 random common cards from your character's card pool and allows you to choose 2 to add to your deck. The Search option deals [red]14[/red] unblockable, unpowered damage and grants the [gold]Chosen Cheese[/gold] relic. If you die from the damage dealt by the Search option, the death message will read: [gold]{character} ate too much in the Room Full of Cheese.[/gold]",
+  "card_refs": [],
+  "relic_refs": [
+    {
+      "class_name": "ChosenCheese",
+      "title": "Chosen Cheese",
+      "slug": "chosen-cheese"
+    }
+  ]
+}

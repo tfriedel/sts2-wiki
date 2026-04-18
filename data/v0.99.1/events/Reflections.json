@@ -1,0 +1,26 @@
+{
+  "class_name": "Reflections",
+  "title": "Reflections snoitcelfeR",
+  "description": "What is this? Something feels wrong here...\n[sine]...ereh gnorw sleef gnihtemoS ?siht si tahW[/sine]",
+  "options": [
+    {
+      "title": "Touch a Mirror",
+      "description": "[red]Downgrade[/red] [blue]2[/blue] random cards. [green]Upgrade[/green] [blue]4[/blue] random cards."
+    },
+    {
+      "title": "Shatter",
+      "description": "Duplicate your [gold]Deck[/gold]. Receive [purple]Bad Luck[/purple]."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "This event offers two distinct paths through the power of mirrors. [gold]Touch a Mirror[/gold] modifies existing cards in your deck: up to 2 upgraded cards are downgraded, and up to 4 upgradable cards are upgraded. This option is particularly useful if you have many upgraded cards you want to reset, or many weak cards that benefit from upgrades. [gold]Shatter[/gold] takes a more drastic approach—it duplicates your entire deck (adding a copy of every card you currently have) but curses you with the [purple]Bad Luck[/purple] curse, which can severely impact your run. The post-choice narrative pages contain gender-dependent pronouns reflecting your character's form.",
+  "card_refs": [
+    {
+      "class_name": "BadLuck",
+      "title": "Bad Luck",
+      "slug": "bad-luck"
+    }
+  ],
+  "relic_refs": []
+}

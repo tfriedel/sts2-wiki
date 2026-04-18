@@ -3967,20 +3967,124 @@
     "cache_key": "c78b6f7ec18c46c9159649b37e69df2adc0e95285fc90020d53eb8f8c91a5c26",
     "last_processed": "1773852295.1664684"
   },
+  "v0.100.0:events:FakeMerchant": {
+    "cache_key": "c59f4459ad990bb10ef2c124a8e9a5b2f646f06c914b9d4d82a1146da04c2ace",
+    "last_processed": "1774043038.2713692"
+  },
   "v0.100.0:events:DollRoom": {
     "cache_key": "89643d30f78e3cbd5b2797674da54885dd23c4b34f2bb9327101782790295d81",
     "last_processed": "1774043038.5894556"
+  },
+  "v0.100.0:events:HungryForMushrooms": {
+    "cache_key": "609e15067d0111268de84cd123a86228bddab36d808cba7e645ae297dc0aecec",
+    "last_processed": "1774043038.30483"
+  },
+  "v0.100.0:events:FieldOfManSizedHoles": {
+    "cache_key": "f2847048d14b14a0eafad5fac0ea547461d56f45ce9966ff730d8d3a405d90be",
+    "last_processed": "1774043038.2884512"
   },
   "v0.100.0:events:DrowningBeacon": {
     "cache_key": "5126c590ea86ddb55299f974a0f445ccaf519877a6b333458bab6db73871d64b",
     "last_processed": "1774043038.6188653"
   },
+  "v0.100.0:events:GraveOfTheForgotten": {
+    "cache_key": "a620b5e1f5ce6e1c597eec860467d8351c683e734402a580d4e96ce12658cc8e",
+    "last_processed": "1774043038.3007295"
+  },
+  "v0.100.0:events:InfestedAutomaton": {
+    "cache_key": "75ddae84168ce2fd3ee6226a6d4f7eaab298fb054a1090cbb7506d0662ce22c2",
+    "last_processed": "1774043038.3146353"
+  },
+  "v0.100.0:events:MorphicGrove": {
+    "cache_key": "2d5303537c7e2f65b6bd5357c8616eb0a6cdc2b59b0a437b9cb20cc2a2e0b8a1",
+    "last_processed": "1774043038.3941367"
+  },
+  "v0.100.0:events:LostWisp": {
+    "cache_key": "b0ce360e8617a91d204ddcf9fca7bed96742513404d76db3b18623d7ff197c02",
+    "last_processed": "1774043038.365859"
+  },
   "v0.100.0:events:AbyssalBaths": {
     "cache_key": "af405afef456c9c71229fa5fddffff9683f7f422c3f70ab805ec0e6a6d501da1",
     "last_processed": "1774043038.2856913"
   },
-  "v0.100.0:events:FakeMerchant": {
-    "cache_key": "c59f4459ad990bb10ef2c124a8e9a5b2f646f06c914b9d4d82a1146da04c2ace",
-    "last_processed": "1774043038.2713692"
+  "v0.100.0:events:JungleMazeAdventure": {
+    "cache_key": "b6add5612ff40c813fc4f45da09996c93fea9c9debe2b7ba782e39eb6961a0a7",
+    "last_processed": "1774043038.3453202"
+  },
+  "v0.100.0:events:PotionCourier": {
+    "cache_key": "27c2e76da0af740b23d7d1e18fb117ab7c440b8e33283c4a382303e3520cadf1",
+    "last_processed": "1774043038.5490642"
+  },
+  "v0.100.0:events:PunchOff": {
+    "cache_key": "b4c4e4043cc3ea032e02da03c4c64e900129c21e30c0f52ba931875eeaa0a5cb",
+    "last_processed": "1774043038.5841756"
+  },
+  "v0.100.0:events:LuminousChoir": {
+    "cache_key": "e978da7de28c2e16672e93fd95f07144857e458577f668a31e2c4f350339c45b",
+    "last_processed": "1774043038.3773713"
+  },
+  "v0.99.1:events:EndlessConveyor": {
+    "cache_key": "9a06130a132d80ff2062c6ba0606ab5877070db226512c532e5597a184c3e5b8",
+    "last_processed": "1773852295.1049807"
+  },
+  "v0.99.1:events:JungleMazeAdventure": {
+    "cache_key": "b6add5612ff40c813fc4f45da09996c93fea9c9debe2b7ba782e39eb6961a0a7",
+    "last_processed": "1773852295.2232013"
+  },
+  "v0.99.1:events:LostWisp": {
+    "cache_key": "b0ce360e8617a91d204ddcf9fca7bed96742513404d76db3b18623d7ff197c02",
+    "last_processed": "1773852295.2371562"
+  },
+  "v0.99.1:events:LuminousChoir": {
+    "cache_key": "e978da7de28c2e16672e93fd95f07144857e458577f668a31e2c4f350339c45b",
+    "last_processed": "1773852295.251671"
+  },
+  "v0.99.1:events:MorphicGrove": {
+    "cache_key": "125ae59a3633b01c40e496e53bfd572f4d074e3a1e68dc71edd10b0152858b94",
+    "last_processed": "1773852295.2860465"
+  },
+  "v0.99.1:events:PotionCourier": {
+    "cache_key": "27c2e76da0af740b23d7d1e18fb117ab7c440b8e33283c4a382303e3520cadf1",
+    "last_processed": "1773852295.4259014"
+  },
+  "v0.99.1:events:PunchOff": {
+    "cache_key": "b4c4e4043cc3ea032e02da03c4c64e900129c21e30c0f52ba931875eeaa0a5cb",
+    "last_processed": "1773852295.454055"
+  },
+  "v0.99.1:events:RanwidTheElder": {
+    "cache_key": "4597350f303e3eaf0bd460238d4d9dd858f5982b2d7917a4a2a513b65337aa09",
+    "last_processed": "1773852295.4726412"
+  },
+  "v0.99.1:events:RelicTrader": {
+    "cache_key": "63fd01b4dcc9cf0ab80b0de3301b807cb0a39f82910b884074051911562b4ec1",
+    "last_processed": "1773852295.506804"
+  },
+  "v0.99.1:events:SlipperyBridge": {
+    "cache_key": "6a183a9d659b8e9f9621f04750600e99ea7031f9abbfc7f3f8fb1fb5fbcebb7f",
+    "last_processed": "1773852295.6341054"
+  },
+  "v0.99.1:events:SpiralingWhirlpool": {
+    "cache_key": "1ce25605b3abf1ef9eaa4aa2dc67ef87808f00c755e1cc93b052401ecc180119",
+    "last_processed": "1773852295.6449144"
+  },
+  "v0.99.1:events:SpiritGrafter": {
+    "cache_key": "684dae156d67fab947769dd609895665dbd3c2edc661435088ac9548d16f5e07",
+    "last_processed": "1773852295.6536586"
+  },
+  "v0.99.1:events:Reflections": {
+    "cache_key": "75eb2f408c307637228629982534df7e3e332f738c43c4e1cbad0a9820ae5a80",
+    "last_processed": "1773852295.4841723"
+  },
+  "v0.99.1:events:RoundTeaParty": {
+    "cache_key": "0c214fc9b75a0d59a1b7b8ee53f1ab49ef01f3ba7ec5dcf75fcb6623a52fcafe",
+    "last_processed": "1773852295.5285573"
+  },
+  "v0.99.1:events:RoomFullOfCheese": {
+    "cache_key": "b47973f37db15ae270fb1fcb84036a691e9008df81963c47fb4f23b5cc7cf135",
+    "last_processed": "1773852295.5185747"
+  },
+  "v0.99.1:events:SapphireSeed": {
+    "cache_key": "712b5d104aa2e34ec11f939dec78da1f2e9afd1c4f5892caddb7980538e7b7ae",
+    "last_processed": "1773852295.546039"
   }
 }

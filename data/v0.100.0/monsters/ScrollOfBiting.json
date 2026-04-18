@@ -42,12 +42,13 @@
         }
       ],
       "effects": [
-        "Apply 2 Strength to self"
+        "Apply 2 Strength"
       ]
     }
   ],
-  "move_pattern": "Cycles through Chomp, More Teeth, and Chew. After Chew, randomly selects between Chomp and Chew (weighted toward Chew). Starting move varies.",
+  "move_pattern": "Cycles through Chomp → More Teeth → Chew → Random (favors Chew). The starting move is randomized between the three moves.",
   "powers_on_spawn": [
-    "2 Paper Cuts"
-  ]
+    "Paper Cuts (2)"
+  ],
+  "notes": "The starting move is randomly selected from the three available moves. After Chomp, it always uses More Teeth. After More Teeth, it always uses Chew. After Chew, it randomly selects between Chomp (cannot repeat) or Chew (weight 2), making Chew twice as likely to be selected."
 }

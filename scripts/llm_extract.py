@@ -273,6 +273,18 @@ async def process_entity(
             print(f"  Skipping {class_name} (cached)")
             return
 
+    # If the entity file already exists but has no cache entry (e.g. because
+    # a previous run was killed before it could save the cache), trust the
+    # file and populate the cache. Use --force to override.
+    if not force and entity_file.exists() and entity_cache_key not in cache:
+        print(f"  Backfilling cache for {class_name} (file exists)")
+        cache[entity_cache_key] = {
+            "cache_key": cache_key,
+            "last_processed": str(Path(source_path).stat().st_mtime),
+        }
+        save_cache(cache)
+        return
+
     # Cross-version reuse: when the source+loc+prompt hash matches an output
     # file written for any other version, copy it rather than re-running the
     # LLM. This makes incremental patch bumps essentially free for unchanged
