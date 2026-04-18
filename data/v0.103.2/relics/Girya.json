@@ -1,0 +1,8 @@
+{
+  "class_name": "Girya",
+  "title": "Girya",
+  "rarity": "Rare",
+  "description": "You can now gain [gold]Strength[/gold] at [gold]Rest Sites[/gold]. ([blue]3[/blue] times max)",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Displays a counter showing times lifted. Each use at a Rest Site grants Strength. Limited to 3 lifts per run. Applies accumulated Strength when entering combat. Not available after Act 3."
+}

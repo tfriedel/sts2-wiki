@@ -1,0 +1,22 @@
+{
+  "class_name": "BattleFriendV3",
+  "title": "Battle Friend V3.0",
+  "min_hp": 300,
+  "max_hp": 300,
+  "is_companion": true,
+  "moves": [
+    {
+      "id": "NOTHING_MOVE",
+      "title": "Nothing",
+      "intents": [
+        {
+          "type": "hidden"
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "move_pattern": "Always does Nothing (self-loops indefinitely).",
+  "powers_on_spawn": ["BattlewornDummyTimeLimitPower (3)"],
+  "notes": "A companion training dummy that takes no actions each turn. On entering combat it gains BattlewornDummyTimeLimitPower with a value of 3, acting as a time-limit countdown. Has fixed 300 HP."
+}

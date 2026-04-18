@@ -1,0 +1,28 @@
+{
+  "class_name": "SignalBoost",
+  "title": "Signal Boost",
+  "character": "Defect",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "keywords": [
+    "Exhaust"
+  ],
+  "vars": [
+    {
+      "type": "SignalBoost",
+      "base_value": 1
+    }
+  ],
+  "description": "The next Power you play is played an additional time.",
+  "upgraded_cost": 0,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "SIGNAL_BOOST_POWER",
+      "title": "Signal Boost",
+      "slug": "signal-boost"
+    }
+  ]
+}

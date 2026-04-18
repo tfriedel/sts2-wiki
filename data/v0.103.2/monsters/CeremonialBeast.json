@@ -1,0 +1,62 @@
+{
+  "class_name": "CeremonialBeast",
+  "title": "Ceremonial Beast",
+  "min_hp": 262,
+  "max_hp": 262,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "STAMP_MOVE",
+      "title": "Stamp",
+      "intents": [
+        {"type": "buff"}
+      ],
+      "effects": ["Apply 160 Plow"]
+    },
+    {
+      "id": "PLOW_MOVE",
+      "title": "Plow",
+      "intents": [
+        {"type": "attack", "damage": 20},
+        {"type": "buff"}
+      ],
+      "effects": ["Deal 20 damage", "Gain 2 Strength"]
+    },
+    {
+      "id": "STUN_MOVE",
+      "title": "Stun",
+      "intents": [
+        {"type": "stun"}
+      ],
+      "effects": ["Stunned — no action taken; must complete before transitioning"]
+    },
+    {
+      "id": "BEAST_CRY_MOVE",
+      "title": "Beast Cry",
+      "intents": [
+        {"type": "debuff"}
+      ],
+      "effects": ["Apply 1 Ringing to all targets"]
+    },
+    {
+      "id": "STOMP_MOVE",
+      "title": "Stomp",
+      "intents": [
+        {"type": "attack", "damage": 17}
+      ],
+      "effects": ["Deal 17 damage"]
+    },
+    {
+      "id": "CRUSH_MOVE",
+      "title": "Crush",
+      "intents": [
+        {"type": "attack", "damage": 19},
+        {"type": "buff"}
+      ],
+      "effects": ["Deal 19 damage", "Gain 4 Strength"]
+    }
+  ],
+  "move_pattern": "Starts with Stamp (applies 160 Plow to self), then Plow repeating indefinitely. When PlowPower expires or is removed, the beast becomes Stunned for one mandatory turn, then transitions to phase 2: Beast Cry → Stomp → Crush → Beast Cry (cycling).",
+  "powers_on_spawn": [],
+  "notes": "Two-phase fight. Phase 1: Stamp applies 160 stacks of PlowPower, then Plow loops indefinitely — dealing 20 damage and gaining 2 Strength each use. When PlowPower expires naturally or is stripped by the player, SetStunned() is called by the power, forcing the state machine into the Stun move (immobilized for one mandatory turn with MustPerformOnceBeforeTransitioning). Phase 2: Cycles Beast Cry (applies 1 Ringing to the player) → Stomp (17 damage) → Crush (19 damage + 4 Strength) → Beast Cry indefinitely. Removing PlowPower early triggers the phase transition sooner."
+}

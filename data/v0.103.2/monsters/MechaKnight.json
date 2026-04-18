@@ -1,0 +1,36 @@
+{
+  "class_name": "MechaKnight",
+  "title": "Mecha Knight",
+  "min_hp": 320,
+  "max_hp": 320,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CHARGE_MOVE",
+      "title": "Charge",
+      "intents": [{"type": "attack", "damage": 30, "hits": 1}],
+      "effects": ["Deal 30 damage"]
+    },
+    {
+      "id": "FLAMETHROWER_MOVE",
+      "title": "Flamethrower",
+      "intents": [{"type": "status", "amount": 4}],
+      "effects": ["Add 4 Burn cards to player's hand"]
+    },
+    {
+      "id": "WINDUP_MOVE",
+      "title": "Windup",
+      "intents": [{"type": "block"}, {"type": "buff"}],
+      "effects": ["Gain 15 Block", "Gain 5 Strength"]
+    },
+    {
+      "id": "HEAVY_CLEAVE_MOVE",
+      "title": "Heavy Cleave",
+      "intents": [{"type": "attack", "damage": 40, "hits": 1}],
+      "effects": ["Deal 40 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Charge, then cycles: Flamethrower -> Windup -> Heavy Cleave -> Flamethrower (repeating)",
+  "powers_on_spawn": ["Artifact (3)"],
+  "notes": "After Windup, enters wound-up state with different idle and hurt animations. Heavy Cleave clears the wound-up state."
+}

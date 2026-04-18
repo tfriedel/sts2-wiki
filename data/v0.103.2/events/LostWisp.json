@@ -1,0 +1,25 @@
+{
+  "class_name": "LostWisp",
+  "title": "The Lost Wisp",
+  "description": "In the distance is an odd sight. Mounds and mounds of [sine][red]deceased insects[/red][/sine], surrounding what looks to be a [orange]small glowing mote[/orange].\nIt seems to be an effective attractant for all manner of bugs but you see it lash out some flames!\n\nYou move closer to investigate.",
+  "options": [
+    {
+      "title": "Capture the Wisp",
+      "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. Obtain the [gold]Lost Wisp[/gold].",
+      "requires": "Your Max HP is too low."
+    },
+    {
+      "title": "Search the Nearby Area",
+      "description": "Gain [blue]60[/blue] [gold]Gold[/gold]."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [],
+  "notes": "The gold reward from [gold]Search the Nearby Area[/gold] varies by ±15, ranging from [gold]45[/gold] to [gold]75[/gold] Gold.\n\nChoosing [gold]Capture the Wisp[/gold] adds one [red]Decay[/red] curse to your deck and grants the [gold]Lost Wisp[/gold] relic.",
+  "card_refs": [
+    {"class_name": "Decay", "title": "Decay", "slug": "decay"}
+  ],
+  "relic_refs": [
+    {"class_name": "LostWisp", "title": "Lost Wisp", "slug": "lost-wisp"}
+  ]
+}

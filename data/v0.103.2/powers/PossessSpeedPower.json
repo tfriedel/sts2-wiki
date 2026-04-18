@@ -1,0 +1,8 @@
+{
+  "class_name": "PossessSpeedPower",
+  "title": "Possess Speed",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "When killed, return all stolen [gold]Dexterity[/gold] to the player.",
+  "smart_description": "When killed, return all stolen [gold]Dexterity[/gold] to the player."
+}

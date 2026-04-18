@@ -1,0 +1,78 @@
+{
+  "class_name": "Doormaker",
+  "title": "Doormaker",
+  "min_hp": 512,
+  "max_hp": 512,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "DRAMATIC_OPEN_MOVE",
+      "title": "Dramatic Open",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Reset to original HP (512)",
+        "Remove all powers",
+        "Change phase visual",
+        "Apply Hunger power"
+      ]
+    },
+    {
+      "id": "HUNGER_MOVE",
+      "title": "Hunger",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 35
+        }
+      ],
+      "effects": [
+        "Deal 35 damage",
+        "Swap to Scrutiny phase",
+        "Change visual"
+      ]
+    },
+    {
+      "id": "SCRUTINY_MOVE",
+      "title": "Scrutiny",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 26
+        }
+      ],
+      "effects": [
+        "Deal 26 damage",
+        "Swap to Grasp phase",
+        "Change visual"
+      ]
+    },
+    {
+      "id": "GRASP_MOVE",
+      "title": "Grasp",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 11,
+          "hits": 2
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 11 damage",
+        "2 hits",
+        "Apply 4 Strength",
+        "Swap to Hunger phase",
+        "Change visual"
+      ]
+    }
+  ],
+  "move_pattern": "Dramatic Open (opening move) → Hunger → Scrutiny → Grasp → Hunger (repeats cycle)",
+  "powers_on_spawn": [],
+  "notes": "Doormaker starts with infinite HP display but resets to true HP (512) during Dramatic Open. Cycles through three phase powers (Hunger, Scrutiny, Grasp) that change each move. Each phase is associated with a distinct visual appearance. Title changes from 'Door' to 'Doormaker' when portal opens. Updates music parameter on death."
+}

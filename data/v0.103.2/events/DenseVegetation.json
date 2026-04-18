@@ -1,0 +1,20 @@
+{
+  "class_name": "DenseVegetation",
+  "title": "Dense Vegetation",
+  "description": "Having taken the wrong path for a good while, you find yourself in a thick jungle of [green]ferns[/green], [green]shrubs[/green], and [green]vines[/green]. Especially [green]vines[/green]. Exhaustion sets in, and a dark thought comes to mind:\n\n[sine][purple]\u201cYou are lost, unprepared, and the inevitability of death is approaching.\u201d[/purple][/sine]\n\nWhat do you do?",
+  "options": [
+    {
+      "title": "Trudge On",
+      "description": "Gain [blue]61\u201399[/blue] [gold]Gold[/gold]. Lose [red]8[/red] HP."
+    },
+    {
+      "title": "Rest",
+      "description": "Heal [green][rest site amount][/green] HP. Fight some [red]enemies[/red]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [],
+  "notes": "The [red]8[/red] HP loss from [gold]Trudge On[/gold] is [red]Unblockable[/red] and [red]Unpowered[/red]\u2014it cannot be blocked or reduced by powers or relics. [gold]Gold[/gold] gained is randomly rolled: [blue]61\u201399[/blue] [gold]Gold[/gold].\n\nChoosing [gold]Rest[/gold] heals you for the standard rest site amount (roughly 30% of max HP), then immediately triggers a forced combat encounter. You are shown a new page with only the option \u201cFight!\u201d. The combat provides [red]no rewards[/red], and the event ends after the fight regardless of outcome.",
+  "card_refs": [],
+  "relic_refs": []
+}

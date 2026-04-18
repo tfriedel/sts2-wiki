@@ -1,0 +1,58 @@
+{
+  "class_name": "TerrorEel",
+  "title": "Terror Eel",
+  "min_hp": 150,
+  "max_hp": 150,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CRASH_MOVE",
+      "title": "Crash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        }
+      ],
+      "effects": ["Deal 18 damage"]
+    },
+    {
+      "id": "ThrashMove",
+      "title": "Thrash",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 3
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 4 damage 3 times", "Apply 6 Vigor"]
+    },
+    {
+      "id": "STUN_MOVE",
+      "title": "Stun",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "TERROR_MOVE",
+      "title": "Terror",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Apply 99 Vulnerable"]
+    }
+  ],
+  "move_pattern": "Starts with Crash. Normal cycle alternates: Crash → Thrash → Crash → Thrash... The Stun and Terror moves are outside the normal cycle: Stun leads to Terror, which leads back to Crash.",
+  "powers_on_spawn": ["Shriek (75)"],
+  "notes": "Spawns with 75 Shriek. The Stun and Terror moves are not part of the normal Crash/Thrash cycle and are not reachable from it — Stun (empty body) transitions to Terror (applies 99 Vulnerable to all targets), which then returns to Crash. These states are likely triggered externally when the monster is stunned by a player card."
+}

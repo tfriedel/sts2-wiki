@@ -1,0 +1,9 @@
+{
+  "class_name": "PotionOfBinding",
+  "title": "Potion of Binding",
+  "rarity": "Uncommon",
+  "usage": "CombatOnly",
+  "target": "AllEnemies",
+  "description": "Apply [blue]1[/blue] [gold]Weak[/gold] and [blue]1[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
+  "notes": "Combat-only potion that applies debuff effects to all enemies simultaneously."
+}

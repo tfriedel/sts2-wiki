@@ -1,0 +1,8 @@
+{
+  "class_name": "PaelsLegion",
+  "title": "Pael's Legion",
+  "rarity": "Ancient",
+  "description": "Doubles [gold]Block[/gold] gained from a card, then goes to sleep for [blue]2[/blue] turns.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "This relic summons a pet that participates in combat. When you play a card that gains Block, this relic doubles the Block gained from that specific card. After the doubling effect triggers, the relic enters a sleep state lasting 2 turns, during which the block doubling is disabled. The relic counter displays the number of turns remaining in the cooldown."
+}

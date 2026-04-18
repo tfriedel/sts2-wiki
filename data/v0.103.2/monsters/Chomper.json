@@ -1,0 +1,35 @@
+{
+  "class_name": "Chomper",
+  "title": "Chomper",
+  "min_hp": 63,
+  "max_hp": 67,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CLAMP_MOVE",
+      "title": "Clamp",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 9,
+          "hits": 2
+        }
+      ],
+      "effects": ["Deal 9 damage", "2 hits"]
+    },
+    {
+      "id": "SCREECH_MOVE",
+      "title": "Screech",
+      "intents": [
+        {
+          "type": "status",
+          "amount": 3
+        }
+      ],
+      "effects": ["Add 3 Dazed to discard"]
+    }
+  ],
+  "move_pattern": "Alternates between Clamp and Screech. The starting move depends on the ScreamFirst property.",
+  "powers_on_spawn": ["2 Artifact"],
+  "notes": "When ScreamFirst is true, Screech is used as the opening move; when false, Clamp is used first. Chomper applies 2 stacks of Artifact Power upon entering combat."
+}

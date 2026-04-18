@@ -1,0 +1,84 @@
+{
+  "class_name": "SoulFysh",
+  "title": "Soul Fysh",
+  "min_hp": 221,
+  "max_hp": 221,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BECKON_MOVE",
+      "title": "Beckon",
+      "intents": [
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Add 1 Beckon to draw pile",
+        "Add 1 Beckon to discard pile"
+      ]
+    },
+    {
+      "id": "DE_GAS_MOVE",
+      "title": "De-Gas",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17
+        }
+      ],
+      "effects": [
+        "Deal 17 damage"
+      ]
+    },
+    {
+      "id": "GAZE_MOVE",
+      "title": "Gaze",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Deal 8 damage",
+        "Add 1 Beckon to discard pile"
+      ]
+    },
+    {
+      "id": "FADE_MOVE",
+      "title": "Fade",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Gain 2 Intangible"
+      ]
+    },
+    {
+      "id": "SCREAM_MOVE",
+      "title": "Scream",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 12
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 12 damage",
+        "Apply 3 Vulnerable"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Beckon → De-Gas → Gaze → Fade → Scream → (repeat)",
+  "powers_on_spawn": [],
+  "notes": "During Fade, the Soul Fysh becomes invisible and gains 2 Intangible, making it immune to damage for 2 turns. It remains invisible until Scream, which reveals it again. Beckon and Gaze both add Beckon status cards to the player's deck."
+}

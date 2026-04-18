@@ -1,0 +1,9 @@
+{
+  "class_name": "HardenedShellPower",
+  "title": "Hardened Shell",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "This creature cannot lose more than [blue]20[/blue] HP each turn.",
+  "smart_description": "[gold]{OwnerName}[/gold] cannot lose more than [blue]20[/blue] HP each turn.",
+  "notes": "Caps the damage the owner takes per turn to the power's Amount value (20). Tracks cumulative unblocked damage during a turn and resets at the start of each player turn. The displayed amount shows the remaining damage cap for the current turn."
+}

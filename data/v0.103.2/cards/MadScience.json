@@ -1,0 +1,67 @@
+{
+  "class_name": "MadScience",
+  "title": "Mad Science",
+  "character": "Event",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 12
+    },
+    {
+      "type": "Block",
+      "base_value": 8
+    },
+    {
+      "type": "Magic",
+      "base_value": 2
+    },
+    {
+      "type": "Magic",
+      "base_value": 2
+    },
+    {
+      "type": "Repeat",
+      "base_value": 3
+    },
+    {
+      "type": "Magic",
+      "base_value": 6
+    },
+    {
+      "type": "Energy",
+      "base_value": 2
+    },
+    {
+      "type": "Cards",
+      "base_value": 3
+    },
+    {
+      "type": "Magic",
+      "base_value": 2
+    },
+    {
+      "type": "Magic",
+      "base_value": 2
+    },
+    {
+      "type": "Magic",
+      "base_value": 1
+    }
+  ],
+  "description": "Deal 12 damage. Additional effects depend on the TinkerTime rider applied to this card.",
+  "referenced_powers": [
+    {"class_name": "WeakPower", "title": "Weak", "slug": "weak"},
+    {"class_name": "VulnerablePower", "title": "Vulnerable", "slug": "vulnerable"},
+    {"class_name": "StranglePower", "title": "Strangle", "slug": "strangle"},
+    {"class_name": "StrengthPower", "title": "Strength", "slug": "strength"},
+    {"class_name": "DexterityPower", "title": "Dexterity", "slug": "dexterity"},
+    {"class_name": "CuriousPower", "title": "Curious", "slug": "curious"},
+    {"class_name": "ImprovementPower", "title": "Improvement", "slug": "improvement"}
+  ],
+  "notes": "Mad Science is part of the TinkerTime event mechanic. This card can manifest as an Attack (dealing 12 damage), Skill (gaining 8 Block), or Power form based on TinkerTime configuration. Additionally applies a rider effect: Sapping (apply 2 Weak and 2 Vulnerable to target), Choking (enemy loses 6 HP whenever you play a card), Energized (gain 2 Energy), Wisdom (draw 3 cards), Chaos (add random free card to hand), Expertise (gain 2 Strength and 2 Dexterity), Curious (Powers cost 1 Energy less), or Improvement (upgrade random card at end of combat). Upgrade adds Innate keyword. Target type varies based on card form: Single (Attack form) or Self (Skill/Power forms)."
+}

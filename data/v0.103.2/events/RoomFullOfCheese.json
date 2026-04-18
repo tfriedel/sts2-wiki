@@ -1,0 +1,21 @@
+{
+  "class_name": "RoomFullOfCheese",
+  "title": "Room Full of Cheese",
+  "description": "This room is full of [b][jitter]cheese!!![/jitter][/b]\n\nYou look around to see if there are any traps and above you is... more [b]cheese[/b]. The candles in this room appear to be made of [b]cheese[/b]. The furniture is also [b]cheese[/b].\nSuddenly, the door behind you slams shut.\n\nIt is made of [b]cheese[/b].",
+  "options": [
+    {
+      "title": "Gorge",
+      "description": "Choose [blue]2[/blue] of [blue]8[/blue] random [gold]Common[/gold] cards to add to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Search",
+      "description": "Lose [red]14[/red] HP. Obtain the [gold]Chosen Cheese[/gold]."
+    }
+  ],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": ["Acts 1-2 only"],
+  "notes": "The [gold]Gorge[/gold] option draws [blue]8[/blue] random [gold]Common[/gold] cards from your character's card pool with uniform odds (no rarity modification), then lets you pick [blue]2[/blue] to add to your deck.\n\nThe [gold]Search[/gold] option deals [red]14[/red] [red]unblockable[/red] HP loss that is not affected by powers or relics.",
+  "relic_refs": [
+    {"class_name": "ChosenCheese", "title": "The Chosen Cheese", "slug": "the-chosen-cheese"}
+  ]
+}

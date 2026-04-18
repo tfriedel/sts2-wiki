@@ -1,0 +1,52 @@
+{
+  "class_name": "DecimillipedeSegmentBack",
+  "title": "Decimillipede",
+  "min_hp": 46,
+  "max_hp": 52,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "WRITHE_MOVE",
+      "title": "Writhe",
+      "intents": [
+        {"type": "multi_attack", "damage": 6, "hits": 2}
+      ],
+      "effects": ["Deal 6 damage", "2 hits"]
+    },
+    {
+      "id": "BULK_MOVE",
+      "title": "Bulk",
+      "intents": [
+        {"type": "attack", "damage": 7},
+        {"type": "buff"}
+      ],
+      "effects": ["Deal 7 damage", "Apply 2 Strength"]
+    },
+    {
+      "id": "CONSTRICT_MOVE",
+      "title": "Constrict",
+      "intents": [
+        {"type": "attack", "damage": 9},
+        {"type": "debuff"}
+      ],
+      "effects": ["Deal 9 damage", "Apply 1 Weak"]
+    },
+    {
+      "id": "DEAD_MOVE",
+      "title": "Dead",
+      "intents": [],
+      "effects": []
+    },
+    {
+      "id": "REATTACH_MOVE",
+      "title": "Reattach",
+      "intents": [
+        {"type": "heal"}
+      ],
+      "effects": ["Trigger Reattach power to rejoin the Decimillipede"]
+    }
+  ],
+  "move_pattern": "Starting move is determined by StarterMoveIdx % 3: 0 = Writhe, 1 = Bulk, 2 = Constrict. Normal cycle: Writhe → Constrict → Bulk → Writhe (repeating). When defeated, plays Dead then Reattach to rejoin the main body, then resumes with a random move.",
+  "powers_on_spawn": ["ReattachPower (25)"],
+  "notes": "Back segment of the Decimillipede boss. Inherits all gameplay logic from DecimillipedeSegment; only overrides the SegmentAttack animation method."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "FreeAttackPower",
+  "title": "Free Attack",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Your next Attack costs 0 energy.",
+  "smart_description": "Your next {Amount} Attacks cost 0 energy.",
+  "notes": "Stack counts down by 1 each time an Attack card is played from your hand or in play. Only affects Attack cards."
+}

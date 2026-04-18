@@ -1,0 +1,9 @@
+{
+  "class_name": "SandpitPower",
+  "title": "Sandpit",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "A power used by The Insatiable.",
+  "smart_description": "Countdown timer (stacks remaining): 1 turn = 'When [gold]The Insatiable[/gold] takes its turn, you will be eaten and die.' 2+ turns = 'In [blue]N[/blue] turns, you will be eaten and die.' (where N is the remaining count)",
+  "notes": "Decrements by 1 each enemy turn. When the counter reaches 0, the player and all summoned creatures (including Osty, if alive) are killed by The Insatiable. Used by The Insatiable boss in Act 3."
+}

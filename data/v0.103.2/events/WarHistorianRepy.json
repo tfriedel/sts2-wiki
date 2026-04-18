@@ -1,0 +1,24 @@
+{
+  "class_name": "WarHistorianRepy",
+  "title": "War Historian, Repy",
+  "description": "An academic is trapped in a [purple]hanging cage[/purple] next to a [gold]treasure chest[/gold].\n\nThe academic is muttering about [sine][orange]\u201cOne-Time-Use Keys\u201d[/orange][/sine] while furiously writing something.\n\nLooks like you can unlock the [purple]cage[/purple] or the [gold]chest[/gold].",
+  "options": [
+    {
+      "title": "Unlock the Cage",
+      "description": "Lose [gold]Lantern Key[/gold]. Obtain [gold]History Course[/gold]."
+    },
+    {
+      "title": "Unlock the Chest",
+      "description": "Lose [gold]Lantern Key[/gold]. Procure [blue]2[/blue] random [gold]Potions[/gold]. Obtain [blue]2[/blue] random [gold]Relics[/gold]."
+    }
+  ],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": ["Currently disabled — IsAllowed() always returns false"],
+  "notes": "This event is currently [red]disabled[/red] in the game — [red]IsAllowed()[/red] unconditionally returns [red]false[/red] and it will never spawn in a run.\n\nBoth options consume all [gold]Lantern Key[/gold] cards in the player's deck via [gold]CompleteQuest[/gold], removing them permanently. The [gold]Lantern Key[/gold] is a Quest card that \"Unlocks a special event in the next Act.\"\n\nChoosing [gold]Unlock the Cage[/gold] sets a persistent run state flag [blue]FreedRepy = true[/blue], which may influence other future events or mechanics. It then grants the [gold]History Course[/gold] relic directly.\n\nChoosing [gold]Unlock the Chest[/gold] opens a reward selection screen offering [blue]2[/blue] random potions and [blue]2[/blue] random relics.",
+  "card_refs": [
+    {"class_name": "LanternKey", "title": "Lantern Key", "slug": "lantern-key"}
+  ],
+  "relic_refs": [
+    {"class_name": "HistoryCourse", "title": "History Course", "slug": "history-course"}
+  ]
+}

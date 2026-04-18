@@ -1,0 +1,60 @@
+{
+  "class_name": "HauntedShip",
+  "title": "Haunted Ship",
+  "min_hp": 67,
+  "max_hp": 67,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "HAUNT_MOVE",
+      "title": "Haunt",
+      "intents": [
+        {
+          "type": "status",
+          "amount": 5
+        }
+      ],
+      "effects": ["Add 5 Dazed to discard"]
+    },
+    {
+      "id": "RAMMING_SPEED_MOVE",
+      "title": "Ramming Speed",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 11 damage", "Apply 1 Weak"]
+    },
+    {
+      "id": "SWIPE_MOVE",
+      "title": "Swipe",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        }
+      ],
+      "effects": ["Deal 14 damage"]
+    },
+    {
+      "id": "STOMP_MOVE",
+      "title": "Stomp",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 5 damage", "3 hits"]
+    }
+  ],
+  "move_pattern": "Opens with Haunt (fires only once at the start of combat). Then randomly cycles through Ramming Speed, Swipe, and Stomp for the remainder of combat, never repeating the same move consecutively.",
+  "powers_on_spawn": [],
+  "notes": "Haunt adds 5 Dazed cards directly to the player's discard pile at the start of combat. These are status cards that clutter the deck. Haunt does not recur — it is strictly the opening move."
+}

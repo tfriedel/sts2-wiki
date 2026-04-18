@@ -1,0 +1,51 @@
+{
+  "class_name": "SludgeSpinner",
+  "title": "Sludge Spinner",
+  "min_hp": 41,
+  "max_hp": 42,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "OIL_SPRAY_MOVE",
+      "title": "Oil Spray",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 9 damage", "Apply 1 Weak"]
+    },
+    {
+      "id": "SLAM_MOVE",
+      "title": "Slam",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 12
+        }
+      ],
+      "effects": ["Deal 12 damage"]
+    },
+    {
+      "id": "RAGE_MOVE",
+      "title": "Rage",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Deal 7 damage", "Gain 3 Strength"]
+    }
+  ],
+  "move_pattern": "Starts with Oil Spray. Then randomly cycles through all three moves (Oil Spray, Slam, Rage), never repeating the same move twice in a row.",
+  "powers_on_spawn": [],
+  "notes": "Each turn after the first, the Sludge Spinner randomly selects from its three moves but cannot use the same move it just used."
+}

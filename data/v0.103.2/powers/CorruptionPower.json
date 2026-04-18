@@ -1,0 +1,8 @@
+{
+  "class_name": "CorruptionPower",
+  "title": "Corruption",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Skills cost 0.\nWhenever you play a Skill, Exhaust it.",
+  "notes": "This power only affects Skills. Other card types are not impacted by the energy cost reduction or exhaustion effect."
+}

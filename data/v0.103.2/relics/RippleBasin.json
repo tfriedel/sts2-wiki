@@ -1,0 +1,8 @@
+{
+  "class_name": "RippleBasin",
+  "title": "Ripple Basin",
+  "rarity": "Uncommon",
+  "description": "If you did not play any Attacks during your turn, gain [blue]4[/blue] [gold]Block[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Grants Block at the end of the turn if no Attack cards were played. Status indicator shows 'Active' during your turn and resets when an Attack is played or turn ends."
+}

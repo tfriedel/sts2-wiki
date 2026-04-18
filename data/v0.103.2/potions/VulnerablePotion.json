@@ -1,0 +1,8 @@
+{
+  "class_name": "VulnerablePotion",
+  "title": "Vulnerable Potion",
+  "rarity": "Common",
+  "usage": "Apply",
+  "target": "AnyEnemy",
+  "description": "Apply [blue]3 Vulnerable[/blue] [gold]Vulnerable[/gold]."
+}

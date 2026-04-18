@@ -1,0 +1,8 @@
+{
+  "class_name": "ShipInABottle",
+  "title": "Ship in a Bottle",
+  "rarity": "Rare",
+  "usage": "Drink",
+  "target": "Single",
+  "description": "Gain [blue]10[/blue] [gold]Block[/gold]. Next turn, gain [blue]10[/blue] [gold]Block[/gold]."
+}

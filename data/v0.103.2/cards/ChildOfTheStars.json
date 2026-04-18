@@ -1,0 +1,26 @@
+{
+  "class_name": "ChildOfTheStars",
+  "title": "Child of the Stars",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "BlockForStars",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Whenever you spend ★, gain 2 Block for each ★ spent.",
+  "upgraded_description": "Whenever you spend ★, gain 3 Block for each ★ spent.",
+  "referenced_powers": [
+    {
+      "class_name": "ChildOfTheStarsPower",
+      "title": "Child of the Stars",
+      "slug": "child-of-the-stars"
+    }
+  ]
+}

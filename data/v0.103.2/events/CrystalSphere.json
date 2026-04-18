@@ -1,0 +1,24 @@
+{
+  "class_name": "CrystalSphere",
+  "title": "Crystal Sphere",
+  "description": "[sine][blue]\u201cI predicted you'd enter...!\u201d[/blue][/sine]\n\nA [jitter]raspy[/jitter] voice calls out as you enter a [purple]mystic hut[/purple].\n\n[sine][blue]\u201cYour destiny has brought you here. We must uncover your future and fortunes so you can SAVE US ALL!!\u201d[/blue][/sine]\n\u201cOkay, here are the options for the [gold]Crystal Sphere reading[/gold]. Be sure to sign this waiver as well,\u201d she says while bringing out pen and parchment.",
+  "options": [
+    {
+      "title": "Uncover Future",
+      "description": "Pay [red]51\u201399[/red] [gold]Gold[/gold]. [purple]Divine[/purple] [blue]3[/blue] times."
+    },
+    {
+      "title": "Payment Plan",
+      "description": "Gain a [red]Debt[/red]. [purple]Divine[/purple] [blue]6[/blue] times."
+    }
+  ],
+  "acts": ["Glory", "Hive", "Overgrowth", "Underdocks"],
+  "conditions": [
+    "All players have at least 100 Gold",
+    "Act 2+"
+  ],
+  "notes": "The [gold]Uncover Future[/gold] cost is randomized each run: base [gold]50 Gold[/gold] plus a random addition of [gold]1\u201349 Gold[/gold], for a total range of [gold]51\u201399 Gold[/gold].\n\nBoth options lead into the [purple]Crystal Sphere minigame[/purple], where you reveal tiles to gain rewards (or suffer penalties). [gold]Uncover Future[/gold] grants [blue]3[/blue] divinations; [gold]Payment Plan[/gold] grants [blue]6[/blue] divinations at the cost of adding a [red]Debt[/red] curse to your deck.\n\n[red]Debt[/red] is a curse that causes you to lose [gold]10 Gold[/gold] at the end of your turn if it is in your hand.",
+  "card_refs": [
+    {"class_name": "Debt", "title": "Debt", "slug": "debt"}
+  ]
+}

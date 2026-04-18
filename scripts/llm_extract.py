@@ -86,8 +86,40 @@ def save_cache(cache: dict[str, object]) -> None:
     CACHE_PATH.write_text(json.dumps(cache, indent=2) + "\n")
 
 
+# Known-trivial rename/refactor substitutions between decompiled versions.
+# When ilspycmd output changes between versions because of a non-semantic
+# refactor (an interface being extracted, a utility being renamed), listing
+# the pair here lets cross-version reuse treat the change as a no-op.
+# Add a new entry only when you've verified every occurrence is truly
+# interchangeable for data extraction purposes.
+_TRIVIAL_TOKEN_RENAMES: list[tuple[str, str]] = [
+    # IsAllowed(RunState) was refactored to IsAllowed(IRunState) in v0.102.x
+    # without any behavior change.
+    (r"\bIRunState\b", "RunState"),
+]
+
+
+def normalize_source(content: str) -> str:
+    """Strip non-semantic differences so that byte-different decompiled
+    source files can still be recognized as equivalent for extraction
+    purposes. This is an over-approximation — only add transformations
+    that preserve the information the LLM extracts."""
+    content = re.sub(r"//[^\n]*", "", content)
+    content = re.sub(r"/\*.*?\*/", "", content, flags=re.DOTALL)
+    for pattern, replacement in _TRIVIAL_TOKEN_RENAMES:
+        content = re.sub(pattern, replacement, content)
+    content = re.sub(r"\s+", " ", content).strip()
+    return content
+
+
 def compute_cache_key(source_content: str, loc_entries: str, prompt_content: str) -> str:
-    combined = source_content + "\n---LOC---\n" + loc_entries + "\n---PROMPT---\n" + prompt_content
+    combined = (
+        normalize_source(source_content)
+        + "\n---LOC---\n"
+        + loc_entries
+        + "\n---PROMPT---\n"
+        + prompt_content
+    )
     return hashlib.sha256(combined.encode()).hexdigest()
 
 

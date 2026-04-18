@@ -1,0 +1,22 @@
+{
+  "class_name": "ExpectAFight",
+  "title": "Expect a Fight",
+  "character": "Colorless",
+  "energy_cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [],
+  "description": "Gain energy equal to the number of Attack cards in your hand. You cannot gain energy again this turn.",
+  "upgraded_cost": 1,
+  "x_cost": false,
+  "referenced_powers": [
+    {
+      "class_name": "NoEnergyGainPower",
+      "title": "No Energy Gain",
+      "slug": "no-energy-gain"
+    }
+  ],
+  "notes": "The amount of energy gained is calculated at play time based on the number of Attack-type cards currently in hand. The NoEnergyGainPower prevents any additional energy gain for the remainder of the turn."
+}

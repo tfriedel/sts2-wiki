@@ -1,0 +1,69 @@
+{
+  "class_name": "FakeMerchantMonster",
+  "title": "The Merchant???",
+  "min_hp": 175,
+  "max_hp": 175,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SWIPE",
+      "title": "Swipe",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15
+        }
+      ],
+      "effects": [
+        "Deal 15 damage"
+      ]
+    },
+    {
+      "id": "SPEW_COINS",
+      "title": "Spew Coins",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 2,
+          "hits": 8
+        }
+      ],
+      "effects": [
+        "Deal 2 damage",
+        "8 hits"
+      ]
+    },
+    {
+      "id": "THROW_RELIC",
+      "title": "Throw Relic",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 10
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 10 damage",
+        "Apply 1 Frail"
+      ]
+    },
+    {
+      "id": "ENRAGE",
+      "title": "Enrage",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Swipe. After Swipe, Spew Coins, or Enrage, randomly selects from all four moves with Enrage having 3x weight. After Throw Relic, randomly selects from Swipe, Spew Coins, or Throw Relic.",
+  "powers_on_spawn": [],
+  "notes": "This encounter is designed with weighted move selection that changes based on the previous action. Throw Relic is the only debuff move and prevents access to Enrage on the immediate follow-up."
+}

@@ -1,0 +1,26 @@
+{
+  "class_name": "Reflections",
+  "title": "Reflections snoitcelfeR",
+  "description": "What is this? Something feels wrong here...\n[sine]...ereh gnorw sleef gnihtemoS ?siht si tahW[/sine]",
+  "options": [
+    {
+      "title": "Touch a Mirror",
+      "description": "[red]Downgrade[/red] [blue]2[/blue] random cards. [green]Upgrade[/green] [blue]4[/blue] random cards."
+    },
+    {
+      "title": "Shatter",
+      "description": "Duplicate your [gold]Deck[/gold]. Receive [purple]Bad Luck[/purple]."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "The event title and description contain mirrored text as a visual effect, hinting at the mirror theme.\n\nFor [gold]Touch a Mirror[/gold]: the [red]2 downgrades[/red] are drawn only from already-[green]upgraded[/green] cards. The pool of [green]4 upgrades[/green] is computed after the downgrades complete, so a just-downgraded card may be upgraded again if it remains upgradable. Both selections are random without replacement.\n\nFor [gold]Shatter[/gold]: the deck size is captured before duplication begins. Each of the original deck's cards receives an exact clone added to the deck, doubling it. The [purple]Bad Luck[/purple] curse is then added on top.",
+  "card_refs": [
+    {
+      "class_name": "BadLuck",
+      "title": "Bad Luck",
+      "slug": "bad-luck"
+    }
+  ],
+  "relic_refs": []
+}

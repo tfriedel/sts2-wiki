@@ -1,0 +1,24 @@
+{
+  "class_name": "Conflagration",
+  "title": "Conflagration",
+  "character": "Ironclad",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 8,
+      "upgraded_value": 9
+    },
+    {
+      "type": "Damage",
+      "base_value": 2,
+      "upgraded_value": 3
+    }
+  ],
+  "description": "Deal 8 damage to ALL enemies.\nDeals 2 additional damage for each other Attack you've played this turn.",
+  "upgraded_description": "Deal 9 damage to ALL enemies.\nDeals 3 additional damage for each other Attack you've played this turn."
+}

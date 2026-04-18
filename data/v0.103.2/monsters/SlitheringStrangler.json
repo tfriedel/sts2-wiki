@@ -1,0 +1,48 @@
+{
+  "class_name": "SlitheringStrangler",
+  "title": "Slithering Strangler",
+  "min_hp": 54,
+  "max_hp": 56,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CONSTRICT",
+      "title": "Constrict",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Apply 3 Constrict"]
+    },
+    {
+      "id": "TWACK",
+      "title": "Thwack",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "block",
+          "amount": 5
+        }
+      ],
+      "effects": ["Deal 8 damage", "Gain 5 Block"]
+    },
+    {
+      "id": "LASH",
+      "title": "Lash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        }
+      ],
+      "effects": ["Deal 13 damage"]
+    }
+  ],
+  "move_pattern": "Starts with Constrict. After Constrict, randomly picks either Thwack or Lash (both can repeat). After Thwack or Lash, returns to Constrict.",
+  "powers_on_spawn": [],
+  "notes": "The move ID in source code is 'TWACK' (apparent typo for THWACK); localization key is THWACK. Thwack both attacks and gains 5 Block in the same turn. Block amount is not ascension-scaled."
+}

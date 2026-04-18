@@ -1,0 +1,22 @@
+{
+  "class_name": "ParticleWall",
+  "title": "Particle Wall",
+  "character": "Colorless",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Block",
+      "base_value": 9,
+      "upgraded_value": 12
+    }
+  ],
+  "description": "Gain 9 [gold]Block[/gold].\nReturn this card to your [gold]Hand[/gold].",
+  "x_cost": false,
+  "star_cost": 2,
+  "referenced_powers": [],
+  "notes": "This card returns to hand instead of going to discard after being played."
+}

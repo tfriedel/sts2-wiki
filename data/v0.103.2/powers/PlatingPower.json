@@ -1,0 +1,9 @@
+{
+  "class_name": "PlatingPower",
+  "title": "Plating",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the end of your turn, gain [gold]Block[/gold]. [gold]Plating[/gold] is reduced by [blue]1[/blue] at the start of your turn.",
+  "smart_description": "At the end of your turn, gain [blue]{Amount}[/blue] [gold]Block[/gold]. [gold]Plating[/gold] is reduced by [blue]1[/blue] at the start of your turn.",
+  "notes": "Amount represents the current stack count and determines block gained per turn. Decrement defaults to 1 per turn but scales with player count in multiplayer (equals number of players when applied by enemies)."
+}

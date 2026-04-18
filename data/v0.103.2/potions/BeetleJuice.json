@@ -1,0 +1,8 @@
+{
+  "class_name": "BeetleJuice",
+  "title": "Beetle Juice",
+  "rarity": "Rare",
+  "usage": "Throw",
+  "target": "Single",
+  "description": "Enemy's attacks deal [blue]30%[/blue] less damage for the next [blue]4[/blue] turns."
+}

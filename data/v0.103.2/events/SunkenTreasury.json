@@ -1,0 +1,21 @@
+{
+  "class_name": "SunkenTreasury",
+  "title": "Sunken Treasury",
+  "description": "A path leads you into a partially submerged vault.\nThere are [blue]2[/blue] [gold]chests[/gold] but only [blue]1[/blue] [jitter][purple]brittle key[/purple][/jitter].\n\n[gold]The First Chest:[/gold] Shaking it, you get jingly-jangly noises. Bit of gold.\n[gold]The Second Chest:[/gold] Enormous, ornate, and clearly [red]cursed[/red]. Lots of gold!",
+  "options": [
+    {
+      "title": "First Chest",
+      "description": "Gain [blue]60[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Second Chest",
+      "description": "Gain [blue]333[/blue] [gold]Gold[/gold]. Receive [red]Greed[/red]."
+    }
+  ],
+  "acts": ["Underdocks"],
+  "conditions": [],
+  "notes": "Both [gold]gold[/gold] amounts are randomized at event creation: the [gold]First Chest[/gold] yields [blue]52[/blue]\u2013[blue]67[/blue] gold (base 60 \u00b18), and the [gold]Second Chest[/gold] yields [blue]303[/blue]\u2013[blue]363[/blue] gold (base 333 \u00b130). Choosing the Second Chest permanently adds the [red]Greed[/red] curse to your deck. After taking it, your character delivers a gold-fever monologue.",
+  "card_refs": [
+    {"class_name": "Greed", "title": "Greed", "slug": "greed"}
+  ]
+}

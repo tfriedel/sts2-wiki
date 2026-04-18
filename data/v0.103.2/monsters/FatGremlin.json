@@ -1,0 +1,32 @@
+{
+  "class_name": "FatGremlin",
+  "title": "Fat Gremlin",
+  "min_hp": 14,
+  "max_hp": 18,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SPAWNED_MOVE",
+      "title": "Spawned",
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": ["Wake up"]
+    },
+    {
+      "id": "FLEE_MOVE",
+      "title": "Flee",
+      "intents": [
+        {
+          "type": "escape"
+        }
+      ],
+      "effects": ["Attempt to escape the battle"]
+    }
+  ],
+  "move_pattern": "Starts stunned (Spawned). Then repeats Flee each turn, attempting to escape.",
+  "powers_on_spawn": [],
+  "notes": "A cowardly gremlin that wakes up on its first turn then immediately attempts to flee the battle. It will keep trying to escape on subsequent turns. The monster has different animation states based on whether it's awake or stunned."
+}

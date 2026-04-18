@@ -1,0 +1,36 @@
+{
+  "class_name": "Ovicopter",
+  "title": "Ovicopter",
+  "min_hp": 126,
+  "max_hp": 132,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "LAY_EGGS_MOVE",
+      "title": "Lay Eggs",
+      "intents": [{"type": "summon"}],
+      "effects": ["Summon 3 ToughEgg minions (with Minion 1 power)"]
+    },
+    {
+      "id": "SMASH_MOVE",
+      "title": "Smash",
+      "intents": [{"type": "attack", "damage": 17, "hits": 1}],
+      "effects": ["Deal 17 damage"]
+    },
+    {
+      "id": "TENDERIZER_MOVE",
+      "title": "Tenderizer",
+      "intents": [{"type": "attack", "damage": 8, "hits": 1}, {"type": "debuff"}],
+      "effects": ["Deal 8 damage", "Apply 2 Vulnerable"]
+    },
+    {
+      "id": "NUTRITIONAL_PASTE_MOVE",
+      "title": "Nutritional Paste",
+      "intents": [{"type": "buff"}],
+      "effects": ["Gain 4 Strength"]
+    }
+  ],
+  "move_pattern": "Starts with Lay Eggs -> Smash -> Tenderizer -> (branch: Lay Eggs if 3 or fewer allies alive, else Nutritional Paste) -> Smash -> Tenderizer -> ...",
+  "powers_on_spawn": [],
+  "notes": "Can only lay eggs if there are 3 or fewer other living allies. When at capacity (more than 3 living allies), uses Nutritional Paste instead. Both Lay Eggs and Nutritional Paste transition to Smash next."
+}

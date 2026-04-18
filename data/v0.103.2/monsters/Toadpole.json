@@ -1,0 +1,52 @@
+{
+  "class_name": "Toadpole",
+  "title": "Toadpole",
+  "min_hp": 22,
+  "max_hp": 26,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SPIKE_SPIT_MOVE",
+      "title": "Spike Spit",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Remove 2 Thorns from self",
+        "Deal 4 damage 3 times"
+      ]
+    },
+    {
+      "id": "WHIRL_MOVE",
+      "title": "Whirl",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 8
+        }
+      ],
+      "effects": [
+        "Deal 8 damage"
+      ]
+    },
+    {
+      "id": "SPIKEN_MOVE",
+      "title": "Spiken",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Gain 2 Thorns"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Whirl → Spiken → Spike Spit → Whirl. Front Toadpoles start at Spiken; back Toadpoles start at Whirl. Both enter the same loop.",
+  "powers_on_spawn": [],
+  "notes": "Toadpoles appear in pairs (front and back), staggered in the cycle. Spiken grants 2 Thorns to itself; Spike Spit removes those 2 Thorns while dealing 3 hits of damage, effectively spending the accumulated Thorns on a multi-hit attack."
+}

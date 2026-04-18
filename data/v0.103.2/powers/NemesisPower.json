@@ -1,0 +1,9 @@
+{
+  "class_name": "NemesisPower",
+  "title": "Nemesis",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "At the end of every other turn, gains [gold]Intangible[/gold] [blue]1[/blue].",
+  "smart_description": "At the end of every other turn, gains [gold]Intangible[/gold] [blue]1[/blue].",
+  "notes": "Alternates between applying Intangible 1 and removing any existing Intangible power. Tracks state with internal toggle."
+}

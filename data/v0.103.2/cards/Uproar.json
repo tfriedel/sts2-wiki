@@ -1,0 +1,22 @@
+{
+  "class_name": "Uproar",
+  "title": "Uproar",
+  "character": "Defect",
+  "energy_cost": 2,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "Single",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 5,
+      "upgraded_value": 7
+    }
+  ],
+  "description": "Deal 5 damage twice.\nPlay a random Attack from your [gold]Draw Pile[/gold].",
+  "upgraded_description": "Deal 7 damage twice.\nPlay a random Attack from your [gold]Draw Pile[/gold].",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "Plays a random Attack from your Draw Pile. Prioritizes attacks that are not marked Unplayable; if none are available, will play any Attack including unplayable ones."
+}

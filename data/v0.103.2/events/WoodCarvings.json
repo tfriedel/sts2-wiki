@@ -1,0 +1,28 @@
+{
+  "class_name": "WoodCarvings",
+  "title": "Wood Carvings",
+  "description": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",
+  "options": [
+    {
+      "title": "Bird",
+      "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Peck[/gold]."
+    },
+    {
+      "title": "Snake",
+      "description": "[gold]Enchant[/gold] [blue]1[/blue] card with [purple]Slither[/purple].",
+      "requires": "None of your cards can be Enchanted with [purple]Slither[/purple]."
+    },
+    {
+      "title": "Torus",
+      "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Toric Toughness[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": ["At least 1 removable Basic card in deck"],
+  "notes": "The [gold]Bird[/gold] and [gold]Torus[/gold] options let you select a transformable Basic card from your deck and permanently replace it with [gold]Peck[/gold] or [gold]Toric Toughness[/gold] respectively. The [purple]Snake[/purple] option lets you select any Slither-compatible card from your deck to enchant — it is not limited to Basic cards, but is locked if no card in your deck can receive the [purple]Slither[/purple] enchantment (excludes X-cost and Unplayable cards).",
+  "card_refs": [
+    {"class_name": "Peck", "title": "Peck", "slug": "peck"},
+    {"class_name": "ToricToughness", "title": "Toric Toughness", "slug": "toric-toughness"}
+  ],
+  "relic_refs": []
+}

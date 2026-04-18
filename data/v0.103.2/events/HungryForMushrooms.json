@@ -1,0 +1,23 @@
+{
+  "class_name": "HungryForMushrooms",
+  "title": "Hungry for Mushrooms",
+  "description": "[sine]How long has it been since you ate?\n...wait, what's that fantastic smell?[/sine]\n\nFollowing the scent, you reach a cozy campground with all manner of [green]tasty mushrooms[/green] being cooked! You don't consider the safety of eating these mushrooms because you are so hungry.\n(So hungry that you don't notice the dead adventurer)",
+  "options": [
+    {
+      "title": "Big Mushroom",
+      "description": "Obtain the [gold]Big Mushroom[/gold] relic."
+    },
+    {
+      "title": "Fragrant Mushroom",
+      "description": "Lose [red]15[/red] HP. Obtain the [gold]Fragrant Mushroom[/gold] relic."
+    }
+  ],
+  "acts": ["Glory"],
+  "conditions": [],
+  "notes": "The localization data contains an unused [gold]Medley[/gold] page — its description depicts a third mushroom option where a \"presumably dead\" adventurer attacks when you take their food, suggesting a third choice may have been planned but not yet implemented.",
+  "card_refs": [],
+  "relic_refs": [
+    {"class_name": "BigMushroom", "title": "Big Mushroom", "slug": "big-mushroom"},
+    {"class_name": "FragrantMushroom", "title": "Fragrant Mushroom", "slug": "fragrant-mushroom"}
+  ]
+}

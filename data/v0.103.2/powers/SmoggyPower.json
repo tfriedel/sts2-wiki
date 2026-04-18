@@ -1,0 +1,8 @@
+{
+  "class_name": "SmoggyPower",
+  "title": "Smoggy",
+  "power_type": "Debuff",
+  "stack_type": "Single",
+  "description": "You can only play [blue]1[/blue] Skill per turn.",
+  "smart_description": "You can only play [blue]1[/blue] Skill per turn."
+}

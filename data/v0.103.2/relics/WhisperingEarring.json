@@ -1,0 +1,8 @@
+{
+  "class_name": "WhisperingEarring",
+  "title": "Whispering Earring",
+  "rarity": "Ancient",
+  "description": "Gain 1 energy icon at the start of each turn. [red]Vakuu plays your first turn for you.[/red]",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "On the first turn of combat, automatically selects and plays cards from your hand (up to 13). Shows an approval message if fewer than 13 cards were played, or a warning if all 13 cards were exhausted. Increases maximum energy by 1."
+}

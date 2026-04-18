@@ -1,0 +1,9 @@
+{
+  "class_name": "GraspPower",
+  "title": "Grasp",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Whenever you play a card, lose [blue]1[/blue] Energy.",
+  "smart_description": "Whenever you play a card, lose [blue]1[/blue] Energy.",
+  "notes": "Applies a Weighted affliction to all cards in hand when applied and to cards that enter combat. Clears the affliction when the power is removed."
+}

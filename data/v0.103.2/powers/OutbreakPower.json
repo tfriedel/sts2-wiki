@@ -1,0 +1,8 @@
+{
+  "class_name": "OutbreakPower",
+  "title": "Outbreak",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Every [blue]10[/blue] times you apply [gold]Poison[/gold], deal damage to ALL enemies.",
+  "notes": "Tracks poison application count. When counter reaches 3 applications, deals damage to all enemies and resets the counter. Note: Description shows 10 but actual mechanic uses 3 — localization may be outdated for v0.101.0."
+}

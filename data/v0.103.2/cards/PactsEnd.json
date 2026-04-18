@@ -1,0 +1,26 @@
+{
+  "class_name": "PactsEnd",
+  "title": "Pact's End",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemy",
+  "keywords": [],
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 17,
+      "upgraded_value": 23
+    },
+    {
+      "type": "Cards",
+      "base_value": 3
+    }
+  ],
+  "description": "Can only be played if you have 3 or more cards in your [gold]Exhaust Pile[/gold].\nDeal 17 damage to ALL enemies.",
+  "upgraded_description": "Can only be played if you have 3 or more cards in your [gold]Exhaust Pile[/gold].\nDeal 23 damage to ALL enemies.",
+  "x_cost": false,
+  "referenced_powers": [],
+  "notes": "This card can only be played when your exhaust pile contains at least 3 cards."
+}

@@ -1,0 +1,30 @@
+{
+  "class_name": "ScrollOfBiting",
+  "title": "Scroll of Biting",
+  "min_hp": 32,
+  "max_hp": 39,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CHOMP",
+      "title": "Chomp",
+      "intents": [{"type": "attack", "damage": 16, "hits": 1}],
+      "effects": ["Deal 16 damage"]
+    },
+    {
+      "id": "CHEW",
+      "title": "Chew",
+      "intents": [{"type": "multi_attack", "damage": 6, "hits": 2}],
+      "effects": ["Deal 6 damage twice"]
+    },
+    {
+      "id": "MORE_TEETH",
+      "title": "More Teeth",
+      "intents": [{"type": "buff"}],
+      "effects": ["Gain 2 Strength"]
+    }
+  ],
+  "move_pattern": "Starts at one of Chomp, Chew, or More Teeth (randomly chosen via StarterMoveIdx). Chomp is followed by More Teeth; More Teeth is followed by Chew; Chew is followed by a random branch that picks either Chomp (cannot repeat) or Chew (weight 2).",
+  "powers_on_spawn": ["PaperCuts (2)"],
+  "notes": "Starting move is determined by StarterMoveIdx mod 3: 0=Chomp, 1=Chew, 2=More Teeth. Has two random skin variants."
+}

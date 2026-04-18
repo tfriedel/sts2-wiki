@@ -1,0 +1,73 @@
+{
+  "class_name": "KinPriest",
+  "title": "Kin Priest",
+  "min_hp": 199,
+  "max_hp": 199,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "ORB_OF_FRAILTY_MOVE",
+      "title": "Orb of Frailty",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Frail"
+      ]
+    },
+    {
+      "id": "ORB_OF_WEAKNESS_MOVE",
+      "title": "Orb of Weakness",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Weak"
+      ]
+    },
+    {
+      "id": "BEAM_MOVE",
+      "title": "Soul Beam",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 3,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 3 damage",
+        "3 hits"
+      ]
+    },
+    {
+      "id": "RITUAL_MOVE",
+      "title": "Dark Ritual",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 3 Strength to self"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles: Orb of Frailty → Orb of Weakness → Soul Beam → Dark Ritual",
+  "powers_on_spawn": [],
+  "notes": "Part of an encounter with KinFollower allies. Uses a special dialogue line only once when casting Dark Ritual. Responds to all followers' deaths with a reaction. Music parameter tracks follower deaths and KinPriest's own death, suggesting dynamic music during this multi-phase encounter."
+}

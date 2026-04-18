@@ -1,0 +1,59 @@
+{
+  "class_name": "LivingFog",
+  "title": "Living Fog",
+  "min_hp": 82,
+  "max_hp": 82,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "ADVANCED_GAS_MOVE",
+      "title": "Advanced Gas",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "Apply 1 Smoggy Power"
+      ]
+    },
+    {
+      "id": "BLOAT_MOVE",
+      "title": "Bloat",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 6
+        },
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Deal 6 damage",
+        "Summon Gas Bomb"
+      ]
+    },
+    {
+      "id": "SUPER_GAS_BLAST_MOVE",
+      "title": "Super Gas Blast",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        }
+      ],
+      "effects": [
+        "Deal 9 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Advanced Gas, then cycles through Bloat → Super Gas Blast → Bloat → Super Gas Blast...",
+  "powers_on_spawn": [],
+  "notes": "Summons GasBomb minions during Bloat moves. Applies Smoggy Power with Advanced Gas move."
+}

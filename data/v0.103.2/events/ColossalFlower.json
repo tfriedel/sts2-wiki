@@ -1,0 +1,21 @@
+{
+  "class_name": "ColossalFlower",
+  "title": "Colossal Flower",
+  "description": "There is a [green]colossal flower[/green] growing atop a [red][jitter]mountain of bones[/jitter][/red].\n\nAs its [sine][rainbow freq=0.3 sat=0.8 val=1]color-shifting petals[/rainbow][/sine] pulsate, you sense there is a [aqua]Powerful Cluster of Pollen[/aqua] in the center but the undulating petals are [red]razor sharp[/red] and unpredictable.\n\nYou could grab some of the [gold]golden nectar[/gold], but reaching the prize in the center is so tempting...",
+  "options": [
+    {
+      "title": "Extract Nectar",
+      "description": "Gain [blue]35[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Reach Deeper",
+      "description": "Enter deeper. Lose [red]5[/red] HP."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": ["All players have at least 19 HP"],
+  "notes": "This is a three-stage event. Each time you choose to go deeper, you take [red]unblockable[/red] HP loss and advance to the next stage with a higher reward.\n\n[gold]Stage 2[/gold] (after first dig, losing [red]5[/red] HP): Extract Nectar for [blue]75[/blue] [gold]Gold[/gold], or lose [red]6[/red] HP to go deeper.\n\n[gold]Stage 3[/gold] (after second dig, losing [red]6[/red] HP): Extract Nectar for [blue]135[/blue] [gold]Gold[/gold], or lose [red]7[/red] HP to obtain the [gold]Pollinous Core[/gold] relic.\n\nThe 19 HP minimum requirement ensures all players can survive the full [red]18 HP[/red] total cost of going all the way to the center.",
+  "relic_refs": [
+    {"class_name": "PollinousCore", "title": "Pollinous Core", "slug": "pollinous-core"}
+  ]
+}

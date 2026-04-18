@@ -1,0 +1,9 @@
+{
+  "class_name": "SurprisePower",
+  "title": "Surprise",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Something is off about this creature...",
+  "smart_description": "Something is off about this creature...",
+  "notes": "When the creature with this power dies, it spawns a SneakyGremlin and a FatGremlin. For each ThieveryPower the original creature had, a HeistPower is applied to the FatGremlin. The power also prevents combat from ending while active."
+}

@@ -1,0 +1,27 @@
+{
+  "class_name": "Resonance",
+  "title": "Resonance",
+  "character": "Ironclad",
+  "energy_cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AllEnemy",
+  "keywords": [],
+  "star_cost": 3,
+  "vars": [
+    {
+      "type": "Strength",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "description": "Gain +1 [gold]Strength[/gold]. ALL enemies lose 1 [gold]Strength[/gold].",
+  "upgraded_description": "Gain +2 [gold]Strength[/gold]. ALL enemies lose 1 [gold]Strength[/gold].",
+  "referenced_powers": [
+    {
+      "class_name": "StrengthPower",
+      "title": "Strength",
+      "slug": "strength"
+    }
+  ]
+}

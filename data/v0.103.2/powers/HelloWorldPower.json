@@ -1,0 +1,9 @@
+{
+  "class_name": "HelloWorldPower",
+  "title": "Hello World",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "At the start of your turn, add [blue]1[/blue] random Common card into your [gold]Hand[/gold].",
+  "smart_description": "At the start of your turn, add [blue]X[/blue] random Common cards into your [gold]Hand[/gold], where X equals your stack amount.",
+  "notes": "Counter-type power that scales with stack amount. The base example (stack = 1) adds a single card; each additional stack increases the number of cards added by 1. Cards are randomly selected from your character's unlocked Common card pool."
+}

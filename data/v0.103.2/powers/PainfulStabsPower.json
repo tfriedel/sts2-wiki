@@ -1,0 +1,9 @@
+{
+  "class_name": "PainfulStabsPower",
+  "title": "Painful Stabs",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Shuffle [blue]1[/blue] [gold]Wound[/gold] into your [gold]Discard Pile[/gold] each time you receive unblocked attack damage.",
+  "smart_description": "Shuffle [blue]{Amount}[/blue] [gold]{Amount:plural:Wound|Wounds}[/gold] into your [gold]Discard Pile[/gold] each time you receive unblocked attack damage.",
+  "notes": "Triggers on each unblocked attack received. Total wounds shuffled = Amount × number of unblocked hits received by a single player. Does not remove power when owner dies and does not remove other creatures from combat after they die."
+}

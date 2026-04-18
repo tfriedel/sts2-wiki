@@ -1,0 +1,8 @@
+{
+  "class_name": "NightmarePower",
+  "title": "Nightmare",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Add [blue]3[/blue] of a chosen card into your [gold]Hand[/gold] next turn.",
+  "smart_description": "Add {Amount:plural:a|[blue]{}[/blue]} [gold]{Card}[/gold] {Amount:plural:card|cards} into your [gold]Hand[/gold] next turn."
+}

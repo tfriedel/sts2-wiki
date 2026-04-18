@@ -1,0 +1,8 @@
+{
+  "class_name": "IronClub",
+  "title": "Iron Club",
+  "rarity": "Ancient",
+  "description": "Every [blue]4[/blue] cards you play, draw [blue]1[/blue] card.",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Triggers when you have played a multiple of 4 cards. Displays a counter showing progress toward the next trigger. Activates with a visual flash and sound effect when the draw is triggered."
+}

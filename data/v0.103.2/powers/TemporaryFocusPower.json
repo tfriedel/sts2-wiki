@@ -4,6 +4,6 @@
   "power_type": "Buff",
   "stack_type": "Counter",
   "description": "Gain [gold]Focus[/gold] until the end of this turn.",
-  "smart_description": "Gain [blue]Amount[/blue] [gold]Focus[/gold] until the end of this turn.",
-  "notes": "Abstract temporary power that wraps the Focus power. Applies or adjusts internal Focus based on the amount and origin source (Card, Potion, or Relic). The Amount value in smart description represents the current stack count, dynamically determined when the power is applied. Removed at end of turn while refunding Focus stacks."
+  "smart_description": "Gain [blue]{Amount}[/blue] [gold]Focus[/gold] until the end of this turn.",
+  "notes": "Abstract base class that applies temporary Focus until end of turn. Subclasses can override IsPositive to create debuff variants. The smart description shows the current stack amount."
 }

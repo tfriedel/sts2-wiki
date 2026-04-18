@@ -1,0 +1,98 @@
+{
+  "class_name": "TestSubject",
+  "title": "Test Subject #C{Count}",
+  "min_hp": 111,
+  "max_hp": 111,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "BITE_MOVE",
+      "title": "Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 22
+        }
+      ],
+      "effects": ["Deal 22 damage"]
+    },
+    {
+      "id": "SKULL_BASH_MOVE",
+      "title": "Skull Bash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 16
+        },
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": ["Deal 16 damage", "Apply 1 Vulnerable"]
+    },
+    {
+      "id": "MULTI_CLAW_MOVE",
+      "title": "Multi-Claw",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 11,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 11 damage per hit, 3+ hits (increases by 1 each use)"]
+    },
+    {
+      "id": "BIG_POUNCE_MOVE",
+      "title": "Big Pounce",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 45
+        }
+      ],
+      "effects": ["Deal 45 damage"]
+    },
+    {
+      "id": "PHASE3_LACERATE_MOVE",
+      "title": "Lacerate",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 11,
+          "hits": 3
+        }
+      ],
+      "effects": ["Deal 11 damage per hit, 3 hits"]
+    },
+    {
+      "id": "BURNING_GROWL_MOVE",
+      "title": "Burning Growl",
+      "intents": [
+        {
+          "type": "status"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Add 5 Burn to discard", "Gain 3 Strength"]
+    },
+    {
+      "id": "RESPAWN_MOVE",
+      "title": "Respawn",
+      "intents": [
+        {
+          "type": "heal"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": ["Recover with increased HP and apply phase-specific power"]
+    }
+  ],
+  "move_pattern": "Phase 1 (111 HP): Alternates Bite → Skull Bash → Bite → ... Until defeated. On death: Respawn with Phase 2 (212 HP) and use Multi-Claw repeating. On second death: Respawn with Phase 3 (313 HP) and cycle Lacerate → Big Pounce → Burning Growl → Lacerate → ...",
+  "powers_on_spawn": ["Adaptable", "Enrage +3"],
+  "notes": "Complex multi-phase adaptive boss. Starts with Adaptable power allowing 2 respawns. Multi-Claw uses increase in hit count each turn (starting at 3 hits, +1 per use). First respawn applies Painful Stabs power; second respawn applies Nemesis power. Burning Growl both damages player via Burn cards and increases TestSubject's Strength. Creature scales visually by 10% per respawn. All damage and power values reflect ascension-level (harder difficulty) scaling."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "FlankingPower",
+  "title": "Flanking",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Other allies deal [blue]2x[/blue] more attack damage to this enemy this turn.",
+  "smart_description": "Other allies deal [blue]2[/blue] times more attack damage to this enemy this turn.",
+  "notes": "Applied by allies to reduce an enemy's defenses for one turn. Increases all other allies' attack damage multiplier against the affected enemy. Removed at end of turn."
+}

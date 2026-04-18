@@ -1,0 +1,76 @@
+{
+  "class_name": "KnowledgeDemon",
+  "title": "Knowledge Demon",
+  "min_hp": 399,
+  "max_hp": 399,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CURSE_OF_KNOWLEDGE_MOVE",
+      "title": "Curse of Knowledge",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Force each target to choose a card to add to their deck",
+        "Disintegration (6/7/8 damage based on cycle) or status debuff (MindRot, Sloth, or WasteAway)"
+      ]
+    },
+    {
+      "id": "SLAP_MOVE",
+      "title": "Slap",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18
+        }
+      ],
+      "effects": [
+        "Deal 18 damage"
+      ]
+    },
+    {
+      "id": "KNOWLEDGE_OVERWHELMING_MOVE",
+      "title": "Knowledge Overwhelming",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 9,
+          "hits": 3
+        }
+      ],
+      "effects": [
+        "Deal 9 damage",
+        "3 hits",
+        "Enter burnt state"
+      ]
+    },
+    {
+      "id": "PONDER_MOVE",
+      "title": "Ponder",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13
+        },
+        {
+          "type": "heal"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 13 damage",
+        "Heal 30",
+        "Gain 3 Strength",
+        "Exit burnt state"
+      ]
+    }
+  ],
+  "move_pattern": "Cycles Curse of Knowledge → Slap → Knowledge Overwhelming → Ponder for 3 complete cycles. After the 3rd Ponder, enters a repeating pattern of Slap → Knowledge Overwhelming → Ponder.",
+  "powers_on_spawn": [],
+  "notes": "Knowledge Demon cycles through its move sequence with the Curse of Knowledge move available only for the first 3 cycles. Each Curse of Knowledge forces each player to choose between a Disintegration card (with scaling damage: 6 on cycle 1, 7 on cycle 2, 8 on cycle 3) or a status debuff card (MindRot, Sloth, or WasteAway depending on the cycle). The Knowledge Overwhelming attack triggers a burnt visual state which is maintained until Ponder is used. In multiplayer, Ponder heals 30 HP per player rather than a flat 30."
+}

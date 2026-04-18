@@ -1,0 +1,19 @@
+{
+  "class_name": "FakeMerchant",
+  "title": "The Merchant???",
+  "description": "Placeholder",
+  "options": [],
+  "acts": [
+    "Glory",
+    "Hive",
+    "Overgrowth",
+    "Underdocks"
+  ],
+  "conditions": [
+    "Act 2+ only",
+    "Single player only",
+    "At least 100 Gold or a Foul Potion in your inventory"
+  ],
+  "notes": "6 relics are randomly selected from a pool of 9 to stock the shop each visit. Relics cost [gold]50 Gold[/gold] each.\n\nThrowing a [purple]Foul Potion[/purple] starts a fight with The Merchant??? ([blue]175 HP[/blue]). Winning rewards [gold]The Merchant's Rug???[/gold] plus all unsold relics still stocked in the shop.",
+  "relic_refs": []
+}

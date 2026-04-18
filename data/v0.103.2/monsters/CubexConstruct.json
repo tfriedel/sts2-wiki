@@ -1,0 +1,54 @@
+{
+  "class_name": "CubexConstruct",
+  "title": "Cubex Construct",
+  "min_hp": 70,
+  "max_hp": 70,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "CHARGE_UP_MOVE",
+      "title": "Charge Up",
+      "intents": [
+        { "type": "buff" }
+      ],
+      "effects": ["Apply 2 Strength"]
+    },
+    {
+      "id": "REPEATER_MOVE",
+      "title": "Repeater Blast",
+      "intents": [
+        { "type": "attack", "damage": 8 },
+        { "type": "buff" }
+      ],
+      "effects": ["Deal 8 damage", "Apply 2 Strength"]
+    },
+    {
+      "id": "REPEATER_MOVE_2",
+      "title": "Repeater Blast",
+      "intents": [
+        { "type": "attack", "damage": 8 },
+        { "type": "buff" }
+      ],
+      "effects": ["Deal 8 damage", "Apply 2 Strength"]
+    },
+    {
+      "id": "EXPEL_BLAST",
+      "title": "Expel Blast",
+      "intents": [
+        { "type": "multi_attack", "damage": 6, "hits": 2 }
+      ],
+      "effects": ["Deal 6 damage", "2 hits"]
+    },
+    {
+      "id": "SUBMERGE_MOVE",
+      "title": "Submerge",
+      "intents": [
+        { "type": "block", "amount": 15 }
+      ],
+      "effects": ["Gain 15 Block"]
+    }
+  ],
+  "move_pattern": "Starts with Charge Up. Then cycles: Repeater Blast → Repeater Blast → Expel Blast → Repeater Blast → Repeater Blast → Expel Blast … repeating indefinitely. Submerge is in the state machine and transitions back to Charge Up if used, but nothing in the normal chain feeds into it — its activation trigger is external.",
+  "powers_on_spawn": ["Artifact"],
+  "notes": "Gains 13 [color=cyan]Block[/color] and 1 [color=gold]Artifact[/color] when entering combat. Both Charge Up and each Repeater Blast apply 2 [color=red]Strength[/color] to itself, causing attack damage to ramp quickly over a prolonged fight. Submerge is defined in the move list with a follow-up back to Charge Up, but no other state transitions into it — it is likely triggered by an external encounter mechanic not visible in this source file."
+}

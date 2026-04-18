@@ -1,0 +1,21 @@
+{
+  "class_name": "SummonForth",
+  "title": "Summon Forth",
+  "character": "Regent",
+  "energy_cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "keywords": ["Retain"],
+  "vars": [
+    {
+      "type": "Forge",
+      "base_value": 8,
+      "upgraded_value": 11
+    }
+  ],
+  "description": "[gold]Forge[/gold] 8.\nPut [gold]Sovereign Blade[/gold] into your [gold]Hand[/gold] from anywhere.",
+  "upgraded_description": "[gold]Forge[/gold] 11.\nPut [gold]Sovereign Blade[/gold] into your [gold]Hand[/gold] from anywhere.",
+  "referenced_powers": [],
+  "notes": "Pulls all Sovereign Blade cards from any pile except hand into hand."
+}

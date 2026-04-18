@@ -1,0 +1,88 @@
+{
+  "class_name": "LagavulinMatriarch",
+  "title": "Lagavulin Matriarch",
+  "min_hp": 233,
+  "max_hp": 233,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SLEEP_MOVE",
+      "title": "Sleep",
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": []
+    },
+    {
+      "id": "SLASH_MOVE",
+      "title": "Slash",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 21
+        }
+      ],
+      "effects": [
+        "Deal 21 damage"
+      ]
+    },
+    {
+      "id": "SLASH2_MOVE",
+      "title": "Slash 2",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 14
+        },
+        {
+          "type": "block",
+          "amount": 14
+        }
+      ],
+      "effects": [
+        "Deal 14 damage",
+        "Gain 14 Block"
+      ]
+    },
+    {
+      "id": "DISEMBOWEL_MOVE",
+      "title": "Disembowel",
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 10,
+          "hits": 2
+        }
+      ],
+      "effects": [
+        "Deal 10 damage",
+        "2 hits"
+      ]
+    },
+    {
+      "id": "SOUL_SIPHON_MOVE",
+      "title": "Soul Siphon",
+      "intents": [
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply -2 Strength to player",
+        "Apply -2 Dexterity to player",
+        "Apply 2 Strength"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Sleep. When asleep (has Asleep power), repeats Sleep. When awake, cycles: Slash → Disembowel → Slash 2 → Soul Siphon → Slash",
+  "powers_on_spawn": [
+    "Plating (12)",
+    "Asleep (3)"
+  ],
+  "notes": "Complex sleep/wake mechanic: Lagavulin Matriarch starts asleep with the Asleep and Plating powers. While asleep, she only uses her Sleep move. When taking damage, if her HP drops to 50% or below, her eyes visually open (animation change) but she remains mechanically in her asleep state. The move pattern is conditional on the Asleep power state. Soul Siphon reduces the player's Strength and Dexterity by 2 each while increasing her own Strength by 2, making her progressively more dangerous and the player weaker."
+}

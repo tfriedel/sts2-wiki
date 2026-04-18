@@ -1,0 +1,8 @@
+{
+  "class_name": "HungerPower",
+  "title": "Hunger",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Whenever you play an Attack or Skill, it is [gold]Exhausted[/gold].",
+  "smart_description": "Whenever you play an Attack or Skill, it is [gold]Exhausted[/gold]."
+}

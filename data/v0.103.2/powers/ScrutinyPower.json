@@ -1,0 +1,8 @@
+{
+  "class_name": "ScrutinyPower",
+  "title": "Scrutiny",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "You cannot draw additional cards during your turn.",
+  "smart_description": "You cannot draw additional cards during your turn."
+}

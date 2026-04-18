@@ -1,0 +1,22 @@
+{
+  "class_name": "TheLanternKey",
+  "title": "The Lantern Key",
+  "description": "You come upon a faintly glowing key and go to pick it up.\n\n\u201cBeen looking all over for that key! Now if you don\u2019t mind...\u201d\n\n This person looks like bad news but maybe it\u2019s not good to be judgy.",
+  "options": [
+    {
+      "title": "Return the Key",
+      "description": "Gain [blue]100[/blue] [gold]Gold[/gold]."
+    },
+    {
+      "title": "Keep the Key",
+      "description": "Fight to obtain the Key."
+    }
+  ],
+  "acts": ["Hive"],
+  "conditions": [],
+  "notes": "Choosing [gold]Keep the Key[/gold] transitions to a second page where you confirm the fight. You then enter combat against the Mysterious Knight. Winning rewards the [blue]Lantern Key[/blue] card as a special card reward. The event does not resume after combat ends.",
+  "card_refs": [
+    {"class_name": "LanternKey", "title": "Lantern Key", "slug": "lantern-key"}
+  ],
+  "relic_refs": []
+}

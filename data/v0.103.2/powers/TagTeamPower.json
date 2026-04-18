@@ -1,0 +1,9 @@
+{
+  "class_name": "TagTeamPower",
+  "title": "Tag Team",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "The next Attack another player plays on the enemy is played an extra time.",
+  "smart_description": "The next Attack another player plays on the enemy is played an extra time.",
+  "notes": "Triggers when another player plays an Attack card on the creature with this power. Consumes itself after modifying the play count."
+}

@@ -1,0 +1,8 @@
+{
+  "class_name": "RainbowRing",
+  "title": "Rainbow Ring",
+  "rarity": "Rare",
+  "description": "The first time you play an Attack, Skill, and Power each turn, gain [blue]1[/blue] [gold]Strength[/gold] and [blue]1[/blue] [gold]Dexterity[/gold].",
+  "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+  "notes": "Tracks card types played each turn. Triggers only once per turn when at least one Attack, one Skill, and one Power have been played. Both Strength and Dexterity are applied simultaneously."
+}

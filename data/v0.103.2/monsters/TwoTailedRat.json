@@ -1,0 +1,62 @@
+{
+  "class_name": "TwoTailedRat",
+  "title": "Two-Tailed Rat",
+  "min_hp": 18,
+  "max_hp": 22,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "SCRATCH_MOVE",
+      "title": "Scratch",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 9
+        }
+      ],
+      "effects": [
+        "Deal 9 damage"
+      ]
+    },
+    {
+      "id": "DISEASE_BITE_MOVE",
+      "title": "Disease Bite",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        }
+      ],
+      "effects": [
+        "Deal 7 damage"
+      ]
+    },
+    {
+      "id": "SCREECH_MOVE",
+      "title": "Screech",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply 1 Frail"
+      ]
+    },
+    {
+      "id": "CALL_FOR_BACKUP_MOVE",
+      "title": "Call for Backup",
+      "intents": [
+        {
+          "type": "summon"
+        }
+      ],
+      "effects": [
+        "Summon another Two-Tailed Rat"
+      ]
+    }
+  ],
+  "move_pattern": "Randomly cycles between Scratch, Disease Bite, Screech, and Call for Backup based on a weighted distribution.",
+  "powers_on_spawn": [],
+  "notes": "This monster can summon additional copies of itself via Call for Backup. Summoning is restricted by two mechanics: (1) a 2-turn cooldown (TurnsUntilSummonable starts at 2 and decrements each turn), and (2) a hard limit of 3 total summons (tracked by CallForBackupCount). When a rat summons another, all rats on the battlefield synchronize their CallForBackupCount to prevent excessive summoning. Call for Backup also cannot be used if a teammate already has it queued as their next move. The monster's appearance is randomized with different barnacle and head skins."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "MonologuePower",
+  "title": "Monologue",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card this turn, gain [blue]1[/blue] [gold]Strength[/gold] this turn.",
+  "smart_description": "Whenever you play a card this turn, gain [blue]1[/blue] [gold]Strength[/gold] this turn.\nCurrently granting [blue]0[/blue] [gold]Strength[/gold].",
+  "notes": "Stack type is conditional: displays as Counter when Strength has been applied (StrengthApplied > 0), otherwise None. The power grants 1 Strength per card played this turn and removes itself at turn end, also removing all granted Strength."
+}

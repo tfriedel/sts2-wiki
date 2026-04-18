@@ -1,0 +1,7 @@
+{
+  "class_name": "StormPower",
+  "title": "Storm",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a Power, [gold]Channel[/gold] [blue]1[/blue] [gold]Lightning[/gold]."
+}

@@ -1,0 +1,21 @@
+{
+  "class_name": "UnrestSite",
+  "title": "Unrest Site",
+  "description": "You find a secluded [gold]Rest Site[/gold] and start a [orange]fire[/orange] to get some rest.\nOr so you thought.\n\nOnce the fire is started, it begins to swell, reaching not upwards but [sine]sideways[/sine] towards a grove of [purple]oil-seeping trees[/purple].\n\nShould you try resting anyways?",
+  "options": [
+    {
+      "title": "Rest Anyways",
+      "description": "[green]Heal to full HP.[/green] Receive [red]Poor Sleep[/red]."
+    },
+    {
+      "title": "Kill the Trees",
+      "description": "Lose [red]8[/red] Max HP. Obtain a random [gold]Relic[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": ["All players at 70% HP or below"],
+  "notes": "The [green]Rest Anyways[/green] option heals each player by exactly the amount needed to reach full HP (MaxHp - CurrentHp). The [red]Poor Sleep[/red] curse card is added to the player's deck. The [gold]Kill the Trees[/gold] option grants a random relic pulled from the front of the relic pool.",
+  "card_refs": [
+    {"class_name": "PoorSleep", "title": "Poor Sleep", "slug": "poor-sleep"}
+  ]
+}

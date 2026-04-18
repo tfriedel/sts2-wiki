@@ -1,0 +1,37 @@
+{
+  "class_name": "DampCultist",
+  "title": "Damp Cultist",
+  "min_hp": 52,
+  "max_hp": 54,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "INCANTATION_MOVE",
+      "title": "Incantation",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 6 Ritual"
+      ]
+    },
+    {
+      "id": "DARK_STRIKE_MOVE",
+      "title": "Dark Strike",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 3
+        }
+      ],
+      "effects": [
+        "Deal 3 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Incantation → Dark Strike (repeats)",
+  "powers_on_spawn": [],
+  "notes": "The Damp Cultist casts Incantation to apply Ritual on its first turn, then repeatedly uses Dark Strike for the remainder of combat."
+}

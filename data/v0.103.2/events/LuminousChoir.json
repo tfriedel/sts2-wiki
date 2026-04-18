@@ -1,0 +1,26 @@
+{
+  "class_name": "LuminousChoir",
+  "title": "Luminous Choir",
+  "description": "You stumble upon a clearing bathed in an unnatural blue glow. Towering mushrooms pulse with bioluminescence, their caps swollen and glistening. As you approach, the fungi begin to emit [sine][purple]haunting, melodic tones[/purple][/sine] that reverberate throughout your chest.\n\nYou notice something gleaming, embedded within the largest mushroom's flesh, [sine]pulsing[/sine] in rhythm with the fungal song.",
+  "options": [
+    {
+      "title": "Reach into the Flesh",
+      "description": "Remove [blue]2[/blue] cards from your [gold]Deck[/gold]. Add [red]Spore Mind[/red] to your [gold]Deck[/gold]."
+    },
+    {
+      "title": "Offer Tribute",
+      "description": "Pay [red]100\u2013149[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold].",
+      "requires": "Requires [blue]100\u2013149[/blue] [gold]Gold[/gold]."
+    }
+  ],
+  "acts": ["Overgrowth"],
+  "conditions": [
+    "All players must have at least 100\u2013149 Gold (randomized)",
+    "Relic pool must have available relics"
+  ],
+  "notes": "The [gold]Gold[/gold] cost is randomized when the event loads: it starts at [gold]149[/gold] and is reduced by 0\u201349, giving a final cost of [gold]100\u2013149[/gold] Gold. The same value is used for both the spawn check (all players must have it) and the option cost.\n\n[red]Reach into the Flesh[/red] gives no relic — you remove [blue]2[/blue] cards and receive only the [red]Spore Mind[/red] curse in return. The only way to obtain a relic from this event is via [gold]Offer Tribute[/gold].\n\nThe [gold]Offer Tribute[/gold] relic is pulled from the front of the player's relic grab bag (the run's randomized relic pool), so it is not a free choice of any specific relic.",
+  "card_refs": [
+    {"class_name": "SporeMind", "title": "Spore Mind", "slug": "spore-mind"}
+  ],
+  "relic_refs": []
+}

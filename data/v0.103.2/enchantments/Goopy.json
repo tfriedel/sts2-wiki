@@ -1,0 +1,19 @@
+{
+  "class_name": "Goopy",
+  "title": "Goopy",
+  "description": "This card gains [gold]Exhaust[/gold]. When played, permanently increase this card's [gold]Block[/gold] by [blue]1[/blue].",
+  "extra_card_text": "Permanently increase this card's [gold]Block[/gold] by [blue]1[/blue].",
+  "card_type": "Any",
+  "restrictions": ["Defend cards only (must have Defend tag)"],
+  "stackable": false,
+  "show_amount": false,
+  "sources": [
+    {
+      "type": "relic",
+      "class_name": "PaelsClaw",
+      "title": "Pael's Claw",
+      "amount": 1
+    }
+  ],
+  "notes": "On enchant, the card gains the Exhaust keyword. The enchantment tracks an Amount starting at 1; each time the enchanted card is played, Amount increments by 1 (both in combat and in the deck). The block bonus applied is Amount\u22121, so the card permanently gains +1 block for each time it has been played."
+}

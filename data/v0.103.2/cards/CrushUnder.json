@@ -1,0 +1,44 @@
+{
+  "class_name": "CrushUnder",
+  "energy_cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemies",
+  "vars": [
+    {
+      "type": "Damage",
+      "base_value": 7,
+      "upgraded_value": 8
+    },
+    {
+      "type": "StrengthLoss",
+      "base_value": 1,
+      "upgraded_value": 2
+    }
+  ],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "amount": 1
+    },
+    {
+      "var": "StrengthLoss",
+      "amount": 1
+    }
+  ],
+  "referenced_powers": [
+    {
+      "class_name": "CRUSH_UNDER_POWER",
+      "title": "Crush Under",
+      "slug": "crush-under"
+    }
+  ],
+  "character": "Regent",
+  "loc_key": "CRUSH_UNDER",
+  "title": "Crush Under",
+  "description_template": "Deal {Damage:diff()} damage to ALL enemies. All enemies lose {StrengthLoss:diff()} [gold]Strength[/gold] this turn.",
+  "description_plain": "Deal 7 damage to ALL enemies. All enemies lose 1 Strength this turn.",
+  "description_html": "Deal 7 damage to ALL enemies. All enemies lose 1 <span class=\"desc-gold\">Strength</span> this turn.",
+  "upgraded_description_plain": "Deal 8 damage to ALL enemies. All enemies lose 2 Strength this turn.",
+  "upgraded_description_html": "Deal 8 damage to ALL enemies. All enemies lose 2 <span class=\"desc-gold\">Strength</span> this turn."
+}

@@ -1,0 +1,9 @@
+{
+  "class_name": "AfterimagePower",
+  "title": "Afterimage",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card, gain [blue]1[/blue] [gold]Block[/gold].",
+  "smart_description": "Whenever you play a card, gain [gold]Block[/gold] equal to the current stack count.",
+  "notes": "Counter-type power that increments each time a card is played. The Block gained equals the current stack counter value, making the benefit scale with the number of cards played."
+}

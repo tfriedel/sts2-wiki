@@ -1,0 +1,9 @@
+{
+  "class_name": "ArtifactPower",
+  "title": "Artifact",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "[gold]Negates[/gold] debuffs.",
+  "smart_description": "[gold]Negates[/gold] debuffs equal to its counter value.",
+  "notes": "Decrements by 1 after each debuff negation. Only negates visible debuffs applied to the owner."
+}

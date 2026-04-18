@@ -1,0 +1,37 @@
+{
+  "class_name": "CalcifiedCultist",
+  "title": "Calcified Cultist",
+  "min_hp": 39,
+  "max_hp": 42,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "INCANTATION_MOVE",
+      "title": "Incantation",
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Ritual"
+      ]
+    },
+    {
+      "id": "DARK_STRIKE_MOVE",
+      "title": "Dark Strike",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        }
+      ],
+      "effects": [
+        "Deal 11 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Incantation, then cycles Dark Strike repeatedly",
+  "powers_on_spawn": [],
+  "notes": "Builds Ritual stacks with Incantation, then attacks repeatedly. Ritual Power grants increasing benefits from each stack."
+}

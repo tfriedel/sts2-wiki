@@ -1,0 +1,8 @@
+{
+  "class_name": "HellraiserPower",
+  "title": "Hellraiser",
+  "power_type": "Buff",
+  "stack_type": "Single",
+  "description": "Whenever you draw a card containing \"Strike\", it is played against a random enemy.",
+  "smart_description": "Whenever you draw a card containing \"Strike\", it is played against a random enemy."
+}

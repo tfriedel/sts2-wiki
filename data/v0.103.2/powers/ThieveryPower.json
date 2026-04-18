@@ -1,0 +1,9 @@
+{
+  "class_name": "ThieveryPower",
+  "title": "Thievery",
+  "power_type": "Buff",
+  "stack_type": "Counter",
+  "description": "Steals [gold]Gold[/gold] when Attacking.",
+  "smart_description": "Steals [blue]total gold stolen[/blue] [gold]Gold[/gold] when Attacking.",
+  "notes": "Counter type power that tracks total gold stolen from enemies. The Amount variable in the smart description shows the current total gold stolen and increases each time this power triggers."
+}

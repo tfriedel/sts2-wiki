@@ -1,0 +1,9 @@
+{
+  "class_name": "TenderPower",
+  "title": "Tender",
+  "power_type": "Debuff",
+  "stack_type": "Counter",
+  "description": "Whenever you play a card, lose [blue]1[/blue] [gold]Strength[/gold] and [blue]1[/blue] [gold]Dexterity[/gold] this turn.",
+  "smart_description": "Whenever you play a card, lose [blue]1[/blue] [gold]Strength[/gold] and [blue]1[/blue] [gold]Dexterity[/gold] this turn.",
+  "notes": "Counter power that tracks the number of cards played each turn. At the end of your turn, gains back the same amount of Strength and Dexterity that was lost, resetting the counter."
+}
