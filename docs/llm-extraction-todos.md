@@ -20,7 +20,7 @@
 - [x] Process all monsters for v0.101.0 (121/121 — 100%)
 - [x] Process all monsters for v0.100.0 (120/120 — 100%)
 - [x] Review and fix issues (1 issue: DeprecatedMonster 0 HP, expected)
-- [~] Process monsters for v0.99.1 (75/121 — 62%) and v0.98.2 (64/121 — 53%) — 380/484 total (79%)
+- [x] Process monsters for v0.99.1 (121/121 — 100%) and v0.98.2 (120/120 — 100%) — 482/482 total (100%)
 
 ## Enchantments
 - [x] Write enchantment extraction prompt
