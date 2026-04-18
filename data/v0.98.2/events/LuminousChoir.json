@@ -15,8 +15,8 @@
   ],
   "acts": ["Overgrowth"],
   "conditions": [
-    "At least 100 Gold",
-    "Must have available Relics"
+    "All players must have at least 100-149 Gold",
+    "All players must have available relics"
   ],
   "notes": "The Offer Tribute cost is randomized each event occurrence, varying between 100-149 Gold (base cost of 149 reduced by 0-49). The Reach into the Flesh option adds Spore Mind to your deck while removing 2 other cards.",
   "card_refs": [

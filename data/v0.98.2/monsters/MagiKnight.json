@@ -1,0 +1,79 @@
+{
+  "class_name": "MagiKnight",
+  "title": "Magi Knight",
+  "min_hp": 89,
+  "max_hp": 89,
+  "is_companion": false,
+  "moves": [
+    {
+      "id": "FIRST_POWER_SHIELD_MOVE",
+      "title": "Power Shield",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Deal 7 damage",
+        "Gain 9 Block"
+      ]
+    },
+    {
+      "id": "DAMPEN_MOVE",
+      "title": "Dampen",
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply Dampen"
+      ]
+    },
+    {
+      "id": "PREP_MOVE",
+      "title": "Prep",
+      "intents": [
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Gain 9 Block"
+      ]
+    },
+    {
+      "id": "MAGIC_BOMB",
+      "title": "Magic Bomb",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 40
+        }
+      ],
+      "effects": [
+        "Deal 40 damage"
+      ]
+    },
+    {
+      "id": "RAM_MOVE",
+      "title": "Ram",
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11
+        }
+      ],
+      "effects": [
+        "Deal 11 damage"
+      ]
+    }
+  ],
+  "move_pattern": "Starts with Power Shield (deals damage + gains block), then applies Dampen. Cycles: Ram → Prep (gains block) → Magic Bomb",
+  "powers_on_spawn": [],
+  "notes": "Dampen power reduces damage taken by targets. Magi Knight balances between offensive attacks (Ram, Magic Bomb) and defensive abilities (Power Shield, Prep)."
+}
