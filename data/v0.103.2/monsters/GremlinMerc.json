@@ -12,11 +12,13 @@
         {
           "type": "multi_attack",
           "damage": 8,
-          "hits": 2
+          "hits": 2,
+          "damage_base": 7,
+          "ascension": 8
         }
       ],
       "effects": [
-        "Deal 8 damage",
+        "Deal 7/8 damage",
         "2 hits",
         "Steal a card from each player's deck"
       ]
@@ -28,14 +30,16 @@
         {
           "type": "multi_attack",
           "damage": 7,
-          "hits": 2
+          "hits": 2,
+          "damage_base": 6,
+          "ascension": 8
         },
         {
           "type": "debuff"
         }
       ],
       "effects": [
-        "Deal 7 damage",
+        "Deal 6/7 damage",
         "2 hits",
         "Apply 2 Weak",
         "Steal a card from each player's deck"
@@ -47,23 +51,28 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 9
+          "damage": 9,
+          "damage_base": 8,
+          "ascension": 8
         },
         {
           "type": "buff"
         }
       ],
       "effects": [
-        "Deal 9 damage",
+        "Deal 8/9 damage",
         "Apply 2 Strength to self",
         "Steal a card from each player's deck"
       ]
     }
   ],
-  "move_pattern": "Cycles: Gimme → Double Smash → Hehe",
+  "move_pattern": "Cycles: Gimme \u2192 Double Smash \u2192 Hehe",
   "powers_on_spawn": [
     "Surprise",
     "Thievery (20 stacks to each player)"
   ],
-  "notes": "The Gremlin Merc steals cards from each player's deck after every attack via Thievery power. On its first turn, it speaks banter text with colored formatting."
+  "notes": "The Gremlin Merc steals cards from each player's deck after every attack via Thievery power. On its first turn, it speaks banter text with colored formatting.",
+  "min_hp_base": 47,
+  "max_hp_base": 49,
+  "hp_ascension": 8
 }

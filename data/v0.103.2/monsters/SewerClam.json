@@ -8,17 +8,37 @@
     {
       "id": "PRESSURIZE_MOVE",
       "title": "Pressurize",
-      "intents": [{"type": "buff"}],
-      "effects": ["Gain 4 Strength"]
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Gain 4 Strength"
+      ]
     },
     {
       "id": "JET_MOVE",
       "title": "Jet",
-      "intents": [{"type": "attack", "damage": 11, "hits": 1}],
-      "effects": ["Deal 11 damage"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 11,
+          "hits": 1,
+          "damage_base": 10,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 10/11 damage"
+      ]
     }
   ],
   "move_pattern": "Starts with Jet, then alternates: Pressurize, Jet, Pressurize, Jet... (Pressurize follows Jet, Jet follows Pressurize).",
-  "powers_on_spawn": ["Plating (9)"],
-  "notes": "Plating amount at spawn is 9 on ascension (ToughEnemies level), base 8."
+  "powers_on_spawn": [
+    "Plating (9)"
+  ],
+  "notes": "Plating amount at spawn is 9 on ascension (ToughEnemies level), base 8.",
+  "min_hp_base": 56,
+  "hp_ascension": 8
 }

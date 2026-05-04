@@ -13,7 +13,9 @@
           "type": "summon"
         }
       ],
-      "effects": ["Summon Parafright"]
+      "effects": [
+        "Summon Parafright"
+      ]
     },
     {
       "id": "PIERCING_GAZE_MOVE",
@@ -21,10 +23,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 11
+          "damage": 11,
+          "damage_base": 10,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 11 damage"]
+      "effects": [
+        "Deal 10/11 damage"
+      ]
     },
     {
       "id": "SAIL_MOVE",
@@ -34,7 +40,9 @@
           "type": "buff"
         }
       ],
-      "effects": ["Apply 3 Strength to all allies"]
+      "effects": [
+        "Apply 3 Strength to all allies"
+      ]
     },
     {
       "id": "HARDENING_STRIKE_MOVE",
@@ -42,17 +50,24 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 7
+          "damage": 7,
+          "damage_base": 6,
+          "ascension": 9
         },
         {
           "type": "block",
           "amount": 7
         }
       ],
-      "effects": ["Deal 7 damage", "Gain 7 Block"]
+      "effects": [
+        "Deal 6/7 damage",
+        "Gain 6/7 Block"
+      ]
     }
   ],
   "move_pattern": "Starts with Illusion (used only at the start of combat). Then randomly cycles through Piercing Gaze, Wail, and Hardening Strike, never repeating the same move twice in a row.",
   "powers_on_spawn": [],
-  "notes": "Illusion is used only once at the start of combat and summons a Parafright ally. Wail applies 3 Strength to all of The Obscura's allies on the field (including the summoned Parafright). Note: the source code names this move SAIL_MOVE (apparent typo for WAIL_MOVE), but localization correctly labels it Wail."
+  "notes": "Illusion is used only once at the start of combat and summons a Parafright ally. Wail applies 3 Strength to all of The Obscura's allies on the field (including the summoned Parafright). Note: the source code names this move SAIL_MOVE (apparent typo for WAIL_MOVE), but localization correctly labels it Wail.",
+  "min_hp_base": 123,
+  "hp_ascension": 8
 }

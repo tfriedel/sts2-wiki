@@ -21,11 +21,13 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 21
+          "damage": 21,
+          "damage_base": 19,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 21 damage"
+        "Deal 19/21 damage"
       ]
     },
     {
@@ -34,7 +36,9 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 14
+          "damage": 14,
+          "damage_base": 12,
+          "ascension": 9
         },
         {
           "type": "block",
@@ -42,8 +46,8 @@
         }
       ],
       "effects": [
-        "Deal 14 damage",
-        "Gain 14 Block"
+        "Deal 12/14 damage",
+        "Gain 12/14 Block"
       ]
     },
     {
@@ -53,11 +57,13 @@
         {
           "type": "multi_attack",
           "damage": 10,
-          "hits": 2
+          "hits": 2,
+          "damage_base": 9,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 10 damage",
+        "Deal 9/10 damage",
         "2 hits"
       ]
     },
@@ -79,10 +85,12 @@
       ]
     }
   ],
-  "move_pattern": "Starts with Sleep. When asleep (has Asleep power), repeats Sleep. When awake, cycles: Slash → Disembowel → Slash 2 → Soul Siphon → Slash",
+  "move_pattern": "Starts with Sleep. When asleep (has Asleep power), repeats Sleep. When awake, cycles: Slash \u2192 Disembowel \u2192 Slash 2 \u2192 Soul Siphon \u2192 Slash",
   "powers_on_spawn": [
     "Plating (12)",
     "Asleep (3)"
   ],
-  "notes": "Complex sleep/wake mechanic: Lagavulin Matriarch starts asleep with the Asleep and Plating powers. While asleep, she only uses her Sleep move. When taking damage, if her HP drops to 50% or below, her eyes visually open (animation change) but she remains mechanically in her asleep state. The move pattern is conditional on the Asleep power state. Soul Siphon reduces the player's Strength and Dexterity by 2 each while increasing her own Strength by 2, making her progressively more dangerous and the player weaker."
+  "notes": "Complex sleep/wake mechanic: Lagavulin Matriarch starts asleep with the Asleep and Plating powers. While asleep, she only uses her Sleep move. When taking damage, if her HP drops to 50% or below, her eyes visually open (animation change) but she remains mechanically in her asleep state. The move pattern is conditional on the Asleep power state. Soul Siphon reduces the player's Strength and Dexterity by 2 each while increasing her own Strength by 2, making her progressively more dangerous and the player weaker.",
+  "min_hp_base": 222,
+  "hp_ascension": 8
 }

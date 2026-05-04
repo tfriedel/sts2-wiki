@@ -11,10 +11,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 15
+          "damage": 15,
+          "damage_base": 13,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 15 damage"]
+      "effects": [
+        "Deal 13/15 damage"
+      ]
     },
     {
       "id": "BURROW_MOVE",
@@ -28,7 +32,10 @@
           "amount": 37
         }
       ],
-      "effects": ["Apply 1 Burrowed", "Gain 37 Block"]
+      "effects": [
+        "Apply 1 Burrowed",
+        "Gain 32/37 Block"
+      ]
     },
     {
       "id": "BELOW_MOVE_1",
@@ -36,10 +43,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 26
+          "damage": 26,
+          "damage_base": 23,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 26 damage"]
+      "effects": [
+        "Deal 26 damage"
+      ]
     },
     {
       "id": "DIZZY_MOVE",
@@ -54,5 +65,7 @@
   ],
   "move_pattern": "Starts with Bite, then Burrow (going underground), then Attack from Below which loops indefinitely. If the Dizzy state is triggered externally (e.g. by a stun effect), it does nothing that turn and returns to Bite.",
   "powers_on_spawn": [],
-  "notes": "After Burrow, the Tunneler gains the Burrowed power and significant Block, then attacks from underground each subsequent turn. When the Burrowed power expires, an Emerging Strike animation plays (UnburrowAttack trigger), though this is not a separate move state. The localization includes an 'Emerging Strike' entry (STRIKE) which corresponds to this unburrow animation. DIZZY_MOVE shows a stun intent but performs no action — it is entered when the monster is stunned and then transitions back to Bite."
+  "notes": "After Burrow, the Tunneler gains the Burrowed power and significant Block, then attacks from underground each subsequent turn. When the Burrowed power expires, an Emerging Strike animation plays (UnburrowAttack trigger), though this is not a separate move state. The localization includes an 'Emerging Strike' entry (STRIKE) which corresponds to this unburrow animation. DIZZY_MOVE shows a stun intent but performs no action \u2014 it is entered when the monster is stunned and then transitions back to Bite.",
+  "min_hp_base": 87,
+  "hp_ascension": 8
 }

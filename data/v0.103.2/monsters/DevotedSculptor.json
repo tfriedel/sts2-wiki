@@ -23,15 +23,19 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 15
+          "damage": 15,
+          "damage_base": 12,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 15 damage"
+        "Deal 12/15 damage"
       ]
     }
   ],
   "move_pattern": "Starts with Forbidden Incantation (applies 9 Ritual). Then repeatedly uses Savage attack.",
   "powers_on_spawn": [],
-  "notes": "The Devoted Sculptor builds Ritual stacks on the first move, increasing its damage output. After the initial Ritual application, it attacks repeatedly with Savage."
+  "notes": "The Devoted Sculptor builds Ritual stacks on the first move, increasing its damage output. After the initial Ritual application, it attacks repeatedly with Savage.",
+  "min_hp_base": 162,
+  "hp_ascension": 8
 }

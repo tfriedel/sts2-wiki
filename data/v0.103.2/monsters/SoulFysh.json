@@ -24,11 +24,13 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 17
+          "damage": 17,
+          "damage_base": 16,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 17 damage"
+        "Deal 16/17 damage"
       ]
     },
     {
@@ -37,14 +39,16 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 8
+          "damage": 8,
+          "damage_base": 7,
+          "ascension": 9
         },
         {
           "type": "status"
         }
       ],
       "effects": [
-        "Deal 8 damage",
+        "Deal 7/8 damage",
         "Add 1 Beckon to discard pile"
       ]
     },
@@ -66,19 +70,23 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 12
+          "damage": 12,
+          "damage_base": 11,
+          "ascension": 9
         },
         {
           "type": "debuff"
         }
       ],
       "effects": [
-        "Deal 12 damage",
+        "Deal 11/12 damage",
         "Apply 3 Vulnerable"
       ]
     }
   ],
-  "move_pattern": "Cycles: Beckon → De-Gas → Gaze → Fade → Scream → (repeat)",
+  "move_pattern": "Cycles: Beckon \u2192 De-Gas \u2192 Gaze \u2192 Fade \u2192 Scream \u2192 (repeat)",
   "powers_on_spawn": [],
-  "notes": "During Fade, the Soul Fysh becomes invisible and gains 2 Intangible, making it immune to damage for 2 turns. It remains invisible until Scream, which reveals it again. Beckon and Gaze both add Beckon status cards to the player's deck."
+  "notes": "During Fade, the Soul Fysh becomes invisible and gains 2 Intangible, making it immune to damage for 2 turns. It remains invisible until Scream, which reveals it again. Beckon and Gaze both add Beckon status cards to the player's deck.",
+  "min_hp_base": 211,
+  "hp_ascension": 8
 }

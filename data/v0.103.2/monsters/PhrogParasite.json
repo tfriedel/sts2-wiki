@@ -8,17 +8,39 @@
     {
       "id": "INFECT_MOVE",
       "title": "Infect",
-      "intents": [{"type": "status", "amount": 3}],
-      "effects": ["Add 3 Infection cards to player's discard pile"]
+      "intents": [
+        {
+          "type": "status",
+          "amount": 3
+        }
+      ],
+      "effects": [
+        "Add 3 Infection cards to player's discard pile"
+      ]
     },
     {
       "id": "LASH_MOVE",
       "title": "Lash",
-      "intents": [{"type": "multi_attack", "damage": 5, "hits": 4}],
-      "effects": ["Deal 5 damage 4 times"]
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 4,
+          "damage_base": 4,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 4/5 damage"
+      ]
     }
   ],
   "move_pattern": "Starts with Infect, then alternates: Infect -> Lash -> Infect (repeating).",
-  "powers_on_spawn": ["Infested (4)"],
-  "notes": "Starts with Infested 4 power. Adds Infection status cards to the player's discard pile. A random branch state exists in the move list but the fixed follow-up cycle is used."
+  "powers_on_spawn": [
+    "Infested (4)"
+  ],
+  "notes": "Starts with Infested 4 power. Adds Infection status cards to the player's discard pile. A random branch state exists in the move list but the fixed follow-up cycle is used.",
+  "min_hp_base": 61,
+  "max_hp_base": 64,
+  "hp_ascension": 8
 }

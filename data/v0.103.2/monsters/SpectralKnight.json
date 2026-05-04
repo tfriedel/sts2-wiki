@@ -8,23 +8,51 @@
     {
       "id": "HEX",
       "title": "Hex",
-      "intents": [{"type": "debuff"}],
-      "effects": ["Apply 2 Hex to each target"]
+      "intents": [
+        {
+          "type": "debuff"
+        }
+      ],
+      "effects": [
+        "Apply 2 Hex to each target"
+      ]
     },
     {
       "id": "SOUL_SLASH",
       "title": "Soul Slash",
-      "intents": [{"type": "attack", "damage": 17}],
-      "effects": ["Deal 17 damage"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17,
+          "damage_base": 15,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 15/17 damage"
+      ]
     },
     {
       "id": "SOUL_FLAME",
       "title": "Soul Flame",
-      "intents": [{"type": "multi_attack", "damage": 4, "hits": 3}],
-      "effects": ["Deal 4 damage", "3 hits"]
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 4,
+          "hits": 3,
+          "damage_base": 3,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 3/4 damage",
+        "3 hits"
+      ]
     }
   ],
   "move_pattern": "Starts with Hex, then Soul Slash. Afterwards loops randomly between Soul Slash (weight 2) and Soul Flame (cannot repeat consecutively).",
   "powers_on_spawn": [],
-  "notes": "Hex applies 2 stacks of Hex to each player target. The random branch weights Soul Slash twice as heavily as Soul Flame, and Soul Flame cannot be selected two turns in a row."
+  "notes": "Hex applies 2 stacks of Hex to each player target. The random branch weights Soul Slash twice as heavily as Soul Flame, and Soul Flame cannot be selected two turns in a row.",
+  "min_hp_base": 93,
+  "hp_ascension": 8
 }

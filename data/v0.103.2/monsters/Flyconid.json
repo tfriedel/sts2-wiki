@@ -9,29 +9,53 @@
       "id": "VULNERABLE_SPORES_MOVE",
       "title": "Vulnerable Spores",
       "intents": [
-        {"type": "debuff"}
+        {
+          "type": "debuff"
+        }
       ],
-      "effects": ["Apply 2 Vulnerable"]
+      "effects": [
+        "Apply 2 Vulnerable"
+      ]
     },
     {
       "id": "FRAIL_SPORES_MOVE",
       "title": "Frail Spores",
       "intents": [
-        {"type": "attack", "damage": 9},
-        {"type": "debuff"}
+        {
+          "type": "attack",
+          "damage": 9,
+          "damage_base": 8,
+          "ascension": 9
+        },
+        {
+          "type": "debuff"
+        }
       ],
-      "effects": ["Deal 9 damage", "Apply 2 Frail"]
+      "effects": [
+        "Deal 8/9 damage",
+        "Apply 2 Frail"
+      ]
     },
     {
       "id": "SMASH_MOVE",
       "title": "Smash",
       "intents": [
-        {"type": "attack", "damage": 12}
+        {
+          "type": "attack",
+          "damage": 12,
+          "damage_base": 11,
+          "ascension": 9
+        }
       ],
-      "effects": ["Deal 12 damage"]
+      "effects": [
+        "Deal 11/12 damage"
+      ]
     }
   ],
   "move_pattern": "First turn randomly picks from: Frail Spores (weight 2) or Smash (weight 1), no repeats. After each subsequent move, randomly picks from: Vulnerable Spores (weight 3), Frail Spores (weight 2), or Smash (weight 1), no repeats.",
   "powers_on_spawn": [],
-  "notes": "Vulnerable Spores is unavailable on the very first turn (not in the INITIAL branch). From turn two onward it is the most likely move (weight 3 vs 2 and 1). No move can repeat consecutively."
+  "notes": "Vulnerable Spores is unavailable on the very first turn (not in the INITIAL branch). From turn two onward it is the most likely move (weight 3 vs 2 and 1). No move can repeat consecutively.",
+  "min_hp_base": 47,
+  "max_hp_base": 49,
+  "hp_ascension": 8
 }

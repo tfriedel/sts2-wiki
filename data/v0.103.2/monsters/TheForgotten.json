@@ -9,9 +9,16 @@
       "id": "MIASMA",
       "title": "Miasma",
       "intents": [
-        { "type": "debuff" },
-        { "type": "block", "amount": 8 },
-        { "type": "buff" }
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "block",
+          "amount": 8
+        },
+        {
+          "type": "buff"
+        }
       ],
       "effects": [
         "Apply -2 Dexterity to all enemies",
@@ -23,14 +30,21 @@
       "id": "DREAD",
       "title": "Dread",
       "intents": [
-        { "type": "attack", "damage": 15 }
+        {
+          "type": "attack",
+          "damage": 15
+        }
       ],
       "effects": [
         "Deal 15 damage (increases with own Dexterity)"
       ]
     }
   ],
-  "move_pattern": "Cycles: Miasma → Dread → Miasma → Dread (strict alternation, starting with Miasma).",
-  "powers_on_spawn": ["Possess Speed 1"],
-  "notes": "Dread's damage is 15 (ascension) plus The Forgotten's current Dexterity. Each use of Miasma steals 2 Dexterity from every enemy and grants it to The Forgotten, causing Dread to deal escalating damage as the fight progresses."
+  "move_pattern": "Cycles: Miasma \u2192 Dread \u2192 Miasma \u2192 Dread (strict alternation, starting with Miasma).",
+  "powers_on_spawn": [
+    "Possess Speed 1"
+  ],
+  "notes": "Dread's damage is 15 (ascension) plus The Forgotten's current Dexterity. Each use of Miasma steals 2 Dexterity from every enemy and grants it to The Forgotten, causing Dread to deal escalating damage as the fight progresses.",
+  "min_hp_base": 106,
+  "hp_ascension": 8
 }

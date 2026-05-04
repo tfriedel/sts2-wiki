@@ -11,7 +11,9 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 5
+          "damage": 5,
+          "damage_base": 4,
+          "ascension": 9
         }
       ],
       "effects": [
@@ -20,5 +22,8 @@
     }
   ],
   "move_pattern": "Repeats Tackle every turn.",
-  "powers_on_spawn": []
+  "powers_on_spawn": [],
+  "min_hp_base": 7,
+  "max_hp_base": 11,
+  "hp_ascension": 8
 }

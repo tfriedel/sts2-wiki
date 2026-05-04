@@ -11,14 +11,19 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 6
+          "damage": 6,
+          "damage_base": 5,
+          "ascension": 9
         },
         {
           "type": "block",
           "amount": 6
         }
       ],
-      "effects": ["Deal 6 damage", "Gain 6 Block"]
+      "effects": [
+        "Deal 6 damage",
+        "Gain 6 Block"
+      ]
     },
     {
       "id": "SWING_2",
@@ -26,14 +31,19 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 6
+          "damage": 6,
+          "damage_base": 5,
+          "ascension": 9
         },
         {
           "type": "block",
           "amount": 6
         }
       ],
-      "effects": ["Deal 6 damage", "Gain 6 Block"]
+      "effects": [
+        "Deal 6 damage",
+        "Gain 6 Block"
+      ]
     },
     {
       "id": "BIG_SWING",
@@ -41,12 +51,19 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 13
+          "damage": 13,
+          "damage_base": 12,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 13 damage"]
+      "effects": [
+        "Deal 12/13 damage"
+      ]
     }
   ],
-  "move_pattern": "Cycles: Swing 1 → Swing 2 → Big Swing → repeat",
-  "powers_on_spawn": []
+  "move_pattern": "Cycles: Swing 1 \u2192 Swing 2 \u2192 Big Swing \u2192 repeat",
+  "powers_on_spawn": [],
+  "min_hp_base": 20,
+  "max_hp_base": 22,
+  "hp_ascension": 8
 }

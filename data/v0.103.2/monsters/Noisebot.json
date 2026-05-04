@@ -8,11 +8,22 @@
     {
       "id": "NOISE_MOVE",
       "title": "Noise",
-      "intents": [{"type": "status", "amount": 2}],
-      "effects": ["Add 1 Dazed to player's discard pile", "Add 1 Dazed to player's draw pile (random position)"]
+      "intents": [
+        {
+          "type": "status",
+          "amount": 2
+        }
+      ],
+      "effects": [
+        "Add 1 Dazed to player's discard pile",
+        "Add 1 Dazed to player's draw pile (random position)"
+      ]
     }
   ],
   "move_pattern": "Repeats Noise every turn.",
   "powers_on_spawn": [],
-  "notes": "Specifically places one Dazed in the discard pile and one Dazed randomly in the draw pile each turn."
+  "notes": "Specifically places one Dazed in the discard pile and one Dazed randomly in the draw pile each turn.",
+  "min_hp_base": 18,
+  "max_hp_base": 23,
+  "hp_ascension": 8
 }

@@ -9,13 +9,26 @@
       "id": "ENERGY_ORB_MOVE",
       "title": "Energy Orb",
       "intents": [
-        {"type": "attack", "damage": 4},
-        {"type": "buff"}
+        {
+          "type": "attack",
+          "damage": 4,
+          "damage_base": 3,
+          "ascension": 9
+        },
+        {
+          "type": "buff"
+        }
       ],
-      "effects": ["Deal 4 damage", "Gain 2 Strength"]
+      "effects": [
+        "Deal 3/4 damage",
+        "Gain 2 Strength"
+      ]
     }
   ],
   "move_pattern": "Repeats Energy Orb every turn.",
   "powers_on_spawn": [],
-  "notes": "Gains 2 Strength each turn, making it increasingly dangerous the longer the fight lasts. The COLLECT_POWER localization entry exists but is not used in the current code."
+  "notes": "Gains 2 Strength each turn, making it increasingly dangerous the longer the fight lasts. The COLLECT_POWER localization entry exists but is not used in the current code.",
+  "min_hp_base": 31,
+  "max_hp_base": 33,
+  "hp_ascension": 8
 }

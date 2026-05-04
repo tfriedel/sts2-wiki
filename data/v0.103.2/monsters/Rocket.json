@@ -8,35 +8,83 @@
     {
       "id": "TARGETING_RETICLE_MOVE",
       "title": "Targeting Reticle",
-      "intents": [{"type": "attack", "damage": 4, "hits": 1}],
-      "effects": ["Deal 4 damage"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 4,
+          "hits": 1,
+          "damage_base": 3,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 3/4 damage"
+      ]
     },
     {
       "id": "PRECISION_BEAM_MOVE",
       "title": "Precision Beam",
-      "intents": [{"type": "attack", "damage": 20, "hits": 1}],
-      "effects": ["Deal 20 damage"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 20,
+          "hits": 1,
+          "damage_base": 18,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 18/20 damage"
+      ]
     },
     {
       "id": "CHARGE_UP_MOVE",
       "title": "Charge Up",
-      "intents": [{"type": "buff"}],
-      "effects": ["Gain 3 Strength"]
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2/3 Strength"
+      ]
     },
     {
       "id": "LASER_MOVE",
       "title": "Laser",
-      "intents": [{"type": "attack", "damage": 35, "hits": 1}],
-      "effects": ["Deal 35 damage"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 35,
+          "hits": 1,
+          "damage_base": 31,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 31/35 damage"
+      ]
     },
     {
       "id": "RECHARGE_MOVE",
       "title": "Recharge",
-      "intents": [{"type": "sleep"}],
-      "effects": ["Sleep (recharge)"]
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
+      "effects": [
+        "Sleep (recharge)"
+      ]
     }
   ],
   "move_pattern": "Starts with Targeting Reticle, then Precision Beam, then Charge Up, then Laser, then Recharge, then repeats from Targeting Reticle.",
-  "powers_on_spawn": ["Surrounded (1)", "BackAttackRight (1)", "CrabRage (1)"],
-  "notes": "Boss monster (part of Kaiser Crab encounter). Controls the right arm of the KaiserCrab background. ShouldFadeAfterDeath and ShouldDisappearFromDoom are false."
+  "powers_on_spawn": [
+    "Surrounded (1)",
+    "BackAttackRight (1)",
+    "CrabRage (1)"
+  ],
+  "notes": "Boss monster (part of Kaiser Crab encounter). Controls the right arm of the KaiserCrab background. ShouldFadeAfterDeath and ShouldDisappearFromDoom are false.",
+  "min_hp_base": 199,
+  "hp_ascension": 8
 }

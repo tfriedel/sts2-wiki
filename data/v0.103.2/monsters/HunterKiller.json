@@ -9,28 +9,49 @@
       "id": "TENDERIZING_GOOP_MOVE",
       "title": "Tenderizing Goop",
       "intents": [
-        {"type": "debuff"}
+        {
+          "type": "debuff"
+        }
       ],
-      "effects": ["Apply 1 Tender"]
+      "effects": [
+        "Apply 1 Tender"
+      ]
     },
     {
       "id": "BITE_MOVE",
       "title": "Bite",
       "intents": [
-        {"type": "attack", "damage": 19}
+        {
+          "type": "attack",
+          "damage": 19,
+          "damage_base": 17,
+          "ascension": 9
+        }
       ],
-      "effects": ["Deal 19 damage"]
+      "effects": [
+        "Deal 17/19 damage"
+      ]
     },
     {
       "id": "PUNCTURE_MOVE",
       "title": "Puncture",
       "intents": [
-        {"type": "multi_attack", "damage": 8, "hits": 3}
+        {
+          "type": "multi_attack",
+          "damage": 8,
+          "hits": 3,
+          "damage_base": 7,
+          "ascension": 9
+        }
       ],
-      "effects": ["Deal 8 damage 3 times"]
+      "effects": [
+        "Deal 7/8 damage"
+      ]
     }
   ],
   "move_pattern": "Starts with Tenderizing Goop, then randomly chooses between Bite (cannot repeat) and Puncture (weighted 2x). After any move, loops back to random selection between Bite and Puncture.",
   "powers_on_spawn": [],
-  "notes": "After the opening Tenderizing Goop, all subsequent moves are randomly chosen. Bite cannot repeat consecutively; Puncture has weight 2 (twice as likely). Tenderizing Goop also loops back to the random branch."
+  "notes": "After the opening Tenderizing Goop, all subsequent moves are randomly chosen. Bite cannot repeat consecutively; Puncture has weight 2 (twice as likely). Tenderizing Goop also loops back to the random branch.",
+  "min_hp_base": 121,
+  "hp_ascension": 8
 }

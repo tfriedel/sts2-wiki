@@ -23,7 +23,9 @@
           "type": "buff"
         }
       ],
-      "effects": ["Apply 10 Strength"]
+      "effects": [
+        "Apply 10 Strength"
+      ]
     },
     {
       "id": "SLEEP_MOVE",
@@ -41,13 +43,21 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 15
+          "damage": 15,
+          "damage_base": 13,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 15 damage"]
+      "effects": [
+        "Deal 15 damage"
+      ]
     }
   ],
   "move_pattern": "Starts with Initial Sleep. Awakens with Wake (gains +10 Strength), then enters a loop of Slashes attacks.",
-  "powers_on_spawn": ["Slow"],
-  "notes": "The Bygone Effigy begins dormant in a sleep state and awakens after the first turn. Upon awakening, it gains +10 Strength and then repeatedly attacks with Slashes, entering a dangerous phase where it continuously attacks until defeated."
+  "powers_on_spawn": [
+    "Slow"
+  ],
+  "notes": "The Bygone Effigy begins dormant in a sleep state and awakens after the first turn. Upon awakening, it gains +10 Strength and then repeatedly attacks with Slashes, entering a dangerous phase where it continuously attacks until defeated.",
+  "min_hp_base": 127,
+  "hp_ascension": 8
 }

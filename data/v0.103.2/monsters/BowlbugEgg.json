@@ -11,17 +11,25 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 8
+          "damage": 8,
+          "damage_base": 7,
+          "ascension": 9
         },
         {
           "type": "block",
           "amount": 8
         }
       ],
-      "effects": ["Deal 8 damage", "Gain 8 Block"]
+      "effects": [
+        "Deal 7/8 damage",
+        "Gain 7/8 Block"
+      ]
     }
   ],
   "move_pattern": "Repeats Bite every turn.",
   "powers_on_spawn": [],
-  "notes": null
+  "notes": null,
+  "min_hp_base": 21,
+  "max_hp_base": 22,
+  "hp_ascension": 8
 }

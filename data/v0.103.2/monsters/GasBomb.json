@@ -9,12 +9,22 @@
       "id": "EXPLODE_MOVE",
       "title": "Explode",
       "intents": [
-        {"type": "death_blow", "damage": 9}
+        {
+          "type": "death_blow",
+          "damage": 9
+        }
       ],
-      "effects": ["Deal 9 damage", "Dies after attacking"]
+      "effects": [
+        "Deal 8/9 damage",
+        "Dies after attacking"
+      ]
     }
   ],
   "move_pattern": "Uses Explode once, then dies.",
-  "powers_on_spawn": ["Minion"],
-  "notes": "A minion that uses its single move (Explode) and immediately kills itself afterward via CreatureCmd.Kill. Has the Minion power, meaning it is removed if its summoner is defeated. Sound effects indicate it is associated with Living Fog."
+  "powers_on_spawn": [
+    "Minion"
+  ],
+  "notes": "A minion that uses its single move (Explode) and immediately kills itself afterward via CreatureCmd.Kill. Has the Minion power, meaning it is removed if its summoner is defeated. Sound effects indicate it is associated with Living Fog.",
+  "min_hp_base": 7,
+  "hp_ascension": 8
 }

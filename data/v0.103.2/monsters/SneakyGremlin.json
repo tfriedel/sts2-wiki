@@ -8,17 +8,35 @@
     {
       "id": "SPAWNED_MOVE",
       "title": "Spawned",
-      "intents": [{"type": "stun"}],
-      "effects": ["Wake up"]
+      "intents": [
+        {
+          "type": "stun"
+        }
+      ],
+      "effects": [
+        "Wake up"
+      ]
     },
     {
       "id": "TACKLE_MOVE",
       "title": "Tackle",
-      "intents": [{"type": "attack", "damage": 10}],
-      "effects": ["Deal 10 damage"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 10,
+          "damage_base": 9,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 9/10 damage"
+      ]
     }
   ],
   "move_pattern": "Starts with Spawned (stun intent, wake-up animation only). Then loops Tackle every turn.",
   "powers_on_spawn": [],
-  "notes": "The Sneaky Gremlin begins combat asleep. Its first move shows a stun intent and plays a wake-up animation with no gameplay effect on the player. From the second turn onward it repeats Tackle (10 damage) every turn."
+  "notes": "The Sneaky Gremlin begins combat asleep. Its first move shows a stun intent and plays a wake-up animation with no gameplay effect on the player. From the second turn onward it repeats Tackle (10 damage) every turn.",
+  "min_hp_base": 10,
+  "max_hp_base": 14,
+  "hp_ascension": 8
 }

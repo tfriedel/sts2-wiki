@@ -16,7 +16,7 @@
       "effects": [
         "Remove HatchPower",
         "Remove all non-Minion powers",
-        "Transform into Hatchling with 20–23 HP"
+        "Transform into Hatchling with 20\u201323 HP"
       ]
     },
     {
@@ -25,15 +25,22 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 5
+          "damage": 5,
+          "damage_base": 4,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 5 damage"
+        "Deal 4/5 damage"
       ]
     }
   ],
   "move_pattern": "Starts with Hatch. Then loops Nibble indefinitely.",
-  "powers_on_spawn": ["HatchPower (2 stacks)"],
-  "notes": "The Tough Egg begins combat with 2 stacks of HatchPower. On its first turn, it hatches: removes HatchPower and all non-Minion powers, then its HP is replaced with Hatchling HP (20–23 at ascension). After hatching, the monster's title changes to 'Hatchling' and it loops Nibble indefinitely. If the egg enters combat already hatched, it skips the Hatch move and begins directly on Nibble."
+  "powers_on_spawn": [
+    "HatchPower (2 stacks)"
+  ],
+  "notes": "The Tough Egg begins combat with 2 stacks of HatchPower. On its first turn, it hatches: removes HatchPower and all non-Minion powers, then its HP is replaced with Hatchling HP (20\u201323 at ascension). After hatching, the monster's title changes to 'Hatchling' and it loops Nibble indefinitely. If the egg enters combat already hatched, it skips the Hatch move and begins directly on Nibble.",
+  "min_hp_base": 14,
+  "max_hp_base": 18,
+  "hp_ascension": 8
 }

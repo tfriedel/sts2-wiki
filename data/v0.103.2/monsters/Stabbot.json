@@ -11,18 +11,23 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 12
+          "damage": 12,
+          "damage_base": 11,
+          "ascension": 9
         },
         {
           "type": "debuff"
         }
       ],
       "effects": [
-        "Deal 12 damage",
+        "Deal 11/12 damage",
         "Apply 1 Frail"
       ]
     }
   ],
   "move_pattern": "Repeats Stab every turn.",
-  "powers_on_spawn": []
+  "powers_on_spawn": [],
+  "min_hp_base": 18,
+  "max_hp_base": 23,
+  "hp_ascension": 8
 }

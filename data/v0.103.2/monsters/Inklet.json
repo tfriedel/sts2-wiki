@@ -9,28 +9,57 @@
       "id": "JAB_MOVE",
       "title": "Jab",
       "intents": [
-        {"type": "attack", "damage": 4, "hits": 1}
+        {
+          "type": "attack",
+          "damage": 4,
+          "hits": 1,
+          "damage_base": 3,
+          "ascension": 9
+        }
       ],
-      "effects": ["Deal 4 damage"]
+      "effects": [
+        "Deal 3/4 damage"
+      ]
     },
     {
       "id": "WHIRLWIND_MOVE",
       "title": "Windup Punch",
       "intents": [
-        {"type": "multi_attack", "damage": 3, "hits": 3}
+        {
+          "type": "multi_attack",
+          "damage": 3,
+          "hits": 3,
+          "damage_base": 2,
+          "ascension": 9
+        }
       ],
-      "effects": ["Deal 3 damage 3 times"]
+      "effects": [
+        "Deal 2/3 damage"
+      ]
     },
     {
       "id": "PIERCING_GAZE_MOVE",
       "title": "Piercing Gaze",
       "intents": [
-        {"type": "attack", "damage": 11, "hits": 1}
+        {
+          "type": "attack",
+          "damage": 11,
+          "hits": 1,
+          "damage_base": 10,
+          "ascension": 9
+        }
       ],
-      "effects": ["Deal 11 damage"]
+      "effects": [
+        "Deal 10/11 damage"
+      ]
     }
   ],
   "move_pattern": "Standard Inklet starts with Jab, middle Inklet starts with Whirlwind. After Jab: randomly pick Piercing Gaze or Whirlwind (neither can repeat consecutively). After Piercing Gaze or Whirlwind: Jab, then back to random.",
-  "powers_on_spawn": ["Slippery (1)"],
-  "notes": "The MiddleInklet property changes starting move to Whirlwind. Slippery Power is applied on spawn. The WHIRLWIND_MOVE loc key maps to 'Windup Punch' title."
+  "powers_on_spawn": [
+    "Slippery (1)"
+  ],
+  "notes": "The MiddleInklet property changes starting move to Whirlwind. Slippery Power is applied on spawn. The WHIRLWIND_MOVE loc key maps to 'Windup Punch' title.",
+  "min_hp_base": 11,
+  "max_hp_base": 17,
+  "hp_ascension": 8
 }

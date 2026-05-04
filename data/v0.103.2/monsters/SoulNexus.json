@@ -9,29 +9,58 @@
       "id": "SOUL_BURN_MOVE",
       "title": "Soul Burn",
       "intents": [
-        {"type": "attack", "damage": 31}
+        {
+          "type": "attack",
+          "damage": 31,
+          "damage_base": 29,
+          "ascension": 9
+        }
       ],
-      "effects": ["Deal 31 damage"]
+      "effects": [
+        "Deal 29/31 damage"
+      ]
     },
     {
       "id": "MAELSTROM_MOVE",
       "title": "Maelstrom",
       "intents": [
-        {"type": "multi_attack", "damage": 7, "hits": 4}
+        {
+          "type": "multi_attack",
+          "damage": 7,
+          "hits": 4,
+          "damage_base": 6,
+          "ascension": 9
+        }
       ],
-      "effects": ["Deal 7 damage", "4 hits"]
+      "effects": [
+        "Deal 6/7 damage",
+        "4 hits"
+      ]
     },
     {
       "id": "DRAIN_LIFE_MOVE",
       "title": "Drain Life",
       "intents": [
-        {"type": "attack", "damage": 19},
-        {"type": "debuff"}
+        {
+          "type": "attack",
+          "damage": 19,
+          "damage_base": 18,
+          "ascension": 9
+        },
+        {
+          "type": "debuff"
+        }
       ],
-      "effects": ["Deal 19 damage", "Apply 2 Vulnerable", "Apply 2 Weak"]
+      "effects": [
+        "Deal 18/19 damage",
+        "Apply 2 Vulnerable",
+        "Apply 2 Weak"
+      ]
     }
   ],
   "move_pattern": "Starts with Soul Burn. After each move, randomly selects from Soul Burn, Maelstrom, or Drain Life, never repeating the previous move.",
   "powers_on_spawn": [],
-  "notes": "Drain Life deals damage then applies 2 Vulnerable and 2 Weak to the player. The monster does not fade after death (ShouldFadeAfterDeath is false)."
+  "notes": "Drain Life deals damage then applies 2 Vulnerable and 2 Weak to the player. The monster does not fade after death (ShouldFadeAfterDeath is false).",
+  "min_hp_base": 234,
+  "hp_ascension": 8
 }

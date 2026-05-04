@@ -26,11 +26,13 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 35
+          "damage": 35,
+          "damage_base": 30,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 35 damage",
+        "Deal 30/35 damage",
         "Swap to Scrutiny phase",
         "Change visual"
       ]
@@ -41,11 +43,13 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 26
+          "damage": 26,
+          "damage_base": 24,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 26 damage",
+        "Deal 24/26 damage",
         "Swap to Grasp phase",
         "Change visual"
       ]
@@ -57,22 +61,26 @@
         {
           "type": "multi_attack",
           "damage": 11,
-          "hits": 2
+          "hits": 2,
+          "damage_base": 10,
+          "ascension": 9
         },
         {
           "type": "buff"
         }
       ],
       "effects": [
-        "Deal 11 damage",
+        "Deal 10/11 damage",
         "2 hits",
-        "Apply 4 Strength",
+        "Apply 3/4 Strength",
         "Swap to Hunger phase",
         "Change visual"
       ]
     }
   ],
-  "move_pattern": "Dramatic Open (opening move) → Hunger → Scrutiny → Grasp → Hunger (repeats cycle)",
+  "move_pattern": "Dramatic Open (opening move) \u2192 Hunger \u2192 Scrutiny \u2192 Grasp \u2192 Hunger (repeats cycle)",
   "powers_on_spawn": [],
-  "notes": "Doormaker starts with infinite HP display but resets to true HP (512) during Dramatic Open. Cycles through three phase powers (Hunger, Scrutiny, Grasp) that change each move. Each phase is associated with a distinct visual appearance. Title changes from 'Door' to 'Doormaker' when portal opens. Updates music parameter on death."
+  "notes": "Doormaker starts with infinite HP display but resets to true HP (512) during Dramatic Open. Cycles through three phase powers (Hunger, Scrutiny, Grasp) that change each move. Each phase is associated with a distinct visual appearance. Title changes from 'Door' to 'Doormaker' when portal opens. Updates music parameter on death.",
+  "min_hp_base": 489,
+  "hp_ascension": 8
 }

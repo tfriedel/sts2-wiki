@@ -11,7 +11,9 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 7
+          "damage": 7,
+          "damage_base": 6,
+          "ascension": 9
         },
         {
           "type": "block",
@@ -44,7 +46,7 @@
         }
       ],
       "effects": [
-        "Gain 9 Block"
+        "Gain 5/9 Block"
       ]
     },
     {
@@ -53,11 +55,13 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 40
+          "damage": 40,
+          "damage_base": 35,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 40 damage"
+        "Deal 35/40 damage"
       ]
     },
     {
@@ -66,7 +70,9 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 11
+          "damage": 11,
+          "damage_base": 10,
+          "ascension": 9
         }
       ],
       "effects": [
@@ -74,7 +80,9 @@
       ]
     }
   ],
-  "move_pattern": "Starts with Power Shield, then Dampen. Then cycles: Ram → Prep → Magic Bomb",
+  "move_pattern": "Starts with Power Shield, then Dampen. Then cycles: Ram \u2192 Prep \u2192 Magic Bomb",
   "powers_on_spawn": [],
-  "notes": "Applies the Dampen power to the player, reducing the effectiveness of cards played. Magic Bomb is the strongest single attack, dealing 40 damage."
+  "notes": "Applies the Dampen power to the player, reducing the effectiveness of cards played. Magic Bomb is the strongest single attack, dealing 40 damage.",
+  "min_hp_base": 82,
+  "hp_ascension": 8
 }

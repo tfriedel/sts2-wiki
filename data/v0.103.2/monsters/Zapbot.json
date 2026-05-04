@@ -11,12 +11,21 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 15
+          "damage": 15,
+          "damage_base": 14,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 15 damage"]
+      "effects": [
+        "Deal 14/15 damage"
+      ]
     }
   ],
   "move_pattern": "Repeatedly uses Zap every turn.",
-  "powers_on_spawn": ["High Voltage 2"]
+  "powers_on_spawn": [
+    "High Voltage 2"
+  ],
+  "min_hp_base": 18,
+  "max_hp_base": 23,
+  "hp_ascension": 8
 }

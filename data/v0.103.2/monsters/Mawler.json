@@ -12,10 +12,15 @@
         {
           "type": "multi_attack",
           "damage": 5,
-          "hits": 2
+          "hits": 2,
+          "damage_base": 4,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 5 damage", "2 hits"]
+      "effects": [
+        "Deal 4/5 damage",
+        "2 hits"
+      ]
     },
     {
       "id": "RIP_AND_TEAR_MOVE",
@@ -23,10 +28,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 16
+          "damage": 16,
+          "damage_base": 14,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 16 damage"]
+      "effects": [
+        "Deal 14/16 damage"
+      ]
     },
     {
       "id": "ROAR_MOVE",
@@ -36,10 +45,14 @@
           "type": "debuff"
         }
       ],
-      "effects": ["Apply 3 Vulnerable"]
+      "effects": [
+        "Apply 3 Vulnerable"
+      ]
     }
   ],
-  "move_pattern": "Starts with Claw. Then randomly selects from Claw, Rip and Tear, or Roar each turn — cannot repeat the same move consecutively. Roar can only be used once per combat.",
+  "move_pattern": "Starts with Claw. Then randomly selects from Claw, Rip and Tear, or Roar each turn \u2014 cannot repeat the same move consecutively. Roar can only be used once per combat.",
   "powers_on_spawn": [],
-  "notes": "Roar applies 3 Vulnerable and can only be used once per combat (UseOnlyOnce). Claw and Rip and Tear cannot be used on consecutive turns (CannotRepeat). All three moves have equal weight in the random selection."
+  "notes": "Roar applies 3 Vulnerable and can only be used once per combat (UseOnlyOnce). Claw and Rip and Tear cannot be used on consecutive turns (CannotRepeat). All three moves have equal weight in the random selection.",
+  "min_hp_base": 72,
+  "hp_ascension": 8
 }

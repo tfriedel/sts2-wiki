@@ -11,13 +11,18 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 9
+          "damage": 9,
+          "damage_base": 8,
+          "ascension": 9
         },
         {
           "type": "debuff"
         }
       ],
-      "effects": ["Deal 9 damage", "Apply 1 Weak"]
+      "effects": [
+        "Deal 8/9 damage",
+        "Apply 1 Weak"
+      ]
     },
     {
       "id": "SLAM_MOVE",
@@ -25,10 +30,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 12
+          "damage": 12,
+          "damage_base": 11,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 12 damage"]
+      "effects": [
+        "Deal 11/12 damage"
+      ]
     },
     {
       "id": "RAGE_MOVE",
@@ -36,16 +45,24 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 7
+          "damage": 7,
+          "damage_base": 6,
+          "ascension": 9
         },
         {
           "type": "buff"
         }
       ],
-      "effects": ["Deal 7 damage", "Gain 3 Strength"]
+      "effects": [
+        "Deal 6/7 damage",
+        "Gain 3 Strength"
+      ]
     }
   ],
   "move_pattern": "Starts with Oil Spray. Then randomly cycles through all three moves (Oil Spray, Slam, Rage), never repeating the same move twice in a row.",
   "powers_on_spawn": [],
-  "notes": "Each turn after the first, the Sludge Spinner randomly selects from its three moves but cannot use the same move it just used."
+  "notes": "Each turn after the first, the Sludge Spinner randomly selects from its three moves but cannot use the same move it just used.",
+  "min_hp_base": 37,
+  "max_hp_base": 39,
+  "hp_ascension": 8
 }

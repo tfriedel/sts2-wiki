@@ -11,11 +11,13 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 19
+          "damage": 19,
+          "damage_base": 17,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 19 damage"
+        "Deal 17/19 damage"
       ]
     },
     {
@@ -25,11 +27,13 @@
         {
           "type": "multi_attack",
           "damage": 4,
-          "hits": 3
+          "hits": 3,
+          "damage_base": 3,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 4 damage",
+        "Deal 3/4 damage",
         "3 hits"
       ]
     }
@@ -37,5 +41,8 @@
   "move_pattern": "Alternates between Swoop and Peck",
   "powers_on_spawn": [
     "Territorial"
-  ]
+  ],
+  "min_hp_base": 81,
+  "max_hp_base": 84,
+  "hp_ascension": 8
 }

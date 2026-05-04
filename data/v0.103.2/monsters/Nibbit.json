@@ -8,23 +8,56 @@
     {
       "id": "BUTT_MOVE",
       "title": "Butt",
-      "intents": [{"type": "attack", "damage": 13, "damage_base": 12, "hits": 1, "ascension": 9}],
-      "effects": ["Deal 12/13 damage"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 13,
+          "damage_base": 12,
+          "hits": 1,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 12/13 damage"
+      ]
     },
     {
       "id": "SLICE_MOVE",
       "title": "Hesitant Slice",
-      "intents": [{"type": "attack", "damage": 7, "hits": 1}, {"type": "block"}],
-      "effects": ["Deal 7 damage", "Gain 6 Block"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 7,
+          "hits": 1,
+          "damage_base": 6,
+          "ascension": 9
+        },
+        {
+          "type": "block"
+        }
+      ],
+      "effects": [
+        "Deal 6/7 damage",
+        "Gain 5/6 Block"
+      ]
     },
     {
       "id": "HISS_MOVE",
       "title": "Hiss",
-      "intents": [{"type": "buff"}],
-      "effects": ["Gain 3 Strength"]
+      "intents": [
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 2/3 Strength"
+      ]
     }
   ],
   "move_pattern": "When alone: starts and repeats Butt -> Hesitant Slice -> Hiss -> Butt. When paired: back Nibbit starts with Hiss, front Nibbit starts with Hesitant Slice. Cycle: Hesitant Slice -> Hiss -> Butt -> Hesitant Slice.",
   "powers_on_spawn": [],
-  "notes": "Behavior differs based on whether the Nibbit is alone or paired, and whether it is in the front or back slot. When alone, uses stronger Butt attack. When paired, front Nibbit uses Hesitant Slice/Hiss, back Nibbit uses Hiss to buff first."
+  "notes": "Behavior differs based on whether the Nibbit is alone or paired, and whether it is in the front or back slot. When alone, uses stronger Butt attack. When paired, front Nibbit uses Hesitant Slice/Hiss, back Nibbit uses Hiss to buff first.",
+  "min_hp_base": 42,
+  "max_hp_base": 46,
+  "hp_ascension": 8
 }

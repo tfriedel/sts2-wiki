@@ -24,11 +24,13 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 18
+          "damage": 18,
+          "damage_base": 17,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 18 damage"
+        "Deal 17/18 damage"
       ]
     },
     {
@@ -38,11 +40,13 @@
         {
           "type": "multi_attack",
           "damage": 9,
-          "hits": 3
+          "hits": 3,
+          "damage_base": 8,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 9 damage",
+        "Deal 8/9 damage",
         "3 hits",
         "Enter burnt state"
       ]
@@ -53,7 +57,9 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 13
+          "damage": 13,
+          "damage_base": 11,
+          "ascension": 9
         },
         {
           "type": "heal"
@@ -63,14 +69,16 @@
         }
       ],
       "effects": [
-        "Deal 13 damage",
-        "Heal 30",
+        "Deal 11/13 damage",
+        "Apply 2/3 Strength",
         "Gain 3 Strength",
         "Exit burnt state"
       ]
     }
   ],
-  "move_pattern": "Cycles Curse of Knowledge → Slap → Knowledge Overwhelming → Ponder for 3 complete cycles. After the 3rd Ponder, enters a repeating pattern of Slap → Knowledge Overwhelming → Ponder.",
+  "move_pattern": "Cycles Curse of Knowledge \u2192 Slap \u2192 Knowledge Overwhelming \u2192 Ponder for 3 complete cycles. After the 3rd Ponder, enters a repeating pattern of Slap \u2192 Knowledge Overwhelming \u2192 Ponder.",
   "powers_on_spawn": [],
-  "notes": "Knowledge Demon cycles through its move sequence with the Curse of Knowledge move available only for the first 3 cycles. Each Curse of Knowledge forces each player to choose between a Disintegration card (with scaling damage: 6 on cycle 1, 7 on cycle 2, 8 on cycle 3) or a status debuff card (MindRot, Sloth, or WasteAway depending on the cycle). The Knowledge Overwhelming attack triggers a burnt visual state which is maintained until Ponder is used. In multiplayer, Ponder heals 30 HP per player rather than a flat 30."
+  "notes": "Knowledge Demon cycles through its move sequence with the Curse of Knowledge move available only for the first 3 cycles. Each Curse of Knowledge forces each player to choose between a Disintegration card (with scaling damage: 6 on cycle 1, 7 on cycle 2, 8 on cycle 3) or a status debuff card (MindRot, Sloth, or WasteAway depending on the cycle). The Knowledge Overwhelming attack triggers a burnt visual state which is maintained until Ponder is used. In multiplayer, Ponder heals 30 HP per player rather than a flat 30.",
+  "min_hp_base": 379,
+  "hp_ascension": 8
 }

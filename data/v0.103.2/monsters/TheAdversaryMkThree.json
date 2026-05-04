@@ -14,7 +14,9 @@
           "damage": 15
         }
       ],
-      "effects": ["Deal 15 damage"]
+      "effects": [
+        "Deal 15 damage"
+      ]
     },
     {
       "id": "FLAME_BEAM_MOVE",
@@ -25,7 +27,9 @@
           "damage": 18
         }
       ],
-      "effects": ["Deal 18 damage"]
+      "effects": [
+        "Deal 18 damage"
+      ]
     },
     {
       "id": "BARRAGE_MOVE",
@@ -40,10 +44,17 @@
           "type": "buff"
         }
       ],
-      "effects": ["Deal 10 damage", "2 hits", "Apply 4 Strength"]
+      "effects": [
+        "Deal 10 damage",
+        "2 hits",
+        "Apply 4 Strength"
+      ]
     }
   ],
-  "move_pattern": "Cycles: Crash → Flame Beam → Barrage → (repeat), starting with Crash.",
-  "powers_on_spawn": ["Artifact 2"],
-  "notes": "Starts combat with 2 Artifact, negating the first 2 debuffs applied to it. Barrage deals 2×10 damage then grants itself 4 Strength, increasing all future damage."
+  "move_pattern": "Cycles: Crash \u2192 Flame Beam \u2192 Barrage \u2192 (repeat), starting with Crash.",
+  "powers_on_spawn": [
+    "Artifact 2"
+  ],
+  "notes": "Starts combat with 2 Artifact, negating the first 2 debuffs applied to it. Barrage deals 2\u00d710 damage then grants itself 4 Strength, increasing all future damage.",
+  "hp_ascension": 8
 }

@@ -11,10 +11,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 13
+          "damage": 13,
+          "damage_base": 11,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 13 damage"]
+      "effects": [
+        "Deal 11/13 damage"
+      ]
     },
     {
       "id": "SPINNING_KICK_MOVE",
@@ -26,7 +30,9 @@
           "hits": 4
         }
       ],
-      "effects": ["Deal 2 damage 4 times"]
+      "effects": [
+        "Deal 2 damage 4 times"
+      ]
     },
     {
       "id": "BUBBLE_BURP_MOVE",
@@ -40,10 +46,16 @@
           "amount": 8
         }
       ],
-      "effects": ["Gain 8 Block", "Apply 2 Strength"]
+      "effects": [
+        "Apply 1/2 Strength",
+        "Gain 7/8 Block"
+      ]
     }
   ],
-  "move_pattern": "Cycles: Sea Kick → Spinning Kick → Bubble Burp → (repeat)",
+  "move_pattern": "Cycles: Sea Kick \u2192 Spinning Kick \u2192 Bubble Burp \u2192 (repeat)",
   "powers_on_spawn": [],
-  "notes": "Each use of Bubble Burp applies 2 Strength to the Seapunk, increasing the damage of all subsequent attacks."
+  "notes": "Each use of Bubble Burp applies 2 Strength to the Seapunk, increasing the damage of all subsequent attacks.",
+  "min_hp_base": 44,
+  "max_hp_base": 46,
+  "hp_ascension": 8
 }

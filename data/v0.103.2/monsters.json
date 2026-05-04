@@ -33,17 +33,22 @@
     "class_name": "AssassinRubyRaider",
     "min_hp": 19,
     "max_hp": 24,
+    "min_hp_base": 18,
+    "max_hp_base": 23,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "KILLSHOT_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 12,
+            "damage_base": 11,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 12 damage"
+          "Deal 11/12 damage"
         ],
         "title": "Killshot"
       }
@@ -66,13 +71,18 @@
     "class_name": "AxeRubyRaider",
     "min_hp": 21,
     "max_hp": 23,
+    "min_hp_base": 20,
+    "max_hp_base": 22,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SWING_1",
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 6,
+            "damage_base": 5,
+            "ascension": 9
           },
           {
             "type": "block"
@@ -86,7 +96,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 6,
+            "damage_base": 5,
+            "ascension": 9
           },
           {
             "type": "block"
@@ -100,11 +112,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 13,
+            "damage_base": 12,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 13 damage"
+          "Deal 12/13 damage"
         ],
         "title": "Big Swing"
       }
@@ -126,6 +140,9 @@
     "class_name": "Axebot",
     "min_hp": 42,
     "max_hp": 46,
+    "min_hp_base": 40,
+    "max_hp_base": 44,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "BOOT_UP_MOVE",
@@ -149,11 +166,13 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 6
+            "damage": 6,
+            "damage_base": 5,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 6 damage",
+          "Deal 5/6 damage",
           "2 hits"
         ],
         "title": "The One-Two"
@@ -175,14 +194,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 10
+            "damage": 10,
+            "damage_base": 8,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 10 damage",
+          "Deal 8/10 damage",
           "Apply 1 Weak",
           "Apply 1 Frail"
         ],
@@ -334,21 +355,26 @@
     "class_name": "BowlbugEgg",
     "min_hp": 23,
     "max_hp": 24,
+    "min_hp_base": 21,
+    "max_hp_base": 22,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "BITE_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 8,
+            "damage_base": 7,
+            "ascension": 9
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 8 damage",
-          "Gain 8 Block"
+          "Deal 7/8 damage",
+          "Gain 7/8 Block"
         ],
         "title": "Bite"
       }
@@ -371,6 +397,9 @@
     "class_name": "BowlbugNectar",
     "min_hp": 36,
     "max_hp": 39,
+    "min_hp_base": 35,
+    "max_hp_base": 38,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "THRASH_MOVE",
@@ -393,7 +422,7 @@
           }
         ],
         "effects": [
-          "Apply 16 Strength"
+          "Apply 15/16 Strength"
         ],
         "title": "Buff"
       },
@@ -429,17 +458,22 @@
     "class_name": "BowlbugRock",
     "min_hp": 46,
     "max_hp": 49,
+    "min_hp_base": 45,
+    "max_hp_base": 48,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "HEADBUTT_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 16,
+            "damage_base": 15,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 16 damage"
+          "Deal 15/16 damage"
         ],
         "title": "Headbutt"
       },
@@ -471,6 +505,9 @@
     "class_name": "BowlbugSilk",
     "min_hp": 41,
     "max_hp": 44,
+    "min_hp_base": 40,
+    "max_hp_base": 43,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "TRASH_MOVE",
@@ -478,7 +515,9 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 5
+            "damage": 5,
+            "damage_base": 4,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -510,17 +549,22 @@
     "class_name": "BruteRubyRaider",
     "min_hp": 31,
     "max_hp": 34,
+    "min_hp_base": 30,
+    "max_hp_base": 33,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "BEAT_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 8,
+            "damage_base": 7,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 8 damage"
+          "Deal 7/8 damage"
         ],
         "title": "Beat"
       },
@@ -553,6 +597,8 @@
     "class_name": "BygoneEffigy",
     "min_hp": 132,
     "max_hp": 132,
+    "min_hp_base": 127,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "INITIAL_SLEEP_MOVE",
@@ -591,7 +637,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 15,
+            "damage_base": 13,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -621,6 +669,9 @@
     "class_name": "Byrdonis",
     "min_hp": 90,
     "max_hp": 90,
+    "min_hp_base": 81,
+    "max_hp_base": 84,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "PECK_MOVE",
@@ -628,11 +679,13 @@
           {
             "type": "multi_attack",
             "damage": 4,
+            "damage_base": 3,
+            "ascension": 9,
             "hits": 3
           }
         ],
         "effects": [
-          "Deal 4 damage",
+          "Deal 3/4 damage",
           "3 hits"
         ],
         "title": "Peck"
@@ -642,11 +695,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 19
+            "damage": 19,
+            "damage_base": 17,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 19 damage"
+          "Deal 17/19 damage"
         ],
         "title": "Swoop"
       }
@@ -696,6 +751,9 @@
     "class_name": "CalcifiedCultist",
     "min_hp": 39,
     "max_hp": 42,
+    "min_hp_base": 38,
+    "max_hp_base": 41,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "INCANTATION_MOVE",
@@ -714,11 +772,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 11,
+            "damage_base": 9,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 11 damage"
+          "Deal 9/11 damage"
         ],
         "title": "Dark Strike"
       }
@@ -742,6 +802,8 @@
     "class_name": "CeremonialBeast",
     "min_hp": 262,
     "max_hp": 262,
+    "min_hp_base": 252,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "STAMP_MOVE",
@@ -751,7 +813,7 @@
           }
         ],
         "effects": [
-          "Apply 160 Plow"
+          "Apply 150/160 Plow"
         ],
         "title": "Stamp"
       },
@@ -760,14 +822,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 20
+            "damage": 20,
+            "damage_base": 18,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 20 damage",
+          "Deal 18/20 damage",
           "Apply 2 Strength"
         ],
         "title": "Plow"
@@ -799,11 +863,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 17,
+            "damage_base": 15,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 17 damage"
+          "Deal 15/17 damage"
         ],
         "title": "Stomp"
       },
@@ -812,15 +878,17 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 19
+            "damage": 19,
+            "damage_base": 17,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 19 damage",
-          "Apply 4 Strength"
+          "Deal 17/19 damage",
+          "Apply 3/4 Strength"
         ],
         "title": "Crush"
       }
@@ -848,6 +916,9 @@
     "class_name": "Chomper",
     "min_hp": 63,
     "max_hp": 67,
+    "min_hp_base": 60,
+    "max_hp_base": 64,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "CLAMP_MOVE",
@@ -855,11 +926,13 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 9 damage",
+          "Deal 8/9 damage",
           "2 hits"
         ],
         "title": "Clamp"
@@ -894,6 +967,9 @@
     "class_name": "CorpseSlug",
     "min_hp": 27,
     "max_hp": 29,
+    "min_hp_base": 25,
+    "max_hp_base": 27,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "WHIP_SLAP_MOVE",
@@ -915,11 +991,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 9 damage"
+          "Deal 8/9 damage"
         ],
         "title": "Glomp"
       },
@@ -954,17 +1032,22 @@
     "class_name": "CrossbowRubyRaider",
     "min_hp": 19,
     "max_hp": 22,
+    "min_hp_base": 18,
+    "max_hp_base": 21,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "FIRE_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 16,
+            "damage_base": 14,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 16 damage"
+          "Deal 14/16 damage"
         ],
         "title": "Fire!"
       },
@@ -996,17 +1079,21 @@
     "class_name": "Crusher",
     "min_hp": 219,
     "max_hp": 219,
+    "min_hp_base": 209,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "THRASH_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 14,
+            "damage_base": 12,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 14 damage"
+          "Deal 12/14 damage"
         ],
         "title": "Thrash"
       },
@@ -1029,6 +1116,8 @@
           {
             "type": "multi_attack",
             "damage": 7,
+            "damage_base": 6,
+            "ascension": 9,
             "hits": 2
           },
           {
@@ -1036,7 +1125,7 @@
           }
         ],
         "effects": [
-          "Deal 7 damage",
+          "Deal 6/7 damage",
           "2 hits",
           "Apply 2 Weak",
           "Apply 2 Frail"
@@ -1051,7 +1140,7 @@
           }
         ],
         "effects": [
-          "Apply 3 Strength"
+          "Apply 2/3 Strength"
         ],
         "title": "Adapt"
       },
@@ -1060,14 +1149,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 14,
+            "damage_base": 12,
+            "ascension": 9
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 14 damage",
+          "Deal 12/14 damage",
           "Gain 18 Block"
         ],
         "title": "Guarded Strike"
@@ -1095,6 +1186,8 @@
     "class_name": "CubexConstruct",
     "min_hp": 70,
     "max_hp": 70,
+    "min_hp_base": 65,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "CHARGE_UP_MOVE",
@@ -1113,7 +1206,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 8,
+            "damage_base": 7,
+            "ascension": 9
           },
           {
             "type": "buff"
@@ -1127,7 +1222,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 8,
+            "damage_base": 7,
+            "ascension": 9
           },
           {
             "type": "buff"
@@ -1142,11 +1239,13 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 6
+            "damage": 6,
+            "damage_base": 5,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 6 damage",
+          "Deal 5/6 damage",
           "2 hits"
         ],
         "title": "Expel Blast"
@@ -1185,6 +1284,9 @@
     "class_name": "DampCultist",
     "min_hp": 52,
     "max_hp": 54,
+    "min_hp_base": 51,
+    "max_hp_base": 53,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "INCANTATION_MOVE",
@@ -1194,7 +1296,7 @@
           }
         ],
         "effects": [
-          "Apply 6 Ritual"
+          "Apply 5/6 Ritual"
         ],
         "title": "Incantation"
       },
@@ -1203,11 +1305,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 3
+            "damage": 3,
+            "damage_base": 1,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 3 damage"
+          "Deal 1/3 damage"
         ],
         "title": "Dark Strike"
       }
@@ -1231,6 +1335,9 @@
     "class_name": "DecimillipedeSegment",
     "min_hp": 46,
     "max_hp": 52,
+    "min_hp_base": 40,
+    "max_hp_base": 46,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "WRITHE_MOVE",
@@ -1238,11 +1345,13 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 6
+            "damage": 6,
+            "damage_base": 5,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 6 damage",
+          "Deal 5/6 damage",
           "2 hits"
         ],
         "title": "Writhe"
@@ -1252,14 +1361,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 7,
+            "damage_base": 6,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 7 damage",
+          "Deal 6/7 damage",
           "Apply 2 Strength"
         ],
         "title": "Bulk"
@@ -1269,14 +1380,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 9 damage",
+          "Deal 8/9 damage",
           "Apply 1 Weak"
         ],
         "title": "Constrict"
@@ -1354,13 +1467,15 @@
     },
     "powers_on_spawn": [],
     "loc_key": "DEPRECATED_MONSTER",
-    "title": "Deprecated Monster",
+    "title": "DeprecatedMonster",
     "move_pattern_desc": "Starts with Stub (repeats)."
   },
   {
     "class_name": "DevotedSculptor",
     "min_hp": 172,
     "max_hp": 172,
+    "min_hp_base": 162,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "FORBIDDEN_INCANTATION_MOVE",
@@ -1379,11 +1494,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 15,
+            "damage_base": 12,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 15 damage"
+          "Deal 12/15 damage"
         ],
         "title": "Savage"
       }
@@ -1407,6 +1524,8 @@
     "class_name": "Doormaker",
     "min_hp": 512,
     "max_hp": 512,
+    "min_hp_base": 489,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "DRAMATIC_OPEN_MOVE",
@@ -1423,11 +1542,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 35
+            "damage": 35,
+            "damage_base": 30,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 35 damage"
+          "Deal 30/35 damage"
         ],
         "title": "Hunger"
       },
@@ -1436,11 +1557,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 26
+            "damage": 26,
+            "damage_base": 24,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 26 damage"
+          "Deal 24/26 damage"
         ],
         "title": "Scrutiny"
       },
@@ -1450,16 +1573,18 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 11
+            "damage": 11,
+            "damage_base": 10,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 11 damage",
+          "Deal 10/11 damage",
           "2 hits",
-          "Apply 4 Strength"
+          "Apply 3/4 Strength"
         ],
         "title": "Grasp"
       }
@@ -1482,6 +1607,8 @@
     "class_name": "Entomancer",
     "min_hp": 155,
     "max_hp": 155,
+    "min_hp_base": 145,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "PHEROMONE_SPIT_MOVE",
@@ -1499,12 +1626,14 @@
           {
             "type": "multi_attack",
             "damage": 3,
-            "hits": 8
+            "hits": 8,
+            "hits_base": 7,
+            "ascension": 9
           }
         ],
         "effects": [
           "Deal 3 damage",
-          "8 hits"
+          "7/8 hits"
         ],
         "title": "Beeeees!"
       },
@@ -1513,11 +1642,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 20
+            "damage": 20,
+            "damage_base": 18,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 20 damage"
+          "Deal 18/20 damage"
         ],
         "title": "Spear!"
       }
@@ -1541,6 +1672,9 @@
     "class_name": "Exoskeleton",
     "min_hp": 25,
     "max_hp": 29,
+    "min_hp_base": 24,
+    "max_hp_base": 28,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SKITTER_MOVE",
@@ -1548,12 +1682,14 @@
           {
             "type": "multi_attack",
             "damage": 1,
-            "hits": 4
+            "hits": 4,
+            "hits_base": 3,
+            "ascension": 9
           }
         ],
         "effects": [
           "Deal 1 damage",
-          "4 hits"
+          "3/4 hits"
         ],
         "title": "Skitter"
       },
@@ -1562,7 +1698,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -1631,6 +1769,8 @@
     "class_name": "Fabricator",
     "min_hp": 155,
     "max_hp": 155,
+    "min_hp_base": 150,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "FABRICATE_MOVE",
@@ -1647,14 +1787,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 21
+            "damage": 21,
+            "damage_base": 18,
+            "ascension": 9
           },
           {
             "type": "summon"
           }
         ],
         "effects": [
-          "Deal 21 damage"
+          "Deal 18/21 damage"
         ],
         "title": "Fabricating Strike"
       },
@@ -1663,11 +1805,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 13,
+            "damage_base": 11,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 13 damage"
+          "Deal 11/13 damage"
         ],
         "title": "Disintegrate"
       }
@@ -1681,17 +1825,22 @@
     "class_name": "FakeMerchantMonster",
     "min_hp": 175,
     "max_hp": 175,
+    "min_hp_base": 165,
+    "max_hp_base": 165,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SWIPE_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 15,
+            "damage_base": 13,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 15 damage"
+          "Deal 13/15 damage"
         ],
         "title": "Swipe"
       },
@@ -1715,14 +1864,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 10
+            "damage": 10,
+            "damage_base": 9,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 10 damage",
+          "Deal 9/10 damage",
           "Apply 1 Frail"
         ],
         "title": "Throw Relic"
@@ -1778,6 +1929,9 @@
     "class_name": "FatGremlin",
     "min_hp": 14,
     "max_hp": 18,
+    "min_hp_base": 13,
+    "max_hp_base": 17,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SPAWNED_MOVE",
@@ -1819,6 +1973,8 @@
     "class_name": "FlailKnight",
     "min_hp": 108,
     "max_hp": 108,
+    "min_hp_base": 101,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "WAR_CHANT",
@@ -1838,11 +1994,13 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 10
+            "damage": 10,
+            "damage_base": 9,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 10 damage",
+          "Deal 9/10 damage",
           "2 hits"
         ],
         "title": "Flail"
@@ -1852,11 +2010,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 17,
+            "damage_base": 15,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 17 damage"
+          "Deal 15/17 damage"
         ],
         "title": "Ram"
       }
@@ -1890,6 +2050,9 @@
     "class_name": "Flyconid",
     "min_hp": 51,
     "max_hp": 53,
+    "min_hp_base": 47,
+    "max_hp_base": 49,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "VULNERABLE_SPORES_MOVE",
@@ -1908,14 +2071,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 9 damage",
+          "Deal 8/9 damage",
           "Apply 2 Frail"
         ],
         "title": "Frail Spores"
@@ -1925,11 +2090,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 12,
+            "damage_base": 11,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 12 damage"
+          "Deal 11/12 damage"
         ],
         "title": "Smash"
       }
@@ -1955,6 +2122,8 @@
     "class_name": "Fogmog",
     "min_hp": 78,
     "max_hp": 78,
+    "min_hp_base": 74,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "ILLUSION_MOVE",
@@ -1971,14 +2140,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 9 damage",
+          "Deal 8/9 damage",
           "Apply 1 Strength"
         ],
         "title": "Swipe"
@@ -1988,7 +2159,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           },
           {
             "type": "buff"
@@ -2002,11 +2175,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 16,
+            "damage_base": 14,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 16 damage"
+          "Deal 14/16 damage"
         ],
         "title": "Headbutt"
       }
@@ -2028,20 +2203,25 @@
     "class_name": "FossilStalker",
     "min_hp": 54,
     "max_hp": 56,
+    "min_hp_base": 51,
+    "max_hp_base": 53,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "TACKLE_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 11,
+            "damage_base": 9,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 11 damage",
+          "Deal 9/11 damage",
           "Apply 1 Frail"
         ],
         "title": "Tackle"
@@ -2051,11 +2231,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 14,
+            "damage_base": 12,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 14 damage"
+          "Deal 12/14 damage"
         ],
         "title": "Latch"
       },
@@ -2065,6 +2247,8 @@
           {
             "type": "multi_attack",
             "damage": 4,
+            "damage_base": 3,
+            "ascension": 9,
             "hits": 2
           }
         ],
@@ -2103,6 +2287,8 @@
     "class_name": "FrogKnight",
     "min_hp": 199,
     "max_hp": 199,
+    "min_hp_base": 191,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "FOR_THE_QUEEN",
@@ -2121,11 +2307,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 23
+            "damage": 23,
+            "damage_base": 21,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 23 damage"
+          "Deal 21/23 damage"
         ],
         "title": "Strike Down Evil"
       },
@@ -2134,14 +2322,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 14,
+            "damage_base": 13,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 14 damage",
+          "Deal 13/14 damage",
           "Apply 2 Frail"
         ],
         "title": "Tongue Lash"
@@ -2151,11 +2341,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 40
+            "damage": 40,
+            "damage_base": 35,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 40 damage"
+          "Deal 35/40 damage"
         ],
         "title": "Beetle Charge"
       }
@@ -2179,13 +2371,18 @@
     "class_name": "FuzzyWurmCrawler",
     "min_hp": 58,
     "max_hp": 59,
+    "min_hp_base": 55,
+    "max_hp_base": 57,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "FIRST_ACID_GOOP",
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 6,
+            "damage_base": 4,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -2196,11 +2393,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 6,
+            "damage_base": 4,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 6 damage"
+          "Deal 4/6 damage"
         ],
         "title": "Acid Goop"
       },
@@ -2234,6 +2433,8 @@
     "class_name": "GasBomb",
     "min_hp": 8,
     "max_hp": 8,
+    "min_hp_base": 7,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "EXPLODE_MOVE",
@@ -2243,7 +2444,7 @@
           }
         ],
         "effects": [
-          "Deal 9 damage"
+          "Deal 8/9 damage"
         ],
         "title": "Explode"
       }
@@ -2262,6 +2463,8 @@
     "class_name": "GlobeHead",
     "min_hp": 158,
     "max_hp": 158,
+    "min_hp_base": 148,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "THUNDER_STRIKE",
@@ -2269,11 +2472,13 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 7
+            "damage": 7,
+            "damage_base": 6,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 7 damage",
+          "Deal 6/7 damage",
           "3 hits"
         ],
         "title": "Thunder Strike"
@@ -2283,14 +2488,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 14,
+            "damage_base": 13,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 14 damage",
+          "Deal 13/14 damage",
           "Apply 2 Frail"
         ],
         "title": "Shocking Slap"
@@ -2300,14 +2507,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 17,
+            "damage_base": 16,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 17 damage",
+          "Deal 16/17 damage",
           "Apply 2 Strength"
         ],
         "title": "Galvanic Burst"
@@ -2332,6 +2541,9 @@
     "class_name": "GremlinMerc",
     "min_hp": 51,
     "max_hp": 53,
+    "min_hp_base": 47,
+    "max_hp_base": 49,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "GIMME_MOVE",
@@ -2339,11 +2551,13 @@
           {
             "type": "multi_attack",
             "damage": 8,
+            "damage_base": 7,
+            "ascension": 8,
             "hits": 2
           }
         ],
         "effects": [
-          "Deal 8 damage",
+          "Deal 7/8 damage",
           "2 hits"
         ],
         "title": "Gimme"
@@ -2354,6 +2568,8 @@
           {
             "type": "multi_attack",
             "damage": 7,
+            "damage_base": 6,
+            "ascension": 8,
             "hits": 2
           },
           {
@@ -2361,7 +2577,7 @@
           }
         ],
         "effects": [
-          "Deal 7 damage",
+          "Deal 6/7 damage",
           "2 hits",
           "Apply 2 Weak"
         ],
@@ -2372,14 +2588,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 8
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 9 damage",
+          "Deal 8/9 damage",
           "Apply 2 Strength"
         ],
         "title": "Hehe"
@@ -2404,6 +2622,9 @@
     "class_name": "Guardbot",
     "min_hp": 17,
     "max_hp": 21,
+    "min_hp_base": 16,
+    "max_hp_base": 20,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "GUARD_MOVE",
@@ -2436,20 +2657,24 @@
     "class_name": "HauntedShip",
     "min_hp": 67,
     "max_hp": 67,
+    "min_hp_base": 63,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "RAMMING_SPEED_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 11,
+            "damage_base": 10,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 11 damage",
+          "Deal 10/11 damage",
           "Apply 1 Weak"
         ],
         "title": "Ramming Speed"
@@ -2459,11 +2684,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 14,
+            "damage_base": 13,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 14 damage"
+          "Deal 13/14 damage"
         ],
         "title": "Swipe"
       },
@@ -2473,11 +2700,13 @@
           {
             "type": "multi_attack",
             "damage": 5,
+            "damage_base": 4,
+            "ascension": 9,
             "hits": 3
           }
         ],
         "effects": [
-          "Deal 5 damage",
+          "Deal 4/5 damage",
           "3 hits"
         ],
         "title": "Stomp"
@@ -2511,6 +2740,8 @@
     "class_name": "HunterKiller",
     "min_hp": 126,
     "max_hp": 126,
+    "min_hp_base": 121,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "TENDERIZING_GOOP_MOVE",
@@ -2527,11 +2758,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 19
+            "damage": 19,
+            "damage_base": 17,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 19 damage"
+          "Deal 17/19 damage"
         ],
         "title": "Bite"
       },
@@ -2541,11 +2774,13 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 8
+            "damage": 8,
+            "damage_base": 7,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 8 damage",
+          "Deal 7/8 damage",
           "3 hits"
         ],
         "title": "Puncture"
@@ -2576,17 +2811,21 @@
     "class_name": "InfestedPrism",
     "min_hp": 215,
     "max_hp": 215,
+    "min_hp_base": 200,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "JAB_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 24
+            "damage": 24,
+            "damage_base": 22,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 24 damage"
+          "Deal 22/24 damage"
         ],
         "title": "Jab"
       },
@@ -2595,15 +2834,17 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 18,
+            "damage_base": 16,
+            "ascension": 9
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 18 damage",
-          "Gain 18 Block"
+          "Deal 16/18 damage",
+          "Gain 16/18 Block"
         ],
         "title": "Radiate"
       },
@@ -2613,11 +2854,13 @@
           {
             "type": "multi_attack",
             "damage": 10,
+            "damage_base": 9,
+            "ascension": 9,
             "hits": 3
           }
         ],
         "effects": [
-          "Deal 10 damage",
+          "Deal 9/10 damage",
           "3 hits"
         ],
         "title": "Whirlwind"
@@ -2633,8 +2876,8 @@
           }
         ],
         "effects": [
-          "Apply 5 Strength",
-          "Gain 22 Block"
+          "Apply 4/5 Strength",
+          "Gain 20/22 Block"
         ],
         "title": "Pulsate"
       }
@@ -2659,17 +2902,22 @@
     "class_name": "Inklet",
     "min_hp": 12,
     "max_hp": 18,
+    "min_hp_base": 11,
+    "max_hp_base": 17,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "JAB_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 4
+            "damage": 4,
+            "damage_base": 3,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 4 damage"
+          "Deal 3/4 damage"
         ],
         "title": "Jab"
       },
@@ -2679,11 +2927,13 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 3
+            "damage": 3,
+            "damage_base": 2,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 3 damage",
+          "Deal 2/3 damage",
           "3 hits"
         ],
         "title": "Whirlwind"
@@ -2693,11 +2943,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 11,
+            "damage_base": 10,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 11 damage"
+          "Deal 10/11 damage"
         ],
         "title": "Piercing Gaze"
       }
@@ -2720,6 +2972,9 @@
     "class_name": "KinFollower",
     "min_hp": 62,
     "max_hp": 63,
+    "min_hp_base": 58,
+    "max_hp_base": 59,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "QUICK_SLASH_MOVE",
@@ -2757,7 +3012,7 @@
           }
         ],
         "effects": [
-          "Apply 3 Strength"
+          "Apply 2/3 Strength"
         ],
         "title": "Power Dance"
       }
@@ -2780,20 +3035,24 @@
     "class_name": "KinPriest",
     "min_hp": 199,
     "max_hp": 199,
+    "min_hp_base": 190,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "ORB_OF_FRAILTY_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 9 damage",
+          "Deal 8/9 damage",
           "Apply 1 Frail"
         ],
         "title": "Orb Of Frailty"
@@ -2803,14 +3062,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 9 damage",
+          "Deal 8/9 damage",
           "Apply 1 Weak"
         ],
         "title": "Orb Of Weakness"
@@ -2838,7 +3099,7 @@
           }
         ],
         "effects": [
-          "Apply 3 Strength"
+          "Apply 2/3 Strength"
         ],
         "title": "Ritual"
       }
@@ -2861,6 +3122,8 @@
     "class_name": "KnowledgeDemon",
     "min_hp": 399,
     "max_hp": 399,
+    "min_hp_base": 379,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "CURSE_OF_KNOWLEDGE_MOVE",
@@ -2877,11 +3140,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 18,
+            "damage_base": 17,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 18 damage"
+          "Deal 17/18 damage"
         ],
         "title": "Slap"
       },
@@ -2891,11 +3156,13 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 9 damage",
+          "Deal 8/9 damage",
           "3 hits"
         ],
         "title": "Knowledge Overwhelming"
@@ -2905,7 +3172,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 13,
+            "damage_base": 11,
+            "ascension": 9
           },
           {
             "type": "heal"
@@ -2915,8 +3184,8 @@
           }
         ],
         "effects": [
-          "Deal 13 damage",
-          "Apply 3 Strength",
+          "Deal 11/13 damage",
+          "Apply 2/3 Strength",
           "Heal 30"
         ],
         "title": "Ponder"
@@ -2939,6 +3208,8 @@
     "class_name": "LagavulinMatriarch",
     "min_hp": 233,
     "max_hp": 233,
+    "min_hp_base": 222,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SLEEP_MOVE",
@@ -2955,11 +3226,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 21
+            "damage": 21,
+            "damage_base": 19,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 21 damage"
+          "Deal 19/21 damage"
         ],
         "title": "Slash"
       },
@@ -2968,15 +3241,17 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 14,
+            "damage_base": 12,
+            "ascension": 9
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 14 damage",
-          "Gain 14 Block"
+          "Deal 12/14 damage",
+          "Gain 12/14 Block"
         ],
         "title": "Slash2"
       },
@@ -2986,11 +3261,13 @@
           {
             "type": "multi_attack",
             "damage": 10,
+            "damage_base": 9,
+            "ascension": 9,
             "hits": 2
           }
         ],
         "effects": [
-          "Deal 10 damage",
+          "Deal 9/10 damage",
           "2 hits"
         ],
         "title": "Disembowel"
@@ -3032,17 +3309,22 @@
     "class_name": "LeafSlimeM",
     "min_hp": 33,
     "max_hp": 36,
+    "min_hp_base": 32,
+    "max_hp_base": 35,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "CLUMP_SHOT",
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 9 damage"
+          "Deal 8/9 damage"
         ],
         "title": "Clump Shot"
       },
@@ -3075,13 +3357,18 @@
     "class_name": "LeafSlimeS",
     "min_hp": 12,
     "max_hp": 16,
+    "min_hp_base": 11,
+    "max_hp_base": 15,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "BUTT_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 4
+            "damage": 4,
+            "damage_base": 3,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -3124,20 +3411,24 @@
     "class_name": "LivingFog",
     "min_hp": 82,
     "max_hp": 82,
+    "min_hp_base": 80,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "ADVANCED_GAS_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 9 damage",
+          "Deal 8/9 damage",
           "Apply 1 Smoggy"
         ],
         "title": "Advanced Gas"
@@ -3147,14 +3438,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 6,
+            "damage_base": 5,
+            "ascension": 9
           },
           {
             "type": "summon"
           }
         ],
         "effects": [
-          "Deal 6 damage"
+          "Deal 5/6 damage"
         ],
         "title": "Bloat"
       },
@@ -3163,11 +3456,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 9 damage"
+          "Deal 8/9 damage"
         ],
         "title": "Super Gas Blast"
       }
@@ -3189,6 +3484,8 @@
     "class_name": "LivingShield",
     "min_hp": 65,
     "max_hp": 65,
+    "min_hp_base": 55,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SHIELD_SLAM_MOVE",
@@ -3208,14 +3505,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 18,
+            "damage_base": 16,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 18 damage",
+          "Deal 16/18 damage",
           "Apply 3 Strength"
         ],
         "title": "Smash"
@@ -3241,13 +3540,18 @@
     "class_name": "LouseProgenitor",
     "min_hp": 138,
     "max_hp": 141,
+    "min_hp_base": 134,
+    "max_hp_base": 136,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "WEB_CANNON_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 10
+            "damage": 10,
+            "damage_base": 9,
+            "ascension": 9
           },
           {
             "type": "debuff"
@@ -3261,11 +3565,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 16,
+            "damage_base": 14,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 16 damage"
+          "Deal 14/16 damage"
         ],
         "title": "Pounce"
       },
@@ -3281,7 +3587,7 @@
         ],
         "effects": [
           "Apply 5 Strength",
-          "Gain 18 Block"
+          "Gain 14/18 Block"
         ],
         "title": "Curl and Grow"
       }
@@ -3305,13 +3611,17 @@
     "class_name": "MagiKnight",
     "min_hp": 89,
     "max_hp": 89,
+    "min_hp_base": 82,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "FIRST_POWER_SHIELD_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 7,
+            "damage_base": 6,
+            "ascension": 9
           },
           {
             "type": "block"
@@ -3338,7 +3648,7 @@
           }
         ],
         "effects": [
-          "Gain 9 Block"
+          "Gain 5/9 Block"
         ],
         "title": "Prep"
       },
@@ -3347,11 +3657,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 40
+            "damage": 40,
+            "damage_base": 35,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 40 damage"
+          "Deal 35/40 damage"
         ],
         "title": "Magic Bomb"
       },
@@ -3360,7 +3672,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 11,
+            "damage_base": 10,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -3386,17 +3700,21 @@
     "class_name": "Mawler",
     "min_hp": 76,
     "max_hp": 76,
+    "min_hp_base": 72,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "RIP_AND_TEAR_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 16,
+            "damage_base": 14,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 16 damage"
+          "Deal 14/16 damage"
         ],
         "title": "Rip and Tear"
       },
@@ -3418,11 +3736,13 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 5
+            "damage": 5,
+            "damage_base": 4,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 5 damage",
+          "Deal 4/5 damage",
           "2 hits"
         ],
         "title": "Claw"
@@ -3443,17 +3763,21 @@
     "class_name": "MechaKnight",
     "min_hp": 320,
     "max_hp": 320,
+    "min_hp_base": 300,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "CHARGE_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 30
+            "damage": 30,
+            "damage_base": 25,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 30 damage"
+          "Deal 25/30 damage"
         ],
         "title": "Charge"
       },
@@ -3490,11 +3814,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 40
+            "damage": 40,
+            "damage_base": 35,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 40 damage"
+          "Deal 35/40 damage"
         ],
         "title": "Heavy Cleave"
       }
@@ -3554,6 +3880,9 @@
     "class_name": "Myte",
     "min_hp": 64,
     "max_hp": 69,
+    "min_hp_base": 61,
+    "max_hp_base": 67,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "TOXIC_MOVE",
@@ -3572,11 +3901,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 15,
+            "damage_base": 13,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 15 damage"
+          "Deal 13/15 damage"
         ],
         "title": "Bite"
       },
@@ -3585,15 +3916,17 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 6
+            "damage": 6,
+            "damage_base": 4,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 6 damage",
-          "Apply 3 Strength"
+          "Deal 4/6 damage",
+          "Apply 2/3 Strength"
         ],
         "title": "Suck"
       }
@@ -3614,17 +3947,22 @@
     "class_name": "Nibbit",
     "min_hp": 44,
     "max_hp": 48,
+    "min_hp_base": 42,
+    "max_hp_base": 46,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "BUTT_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 13,
+            "damage_base": 12,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 13 damage"
+          "Deal 12/13 damage"
         ],
         "title": "Butt"
       },
@@ -3633,15 +3971,17 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 7,
+            "damage_base": 6,
+            "ascension": 9
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 7 damage",
-          "Gain 6 Block"
+          "Deal 6/7 damage",
+          "Gain 5/6 Block"
         ],
         "title": "Slice"
       },
@@ -3653,7 +3993,7 @@
           }
         ],
         "effects": [
-          "Apply 3 Strength"
+          "Apply 2/3 Strength"
         ],
         "title": "Hiss"
       }
@@ -3674,6 +4014,9 @@
     "class_name": "Noisebot",
     "min_hp": 19,
     "max_hp": 24,
+    "min_hp_base": 18,
+    "max_hp_base": 23,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "NOISE_MOVE",
@@ -3761,6 +4104,9 @@
     "class_name": "Ovicopter",
     "min_hp": 126,
     "max_hp": 132,
+    "min_hp_base": 124,
+    "max_hp_base": 130,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "LAY_EGGS_MOVE",
@@ -3779,11 +4125,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 17,
+            "damage_base": 16,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 17 damage"
+          "Deal 16/17 damage"
         ],
         "title": "Smash"
       },
@@ -3792,14 +4140,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 8,
+            "damage_base": 7,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 8 damage",
+          "Deal 7/8 damage",
           "Apply 2 Vulnerable"
         ],
         "title": "Tenderizer"
@@ -3812,7 +4162,7 @@
           }
         ],
         "effects": [
-          "Apply 4 Strength"
+          "Apply 3/4 Strength"
         ],
         "title": "Nutritional Paste"
       }
@@ -3834,17 +4184,21 @@
     "class_name": "OwlMagistrate",
     "min_hp": 243,
     "max_hp": 243,
+    "min_hp_base": 234,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "MAGISTRATE_SCRUTINY",
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 17,
+            "damage_base": 16,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 17 damage"
+          "Deal 16/17 damage"
         ],
         "title": "Magistrate Scrutiny"
       },
@@ -3880,14 +4234,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 36
+            "damage": 36,
+            "damage_base": 33,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 36 damage",
+          "Deal 33/36 damage",
           "Apply 4 Vulnerable"
         ],
         "title": "Verdict"
@@ -3944,11 +4300,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 17,
+            "damage_base": 16,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 17 damage"
+          "Deal 16/17 damage"
         ],
         "title": "Slam"
       }
@@ -3973,6 +4331,9 @@
     "class_name": "PhantasmalGardener",
     "min_hp": 27,
     "max_hp": 32,
+    "min_hp_base": 26,
+    "max_hp_base": 31,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "BITE_MOVE",
@@ -4023,7 +4384,7 @@
           }
         ],
         "effects": [
-          "Apply 3 Strength"
+          "Apply 2/3 Strength"
         ],
         "title": "Enlarge"
       }
@@ -4047,6 +4408,9 @@
     "class_name": "PhrogParasite",
     "min_hp": 66,
     "max_hp": 68,
+    "min_hp_base": 61,
+    "max_hp_base": 64,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "INFECT_MOVE",
@@ -4066,11 +4430,13 @@
           {
             "type": "multi_attack",
             "hits": 4,
-            "damage": 5
+            "damage": 5,
+            "damage_base": 4,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 5 damage",
+          "Deal 4/5 damage",
           "4 hits"
         ],
         "title": "Lash"
@@ -4104,6 +4470,8 @@
     "class_name": "PunchConstruct",
     "min_hp": 60,
     "max_hp": 60,
+    "min_hp_base": 55,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "READY_MOVE",
@@ -4122,11 +4490,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 16,
+            "damage_base": 14,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 16 damage"
+          "Deal 14/16 damage"
         ],
         "title": "Strong Punch"
       },
@@ -4136,6 +4506,8 @@
           {
             "type": "multi_attack",
             "damage": 6,
+            "damage_base": 5,
+            "ascension": 9,
             "hits": 2
           },
           {
@@ -4143,7 +4515,7 @@
           }
         ],
         "effects": [
-          "Deal 6 damage",
+          "Deal 5/6 damage",
           "2 hits",
           "Apply 1 Weak"
         ],
@@ -4168,6 +4540,8 @@
     "class_name": "Queen",
     "min_hp": 419,
     "max_hp": 419,
+    "min_hp_base": 400,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "PUPPET_STRINGS_MOVE",
@@ -4213,11 +4587,13 @@
           {
             "type": "multi_attack",
             "hits": 5,
-            "damage": 4
+            "damage": 4,
+            "damage_base": 3,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 4 damage",
+          "Deal 3/4 damage",
           "5 hits"
         ],
         "title": "Off with Your Head"
@@ -4227,11 +4603,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 18,
+            "damage_base": 15,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 18 damage"
+          "Deal 15/18 damage"
         ],
         "title": "Execution"
       },
@@ -4266,17 +4644,21 @@
     "class_name": "Rocket",
     "min_hp": 209,
     "max_hp": 209,
+    "min_hp_base": 199,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "TARGETING_RETICLE_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 4
+            "damage": 4,
+            "damage_base": 3,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 4 damage"
+          "Deal 3/4 damage"
         ],
         "title": "Targeting Reticle"
       },
@@ -4285,11 +4667,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 20
+            "damage": 20,
+            "damage_base": 18,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 20 damage"
+          "Deal 18/20 damage"
         ],
         "title": "Precision Beam"
       },
@@ -4301,7 +4685,7 @@
           }
         ],
         "effects": [
-          "Apply 3 Strength"
+          "Apply 2/3 Strength"
         ],
         "title": "Charge Up"
       },
@@ -4310,11 +4694,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 35
+            "damage": 35,
+            "damage_base": 31,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 35 damage"
+          "Deal 31/35 damage"
         ],
         "title": "Laser"
       },
@@ -4352,17 +4738,22 @@
     "class_name": "ScrollOfBiting",
     "min_hp": 32,
     "max_hp": 39,
+    "min_hp_base": 31,
+    "max_hp_base": 38,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "CHOMP",
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 16,
+            "damage_base": 14,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 16 damage"
+          "Deal 14/16 damage"
         ],
         "title": "Chomp"
       },
@@ -4372,7 +4763,9 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 6
+            "damage": 6,
+            "damage_base": 5,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -4419,17 +4812,22 @@
     "class_name": "Seapunk",
     "min_hp": 47,
     "max_hp": 49,
+    "min_hp_base": 44,
+    "max_hp_base": 46,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SEA_KICK_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 13,
+            "damage_base": 11,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 13 damage"
+          "Deal 11/13 damage"
         ],
         "title": "Sea Kick"
       },
@@ -4459,8 +4857,8 @@
           }
         ],
         "effects": [
-          "Apply 2 Strength",
-          "Gain 8 Block"
+          "Apply 1/2 Strength",
+          "Gain 7/8 Block"
         ],
         "title": "Bubble Burp"
       }
@@ -4482,6 +4880,8 @@
     "class_name": "SewerClam",
     "min_hp": 58,
     "max_hp": 58,
+    "min_hp_base": 56,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "PRESSURIZE_MOVE",
@@ -4500,11 +4900,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 11,
+            "damage_base": 10,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 11 damage"
+          "Deal 10/11 damage"
         ],
         "title": "Jet"
       }
@@ -4526,6 +4928,9 @@
     "class_name": "ShrinkerBeetle",
     "min_hp": 40,
     "max_hp": 42,
+    "min_hp_base": 38,
+    "max_hp_base": 40,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SHRINKER_MOVE",
@@ -4542,11 +4947,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 8,
+            "damage_base": 7,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 8 damage"
+          "Deal 7/8 damage"
         ],
         "title": "Chomp"
       },
@@ -4555,11 +4962,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 14,
+            "damage_base": 13,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 14 damage"
+          "Deal 13/14 damage"
         ],
         "title": "Stomp"
       }
@@ -4614,17 +5023,21 @@
     "class_name": "SkulkingColony",
     "min_hp": 75,
     "max_hp": 75,
+    "min_hp_base": 70,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SMASH_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 13,
+            "damage_base": 12,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 13 damage"
+          "Deal 12/13 damage"
         ],
         "title": "Smash"
       },
@@ -4633,15 +5046,17 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 16,
+            "damage_base": 14,
+            "ascension": 9
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 16 damage",
-          "Gain 13 Block"
+          "Deal 14/16 damage",
+          "Gain 10/13 Block"
         ],
         "title": "Zoom"
       },
@@ -4650,15 +5065,17 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 11,
+            "damage_base": 9,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 11 damage",
-          "Apply 3 Strength"
+          "Deal 9/11 damage",
+          "Apply 2/3 Strength"
         ],
         "title": "Inertia"
       },
@@ -4668,11 +5085,13 @@
           {
             "type": "multi_attack",
             "damage": 8,
+            "damage_base": 7,
+            "ascension": 9,
             "hits": 2
           }
         ],
         "effects": [
-          "Deal 8 damage",
+          "Deal 7/8 damage",
           "2 hits"
         ],
         "title": "Piercing Stabs"
@@ -4698,6 +5117,8 @@
     "class_name": "SlimedBerserker",
     "min_hp": 276,
     "max_hp": 276,
+    "min_hp_base": 266,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "VOMIT_ICHOR_MOVE",
@@ -4732,11 +5153,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 33
+            "damage": 33,
+            "damage_base": 30,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 33 damage"
+          "Deal 30/33 damage"
         ],
         "title": "Smother"
       },
@@ -4746,11 +5169,13 @@
           {
             "type": "multi_attack",
             "hits": 4,
-            "damage": 5
+            "damage": 5,
+            "damage_base": 4,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 5 damage",
+          "Deal 4/5 damage",
           "4 hits"
         ],
         "title": "Furious Pummeling"
@@ -4774,6 +5199,9 @@
     "class_name": "SlitheringStrangler",
     "min_hp": 54,
     "max_hp": 56,
+    "min_hp_base": 53,
+    "max_hp_base": 55,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "CONSTRICT",
@@ -4792,7 +5220,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 8,
+            "damage_base": 7,
+            "ascension": 9
           },
           {
             "type": "block"
@@ -4806,11 +5236,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 13
+            "damage": 13,
+            "damage_base": 12,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 13 damage"
+          "Deal 12/13 damage"
         ],
         "title": "Lash"
       }
@@ -4841,20 +5273,25 @@
     "class_name": "SludgeSpinner",
     "min_hp": 41,
     "max_hp": 42,
+    "min_hp_base": 37,
+    "max_hp_base": 39,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "OIL_SPRAY_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 9 damage",
+          "Deal 8/9 damage",
           "Apply 1 Weak"
         ],
         "title": "Oil Spray"
@@ -4864,11 +5301,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 12,
+            "damage_base": 11,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 12 damage"
+          "Deal 11/12 damage"
         ],
         "title": "Slam"
       },
@@ -4877,14 +5316,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 7,
+            "damage_base": 6,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 7 damage",
+          "Deal 6/7 damage",
           "Apply 3 Strength"
         ],
         "title": "Rage"
@@ -4919,6 +5360,8 @@
     "class_name": "SlumberingBeetle",
     "min_hp": 89,
     "max_hp": 89,
+    "min_hp_base": 86,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SNORE_MOVE",
@@ -4935,7 +5378,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 18,
+            "damage_base": 16,
+            "ascension": 9
           },
           {
             "type": "buff"
@@ -4966,20 +5411,25 @@
     "class_name": "SnappingJaxfruit",
     "min_hp": 34,
     "max_hp": 36,
+    "min_hp_base": 31,
+    "max_hp_base": 33,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "ENERGY_ORB_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 4
+            "damage": 4,
+            "damage_base": 3,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 4 damage",
+          "Deal 3/4 damage",
           "Apply 2 Strength"
         ],
         "title": "Energy Orb"
@@ -5003,6 +5453,9 @@
     "class_name": "SneakyGremlin",
     "min_hp": 11,
     "max_hp": 15,
+    "min_hp_base": 10,
+    "max_hp_base": 14,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SPAWNED_MOVE",
@@ -5019,11 +5472,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 10
+            "damage": 10,
+            "damage_base": 9,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 10 damage"
+          "Deal 9/10 damage"
         ],
         "title": "Tackle"
       }
@@ -5047,6 +5502,8 @@
     "class_name": "SoulFysh",
     "min_hp": 221,
     "max_hp": 221,
+    "min_hp_base": 211,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "BECKON_MOVE",
@@ -5063,11 +5520,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 17,
+            "damage_base": 16,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 17 damage"
+          "Deal 16/17 damage"
         ],
         "title": "De-Gas"
       },
@@ -5076,14 +5535,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 8,
+            "damage_base": 7,
+            "ascension": 9
           },
           {
             "type": "status"
           }
         ],
         "effects": [
-          "Deal 8 damage"
+          "Deal 7/8 damage"
         ],
         "title": "Gaze"
       },
@@ -5104,14 +5565,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 12,
+            "damage_base": 11,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 12 damage",
+          "Deal 11/12 damage",
           "Apply 3 Vulnerable"
         ],
         "title": "Scream"
@@ -5136,17 +5599,21 @@
     "class_name": "SoulNexus",
     "min_hp": 254,
     "max_hp": 254,
+    "min_hp_base": 234,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SOUL_BURN_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 31
+            "damage": 31,
+            "damage_base": 29,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 31 damage"
+          "Deal 29/31 damage"
         ],
         "title": "Soul Burn"
       },
@@ -5156,11 +5623,13 @@
           {
             "type": "multi_attack",
             "damage": 7,
+            "damage_base": 6,
+            "ascension": 9,
             "hits": 4
           }
         ],
         "effects": [
-          "Deal 7 damage",
+          "Deal 6/7 damage",
           "4 hits"
         ],
         "title": "Maelstrom"
@@ -5170,14 +5639,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 19
+            "damage": 19,
+            "damage_base": 18,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 19 damage",
+          "Deal 18/19 damage",
           "Apply 2 Vulnerable",
           "Apply 2 Weak"
         ],
@@ -5199,6 +5670,8 @@
     "class_name": "SpectralKnight",
     "min_hp": 97,
     "max_hp": 97,
+    "min_hp_base": 93,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "HEX",
@@ -5217,11 +5690,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 17
+            "damage": 17,
+            "damage_base": 15,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 17 damage"
+          "Deal 15/17 damage"
         ],
         "title": "Soul Slash"
       },
@@ -5231,11 +5706,13 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 4
+            "damage": 4,
+            "damage_base": 3,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 4 damage",
+          "Deal 3/4 damage",
           "3 hits"
         ],
         "title": "Soul Flame"
@@ -5266,6 +5743,9 @@
     "class_name": "SpinyToad",
     "min_hp": 121,
     "max_hp": 124,
+    "min_hp_base": 116,
+    "max_hp_base": 119,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "PROTRUDING_SPIKES_MOVE",
@@ -5282,7 +5762,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 25
+            "damage": 25,
+            "damage_base": 23,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -5293,7 +5775,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 19
+            "damage": 19,
+            "damage_base": 17,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -5317,20 +5801,25 @@
     "class_name": "Stabbot",
     "min_hp": 19,
     "max_hp": 24,
+    "min_hp_base": 18,
+    "max_hp_base": 23,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "STAB_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 12,
+            "damage_base": 11,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 12 damage",
+          "Deal 11/12 damage",
           "Apply 1 Frail"
         ],
         "title": "Stab"
@@ -5384,17 +5873,21 @@
     "class_name": "TerrorEel",
     "min_hp": 150,
     "max_hp": 150,
+    "min_hp_base": 140,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "CRASH_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 18,
+            "damage_base": 16,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 18 damage"
+          "Deal 16/18 damage"
         ],
         "title": "Crash"
       },
@@ -5404,6 +5897,8 @@
           {
             "type": "multi_attack",
             "damage": 4,
+            "damage_base": 3,
+            "ascension": 9,
             "hits": 3
           },
           {
@@ -5478,11 +5973,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 22
+            "damage": 22,
+            "damage_base": 20,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 22 damage"
+          "Deal 20/22 damage"
         ],
         "title": "Bite"
       },
@@ -5491,14 +5988,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 16,
+            "damage_base": 14,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 16 damage",
+          "Deal 14/16 damage",
           "Apply 1 Vulnerable"
         ],
         "title": "Skull Bash"
@@ -5509,11 +6008,13 @@
           {
             "type": "multi_attack",
             "damage": 11,
+            "damage_base": 10,
+            "ascension": 9,
             "hits": 3
           }
         ],
         "effects": [
-          "Deal 11 damage"
+          "Deal 10/11 damage"
         ],
         "title": "Multi Claw"
       },
@@ -5523,11 +6024,13 @@
           {
             "type": "multi_attack",
             "hits": 3,
-            "damage": 11
+            "damage": 11,
+            "damage_base": 10,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 11 damage",
+          "Deal 10/11 damage",
           "3 hits"
         ],
         "title": "Phase3 Lacerate"
@@ -5556,7 +6059,7 @@
           }
         ],
         "effects": [
-          "Apply 3 Strength",
+          "Apply 2/3 Strength",
           "Add Burn to discard"
         ],
         "title": "Burning Growl"
@@ -5654,6 +6157,7 @@
     "class_name": "TheAdversaryMkThree",
     "min_hp": 300,
     "max_hp": 300,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "CRASH_MOVE",
@@ -5720,6 +6224,7 @@
     "class_name": "TheAdversaryMkTwo",
     "min_hp": 200,
     "max_hp": 200,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "BASH_MOVE",
@@ -5786,6 +6291,8 @@
     "class_name": "TheForgotten",
     "min_hp": 111,
     "max_hp": 111,
+    "min_hp_base": 106,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "MIASMA",
@@ -5837,6 +6344,8 @@
     "class_name": "TheInsatiable",
     "min_hp": 341,
     "max_hp": 341,
+    "min_hp_base": 321,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "LIQUIFY_GROUND_MOVE",
@@ -5857,7 +6366,9 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -5869,7 +6380,9 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -5880,7 +6393,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 31
+            "damage": 31,
+            "damage_base": 28,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -5894,7 +6409,7 @@
           }
         ],
         "effects": [
-          "Apply 3 Strength"
+          "Apply 2/3 Strength"
         ],
         "title": "Salivate"
       }
@@ -5918,6 +6433,8 @@
     "class_name": "TheLost",
     "min_hp": 99,
     "max_hp": 99,
+    "min_hp_base": 93,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "DEBILITATING_SMOG",
@@ -5940,11 +6457,13 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 5
+            "damage": 5,
+            "damage_base": 4,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 5 damage",
+          "Deal 4/5 damage",
           "2 hits"
         ],
         "title": "Eye Lasers"
@@ -5968,6 +6487,8 @@
     "class_name": "TheObscura",
     "min_hp": 129,
     "max_hp": 129,
+    "min_hp_base": 123,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "ILLUSION_MOVE",
@@ -5984,11 +6505,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 11,
+            "damage_base": 10,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 11 damage"
+          "Deal 10/11 damage"
         ],
         "title": "Piercing Gaze"
       },
@@ -6007,15 +6530,17 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 7,
+            "damage_base": 6,
+            "ascension": 9
           },
           {
             "type": "block"
           }
         ],
         "effects": [
-          "Deal 7 damage",
-          "Gain 7 Block"
+          "Deal 6/7 damage",
+          "Gain 6/7 Block"
         ],
         "title": "Hardening Strike"
       }
@@ -6050,20 +6575,24 @@
     "class_name": "ThievingHopper",
     "min_hp": 84,
     "max_hp": 84,
+    "min_hp_base": 79,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "THIEVERY_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 19
+            "damage": 19,
+            "damage_base": 17,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 19 damage"
+          "Deal 17/19 damage"
         ],
         "title": "Thievery"
       },
@@ -6072,11 +6601,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 16,
+            "damage_base": 14,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 16 damage"
+          "Deal 14/16 damage"
         ],
         "title": "Nab"
       },
@@ -6085,11 +6616,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 23
+            "damage": 23,
+            "damage_base": 21,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 23 damage"
+          "Deal 21/23 damage"
         ],
         "title": "Hat Trick"
       },
@@ -6140,6 +6673,9 @@
     "class_name": "Toadpole",
     "min_hp": 22,
     "max_hp": 26,
+    "min_hp_base": 21,
+    "max_hp_base": 25,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SPIKE_SPIT_MOVE",
@@ -6147,11 +6683,13 @@
           {
             "type": "multi_attack",
             "damage": 4,
+            "damage_base": 3,
+            "ascension": 9,
             "hits": 3
           }
         ],
         "effects": [
-          "Deal 4 damage",
+          "Deal 3/4 damage",
           "3 hits"
         ],
         "title": "Spike Spit"
@@ -6161,11 +6699,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 8,
+            "damage_base": 7,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 8 damage"
+          "Deal 7/8 damage"
         ],
         "title": "Whirl"
       },
@@ -6198,13 +6738,17 @@
     "class_name": "TorchHeadAmalgam",
     "min_hp": 211,
     "max_hp": 211,
+    "min_hp_base": 199,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "TACKLE_1_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 19
+            "damage": 19,
+            "damage_base": 18,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -6215,7 +6759,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 19
+            "damage": 19,
+            "damage_base": 18,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -6238,7 +6784,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 15,
+            "damage_base": 14,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -6249,7 +6797,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 15,
+            "damage_base": 14,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -6277,6 +6827,9 @@
     "class_name": "ToughEgg",
     "min_hp": 15,
     "max_hp": 19,
+    "min_hp_base": 14,
+    "max_hp_base": 18,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "HATCH_MOVE",
@@ -6293,11 +6846,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 5
+            "damage": 5,
+            "damage_base": 4,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 5 damage"
+          "Deal 4/5 damage"
         ],
         "title": "Nibble"
       }
@@ -6323,6 +6878,9 @@
     "class_name": "TrackerRubyRaider",
     "min_hp": 22,
     "max_hp": 26,
+    "min_hp_base": 21,
+    "max_hp_base": 25,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "TRACK_MOVE",
@@ -6342,12 +6900,14 @@
           {
             "type": "multi_attack",
             "damage": 1,
-            "hits": 9
+            "hits": 9,
+            "hits_base": 8,
+            "ascension": 9
           }
         ],
         "effects": [
           "Deal 1 damage",
-          "9 hits"
+          "8/9 hits"
         ],
         "title": "Unleash the Hounds"
       }
@@ -6371,17 +6931,21 @@
     "class_name": "Tunneler",
     "min_hp": 92,
     "max_hp": 92,
+    "min_hp_base": 87,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "BITE_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 15,
+            "damage_base": 13,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 15 damage"
+          "Deal 13/15 damage"
         ],
         "title": "Bite"
       },
@@ -6397,7 +6961,7 @@
         ],
         "effects": [
           "Apply 1 Burrowed",
-          "Gain 37 Block"
+          "Gain 32/37 Block"
         ],
         "title": "Burrow"
       },
@@ -6406,7 +6970,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 26
+            "damage": 26,
+            "damage_base": 23,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -6444,6 +7010,8 @@
     "class_name": "TurretOperator",
     "min_hp": 51,
     "max_hp": 51,
+    "min_hp_base": 41,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "UNLOAD_MOVE_1",
@@ -6451,7 +7019,9 @@
           {
             "type": "multi_attack",
             "hits": 5,
-            "damage": 4
+            "damage": 4,
+            "damage_base": 3,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -6463,7 +7033,9 @@
           {
             "type": "multi_attack",
             "hits": 5,
-            "damage": 4
+            "damage": 4,
+            "damage_base": 3,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -6499,17 +7071,22 @@
     "class_name": "TwigSlimeM",
     "min_hp": 27,
     "max_hp": 29,
+    "min_hp_base": 26,
+    "max_hp_base": 28,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "CLUMP_SHOT_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 12
+            "damage": 12,
+            "damage_base": 11,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 12 damage"
+          "Deal 11/12 damage"
         ],
         "title": "Clump Shot"
       },
@@ -6551,13 +7128,18 @@
     "class_name": "TwigSlimeS",
     "min_hp": 8,
     "max_hp": 12,
+    "min_hp_base": 7,
+    "max_hp_base": 11,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "BUTT_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 5
+            "damage": 5,
+            "damage_base": 4,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -6582,17 +7164,22 @@
     "class_name": "TwoTailedRat",
     "min_hp": 18,
     "max_hp": 22,
+    "min_hp_base": 17,
+    "max_hp_base": 21,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "SCRATCH_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 9 damage"
+          "Deal 8/9 damage"
         ],
         "title": "Scratch"
       },
@@ -6601,11 +7188,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 7,
+            "damage_base": 6,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 7 damage"
+          "Deal 6/7 damage"
         ],
         "title": "Disease Bite"
       },
@@ -6647,17 +7236,21 @@
     "class_name": "Vantom",
     "min_hp": 183,
     "max_hp": 183,
+    "min_hp_base": 173,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "INK_BLOT_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 8
+            "damage": 8,
+            "damage_base": 7,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 8 damage"
+          "Deal 7/8 damage"
         ],
         "title": "Ink Blot"
       },
@@ -6667,11 +7260,13 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 7
+            "damage": 7,
+            "damage_base": 6,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 7 damage",
+          "Deal 6/7 damage",
           "2 hits"
         ],
         "title": "Inky Lance"
@@ -6681,14 +7276,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 30
+            "damage": 30,
+            "damage_base": 27,
+            "ascension": 9
           },
           {
             "type": "status"
           }
         ],
         "effects": [
-          "Deal 30 damage",
+          "Deal 27/30 damage",
           "Add Wound to discard"
         ],
         "title": "Dismember"
@@ -6726,20 +7323,24 @@
     "class_name": "VineShambler",
     "min_hp": 64,
     "max_hp": 64,
+    "min_hp_base": 61,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "GRASPING_VINES_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 9
+            "damage": 9,
+            "damage_base": 8,
+            "ascension": 9
           },
           {
             "type": "debuff"
           }
         ],
         "effects": [
-          "Deal 9 damage",
+          "Deal 8/9 damage",
           "Apply 1 Tangled"
         ],
         "title": "Grasping Vines"
@@ -6750,11 +7351,13 @@
           {
             "type": "multi_attack",
             "hits": 2,
-            "damage": 7
+            "damage": 7,
+            "damage_base": 6,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 7 damage",
+          "Deal 6/7 damage",
           "2 hits"
         ],
         "title": "Swipe"
@@ -6764,11 +7367,13 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 18
+            "damage": 18,
+            "damage_base": 16,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 18 damage"
+          "Deal 16/18 damage"
         ],
         "title": "Chomp"
       }
@@ -6790,6 +7395,8 @@
     "class_name": "WaterfallGiant",
     "min_hp": 250,
     "max_hp": 250,
+    "min_hp_base": 240,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "PRESSURIZE_MOVE",
@@ -6799,7 +7406,7 @@
           }
         ],
         "effects": [
-          "Apply 20 SteamEruption"
+          "Apply 15/20 SteamEruption"
         ],
         "title": "Pressurize"
       },
@@ -6808,7 +7415,9 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 16
+            "damage": 16,
+            "damage_base": 15,
+            "ascension": 9
           },
           {
             "type": "debuff"
@@ -6818,7 +7427,7 @@
           }
         ],
         "effects": [
-          "Deal 16 damage",
+          "Deal 15/16 damage",
           "Apply 1 Weak",
           "Apply 3 SteamEruption"
         ],
@@ -6829,14 +7438,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 11
+            "damage": 11,
+            "damage_base": 10,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 11 damage",
+          "Deal 10/11 damage",
           "Apply 3 SteamEruption"
         ],
         "title": "Ram"
@@ -6877,14 +7488,16 @@
         "intents": [
           {
             "type": "attack",
-            "damage": 14
+            "damage": 14,
+            "damage_base": 13,
+            "ascension": 9
           },
           {
             "type": "buff"
           }
         ],
         "effects": [
-          "Deal 14 damage",
+          "Deal 13/14 damage",
           "Apply 3 SteamEruption"
         ],
         "title": "Pressure Up"
@@ -6937,13 +7550,18 @@
     "class_name": "Wriggler",
     "min_hp": 18,
     "max_hp": 22,
+    "min_hp_base": 17,
+    "max_hp_base": 21,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "NASTY_BITE_MOVE",
         "intents": [
           {
             "type": "attack",
-            "damage": 7
+            "damage": 7,
+            "damage_base": 6,
+            "ascension": 9
           }
         ],
         "effects": [],
@@ -6991,17 +7609,22 @@
     "class_name": "Zapbot",
     "min_hp": 19,
     "max_hp": 24,
+    "min_hp_base": 18,
+    "max_hp_base": 23,
+    "hp_ascension": 8,
     "moves": [
       {
         "id": "ZAP",
         "intents": [
           {
             "type": "attack",
-            "damage": 15
+            "damage": 15,
+            "damage_base": 14,
+            "ascension": 9
           }
         ],
         "effects": [
-          "Deal 15 damage"
+          "Deal 14/15 damage"
         ],
         "title": "Zap"
       }

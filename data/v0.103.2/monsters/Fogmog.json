@@ -9,38 +9,71 @@
       "id": "ILLUSION_MOVE",
       "title": "Illusory Spores",
       "intents": [
-        {"type": "summon"}
+        {
+          "type": "summon"
+        }
       ],
-      "effects": ["Summon an EyeWithTeeth illusion"]
+      "effects": [
+        "Summon an EyeWithTeeth illusion"
+      ]
     },
     {
       "id": "SWIPE_MOVE",
       "title": "Swipe",
       "intents": [
-        {"type": "attack", "damage": 9},
-        {"type": "buff"}
+        {
+          "type": "attack",
+          "damage": 9,
+          "damage_base": 8,
+          "ascension": 9
+        },
+        {
+          "type": "buff"
+        }
       ],
-      "effects": ["Deal 9 damage", "Gain 1 Strength"]
+      "effects": [
+        "Deal 8/9 damage",
+        "Gain 1 Strength"
+      ]
     },
     {
       "id": "SWIPE_RANDOM_MOVE",
       "title": "Swipe",
       "intents": [
-        {"type": "attack", "damage": 9},
-        {"type": "buff"}
+        {
+          "type": "attack",
+          "damage": 9,
+          "damage_base": 8,
+          "ascension": 9
+        },
+        {
+          "type": "buff"
+        }
       ],
-      "effects": ["Deal 9 damage", "Gain 1 Strength"]
+      "effects": [
+        "Deal 9 damage",
+        "Gain 1 Strength"
+      ]
     },
     {
       "id": "HEADBUTT_MOVE",
       "title": "Headbutt",
       "intents": [
-        {"type": "attack", "damage": 16}
+        {
+          "type": "attack",
+          "damage": 16,
+          "damage_base": 14,
+          "ascension": 9
+        }
       ],
-      "effects": ["Deal 16 damage"]
+      "effects": [
+        "Deal 14/16 damage"
+      ]
     }
   ],
   "move_pattern": "Starts with Illusory Spores (summons an EyeWithTeeth). Then uses Swipe. After Swipe, randomly branches: 60% chance goes directly to Headbutt, 40% chance uses Swipe again before Headbutt (CannotRepeat enforced on both branches). After Headbutt, always returns to Swipe and repeats the branch.",
   "powers_on_spawn": [],
-  "notes": "Illusory Spores summons an EyeWithTeeth monster into combat on the first turn. Each use of Swipe (both SWIPE_MOVE and SWIPE_RANDOM_MOVE call the same method) grants the Fogmog 1 Strength, so its attack damage increases over the course of the fight. Since Swipe appears at least once per cycle — and sometimes twice — the Strength stacks build quickly."
+  "notes": "Illusory Spores summons an EyeWithTeeth monster into combat on the first turn. Each use of Swipe (both SWIPE_MOVE and SWIPE_RANDOM_MOVE call the same method) grants the Fogmog 1 Strength, so its attack damage increases over the course of the fight. Since Swipe appears at least once per cycle \u2014 and sometimes twice \u2014 the Strength stacks build quickly.",
+  "min_hp_base": 74,
+  "hp_ascension": 8
 }
