@@ -12,9 +12,23 @@ export async function getStaticPaths() {
 }
 
 const { monster } = Astro.props;
-const hpDisplay = monster.data.min_hp === monster.data.max_hp
-  ? String(monster.data.min_hp)
-  : `${monster.data.min_hp}–${monster.data.max_hp}`;
+
+function hpRange(min: number, max: number): string {
+  return min === max ? String(min) : `${min}–${max}`;
+}
+
+const hpDisplay = hpRange(monster.data.min_hp, monster.data.max_hp);
+
+// When HP scales with ascension, build a "<base> HP below A<N>, <asc> HP at A<N>+" callout.
+const minHpBase = monster.data.min_hp_base;
+const maxHpBase = monster.data.max_hp_base;
+const hpAsc = monster.data.hp_ascension;
+const hpBaseDisplay = (minHpBase != null || maxHpBase != null)
+  ? hpRange(minHpBase ?? monster.data.min_hp, maxHpBase ?? monster.data.max_hp)
+  : null;
+const hpScalingNote = hpBaseDisplay && hpAsc != null
+  ? `${hpBaseDisplay} HP below A${hpAsc}, ${hpDisplay} HP at A${hpAsc}+`
+  : null;
 
 // Build power slug lookup for linking
 const allPowers = await getCollection('powers');
@@ -61,10 +75,16 @@ const hasGroup = groupEncounters.length > 0;
         <div>
           <h1>
             {monster.data.title}
-            <span style="font-size: 0.6em; color: var(--text-muted); font-weight: normal; margin-left: 0.5rem;">
+            <span style="font-size: 0.6em; color: var(--text-muted); font-weight: normal; margin-left: 0.5rem;"
+                  title={hpScalingNote ?? undefined}>
               {hpDisplay} HP
             </span>
           </h1>
+          {hpScalingNote && (
+            <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.15rem;">
+              {hpScalingNote}
+            </div>
+          )}
           {monster.data.is_companion && (
             <span class="tag tag-green" style="margin-top: 0.25rem;">Companion</span>
           )}
@@ -90,7 +110,8 @@ const hasGroup = groupEncounters.length > 0;
                         {move.intents.map((rawIntent, idx) => {
                           const desc = intents[idx];
                           return (
-                            <span class={`intent-tag ${desc.intentClass}`}>
+                            <span class={`intent-tag ${desc.intentClass}`}
+                                  title={desc.ascensionTitle ?? undefined}>
                               <img src={`${base}images/intent_atlas/${intentIconFile(rawIntent.type)}`}
                                    alt="" class="intent-icon" onerror="this.style.display='none'" />
                               {desc.intentLabel}

@@ -23,34 +23,75 @@ COMPANION_CLASSES = {
     "PaelsLegion",
 }
 
+# Maps the C# AscensionLevel enum constants to integer ascension levels.
+# Drives the human-facing "scales above A<N>" labels on the wiki.
+ASCENSION_LEVEL_NAMES: dict[str, int] = {
+    "EliteScaling": 1,
+    "ReducedHealing": 2,
+    "ReducedGold": 3,
+    "FewerPotionSlots": 4,
+    "AscendersBane": 5,
+    "FewerRestSites": 6,
+    "RarerCards": 7,
+    "ToughEnemies": 8,
+    "DeadlyEnemies": 9,
+    "TwoBosses": 10,
+}
 
-def parse_hp(content: str) -> tuple[int | None, int | None]:
-    """Extract MinInitialHp and MaxInitialHp."""
-    min_hp = None
-    max_hp = None
+
+def _ascension_name_to_level(name: str) -> int | None:
+    return ASCENSION_LEVEL_NAMES.get(name)
+
+
+def parse_hp(content: str) -> tuple[int | None, int | None, int | None, int | None, int | None]:
+    """Extract MinInitialHp and MaxInitialHp.
+
+    Returns (min_hp, max_hp, min_hp_base, max_hp_base, hp_ascension), where
+    ``*_base`` and ``hp_ascension`` are populated only when the source
+    expresses a scaling value via ``AscensionHelper.GetValueIfAscension``.
+    """
+    min_hp: int | None = None
+    max_hp: int | None = None
+    min_hp_base: int | None = None
+    max_hp_base: int | None = None
+    hp_ascension: int | None = None
 
     for target, prop_name in [("min", "MinInitialHp"), ("max", "MaxInitialHp")]:
         # Pattern 1: => N;
         m = re.search(rf"{prop_name}\s*=>\s*(\d+)\s*;", content)
         if m:
             val = int(m.group(1))
+            base_val: int | None = None
+            level_name: str | None = None
         else:
             # Pattern 2: => AscensionHelper.GetValueIfAscension(level, ascVal, baseVal)
             m = re.search(
-                rf"{prop_name}\s*=>\s*AscensionHelper\.GetValueIfAscension\([^,]+,\s*(\d+),\s*(\d+)\)",
+                rf"{prop_name}\s*=>\s*AscensionHelper\.GetValueIfAscension\("
+                rf"\s*(?:AscensionLevel\.)?(\w+)\s*,\s*(\d+),\s*(\d+)\)",
                 content,
             )
             if m:
-                val = int(m.group(1))  # Use ascension value (higher)
+                level_name = m.group(1)
+                val = int(m.group(2))  # ascension (harder) value
+                base_val = int(m.group(3))
             else:
                 continue
 
         if target == "min":
             min_hp = val
+            if base_val is not None and base_val != val:
+                min_hp_base = base_val
         else:
             max_hp = val
+            if base_val is not None and base_val != val:
+                max_hp_base = base_val
 
-    return min_hp, max_hp
+        if level_name and hp_ascension is None:
+            level = _ascension_name_to_level(level_name)
+            if level is not None:
+                hp_ascension = level
+
+    return min_hp, max_hp, min_hp_base, max_hp_base, hp_ascension
 
 
 def parse_intent(text: str) -> dict:
@@ -142,8 +183,20 @@ def extract_method_body(content: str, method_name: str) -> str | None:
     return None
 
 
+def _format_scaled(asc_val: int, base_val: int | None) -> str:
+    """Render a numeric value as ``base/asc`` when scaling, else plain ``asc``."""
+    if base_val is None or base_val == asc_val:
+        return str(asc_val)
+    return f"{base_val}/{asc_val}"
+
+
 def parse_move_effects(content: str, move_id: str) -> list[str]:
-    """Extract detailed effects from a move's execution method."""
+    """Extract detailed effects from a move's execution method.
+
+    Numeric values that scale with ascension are rendered as
+    ``base/asc`` (e.g. ``"Deal 12/13 damage"``) so the renderer can show
+    both tiers; non-scaling values keep the plain ``"Deal N damage"`` form.
+    """
     # Convert MOVE_ID to likely method name: DARK_STRIKE_MOVE -> DarkStrike, then DarkStrikeMove
     base = move_id.removesuffix("_MOVE")
     parts = base.split("_")
@@ -162,9 +215,10 @@ def parse_move_effects(content: str, move_id: str) -> list[str]:
     seen_damage = False
     for m in re.finditer(r"DamageCmd\.Attack\((\w+)\)", body):
         name = _strip_cs_suffix(m.group(1))
-        val = _resolve_property(name, content)
-        if val is not None:
-            effects.append(f"Deal {val} damage")
+        result = _resolve_property_full(name, content)
+        if result is not None:
+            asc_val, base_val, _ = result
+            effects.append(f"Deal {_format_scaled(asc_val, base_val)} damage")
             seen_damage = True
         elif not name.isdigit() and not seen_damage:
             effects.append("Deal damage")
@@ -172,9 +226,10 @@ def parse_move_effects(content: str, move_id: str) -> list[str]:
     # WithHitCount (literal or variable)
     for m in re.finditer(r"WithHitCount\((\w+)\)", body):
         name = _strip_cs_suffix(m.group(1))
-        val = _resolve_property(name, content)
-        if val is not None:
-            effects.append(f"{val} hits")
+        result = _resolve_property_full(name, content)
+        if result is not None:
+            asc_val, base_val, _ = result
+            effects.append(f"{_format_scaled(asc_val, base_val)} hits")
 
     # PowerCmd.Apply<PowerName>(target, amount, ...)
     for m in re.finditer(r"PowerCmd\.Apply<(\w+)>\([^,]+,\s*(\d+)", body):
@@ -191,25 +246,20 @@ def parse_move_effects(content: str, move_id: str) -> list[str]:
         # Already captured by numeric version above?
         if any(power in e for e in effects):
             continue
-        # Try to resolve the variable
-        prop_m = re.search(rf"{var_name}\s*=>\s*(\d+)", content)
-        if prop_m:
-            effects.append(f"Apply {prop_m.group(1)} {power}")
+        result = _resolve_property_full(var_name, content)
+        if result is not None:
+            asc_val, base_val, _ = result
+            effects.append(f"Apply {_format_scaled(asc_val, base_val)} {power}")
         else:
-            prop_m = re.search(
-                rf"{var_name}\s*=>\s*AscensionHelper[^;]*,\s*(\d+),\s*(\d+)\)", content
-            )
-            if prop_m:
-                effects.append(f"Apply {prop_m.group(1)} {power}")
-            else:
-                effects.append(f"Apply {power}")
+            effects.append(f"Apply {power}")
 
     # GainBlock (literal or variable)
     for m in re.finditer(r"GainBlock\([^,]*,\s*(\w+)", body):
         name = _strip_cs_suffix(m.group(1))
-        val = _resolve_property(name, content)
-        if val is not None:
-            effects.append(f"Gain {val} Block")
+        result = _resolve_property_full(name, content)
+        if result is not None:
+            asc_val, base_val, _ = result
+            effects.append(f"Gain {_format_scaled(asc_val, base_val)} Block")
 
     # CardPileCmd.AddToCombatAndPreview<CardName>
     for m in re.finditer(r"AddToCombatAndPreview<(\w+)>", body):
@@ -430,23 +480,34 @@ def _strip_cs_suffix(name: str) -> str:
     return name
 
 
-def _resolve_property(var_name: str, content: str) -> int | None:
-    """Resolve a variable name to its integer value from a class property.
+def _resolve_property_full(
+    var_name: str, content: str
+) -> tuple[int, int | None, int | None] | None:
+    """Resolve a variable to (asc_value, base_value, ascension_level).
 
-    Handles both simple literals (``Foo => 5;``) and AscensionHelper
-    expressions, always returning the ascension (higher difficulty) value.
+    ``base_value`` and ``ascension_level`` are ``None`` for non-scaling
+    literals; otherwise they are the easier-difficulty value and the
+    ascension tier (e.g. ``9`` for ``DeadlyEnemies``) at which the harder
+    value kicks in.
     """
     if var_name.isdigit():
-        return int(var_name)
+        return int(var_name), None, None
     prop_m = re.search(rf"{var_name}\s*=>\s*(\d+)\s*;", content)
     if prop_m:
-        return int(prop_m.group(1))
+        return int(prop_m.group(1)), None, None
     prop_m = re.search(
-        rf"{var_name}\s*=>\s*AscensionHelper[^;]*,\s*(\d+),\s*(\d+)\)",
+        rf"{var_name}\s*=>\s*AscensionHelper\.GetValueIfAscension\("
+        rf"\s*(?:AscensionLevel\.)?(\w+)\s*,\s*(\d+),\s*(\d+)\)",
         content,
     )
     if prop_m:
-        return int(prop_m.group(1))
+        level_name = prop_m.group(1)
+        asc_val = int(prop_m.group(2))
+        base_val = int(prop_m.group(3))
+        level = _ascension_name_to_level(level_name)
+        if asc_val == base_val:
+            return asc_val, None, None
+        return asc_val, base_val, level
     return None
 
 
@@ -501,11 +562,10 @@ def parse_moves(content: str) -> tuple[list[dict], dict]:
         # Parse effects from the move's execution method
         effects = parse_move_effects(content, move_id)
 
-        # Try to resolve damage/hits from intents that reference properties
+        # Try to resolve damage/hits from intents that reference properties.
+        # Capture base value and threshold so the wiki can show ascension scaling.
         for intent in intents:
             if intent["type"] in ("attack", "multi_attack") and "damage" not in intent:
-                # Look for the damage property referenced in the intent
-                # Find the intent text to get the variable name
                 intent_text = re.search(
                     rf'"{move_id}".*?(\w+AttackIntent)\s*\((\w+)',
                     method_body,
@@ -513,12 +573,16 @@ def parse_moves(content: str) -> tuple[list[dict], dict]:
                 )
                 if intent_text:
                     var_name = intent_text.group(2)
-                    damage = _resolve_property(var_name, content)
-                    if damage is not None:
-                        intent["damage"] = damage
+                    result = _resolve_property_full(var_name, content)
+                    if result is not None:
+                        asc_val, base_val, level = result
+                        intent["damage"] = asc_val
+                        if base_val is not None:
+                            intent["damage_base"] = base_val
+                        if level is not None:
+                            intent["ascension"] = level
 
             if intent["type"] == "multi_attack" and "hits" not in intent:
-                # Find the second argument of MultiAttackIntent
                 intent_text = re.search(
                     rf'"{move_id}".*?MultiAttackIntent\s*\(\w+,\s*(\w+)',
                     method_body,
@@ -526,9 +590,14 @@ def parse_moves(content: str) -> tuple[list[dict], dict]:
                 )
                 if intent_text:
                     var_name = intent_text.group(1)
-                    hits = _resolve_property(var_name, content)
-                    if hits is not None:
-                        intent["hits"] = hits
+                    result = _resolve_property_full(var_name, content)
+                    if result is not None:
+                        asc_val, base_val, level = result
+                        intent["hits"] = asc_val
+                        if base_val is not None:
+                            intent["hits_base"] = base_val
+                        if level is not None and "ascension" not in intent:
+                            intent["ascension"] = level
 
         moves.append(
             {
@@ -590,9 +659,15 @@ def parse_monster_file(class_name: str, content: str) -> dict | None:
 
     monster: dict = {"class_name": class_name}
 
-    min_hp, max_hp = parse_hp(content)
+    min_hp, max_hp, min_hp_base, max_hp_base, hp_ascension = parse_hp(content)
     monster["min_hp"] = min_hp or 0
     monster["max_hp"] = max_hp or min_hp or 0
+    if min_hp_base is not None:
+        monster["min_hp_base"] = min_hp_base
+    if max_hp_base is not None:
+        monster["max_hp_base"] = max_hp_base
+    if hp_ascension is not None:
+        monster["hp_ascension"] = hp_ascension
 
     moves, move_pattern = parse_moves(content)
     monster["moves"] = moves

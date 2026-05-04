@@ -18,8 +18,11 @@ Write a JSON object with these fields:
 {
   "class_name": "string — the C# class name exactly as-is",
   "title": "string — from localization {LOC_KEY}.name",
-  "min_hp": "number — from MinInitialHp, use ascension value (first arg) for AscensionHelper",
-  "max_hp": "number — from MaxInitialHp, use ascension value (first arg) for AscensionHelper",
+  "min_hp": "number — from MinInitialHp, ascension (harder) value",
+  "max_hp": "number — from MaxInitialHp, ascension (harder) value",
+  "min_hp_base": "number (optional) — base (lower) value when AscensionHelper is used and the values differ",
+  "max_hp_base": "number (optional) — base (lower) value when AscensionHelper is used and the values differ",
+  "hp_ascension": "number (optional) — ascension level threshold at which the harder HP value kicks in (e.g. 8 for ToughEnemies)",
   "is_companion": "boolean — true if this monster fights alongside the player",
   "moves": [
     {
@@ -28,12 +31,16 @@ Write a JSON object with these fields:
       "intents": [
         {
           "type": "string — attack, multi_attack, buff, debuff, block, stun, sleep, hidden, summon, heal, escape, death_blow, status",
-          "damage": "number (optional) — for attack/multi_attack, use ascension value",
-          "hits": "number (optional) — for multi_attack, the hit count",
-          "amount": "number (optional) — for block, the block amount"
+          "damage": "number (optional) — for attack/multi_attack, ascension (harder) value",
+          "damage_base": "number (optional) — base (lower) value when scaling with ascension",
+          "hits": "number (optional) — for multi_attack, the hit count (ascension value)",
+          "hits_base": "number (optional) — base hit count when scaling",
+          "amount": "number (optional) — for block, the block amount (ascension value)",
+          "amount_base": "number (optional) — base block amount when scaling",
+          "ascension": "number (optional) — ascension level threshold for any scaling value on this intent (e.g. 9 for DeadlyEnemies)"
         }
       ],
-      "effects": ["string — human-readable effect descriptions, e.g. 'Deal 13 damage', 'Apply 2 Strength', 'Gain 8 Block', '4 hits'"]
+      "effects": ["string — human-readable effect descriptions; for ascension-scaled values use 'base/asc' format, e.g. 'Deal 12/13 damage', 'Apply 1/2 Strength', 'Gain 5/6 Block', '1/2 hits'. Use a plain number for non-scaling values."]
     }
   ],
   "move_pattern": "string — human-readable description of the move cycle/pattern",
@@ -46,7 +53,12 @@ Write a JSON object with these fields:
 
 ### HP Values
 
-From `MinInitialHp` and `MaxInitialHp` properties. For `AscensionHelper.GetValueIfAscension(level, ascVal, baseVal)`, always use the FIRST numeric argument (ascension value — the harder difficulty).
+From `MinInitialHp` and `MaxInitialHp` properties.
+
+For `AscensionHelper.GetValueIfAscension(level, ascVal, baseVal)`:
+- `min_hp` / `max_hp` get the ascension (harder) value (`ascVal`).
+- When `ascVal != baseVal`, also set `min_hp_base` / `max_hp_base` to `baseVal` and set `hp_ascension` to the integer level corresponding to `level` (see "Ascension Level Mapping" below).
+- Don't set the `_base` / `hp_ascension` fields when both values are equal or when there's no `AscensionHelper` call.
 
 ### Moves
 
@@ -62,7 +74,12 @@ Each `MoveState` constructor has: `("MOVE_ID", MethodName, intent1, intent2, ...
 - `BlockIntent(amount)` or `DefendIntent()` → `{"type": "block"}`
 - `StunIntent()`, `SleepIntent()`, `HiddenIntent()`, etc.
 
-When intent arguments are variable references (e.g., `SingleAttackIntent(SeaKickDamage)`), resolve the variable from the class properties. For `AscensionHelper.GetValueIfAscension(level, ascVal, baseVal)`, use the ascension value (first number).
+When intent arguments are variable references (e.g., `SingleAttackIntent(SeaKickDamage)`), resolve the variable from the class properties.
+
+For `AscensionHelper.GetValueIfAscension(level, ascVal, baseVal)`:
+- Set `damage` / `hits` / `amount` to `ascVal` (the harder value).
+- When `ascVal != baseVal`, also set the matching `_base` field to `baseVal` and set `ascension` on the intent to the integer level corresponding to `level`.
+- If multiple scaling values share the same threshold (common case), set `ascension` once on the intent.
 
 **Effects:** Read the move's method body to determine what it actually does:
 - `DamageCmd.Attack(N)` → "Deal N damage"
@@ -72,7 +89,7 @@ When intent arguments are variable references (e.g., `SingleAttackIntent(SeaKick
 - `CardPileCmd.AddToCombatAndPreview<CardName>` → "Add CardName to discard"
 - `CreatureCmd.Heal(target, amount)` → "Heal N"
 
-For variable references and AscensionHelper in effects, resolve to the ascension value.
+For variable references and AscensionHelper in effects, write the number as `base/asc` when the values differ (e.g. `"Deal 12/13 damage"`, `"Apply 1/2 Strength"`, `"Gain 5/6 Block"`, `"1/2 hits"`). Use a plain number when there's no scaling.
 
 Note: C# decimal literal suffix `m` (e.g., `2m`, `10m`) just means the number — strip it.
 
@@ -110,8 +127,26 @@ Format notes using game rich text tags for colored text.
 ## Resolving AscensionHelper Values
 
 `AscensionHelper.GetValueIfAscension(AscensionLevel.X, ascValue, baseValue)`:
-- **Always use `ascValue`** (the first number) — this is the harder difficulty value
-- The wiki shows ascension-level values consistently
+- The primary numeric field (`damage`, `min_hp`, etc.) gets `ascValue` — the harder-difficulty value, what the player faces at the threshold and above.
+- The companion `_base` field gets `baseValue`. Omit it when `ascValue == baseValue`.
+- The `ascension` / `hp_ascension` field gets the integer level corresponding to `AscensionLevel.X` (see mapping below). Omit it when there's no scaling.
+
+### Ascension Level Mapping
+
+| `AscensionLevel.X`   | Level |
+|----------------------|-------|
+| `EliteScaling`       | 1     |
+| `ReducedHealing`     | 2     |
+| `ReducedGold`        | 3     |
+| `FewerPotionSlots`   | 4     |
+| `AscendersBane`      | 5     |
+| `FewerRestSites`     | 6     |
+| `RarerCards`         | 7     |
+| `ToughEnemies`       | 8     |
+| `DeadlyEnemies`      | 9     |
+| `TwoBosses`          | 10    |
+
+Most monsters scale HP at `ToughEnemies` (A8) and damage at `DeadlyEnemies` (A9).
 
 ## Localization
 

@@ -57,6 +57,9 @@ const monsters = defineCollection({
     class_name: z.string(),
     min_hp: z.number(),
     max_hp: z.number(),
+    min_hp_base: z.number().optional(),
+    max_hp_base: z.number().optional(),
+    hp_ascension: z.number().optional(),
     is_companion: z.boolean().default(false),
     move_pattern: z.string().default(''),
     moves: z.array(z.object({
@@ -65,8 +68,12 @@ const monsters = defineCollection({
       intents: z.array(z.object({
         type: z.string(),
         damage: z.number().optional(),
+        damage_base: z.number().optional(),
         hits: z.number().optional(),
+        hits_base: z.number().optional(),
         amount: z.number().optional(),
+        amount_base: z.number().optional(),
+        ascension: z.number().optional(),
       })).default([]),
       effects: z.array(z.string()).default([]),
     })).default([]),

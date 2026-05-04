@@ -101,8 +101,13 @@ export function charClass(name: string): string {
 interface MoveIntent {
   type: string;
   damage?: number;
+  damage_base?: number;
   hits?: number;
+  hits_base?: number;
   amount?: number;
+  amount_base?: number;
+  /** Ascension level threshold at which the harder values kick in. */
+  ascension?: number;
 }
 
 interface Move {
@@ -117,6 +122,18 @@ interface MoveDescription {
   intentClass: string;
   /** Short label for the intent tag pill */
   intentLabel: string;
+  /** Ascension threshold callout, e.g. "12 below A9" */
+  ascensionTitle?: string;
+}
+
+/**
+ * Format a numeric value with its base (lower-difficulty) variant when present.
+ * `7` → `"7"`; `12 / 13` → `"12/13"`; `13 / 13` → `"13"`.
+ */
+function formatScaled(asc: number | undefined, base: number | undefined): string {
+  if (asc == null) return '';
+  if (base == null || base === asc) return String(asc);
+  return `${base}/${asc}`;
 }
 
 /**
@@ -188,26 +205,51 @@ export function intentIconFile(type: string): string {
   }
 }
 
+function ascensionTitle(intent: MoveIntent): string | undefined {
+  if (intent.ascension == null) return undefined;
+  const parts: string[] = [];
+  if (intent.damage_base != null && intent.damage != null) {
+    parts.push(`${intent.damage_base} damage below A${intent.ascension}, ${intent.damage} at A${intent.ascension}+`);
+  }
+  if (intent.hits_base != null && intent.hits != null) {
+    parts.push(`${intent.hits_base} hits below A${intent.ascension}, ${intent.hits} at A${intent.ascension}+`);
+  }
+  if (intent.amount_base != null && intent.amount != null) {
+    parts.push(`${intent.amount_base} below A${intent.ascension}, ${intent.amount} at A${intent.ascension}+`);
+  }
+  return parts.length > 0 ? parts.join('; ') : undefined;
+}
+
 function describeIntent(intent: MoveIntent): MoveDescription {
+  const title = ascensionTitle(intent);
   switch (intent.type) {
     case 'attack':
-    case 'SingleAttackIntent':
+    case 'SingleAttackIntent': {
+      const dmg = formatScaled(intent.damage, intent.damage_base);
       return {
         intentClass: 'intent-attack',
-        intentLabel: intent.damage != null ? String(intent.damage) : 'ATK',
+        intentLabel: dmg || 'ATK',
+        ascensionTitle: title,
       };
-    case 'multi_attack':
-      if (intent.damage != null && intent.hits != null) {
-        return { intentClass: 'intent-attack', intentLabel: `${intent.damage}x${intent.hits}` };
-      } else if (intent.damage != null) {
-        return { intentClass: 'intent-attack', intentLabel: `${intent.damage}xN` };
+    }
+    case 'multi_attack': {
+      const dmg = formatScaled(intent.damage, intent.damage_base);
+      const hits = formatScaled(intent.hits, intent.hits_base);
+      if (dmg && hits) {
+        return { intentClass: 'intent-attack', intentLabel: `${dmg}x${hits}`, ascensionTitle: title };
+      } else if (dmg) {
+        return { intentClass: 'intent-attack', intentLabel: `${dmg}xN`, ascensionTitle: title };
       }
-      return { intentClass: 'intent-attack', intentLabel: 'Multi' };
-    case 'block':
+      return { intentClass: 'intent-attack', intentLabel: 'Multi', ascensionTitle: title };
+    }
+    case 'block': {
+      const amt = formatScaled(intent.amount, intent.amount_base);
       return {
         intentClass: 'intent-block',
-        intentLabel: intent.amount != null ? `Block ${intent.amount}` : 'Block',
+        intentLabel: amt ? `Block ${amt}` : 'Block',
+        ascensionTitle: title,
       };
+    }
     case 'buff':
       return { intentClass: 'intent-buff', intentLabel: 'Buff' };
     case 'debuff':
@@ -252,7 +294,7 @@ export function getMoveEffectLines(move: Move, powerSlugs: Record<string, string
     // Use effects array — it has specific info like "Apply 2 Frail"
     for (const effect of move.effects) {
       // Skip redundant "N hits" lines — already shown in intent tag
-      if (/^\d+ hits?$/i.test(effect)) continue;
+      if (/^\d+(?:\/\d+)? hits?$/i.test(effect)) continue;
       lines.push(linkEffect(effect, powerSlugs, baseUrl));
     }
   } else {
@@ -262,18 +304,22 @@ export function getMoveEffectLines(move: Move, powerSlugs: Record<string, string
         case 'attack':
         case 'SingleAttackIntent':
           if (intent.damage != null) {
-            lines.push(`Deal <span class="desc-red">${intent.damage}</span> damage`);
+            const dmg = formatScaled(intent.damage, intent.damage_base);
+            lines.push(`Deal <span class="desc-red">${dmg}</span> damage`);
           }
           break;
         case 'multi_attack':
           if (intent.damage != null) {
-            const hits = intent.hits != null ? ` x${intent.hits}` : '';
-            lines.push(`Deal <span class="desc-red">${intent.damage}</span> damage${hits}`);
+            const dmg = formatScaled(intent.damage, intent.damage_base);
+            const hitsStr = formatScaled(intent.hits, intent.hits_base);
+            const hits = hitsStr ? ` x${hitsStr}` : '';
+            lines.push(`Deal <span class="desc-red">${dmg}</span> damage${hits}`);
           }
           break;
         case 'block':
           if (intent.amount != null) {
-            lines.push(`Gain <span class="desc-blue">${intent.amount}</span> Block`);
+            const amt = formatScaled(intent.amount, intent.amount_base);
+            lines.push(`Gain <span class="desc-blue">${amt}</span> Block`);
           } else {
             lines.push(`<span class="desc-blue">Block</span>`);
           }
@@ -313,9 +359,15 @@ export function getMoveEffectLines(move: Move, powerSlugs: Record<string, string
 /**
  * Convert a single effect string to HTML with linked power names.
  */
+// Numeric token in an effect string. Matches plain integers (e.g. "13") and
+// ascension-scaled values rendered as "base/asc" (e.g. "12/13"), so the
+// renderer can show both tiers without losing anything when scaling is
+// present.
+const SCALED_NUMBER = String.raw`\d+(?:\/\d+)?`;
+
 function linkEffect(effect: string, powerSlugs: Record<string, string>, baseUrl: string): string {
-  // "Apply N PowerName" or "Apply PowerName"
-  const applyMatch = effect.match(/^(Apply)\s+(\d+\s+)?(.+)$/);
+  // "Apply N PowerName" or "Apply PowerName" (N may be "base/asc")
+  const applyMatch = effect.match(new RegExp(`^(Apply)\\s+(${SCALED_NUMBER}\\s+)?(.+)$`));
   if (applyMatch) {
     const amount = applyMatch[2]?.trim();
     const name = applyMatch[3].trim();
@@ -329,7 +381,7 @@ function linkEffect(effect: string, powerSlugs: Record<string, string>, baseUrl:
   }
 
   // "Gain N Block" or "Gain N PowerName"
-  const gainMatch = effect.match(/^(Gain)\s+(\d+)\s+(.+)$/);
+  const gainMatch = effect.match(new RegExp(`^(Gain)\\s+(${SCALED_NUMBER})\\s+(.+)$`));
   if (gainMatch) {
     const amount = gainMatch[2];
     const name = gainMatch[3].trim();
@@ -344,7 +396,7 @@ function linkEffect(effect: string, powerSlugs: Record<string, string>, baseUrl:
   }
 
   // "Deal N damage"
-  const dealMatch = effect.match(/^Deal\s+(\d+)\s+damage$/);
+  const dealMatch = effect.match(new RegExp(`^Deal\\s+(${SCALED_NUMBER})\\s+damage$`));
   if (dealMatch) {
     return `Deal <span class="desc-red">${dealMatch[1]}</span> damage`;
   }

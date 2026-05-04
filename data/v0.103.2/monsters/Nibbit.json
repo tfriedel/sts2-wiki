@@ -8,8 +8,8 @@
     {
       "id": "BUTT_MOVE",
       "title": "Butt",
-      "intents": [{"type": "attack", "damage": 13, "hits": 1}],
-      "effects": ["Deal 13 damage"]
+      "intents": [{"type": "attack", "damage": 13, "damage_base": 12, "hits": 1, "ascension": 9}],
+      "effects": ["Deal 12/13 damage"]
     },
     {
       "id": "SLICE_MOVE",

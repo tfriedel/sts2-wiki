@@ -117,6 +117,12 @@ def main() -> None:
         lines.append(f"class_name: {escape_yaml(monster['class_name'])}")
         lines.append(f"min_hp: {monster.get('min_hp', 0)}")
         lines.append(f"max_hp: {monster.get('max_hp', 0)}")
+        if "min_hp_base" in monster:
+            lines.append(f"min_hp_base: {monster['min_hp_base']}")
+        if "max_hp_base" in monster:
+            lines.append(f"max_hp_base: {monster['max_hp_base']}")
+        if "hp_ascension" in monster:
+            lines.append(f"hp_ascension: {monster['hp_ascension']}")
         lines.append(f"is_companion: {str(is_companion).lower()}")
         lines.append(f"moves: {json.dumps(monster.get('moves', []))}")
         # Resolve move pattern: per-entity string takes precedence over bulk desc
