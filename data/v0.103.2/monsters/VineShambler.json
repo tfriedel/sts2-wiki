@@ -11,13 +11,18 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 9
+          "damage": 9,
+          "damage_base": 8,
+          "ascension": 9
         },
         {
           "type": "debuff"
         }
       ],
-      "effects": ["Deal 9 damage", "Apply 1 Tangled"]
+      "effects": [
+        "Deal 8/9 damage",
+        "Apply 1 Tangled"
+      ]
     },
     {
       "id": "SWIPE_MOVE",
@@ -26,10 +31,15 @@
         {
           "type": "multi_attack",
           "damage": 7,
-          "hits": 2
+          "hits": 2,
+          "damage_base": 6,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 7 damage", "2 hits"]
+      "effects": [
+        "Deal 6/7 damage",
+        "2 hits"
+      ]
     },
     {
       "id": "CHOMP_MOVE",
@@ -37,13 +47,19 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 18
+          "damage": 18,
+          "damage_base": 16,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 18 damage"]
+      "effects": [
+        "Deal 16/18 damage"
+      ]
     }
   ],
-  "move_pattern": "Starts with Swipe. Then cycles: Swipe → Grasping Vines → Chomp → repeat.",
+  "move_pattern": "Starts with Swipe. Then cycles: Swipe \u2192 Grasping Vines \u2192 Chomp \u2192 repeat.",
   "powers_on_spawn": [],
-  "notes": "Grasping Vines deals damage and applies 1 Tangled to the target in addition to the attack."
+  "notes": "Grasping Vines deals damage and applies 1 Tangled to the target in addition to the attack.",
+  "min_hp_base": 61,
+  "hp_ascension": 8
 }

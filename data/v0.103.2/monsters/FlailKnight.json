@@ -13,7 +13,9 @@
           "type": "buff"
         }
       ],
-      "effects": ["Apply 3 Strength"]
+      "effects": [
+        "Apply 3 Strength"
+      ]
     },
     {
       "id": "FLAIL_MOVE",
@@ -22,10 +24,15 @@
         {
           "type": "multi_attack",
           "damage": 10,
-          "hits": 2
+          "hits": 2,
+          "damage_base": 9,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 10 damage", "2 hits"]
+      "effects": [
+        "Deal 9/10 damage",
+        "2 hits"
+      ]
     },
     {
       "id": "RAM_MOVE",
@@ -33,13 +40,19 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 17
+          "damage": 17,
+          "damage_base": 15,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 17 damage"]
+      "effects": [
+        "Deal 15/17 damage"
+      ]
     }
   ],
   "move_pattern": "Starts with Ram. Then randomly selects from: Breaker (cannot repeat consecutively), Flail (weight 2), or Ram (weight 2).",
   "powers_on_spawn": [],
-  "notes": "Breaker (WAR_CHANT) applies 3 Strength to itself and cannot be used twice in a row. Flail and Ram each have weight 2, making them twice as likely as Breaker to be selected."
+  "notes": "Breaker (WAR_CHANT) applies 3 Strength to itself and cannot be used twice in a row. Flail and Ram each have weight 2, making them twice as likely as Breaker to be selected.",
+  "min_hp_base": 101,
+  "hp_ascension": 8
 }

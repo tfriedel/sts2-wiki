@@ -8,17 +8,39 @@
     {
       "id": "SNORE_MOVE",
       "title": "Snore",
-      "intents": [{"type": "sleep"}],
+      "intents": [
+        {
+          "type": "sleep"
+        }
+      ],
       "effects": []
     },
     {
       "id": "ROLL_OUT_MOVE",
       "title": "Roll Out",
-      "intents": [{"type": "attack", "damage": 18}, {"type": "buff"}],
-      "effects": ["Deal 18 damage", "Gain 2 Strength"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 18,
+          "damage_base": 16,
+          "ascension": 9
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 18 damage",
+        "Gain 2 Strength"
+      ]
     }
   ],
   "move_pattern": "Starts with Snore. After each Snore, checks if Slumber power remains: if yes, repeats Snore; if no (Slumber expired), transitions to Roll Out. Roll Out loops indefinitely.",
-  "powers_on_spawn": ["18 Plating", "3 Slumber"],
-  "notes": "Begins combat asleep with 3 Slumber and 18 Plating. While Slumber is active the beetle only Snores (does nothing). When Slumber expires the beetle wakes up, its Plating is removed, and it uses Roll Out every turn for the rest of combat. Each Roll Out also applies 2 Strength, causing subsequent attacks to deal progressively more damage."
+  "powers_on_spawn": [
+    "18 Plating",
+    "3 Slumber"
+  ],
+  "notes": "Begins combat asleep with 3 Slumber and 18 Plating. While Slumber is active the beetle only Snores (does nothing). When Slumber expires the beetle wakes up, its Plating is removed, and it uses Roll Out every turn for the rest of combat. Each Roll Out also applies 2 Strength, causing subsequent attacks to deal progressively more damage.",
+  "min_hp_base": 86,
+  "hp_ascension": 8
 }

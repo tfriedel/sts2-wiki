@@ -11,11 +11,13 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 16
+          "damage": 16,
+          "damage_base": 14,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 16 damage"
+        "Deal 14/16 damage"
       ]
     },
     {
@@ -34,5 +36,8 @@
   ],
   "move_pattern": "Starts with Reload. Then alternates between Reload and Fire.",
   "powers_on_spawn": [],
-  "notes": "The monster cycles between firing and reloading. When firing, it deals damage and becomes unable to fire (crossbow unloaded). When reloading, it gains block and readies itself to fire again."
+  "notes": "The monster cycles between firing and reloading. When firing, it deals damage and becomes unable to fire (crossbow unloaded). When reloading, it gains block and readies itself to fire again.",
+  "min_hp_base": 18,
+  "max_hp_base": 21,
+  "hp_ascension": 8
 }

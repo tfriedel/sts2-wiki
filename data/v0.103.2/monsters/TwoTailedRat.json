@@ -11,11 +11,13 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 9
+          "damage": 9,
+          "damage_base": 8,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 9 damage"
+        "Deal 8/9 damage"
       ]
     },
     {
@@ -24,11 +26,13 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 7
+          "damage": 7,
+          "damage_base": 6,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 7 damage"
+        "Deal 6/7 damage"
       ]
     },
     {
@@ -58,5 +62,8 @@
   ],
   "move_pattern": "Randomly cycles between Scratch, Disease Bite, Screech, and Call for Backup based on a weighted distribution.",
   "powers_on_spawn": [],
-  "notes": "This monster can summon additional copies of itself via Call for Backup. Summoning is restricted by two mechanics: (1) a 2-turn cooldown (TurnsUntilSummonable starts at 2 and decrements each turn), and (2) a hard limit of 3 total summons (tracked by CallForBackupCount). When a rat summons another, all rats on the battlefield synchronize their CallForBackupCount to prevent excessive summoning. Call for Backup also cannot be used if a teammate already has it queued as their next move. The monster's appearance is randomized with different barnacle and head skins."
+  "notes": "This monster can summon additional copies of itself via Call for Backup. Summoning is restricted by two mechanics: (1) a 2-turn cooldown (TurnsUntilSummonable starts at 2 and decrements each turn), and (2) a hard limit of 3 total summons (tracked by CallForBackupCount). When a rat summons another, all rats on the battlefield synchronize their CallForBackupCount to prevent excessive summoning. Call for Backup also cannot be used if a teammate already has it queued as their next move. The monster's appearance is randomized with different barnacle and head skins.",
+  "min_hp_base": 17,
+  "max_hp_base": 21,
+  "hp_ascension": 8
 }

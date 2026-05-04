@@ -11,14 +11,16 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 9
+          "damage": 9,
+          "damage_base": 8,
+          "ascension": 9
         },
         {
           "type": "debuff"
         }
       ],
       "effects": [
-        "Deal 9 damage",
+        "Deal 8/9 damage",
         "Apply 1 Frail"
       ]
     },
@@ -28,14 +30,16 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 9
+          "damage": 9,
+          "damage_base": 8,
+          "ascension": 9
         },
         {
           "type": "debuff"
         }
       ],
       "effects": [
-        "Deal 9 damage",
+        "Deal 8/9 damage",
         "Apply 1 Weak"
       ]
     },
@@ -63,11 +67,13 @@
         }
       ],
       "effects": [
-        "Apply 3 Strength to self"
+        "Apply 2/3 Strength"
       ]
     }
   ],
-  "move_pattern": "Cycles: Orb of Frailty → Orb of Weakness → Soul Beam → Dark Ritual",
+  "move_pattern": "Cycles: Orb of Frailty \u2192 Orb of Weakness \u2192 Soul Beam \u2192 Dark Ritual",
   "powers_on_spawn": [],
-  "notes": "Part of an encounter with KinFollower allies. Uses a special dialogue line only once when casting Dark Ritual. Responds to all followers' deaths with a reaction. Music parameter tracks follower deaths and KinPriest's own death, suggesting dynamic music during this multi-phase encounter."
+  "notes": "Part of an encounter with KinFollower allies. Uses a special dialogue line only once when casting Dark Ritual. Responds to all followers' deaths with a reaction. Music parameter tracks follower deaths and KinPriest's own death, suggesting dynamic music during this multi-phase encounter.",
+  "min_hp_base": 190,
+  "hp_ascension": 8
 }

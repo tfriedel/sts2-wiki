@@ -12,10 +12,15 @@
         {
           "type": "multi_attack",
           "damage": 4,
-          "hits": 5
+          "hits": 5,
+          "damage_base": 3,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 4 damage", "5 hits"]
+      "effects": [
+        "Deal 4 damage",
+        "5 hits"
+      ]
     },
     {
       "id": "UNLOAD_MOVE_2",
@@ -24,10 +29,15 @@
         {
           "type": "multi_attack",
           "damage": 4,
-          "hits": 5
+          "hits": 5,
+          "damage_base": 3,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 4 damage", "5 hits"]
+      "effects": [
+        "Deal 4 damage",
+        "5 hits"
+      ]
     },
     {
       "id": "RELOAD_MOVE",
@@ -37,10 +47,14 @@
           "type": "buff"
         }
       ],
-      "effects": ["Apply 1 Strength to self"]
+      "effects": [
+        "Apply 1 Strength to self"
+      ]
     }
   ],
-  "move_pattern": "Cycles: Unload! → Unload! → Loading → repeat",
+  "move_pattern": "Cycles: Unload! \u2192 Unload! \u2192 Loading \u2192 repeat",
   "powers_on_spawn": [],
-  "notes": "Gains 1 Strength each cycle via Loading, permanently increasing damage on all subsequent Unload! attacks. The two consecutive Unload! states deal 5 hits each before the operator reloads and buffs itself."
+  "notes": "Gains 1 Strength each cycle via Loading, permanently increasing damage on all subsequent Unload! attacks. The two consecutive Unload! states deal 5 hits each before the operator reloads and buffs itself.",
+  "min_hp_base": 41,
+  "hp_ascension": 8
 }

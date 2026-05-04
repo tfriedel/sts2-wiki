@@ -11,10 +11,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 8
+          "damage": 8,
+          "damage_base": 7,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 8 damage"]
+      "effects": [
+        "Deal 7/8 damage"
+      ]
     },
     {
       "id": "INKY_LANCE_MOVE",
@@ -23,10 +27,15 @@
         {
           "type": "multi_attack",
           "damage": 7,
-          "hits": 2
+          "hits": 2,
+          "damage_base": 6,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 7 damage", "2 hits"]
+      "effects": [
+        "Deal 6/7 damage",
+        "2 hits"
+      ]
     },
     {
       "id": "DISMEMBER_MOVE",
@@ -34,13 +43,18 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 30
+          "damage": 30,
+          "damage_base": 27,
+          "ascension": 9
         },
         {
           "type": "status"
         }
       ],
-      "effects": ["Deal 30 damage", "Add 3 Wounds to discard"]
+      "effects": [
+        "Deal 27/30 damage",
+        "Add 3 Wounds to discard"
+      ]
     },
     {
       "id": "PREPARE_MOVE",
@@ -50,10 +64,16 @@
           "type": "buff"
         }
       ],
-      "effects": ["Apply 2 Strength"]
+      "effects": [
+        "Apply 2 Strength"
+      ]
     }
   ],
-  "move_pattern": "Cycles through: Ink Blot → Inky Lance → Dismember → Prepare, then repeats",
-  "powers_on_spawn": ["Slippery 9"],
-  "notes": "Vantom features a charging animation mechanic that progresses through different visual states as it cycles through its moves."
+  "move_pattern": "Cycles through: Ink Blot \u2192 Inky Lance \u2192 Dismember \u2192 Prepare, then repeats",
+  "powers_on_spawn": [
+    "Slippery 9"
+  ],
+  "notes": "Vantom features a charging animation mechanic that progresses through different visual states as it cycles through its moves.",
+  "min_hp_base": 173,
+  "hp_ascension": 8
 }

@@ -14,7 +14,7 @@
         }
       ],
       "effects": [
-        "Apply 6 Ritual"
+        "Apply 5/6 Ritual"
       ]
     },
     {
@@ -23,15 +23,20 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 3
+          "damage": 3,
+          "damage_base": 1,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 3 damage"
+        "Deal 1/3 damage"
       ]
     }
   ],
-  "move_pattern": "Incantation → Dark Strike (repeats)",
+  "move_pattern": "Incantation \u2192 Dark Strike (repeats)",
   "powers_on_spawn": [],
-  "notes": "The Damp Cultist casts Incantation to apply Ritual on its first turn, then repeatedly uses Dark Strike for the remainder of combat."
+  "notes": "The Damp Cultist casts Incantation to apply Ritual on its first turn, then repeatedly uses Dark Strike for the remainder of combat.",
+  "min_hp_base": 51,
+  "max_hp_base": 53,
+  "hp_ascension": 8
 }

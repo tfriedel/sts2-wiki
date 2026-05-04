@@ -11,10 +11,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 17
+          "damage": 17,
+          "damage_base": 16,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 17 damage"]
+      "effects": [
+        "Deal 16/17 damage"
+      ]
     },
     {
       "id": "PECK_ASSAULT",
@@ -26,7 +30,10 @@
           "hits": 6
         }
       ],
-      "effects": ["Deal 4 damage", "6 hits"]
+      "effects": [
+        "Deal 4 damage",
+        "6 hits"
+      ]
     },
     {
       "id": "JUDICIAL_FLIGHT",
@@ -36,7 +43,10 @@
           "type": "buff"
         }
       ],
-      "effects": ["Apply 1 Soar", "Begin flying"]
+      "effects": [
+        "Apply 1 Soar",
+        "Begin flying"
+      ]
     },
     {
       "id": "VERDICT",
@@ -44,16 +54,25 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 36
+          "damage": 36,
+          "damage_base": 33,
+          "ascension": 9
         },
         {
           "type": "debuff"
         }
       ],
-      "effects": ["Deal 36 damage", "Apply 4 Vulnerable", "Remove Soar", "Land (stop flying)"]
+      "effects": [
+        "Deal 33/36 damage",
+        "Apply 4 Vulnerable",
+        "Remove Soar",
+        "Land (stop flying)"
+      ]
     }
   ],
-  "move_pattern": "Strict cycle starting with Magistrate Scrutiny: Magistrate Scrutiny → Peck Assault → Judicial Flight → Verdict → repeat",
+  "move_pattern": "Strict cycle starting with Magistrate Scrutiny: Magistrate Scrutiny \u2192 Peck Assault \u2192 Judicial Flight \u2192 Verdict \u2192 repeat",
   "powers_on_spawn": [],
-  "notes": "The Owl Magistrate cycles through a grounded phase and a flying phase. On Judicial Flight it takes off and gains 1 Soar. On Verdict it dive-bombs the player, dealing heavy damage and applying 4 Vulnerable, then removes its Soar and lands. Different hurt and death sound effects play depending on whether it is currently flying."
+  "notes": "The Owl Magistrate cycles through a grounded phase and a flying phase. On Judicial Flight it takes off and gains 1 Soar. On Verdict it dive-bombs the player, dealing heavy damage and applying 4 Vulnerable, then removes its Soar and lands. Different hurt and death sound effects play depending on whether it is currently flying.",
+  "min_hp_base": 234,
+  "hp_ascension": 8
 }

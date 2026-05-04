@@ -13,7 +13,9 @@
           "type": "debuff"
         }
       ],
-      "effects": ["Apply 2 Frail"]
+      "effects": [
+        "Apply 2 Frail"
+      ]
     },
     {
       "id": "HOUNDS_MOVE",
@@ -22,13 +24,21 @@
         {
           "type": "multi_attack",
           "damage": 1,
-          "hits": 9
+          "hits": 9,
+          "hits_base": 8,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 1 damage", "9 hits"]
+      "effects": [
+        "Deal 1 damage",
+        "8/9 hits"
+      ]
     }
   ],
   "move_pattern": "Starts with Track, then loops Unleash the Hounds indefinitely.",
   "powers_on_spawn": [],
-  "notes": "Opens with Track to apply 2 Frail (reducing block gained from cards), then repeats Unleash the Hounds every turn for the rest of combat — 9 hits of 1 damage each."
+  "notes": "Opens with Track to apply 2 Frail (reducing block gained from cards), then repeats Unleash the Hounds every turn for the rest of combat \u2014 9 hits of 1 damage each.",
+  "min_hp_base": 21,
+  "max_hp_base": 25,
+  "hp_ascension": 8
 }

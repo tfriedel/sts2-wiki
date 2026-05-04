@@ -13,7 +13,9 @@
           "type": "stun"
         }
       ],
-      "effects": ["Wake up"]
+      "effects": [
+        "Wake up"
+      ]
     },
     {
       "id": "FLEE_MOVE",
@@ -23,10 +25,15 @@
           "type": "escape"
         }
       ],
-      "effects": ["Attempt to escape the battle"]
+      "effects": [
+        "Attempt to escape the battle"
+      ]
     }
   ],
   "move_pattern": "Starts stunned (Spawned). Then repeats Flee each turn, attempting to escape.",
   "powers_on_spawn": [],
-  "notes": "A cowardly gremlin that wakes up on its first turn then immediately attempts to flee the battle. It will keep trying to escape on subsequent turns. The monster has different animation states based on whether it's awake or stunned."
+  "notes": "A cowardly gremlin that wakes up on its first turn then immediately attempts to flee the battle. It will keep trying to escape on subsequent turns. The monster has different animation states based on whether it's awake or stunned.",
+  "min_hp_base": 13,
+  "max_hp_base": 17,
+  "hp_ascension": 8
 }

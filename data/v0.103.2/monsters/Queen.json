@@ -13,7 +13,9 @@
           "type": "debuff"
         }
       ],
-      "effects": ["Apply 3 Chains of Binding"]
+      "effects": [
+        "Apply 3 Chains of Binding"
+      ]
     },
     {
       "id": "YOUR_MINE_MOVE",
@@ -23,7 +25,11 @@
           "type": "debuff"
         }
       ],
-      "effects": ["Apply 99 Frail", "Apply 99 Weak", "Apply 99 Vulnerable"]
+      "effects": [
+        "Apply 99 Frail",
+        "Apply 99 Weak",
+        "Apply 99 Vulnerable"
+      ]
     },
     {
       "id": "BURN_BRIGHT_FOR_ME_MOVE",
@@ -37,7 +43,10 @@
           "amount": 20
         }
       ],
-      "effects": ["Apply 1 Strength to all teammates", "Gain 20 Block"]
+      "effects": [
+        "Apply 1 Strength to all teammates",
+        "Gain 20 Block"
+      ]
     },
     {
       "id": "OFF_WITH_YOUR_HEAD_MOVE",
@@ -46,10 +55,15 @@
         {
           "type": "multi_attack",
           "damage": 4,
-          "hits": 5
+          "hits": 5,
+          "damage_base": 3,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 4 damage", "5 hits"]
+      "effects": [
+        "Deal 3/4 damage",
+        "5 hits"
+      ]
     },
     {
       "id": "EXECUTION_MOVE",
@@ -57,10 +71,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 18
+          "damage": 18,
+          "damage_base": 15,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 18 damage"]
+      "effects": [
+        "Deal 15/18 damage"
+      ]
     },
     {
       "id": "ENRAGE_MOVE",
@@ -70,10 +88,14 @@
           "type": "buff"
         }
       ],
-      "effects": ["Apply 2 Strength"]
+      "effects": [
+        "Apply 2 Strength"
+      ]
     }
   ],
-  "move_pattern": "Starts with Puppet Strings. Then You're Mine. While the amalgam is alive, repeatedly uses Burn Bright for Me. Once the amalgam dies, cycles through Off with Your Head → Execution → Enrage, repeating.",
+  "move_pattern": "Starts with Puppet Strings. Then You're Mine. While the amalgam is alive, repeatedly uses Burn Bright for Me. Once the amalgam dies, cycles through Off with Your Head \u2192 Execution \u2192 Enrage, repeating.",
   "powers_on_spawn": [],
-  "notes": "The Queen fights alongside the TorchHeadAmalgam. Her move pattern changes based on the amalgam's survival. While the amalgam is alive, she spends most of the fight using Burn Bright for Me to buff her teammate and gain block. When the amalgam dies, she enters an enraged phase, cycling through high-damage attacks (Off with Your Head, Execution, Enrage). If Burn Bright for Me is scheduled when the amalgam dies, she immediately switches to Enrage instead."
+  "notes": "The Queen fights alongside the TorchHeadAmalgam. Her move pattern changes based on the amalgam's survival. While the amalgam is alive, she spends most of the fight using Burn Bright for Me to buff her teammate and gain block. When the amalgam dies, she enters an enraged phase, cycling through high-damage attacks (Off with Your Head, Execution, Enrage). If Burn Bright for Me is scheduled when the amalgam dies, she immediately switches to Enrage instead.",
+  "min_hp_base": 400,
+  "hp_ascension": 8
 }

@@ -11,12 +11,19 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 12
+          "damage": 12,
+          "damage_base": 11,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 12 damage"]
+      "effects": [
+        "Deal 11/12 damage"
+      ]
     }
   ],
   "move_pattern": "Repeats Killshot every turn.",
-  "powers_on_spawn": []
+  "powers_on_spawn": [],
+  "min_hp_base": 18,
+  "max_hp_base": 23,
+  "hp_ascension": 8
 }

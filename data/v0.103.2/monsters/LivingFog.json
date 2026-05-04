@@ -11,14 +11,16 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 9
+          "damage": 9,
+          "damage_base": 8,
+          "ascension": 9
         },
         {
           "type": "debuff"
         }
       ],
       "effects": [
-        "Deal 9 damage",
+        "Deal 8/9 damage",
         "Apply 1 Smoggy Power"
       ]
     },
@@ -28,14 +30,16 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 6
+          "damage": 6,
+          "damage_base": 5,
+          "ascension": 9
         },
         {
           "type": "summon"
         }
       ],
       "effects": [
-        "Deal 6 damage",
+        "Deal 5/6 damage",
         "Summon Gas Bomb"
       ]
     },
@@ -45,15 +49,19 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 9
+          "damage": 9,
+          "damage_base": 8,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 9 damage"
+        "Deal 8/9 damage"
       ]
     }
   ],
-  "move_pattern": "Starts with Advanced Gas, then cycles through Bloat → Super Gas Blast → Bloat → Super Gas Blast...",
+  "move_pattern": "Starts with Advanced Gas, then cycles through Bloat \u2192 Super Gas Blast \u2192 Bloat \u2192 Super Gas Blast...",
   "powers_on_spawn": [],
-  "notes": "Summons GasBomb minions during Bloat moves. Applies Smoggy Power with Advanced Gas move."
+  "notes": "Summons GasBomb minions during Bloat moves. Applies Smoggy Power with Advanced Gas move.",
+  "min_hp_base": 80,
+  "hp_ascension": 8
 }

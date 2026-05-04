@@ -14,7 +14,9 @@
           "amount": 5
         }
       ],
-      "effects": ["Add 5 Dazed to discard"]
+      "effects": [
+        "Add 5 Dazed to discard"
+      ]
     },
     {
       "id": "RAMMING_SPEED_MOVE",
@@ -22,13 +24,18 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 11
+          "damage": 11,
+          "damage_base": 10,
+          "ascension": 9
         },
         {
           "type": "debuff"
         }
       ],
-      "effects": ["Deal 11 damage", "Apply 1 Weak"]
+      "effects": [
+        "Deal 10/11 damage",
+        "Apply 1 Weak"
+      ]
     },
     {
       "id": "SWIPE_MOVE",
@@ -36,10 +43,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 14
+          "damage": 14,
+          "damage_base": 13,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 14 damage"]
+      "effects": [
+        "Deal 13/14 damage"
+      ]
     },
     {
       "id": "STOMP_MOVE",
@@ -48,13 +59,20 @@
         {
           "type": "multi_attack",
           "damage": 5,
-          "hits": 3
+          "hits": 3,
+          "damage_base": 4,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 5 damage", "3 hits"]
+      "effects": [
+        "Deal 4/5 damage",
+        "3 hits"
+      ]
     }
   ],
   "move_pattern": "Opens with Haunt (fires only once at the start of combat). Then randomly cycles through Ramming Speed, Swipe, and Stomp for the remainder of combat, never repeating the same move consecutively.",
   "powers_on_spawn": [],
-  "notes": "Haunt adds 5 Dazed cards directly to the player's discard pile at the start of combat. These are status cards that clutter the deck. Haunt does not recur — it is strictly the opening move."
+  "notes": "Haunt adds 5 Dazed cards directly to the player's discard pile at the start of combat. These are status cards that clutter the deck. Haunt does not recur \u2014 it is strictly the opening move.",
+  "min_hp_base": 63,
+  "hp_ascension": 8
 }

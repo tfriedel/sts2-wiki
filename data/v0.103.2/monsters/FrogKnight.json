@@ -11,13 +11,18 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 14
+          "damage": 14,
+          "damage_base": 13,
+          "ascension": 9
         },
         {
           "type": "debuff"
         }
       ],
-      "effects": ["Deal 14 damage", "Apply 2 Frail"]
+      "effects": [
+        "Deal 13/14 damage",
+        "Apply 2 Frail"
+      ]
     },
     {
       "id": "STRIKE_DOWN_EVIL",
@@ -25,10 +30,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 23
+          "damage": 23,
+          "damage_base": 21,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 23 damage"]
+      "effects": [
+        "Deal 21/23 damage"
+      ]
     },
     {
       "id": "FOR_THE_QUEEN",
@@ -38,7 +47,9 @@
           "type": "buff"
         }
       ],
-      "effects": ["Apply 5 Strength to self"]
+      "effects": [
+        "Apply 5 Strength to self"
+      ]
     },
     {
       "id": "BEETLE_CHARGE",
@@ -46,13 +57,21 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 40
+          "damage": 40,
+          "damage_base": 35,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 40 damage"]
+      "effects": [
+        "Deal 35/40 damage"
+      ]
     }
   ],
-  "move_pattern": "Starts with Tongue Lash. Normal cycle: Tongue Lash → Strike Down Evil → For the Queen → Tongue Lash. Once per fight, after For the Queen, if HP is below 50% and Beetle Charge has not yet been used, uses Beetle Charge instead, then resumes the cycle with Tongue Lash.",
-  "powers_on_spawn": ["Plating"],
-  "notes": "Begins combat with 19 Plating. Beetle Charge is a one-time phase move triggered after For the Queen when HP drops below 50% — once used, the cycle returns permanently to Tongue Lash after For the Queen."
+  "move_pattern": "Starts with Tongue Lash. Normal cycle: Tongue Lash \u2192 Strike Down Evil \u2192 For the Queen \u2192 Tongue Lash. Once per fight, after For the Queen, if HP is below 50% and Beetle Charge has not yet been used, uses Beetle Charge instead, then resumes the cycle with Tongue Lash.",
+  "powers_on_spawn": [
+    "Plating"
+  ],
+  "notes": "Begins combat with 19 Plating. Beetle Charge is a one-time phase move triggered after For the Queen when HP drops below 50% \u2014 once used, the cycle returns permanently to Tongue Lash after For the Queen.",
+  "min_hp_base": 191,
+  "hp_ascension": 8
 }

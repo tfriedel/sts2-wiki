@@ -9,8 +9,12 @@
       "id": "DEBILITATING_SMOG",
       "title": "Debilitating Smog",
       "intents": [
-        { "type": "debuff" },
-        { "type": "buff" }
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "buff"
+        }
       ],
       "effects": [
         "Apply -2 Strength to all enemies",
@@ -21,15 +25,25 @@
       "id": "EYE_LASERS",
       "title": "Eye Lasers",
       "intents": [
-        { "type": "multi_attack", "damage": 5, "hits": 2 }
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 2,
+          "damage_base": 4,
+          "ascension": 9
+        }
       ],
       "effects": [
-        "Deal 5 damage",
+        "Deal 4/5 damage",
         "2 hits"
       ]
     }
   ],
-  "move_pattern": "Cycles: Debilitating Smog → Eye Lasers → Debilitating Smog → ...",
-  "powers_on_spawn": ["PossessStrength"],
-  "notes": "Starts with 1 PossessStrength. Debilitating Smog steals 2 Strength from each enemy (reduces their Strength by 2, gains 2 Strength itself), making it progressively stronger if repeatedly allowed to use it."
+  "move_pattern": "Cycles: Debilitating Smog \u2192 Eye Lasers \u2192 Debilitating Smog \u2192 ...",
+  "powers_on_spawn": [
+    "PossessStrength"
+  ],
+  "notes": "Starts with 1 PossessStrength. Debilitating Smog steals 2 Strength from each enemy (reduces their Strength by 2, gains 2 Strength itself), making it progressively stronger if repeatedly allowed to use it.",
+  "min_hp_base": 93,
+  "hp_ascension": 8
 }

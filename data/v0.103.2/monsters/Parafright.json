@@ -8,11 +8,23 @@
     {
       "id": "SLAM_MOVE",
       "title": "Slam",
-      "intents": [{"type": "attack", "damage": 17, "hits": 1}],
-      "effects": ["Deal 17 damage"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 17,
+          "hits": 1,
+          "damage_base": 16,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 16/17 damage"
+      ]
     }
   ],
   "move_pattern": "Repeats Slam every turn.",
-  "powers_on_spawn": ["Illusion (1)"],
+  "powers_on_spawn": [
+    "Illusion (1)"
+  ],
   "notes": "Parafright has the Illusion power on spawn, meaning it can revive after death. ShouldDisappearFromDoom is false. Only fully dies when its primary enemy teammate is also dead. When reviving, uses a stunned hurt animation instead of the normal hurt animation."
 }

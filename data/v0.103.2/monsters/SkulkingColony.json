@@ -11,10 +11,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 13
+          "damage": 13,
+          "damage_base": 12,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 13 damage"]
+      "effects": [
+        "Deal 12/13 damage"
+      ]
     },
     {
       "id": "ZOOM_MOVE",
@@ -22,14 +26,19 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 16
+          "damage": 16,
+          "damage_base": 14,
+          "ascension": 9
         },
         {
           "type": "block",
           "amount": 13
         }
       ],
-      "effects": ["Deal 16 damage", "Gain 13 Block"]
+      "effects": [
+        "Deal 14/16 damage",
+        "Gain 10/13 Block"
+      ]
     },
     {
       "id": "INERTIA_MOVE",
@@ -37,13 +46,18 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 11
+          "damage": 11,
+          "damage_base": 9,
+          "ascension": 9
         },
         {
           "type": "buff"
         }
       ],
-      "effects": ["Deal 11 damage", "Apply 3 Strength"]
+      "effects": [
+        "Deal 9/11 damage",
+        "Apply 2/3 Strength"
+      ]
     },
     {
       "id": "PIERCING_STABS_MOVE",
@@ -52,12 +66,21 @@
         {
           "type": "multi_attack",
           "damage": 8,
-          "hits": 2
+          "hits": 2,
+          "damage_base": 7,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 8 damage", "2 hits"]
+      "effects": [
+        "Deal 7/8 damage",
+        "2 hits"
+      ]
     }
   ],
-  "move_pattern": "Cycles: Smash → Zoom → Inertia → Piercing Stabs",
-  "powers_on_spawn": ["Hardened Shell"]
+  "move_pattern": "Cycles: Smash \u2192 Zoom \u2192 Inertia \u2192 Piercing Stabs",
+  "powers_on_spawn": [
+    "Hardened Shell"
+  ],
+  "min_hp_base": 70,
+  "hp_ascension": 8
 }

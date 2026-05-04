@@ -9,38 +9,77 @@
       "id": "JAB_MOVE",
       "title": "Jab",
       "intents": [
-        {"type": "attack", "damage": 24}
+        {
+          "type": "attack",
+          "damage": 24,
+          "damage_base": 22,
+          "ascension": 9
+        }
       ],
-      "effects": ["Deal 24 damage"]
+      "effects": [
+        "Deal 22/24 damage"
+      ]
     },
     {
       "id": "RADIATE_MOVE",
       "title": "Radiate",
       "intents": [
-        {"type": "attack", "damage": 18},
-        {"type": "block", "amount": 18}
+        {
+          "type": "attack",
+          "damage": 18,
+          "damage_base": 16,
+          "ascension": 9
+        },
+        {
+          "type": "block",
+          "amount": 18
+        }
       ],
-      "effects": ["Deal 18 damage", "Gain 18 Block"]
+      "effects": [
+        "Deal 16/18 damage",
+        "Gain 16/18 Block"
+      ]
     },
     {
       "id": "WHIRLWIND_MOVE",
       "title": "Whirlwind",
       "intents": [
-        {"type": "multi_attack", "damage": 10, "hits": 3}
+        {
+          "type": "multi_attack",
+          "damage": 10,
+          "hits": 3,
+          "damage_base": 9,
+          "ascension": 9
+        }
       ],
-      "effects": ["Deal 10 damage", "3 hits"]
+      "effects": [
+        "Deal 9/10 damage",
+        "3 hits"
+      ]
     },
     {
       "id": "PULSATE_MOVE",
       "title": "Pulsate",
       "intents": [
-        {"type": "buff"},
-        {"type": "block", "amount": 22}
+        {
+          "type": "buff"
+        },
+        {
+          "type": "block",
+          "amount": 22
+        }
       ],
-      "effects": ["Gain 22 Block", "Apply 5 Strength"]
+      "effects": [
+        "Apply 4/5 Strength",
+        "Gain 20/22 Block"
+      ]
     }
   ],
-  "move_pattern": "Cycles: Jab → Radiate → Whirlwind → Pulsate → repeat",
-  "powers_on_spawn": ["VitalSpark 1"],
-  "notes": "Follows a strict, predictable 4-move cycle with no randomness."
+  "move_pattern": "Cycles: Jab \u2192 Radiate \u2192 Whirlwind \u2192 Pulsate \u2192 repeat",
+  "powers_on_spawn": [
+    "VitalSpark 1"
+  ],
+  "notes": "Follows a strict, predictable 4-move cycle with no randomness.",
+  "min_hp_base": 200,
+  "hp_ascension": 8
 }

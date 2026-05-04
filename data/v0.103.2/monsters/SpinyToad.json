@@ -23,7 +23,9 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 25
+          "damage": 25,
+          "damage_base": 23,
+          "ascension": 9
         }
       ],
       "effects": [
@@ -37,7 +39,9 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 19
+          "damage": 19,
+          "damage_base": 17,
+          "ascension": 9
         }
       ],
       "effects": [
@@ -45,7 +49,10 @@
       ]
     }
   ],
-  "move_pattern": "Cycles: Protruding Spikes → Spike Explosion → Tongue Lash → repeat",
+  "move_pattern": "Cycles: Protruding Spikes \u2192 Spike Explosion \u2192 Tongue Lash \u2192 repeat",
   "powers_on_spawn": [],
-  "notes": "The Spiny Toad alternates between a spiked and unspiked state. Protruding Spikes arms itself with 5 Thorns (dealing damage back to attackers). Spike Explosion fires those spikes as an attack and removes the Thorns. Tongue Lash is a simple follow-up attack before the cycle repeats."
+  "notes": "The Spiny Toad alternates between a spiked and unspiked state. Protruding Spikes arms itself with 5 Thorns (dealing damage back to attackers). Spike Explosion fires those spikes as an attack and removes the Thorns. Tongue Lash is a simple follow-up attack before the cycle repeats.",
+  "min_hp_base": 116,
+  "max_hp_base": 119,
+  "hp_ascension": 8
 }

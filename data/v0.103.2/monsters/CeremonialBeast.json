@@ -9,54 +9,95 @@
       "id": "STAMP_MOVE",
       "title": "Stamp",
       "intents": [
-        {"type": "buff"}
+        {
+          "type": "buff"
+        }
       ],
-      "effects": ["Apply 160 Plow"]
+      "effects": [
+        "Apply 150/160 Plow"
+      ]
     },
     {
       "id": "PLOW_MOVE",
       "title": "Plow",
       "intents": [
-        {"type": "attack", "damage": 20},
-        {"type": "buff"}
+        {
+          "type": "attack",
+          "damage": 20,
+          "damage_base": 18,
+          "ascension": 9
+        },
+        {
+          "type": "buff"
+        }
       ],
-      "effects": ["Deal 20 damage", "Gain 2 Strength"]
+      "effects": [
+        "Deal 18/20 damage",
+        "Gain 2 Strength"
+      ]
     },
     {
       "id": "STUN_MOVE",
       "title": "Stun",
       "intents": [
-        {"type": "stun"}
+        {
+          "type": "stun"
+        }
       ],
-      "effects": ["Stunned — no action taken; must complete before transitioning"]
+      "effects": [
+        "Stunned \u2014 no action taken; must complete before transitioning"
+      ]
     },
     {
       "id": "BEAST_CRY_MOVE",
       "title": "Beast Cry",
       "intents": [
-        {"type": "debuff"}
+        {
+          "type": "debuff"
+        }
       ],
-      "effects": ["Apply 1 Ringing to all targets"]
+      "effects": [
+        "Apply 1 Ringing to all targets"
+      ]
     },
     {
       "id": "STOMP_MOVE",
       "title": "Stomp",
       "intents": [
-        {"type": "attack", "damage": 17}
+        {
+          "type": "attack",
+          "damage": 17,
+          "damage_base": 15,
+          "ascension": 9
+        }
       ],
-      "effects": ["Deal 17 damage"]
+      "effects": [
+        "Deal 15/17 damage"
+      ]
     },
     {
       "id": "CRUSH_MOVE",
       "title": "Crush",
       "intents": [
-        {"type": "attack", "damage": 19},
-        {"type": "buff"}
+        {
+          "type": "attack",
+          "damage": 19,
+          "damage_base": 17,
+          "ascension": 9
+        },
+        {
+          "type": "buff"
+        }
       ],
-      "effects": ["Deal 19 damage", "Gain 4 Strength"]
+      "effects": [
+        "Deal 17/19 damage",
+        "Apply 3/4 Strength"
+      ]
     }
   ],
-  "move_pattern": "Starts with Stamp (applies 160 Plow to self), then Plow repeating indefinitely. When PlowPower expires or is removed, the beast becomes Stunned for one mandatory turn, then transitions to phase 2: Beast Cry → Stomp → Crush → Beast Cry (cycling).",
+  "move_pattern": "Starts with Stamp (applies 160 Plow to self), then Plow repeating indefinitely. When PlowPower expires or is removed, the beast becomes Stunned for one mandatory turn, then transitions to phase 2: Beast Cry \u2192 Stomp \u2192 Crush \u2192 Beast Cry (cycling).",
   "powers_on_spawn": [],
-  "notes": "Two-phase fight. Phase 1: Stamp applies 160 stacks of PlowPower, then Plow loops indefinitely — dealing 20 damage and gaining 2 Strength each use. When PlowPower expires naturally or is stripped by the player, SetStunned() is called by the power, forcing the state machine into the Stun move (immobilized for one mandatory turn with MustPerformOnceBeforeTransitioning). Phase 2: Cycles Beast Cry (applies 1 Ringing to the player) → Stomp (17 damage) → Crush (19 damage + 4 Strength) → Beast Cry indefinitely. Removing PlowPower early triggers the phase transition sooner."
+  "notes": "Two-phase fight. Phase 1: Stamp applies 160 stacks of PlowPower, then Plow loops indefinitely \u2014 dealing 20 damage and gaining 2 Strength each use. When PlowPower expires naturally or is stripped by the player, SetStunned() is called by the power, forcing the state machine into the Stun move (immobilized for one mandatory turn with MustPerformOnceBeforeTransitioning). Phase 2: Cycles Beast Cry (applies 1 Ringing to the player) \u2192 Stomp (17 damage) \u2192 Crush (19 damage + 4 Strength) \u2192 Beast Cry indefinitely. Removing PlowPower early triggers the phase transition sooner.",
+  "min_hp_base": 252,
+  "hp_ascension": 8
 }

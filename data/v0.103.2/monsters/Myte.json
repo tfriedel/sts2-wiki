@@ -8,23 +8,57 @@
     {
       "id": "TOXIC_MOVE",
       "title": "Toxic Cornucopia",
-      "intents": [{"type": "status", "amount": 2}],
-      "effects": ["Add 2 Toxic cards to player's hand"]
+      "intents": [
+        {
+          "type": "status",
+          "amount": 2
+        }
+      ],
+      "effects": [
+        "Add 2 Toxic cards to player's hand"
+      ]
     },
     {
       "id": "BITE_MOVE",
       "title": "Bite",
-      "intents": [{"type": "attack", "damage": 15, "hits": 1}],
-      "effects": ["Deal 15 damage"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 15,
+          "hits": 1,
+          "damage_base": 13,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 13/15 damage"
+      ]
     },
     {
       "id": "SUCK_MOVE",
       "title": "Suck",
-      "intents": [{"type": "attack", "damage": 6, "hits": 1}, {"type": "buff"}],
-      "effects": ["Deal 6 damage", "Gain 3 Strength"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 6,
+          "hits": 1,
+          "damage_base": 4,
+          "ascension": 9
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Deal 4/6 damage",
+        "Apply 2/3 Strength"
+      ]
     }
   ],
   "move_pattern": "If in 'first' slot: starts with Toxic Cornucopia. If in 'second' slot: starts with Suck. Then cycles: Toxic Cornucopia -> Bite -> Suck -> Toxic Cornucopia (repeating)",
   "powers_on_spawn": [],
-  "notes": "Starting move depends on slot position: first slot begins with Toxic Cornucopia, second slot begins with Suck. The cycle is always Toxic -> Bite -> Suck -> Toxic."
+  "notes": "Starting move depends on slot position: first slot begins with Toxic Cornucopia, second slot begins with Suck. The cycle is always Toxic -> Bite -> Suck -> Toxic.",
+  "min_hp_base": 61,
+  "max_hp_base": 67,
+  "hp_ascension": 8
 }

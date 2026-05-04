@@ -11,14 +11,16 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 19
+          "damage": 19,
+          "damage_base": 17,
+          "ascension": 9
         },
         {
           "type": "debuff"
         }
       ],
       "effects": [
-        "Deal 19 damage",
+        "Deal 17/19 damage",
         "Steal a card from opponent's deck or discard pile"
       ]
     },
@@ -41,11 +43,13 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 23
+          "damage": 23,
+          "damage_base": 21,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 23 damage"
+        "Deal 21/23 damage"
       ]
     },
     {
@@ -54,11 +58,13 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 16
+          "damage": 16,
+          "damage_base": 14,
+          "ascension": 9
         }
       ],
       "effects": [
-        "Deal 16 damage"
+        "Deal 14/16 damage"
       ]
     },
     {
@@ -74,9 +80,11 @@
       ]
     }
   ],
-  "move_pattern": "Cycles: Thievery → Flutter → Hat Trick → Nab → Escape (repeats Escape)",
+  "move_pattern": "Cycles: Thievery \u2192 Flutter \u2192 Hat Trick \u2192 Nab \u2192 Escape (repeats Escape)",
   "powers_on_spawn": [
     "Escape Artist 5"
   ],
-  "notes": "Steals cards from the player's deck with priority for Uncommon cards first, then Common/Rare/Event, then Basic/Quest, finally Ancient or Imbued cards. After using Flutter, enters a hovering state that changes its attack, hurt, and flee animations. Once it reaches the Escape move, it escapes from combat."
+  "notes": "Steals cards from the player's deck with priority for Uncommon cards first, then Common/Rare/Event, then Basic/Quest, finally Ancient or Imbued cards. After using Flutter, enters a hovering state that changes its attack, hurt, and flee animations. Once it reaches the Escape move, it escapes from combat.",
+  "min_hp_base": 79,
+  "hp_ascension": 8
 }

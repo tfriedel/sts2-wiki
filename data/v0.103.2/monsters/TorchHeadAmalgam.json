@@ -11,10 +11,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 19
+          "damage": 19,
+          "damage_base": 18,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 19 damage"]
+      "effects": [
+        "Deal 19 damage"
+      ]
     },
     {
       "id": "TACKLE_2_MOVE",
@@ -22,10 +26,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 19
+          "damage": 19,
+          "damage_base": 18,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 19 damage"]
+      "effects": [
+        "Deal 19 damage"
+      ]
     },
     {
       "id": "BEAM_MOVE",
@@ -37,7 +45,10 @@
           "hits": 3
         }
       ],
-      "effects": ["Deal 8 damage", "3 hits"]
+      "effects": [
+        "Deal 8 damage",
+        "3 hits"
+      ]
     },
     {
       "id": "TACKLE_3_MOVE",
@@ -45,10 +56,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 15
+          "damage": 15,
+          "damage_base": 14,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 15 damage"]
+      "effects": [
+        "Deal 15 damage"
+      ]
     },
     {
       "id": "TACKLE_4_MOVE",
@@ -56,13 +71,21 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 15
+          "damage": 15,
+          "damage_base": 14,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 15 damage"]
+      "effects": [
+        "Deal 15 damage"
+      ]
     }
   ],
-  "move_pattern": "Opens with Tackle → Tackle, then loops: Soul Beam → Weak Tackle → Weak Tackle → Soul Beam → ...",
-  "powers_on_spawn": ["Minion"],
-  "notes": "A minion spawned by another monster. After the opening pair of Tackles (19 damage each), settles into a repeating cycle of Soul Beam (8 damage × 3 hits) followed by two Weak Tackles (15 damage each)."
+  "move_pattern": "Opens with Tackle \u2192 Tackle, then loops: Soul Beam \u2192 Weak Tackle \u2192 Weak Tackle \u2192 Soul Beam \u2192 ...",
+  "powers_on_spawn": [
+    "Minion"
+  ],
+  "notes": "A minion spawned by another monster. After the opening pair of Tackles (19 damage each), settles into a repeating cycle of Soul Beam (8 damage \u00d7 3 hits) followed by two Weak Tackles (15 damage each).",
+  "min_hp_base": 199,
+  "hp_ascension": 8
 }

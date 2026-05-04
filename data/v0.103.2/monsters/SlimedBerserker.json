@@ -8,29 +8,67 @@
     {
       "id": "VOMIT_ICHOR_MOVE",
       "title": "Vomit Ichor",
-      "intents": [{"type": "status"}],
-      "effects": ["Add 10 Slimed to discard"]
+      "intents": [
+        {
+          "type": "status"
+        }
+      ],
+      "effects": [
+        "Add 10 Slimed to discard"
+      ]
     },
     {
       "id": "FURIOUS_PUMMELING_MOVE",
       "title": "Furious Pummeling",
-      "intents": [{"type": "multi_attack", "damage": 5, "hits": 4}],
-      "effects": ["Deal 5 damage", "4 hits"]
+      "intents": [
+        {
+          "type": "multi_attack",
+          "damage": 5,
+          "hits": 4,
+          "damage_base": 4,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 4/5 damage",
+        "4 hits"
+      ]
     },
     {
       "id": "LEECHING_HUG_MOVE",
       "title": "Leeching Hug",
-      "intents": [{"type": "debuff"}, {"type": "buff"}],
-      "effects": ["Apply 3 Weak", "Gain 3 Strength"]
+      "intents": [
+        {
+          "type": "debuff"
+        },
+        {
+          "type": "buff"
+        }
+      ],
+      "effects": [
+        "Apply 3 Weak",
+        "Gain 3 Strength"
+      ]
     },
     {
       "id": "SMOTHER_MOVE",
       "title": "Smother",
-      "intents": [{"type": "attack", "damage": 33}],
-      "effects": ["Deal 33 damage"]
+      "intents": [
+        {
+          "type": "attack",
+          "damage": 33,
+          "damage_base": 30,
+          "ascension": 9
+        }
+      ],
+      "effects": [
+        "Deal 30/33 damage"
+      ]
     }
   ],
-  "move_pattern": "Cycles: Vomit Ichor → Furious Pummeling → Leeching Hug → Smother → (repeat)",
+  "move_pattern": "Cycles: Vomit Ichor \u2192 Furious Pummeling \u2192 Leeching Hug \u2192 Smother \u2192 (repeat)",
   "powers_on_spawn": [],
-  "notes": "Leeching Hug applies 3 Weak to the player and grants itself 3 Strength. Strength stacks each cycle, increasing damage on Furious Pummeling and Smother over time. Vomit Ichor adds 10 Slimed cards to the player's discard pile."
+  "notes": "Leeching Hug applies 3 Weak to the player and grants itself 3 Strength. Strength stacks each cycle, increasing damage on Furious Pummeling and Smother over time. Vomit Ichor adds 10 Slimed cards to the player's discard pile.",
+  "min_hp_base": 266,
+  "hp_ascension": 8
 }

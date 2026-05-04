@@ -11,10 +11,14 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 22
+          "damage": 22,
+          "damage_base": 20,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 22 damage"]
+      "effects": [
+        "Deal 20/22 damage"
+      ]
     },
     {
       "id": "SKULL_BASH_MOVE",
@@ -22,13 +26,18 @@
       "intents": [
         {
           "type": "attack",
-          "damage": 16
+          "damage": 16,
+          "damage_base": 14,
+          "ascension": 9
         },
         {
           "type": "debuff"
         }
       ],
-      "effects": ["Deal 16 damage", "Apply 1 Vulnerable"]
+      "effects": [
+        "Deal 14/16 damage",
+        "Apply 1 Vulnerable"
+      ]
     },
     {
       "id": "MULTI_CLAW_MOVE",
@@ -37,10 +46,14 @@
         {
           "type": "multi_attack",
           "damage": 11,
-          "hits": 3
+          "hits": 3,
+          "damage_base": 10,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 11 damage per hit, 3+ hits (increases by 1 each use)"]
+      "effects": [
+        "Deal 10/11 damage"
+      ]
     },
     {
       "id": "BIG_POUNCE_MOVE",
@@ -51,7 +64,9 @@
           "damage": 45
         }
       ],
-      "effects": ["Deal 45 damage"]
+      "effects": [
+        "Deal 45 damage"
+      ]
     },
     {
       "id": "PHASE3_LACERATE_MOVE",
@@ -60,10 +75,14 @@
         {
           "type": "multi_attack",
           "damage": 11,
-          "hits": 3
+          "hits": 3,
+          "damage_base": 10,
+          "ascension": 9
         }
       ],
-      "effects": ["Deal 11 damage per hit, 3 hits"]
+      "effects": [
+        "Deal 10/11 damage"
+      ]
     },
     {
       "id": "BURNING_GROWL_MOVE",
@@ -76,7 +95,10 @@
           "type": "buff"
         }
       ],
-      "effects": ["Add 5 Burn to discard", "Gain 3 Strength"]
+      "effects": [
+        "Apply 2/3 Strength",
+        "Gain 3 Strength"
+      ]
     },
     {
       "id": "RESPAWN_MOVE",
@@ -89,10 +111,15 @@
           "type": "buff"
         }
       ],
-      "effects": ["Recover with increased HP and apply phase-specific power"]
+      "effects": [
+        "Recover with increased HP and apply phase-specific power"
+      ]
     }
   ],
-  "move_pattern": "Phase 1 (111 HP): Alternates Bite → Skull Bash → Bite → ... Until defeated. On death: Respawn with Phase 2 (212 HP) and use Multi-Claw repeating. On second death: Respawn with Phase 3 (313 HP) and cycle Lacerate → Big Pounce → Burning Growl → Lacerate → ...",
-  "powers_on_spawn": ["Adaptable", "Enrage +3"],
+  "move_pattern": "Phase 1 (111 HP): Alternates Bite \u2192 Skull Bash \u2192 Bite \u2192 ... Until defeated. On death: Respawn with Phase 2 (212 HP) and use Multi-Claw repeating. On second death: Respawn with Phase 3 (313 HP) and cycle Lacerate \u2192 Big Pounce \u2192 Burning Growl \u2192 Lacerate \u2192 ...",
+  "powers_on_spawn": [
+    "Adaptable",
+    "Enrage +3"
+  ],
   "notes": "Complex multi-phase adaptive boss. Starts with Adaptable power allowing 2 respawns. Multi-Claw uses increase in hit count each turn (starting at 3 hits, +1 per use). First respawn applies Painful Stabs power; second respawn applies Nemesis power. Burning Growl both damages player via Burn cards and increases TestSubject's Strength. Creature scales visually by 10% per respawn. All damage and power values reflect ascension-level (harder difficulty) scaling."
 }

@@ -14,10 +14,15 @@
           "amount": 15
         }
       ],
-      "effects": ["Give 15 Block to all Fabricators"]
+      "effects": [
+        "Give 15 Block to all Fabricators"
+      ]
     }
   ],
   "move_pattern": "Always repeats Guard.",
   "powers_on_spawn": [],
-  "notes": "Guard gives 15 Block to all Fabricator monsters in the same combat, not to itself. Guardbot acts as a support monster protecting Fabricators."
+  "notes": "Guard gives 15 Block to all Fabricator monsters in the same combat, not to itself. Guardbot acts as a support monster protecting Fabricators.",
+  "min_hp_base": 16,
+  "max_hp_base": 20,
+  "hp_ascension": 8
 }

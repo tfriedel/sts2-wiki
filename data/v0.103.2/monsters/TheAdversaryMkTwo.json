@@ -14,7 +14,9 @@
           "damage": 13
         }
       ],
-      "effects": ["Deal 13 damage"]
+      "effects": [
+        "Deal 13 damage"
+      ]
     },
     {
       "id": "FLAME_BEAM_MOVE",
@@ -25,7 +27,9 @@
           "damage": 16
         }
       ],
-      "effects": ["Deal 16 damage"]
+      "effects": [
+        "Deal 16 damage"
+      ]
     },
     {
       "id": "BARRAGE_MOVE",
@@ -40,10 +44,16 @@
           "type": "buff"
         }
       ],
-      "effects": ["2 hits of 9 damage", "Gain 3 Strength"]
+      "effects": [
+        "2 hits of 9 damage",
+        "Gain 3 Strength"
+      ]
     }
   ],
-  "move_pattern": "Cycles: Bash → Flame Beam → Barrage → repeat",
-  "powers_on_spawn": ["Artifact"],
-  "notes": "Spawns with 1 Artifact, blocking the first debuff applied to it."
+  "move_pattern": "Cycles: Bash \u2192 Flame Beam \u2192 Barrage \u2192 repeat",
+  "powers_on_spawn": [
+    "Artifact"
+  ],
+  "notes": "Spawns with 1 Artifact, blocking the first debuff applied to it.",
+  "hp_ascension": 8
 }

@@ -14,7 +14,9 @@
           "damage": 3
         }
       ],
-      "effects": ["Deal 3 damage"]
+      "effects": [
+        "Deal 3 damage"
+      ]
     },
     {
       "id": "BUFF_MOVE",
@@ -24,7 +26,9 @@
           "type": "buff"
         }
       ],
-      "effects": ["Apply 16 Strength to self"]
+      "effects": [
+        "Apply 15/16 Strength"
+      ]
     },
     {
       "id": "THRASH2_MOVE",
@@ -35,10 +39,15 @@
           "damage": 3
         }
       ],
-      "effects": ["Deal 3 damage"]
+      "effects": [
+        "Deal 3 damage"
+      ]
     }
   ],
   "move_pattern": "Starts with Thrash, then uses Buff once, then loops on Thrash indefinitely.",
   "powers_on_spawn": [],
-  "notes": "Buff is used exactly once, granting 16 Strength to self. All subsequent Thrash attacks then deal 19 damage (3 base + 16 Strength), making the monster dangerous if not eliminated quickly."
+  "notes": "Buff is used exactly once, granting 16 Strength to self. All subsequent Thrash attacks then deal 19 damage (3 base + 16 Strength), making the monster dangerous if not eliminated quickly.",
+  "min_hp_base": 35,
+  "max_hp_base": 38,
+  "hp_ascension": 8
 }
