@@ -14,14 +14,17 @@ default: check build
 
 # --- Sanity checks ---
 
-check: check-format check-types check-content check-links check-images
+check: check-format check-types check-content check-links check-images test
 
 check-format:
-    uv run ruff check scripts/
-    uv run ruff format --check scripts/
+    uv run ruff check scripts/ tools/
+    uv run ruff format --check scripts/ tools/
 
 check-types:
     uv run mypy scripts/
+
+test:
+    uv run python -m unittest tools.lookup.test_lookup -v
 
 # Validates generated content/*.md frontmatter against site/src/content.config.ts
 # zod schemas. This is the end-to-end validation that the per-entity JSON in
@@ -37,7 +40,7 @@ check-images:
     uv run python -m scripts.check_images data/{{version}} site/public/images
 
 format:
-    uv run ruff format scripts/
+    uv run ruff format scripts/ tools/
     uv run ruff check --fix scripts/
 
 # --- Decompile + extract from game ---
