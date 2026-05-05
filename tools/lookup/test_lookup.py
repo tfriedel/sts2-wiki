@@ -12,7 +12,7 @@ from tempfile import TemporaryDirectory
 from tools.lookup import lookup
 
 
-def _write(path: Path, payload: dict) -> None:
+def _write(path: Path, payload: object) -> None:
     path.write_text(json.dumps(payload))
 
 
@@ -102,10 +102,12 @@ class FindFilesTests(unittest.TestCase):
         self._orig_data_dir = lookup.DATA_DIR
         lookup.DATA_DIR = root
         lookup._TITLE_INDEX_CACHE.clear()
+        lookup._ACT_CONTEXT_CACHE = None
 
     def tearDown(self) -> None:
         lookup.DATA_DIR = self._orig_data_dir
         lookup._TITLE_INDEX_CACHE.clear()
+        lookup._ACT_CONTEXT_CACHE = None
         self._tmp.cleanup()
 
     # ── class_name (file stem) resolution ──────────────────────────
@@ -176,6 +178,112 @@ class FindFilesTests(unittest.TestCase):
         self.assertEqual(lookup.find_files("Bot Buddies", "encounters", False), ["AxebotsNormal"])
 
 
+class ActContextTests(unittest.TestCase):
+    """Verify monster→acts and encounter→acts derivation, and that
+    format_enemy / format_encounter surface the act so a wrong-act match
+    is recognisable."""
+
+    def setUp(self) -> None:
+        self._tmp = TemporaryDirectory()
+        root = Path(self._tmp.name)
+        (root / "monsters").mkdir()
+        (root / "encounters").mkdir()
+        _write(
+            root / "monsters" / "Foo.json",
+            {
+                "class_name": "Foo",
+                "title": "Foo",
+                "min_hp": 10,
+                "max_hp": 10,
+                "moves": [],
+            },
+        )
+        _write(
+            root / "monsters" / "Bar.json",
+            {
+                "class_name": "Bar",
+                "title": "Bar",
+                "min_hp": 5,
+                "max_hp": 5,
+                "moves": [],
+            },
+        )
+        _write(
+            root / "encounters" / "FooEnc.json",
+            {
+                "class_name": "FooEnc",
+                "title": "Foo Encounter",
+                "room_type": "Monster",
+                "monsters": ["Foo"],
+                "total_monsters": 1,
+            },
+        )
+        # Bulk encounters.json drives the act index.
+        _write(
+            root / "encounters.json",
+            [
+                {
+                    "class_name": "FooEnc",
+                    "title": "Foo Encounter",
+                    "monsters": ["Foo"],
+                    "acts": ["Glory"],
+                },
+                {
+                    "class_name": "FooHard",
+                    "title": "Foo, Tougher",
+                    "monsters": ["Foo"],
+                    "acts": ["Hive"],
+                },
+                # Bar is in no encounter — should produce no acts info.
+            ],
+        )
+        self._orig_data_dir = lookup.DATA_DIR
+        lookup.DATA_DIR = root
+        lookup._TITLE_INDEX_CACHE.clear()
+        lookup._ACT_CONTEXT_CACHE = None
+
+    def tearDown(self) -> None:
+        lookup.DATA_DIR = self._orig_data_dir
+        lookup._TITLE_INDEX_CACHE.clear()
+        lookup._ACT_CONTEXT_CACHE = None
+        self._tmp.cleanup()
+
+    def test_monster_in_multiple_acts_listed(self) -> None:
+        monster_index, _ = lookup._act_context()
+        self.assertEqual(monster_index["Foo"]["acts"], ["Glory", "Hive"])
+        self.assertEqual(monster_index["Foo"]["encounters"], ["FooEnc", "FooHard"])
+
+    def test_monster_with_no_encounters_absent(self) -> None:
+        monster_index, _ = lookup._act_context()
+        self.assertNotIn("Bar", monster_index)
+
+    def test_encounter_index_has_acts(self) -> None:
+        _, encounter_index = lookup._act_context()
+        self.assertEqual(encounter_index["FooEnc"], ["Glory"])
+        self.assertEqual(encounter_index["FooHard"], ["Hive"])
+
+    def test_format_enemy_includes_acts_line(self) -> None:
+        out = lookup.format_enemy(lookup.load_json("monsters", "Foo"))
+        self.assertIn("Acts: Glory, Hive", out)
+        self.assertIn("Encounters: FooEnc, FooHard", out)
+
+    def test_format_enemy_omits_acts_when_unknown(self) -> None:
+        out = lookup.format_enemy(lookup.load_json("monsters", "Bar"))
+        self.assertNotIn("Acts:", out)
+        self.assertNotIn("Encounters:", out)
+
+    def test_format_encounter_includes_act(self) -> None:
+        out = lookup.format_encounter(lookup.load_json("encounters", "FooEnc"))
+        self.assertIn("Acts: Glory", out)
+
+    def test_missing_encounters_json_is_safe(self) -> None:
+        (lookup.DATA_DIR / "encounters.json").unlink()
+        lookup._ACT_CONTEXT_CACHE = None
+        monster_index, encounter_index = lookup._act_context()
+        self.assertEqual(monster_index, {})
+        self.assertEqual(encounter_index, {})
+
+
 class TitleIndexTests(unittest.TestCase):
     """Direct checks on build_title_index — caching and base-name stripping."""
 
@@ -189,10 +297,12 @@ class TitleIndexTests(unittest.TestCase):
         self._orig_data_dir = lookup.DATA_DIR
         lookup.DATA_DIR = root
         lookup._TITLE_INDEX_CACHE.clear()
+        lookup._ACT_CONTEXT_CACHE = None
 
     def tearDown(self) -> None:
         lookup.DATA_DIR = self._orig_data_dir
         lookup._TITLE_INDEX_CACHE.clear()
+        lookup._ACT_CONTEXT_CACHE = None
         self._tmp.cleanup()
 
     def test_title_index_full_and_base(self) -> None:

@@ -136,6 +136,59 @@ def build_title_index(subdir: str) -> tuple[dict[str, list[str]], dict[str, list
     return result
 
 
+# ── act / encounter context ─────────────────────────────────────
+# Reverse index built from data/<version>/encounters.json so the lookup
+# can show "this enemy is an Act 1 (Glory) thing" and catch the case
+# where the user is fighting an act-2 enemy but matched something
+# similarly-named from act 1.
+
+_ACT_CONTEXT_CACHE: Optional[tuple[dict[str, dict[str, list[str]]], dict[str, list[str]]]] = None
+
+
+def _act_context() -> tuple[dict[str, dict[str, list[str]]], dict[str, list[str]]]:
+    """Return (monster_index, encounter_index).
+
+    monster_index:   class_name -> {"acts": [...], "encounters": [encounter_class_names]}
+    encounter_index: encounter class_name -> [acts]
+    """
+    global _ACT_CONTEXT_CACHE
+    if _ACT_CONTEXT_CACHE is not None:
+        return _ACT_CONTEXT_CACHE
+    monster_index: dict[str, dict[str, list[str]]] = {}
+    encounter_index: dict[str, list[str]] = {}
+    f = DATA_DIR / "encounters.json"
+    if f.is_file():
+        try:
+            encounters = json.loads(f.read_text())
+        except json.JSONDecodeError:
+            encounters = []
+        if isinstance(encounters, list):
+            for enc in encounters:
+                if not isinstance(enc, dict):
+                    continue
+                enc_class = enc.get("class_name") or ""
+                acts = [a for a in enc.get("acts", []) if isinstance(a, str)]
+                if enc_class and acts:
+                    encounter_index[enc_class] = acts
+                for monster in enc.get("monsters", []):
+                    if not isinstance(monster, str):
+                        continue
+                    entry = monster_index.setdefault(monster, {"acts": [], "encounters": []})
+                    for a in acts:
+                        if a not in entry["acts"]:
+                            entry["acts"].append(a)
+                    if enc_class and enc_class not in entry["encounters"]:
+                        entry["encounters"].append(enc_class)
+    _ACT_CONTEXT_CACHE = (monster_index, encounter_index)
+    return _ACT_CONTEXT_CACHE
+
+
+def _format_encounter_list(encounters: list[str], limit: int = 3) -> str:
+    if len(encounters) <= limit:
+        return ", ".join(encounters)
+    return f"{', '.join(encounters[:limit])}, … (+{len(encounters) - limit} more)"
+
+
 # ── output formatters ───────────────────────────────────────────
 
 
@@ -199,6 +252,16 @@ def format_enemy(data: dict, pattern_only: bool = False) -> str:
     lines = [f"\n{title}  {hp_str}"]
     if spawn:
         lines.append(powers_str)
+
+    monster_index, _ = _act_context()
+    ctx = monster_index.get(data.get("class_name", ""), {})
+    acts = ctx.get("acts", [])
+    encs = ctx.get("encounters", [])
+    if acts:
+        lines.append(f"  Acts: {', '.join(acts)}")
+    if encs:
+        lines.append(f"  Encounters: {_format_encounter_list(encs)}")
+
     lines.append("\nMoves:")
     lines.extend(move_lines)
     lines.append(f"\nPattern: {pattern}")
@@ -261,6 +324,10 @@ def format_encounter(data: dict) -> str:
     tags = data.get("tags", [])
 
     lines = [f"\n{title}  [{room}]  ({total} monster{'s' if total != 1 else ''})"]
+    _, encounter_index = _act_context()
+    acts = encounter_index.get(data.get("class_name", ""), [])
+    if acts:
+        lines.append(f"  Acts: {', '.join(acts)}")
     if monsters:
         lines.append(f"  Monsters: {', '.join(monsters)}")
     if tags:
