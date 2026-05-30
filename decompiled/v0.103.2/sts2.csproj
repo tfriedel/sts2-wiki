@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>sts2</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp9.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="GodotSharp" />
+    <Reference Include="Sentry">
+      <HintPath>../../../sts2-cli/lib/Sentry.dll</HintPath>
+    </Reference>
+    <Reference Include="Steamworks.NET">
+      <HintPath>../../../sts2-cli/lib/Steamworks.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Hashing">
+      <HintPath>../../../sts2-cli/lib/System.IO.Hashing.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>../../../sts2-cli/lib/0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartFormat">
+      <HintPath>../../../sts2-cli/lib/SmartFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortice.DXGI" />
+    <Reference Include="SharpGen.Runtime" />
+  </ItemGroup>
+</Project>

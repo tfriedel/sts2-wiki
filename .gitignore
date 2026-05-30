@@ -38,8 +38,7 @@ site/README.md
 site/public/favicon.ico
 site/public/favicon.svg
 
-# Decompiled game code (do NOT commit — copyrighted material)
-decompiled/
+# Decompiled game code — committed (private repo)
 
 # Extracted PCK contents (localization, assets)
 extracted/

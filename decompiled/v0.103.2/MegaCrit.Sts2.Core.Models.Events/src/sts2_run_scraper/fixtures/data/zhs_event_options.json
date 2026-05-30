@@ -1,0 +1,1320 @@
+{
+  "Reach In": [
+    [
+      "SPIRALING_WHIRLPOOL",
+      "INITIAL",
+      "REACH_IN"
+    ]
+  ],
+  "专长": [
+    [
+      "TINKER_TIME",
+      "CHOOSE_RIDER",
+      "EXPERTISE"
+    ]
+  ],
+  "交换金币": [
+    [
+      "WHISPERING_HOLLOW",
+      "INITIAL",
+      "GOLD"
+    ]
+  ],
+  "交还钥匙": [
+    [
+      "THE_LANTERN_KEY",
+      "INITIAL",
+      "RETURN_THE_KEY"
+    ]
+  ],
+  "从传送带上拿份可疑调味料": [
+    [
+      "ENDLESS_CONVEYOR",
+      "ALL",
+      "SUSPICIOUS_CONDIMENT"
+    ]
+  ],
+  "从传送带上拿份果冻肝": [
+    [
+      "ENDLESS_CONVEYOR",
+      "ALL",
+      "JELLY_LIVER"
+    ]
+  ],
+  "从传送带上拿份海洋混混沙拉": [
+    [
+      "ENDLESS_CONVEYOR",
+      "ALL",
+      "SEAPUNK_SALAD"
+    ]
+  ],
+  "从传送带上拿份炸鳗鱼": [
+    [
+      "ENDLESS_CONVEYOR",
+      "ALL",
+      "FRIED_EEL"
+    ]
+  ],
+  "从传送带上拿份蚌肉卷": [
+    [
+      "ENDLESS_CONVEYOR",
+      "ALL",
+      "CLAM_ROLL"
+    ]
+  ],
+  "从传送带上拿份金色异鱼": [
+    [
+      "ENDLESS_CONVEYOR",
+      "ALL",
+      "GOLDEN_FYSH"
+    ]
+  ],
+  "从传送带上拿份香辣薄脆": [
+    [
+      "ENDLESS_CONVEYOR",
+      "ALL",
+      "SPICY_SNAPPY"
+    ]
+  ],
+  "从传送带上拿份鱼子酱": [
+    [
+      "ENDLESS_CONVEYOR",
+      "ALL",
+      "CAVIAR"
+    ]
+  ],
+  "仔细检查然后挑选最好的那个": [
+    [
+      "DOLL_ROOM",
+      "INITIAL",
+      "EXAMINE"
+    ]
+  ],
+  "仔细翻找": [
+    [
+      "ROOM_FULL_OF_CHEESE",
+      "INITIAL",
+      "SEARCH"
+    ]
+  ],
+  "休息": [
+    [
+      "DENSE_VEGETATION",
+      "INITIAL",
+      "REST"
+    ]
+  ],
+  "余烬茶": [
+    [
+      "TEA_MASTER",
+      "INITIAL",
+      "EMBER_TEA"
+    ]
+  ],
+  "供奉": [
+    [
+      "LUMINOUS_CHOIR",
+      "INITIAL",
+      "OFFER_TRIBUTE"
+    ]
+  ],
+  "充能": [
+    [
+      "TINKER_TIME",
+      "CHOOSE_RIDER",
+      "ENERGIZED"
+    ]
+  ],
+  "光之门": [
+    [
+      "DOORS_OF_LIGHT_AND_DARK",
+      "INITIAL",
+      "LIGHT"
+    ]
+  ],
+  "再撑一会": [
+    [
+      "SLIPPERY_BRIDGE",
+      "HOLD_ON_0",
+      "HOLD_ON_1"
+    ],
+    [
+      "SLIPPERY_BRIDGE",
+      "HOLD_ON_1",
+      "HOLD_ON_2"
+    ],
+    [
+      "SLIPPERY_BRIDGE",
+      "HOLD_ON_2",
+      "HOLD_ON_3"
+    ],
+    [
+      "SLIPPERY_BRIDGE",
+      "HOLD_ON_3",
+      "HOLD_ON_4"
+    ],
+    [
+      "SLIPPERY_BRIDGE",
+      "HOLD_ON_4",
+      "HOLD_ON_5"
+    ],
+    [
+      "SLIPPERY_BRIDGE",
+      "HOLD_ON_5",
+      "HOLD_ON_6"
+    ],
+    [
+      "SLIPPERY_BRIDGE",
+      "HOLD_ON_6",
+      "HOLD_ON_LOOP"
+    ],
+    [
+      "SLIPPERY_BRIDGE",
+      "HOLD_ON_LOOP",
+      "HOLD_ON_LOOP"
+    ],
+    [
+      "SLIPPERY_BRIDGE",
+      "INITIAL",
+      "HOLD_ON_0"
+    ]
+  ],
+  "分享知识": [
+    [
+      "BRAIN_LEECH",
+      "INITIAL",
+      "SHARE_KNOWLEDGE"
+    ]
+  ],
+  "分期付款": [
+    [
+      "CRYSTAL_SPHERE",
+      "INITIAL",
+      "PAYMENT_PLAN"
+    ]
+  ],
+  "判决：无罪": [
+    [
+      "TRIAL",
+      "MERCHANT",
+      "INNOCENT"
+    ],
+    [
+      "TRIAL",
+      "NOBLE",
+      "INNOCENT"
+    ],
+    [
+      "TRIAL",
+      "NONDESCRIPT",
+      "INNOCENT"
+    ]
+  ],
+  "判决：有罪": [
+    [
+      "TRIAL",
+      "MERCHANT",
+      "GUILTY"
+    ],
+    [
+      "TRIAL",
+      "NOBLE",
+      "GUILTY"
+    ],
+    [
+      "TRIAL",
+      "NONDESCRIPT",
+      "GUILTY"
+    ]
+  ],
+  "削弱": [
+    [
+      "TINKER_TIME",
+      "CHOOSE_RIDER",
+      "SAPPING"
+    ]
+  ],
+  "吃下": [
+    [
+      "SAPPHIRE_SEED",
+      "INITIAL",
+      "EAT"
+    ]
+  ],
+  "吃掉这颗蛋": [
+    [
+      "BYRDONIS_NEST",
+      "INITIAL",
+      "EAT"
+    ]
+  ],
+  "呼吸技法": [
+    [
+      "ZEN_WEAVER",
+      "INITIAL",
+      "BREATHING_TECHNIQUES"
+    ]
+  ],
+  "喝杯好茶": [
+    [
+      "ROUND_TEA_PARTY",
+      "INITIAL",
+      "ENJOY_TEA"
+    ]
+  ],
+  "喝药抬起": [
+    [
+      "STONE_OF_ALL_TIME",
+      "INITIAL",
+      "LIFT"
+    ]
+  ],
+  "圆环": [
+    [
+      "WOOD_CARVINGS",
+      "INITIAL",
+      "TORUS"
+    ]
+  ],
+  "坚持到底": [
+    [
+      "TRIAL",
+      "REJECT",
+      "DOUBLE_DOWN"
+    ]
+  ],
+  "坚持跋涉": [
+    [
+      "DENSE_VEGETATION",
+      "INITIAL",
+      "TRUDGE_ON"
+    ]
+  ],
+  "大快朵颐": [
+    [
+      "ROOM_FULL_OF_CHEESE",
+      "INITIAL",
+      "GORGE"
+    ]
+  ],
+  "大群变形灵": [
+    [
+      "MORPHIC_GROVE",
+      "INITIAL",
+      "GROUP"
+    ]
+  ],
+  "大蘑菇": [
+    [
+      "HUNGRY_FOR_MUSHROOMS",
+      "INITIAL",
+      "BIG_MUSHROOM"
+    ]
+  ],
+  "好奇": [
+    [
+      "TINKER_TIME",
+      "CHOOSE_RIDER",
+      "CURIOUS"
+    ]
+  ],
+  "学习": [
+    [
+      "INFESTED_AUTOMATON",
+      "INITIAL",
+      "STUDY"
+    ]
+  ],
+  "学习压扁的技巧": [
+    [
+      "BUGSLAYER",
+      "INITIAL",
+      "SQUASH"
+    ]
+  ],
+  "学习杀灭的技巧": [
+    [
+      "BUGSLAYER",
+      "INITIAL",
+      "EXTERMINATION"
+    ]
+  ],
+  "就这样休息": [
+    [
+      "UNREST_SITE",
+      "INITIAL",
+      "REST"
+    ]
+  ],
+  "已锁定": [
+    [
+      "GRAVE_OF_THE_FORGOTTEN",
+      "INITIAL",
+      "CONFRONT_LOCKED"
+    ],
+    [
+      "LOST_WISP",
+      "INITIAL",
+      "CLAIM_LOCKED"
+    ],
+    [
+      "LUMINOUS_CHOIR",
+      "INITIAL",
+      "OFFER_TRIBUTE_LOCKED"
+    ]
+  ],
+  "带走这颗蛋": [
+    [
+      "BYRDONIS_NEST",
+      "INITIAL",
+      "TAKE"
+    ]
+  ],
+  "平等": [
+    [
+      "COLORFUL_PHILOSOPHERS",
+      "INITIAL",
+      "EQUALITY"
+    ]
+  ],
+  "情绪觉察": [
+    [
+      "ZEN_WEAVER",
+      "INITIAL",
+      "EMOTIONAL_AWARENESS"
+    ]
+  ],
+  "我能打两个": [
+    [
+      "PUNCH_OFF",
+      "INITIAL",
+      "I_CAN_TAKE_THEM"
+    ]
+  ],
+  "战斗": [
+    [
+      "PUNCH_OFF",
+      "I_CAN_TAKE_THEM",
+      "FIGHT"
+    ],
+    [
+      "THE_LANTERN_KEY",
+      "KEEP_THE_KEY",
+      "FIGHT"
+    ]
+  ],
+  "战！": [
+    [
+      "DENSE_VEGETATION",
+      "REST",
+      "FIGHT"
+    ]
+  ],
+  "扎手海绵": [
+    [
+      "WATERLOGGED_SCRIPTORIUM",
+      "INITIAL",
+      "PRICKLY_SPONGE"
+    ]
+  ],
+  "扎进垃圾堆": [
+    [
+      "TRASH_HEAP",
+      "INITIAL",
+      "DIVE_IN"
+    ]
+  ],
+  "打开宝箱": [
+    [
+      "WAR_HISTORIAN_REPY",
+      "INITIAL",
+      "UNLOCK_CHEST"
+    ]
+  ],
+  "打开笼子": [
+    [
+      "WAR_HISTORIAN_REPY",
+      "INITIAL",
+      "UNLOCK_CAGE"
+    ]
+  ],
+  "打碎": [
+    [
+      "REFLECTIONS",
+      "INITIAL",
+      "SHATTER"
+    ]
+  ],
+  "扼杀": [
+    [
+      "TINKER_TIME",
+      "CHOOSE_RIDER",
+      "CHOKING"
+    ]
+  ],
+  "把它扯下来": [
+    [
+      "BRAIN_LEECH",
+      "INITIAL",
+      "RIP"
+    ]
+  ],
+  "抓住这团鬼火": [
+    [
+      "LOST_WISP",
+      "INITIAL",
+      "CLAIM"
+    ]
+  ],
+  "投身其中": [
+    [
+      "ABYSSAL_BATHS",
+      "INITIAL",
+      "IMMERSE"
+    ]
+  ],
+  "抛下一切": [
+    [
+      "TABLET_OF_TRUTH",
+      "DECIPHER_4",
+      "DECIPHER"
+    ]
+  ],
+  "护具": [
+    [
+      "TINKER_TIME",
+      "CHOOSE_CARD_TYPE",
+      "SKILL"
+    ]
+  ],
+  "抵抗诱惑": [
+    [
+      "FIELD_OF_MAN_SIZED_HOLES",
+      "INITIAL",
+      "RESIST"
+    ]
+  ],
+  "抵达核心": [
+    [
+      "COLOSSAL_FLOWER",
+      "REACH_DEEPER_2",
+      "POLLINOUS_CORE"
+    ]
+  ],
+  "拒绝": [
+    [
+      "SPIRIT_GRAFTER",
+      "INITIAL",
+      "REJECTION"
+    ],
+    [
+      "TRIAL",
+      "INITIAL",
+      "REJECT"
+    ]
+  ],
+  "拥抱树木": [
+    [
+      "WHISPERING_HOLLOW",
+      "INITIAL",
+      "HUG"
+    ]
+  ],
+  "拿上面那件": [
+    [
+      "RELIC_TRADER",
+      "INITIAL",
+      "TOP"
+    ]
+  ],
+  "拿下面那件": [
+    [
+      "RELIC_TRADER",
+      "INITIAL",
+      "BOTTOM"
+    ]
+  ],
+  "拿中间这件": [
+    [
+      "RELIC_TRADER",
+      "INITIAL",
+      "MIDDLE"
+    ]
+  ],
+  "拿走这批药水": [
+    [
+      "POTION_COURIER",
+      "INITIAL",
+      "GRAB_POTIONS"
+    ]
+  ],
+  "拿起石剑": [
+    [
+      "SUNKEN_STATUE",
+      "INITIAL",
+      "GRAB_SWORD"
+    ]
+  ],
+  "挑事斗殴": [
+    [
+      "ROUND_TEA_PARTY",
+      "INITIAL",
+      "PICK_FIGHT"
+    ]
+  ],
+  "探入菌肉": [
+    [
+      "LUMINOUS_CHOIR",
+      "INITIAL",
+      "REACH_INTO_THE_FLESH"
+    ]
+  ],
+  "接受": [
+    [
+      "TINKER_TIME",
+      "INITIAL",
+      "CHOOSE_CARD_TYPE"
+    ],
+    [
+      "TRIAL",
+      "INITIAL",
+      "ACCEPT"
+    ],
+    [
+      "TRIAL",
+      "REJECT",
+      "ACCEPT"
+    ]
+  ],
+  "接受这颗{Relic}": [
+    [
+      "GRAVE_OF_THE_FORGOTTEN",
+      "INITIAL",
+      "ACCEPT"
+    ]
+  ],
+  "接纳": [
+    [
+      "SPIRIT_GRAFTER",
+      "INITIAL",
+      "LET_IT_IN"
+    ]
+  ],
+  "揭幕未来": [
+    [
+      "CRYSTAL_SPHERE",
+      "INITIAL",
+      "UNCOVER_FUTURE"
+    ]
+  ],
+  "搜索附近的区域": [
+    [
+      "LOST_WISP",
+      "INITIAL",
+      "SEARCH"
+    ]
+  ],
+  "攀爬": [
+    [
+      "DROWNING_BEACON",
+      "INITIAL",
+      "CLIMB"
+    ]
+  ],
+  "放任自流": [
+    [
+      "AROMA_OF_CHAOS",
+      "INITIAL",
+      "LET_GO"
+    ]
+  ],
+  "放入{Rarity}药水": [
+    [
+      "THE_FUTURE_OF_POTIONS",
+      "INITIAL",
+      "POTION"
+    ]
+  ],
+  "放弃": [
+    [
+      "TABLET_OF_TRUTH",
+      "DECIPHER",
+      "GIVE_UP"
+    ]
+  ],
+  "敬而远之": [
+    [
+      "ABYSSAL_BATHS",
+      "INITIAL",
+      "ABSTAIN"
+    ]
+  ],
+  "无礼之茶": [
+    [
+      "TEA_MASTER",
+      "INITIAL",
+      "TEA_OF_DISCOURTESY"
+    ]
+  ],
+  "旺购的打折货物": [
+    [
+      "WELCOME_TO_WONGOS",
+      "INITIAL",
+      "BARGAIN_BIN"
+    ]
+  ],
+  "旺购的特选商品": [
+    [
+      "WELCOME_TO_WONGOS",
+      "INITIAL",
+      "FEATURED_ITEM"
+    ]
+  ],
+  "旺购的神秘盲盒": [
+    [
+      "WELCOME_TO_WONGOS",
+      "INITIAL",
+      "MYSTERY_BOX"
+    ]
+  ],
+  "智慧": [
+    [
+      "TINKER_TIME",
+      "CHOOSE_RIDER",
+      "WISDOM"
+    ]
+  ],
+  "暗之门": [
+    [
+      "DOORS_OF_LIGHT_AND_DARK",
+      "INITIAL",
+      "DARK"
+    ]
+  ],
+  "暴力": [
+    [
+      "TINKER_TIME",
+      "CHOOSE_RIDER",
+      "VIOLENCE"
+    ]
+  ],
+  "杀死树木": [
+    [
+      "UNREST_SITE",
+      "INITIAL",
+      "KILL"
+    ]
+  ],
+  "样品选项": [
+    [
+      "MOCK_EVENT_MODEL",
+      "INITIAL",
+      "TEST"
+    ]
+  ],
+  "橙色": [
+    [
+      "COLORFUL_PHILOSOPHERS",
+      "INITIAL",
+      "REGENT"
+    ]
+  ],
+  "武器": [
+    [
+      "TINKER_TIME",
+      "CHOOSE_CARD_TYPE",
+      "ATTACK"
+    ]
+  ],
+  "沉溺": [
+    [
+      "ABYSSAL_BATHS",
+      "ALL",
+      "LINGER"
+    ]
+  ],
+  "沐浴": [
+    [
+      "WELLSPRING",
+      "INITIAL",
+      "BATHE"
+    ]
+  ],
+  "洗劫": [
+    [
+      "POTION_COURIER",
+      "INITIAL",
+      "RANSACK"
+    ]
+  ],
+  "深入探索": [
+    [
+      "COLOSSAL_FLOWER",
+      "INITIAL",
+      "REACH_DEEPER_1"
+    ],
+    [
+      "COLOSSAL_FLOWER",
+      "REACH_DEEPER_1",
+      "REACH_DEEPER_2"
+    ]
+  ],
+  "混沌": [
+    [
+      "TINKER_TIME",
+      "CHOOSE_RIDER",
+      "CHAOS"
+    ]
+  ],
+  "潜水": [
+    [
+      "SUNKEN_STATUE",
+      "INITIAL",
+      "DIVE_INTO_WATER"
+    ]
+  ],
+  "独自挑战": [
+    [
+      "JUNGLE_MAZE_ADVENTURE",
+      "INITIAL",
+      "SOLO_QUEST"
+    ]
+  ],
+  "用力去推": [
+    [
+      "STONE_OF_ALL_TIME",
+      "INITIAL",
+      "PUSH"
+    ]
+  ],
+  "用火烧杀": [
+    [
+      "SYMBIOTE",
+      "INITIAL",
+      "KILL_WITH_FIRE"
+    ]
+  ],
+  "留下钥匙": [
+    [
+      "THE_LANTERN_KEY",
+      "INITIAL",
+      "KEEP_THE_KEY"
+    ]
+  ],
+  "破产了": [
+    [
+      "ENDLESS_CONVEYOR",
+      "ALL",
+      "LOCKED"
+    ]
+  ],
+  "砸碎": [
+    [
+      "TABLET_OF_TRUTH",
+      "INITIAL",
+      "SMASH"
+    ]
+  ],
+  "离开": [
+    [
+      "ENDLESS_CONVEYOR",
+      "GRAB_SOMETHING_OFF_THE_BELT",
+      "LEAVE"
+    ],
+    [
+      "SELF_HELP_BOOK",
+      "INITIAL",
+      "NO_OPTIONS"
+    ],
+    [
+      "WELCOME_TO_WONGOS",
+      "INITIAL",
+      "LEAVE"
+    ]
+  ],
+  "离开浴场": [
+    [
+      "ABYSSAL_BATHS",
+      "ALL",
+      "EXIT_BATHS"
+    ]
+  ],
+  "种植培育": [
+    [
+      "SAPPHIRE_SEED",
+      "INITIAL",
+      "PLANT"
+    ]
+  ],
+  "第1档": [
+    [
+      "BATTLEWORN_DUMMY",
+      "INITIAL",
+      "SETTING_1"
+    ]
+  ],
+  "第2档": [
+    [
+      "BATTLEWORN_DUMMY",
+      "INITIAL",
+      "SETTING_2"
+    ]
+  ],
+  "第3档": [
+    [
+      "BATTLEWORN_DUMMY",
+      "INITIAL",
+      "SETTING_3"
+    ]
+  ],
+  "第一个箱子": [
+    [
+      "SUNKEN_TREASURY",
+      "INITIAL",
+      "FIRST_CHEST"
+    ]
+  ],
+  "第二个箱子": [
+    [
+      "SUNKEN_TREASURY",
+      "INITIAL",
+      "SECOND_CHEST"
+    ]
+  ],
+  "粉色": [
+    [
+      "COLORFUL_PHILOSOPHERS",
+      "INITIAL",
+      "NECROBINDER"
+    ]
+  ],
+  "精进": [
+    [
+      "TINKER_TIME",
+      "CHOOSE_RIDER",
+      "IMPROVEMENT"
+    ]
+  ],
+  "红色": [
+    [
+      "COLORFUL_PHILOSOPHERS",
+      "INITIAL",
+      "IRONCLAD"
+    ]
+  ],
+  "结伴同行": [
+    [
+      "JUNGLE_MAZE_ADVENTURE",
+      "INITIAL",
+      "JOIN_FORCES"
+    ]
+  ],
+  "给他{Gold}金币": [
+    [
+      "RANWID_THE_ELDER",
+      "INITIAL",
+      "GOLD"
+    ]
+  ],
+  "给他{Potion}": [
+    [
+      "RANWID_THE_ELDER",
+      "INITIAL",
+      "POTION"
+    ]
+  ],
+  "给他{Relic}": [
+    [
+      "RANWID_THE_ELDER",
+      "INITIAL",
+      "RELIC"
+    ]
+  ],
+  "继 续 解 读": [
+    [
+      "TABLET_OF_TRUTH",
+      "DECIPHER_3",
+      "DECIPHER"
+    ]
+  ],
+  "继续": [
+    [
+      "ROUND_TEA_PARTY",
+      "PICK_FIGHT",
+      "CONTINUE_FIGHT"
+    ]
+  ],
+  "继续解读": [
+    [
+      "TABLET_OF_TRUTH",
+      "DECIPHER_1",
+      "DECIPHER"
+    ],
+    [
+      "TABLET_OF_TRUTH",
+      "DECIPHER_2",
+      "DECIPHER"
+    ]
+  ],
+  "维持理智": [
+    [
+      "AROMA_OF_CHAOS",
+      "INITIAL",
+      "MAINTAIN_CONTROL"
+    ]
+  ],
+  "绿色": [
+    [
+      "COLORFUL_PHILOSOPHERS",
+      "INITIAL",
+      "SILENT"
+    ]
+  ],
+  "耐心寻找出口": [
+    [
+      "THE_LEGENDS_WERE_TRUE",
+      "INITIAL",
+      "SLOWLY_FIND_AN_EXIT"
+    ]
+  ],
+  "花点时间慢慢来": [
+    [
+      "DOLL_ROOM",
+      "INITIAL",
+      "TAKE_SOME_TIME"
+    ]
+  ],
+  "芳香蘑菇": [
+    [
+      "HUNGRY_FOR_MUSHROOMS",
+      "INITIAL",
+      "FRAGRANT_MUSHROOM"
+    ]
+  ],
+  "落单变形灵": [
+    [
+      "MORPHIC_GROVE",
+      "INITIAL",
+      "LONER"
+    ]
+  ],
+  "蓝色": [
+    [
+      "COLORFUL_PHILOSOPHERS",
+      "INITIAL",
+      "DEFECT"
+    ]
+  ],
+  "蛇": [
+    [
+      "WOOD_CARVINGS",
+      "INITIAL",
+      "SNAKE"
+    ]
+  ],
+  "蜘蛛针灸": [
+    [
+      "ZEN_WEAVER",
+      "INITIAL",
+      "ARACHNID_ACUPUNCTURE"
+    ]
+  ],
+  "融合打击": [
+    [
+      "AMALGAMATOR",
+      "INITIAL",
+      "COMBINE_STRIKES"
+    ]
+  ],
+  "融合防御": [
+    [
+      "AMALGAMATOR",
+      "INITIAL",
+      "COMBINE_DEFENDS"
+    ]
+  ],
+  "血液墨水": [
+    [
+      "WATERLOGGED_SCRIPTORIUM",
+      "INITIAL",
+      "BLOODY_INK"
+    ]
+  ],
+  "装瓶": [
+    [
+      "DROWNING_BEACON",
+      "INITIAL",
+      "BOTTLE"
+    ],
+    [
+      "WELLSPRING",
+      "INITIAL",
+      "BOTTLE"
+    ]
+  ],
+  "装置": [
+    [
+      "TINKER_TIME",
+      "CHOOSE_CARD_TYPE",
+      "POWER"
+    ]
+  ],
+  "观察": [
+    [
+      "SPIRALING_WHIRLPOOL",
+      "INITIAL",
+      "OBSERVE"
+    ]
+  ],
+  "观察主厨": [
+    [
+      "ENDLESS_CONVEYOR",
+      "INITIAL",
+      "OBSERVE_CHEF"
+    ]
+  ],
+  "解读": [
+    [
+      "TABLET_OF_TRUTH",
+      "INITIAL",
+      "DECIPHER_1"
+    ]
+  ],
+  "触手羽毛笔": [
+    [
+      "WATERLOGGED_SCRIPTORIUM",
+      "INITIAL",
+      "TENTACLE_QUILL"
+    ]
+  ],
+  "触碰核心": [
+    [
+      "INFESTED_AUTOMATON",
+      "INITIAL",
+      "TOUCH_CORE"
+    ]
+  ],
+  "触碰镜子": [
+    [
+      "REFLECTIONS",
+      "INITIAL",
+      "TOUCH_A_MIRROR"
+    ]
+  ],
+  "让它直面真相": [
+    [
+      "GRAVE_OF_THE_FORGOTTEN",
+      "INITIAL",
+      "CONFRONT"
+    ]
+  ],
+  "读下封底": [
+    [
+      "SELF_HELP_BOOK",
+      "INITIAL",
+      "READ_THE_BACK"
+    ]
+  ],
+  "读完整本书": [
+    [
+      "SELF_HELP_BOOK",
+      "INITIAL",
+      "READ_ENTIRE_BOOK"
+    ]
+  ],
+  "跨越": [
+    [
+      "SLIPPERY_BRIDGE",
+      "INITIAL",
+      "OVERCOME"
+    ]
+  ],
+  "这个": [
+    [
+      "THIS_OR_THAT",
+      "INITIAL",
+      "PLAIN"
+    ]
+  ],
+  "进入你的洞": [
+    [
+      "FIELD_OF_MAN_SIZED_HOLES",
+      "INITIAL",
+      "ENTER_YOUR_HOLE"
+    ]
+  ],
+  "那个": [
+    [
+      "THIS_OR_THAT",
+      "INITIAL",
+      "ORNATE"
+    ]
+  ],
+  "采集花蜜": [
+    [
+      "COLOSSAL_FLOWER",
+      "INITIAL",
+      "EXTRACT_CURRENT_PRIZE_1"
+    ],
+    [
+      "COLOSSAL_FLOWER",
+      "REACH_DEEPER_1",
+      "EXTRACT_CURRENT_PRIZE_2"
+    ],
+    [
+      "COLOSSAL_FLOWER",
+      "REACH_DEEPER_2",
+      "EXTRACT_INSTEAD"
+    ]
+  ],
+  "锁定": [
+    [
+      "RANWID_THE_ELDER",
+      "INITIAL",
+      "POTION_LOCKED"
+    ],
+    [
+      "RANWID_THE_ELDER",
+      "INITIAL",
+      "RELIC_LOCKED"
+    ],
+    [
+      "SELF_HELP_BOOK",
+      "INITIAL",
+      "READ_ENTIRE_BOOK_LOCKED"
+    ],
+    [
+      "SELF_HELP_BOOK",
+      "INITIAL",
+      "READ_PASSAGE_LOCKED"
+    ],
+    [
+      "SELF_HELP_BOOK",
+      "INITIAL",
+      "READ_THE_BACK_LOCKED"
+    ],
+    [
+      "STONE_OF_ALL_TIME",
+      "INITIAL",
+      "LIFT_LOCKED"
+    ],
+    [
+      "STONE_OF_ALL_TIME",
+      "INITIAL",
+      "PUSH_LOCKED"
+    ],
+    [
+      "SYMBIOTE",
+      "INITIAL",
+      "APPROACH_LOCKED"
+    ],
+    [
+      "TEA_MASTER",
+      "INITIAL",
+      "BONE_TEA_LOCKED"
+    ],
+    [
+      "TEA_MASTER",
+      "INITIAL",
+      "EMBER_TEA_LOCKED"
+    ],
+    [
+      "WATERLOGGED_SCRIPTORIUM",
+      "INITIAL",
+      "PRICKLY_SPONGE_LOCKED"
+    ],
+    [
+      "WATERLOGGED_SCRIPTORIUM",
+      "INITIAL",
+      "TENTACLE_QUILL_LOCKED"
+    ],
+    [
+      "WELCOME_TO_WONGOS",
+      "INITIAL",
+      "BARGAIN_BIN_LOCKED"
+    ],
+    [
+      "WELCOME_TO_WONGOS",
+      "INITIAL",
+      "FEATURED_ITEM_LOCKED"
+    ],
+    [
+      "WELCOME_TO_WONGOS",
+      "INITIAL",
+      "MYSTERY_BOX_LOCKED"
+    ],
+    [
+      "WOOD_CARVINGS",
+      "INITIAL",
+      "SNAKE_LOCKED"
+    ],
+    [
+      "ZEN_WEAVER",
+      "INITIAL",
+      "LOCKED"
+    ]
+  ],
+  "随便拿点垃圾": [
+    [
+      "TRASH_HEAP",
+      "INITIAL",
+      "GRAB"
+    ]
+  ],
+  "随便读个一段": [
+    [
+      "SELF_HELP_BOOK",
+      "INITIAL",
+      "READ_PASSAGE"
+    ]
+  ],
+  "随机拿走一尊": [
+    [
+      "DOLL_ROOM",
+      "INITIAL",
+      "RANDOM"
+    ]
+  ],
+  "靠近": [
+    [
+      "SYMBIOTE",
+      "INITIAL",
+      "APPROACH"
+    ]
+  ],
+  "顺走": [
+    [
+      "PUNCH_OFF",
+      "INITIAL",
+      "NAB"
+    ]
+  ],
+  "顺走地图": [
+    [
+      "THE_LEGENDS_WERE_TRUE",
+      "INITIAL",
+      "NAB_THE_MAP"
+    ]
+  ],
+  "饮用": [
+    [
+      "SPIRALING_WHIRLPOOL",
+      "INITIAL",
+      "DRINK"
+    ]
+  ],
+  "骨茶": [
+    [
+      "TEA_MASTER",
+      "INITIAL",
+      "BONE_TEA"
+    ]
+  ],
+  "鸟": [
+    [
+      "WOOD_CARVINGS",
+      "INITIAL",
+      "BIRD"
+    ]
+  ]
+}
